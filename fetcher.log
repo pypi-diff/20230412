@@ -329,3 +329,38 @@
 [2023-04-12 00:37:56] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:37:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:37:57] INFO root fetch - main [MainThread]: Store serial: [17667059]
+[2023-04-12 00:42:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667059]
+[2023-04-12 00:43:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 00:43:04] INFO root fetch - processPackages [linear-garage-door]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [pyb-utils]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [arkdriver]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/fc/07/bbb2e4f0042e5c0c25db38911dd89d60c147d1044392120aa839e3b15c25/arkdriver-0.1.8.tar.gz
+[2023-04-12 00:43:04] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-04-12 00:43:04] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230412/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:43:04] INFO root fetch - processPackages [linear-garage-door]: Downloading https://files.pythonhosted.org/packages/de/6f/35034cedcb41bf3b08ce4d2d254697322c28e610354bc0e1c2975693c6a8/linear_garage_door-0.2.4.tar.gz
+[2023-04-12 00:43:04] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411222>=10485760
+[2023-04-12 00:43:04] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:43:04] INFO root fetch - processPackages [pyb-utils]: Downloading https://files.pythonhosted.org/packages/85/a6/5a8c263f61d9b46c95af3b2787ebf6d856ce8eea01b5c2fc4cc7aa696da3/pyb_utils-0.2.1.tar.gz
+[2023-04-12 00:43:04] INFO root fetch - processPackages [print-position]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 00:43:04] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2023-04-12 00:43:04] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20230412/e/ethyca-fides/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2023-04-12 00:43:04] INFO root fetch - processPackages [print-position]: Downloading https://files.pythonhosted.org/packages/fe/b4/c43579a5183a47cbfea450a2519a8f15c4322ba958e2115727d732c052dd/print_position-1.0.0.tar.gz
+[2023-04-12 00:43:04] INFO root fetch - processPackages [pyb-utils]: Downloading https://files.pythonhosted.org/packages/a5/78/ccbc372236176d6e986159216ab6f6dcacd1eed3b79e565c3fd114532d08/pyb_utils-0.2.2.tar.gz
+[2023-04-12 00:43:04] INFO root fetch - processPackages [linear-garage-door]: Downloading https://files.pythonhosted.org/packages/9b/0d/ffed866ee3c6659a013b0852ef944197f9298855624ada9dfe1fc0fa505b/linear_garage_door-0.2.5.tar.gz
+[2023-04-12 00:43:04] INFO root fetch - processPackages [pyb-utils]: executing diffoscope
+[2023-04-12 00:43:04] INFO root fetch - processPackages [pyb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyb_utils-0.2.1.tar.gz tmp/pyb_utils-0.2.2.tar.gz --markdown 20230412/p/pyb-utils/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 00:43:05] INFO root fetch - processPackages [linear-garage-door]: executing diffoscope
+[2023-04-12 00:43:05] INFO root fetch - processPackages [linear-garage-door]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linear_garage_door-0.2.4.tar.gz tmp/linear_garage_door-0.2.5.tar.gz --markdown 20230412/l/linear-garage-door/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 00:43:05] INFO root fetch - processPackages [print-position]: Downloading https://files.pythonhosted.org/packages/9c/2a/91a60f43134e7234df7cd70caa2a776fdb83fc891f7ad74cd02dbb610370/print_position-1.0.1.tar.gz
+[2023-04-12 00:43:05] INFO root fetch - processPackages [print-position]: executing diffoscope
+[2023-04-12 00:43:05] INFO root fetch - processPackages [print-position]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/print_position-1.0.0.tar.gz tmp/print_position-1.0.1.tar.gz --markdown 20230412/p/print-position/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 00:43:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:43:05] WARNING root fetch - processPackages [hydro-erosion]: Skipping, unable to determine old version
+[2023-04-12 00:43:05] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:43:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:43:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:43:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:43:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:43:13] INFO root fetch - main [MainThread]: Store serial: [17667093]
