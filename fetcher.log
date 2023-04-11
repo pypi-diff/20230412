@@ -514,3 +514,26 @@
 [2023-04-12 00:58:47] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:58:51] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:58:51] INFO root fetch - main [MainThread]: Store serial: [17667181]
+[2023-04-12 01:03:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667181]
+[2023-04-12 01:03:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 01:03:59] WARNING root fetch - processPackages [pdm-winpacker]: Skipping, unable to determine old version
+[2023-04-12 01:03:59] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:03:59] INFO root fetch - processPackages [viqi-api]: New version: [0.6.4.2] Old Version: [0.6.4.1]
+[2023-04-12 01:03:59] WARNING root fetch - processPackages [karellen-llvm-core]: Skipping, unable to determine old version
+[2023-04-12 01:03:59] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:03:59] WARNING root fetch - processPackages [karellen-llvm-clang]: Skipping, unable to determine old version
+[2023-04-12 01:03:59] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:03:59] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230411] Old Version: [0.7.0b20230410]
+[2023-04-12 01:03:59] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-12 01:03:59] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-12 01:03:59] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230412/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-12 01:03:59] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/10/2d/e969ab43978052a97e34ea6dbf5da303cb623a24c24ae7dc8809e507b737/tmnt-0.7.0b20230411.tar.gz
+[2023-04-12 01:03:59] INFO root fetch - processPackages [viqi-api]: Downloading https://files.pythonhosted.org/packages/2c/d1/ea29118269aafbc5cf7cb6e59f9e74f4edd92043b41ad4e3a4bcc50a890b/viqi_api-0.6.4.2-py3-none-any.whl
+[2023-04-12 01:03:59] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-04-12 01:03:59] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230410.tar.gz tmp/tmnt-0.7.0b20230411.tar.gz --markdown 20230412/t/tmnt/0.7.0b20230410-0.7.0b20230411/diff.md --exclude *.pyd
+[2023-04-12 01:03:59] INFO root fetch - processPackages [viqi-api]: executing diffoscope
+[2023-04-12 01:03:59] INFO root fetch - processPackages [viqi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viqi_api-0.6.4.1-py3-none-any.whl.zip tmp/viqi_api-0.6.4.2-py3-none-any.whl.zip --markdown 20230412/v/viqi-api/0.6.4.1-0.6.4.2/diff.md --exclude *.pyd
+[2023-04-12 01:04:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:04:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:04:04] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:04:04] INFO root fetch - main [MainThread]: Store serial: [17667203]
