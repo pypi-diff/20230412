@@ -143,3 +143,42 @@
 [2023-04-12 00:11:03] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:11:06] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:11:06] INFO root fetch - main [MainThread]: Store serial: [17666861]
+[2023-04-12 00:21:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17666861]
+[2023-04-12 00:21:44] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 00:21:44] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 00:21:44] WARNING root fetch - processPackages [SIOTCommon]: Skipping, unable to determine old version
+[2023-04-12 00:21:44] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:21:44] INFO root fetch - processPackages [dvclive]: New version: [2.6.3] Old Version: [2.6.2]
+[2023-04-12 00:21:44] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-12 00:21:44] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 00:21:44] INFO root fetch - processPackages [bago]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 00:21:44] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/aa/94/9e04fc8a92fd3c56b4dd252dcf0088298e7dfe103124a4addb3725bd13cf/mango_pycore-0.1.0.tar.gz
+[2023-04-12 00:21:44] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 00:21:44] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 00:21:44] INFO root fetch - processPackages [dvclive]: Downloading https://files.pythonhosted.org/packages/ce/18/06b6563486c4123ea2f4a89b6c81fcf5d0aeece8b318131c16e43b29de35/dvclive-2.6.2.tar.gz
+[2023-04-12 00:21:44] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-12 00:21:44] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230412/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-12 00:21:44] INFO root fetch - processPackages [bago]: Downloading https://files.pythonhosted.org/packages/1c/06/3b6a6b3f9cef2a05a3c946f1ea56773813d303202b133e860b49e15eecf2/bago-0.0.8.tar.gz
+[2023-04-12 00:21:44] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/08/58/1f1a365b50cd5f4e14d150698ed48c5be37c94e62f93de6a972a9ba753ef/mango_pycore-0.1.1.tar.gz
+[2023-04-12 00:21:44] INFO root fetch - processPackages [dvclive]: Downloading https://files.pythonhosted.org/packages/33/cc/8090c6ddab131243ff2887214926f49e4049563fd00f726267e5f9f57a97/dvclive-2.6.3.tar.gz
+[2023-04-12 00:21:44] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 00:21:44] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.0.tar.gz tmp/mango_pycore-0.1.1.tar.gz --markdown 20230412/m/mango-pycore/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 00:21:45] INFO root fetch - processPackages [dvclive]: executing diffoscope
+[2023-04-12 00:21:45] INFO root fetch - processPackages [dvclive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvclive-2.6.2.tar.gz tmp/dvclive-2.6.3.tar.gz --markdown 20230412/d/dvclive/2.6.2-2.6.3/diff.md --exclude *.pyd
+[2023-04-12 00:21:45] INFO root fetch - processPackages [bago]: Downloading https://files.pythonhosted.org/packages/e6/3f/e1d73385e68da0e9d500c91fdae8cd13f8759ef2e927a7feb7cae0de3701/bago-0.0.9.tar.gz
+[2023-04-12 00:21:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:46] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 00:21:46] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 00:21:46] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 00:21:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:46] INFO root fetch - processPackages [pyfunctional-elunico]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-12 00:21:46] INFO root fetch - processPackages [pyfunctional-elunico]: executing diffoscope
+[2023-04-12 00:21:46] INFO root fetch - processPackages [pyfunctional-elunico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfunctional-elunico-0.8.1.tar.gz tmp/pyfunctional-elunico-0.9.0.tar.gz --markdown 20230412/p/pyfunctional-elunico/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 00:21:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:46] INFO root fetch - processPackages [bago]: executing diffoscope
+[2023-04-12 00:21:46] INFO root fetch - processPackages [bago]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bago-0.0.8.tar.gz tmp/bago-0.0.9.tar.gz --markdown 20230412/b/bago/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:21:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:21:50] INFO root fetch - main [MainThread]: Store serial: [17666888]
