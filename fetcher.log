@@ -739,3 +739,54 @@
 [2023-04-12 01:19:43] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:20:16] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:20:16] INFO root fetch - main [MainThread]: Store serial: [17667331]
+[2023-04-12 01:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667331]
+[2023-04-12 01:25:23] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 01:25:23] INFO root fetch - processPackages [web3-ethereum-defi]: New version: [0.9] Old Version: [0.8]
+[2023-04-12 01:25:23] INFO root fetch - processPackages [hydro-erosion]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-12 01:25:23] INFO root fetch - processPackages [hcs-cli]: New version: [0.1.28] Old Version: [0.1.27]
+[2023-04-12 01:25:23] INFO root fetch - processPackages [trading-strategy]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 01:25:23] INFO root fetch - processPackages [notter]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hydro-erosion]: Downloading https://files.pythonhosted.org/packages/2d/ff/64d3e84e576309c5d2243f0db4d5c43cc770d4bf3e0049d477ab4995a50f/hydro_erosion-0.1.4.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [notter]: Downloading https://files.pythonhosted.org/packages/fc/1f/5c11064a62397b7193c93125b6410a772d55cad8f3db96942f5bb4af0021/notter-0.1.0.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [trading-strategy]: Downloading https://files.pythonhosted.org/packages/ef/db/cd3ff8efe6cae935b76889796fae0e73dbff0e09b269d049406dd64339c6/trading_strategy-0.9.0.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hcs-cli]: Downloading https://files.pythonhosted.org/packages/48/16/8d2688b7f023ad288dcd51ce9b8844fc586c172aa90dd9729c6667361922/hcs-cli-0.1.28.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hydro-erosion]: executing diffoscope
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hydro-erosion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_erosion-0.1.3.tar.gz tmp/hydro_erosion-0.1.4.tar.gz --markdown 20230412/h/hydro-erosion/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-12 01:25:24] INFO root fetch - processPackages [web3-ethereum-defi]: executing diffoscope
+[2023-04-12 01:25:24] INFO root fetch - processPackages [web3-ethereum-defi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3-ethereum-defi-0.8.tar.gz tmp/web3-ethereum-defi-0.9.tar.gz --markdown 20230412/w/web3-ethereum-defi/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hcs-cli]: executing diffoscope
+[2023-04-12 01:25:24] INFO root fetch - processPackages [hcs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcs-cli-0.1.27.tar.gz tmp/hcs-cli-0.1.28.tar.gz --markdown 20230412/h/hcs-cli/0.1.27-0.1.28/diff.md --exclude *.pyd
+[2023-04-12 01:25:24] INFO root fetch - processPackages [notter]: Downloading https://files.pythonhosted.org/packages/1f/07/c6c9574283c8f1b696acbb58b0db3c717e43ca761bc279234cd543eb0f07/notter-0.2.0.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [trading-strategy]: Downloading https://files.pythonhosted.org/packages/5c/56/6a3bae759cb2d96b94978afb98541c2d384070652678881d1ec20043940b/trading_strategy-0.9.1.tar.gz
+[2023-04-12 01:25:24] INFO root fetch - processPackages [notter]: executing diffoscope
+[2023-04-12 01:25:24] INFO root fetch - processPackages [notter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notter-0.1.0.tar.gz tmp/notter-0.2.0.tar.gz --markdown 20230412/n/notter/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 01:25:24] INFO root fetch - processPackages [trading-strategy]: executing diffoscope
+[2023-04-12 01:25:24] INFO root fetch - processPackages [trading-strategy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trading_strategy-0.9.0.tar.gz tmp/trading_strategy-0.9.1.tar.gz --markdown 20230412/t/trading-strategy/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 01:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:25] INFO root fetch - processPackages [hordelib]: New version: [0.5.19] Old Version: [0.5.18]
+[2023-04-12 01:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:25] INFO root fetch - processPackages [fastq-handler]: New version: [0.1.3] Old Version: [0.1.1]
+[2023-04-12 01:25:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:25] INFO root fetch - processPackages [pbit]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-12 01:25:25] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/3f/8f/59f6c8a3c8d01bb16da496a9643777b9b5ddca0c9b7051c6b6252335d82c/hordelib-0.5.19.tar.gz
+[2023-04-12 01:25:25] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-12 01:25:25] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.5.18.tar.gz tmp/hordelib-0.5.19.tar.gz --markdown 20230412/h/hordelib/0.5.18-0.5.19/diff.md --exclude *.pyd
+[2023-04-12 01:25:25] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/c3/08/0bd72747f6e9a78b4a13a9ab9ff631df1d5fc4864cd6446cebf6c1470c1e/pbit-0.2.0.tar.gz
+[2023-04-12 01:25:25] INFO root fetch - processPackages [fastq-handler]: Downloading https://files.pythonhosted.org/packages/4f/b1/c99e7b0f825a4c3e2eb1b00006accea4a4808b01032ff744931191a0a945/fastq_handler-0.1.3.tar.gz
+[2023-04-12 01:25:25] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 01:25:25] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.1.2.tar.gz tmp/pbit-0.2.0.tar.gz --markdown 20230412/p/pbit/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 01:25:26] INFO root fetch - processPackages [fastq-handler]: executing diffoscope
+[2023-04-12 01:25:26] INFO root fetch - processPackages [fastq-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastq_handler-0.1.1.tar.gz tmp/fastq_handler-0.1.3.tar.gz --markdown 20230412/f/fastq-handler/0.1.1-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 01:25:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:26] WARNING root fetch - processPackages [teco-challenger-lib]: Skipping, unable to determine old version
+[2023-04-12 01:25:26] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:25:26] INFO root fetch - processPackages [decisionlab]: New version: [0.0.2] Old Version: [0.0.1b0]
+[2023-04-12 01:25:26] INFO root fetch - processPackages [decisionlab]: Downloading https://files.pythonhosted.org/packages/9f/43/746ac8635547675567d957354f0444725ea1d0ae7b58116ec00cf1cecac0/decisionlab-0.0.2.tar.gz
+[2023-04-12 01:25:26] INFO root fetch - processPackages [decisionlab]: executing diffoscope
+[2023-04-12 01:25:26] INFO root fetch - processPackages [decisionlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decisionlab-0.0.1b0.tar.gz tmp/decisionlab-0.0.2.tar.gz --markdown 20230412/d/decisionlab/0.0.1b0-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 01:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:25:30] INFO root fetch - main [MainThread]: Store serial: [17667365]
