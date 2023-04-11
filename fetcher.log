@@ -940,3 +940,34 @@
 [2023-04-12 01:41:50] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:41:58] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:41:58] INFO root fetch - main [MainThread]: Store serial: [17667502]
+[2023-04-12 01:47:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667502]
+[2023-04-12 01:47:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 01:47:06] INFO root fetch - processPackages [SIOTCommon]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 01:47:06] INFO root fetch - processPackages [pyolaf]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 01:47:06] INFO root fetch - processPackages [richvalues]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-12 01:47:06] INFO root fetch - processPackages [jtorskeandeleaepicMyLibrary]: New version: [1.0.1] Old Version: [1.0]
+[2023-04-12 01:47:06] INFO root fetch - processPackages [seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 01:47:06] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-12 01:47:06] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.8.tar.gz tmp/richvalues-3.0.9.tar.gz --markdown 20230412/r/richvalues/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-12 01:47:06] INFO root fetch - processPackages [seleniumbase]: executing diffoscope
+[2023-04-12 01:47:06] INFO root fetch - processPackages [seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seleniumbase-4.9.8.tar.gz tmp/seleniumbase-4.9.9.tar.gz --markdown 20230412/s/seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 01:47:06] INFO root fetch - processPackages [pyolaf]: Downloading https://files.pythonhosted.org/packages/87/1b/a3c9b1e570d5a717985276388d1961723c3dd4096f00bdf589b8c4e1fe57/pyolaf-0.1.0.tar.gz
+[2023-04-12 01:47:06] INFO root fetch - processPackages [SIOTCommon]: Downloading https://files.pythonhosted.org/packages/62/e2/4212fa9e768490eb61831be6733c885eb9bf4d228a9afc3ca800832e814d/SIOTCommon-0.0.1.tar.gz
+[2023-04-12 01:47:06] INFO root fetch - processPackages [jtorskeandeleaepicMyLibrary]: Downloading https://files.pythonhosted.org/packages/2b/99/b3f5d16b3e32b40d08f7959c621b8ad1e946659ef324865e37381d01d9bc/jtorskeandeleaepicMyLibrary-1.0-py3-none-any.whl
+[2023-04-12 01:47:06] INFO root fetch - processPackages [pyolaf]: Downloading https://files.pythonhosted.org/packages/c3/aa/669d3b19c18117e9b57a27daeb69e8df52a1b3cda50a5784948a8865bf70/pyolaf-0.2.0.tar.gz
+[2023-04-12 01:47:06] INFO root fetch - processPackages [jtorskeandeleaepicMyLibrary]: Downloading https://files.pythonhosted.org/packages/70/19/189807664e53675c98de06e50dd58d46124ee4164f65fa49d990677a3567/jtorskeandeleaepicMyLibrary-1.0.1-py3-none-any.whl
+[2023-04-12 01:47:06] INFO root fetch - processPackages [SIOTCommon]: Downloading https://files.pythonhosted.org/packages/52/33/47d7606fca63fa5b513d6af4d4f47d7b5d2871f1ea376ff11da3ca28efbe/SIOTCommon-0.0.2.tar.gz
+[2023-04-12 01:47:06] INFO root fetch - processPackages [pyolaf]: executing diffoscope
+[2023-04-12 01:47:06] INFO root fetch - processPackages [pyolaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyolaf-0.1.0.tar.gz tmp/pyolaf-0.2.0.tar.gz --markdown 20230412/p/pyolaf/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 01:47:06] INFO root fetch - processPackages [SIOTCommon]: executing diffoscope
+[2023-04-12 01:47:06] INFO root fetch - processPackages [SIOTCommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SIOTCommon-0.0.1.tar.gz tmp/SIOTCommon-0.0.2.tar.gz --markdown 20230412/S/SIOTCommon/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 01:47:06] INFO root fetch - processPackages [jtorskeandeleaepicMyLibrary]: executing diffoscope
+[2023-04-12 01:47:06] INFO root fetch - processPackages [jtorskeandeleaepicMyLibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jtorskeandeleaepicMyLibrary-1.0-py3-none-any.whl.zip tmp/jtorskeandeleaepicMyLibrary-1.0.1-py3-none-any.whl.zip --markdown 20230412/j/jtorskeandeleaepicMyLibrary/1.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 01:47:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:47:07] WARNING root fetch - processPackages [Gestor-CSprog87]: Skipping, unable to determine old version
+[2023-04-12 01:47:07] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:47:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:47:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:47:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:47:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:47:09] INFO root fetch - main [MainThread]: Store serial: [17667520]
