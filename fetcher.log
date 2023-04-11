@@ -537,3 +537,64 @@
 [2023-04-12 01:04:00] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:04:04] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:04:04] INFO root fetch - main [MainThread]: Store serial: [17667203]
+[2023-04-12 01:09:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667203]
+[2023-04-12 01:09:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 01:09:11] INFO root fetch - processPackages [looker-sdk]: New version: [7.20.0] Old Version: [23.6.0]
+[2023-04-12 01:09:11] INFO root fetch - processPackages [prunerr]: New version: [1.1.0b24] Old Version: [1.0.0]
+[2023-04-12 01:09:11] INFO root fetch - processPackages [spyder-ml]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-04-12 01:09:11] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: New version: [0.3.270] Old Version: [0.3.269]
+[2023-04-12 01:09:11] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 01:09:11] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 01:09:11] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 01:09:11] INFO root fetch - processPackages [looker-sdk]: Downloading https://files.pythonhosted.org/packages/0f/2d/691ba9d69d1d7b01ee34c898288288e5d01b3255267c42678173f6119b45/looker_sdk-23.6.0.tar.gz
+[2023-04-12 01:09:11] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: Downloading https://files.pythonhosted.org/packages/16/91/4b958717b5aeb92a44adb9d27d3fa978632cafe5d23cc14a91116a9adf6b/pepperize.cdk-ses-smtp-credentials-0.3.270.tar.gz
+[2023-04-12 01:09:11] INFO root fetch - processPackages [spyder-ml]: Downloading https://files.pythonhosted.org/packages/d4/fa/e7ae1db6c9ca4a3616505f4845748fb16b96c57999ff6ace6b16351f3e0b/spyder_ml-2.1.3.tar.gz
+[2023-04-12 01:09:11] INFO root fetch - processPackages [prunerr]: Downloading https://files.pythonhosted.org/packages/3f/59/4b7d13489805e0db6e488bd27c46a51f241de5fe206d00c0d0e86d883aa6/prunerr-1.0.0.tar.gz
+[2023-04-12 01:09:11] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: executing diffoscope
+[2023-04-12 01:09:11] INFO root fetch - processPackages [pepperize.cdk-ses-smtp-credentials]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-ses-smtp-credentials-0.3.269.tar.gz tmp/pepperize.cdk-ses-smtp-credentials-0.3.270.tar.gz --markdown 20230412/p/pepperize.cdk-ses-smtp-credentials/0.3.269-0.3.270/diff.md --exclude *.pyd
+[2023-04-12 01:09:12] INFO root fetch - processPackages [spyder-ml]: Downloading https://files.pythonhosted.org/packages/06/0c/fbfdc11ef8fe69cbf03d6aa62acfe70380d849339de0fdaf7e2e96a3c3dc/spyder_ml-2.1.4.tar.gz
+[2023-04-12 01:09:12] INFO root fetch - processPackages [prunerr]: Downloading https://files.pythonhosted.org/packages/62/c1/de1dd68e33ced93985d3e60303c825e3929a90d99ca0188d7f5cc9d194e8/prunerr-1.1.0b24.tar.gz
+[2023-04-12 01:09:12] INFO root fetch - processPackages [looker-sdk]: Downloading https://files.pythonhosted.org/packages/6f/7b/238e67b445e366c606f1ae4bd628b427293ee69e827cbfbb4c92acd59dff/looker_sdk-7.20.0.tar.gz
+[2023-04-12 01:09:12] INFO root fetch - processPackages [spyder-ml]: executing diffoscope
+[2023-04-12 01:09:12] INFO root fetch - processPackages [spyder-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyder_ml-2.1.3.tar.gz tmp/spyder_ml-2.1.4.tar.gz --markdown 20230412/s/spyder-ml/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-04-12 01:09:12] INFO root fetch - processPackages [prunerr]: executing diffoscope
+[2023-04-12 01:09:12] INFO root fetch - processPackages [prunerr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prunerr-1.0.0.tar.gz tmp/prunerr-1.1.0b24.tar.gz --markdown 20230412/p/prunerr/1.0.0-1.1.0b24/diff.md --exclude *.pyd
+[2023-04-12 01:09:12] INFO root fetch - processPackages [looker-sdk]: executing diffoscope
+[2023-04-12 01:09:12] INFO root fetch - processPackages [looker-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/looker_sdk-23.6.0.tar.gz tmp/looker_sdk-7.20.0.tar.gz --markdown 20230412/l/looker-sdk/23.6.0-7.20.0/diff.md --exclude *.pyd
+[2023-04-12 01:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:13] INFO root fetch - processPackages [pds.deeparchive]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-12 01:09:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:13] INFO root fetch - processPackages [cpggen]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-12 01:09:13] INFO root fetch - processPackages [pds.deeparchive]: Downloading https://files.pythonhosted.org/packages/44/dc/1e4e8165bbee6a5b4c79d03b18d342e403203a9502e9a06eb86bd21d90b7/pds.deeparchive-1.1.2-py3-none-any.whl
+[2023-04-12 01:09:13] INFO root fetch - processPackages [cpggen]: Downloading https://files.pythonhosted.org/packages/e6/3c/e6015073b02a3650dd3c78be676f989adf6aac08d008d1a166f857447b34/cpggen-0.9.0.tar.gz
+[2023-04-12 01:09:13] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-12 01:09:13] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.8.1.tar.gz tmp/cpggen-0.9.0.tar.gz --markdown 20230412/c/cpggen/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 01:09:14] INFO root fetch - processPackages [pds.deeparchive]: Downloading https://files.pythonhosted.org/packages/dd/a8/285605c8dde9c47de42bc0d0084ec34b8232f970e86f30e33077c7034b0f/pds.deeparchive-1.1.3-py3-none-any.whl
+[2023-04-12 01:09:14] INFO root fetch - processPackages [pds.deeparchive]: executing diffoscope
+[2023-04-12 01:09:14] INFO root fetch - processPackages [pds.deeparchive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pds.deeparchive-1.1.2-py3-none-any.whl.zip tmp/pds.deeparchive-1.1.3-py3-none-any.whl.zip --markdown 20230412/p/pds.deeparchive/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-12 01:09:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:14] INFO root fetch - processPackages [hydro-erosion]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 01:09:14] INFO root fetch - processPackages [hydro-erosion]: Downloading https://files.pythonhosted.org/packages/c8/a6/eb7d807497631d5321d2eaf082d4b0e7bf6b8e96364668fa6299d51cccd8/hydro_erosion-0.1.0.tar.gz
+[2023-04-12 01:09:15] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:15] INFO root fetch - processPackages [MPSPlots]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-12 01:09:15] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:15] WARNING root fetch - processPackages [inauconf]: Skipping, unable to determine old version
+[2023-04-12 01:09:15] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:09:15] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:15] INFO root fetch - processPackages [DataVisual]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 01:09:15] INFO root fetch - processPackages [MPSPlots]: Downloading https://files.pythonhosted.org/packages/ce/8b/51d38c6f29ce44fb9fa9dfffaedea6c88ffbb4fe3986027c2edc82127141/MPSPlots-0.3.6-py3-none-any.whl
+[2023-04-12 01:09:15] INFO root fetch - processPackages [hydro-erosion]: Downloading https://files.pythonhosted.org/packages/09/62/d2ccc954a040a5fb03cb8c25881d359567cccc2e7ee6db9a3f140eb5c430/hydro_erosion-0.1.1.tar.gz
+[2023-04-12 01:09:15] INFO root fetch - processPackages [DataVisual]: Downloading https://files.pythonhosted.org/packages/73/62/794a55d1be2f5d07ad1237bea05c3ff968fb10396d4d900d9ddbcea97f2f/DataVisual-0.3.8-py3-none-any.whl
+[2023-04-12 01:09:15] INFO root fetch - processPackages [MPSPlots]: Downloading https://files.pythonhosted.org/packages/8d/e7/aa1734a4b3565bb0ba1cb62887b63c4eff126698bfb1773a3ca85b4a64af/MPSPlots-0.3.7-py3-none-any.whl
+[2023-04-12 01:09:15] INFO root fetch - processPackages [MPSPlots]: executing diffoscope
+[2023-04-12 01:09:15] INFO root fetch - processPackages [MPSPlots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MPSPlots-0.3.6-py3-none-any.whl.zip tmp/MPSPlots-0.3.7-py3-none-any.whl.zip --markdown 20230412/M/MPSPlots/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-12 01:09:16] INFO root fetch - processPackages [DataVisual]: Downloading https://files.pythonhosted.org/packages/2d/ba/6613013aa4a00df8e9e4d77a6a7795e1bd10cd0ef6b8c364035c685ea4b6/DataVisual-0.3.9-py3-none-any.whl
+[2023-04-12 01:09:16] INFO root fetch - processPackages [hydro-erosion]: executing diffoscope
+[2023-04-12 01:09:16] INFO root fetch - processPackages [hydro-erosion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_erosion-0.1.0.tar.gz tmp/hydro_erosion-0.1.1.tar.gz --markdown 20230412/h/hydro-erosion/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 01:09:16] INFO root fetch - processPackages [DataVisual]: executing diffoscope
+[2023-04-12 01:09:16] INFO root fetch - processPackages [DataVisual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataVisual-0.3.8-py3-none-any.whl.zip tmp/DataVisual-0.3.9-py3-none-any.whl.zip --markdown 20230412/D/DataVisual/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 01:09:16] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:17] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:17] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:17] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:09:17] INFO root fetch - main [MainThread]: Store serial: [17667245]
