@@ -228,3 +228,53 @@
 [2023-04-12 00:27:03] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:27:35] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:27:35] INFO root fetch - main [MainThread]: Store serial: [17666923]
+[2023-04-12 00:32:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17666923]
+[2023-04-12 00:32:42] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 00:32:42] INFO root fetch - processPackages [qsea]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 00:32:42] INFO root fetch - processPackages [mosaicml-cli]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-12 00:32:42] WARNING root fetch - processPackages [pbit]: Skipping, unable to determine old version
+[2023-04-12 00:32:42] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:32:42] INFO root fetch - processPackages [Shiphelm]: New version: [0.7.1b0] Old Version: [0.6.2]
+[2023-04-12 00:32:42] INFO root fetch - processPackages [playgroundrl]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 00:32:42] WARNING root fetch - processPackages [hillclimbers]: Skipping, unable to determine old version
+[2023-04-12 00:32:42] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:32:42] INFO root fetch - processPackages [tcflow]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 00:32:43] INFO root fetch - processPackages [qsea]: Downloading https://files.pythonhosted.org/packages/9b/d9/eb8c648d2ab8ecb99d5c19d6abef0992b28bdc493277c49ef776b17d59fb/qsea-0.1.6.tar.gz
+[2023-04-12 00:32:43] INFO root fetch - processPackages [tcflow]: executing diffoscope
+[2023-04-12 00:32:43] INFO root fetch - processPackages [tcflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcflow-0.0.8.tar.gz tmp/tcflow-0.0.9.tar.gz --markdown 20230412/t/tcflow/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:32:43] INFO root fetch - processPackages [mosaicml-cli]: Downloading https://files.pythonhosted.org/packages/2b/2e/d2319cb06ed94442e5d9e645a945fe9b1987568e80d33f09a9f10b0aacd4/mosaicml_cli-0.3.6-py3-none-any.whl
+[2023-04-12 00:32:43] INFO root fetch - processPackages [qsea]: executing diffoscope
+[2023-04-12 00:32:43] INFO root fetch - processPackages [qsea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qsea-0.1.5.tar.gz tmp/qsea-0.1.6.tar.gz --markdown 20230412/q/qsea/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 00:32:43] INFO root fetch - processPackages [mosaicml-cli]: executing diffoscope
+[2023-04-12 00:32:43] INFO root fetch - processPackages [mosaicml-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaicml_cli-0.3.5-py3-none-any.whl.zip tmp/mosaicml_cli-0.3.6-py3-none-any.whl.zip --markdown 20230412/m/mosaicml-cli/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-12 00:32:43] INFO root fetch - processPackages [Shiphelm]: Downloading https://files.pythonhosted.org/packages/84/63/9c8fdcd8ccf7fbd35baa1193fa81e0151b54b2214b6853d10ff72679fa64/Shiphelm-0.7.1b0.tar.gz
+[2023-04-12 00:32:43] INFO root fetch - processPackages [playgroundrl]: executing diffoscope
+[2023-04-12 00:32:43] INFO root fetch - processPackages [playgroundrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playgroundrl-0.0.7.tar.gz tmp/playgroundrl-0.0.8.tar.gz --markdown 20230412/p/playgroundrl/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 00:32:43] INFO root fetch - processPackages [Shiphelm]: executing diffoscope
+[2023-04-12 00:32:43] INFO root fetch - processPackages [Shiphelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Shiphelm-0.6.2.tar.gz tmp/Shiphelm-0.7.1b0.tar.gz --markdown 20230412/S/Shiphelm/0.6.2-0.7.1b0/diff.md --exclude *.pyd
+[2023-04-12 00:32:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:44] INFO root fetch - processPackages [wrangles]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-12 00:32:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:44] INFO root fetch - processPackages [aps-common-libraries]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-12 00:32:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:44] INFO root fetch - processPackages [wrangles]: Downloading https://files.pythonhosted.org/packages/71/91/4f8391bbd2f223c352e02eca8fed9389b8fdd81d66e56221152463e3bef9/wrangles-1.1.0.tar.gz
+[2023-04-12 00:32:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:44] INFO root fetch - processPackages [aps-common-libraries]: Downloading https://files.pythonhosted.org/packages/fc/34/dc24e3c267f5a380366338c6f784d1a32339314111c9ddde7a72bab584a0/aps_common_libraries-1.0.1.tar.gz
+[2023-04-12 00:32:44] INFO root fetch - processPackages [arkdriver]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 00:32:44] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 00:32:44] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/fc/07/bbb2e4f0042e5c0c25db38911dd89d60c147d1044392120aa839e3b15c25/arkdriver-0.1.8.tar.gz
+[2023-04-12 00:32:44] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411222>=10485760
+[2023-04-12 00:32:44] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:32:44] INFO root fetch - processPackages [wrangles]: Downloading https://files.pythonhosted.org/packages/95/3c/54ff2536b664cfeb9a4ba6215244c4d0dd5eb1ae7bb8a1be3b34a571b812/wrangles-1.2.0.tar.gz
+[2023-04-12 00:32:44] INFO root fetch - processPackages [wrangles]: executing diffoscope
+[2023-04-12 00:32:44] INFO root fetch - processPackages [wrangles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrangles-1.1.0.tar.gz tmp/wrangles-1.2.0.tar.gz --markdown 20230412/w/wrangles/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 00:32:44] INFO root fetch - processPackages [aps-common-libraries]: Downloading https://files.pythonhosted.org/packages/53/60/af3ffc6d614b376ce8fa30c732a2e6bfb05593235b62872879a5c1004fbd/aps_common_libraries-1.0.2.tar.gz
+[2023-04-12 00:32:44] INFO root fetch - processPackages [aps-common-libraries]: executing diffoscope
+[2023-04-12 00:32:44] INFO root fetch - processPackages [aps-common-libraries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aps_common_libraries-1.0.1.tar.gz tmp/aps_common_libraries-1.0.2.tar.gz --markdown 20230412/a/aps-common-libraries/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 00:32:44] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-12 00:32:44] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230412/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:32:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:32:46] INFO root fetch - main [MainThread]: Store serial: [17666982]
