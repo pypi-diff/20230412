@@ -598,3 +598,70 @@
 [2023-04-12 01:09:17] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:09:17] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:09:17] INFO root fetch - main [MainThread]: Store serial: [17667245]
+[2023-04-12 01:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667245]
+[2023-04-12 01:14:25] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 01:14:25] WARNING root fetch - processPackages [kttools]: Skipping, unable to determine old version
+[2023-04-12 01:14:25] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:14:25] INFO root fetch - processPackages [aerosol-functions]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 01:14:25] INFO root fetch - processPackages [PyFinitDiff]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-12 01:14:25] INFO root fetch - processPackages [sphinxcontrib-autoyaml]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-12 01:14:25] INFO root fetch - processPackages [gama-cli]: New version: [1.7.2] Old Version: [1.7.1]
+[2023-04-12 01:14:25] INFO root fetch - processPackages [sarabande]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-12 01:14:25] INFO root fetch - processPackages [sphinxcontrib-autoyaml]: Downloading https://files.pythonhosted.org/packages/c7/d1/19b8d92b1e78032df40746f6310bd13d35df197e4bff6ea73450a9e7a7fc/sphinxcontrib_autoyaml-1.1.0.tar.gz
+[2023-04-12 01:14:25] INFO root fetch - processPackages [aerosol-functions]: Downloading https://files.pythonhosted.org/packages/55/d9/67fe3b843ee12576e12bf24b03d40598cc459b98d058dda33d549ad1f55f/aerosol-functions-0.0.8.tar.gz
+[2023-04-12 01:14:25] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/74/7b/3f3223b10c30d5feaa3ab6056ff63a83b76061611351de1cb4cc545e79ce/gama_cli-1.7.2.tar.gz
+[2023-04-12 01:14:25] INFO root fetch - processPackages [sarabande]: Downloading https://files.pythonhosted.org/packages/1f/e1/e5c14e13553b555f28cec6b2568a3157204701fed0a02d14ee5961f9ad45/sarabande-0.4.0.tar.gz
+[2023-04-12 01:14:25] INFO root fetch - processPackages [PyFinitDiff]: Downloading https://files.pythonhosted.org/packages/ef/7c/786123cd805a02ad36237e00e6660be839852bc2e42077025aefdcc5186a/PyFinitDiff-0.3.3-py3-none-any.whl
+[2023-04-12 01:14:25] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-12 01:14:25] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.7.1.tar.gz tmp/gama_cli-1.7.2.tar.gz --markdown 20230412/g/gama-cli/1.7.1-1.7.2/diff.md --exclude *.pyd
+[2023-04-12 01:14:25] INFO root fetch - processPackages [sphinxcontrib-autoyaml]: Downloading https://files.pythonhosted.org/packages/7d/45/e198267a39f2fa763d6275ef186c202ac69b689899d1ef55b6fa60b45890/sphinxcontrib_autoyaml-1.1.1.tar.gz
+[2023-04-12 01:14:26] INFO root fetch - processPackages [aerosol-functions]: Downloading https://files.pythonhosted.org/packages/c5/a6/067c63afe777d94ab1cc46f0cdeb12ab79159cb6f6f7e0286b09547f08c0/aerosol-functions-0.0.9.tar.gz
+[2023-04-12 01:14:26] INFO root fetch - processPackages [PyFinitDiff]: Downloading https://files.pythonhosted.org/packages/6f/7e/f1baba2a621b371cb0cd41e261e58d6aee79eeda8b784fd5e903e3cf9668/PyFinitDiff-0.3.4-py3-none-any.whl
+[2023-04-12 01:14:26] INFO root fetch - processPackages [sarabande]: Downloading https://files.pythonhosted.org/packages/75/ce/9075789519b355392cfa16e93899767af63622050d2d7bd07d6ecd1ddf48/sarabande-0.5.0.tar.gz
+[2023-04-12 01:14:26] INFO root fetch - processPackages [sphinxcontrib-autoyaml]: executing diffoscope
+[2023-04-12 01:14:26] INFO root fetch - processPackages [sphinxcontrib-autoyaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_autoyaml-1.1.0.tar.gz tmp/sphinxcontrib_autoyaml-1.1.1.tar.gz --markdown 20230412/s/sphinxcontrib-autoyaml/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-12 01:14:26] INFO root fetch - processPackages [aerosol-functions]: executing diffoscope
+[2023-04-12 01:14:26] INFO root fetch - processPackages [aerosol-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aerosol-functions-0.0.8.tar.gz tmp/aerosol-functions-0.0.9.tar.gz --markdown 20230412/a/aerosol-functions/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 01:14:26] INFO root fetch - processPackages [sarabande]: executing diffoscope
+[2023-04-12 01:14:26] INFO root fetch - processPackages [sarabande]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarabande-0.4.0.tar.gz tmp/sarabande-0.5.0.tar.gz --markdown 20230412/s/sarabande/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 01:14:26] INFO root fetch - processPackages [PyFinitDiff]: executing diffoscope
+[2023-04-12 01:14:26] INFO root fetch - processPackages [PyFinitDiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFinitDiff-0.3.3-py3-none-any.whl.zip tmp/PyFinitDiff-0.3.4-py3-none-any.whl.zip --markdown 20230412/P/PyFinitDiff/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-12 01:14:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:27] INFO root fetch - processPackages [hydro-erosion]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 01:14:27] INFO root fetch - processPackages [hydro-erosion]: Downloading https://files.pythonhosted.org/packages/3a/15/0787afbb9ca15e2071f9e212fd2d3a4549706bfd1299bc63c795dbed5df9/hydro_erosion-0.1.2.tar.gz
+[2023-04-12 01:14:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:27] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 01:14:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:27] INFO root fetch - processPackages [FiberFusing]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 01:14:27] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 01:14:27] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 01:14:27] INFO root fetch - processPackages [FiberFusing]: Downloading https://files.pythonhosted.org/packages/df/77/3a8f1ab229d2a018d59cdbbbe044b9dd979be6a4f62456950b8295e63488/FiberFusing-0.3.8-py3-none-any.whl
+[2023-04-12 01:14:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:27] INFO root fetch - processPackages [decisionlab]: New version: [0.0.1b0] Old Version: [0.0.1]
+[2023-04-12 01:14:27] INFO root fetch - processPackages [hydro-erosion]: executing diffoscope
+[2023-04-12 01:14:27] INFO root fetch - processPackages [hydro-erosion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_erosion-0.1.1.tar.gz tmp/hydro_erosion-0.1.2.tar.gz --markdown 20230412/h/hydro-erosion/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 01:14:28] INFO root fetch - processPackages [decisionlab]: Downloading https://files.pythonhosted.org/packages/41/e0/e18a424cc43abc0c30c08affb29122e3ecaf7018aa785cbfc2bae7bd49b4/decisionlab-0.0.1.tar.gz
+[2023-04-12 01:14:28] INFO root fetch - processPackages [FiberFusing]: Downloading https://files.pythonhosted.org/packages/7c/7a/fbbd439a5307775f508c311a5bc9d262463fdf21a27285b962769858e266/FiberFusing-0.3.9-py3-none-any.whl
+[2023-04-12 01:14:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:28] INFO root fetch - processPackages [zigpy]: New version: [0.54.1] Old Version: [0.54.0]
+[2023-04-12 01:14:28] INFO root fetch - processPackages [FiberFusing]: executing diffoscope
+[2023-04-12 01:14:28] INFO root fetch - processPackages [FiberFusing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FiberFusing-0.3.8-py3-none-any.whl.zip tmp/FiberFusing-0.3.9-py3-none-any.whl.zip --markdown 20230412/F/FiberFusing/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 01:14:28] INFO root fetch - processPackages [zigpy]: Downloading https://files.pythonhosted.org/packages/4c/2a/e034f482ef4827c19b805d66d927dc3e61123175eb62df5534847845d443/zigpy-0.54.0.tar.gz
+[2023-04-12 01:14:28] INFO root fetch - processPackages [decisionlab]: Downloading https://files.pythonhosted.org/packages/f4/ec/dd0e367cc0d120b48f11dd3b44220bbe62438e3316eb10055a0202ff9366/decisionlab-0.0.1b0.tar.gz
+[2023-04-12 01:14:28] INFO root fetch - processPackages [zigpy]: Downloading https://files.pythonhosted.org/packages/5c/27/852d2566f78d112e89295245387267be7eb3e89c94a1229571560ce24971/zigpy-0.54.1.tar.gz
+[2023-04-12 01:14:28] INFO root fetch - processPackages [decisionlab]: executing diffoscope
+[2023-04-12 01:14:28] INFO root fetch - processPackages [decisionlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decisionlab-0.0.1.tar.gz tmp/decisionlab-0.0.1b0.tar.gz --markdown 20230412/d/decisionlab/0.0.1-0.0.1b0/diff.md --exclude *.pyd
+[2023-04-12 01:14:28] INFO root fetch - processPackages [zigpy]: executing diffoscope
+[2023-04-12 01:14:28] INFO root fetch - processPackages [zigpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zigpy-0.54.0.tar.gz tmp/zigpy-0.54.1.tar.gz --markdown 20230412/z/zigpy/0.54.0-0.54.1/diff.md --exclude *.pyd
+[2023-04-12 01:14:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:29] INFO root fetch - processPackages [mbp]: New version: [1.5.9] Old Version: [1.5.8]
+[2023-04-12 01:14:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:29] INFO root fetch - processPackages [mbp]: Downloading https://files.pythonhosted.org/packages/3c/e1/9032e34f9afe0d7c045dae1859544911f91cd6e188dad59b0f21e20d8c01/mbp-1.5.8.tar.gz
+[2023-04-12 01:14:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:29] INFO root fetch - processPackages [mbp]: Downloading https://files.pythonhosted.org/packages/ae/86/38ea7d4f60bb356337d6ccad391a9b0dc4df071eabac63465e3ee568e3b2/mbp-1.5.9.tar.gz
+[2023-04-12 01:14:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:29] INFO root fetch - processPackages [mbp]: executing diffoscope
+[2023-04-12 01:14:29] INFO root fetch - processPackages [mbp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mbp-1.5.8.tar.gz tmp/mbp-1.5.9.tar.gz --markdown 20230412/m/mbp/1.5.8-1.5.9/diff.md --exclude *.pyd
+[2023-04-12 01:14:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:14:30] INFO root fetch - main [MainThread]: Store serial: [17667284]
