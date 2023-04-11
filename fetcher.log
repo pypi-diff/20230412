@@ -790,3 +790,49 @@
 [2023-04-12 01:25:28] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:25:30] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:25:30] INFO root fetch - main [MainThread]: Store serial: [17667365]
+[2023-04-12 01:30:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667365]
+[2023-04-12 01:30:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 01:30:38] INFO root fetch - processPackages [PyMieSim]: New version: [0.10.9] Old Version: [0.10.8]
+[2023-04-12 01:30:38] INFO root fetch - processPackages [bq-tools-dirupload]: New version: [0.8.9.1] Old Version: [0.8.9]
+[2023-04-12 01:30:38] INFO root fetch - processPackages [inauconf]: New version: [1.1.0] Old Version: [1.0]
+[2023-04-12 01:30:38] INFO root fetch - processPackages [Winfo]: New version: [0.0.3] Old Version: [0.0.2.7]
+[2023-04-12 01:30:38] INFO root fetch - processPackages [pytorch-common]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 01:30:39] INFO root fetch - processPackages [PyMieSim]: Downloading https://files.pythonhosted.org/packages/36/c7/259c052d8f798048c7bab1fcee0c05f081a89241bb9bfcb8c9cfc38e7d98/PyMieSim-0.10.8-cp39-cp39-win_amd64.whl
+[2023-04-12 01:30:39] INFO root fetch - processPackages [pytorch-common]: Downloading https://files.pythonhosted.org/packages/c6/1b/e87963d2d751a4eb0f4f5dead9c97533919edfec7e9dcc78823c8d204f24/pytorch-common-0.1.0.tar.gz
+[2023-04-12 01:30:39] INFO root fetch - processPackages [Winfo]: Downloading https://files.pythonhosted.org/packages/7d/ee/1572e211dd2763b67603c578a7620d23ce9250cd4160516341e80f69c0ae/Winfo-0.0.3.tar.gz
+[2023-04-12 01:30:39] INFO root fetch - processPackages [Winfo]: executing diffoscope
+[2023-04-12 01:30:39] INFO root fetch - processPackages [Winfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Winfo-0.0.2.7.tar.gz tmp/Winfo-0.0.3.tar.gz --markdown 20230412/W/Winfo/0.0.2.7-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 01:30:39] INFO root fetch - processPackages [inauconf]: Downloading https://files.pythonhosted.org/packages/a8/7a/2257ec0dac7dafa9254a9b6c82b74e4b7c32965916bd9fee61f43beba50b/inauconf-1.1.0.tar.gz
+[2023-04-12 01:30:39] INFO root fetch - processPackages [bq-tools-dirupload]: executing diffoscope
+[2023-04-12 01:30:39] INFO root fetch - processPackages [bq-tools-dirupload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bq_tools_dirupload-0.8.9-py3-none-any.whl.zip tmp/bq_tools_dirupload-0.8.9.1-py3-none-any.whl.zip --markdown 20230412/b/bq-tools-dirupload/0.8.9-0.8.9.1/diff.md --exclude *.pyd
+[2023-04-12 01:30:39] INFO root fetch - processPackages [pytorch-common]: Downloading https://files.pythonhosted.org/packages/6f/91/b14f012f51bf77af11c4b99f23dd1aae1a760604fad9984ed04d51a73fc7/pytorch-common-0.1.1.tar.gz
+[2023-04-12 01:30:39] INFO root fetch - processPackages [pytorch-common]: executing diffoscope
+[2023-04-12 01:30:39] INFO root fetch - processPackages [pytorch-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-common-0.1.0.tar.gz tmp/pytorch-common-0.1.1.tar.gz --markdown 20230412/p/pytorch-common/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 01:30:39] WARNING root fetch - processPackages [PyMieSim]: Skipping package: exceeds size limit 32113006>=10485760
+[2023-04-12 01:30:39] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:30:39] INFO root fetch - processPackages [tensorflow-metadata]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 01:30:39] INFO root fetch - processPackages [tensorflow-metadata]: Downloading https://files.pythonhosted.org/packages/20/e7/b4dcc898ca1c250ff1f1e431a3fdd2b347663283e8aea282704d59e92ad9/tensorflow_metadata-1.8.0-py3-none-any.whl
+[2023-04-12 01:30:39] INFO root fetch - processPackages [tensorflow-metadata]: Downloading https://files.pythonhosted.org/packages/22/42/6ebb03aef0cb37f2ea98f1bf04ed21450fec73941e8421ba3fa37f94ffaf/tensorflow_metadata-1.9.0-py3-none-any.whl
+[2023-04-12 01:30:39] INFO root fetch - processPackages [tensorflow-metadata]: executing diffoscope
+[2023-04-12 01:30:39] INFO root fetch - processPackages [tensorflow-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_metadata-1.8.0-py3-none-any.whl.zip tmp/tensorflow_metadata-1.9.0-py3-none-any.whl.zip --markdown 20230412/t/tensorflow-metadata/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 01:30:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:40] INFO root fetch - processPackages [teco-challenger-lib]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 01:30:40] INFO root fetch - processPackages [deep-tracking]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-12 01:30:40] INFO root fetch - processPackages [teco-challenger-lib]: Downloading https://files.pythonhosted.org/packages/00/37/55f3785986c03d4a94d0ce3755d33c06298588e6cc31ed774c6e159cf65f/teco_challenger_lib-0.1.0.tar.gz
+[2023-04-12 01:30:40] INFO root fetch - processPackages [deep-tracking]: Downloading https://files.pythonhosted.org/packages/8b/87/5bb6ccc4dcc2f30d94383211283ec3c292c990971019775a36397ecda66c/deep_tracking-1.0.5.tar.gz
+[2023-04-12 01:30:40] INFO root fetch - processPackages [deep-tracking]: executing diffoscope
+[2023-04-12 01:30:40] INFO root fetch - processPackages [deep-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_tracking-1.0.4.tar.gz tmp/deep_tracking-1.0.5.tar.gz --markdown 20230412/d/deep-tracking/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-12 01:30:40] INFO root fetch - processPackages [teco-challenger-lib]: Downloading https://files.pythonhosted.org/packages/bf/98/608f6766fc1aba729e456d8cc2cea116dbacc1ad67a8b1465a26f110831a/teco_challenger_lib-0.1.1.tar.gz
+[2023-04-12 01:30:40] INFO root fetch - processPackages [inauconf]: executing diffoscope
+[2023-04-12 01:30:40] INFO root fetch - processPackages [inauconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inauconf-1.0-py3-none-any.whl.zip tmp/inauconf-1.1.0.tar.gz --markdown 20230412/i/inauconf/1.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 01:30:40] INFO root fetch - processPackages [teco-challenger-lib]: executing diffoscope
+[2023-04-12 01:30:40] INFO root fetch - processPackages [teco-challenger-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teco_challenger_lib-0.1.0.tar.gz tmp/teco_challenger_lib-0.1.1.tar.gz --markdown 20230412/t/teco-challenger-lib/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 01:30:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:41] WARNING root fetch - processPackages [cbrzn-ethereum-provider-py]: Skipping, unable to determine old version
+[2023-04-12 01:30:41] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:30:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:30:48] INFO root fetch - main [MainThread]: Store serial: [17667401]
