@@ -364,3 +364,55 @@
 [2023-04-12 00:43:06] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:43:13] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:43:13] INFO root fetch - main [MainThread]: Store serial: [17667093]
+[2023-04-12 00:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667093]
+[2023-04-12 00:48:20] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 00:48:20] INFO root fetch - processPackages [ndex2]: New version: [3.5.1a1] Old Version: [3.5.0a3]
+[2023-04-12 00:48:20] INFO root fetch - processPackages [pyb-utils]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 00:48:20] INFO root fetch - processPackages [chalk-harness]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 00:48:20] INFO root fetch - processPackages [arkdriver]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 00:48:20] WARNING root fetch - processPackages [ledgerlinker-client]: Skipping, unable to determine old version
+[2023-04-12 00:48:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:48:20] INFO root fetch - processPackages [graphql-service-framework]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 00:48:20] INFO root fetch - processPackages [arkdriver]: Downloading https://files.pythonhosted.org/packages/fc/07/bbb2e4f0042e5c0c25db38911dd89d60c147d1044392120aa839e3b15c25/arkdriver-0.1.8.tar.gz
+[2023-04-12 00:48:21] WARNING root fetch - processPackages [arkdriver]: Skipping package: exceeds size limit 23411222>=10485760
+[2023-04-12 00:48:21] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:48:21] INFO root fetch - processPackages [ndex2]: Downloading https://files.pythonhosted.org/packages/7b/37/4d04ee9e9dda68258ec72d52a518cd36f9020ec2c343bf506bf34b4f97d4/ndex2-3.5.0a3.tar.gz
+[2023-04-12 00:48:21] WARNING root fetch - processPackages [sinli]: Skipping, unable to determine old version
+[2023-04-12 00:48:21] INFO root fetch - main [MainThread]: error
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pbit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 00:48:21] INFO root fetch - processPackages [graphql-service-framework]: executing diffoscope
+[2023-04-12 00:48:21] INFO root fetch - processPackages [graphql-service-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphql_service_framework-1.0.8.tar.gz tmp/graphql_service_framework-1.0.9.tar.gz --markdown 20230412/g/graphql-service-framework/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pyb-utils]: Downloading https://files.pythonhosted.org/packages/be/8e/12524629fda7a3c47bc2d28568d946b8df834d0604b74276b38a12367492/pyb_utils-0.2.3.tar.gz
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/66/d2/c19101990d24f5d9bd858bd6faeef9e4d385ee835bb9e3affd49ecd7dda8/pbit-0.1.0.tar.gz
+[2023-04-12 00:48:21] INFO root fetch - processPackages [chalk-harness]: executing diffoscope
+[2023-04-12 00:48:21] INFO root fetch - processPackages [chalk-harness]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalk-harness-0.9.8.tar.gz tmp/chalk-harness-0.9.9.tar.gz --markdown 20230412/c/chalk-harness/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 00:48:21] INFO root fetch - processPackages [ndex2]: Downloading https://files.pythonhosted.org/packages/03/ff/43ad27b14890fb5c263d3a3ab912bbe97fcc0058accb375d62a8f5c02e42/ndex2-3.5.1a1.tar.gz
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pyb-utils]: executing diffoscope
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pyb-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyb_utils-0.2.2.tar.gz tmp/pyb_utils-0.2.3.tar.gz --markdown 20230412/p/pyb-utils/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 00:48:21] INFO root fetch - processPackages [ndex2]: executing diffoscope
+[2023-04-12 00:48:21] INFO root fetch - processPackages [ndex2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndex2-3.5.0a3.tar.gz tmp/ndex2-3.5.1a1.tar.gz --markdown 20230412/n/ndex2/3.5.0a3-3.5.1a1/diff.md --exclude *.pyd
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/1d/be/d7773d0c7ded0c84104409d1960b54746d27f37a8db5acef709d291ccefe/pbit-0.1.1.tar.gz
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 00:48:21] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.1.0.tar.gz tmp/pbit-0.1.1.tar.gz --markdown 20230412/p/pbit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 00:48:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:22] INFO root fetch - processPackages [richvalues]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-12 00:48:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:22] INFO root fetch - processPackages [coincidence]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-12 00:48:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:22] INFO root fetch - processPackages [richvalues]: Downloading https://files.pythonhosted.org/packages/51/ce/44a7772fff48de598b432662f019067c5e6118cfd9c3c205bd54e4792596/richvalues-3.0.9.tar.gz
+[2023-04-12 00:48:22] INFO root fetch - processPackages [python-project-structure]: New version: [0.8.8] Old Version: [0.8.7b1]
+[2023-04-12 00:48:22] INFO root fetch - processPackages [coincidence]: Downloading https://files.pythonhosted.org/packages/05/ef/852f175e561093963e2f3b89b53c5f86c0c0f1b3da4fcfdcb5162dcdc4ed/coincidence-0.6.4.tar.gz
+[2023-04-12 00:48:22] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-12 00:48:22] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.8.tar.gz tmp/richvalues-3.0.9.tar.gz --markdown 20230412/r/richvalues/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-12 00:48:22] INFO root fetch - processPackages [python-project-structure]: Downloading https://files.pythonhosted.org/packages/a6/89/01fb87de8b737c34cec8e2d2303005ecf1dd81a4d20a5be031c62e174a77/python-project-structure-0.8.8.tar.gz
+[2023-04-12 00:48:22] INFO root fetch - processPackages [coincidence]: Downloading https://files.pythonhosted.org/packages/9a/2e/267095476565505655b236259a2a31feafc3bc992168843f2f631c8f44eb/coincidence-0.6.5.tar.gz
+[2023-04-12 00:48:22] INFO root fetch - processPackages [python-project-structure]: executing diffoscope
+[2023-04-12 00:48:22] INFO root fetch - processPackages [python-project-structure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-project-structure-0.8.7b1.tar.gz tmp/python-project-structure-0.8.8.tar.gz --markdown 20230412/p/python-project-structure/0.8.7b1-0.8.8/diff.md --exclude *.pyd
+[2023-04-12 00:48:23] INFO root fetch - processPackages [coincidence]: executing diffoscope
+[2023-04-12 00:48:23] INFO root fetch - processPackages [coincidence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coincidence-0.6.4.tar.gz tmp/coincidence-0.6.5.tar.gz --markdown 20230412/c/coincidence/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-12 00:48:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:48:24] INFO root fetch - main [MainThread]: Store serial: [17667126]
