@@ -1040,3 +1040,52 @@
 [2023-04-12 01:52:22] INFO root fetch - processPackages [kangas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kangas-2.2.7-py3-none-any.whl.zip tmp/kangas-2.2.8-py3-none-any.whl.zip --markdown 20230412/k/kangas/2.2.7-2.2.8/diff.md --exclude *.pyd
 [2023-04-12 01:52:41] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:52:41] INFO root fetch - main [MainThread]: Store serial: [17667565]
+[2023-04-12 01:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667565]
+[2023-04-12 01:57:49] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 01:57:49] INFO root fetch - processPackages [richvalues]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [azure-cosmos]: New version: [4.4.0b1] Old Version: [4.3.1b1]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [spark-quality-rules-tools]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [sagemaker-studio-analytics-extension]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [hail]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [richvalues]: executing diffoscope
+[2023-04-12 01:57:49] INFO root fetch - processPackages [richvalues]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/richvalues-3.0.8.tar.gz tmp/richvalues-3.0.9.tar.gz --markdown 20230412/r/richvalues/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-12 01:57:49] INFO root fetch - processPackages [azure-cosmos]: Downloading https://files.pythonhosted.org/packages/05/a2/745500605d76d406777d2de1c1d36200c6647825a31edae7aa21b0f27f62/azure-cosmos-4.3.1b1.zip
+[2023-04-12 01:57:49] INFO root fetch - processPackages [hail]: Downloading https://files.pythonhosted.org/packages/1d/79/af3836ea0d871c9eef733651d0c9a76f631ea963e14203f63b4e1ff97a49/hail-0.2.98-py3-none-any.whl
+[2023-04-12 01:57:49] INFO root fetch - processPackages [sagemaker-studio-analytics-extension]: Downloading https://files.pythonhosted.org/packages/1a/cc/d49423a1c9a96703c08b87e1703bee823445facea82134a4a5733872e935/sagemaker-studio-analytics-extension-0.0.8.tar.gz
+[2023-04-12 01:57:49] WARNING root fetch - processPackages [hail]: Skipping package: exceeds size limit 99410480>=10485760
+[2023-04-12 01:57:49] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:57:49] INFO root fetch - processPackages [label-studio-converter]: New version: [0.48rc0] Old Version: [0.0.9]
+[2023-04-12 01:57:49] INFO root fetch - processPackages [spark-quality-rules-tools]: Downloading https://files.pythonhosted.org/packages/15/da/a845012f55d7bd0062581a8d561bea83bb6460a376a0eb17b35196c54df2/spark_quality_rules_tools-0.2.5.tar.gz
+[2023-04-12 01:57:49] INFO root fetch - processPackages [spark-quality-rules-tools]: executing diffoscope
+[2023-04-12 01:57:49] INFO root fetch - processPackages [spark-quality-rules-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spark_quality_rules_tools-0.2.4.tar.gz tmp/spark_quality_rules_tools-0.2.5.tar.gz --markdown 20230412/s/spark-quality-rules-tools/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 01:57:49] INFO root fetch - processPackages [azure-cosmos]: Downloading https://files.pythonhosted.org/packages/14/27/3040c5e3ac0447dfc82ac4e54d2d93dd722d7f45c174c9cee730d4cd3d18/azure-cosmos-4.4.0b1.zip
+[2023-04-12 01:57:49] INFO root fetch - processPackages [azure-cosmos]: executing diffoscope
+[2023-04-12 01:57:49] INFO root fetch - processPackages [azure-cosmos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-cosmos-4.3.1b1.zip tmp/azure-cosmos-4.4.0b1.zip --markdown 20230412/a/azure-cosmos/4.3.1b1-4.4.0b1/diff.md --exclude *.pyd
+[2023-04-12 01:57:49] INFO root fetch - processPackages [label-studio-converter]: executing diffoscope
+[2023-04-12 01:57:49] INFO root fetch - processPackages [label-studio-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/label-studio-converter-0.0.9.tar.gz tmp/label-studio-converter-0.48rc0.tar.gz --markdown 20230412/l/label-studio-converter/0.0.9-0.48rc0/diff.md --exclude *.pyd
+[2023-04-12 01:57:49] INFO root fetch - processPackages [sagemaker-studio-analytics-extension]: Downloading https://files.pythonhosted.org/packages/98/61/2f472b09751a5c98ace774d18271359b92ca5c3c176b3daa8970f6b94626/sagemaker-studio-analytics-extension-0.0.9.tar.gz
+[2023-04-12 01:57:50] INFO root fetch - processPackages [sagemaker-studio-analytics-extension]: executing diffoscope
+[2023-04-12 01:57:50] INFO root fetch - processPackages [sagemaker-studio-analytics-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sagemaker-studio-analytics-extension-0.0.8.tar.gz tmp/sagemaker-studio-analytics-extension-0.0.9.tar.gz --markdown 20230412/s/sagemaker-studio-analytics-extension/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 01:57:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:50] WARNING root fetch - processPackages [auto-vicuna-conversation-templates]: Skipping, unable to determine old version
+[2023-04-12 01:57:50] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:57:50] INFO root fetch - processPackages [inviz]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 01:57:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:50] INFO root fetch - processPackages [sample-metadata]: New version: [5.6.1] Old Version: [5.6.0]
+[2023-04-12 01:57:51] INFO root fetch - processPackages [sample-metadata]: Downloading https://files.pythonhosted.org/packages/ac/a5/d5c8d8bf385200fb7ed96320151c85cf55a7f0d122f3effde0d58310efe4/sample_metadata-5.6.0.tar.gz
+[2023-04-12 01:57:51] INFO root fetch - processPackages [inviz]: Downloading https://files.pythonhosted.org/packages/b3/da/d2e201450ad2493436bc4b27a699deb418857373cbbc0de405e305bd2aa3/inviz-0.0.5.tar.gz
+[2023-04-12 01:57:51] INFO root fetch - processPackages [inviz]: executing diffoscope
+[2023-04-12 01:57:51] INFO root fetch - processPackages [inviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inviz-0.0.4.tar.gz tmp/inviz-0.0.5.tar.gz --markdown 20230412/i/inviz/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 01:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:51] INFO root fetch - processPackages [sample-metadata]: Downloading https://files.pythonhosted.org/packages/13/a2/ebee939d81c612de7c9b6a1ee5a1836313bafbf358a61b299b4667406cb1/sample_metadata-5.6.1.tar.gz
+[2023-04-12 01:57:51] INFO root fetch - processPackages [python-dlt]: New version: [0.2.0a9] Old Version: [0.2.0a8]
+[2023-04-12 01:57:51] INFO root fetch - processPackages [sample-metadata]: executing diffoscope
+[2023-04-12 01:57:51] INFO root fetch - processPackages [sample-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sample_metadata-5.6.0.tar.gz tmp/sample_metadata-5.6.1.tar.gz --markdown 20230412/s/sample-metadata/5.6.0-5.6.1/diff.md --exclude *.pyd
+[2023-04-12 01:57:51] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:51] INFO root fetch - processPackages [python-dlt]: executing diffoscope
+[2023-04-12 01:57:51] INFO root fetch - processPackages [python-dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_dlt-0.2.0a8.tar.gz tmp/python_dlt-0.2.0a9.tar.gz --markdown 20230412/p/python-dlt/0.2.0a8-0.2.0a9/diff.md --exclude *.pyd
+[2023-04-12 01:57:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:57:55] INFO root fetch - main [MainThread]: Store serial: [17667593]
