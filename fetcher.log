@@ -97,3 +97,49 @@
 [2023-04-12 00:05:49] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:05:51] INFO root fetch - main [MainThread]: success
 [2023-04-12 00:05:51] INFO root fetch - main [MainThread]: Store serial: [17666838]
+[2023-04-12 00:10:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17666838]
+[2023-04-12 00:10:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 00:10:58] INFO root fetch - processPackages [Qpai]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 00:10:58] INFO root fetch - processPackages [structureboost]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-12 00:10:58] INFO root fetch - processPackages [geomapdemo]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-04-12 00:10:58] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 00:10:58] INFO root fetch - processPackages [dnastack-client-library]: New version: [3.0.84a1651270839] Old Version: [3.0.81a1650987643]
+[2023-04-12 00:10:58] INFO root fetch - processPackages [Qpai]: Downloading https://files.pythonhosted.org/packages/d6/97/4d56a9e923278922f1782fe156d047934ca3d60585a6d69a610fb10e5a7b/Qpai-0.0.1.tar.gz
+[2023-04-12 00:10:58] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: executing diffoscope
+[2023-04-12 00:10:58] INFO root fetch - processPackages [pepperize.cdk-serverless-cluster-from-snapshot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.98.tar.gz tmp/pepperize.cdk-serverless-cluster-from-snapshot-0.0.99.tar.gz --markdown 20230412/p/pepperize.cdk-serverless-cluster-from-snapshot/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 00:10:58] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/fe/f8/92706109ab1d553ba21da98b785da02b675693abc276a80deb89a2214d98/geomapdemo-0.1.0.tar.gz
+[2023-04-12 00:10:58] INFO root fetch - processPackages [structureboost]: Downloading https://files.pythonhosted.org/packages/6c/a3/b2b92bb736a13b19c311e0242896d45b254eed0646a761a6d929eb649078/structureboost-0.3.1.tar.gz
+[2023-04-12 00:10:58] INFO root fetch - processPackages [dnastack-client-library]: Downloading https://files.pythonhosted.org/packages/a5/7b/18c6a0589415b823e08b73c6b477cd2b4b2aebad456466b3cd8b1ec58e57/dnastack_client_library-3.0.81a1650987643-py3-none-any.whl
+[2023-04-12 00:10:59] INFO root fetch - processPackages [geomapdemo]: executing diffoscope
+[2023-04-12 00:10:59] INFO root fetch - processPackages [geomapdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapdemo-0.0.5.tar.gz tmp/geomapdemo-0.1.0.tar.gz --markdown 20230412/g/geomapdemo/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 00:10:59] INFO root fetch - processPackages [Qpai]: Downloading https://files.pythonhosted.org/packages/67/12/977c1f47ae7934efce2c2211d151c6d64ea93c5d637ed3020586b07e2cc0/Qpai-0.0.2.tar.gz
+[2023-04-12 00:10:59] INFO root fetch - processPackages [structureboost]: Downloading https://files.pythonhosted.org/packages/85/69/3ce255e9e2d6ef75fa7f57066db6010805bf18a4186d9f1218a2b8cd377a/structureboost-0.4.0.tar.gz
+[2023-04-12 00:10:59] INFO root fetch - processPackages [Qpai]: executing diffoscope
+[2023-04-12 00:10:59] INFO root fetch - processPackages [Qpai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qpai-0.0.1.tar.gz tmp/Qpai-0.0.2.tar.gz --markdown 20230412/Q/Qpai/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 00:10:59] INFO root fetch - processPackages [dnastack-client-library]: Downloading https://files.pythonhosted.org/packages/17/c7/5b87ff0cbee36b18e2e564381bca5b902804ee6c2844ca28031ffa63db35/dnastack_client_library-3.0.84a1651270839-py3-none-any.whl
+[2023-04-12 00:10:59] INFO root fetch - processPackages [structureboost]: executing diffoscope
+[2023-04-12 00:10:59] INFO root fetch - processPackages [structureboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structureboost-0.3.1.tar.gz tmp/structureboost-0.4.0.tar.gz --markdown 20230412/s/structureboost/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 00:11:00] INFO root fetch - processPackages [dnastack-client-library]: executing diffoscope
+[2023-04-12 00:11:00] INFO root fetch - processPackages [dnastack-client-library]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnastack_client_library-3.0.81a1650987643-py3-none-any.whl.zip tmp/dnastack_client_library-3.0.84a1651270839-py3-none-any.whl.zip --markdown 20230412/d/dnastack-client-library/3.0.81a1650987643-3.0.84a1651270839/diff.md --exclude *.pyd
+[2023-04-12 00:11:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:00] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 00:11:00] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 00:11:00] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 00:11:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:00] INFO root fetch - processPackages [sleepyask]: New version: [4.4.0] Old Version: [4.3.2]
+[2023-04-12 00:11:01] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/21/95/fb4644c24feb17c5ed00eae21d18013bd49af6c8762031676d0ff05ca4fb/sleepyask-4.3.2.tar.gz
+[2023-04-12 00:11:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:01] INFO root fetch - processPackages [pyfunctional-elunico]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-12 00:11:01] INFO root fetch - processPackages [sleepyask]: Downloading https://files.pythonhosted.org/packages/a5/e8/8f8794777958b070dd5ad876ae86e996aad0516a05b761af030729792826/sleepyask-4.4.0.tar.gz
+[2023-04-12 00:11:01] INFO root fetch - processPackages [pyfunctional-elunico]: Downloading https://files.pythonhosted.org/packages/95/45/f3a7e6d514da69989a7c17f1af4716a8c767f82291a2828bbe2ee2c17106/pyfunctional-elunico-0.8.1.tar.gz
+[2023-04-12 00:11:01] INFO root fetch - processPackages [sleepyask]: executing diffoscope
+[2023-04-12 00:11:01] INFO root fetch - processPackages [sleepyask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleepyask-4.3.2.tar.gz tmp/sleepyask-4.4.0.tar.gz --markdown 20230412/s/sleepyask/4.3.2-4.4.0/diff.md --exclude *.pyd
+[2023-04-12 00:11:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:01] INFO root fetch - processPackages [pyfunctional-elunico]: Downloading https://files.pythonhosted.org/packages/23/07/648c6886bc14a778b943423b80842c8dbaee8c54f83d6440a9fbfa0a37d4/pyfunctional-elunico-0.9.0.tar.gz
+[2023-04-12 00:11:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:02] INFO root fetch - processPackages [pyfunctional-elunico]: executing diffoscope
+[2023-04-12 00:11:02] INFO root fetch - processPackages [pyfunctional-elunico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfunctional-elunico-0.8.1.tar.gz tmp/pyfunctional-elunico-0.9.0.tar.gz --markdown 20230412/p/pyfunctional-elunico/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 00:11:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:03] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 00:11:06] INFO root fetch - main [MainThread]: Store serial: [17666861]
