@@ -971,3 +971,72 @@
 [2023-04-12 01:47:08] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:47:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 01:47:09] INFO root fetch - main [MainThread]: Store serial: [17667520]
+[2023-04-12 01:52:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17667520]
+[2023-04-12 01:52:16] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 01:52:16] INFO root fetch - processPackages [mgz]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-12 01:52:16] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.80]
+[2023-04-12 01:52:16] INFO root fetch - processPackages [btest]: New version: [1.0] Old Version: [0.71]
+[2023-04-12 01:52:16] INFO root fetch - processPackages [deep-tracking]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-12 01:52:16] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-12 01:52:17] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/89/11/968c6456fed1a782bd7184c5e5a15b72e42225249329ddedb3920769702b/kfsdutils-0.0.80.tar.gz
+[2023-04-12 01:52:17] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-12 01:52:17] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230412/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-12 01:52:17] INFO root fetch - processPackages [btest]: Downloading https://files.pythonhosted.org/packages/7c/90/75046372839622fe22413b9cfffdc94d4ef3077b7e7785e43a7272bc7036/btest-0.71.tar.gz
+[2023-04-12 01:52:17] INFO root fetch - processPackages [deep-tracking]: Downloading https://files.pythonhosted.org/packages/38/9f/a2b27a795de71f75af87e6d1246b3f72fbaebfa553f1bd1bcd5379563477/deep_tracking-1.0.8.tar.gz
+[2023-04-12 01:52:17] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-12 01:52:17] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.80.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230412/k/kfsdutils/0.0.80-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:17] INFO root fetch - processPackages [btest]: Downloading https://files.pythonhosted.org/packages/34/ea/9d54baded48d6123c433bdc669ba7af641e2c0c31bc5996cb47f60da281f/btest-1.0.tar.gz
+[2023-04-12 01:52:17] INFO root fetch - processPackages [deep-tracking]: executing diffoscope
+[2023-04-12 01:52:17] INFO root fetch - processPackages [deep-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_tracking-1.0.7.tar.gz tmp/deep_tracking-1.0.8.tar.gz --markdown 20230412/d/deep-tracking/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-12 01:52:17] INFO root fetch - processPackages [mgz]: executing diffoscope
+[2023-04-12 01:52:17] INFO root fetch - processPackages [mgz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mgz-1.8.8.tar.gz tmp/mgz-1.8.9.tar.gz --markdown 20230412/m/mgz/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:17] INFO root fetch - processPackages [btest]: executing diffoscope
+[2023-04-12 01:52:17] INFO root fetch - processPackages [btest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btest-0.71.tar.gz tmp/btest-1.0.tar.gz --markdown 20230412/b/btest/0.71-1.0/diff.md --exclude *.pyd
+[2023-04-12 01:52:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:18] WARNING root fetch - processPackages [neuropy-poisson-glm-diss]: Skipping, unable to determine old version
+[2023-04-12 01:52:18] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:52:18] INFO root fetch - processPackages [sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 01:52:18] INFO root fetch - processPackages [sbase]: executing diffoscope
+[2023-04-12 01:52:18] INFO root fetch - processPackages [sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbase-4.9.8.tar.gz tmp/sbase-4.9.9.tar.gz --markdown 20230412/s/sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:18] INFO root fetch - processPackages [pytest-seleniumbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 01:52:18] INFO root fetch - processPackages [pytest-seleniumbase]: executing diffoscope
+[2023-04-12 01:52:18] INFO root fetch - processPackages [pytest-seleniumbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-seleniumbase-4.9.8.tar.gz tmp/pytest-seleniumbase-4.9.9.tar.gz --markdown 20230412/p/pytest-seleniumbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:18] INFO root fetch - processPackages [selenium-base]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 01:52:19] INFO root fetch - processPackages [selenium-base]: executing diffoscope
+[2023-04-12 01:52:19] INFO root fetch - processPackages [selenium-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-base-4.9.8.tar.gz tmp/selenium-base-4.9.9.tar.gz --markdown 20230412/s/selenium-base/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:19] INFO root fetch - processPackages [pytest-sbase]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 01:52:19] INFO root fetch - processPackages [pytest-sbase]: executing diffoscope
+[2023-04-12 01:52:19] INFO root fetch - processPackages [pytest-sbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-sbase-4.9.8.tar.gz tmp/pytest-sbase-4.9.9.tar.gz --markdown 20230412/p/pytest-sbase/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 01:52:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:19] INFO root fetch - processPackages [pbit]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 01:52:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:19] INFO root fetch - processPackages [Quantum-Tomography]: New version: [1.0.6.0] Old Version: [1.0.5.0]
+[2023-04-12 01:52:20] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/99/87/11b9ba1d3678884ce80fc49c8da4f91cf7a72feef2df05f3ef6dfa5a2fd2/pbit-0.2.1.tar.gz
+[2023-04-12 01:52:20] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 01:52:20] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.0.tar.gz tmp/pbit-0.2.1.tar.gz --markdown 20230412/p/pbit/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 01:52:20] INFO root fetch - processPackages [Quantum-Tomography]: Downloading https://files.pythonhosted.org/packages/83/12/dcc1a685f6f3cb7957f1b62da708175361823d54b2f480814543a2fa8101/Quantum-Tomography-1.0.5.0.tar.gz
+[2023-04-12 01:52:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:20] WARNING root fetch - processPackages [airlabs]: Skipping, unable to determine old version
+[2023-04-12 01:52:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 01:52:20] INFO root fetch - processPackages [kangas]: New version: [2.2.8] Old Version: [2.2.7]
+[2023-04-12 01:52:20] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/07/3a/3cf2cae54f5db5c51825cad330f85d1115dd15986368bfc19440e617b02d/kangas-2.2.7-py3-none-any.whl
+[2023-04-12 01:52:20] INFO root fetch - processPackages [Quantum-Tomography]: Downloading https://files.pythonhosted.org/packages/ff/dc/6e32cc5f1d1ad8b5f1288613cfa717183be3f1fa5696a76238025805bb6e/Quantum-Tomography-1.0.6.0.tar.gz
+[2023-04-12 01:52:20] INFO root fetch - processPackages [Quantum-Tomography]: executing diffoscope
+[2023-04-12 01:52:20] INFO root fetch - processPackages [Quantum-Tomography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Quantum-Tomography-1.0.5.0.tar.gz tmp/Quantum-Tomography-1.0.6.0.tar.gz --markdown 20230412/Q/Quantum-Tomography/1.0.5.0-1.0.6.0/diff.md --exclude *.pyd
+[2023-04-12 01:52:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:21] INFO root fetch - processPackages [kaskada]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-12 01:52:21] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/09/ae/066b42c0f9530e0efe5f15a44bd05606620731bd9d5489454b5b0035885e/kangas-2.2.8-py3-none-any.whl
+[2023-04-12 01:52:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:21] INFO root fetch - processPackages [kaskada]: Downloading https://files.pythonhosted.org/packages/13/90/3ccac607631718d69430cd4c5160d73724fb925ff36f9b4a005acc34e3bf/kaskada-0.1.4.tar.gz
+[2023-04-12 01:52:21] INFO root fetch - processPackages [kaskada]: executing diffoscope
+[2023-04-12 01:52:21] INFO root fetch - processPackages [kaskada]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaskada-0.1.3.tar.gz tmp/kaskada-0.1.4.tar.gz --markdown 20230412/k/kaskada/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-12 01:52:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:22] INFO root fetch - processPackages [kangas]: executing diffoscope
+[2023-04-12 01:52:22] INFO root fetch - processPackages [kangas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kangas-2.2.7-py3-none-any.whl.zip tmp/kangas-2.2.8-py3-none-any.whl.zip --markdown 20230412/k/kangas/2.2.7-2.2.8/diff.md --exclude *.pyd
+[2023-04-12 01:52:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 01:52:41] INFO root fetch - main [MainThread]: Store serial: [17667565]
