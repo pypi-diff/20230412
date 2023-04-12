@@ -9390,3 +9390,84 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 10:05:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:05:15] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:05:15] INFO root fetch - main [MainThread]: Store serial: [17672999]
+[2023-04-12 10:10:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672999]
+[2023-04-12 10:10:23] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 10:10:23] INFO root fetch - processPackages [django-postgres-extra]: New version: [2.0a9] Old Version: [2.0a7]
+[2023-04-12 10:10:23] INFO root fetch - processPackages [odoo-addon-mass-mailing-partner]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2023-04-12 10:10:23] INFO root fetch - processPackages [tracuni]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 10:10:23] INFO root fetch - processPackages [noteyXMLParser]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-12 10:10:23] INFO root fetch - processPackages [odoo-addon-mass-mailing-list-dynamic]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2023-04-12 10:10:24] INFO root fetch - processPackages [django-postgres-extra]: Downloading https://files.pythonhosted.org/packages/dc/19/2d69c3b8d4d9cf07e3a33b100276766d5d5270e6a720e544f9787e85a3ee/django-postgres-extra-2.0a7.tar.gz
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-partner]: Downloading https://files.pythonhosted.org/packages/1c/35/680ba6a779c02d842f1155dff8703aad6bc9886da9b8b66e1affaea7d006/odoo_addon_mass_mailing_partner-16.0.1.0.0.4-py3-none-any.whl
+[2023-04-12 10:10:24] INFO root fetch - processPackages [noteyXMLParser]: Downloading https://files.pythonhosted.org/packages/c9/7b/48f5de548dcb3ae59e26b6a9105ce1e39b2fb20351782b780f81681978ff/noteyXMLParser-0.2.6.tar.gz
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-list-dynamic]: Downloading https://files.pythonhosted.org/packages/a8/c1/b19c302f9bd5b09f3f7c8d168c0aef826fed4337644eaca61de532994e2a/odoo_addon_mass_mailing_list_dynamic-16.0.1.0.0.4-py3-none-any.whl
+[2023-04-12 10:10:24] INFO root fetch - processPackages [tracuni]: executing diffoscope
+[2023-04-12 10:10:24] INFO root fetch - processPackages [tracuni]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracuni-0.4.8.tar.gz tmp/tracuni-0.4.9.tar.gz --markdown 20230412/t/tracuni/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 10:10:24] INFO root fetch - processPackages [django-postgres-extra]: Downloading https://files.pythonhosted.org/packages/fa/f5/15a2c2c268e6c324f50acc8e4a698629223050cdcdd46ed2abd0a715f530/django-postgres-extra-2.0a9.tar.gz
+[2023-04-12 10:10:24] INFO root fetch - processPackages [noteyXMLParser]: executing diffoscope
+[2023-04-12 10:10:24] INFO root fetch - processPackages [noteyXMLParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteyXMLParser-0.2.5.tar.gz tmp/noteyXMLParser-0.2.6.tar.gz --markdown 20230412/n/noteyXMLParser/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-list-dynamic]: Downloading https://files.pythonhosted.org/packages/8b/b9/8f116921d5a4f5e9cd9fe570a4a1c3cdf028698709d7c609ea49a91c9ef7/odoo_addon_mass_mailing_list_dynamic-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-partner]: Downloading https://files.pythonhosted.org/packages/ff/43/67cadde3c6246404f5c5c791f0e09cf7685d75f545c4820210b1c678b4df/odoo_addon_mass_mailing_partner-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-list-dynamic]: executing diffoscope
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-list-dynamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mass_mailing_list_dynamic-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_mass_mailing_list_dynamic-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-mass-mailing-list-dynamic/16.0.1.0.0.4-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-12 10:10:24] INFO root fetch - processPackages [django-postgres-extra]: executing diffoscope
+[2023-04-12 10:10:24] INFO root fetch - processPackages [django-postgres-extra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-postgres-extra-2.0a7.tar.gz tmp/django-postgres-extra-2.0a9.tar.gz --markdown 20230412/d/django-postgres-extra/2.0a7-2.0a9/diff.md --exclude *.pyd
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-partner]: executing diffoscope
+[2023-04-12 10:10:24] INFO root fetch - processPackages [odoo-addon-mass-mailing-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mass_mailing_partner-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_mass_mailing_partner-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-mass-mailing-partner/16.0.1.0.0.4-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-12 10:10:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:25] INFO root fetch - processPackages [llama-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 10:10:25] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-04-12 10:10:25] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.5.8.tar.gz tmp/llama_index-0.5.9.tar.gz --markdown 20230412/l/llama-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 10:10:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:25] INFO root fetch - processPackages [gpt-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 10:10:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:26] INFO root fetch - processPackages [nonebot-plugin-chatgpt]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-04-12 10:10:26] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-04-12 10:10:26] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.5.8.tar.gz tmp/gpt_index-0.5.9.tar.gz --markdown 20230412/g/gpt-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 10:10:26] INFO root fetch - processPackages [nonebot-plugin-chatgpt]: Downloading https://files.pythonhosted.org/packages/d3/82/052e3772944cbc62764b07639b0ee69f3fc0707a0c6ef339fa5c39c85f62/nonebot-plugin-chatgpt-0.7.4.tar.gz
+[2023-04-12 10:10:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:26] INFO root fetch - processPackages [com.precisely.apis]: New version: [15.0.0] Old Version: [14.0.1]
+[2023-04-12 10:10:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:26] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-12 10:10:26] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-04-12 10:10:26] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230412/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-12 10:10:26] INFO root fetch - processPackages [nonebot-plugin-chatgpt]: Downloading https://files.pythonhosted.org/packages/66/95/01064b8e0f4c2715d08aef8b46fe77e81f3db6864a6325e6748547b7664f/nonebot-plugin-chatgpt-0.7.5.tar.gz
+[2023-04-12 10:10:26] INFO root fetch - processPackages [com.precisely.apis]: Downloading https://files.pythonhosted.org/packages/63/54/aa98c330b27210a5b6bb6f5ecc8f0b4314cd3298d048fd90def5252fad5b/com.precisely.apis-14.0.1.tar.gz
+[2023-04-12 10:10:26] INFO root fetch - processPackages [nonebot-plugin-chatgpt]: executing diffoscope
+[2023-04-12 10:10:26] INFO root fetch - processPackages [nonebot-plugin-chatgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-chatgpt-0.7.4.tar.gz tmp/nonebot-plugin-chatgpt-0.7.5.tar.gz --markdown 20230412/n/nonebot-plugin-chatgpt/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-04-12 10:10:27] INFO root fetch - processPackages [com.precisely.apis]: Downloading https://files.pythonhosted.org/packages/96/d4/122e4a0c713a6b61c87959181a63701fe80ca289d00af27a79390b992543/com.precisely.apis-15.0.0.tar.gz
+[2023-04-12 10:10:27] INFO root fetch - processPackages [com.precisely.apis]: executing diffoscope
+[2023-04-12 10:10:27] INFO root fetch - processPackages [com.precisely.apis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/com.precisely.apis-14.0.1.tar.gz tmp/com.precisely.apis-15.0.0.tar.gz --markdown 20230412/c/com.precisely.apis/14.0.1-15.0.0/diff.md --exclude *.pyd
+[2023-04-12 10:10:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:27] INFO root fetch - processPackages [relenv]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-12 10:10:27] INFO root fetch - processPackages [relenv]: Downloading https://files.pythonhosted.org/packages/0c/d5/97c45b457073cb4e184305fe8ccdc6d0269f1bfafec501d37d491139a2b0/relenv-0.8.2-py3-none-any.whl
+[2023-04-12 10:10:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:28] INFO root fetch - processPackages [smartchart]: New version: [6.4.2] Old Version: [6.4]
+[2023-04-12 10:10:28] INFO root fetch - processPackages [smartchart]: Downloading https://files.pythonhosted.org/packages/51/b8/655661abbfd6bdd65b866358257d059fe0712e3a7eb20f85f3e5e73ca614/smartchart-6.4.2.tar.gz
+[2023-04-12 10:10:28] INFO root fetch - processPackages [relenv]: Downloading https://files.pythonhosted.org/packages/04/91/998d91dcc3df027619800fcef9a4d6de71c3976d23450216e6ebd6055f57/relenv-0.9.0-py3-none-any.whl
+[2023-04-12 10:10:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:28] WARNING root fetch - processPackages [time-utils-wj]: Skipping, unable to determine old version
+[2023-04-12 10:10:28] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:10:28] WARNING root fetch - processPackages [MaLTHA]: Skipping, unable to determine old version
+[2023-04-12 10:10:28] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:10:28] INFO root fetch - processPackages [relenv]: executing diffoscope
+[2023-04-12 10:10:28] INFO root fetch - processPackages [relenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relenv-0.8.2-py3-none-any.whl.zip tmp/relenv-0.9.0-py3-none-any.whl.zip --markdown 20230412/r/relenv/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 10:10:28] WARNING root fetch - processPackages [shashvault]: Skipping, unable to determine old version
+[2023-04-12 10:10:28] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:10:28] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.5] Old Version: [1.2.5.4]
+[2023-04-12 10:10:29] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/91/54/d7f264596203ca2a8c5cb7f8c65e6b1bec8ad7edc53ae7c38de5ebed17a9/pcl_pangu-1.2.5.5.tar.gz
+[2023-04-12 10:10:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:29] INFO root fetch - processPackages [PrSpiders]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-12 10:10:29] INFO root fetch - processPackages [PrSpiders]: Downloading https://files.pythonhosted.org/packages/fc/64/09a1ce78560cce2b389378f6bf8dd31c5135117a85e29ea95921e428ae2b/PrSpiders-0.2.8.tar.gz
+[2023-04-12 10:10:29] INFO root fetch - processPackages [smartchart]: executing diffoscope
+[2023-04-12 10:10:29] INFO root fetch - processPackages [smartchart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartchart-6.4.tar.gz tmp/smartchart-6.4.2.tar.gz --markdown 20230412/s/smartchart/6.4-6.4.2/diff.md --exclude *.pyd
+[2023-04-12 10:10:29] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-12 10:10:29] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.4.tar.gz tmp/pcl_pangu-1.2.5.5.tar.gz --markdown 20230412/p/pcl-pangu/1.2.5.4-1.2.5.5/diff.md --exclude *.pyd
+[2023-04-12 10:10:29] INFO root fetch - processPackages [PrSpiders]: executing diffoscope
+[2023-04-12 10:10:29] INFO root fetch - processPackages [PrSpiders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PrSpiders-0.2.7.tar.gz tmp/PrSpiders-0.2.8.tar.gz --markdown 20230412/P/PrSpiders/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-12 10:10:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:10:36] INFO root fetch - main [MainThread]: Store serial: [17673054]
