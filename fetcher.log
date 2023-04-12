@@ -19723,3 +19723,77 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:25:24] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
 [2023-04-12 18:25:26] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-04-12 18:25:26] INFO root fetch - main [MainThread]: Store serial: [17679204]
+[2023-04-12 18:30:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679204]
+[2023-04-12 18:30:33] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 18:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discovery-transition-ds
+[2023-04-12 18:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dkist-processing-pac
+[2023-04-12 18:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hordelib
+[2023-04-12 18:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flipt
+[2023-04-12 18:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openvino-dev
+[2023-04-12 18:30:33] INFO root fetch - processPackages [openvino-dev]: New version: [2023.0.0.dev20230407] Old Version: [2023.0.0.dev20230217]
+[2023-04-12 18:30:33] INFO root fetch - processPackages [hordelib]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 18:30:33] INFO root fetch - processPackages [flipt]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 18:30:33] INFO root fetch - processPackages [dkist-processing-pac]: New version: [2.0.0rc5] Old Version: [2.0.0rc4]
+[2023-04-12 18:30:33] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-04-12 18:30:34] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/3f/3c/8fa054a26287a73f91ff088e7823958ae87618780986e97e348f6d69efd2/hordelib-0.6.1.tar.gz
+[2023-04-12 18:30:34] INFO root fetch - processPackages [dkist-processing-pac]: Downloading https://files.pythonhosted.org/packages/41/34/354b9ab18063740fb74a76d990194965038f779df4b124333a06c2b8dee4/dkist-processing-pac-2.0.0rc4.tar.gz
+[2023-04-12 18:30:34] INFO root fetch - processPackages [flipt]: Downloading https://files.pythonhosted.org/packages/99/63/36e7a03b01bcf1c53514187a88431184200b32ab133be15bc0b8f6c3ab81/flipt-0.2.0.tar.gz
+[2023-04-12 18:30:34] INFO root fetch - processPackages [openvino-dev]: Downloading https://files.pythonhosted.org/packages/f4/5e/1ebd5ca13dd848ee1c30571aa85aeae3a7e4333db097e65b284e8bafde43/openvino_dev-2023.0.0.dev20230217-9772-py3-none-any.whl
+[2023-04-12 18:30:34] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-04-12 18:30:34] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230412/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-04-12 18:30:34] INFO root fetch - processPackages [dkist-processing-pac]: Downloading https://files.pythonhosted.org/packages/80/f8/353e5908c23389b93d0178e5bec682398c4c7c241a644fc7f184deb57a2a/dkist-processing-pac-2.0.0rc5.tar.gz
+[2023-04-12 18:30:34] INFO root fetch - processPackages [flipt]: Downloading https://files.pythonhosted.org/packages/9d/c1/23f21440773158dd4f985237d9e9de4bfa51aff830c40b5d0323e0c177ea/flipt-0.2.1.tar.gz
+[2023-04-12 18:30:34] INFO root fetch - processPackages [openvino-dev]: Downloading https://files.pythonhosted.org/packages/18/40/9fcf734f185ad5087494c45f9201f585421b55c21ce4e4442a606a43559b/openvino_dev-2023.0.0.dev20230407-10490-py3-none-any.whl
+[2023-04-12 18:30:34] INFO root fetch - processPackages [dkist-processing-pac]: executing diffoscope
+[2023-04-12 18:30:34] INFO root fetch - processPackages [dkist-processing-pac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-pac-2.0.0rc4.tar.gz tmp/dkist-processing-pac-2.0.0rc5.tar.gz --markdown 20230412/d/dkist-processing-pac/2.0.0rc4-2.0.0rc5/diff.md --exclude *.pyd
+[2023-04-12 18:30:34] INFO root fetch - processPackages [flipt]: executing diffoscope
+[2023-04-12 18:30:34] INFO root fetch - processPackages [flipt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flipt-0.2.0.tar.gz tmp/flipt-0.2.1.tar.gz --markdown 20230412/f/flipt/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 18:30:35] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-12 18:30:35] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.6.0.tar.gz tmp/hordelib-0.6.1.tar.gz --markdown 20230412/h/hordelib/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 18:30:35] INFO root fetch - processPackages [openvino-dev]: executing diffoscope
+[2023-04-12 18:30:35] INFO root fetch - processPackages [openvino-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openvino_dev-2023.0.0.dev20230217-9772-py3-none-any.whl.zip tmp/openvino_dev-2023.0.0.dev20230407-10490-py3-none-any.whl.zip --markdown 20230412/o/openvino-dev/2023.0.0.dev20230217-2023.0.0.dev20230407/diff.md --exclude *.pyd
+[2023-04-12 18:30:36] INFO root fetch - processPackages [dkist-processing-pac]: Start processing: geostat
+[2023-04-12 18:30:36] INFO root fetch - main [MainThread]: End processing [dkist-processing-pac]: success
+[2023-04-12 18:30:36] INFO root fetch - processPackages [geostat]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-12 18:30:36] INFO root fetch - processPackages [flipt]: Start processing: nextcloudtalkbot
+[2023-04-12 18:30:36] INFO root fetch - main [MainThread]: End processing [flipt]: success
+[2023-04-12 18:30:36] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:30:36] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-12 18:30:36] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230412/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:30:36] INFO root fetch - processPackages [geostat]: Downloading https://files.pythonhosted.org/packages/a1/23/47acb60d1a1ae3d5ec99fb7029ea13d45e7b7ef6b7084ee04fe2f4d84a54/geostat-0.8.1.tar.gz
+[2023-04-12 18:30:36] INFO root fetch - processPackages [geostat]: executing diffoscope
+[2023-04-12 18:30:36] INFO root fetch - processPackages [geostat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geostat-0.8.0.tar.gz tmp/geostat-0.8.1.tar.gz --markdown 20230412/g/geostat/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-12 18:30:37] INFO root fetch - processPackages [geostat]: Start processing: ytdl-sub
+[2023-04-12 18:30:37] INFO root fetch - main [MainThread]: End processing [geostat]: success
+[2023-04-12 18:30:37] INFO root fetch - processPackages [ytdl-sub]: New version: [2023.4.5.post1] Old Version: [2023.4.5]
+[2023-04-12 18:30:37] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2023-04-12 18:30:37] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl-sub-2023.4.5.tar.gz tmp/ytdl-sub-2023.4.5.post1.tar.gz --markdown 20230412/y/ytdl-sub/2023.4.5-2023.4.5.post1/diff.md --exclude *.pyd
+[2023-04-12 18:30:37] INFO root fetch - processPackages [nextcloudtalkbot]: Start processing: manuscriptmonitor
+[2023-04-12 18:30:37] INFO root fetch - main [MainThread]: End processing [nextcloudtalkbot]: success
+[2023-04-12 18:30:38] INFO root fetch - processPackages [manuscriptmonitor]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-12 18:30:38] INFO root fetch - processPackages [discovery-transition-ds]: Start processing: sapcloudconnectorpythonsocket
+[2023-04-12 18:30:38] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-04-12 18:30:38] INFO root fetch - processPackages [manuscriptmonitor]: Downloading https://files.pythonhosted.org/packages/bd/f4/e9ab4f6858112266292d4c4680f2acd29d649562924ad5dbe967b483f9d4/ManuscriptMonitor-0.4.7.tar.gz
+[2023-04-12 18:30:38] WARNING root fetch - processPackages [sapcloudconnectorpythonsocket]: Skipping, unable to determine old version
+[2023-04-12 18:30:38] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: Start processing: structure-py
+[2023-04-12 18:30:38] INFO root fetch - main [MainThread]: End processing [sapcloudconnectorpythonsocket] error
+[2023-04-12 18:30:38] INFO root fetch - processPackages [structure-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 18:30:38] INFO root fetch - processPackages [manuscriptmonitor]: executing diffoscope
+[2023-04-12 18:30:38] INFO root fetch - processPackages [manuscriptmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManuscriptMonitor-0.4.6.tar.gz tmp/ManuscriptMonitor-0.4.7.tar.gz --markdown 20230412/m/manuscriptmonitor/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-12 18:30:38] INFO root fetch - processPackages [structure-py]: Downloading https://files.pythonhosted.org/packages/64/af/b2b63225c87f0098de652e8db61d788ffcffb3923106b3a240240247189f/structure_py-0.1.0.tar.gz
+[2023-04-12 18:30:38] INFO root fetch - processPackages [structure-py]: Downloading https://files.pythonhosted.org/packages/3c/c5/326afe77bcc8cf39021b35d10dee0dcee4cebfeec941fbac2ffc0a6c658d/structure_py-0.1.1.tar.gz
+[2023-04-12 18:30:39] INFO root fetch - processPackages [structure-py]: executing diffoscope
+[2023-04-12 18:30:39] INFO root fetch - processPackages [structure-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structure_py-0.1.0.tar.gz tmp/structure_py-0.1.1.tar.gz --markdown 20230412/s/structure-py/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:30:39] INFO root fetch - processPackages [ytdl-sub]: Start processing: showcert
+[2023-04-12 18:30:39] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2023-04-12 18:30:39] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
+[2023-04-12 18:30:39] INFO root fetch - processPackages [showcert]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 18:30:39] INFO root fetch - processPackages [showcert]: Downloading https://files.pythonhosted.org/packages/a7/7b/20c5a037d052a59260ad2ede80b52665d75317dbfcf8491e75a2684e4519/showcert-0.1.8-py3-none-any.whl
+[2023-04-12 18:30:40] INFO root fetch - main [MainThread]: End processing [structure-py]: success
+[2023-04-12 18:30:40] INFO root fetch - processPackages [showcert]: Downloading https://files.pythonhosted.org/packages/3e/fd/70794d75b060098cf02a742e9c586831b1c06890bd974002c8a682ce4044/showcert-0.1.9-py3-none-any.whl
+[2023-04-12 18:30:40] INFO root fetch - processPackages [showcert]: executing diffoscope
+[2023-04-12 18:30:40] INFO root fetch - processPackages [showcert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/showcert-0.1.8-py3-none-any.whl.zip tmp/showcert-0.1.9-py3-none-any.whl.zip --markdown 20230412/s/showcert/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 18:30:41] INFO root fetch - main [MainThread]: End processing [showcert]: success
+[2023-04-12 18:30:43] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-12 18:32:00] INFO root fetch - main [MainThread]: End processing [openvino-dev]: success
+[2023-04-12 18:32:00] INFO root fetch - main [MainThread]: Store serial: [17679247]
