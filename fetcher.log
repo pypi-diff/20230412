@@ -15093,3 +15093,190 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:05:46] INFO root fetch - main [MainThread]: End processing [pythonSCHED]: success
 [2023-04-12 15:06:36] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
 [2023-04-12 15:06:36] INFO root fetch - main [MainThread]: Store serial: [17676403]
+[2023-04-12 15:11:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676403]
+[2023-04-12 15:12:02] INFO root fetch - main [MainThread]: Found 33 changed packages
+[2023-04-12 15:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OpenGeode-core
+[2023-04-12 15:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-numpy
+[2023-04-12 15:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arb-logger
+[2023-04-12 15:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: velociraptor
+[2023-04-12 15:12:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gordo-core
+[2023-04-12 15:12:02] INFO root fetch - processPackages [gordo-core]: New version: [0.3.0rc0] Old Version: [0.3.0]
+[2023-04-12 15:12:02] INFO root fetch - processPackages [arb-logger]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-12 15:12:02] INFO root fetch - processPackages [velociraptor]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-12 15:12:02] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:12:02] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [13.4.9]
+[2023-04-12 15:12:02] INFO root fetch - processPackages [gordo-core]: Downloading https://files.pythonhosted.org/packages/73/fa/d2970c72ae5641b4d7d6e259b37f8e01f62fa7e659026dceede59117abc1/gordo_core-0.3.0-py3-none-any.whl
+[2023-04-12 15:12:02] INFO root fetch - processPackages [velociraptor]: Downloading https://files.pythonhosted.org/packages/8a/7c/f409406c71970b61647bfb26fe7b7909f610deca3f4d1b251bde04583857/velociraptor-0.9.2-py3-none-any.whl
+[2023-04-12 15:12:02] INFO root fetch - processPackages [arb-logger]: Downloading https://files.pythonhosted.org/packages/a2/94/4a6552a1ebd4ed4d8ba8b7d671bb7290dcbb676b1f10530333847c5d3983/arb_logger-2.1.1.tar.gz
+[2023-04-12 15:12:02] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-12 15:12:02] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230412/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:12:02] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-12 15:12:02] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-13.4.9-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.10.4-cp39-cp39-win_amd64.whl.zip --markdown 20230412/O/OpenGeode-core/13.4.9-9.10.4/diff.md --exclude *.pyd
+[2023-04-12 15:12:02] INFO root fetch - processPackages [arb-logger]: Downloading https://files.pythonhosted.org/packages/b7/1e/e4cb0fd0eb7d758454a24600941274fda411f99af47ebe9b0f529a1f134a/arb_logger-2.1.2.tar.gz
+[2023-04-12 15:12:02] INFO root fetch - processPackages [gordo-core]: Downloading https://files.pythonhosted.org/packages/d4/c4/01d1208c48b2b998ad724ce90f9d658f96aa33bd1e9ed41fae48966b1a04/gordo_core-0.3.0rc0-py3-none-any.whl
+[2023-04-12 15:12:02] INFO root fetch - processPackages [velociraptor]: Downloading https://files.pythonhosted.org/packages/c2/7e/eb888e13a7068d32036cbf1d264dde2795282c2efbe46badebd0548a1c9b/velociraptor-0.9.3-py3-none-any.whl
+[2023-04-12 15:12:02] INFO root fetch - processPackages [arb-logger]: executing diffoscope
+[2023-04-12 15:12:02] INFO root fetch - processPackages [arb-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arb_logger-2.1.1.tar.gz tmp/arb_logger-2.1.2.tar.gz --markdown 20230412/a/arb-logger/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-12 15:12:03] INFO root fetch - processPackages [velociraptor]: executing diffoscope
+[2023-04-12 15:12:03] INFO root fetch - processPackages [velociraptor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/velociraptor-0.9.2-py3-none-any.whl.zip tmp/velociraptor-0.9.3-py3-none-any.whl.zip --markdown 20230412/v/velociraptor/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-12 15:12:03] INFO root fetch - processPackages [gordo-core]: executing diffoscope
+[2023-04-12 15:12:03] INFO root fetch - processPackages [gordo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gordo_core-0.3.0-py3-none-any.whl.zip tmp/gordo_core-0.3.0rc0-py3-none-any.whl.zip --markdown 20230412/g/gordo-core/0.3.0-0.3.0rc0/diff.md --exclude *.pyd
+[2023-04-12 15:12:03] INFO root fetch - processPackages [arb-logger]: Start processing: hmd-cli-bender
+[2023-04-12 15:12:03] INFO root fetch - main [MainThread]: End processing [arb-logger]: success
+[2023-04-12 15:12:03] WARNING root fetch - processPackages [hmd-cli-bender]: Skipping, unable to determine old version
+[2023-04-12 15:12:03] INFO root fetch - processPackages [hmd-cli-bender]: Start processing: nbdev-pandas
+[2023-04-12 15:12:03] INFO root fetch - main [MainThread]: End processing [hmd-cli-bender] error
+[2023-04-12 15:12:03] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:12:04] INFO root fetch - processPackages [velociraptor]: Start processing: property-lister
+[2023-04-12 15:12:04] INFO root fetch - main [MainThread]: End processing [velociraptor]: success
+[2023-04-12 15:12:04] WARNING root fetch - processPackages [property-lister]: Skipping, unable to determine old version
+[2023-04-12 15:12:04] INFO root fetch - processPackages [property-lister]: Start processing: morphcp
+[2023-04-12 15:12:04] INFO root fetch - main [MainThread]: End processing [property-lister] error
+[2023-04-12 15:12:04] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-12 15:12:04] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230412/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:12:04] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-12 15:12:04] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-12 15:12:04] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230412/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:04] INFO root fetch - processPackages [gordo-core]: Start processing: poppt
+[2023-04-12 15:12:04] INFO root fetch - main [MainThread]: End processing [gordo-core]: success
+[2023-04-12 15:12:04] INFO root fetch - processPackages [poppt]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 15:12:05] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/61/14/28766cefe08f9a89f60a893abffecc15d7d75816a117299c8774d32a8116/poppt-0.0.6.tar.gz
+[2023-04-12 15:12:05] INFO root fetch - processPackages [poppt]: executing diffoscope
+[2023-04-12 15:12:05] INFO root fetch - processPackages [poppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poppt-0.0.5.tar.gz tmp/poppt-0.0.6.tar.gz --markdown 20230412/p/poppt/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 15:12:05] INFO root fetch - processPackages [nbdev-pandas]: Start processing: matscipy
+[2023-04-12 15:12:05] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-04-12 15:12:05] INFO root fetch - processPackages [matscipy]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-04-12 15:12:05] INFO root fetch - processPackages [morphcp]: Start processing: webviz-subsurface
+[2023-04-12 15:12:05] INFO root fetch - main [MainThread]: End processing [morphcp]: success
+[2023-04-12 15:12:05] INFO root fetch - processPackages [webviz-subsurface]: New version: [0.2.9rc0] Old Version: [0.2.9]
+[2023-04-12 15:12:05] INFO root fetch - processPackages [nbdev-numpy]: Start processing: hmd-cli-explorer
+[2023-04-12 15:12:05] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-04-12 15:12:05] WARNING root fetch - processPackages [hmd-cli-explorer]: Skipping, unable to determine old version
+[2023-04-12 15:12:05] INFO root fetch - processPackages [hmd-cli-explorer]: Start processing: poword
+[2023-04-12 15:12:05] INFO root fetch - main [MainThread]: End processing [hmd-cli-explorer] error
+[2023-04-12 15:12:05] INFO root fetch - processPackages [poword]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 15:12:05] INFO root fetch - processPackages [matscipy]: Downloading https://files.pythonhosted.org/packages/c3/0f/3d8df653c831e9f51dfcb6c8a94aa761a6b9748da8c3b35266fadd3bd6a5/matscipy-0.8.0.rc8.tar.gz
+[2023-04-12 15:12:05] INFO root fetch - processPackages [webviz-subsurface]: Downloading https://files.pythonhosted.org/packages/cb/b6/496b97d6e24433e8425adfc3e4ab3c08214fa937f58c70ff38f8097fe91a/webviz-subsurface-0.2.9.tar.gz
+[2023-04-12 15:12:06] INFO root fetch - processPackages [poword]: executing diffoscope
+[2023-04-12 15:12:06] INFO root fetch - processPackages [poword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poword-0.0.8.tar.gz tmp/poword-0.0.9.tar.gz --markdown 20230412/p/poword/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:06] WARNING root fetch - processPackages [matscipy]: Skipping package: exceeds size limit 12142537>=10485760
+[2023-04-12 15:12:06] INFO root fetch - processPackages [matscipy]: Start processing: osais
+[2023-04-12 15:12:06] INFO root fetch - main [MainThread]: End processing [matscipy] error
+[2023-04-12 15:12:06] INFO root fetch - processPackages [osais]: New version: [1.0.30] Old Version: [1.0.29]
+[2023-04-12 15:12:06] INFO root fetch - processPackages [osais]: Downloading https://files.pythonhosted.org/packages/3b/dd/a1d9a59871d8274692b2ef290b4128352cc1a01485903e06c5b510e991c8/osais-1.0.29.tar.gz
+[2023-04-12 15:12:06] INFO root fetch - processPackages [webviz-subsurface]: Downloading https://files.pythonhosted.org/packages/c4/4c/09f887372799ea7da993ba18f2595ecc1ab65b5b21a24e39383f41b193f7/webviz-subsurface-0.2.9rc0.tar.gz
+[2023-04-12 15:12:06] INFO root fetch - processPackages [poppt]: Start processing: nbdev-pytorch
+[2023-04-12 15:12:06] INFO root fetch - main [MainThread]: End processing [poppt]: success
+[2023-04-12 15:12:06] INFO root fetch - processPackages [osais]: Downloading https://files.pythonhosted.org/packages/77/ba/21e69580f1f16c34b7730f487340f8cbdb2b6036c7c91da7109b1c4d20a0/osais-1.0.30.tar.gz
+[2023-04-12 15:12:06] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:12:06] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-12 15:12:06] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230412/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:12:06] INFO root fetch - processPackages [osais]: executing diffoscope
+[2023-04-12 15:12:06] INFO root fetch - processPackages [osais]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osais-1.0.29.tar.gz tmp/osais-1.0.30.tar.gz --markdown 20230412/o/osais/1.0.29-1.0.30/diff.md --exclude *.pyd
+[2023-04-12 15:12:06] INFO root fetch - processPackages [webviz-subsurface]: executing diffoscope
+[2023-04-12 15:12:06] INFO root fetch - processPackages [webviz-subsurface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webviz-subsurface-0.2.9.tar.gz tmp/webviz-subsurface-0.2.9rc0.tar.gz --markdown 20230412/w/webviz-subsurface/0.2.9-0.2.9rc0/diff.md --exclude *.pyd
+[2023-04-12 15:12:07] INFO root fetch - processPackages [poword]: Start processing: neuronsphere
+[2023-04-12 15:12:07] INFO root fetch - main [MainThread]: End processing [poword]: success
+[2023-04-12 15:12:07] INFO root fetch - processPackages [neuronsphere]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 15:12:07] INFO root fetch - processPackages [neuronsphere]: Downloading https://files.pythonhosted.org/packages/f4/e4/5e99c5fbfc55c2e52c902ae751cd11221a96e2eee76d910bea77a201af2d/neuronsphere-1.0.8-py3-none-any.whl
+[2023-04-12 15:12:07] INFO root fetch - processPackages [nbdev-pytorch]: Start processing: pofile
+[2023-04-12 15:12:07] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-04-12 15:12:07] INFO root fetch - processPackages [pofile]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 15:12:08] INFO root fetch - processPackages [pofile]: executing diffoscope
+[2023-04-12 15:12:08] INFO root fetch - processPackages [pofile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pofile-0.0.8.tar.gz tmp/pofile-0.0.9.tar.gz --markdown 20230412/p/pofile/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:08] INFO root fetch - processPackages [osais]: Start processing: IoddComChecker
+[2023-04-12 15:12:08] INFO root fetch - main [MainThread]: End processing [osais]: success
+[2023-04-12 15:12:08] INFO root fetch - processPackages [IoddComChecker]: New version: [1.6.5.post3] Old Version: [1.6.4]
+[2023-04-12 15:12:08] INFO root fetch - processPackages [neuronsphere]: Downloading https://files.pythonhosted.org/packages/f3/f2/b3721807ebed87f69d659e1cd758a046b47aa67f2d686af0026fe0604dfb/neuronsphere-1.0.9-py3-none-any.whl
+[2023-04-12 15:12:08] INFO root fetch - processPackages [neuronsphere]: executing diffoscope
+[2023-04-12 15:12:08] INFO root fetch - processPackages [neuronsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuronsphere-1.0.8-py3-none-any.whl.zip tmp/neuronsphere-1.0.9-py3-none-any.whl.zip --markdown 20230412/n/neuronsphere/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:08] INFO root fetch - processPackages [IoddComChecker]: Downloading https://files.pythonhosted.org/packages/13/cb/22d8e811dd5bb305ce37037251595f1afe13a48c25cf91af839c3d8a922f/ioddcomchecker-1.6.4-cp39-cp39-win_amd64.whl
+[2023-04-12 15:12:08] INFO root fetch - processPackages [IoddComChecker]: Downloading https://files.pythonhosted.org/packages/b5/61/6780a1bc346ee18857340ac09a0243174a164b22f641f75136638a10311f/ioddcomchecker-1.6.5.post3-cp39-cp39-win_amd64.whl
+[2023-04-12 15:12:09] INFO root fetch - processPackages [IoddComChecker]: executing diffoscope
+[2023-04-12 15:12:09] INFO root fetch - processPackages [IoddComChecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcomchecker-1.6.4-cp39-cp39-win_amd64.whl.zip tmp/ioddcomchecker-1.6.5.post3-cp39-cp39-win_amd64.whl.zip --markdown 20230412/I/IoddComChecker/1.6.4-1.6.5.post3/diff.md --exclude *.pyd
+[2023-04-12 15:12:09] INFO root fetch - processPackages [pofile]: Start processing: cnd-cr-obj-naming
+[2023-04-12 15:12:09] INFO root fetch - main [MainThread]: End processing [pofile]: success
+[2023-04-12 15:12:09] INFO root fetch - processPackages [cnd-cr-obj-naming]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 15:12:09] INFO root fetch - processPackages [neuronsphere]: Start processing: nbdev-scipy
+[2023-04-12 15:12:09] INFO root fetch - main [MainThread]: End processing [neuronsphere]: success
+[2023-04-12 15:12:09] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:12:09] INFO root fetch - processPackages [cnd-cr-obj-naming]: Downloading https://files.pythonhosted.org/packages/5f/39/c3f8ff55d11c2ede6b284ddf89eac40959accd5d5176d48b037e9871ebb1/cnd_cr_obj_naming-1.0.1-py3-none-any.whl
+[2023-04-12 15:12:09] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-12 15:12:09] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230412/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:12:09] INFO root fetch - processPackages [cnd-cr-obj-naming]: executing diffoscope
+[2023-04-12 15:12:09] INFO root fetch - processPackages [cnd-cr-obj-naming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnd_cr_obj_naming-1.0.0-py3-none-any.whl.zip tmp/cnd_cr_obj_naming-1.0.1-py3-none-any.whl.zip --markdown 20230412/c/cnd-cr-obj-naming/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 15:12:10] INFO root fetch - processPackages [IoddComChecker]: Start processing: python-office
+[2023-04-12 15:12:10] INFO root fetch - main [MainThread]: End processing [IoddComChecker]: success
+[2023-04-12 15:12:10] INFO root fetch - processPackages [python-office]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 15:12:10] INFO root fetch - processPackages [python-office]: executing diffoscope
+[2023-04-12 15:12:10] INFO root fetch - processPackages [python-office]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-office-0.3.8.tar.gz tmp/python-office-0.3.9.tar.gz --markdown 20230412/p/python-office/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:10] INFO root fetch - processPackages [webviz-subsurface]: Start processing: tremolo
+[2023-04-12 15:12:10] INFO root fetch - main [MainThread]: End processing [webviz-subsurface]: success
+[2023-04-12 15:12:10] INFO root fetch - processPackages [tremolo]: New version: [0.0.81] Old Version: [0.0.80]
+[2023-04-12 15:12:10] INFO root fetch - processPackages [cnd-cr-obj-naming]: Start processing: IoddComCheckerGui
+[2023-04-12 15:12:10] INFO root fetch - main [MainThread]: End processing [cnd-cr-obj-naming]: success
+[2023-04-12 15:12:10] INFO root fetch - processPackages [IoddComCheckerGui]: New version: [1.6.5.post3] Old Version: [1.6.5.post2]
+[2023-04-12 15:12:10] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/73/78/b24d6d4bdeed1d145d1ec96529c856fa3e05442854f183afd8f7be35ce01/tremolo-0.0.80.tar.gz
+[2023-04-12 15:12:10] INFO root fetch - processPackages [nbdev-scipy]: Start processing: xontrib-jump-to-dir
+[2023-04-12 15:12:10] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-04-12 15:12:10] INFO root fetch - processPackages [xontrib-jump-to-dir]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 15:12:11] INFO root fetch - processPackages [IoddComCheckerGui]: Downloading https://files.pythonhosted.org/packages/10/f3/ac84fef06914528846226ecebc8066e881af08ab876071dffecec156b723/ioddcomcheckergui-1.6.5.post3-py3-none-any.whl
+[2023-04-12 15:12:11] INFO root fetch - processPackages [xontrib-jump-to-dir]: Downloading https://files.pythonhosted.org/packages/01/93/340a380451cddca86cf928f01fdee9429409fcf16b52f7e75fa24fc8f965/xontrib-jump-to-dir-0.1.0.tar.gz
+[2023-04-12 15:12:11] INFO root fetch - processPackages [tremolo]: Downloading https://files.pythonhosted.org/packages/01/f6/d12aadfc764fb560359a86abe010c1eb23fd74904adafe76fdc7b9e29796/tremolo-0.0.81.tar.gz
+[2023-04-12 15:12:11] INFO root fetch - processPackages [tremolo]: executing diffoscope
+[2023-04-12 15:12:11] INFO root fetch - processPackages [tremolo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tremolo-0.0.80.tar.gz tmp/tremolo-0.0.81.tar.gz --markdown 20230412/t/tremolo/0.0.80-0.0.81/diff.md --exclude *.pyd
+[2023-04-12 15:12:11] INFO root fetch - processPackages [IoddComCheckerGui]: executing diffoscope
+[2023-04-12 15:12:11] INFO root fetch - processPackages [IoddComCheckerGui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcomcheckergui-1.6.5.post2-py3-none-any.whl.zip tmp/ioddcomcheckergui-1.6.5.post3-py3-none-any.whl.zip --markdown 20230412/I/IoddComCheckerGui/1.6.5.post2-1.6.5.post3/diff.md --exclude *.pyd
+[2023-04-12 15:12:11] INFO root fetch - processPackages [xontrib-jump-to-dir]: Downloading https://files.pythonhosted.org/packages/eb/52/e4c643bf9a4d4d94e3feed5d36ed3a2c51686a2541655c8ad45c605b4763/xontrib-jump-to-dir-0.1.1.tar.gz
+[2023-04-12 15:12:11] INFO root fetch - processPackages [xontrib-jump-to-dir]: executing diffoscope
+[2023-04-12 15:12:11] INFO root fetch - processPackages [xontrib-jump-to-dir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xontrib-jump-to-dir-0.1.0.tar.gz tmp/xontrib-jump-to-dir-0.1.1.tar.gz --markdown 20230412/x/xontrib-jump-to-dir/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 15:12:11] INFO root fetch - processPackages [python-office]: Start processing: wonder-sdk
+[2023-04-12 15:12:11] INFO root fetch - main [MainThread]: End processing [python-office]: success
+[2023-04-12 15:12:11] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 15:12:12] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/56/60/9f34a7b4605fb549cac105b29b3a816408ac13072bdacbe54c5d02fc069e/wonder-sdk-0.1.5.tar.gz
+[2023-04-12 15:12:12] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-12 15:12:12] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.4.tar.gz tmp/wonder-sdk-0.1.5.tar.gz --markdown 20230412/w/wonder-sdk/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 15:12:12] INFO root fetch - processPackages [IoddComCheckerGui]: Start processing: bigraph-viz
+[2023-04-12 15:12:12] INFO root fetch - main [MainThread]: End processing [IoddComCheckerGui]: success
+[2023-04-12 15:12:12] INFO root fetch - processPackages [bigraph-viz]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 15:12:12] INFO root fetch - processPackages [tremolo]: Start processing: nbdev-sphinx
+[2023-04-12 15:12:12] INFO root fetch - main [MainThread]: End processing [tremolo]: success
+[2023-04-12 15:12:12] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:12:12] INFO root fetch - processPackages [bigraph-viz]: executing diffoscope
+[2023-04-12 15:12:12] INFO root fetch - processPackages [bigraph-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigraph-viz-0.0.8.tar.gz tmp/bigraph-viz-0.0.9.tar.gz --markdown 20230412/b/bigraph-viz/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:12] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-12 15:12:12] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230412/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:12:12] INFO root fetch - processPackages [xontrib-jump-to-dir]: Start processing: Toolkit5G
+[2023-04-12 15:12:12] INFO root fetch - main [MainThread]: End processing [xontrib-jump-to-dir]: success
+[2023-04-12 15:12:12] INFO root fetch - processPackages [Toolkit5G]: New version: [1.1] Old Version: [1.0]
+[2023-04-12 15:12:13] INFO root fetch - processPackages [Toolkit5G]: Downloading https://files.pythonhosted.org/packages/c5/70/1503cb8fe46511222f35250a4372f82ffe1c88b7d95336042266ebd487b6/Toolkit5G-1.1.tar.gz
+[2023-04-12 15:12:13] INFO root fetch - processPackages [wonder-sdk]: Start processing: sports-betting
+[2023-04-12 15:12:13] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-12 15:12:13] INFO root fetch - processPackages [sports-betting]: New version: [0.3.1] Old Version: [0.2.9]
+[2023-04-12 15:12:13] INFO root fetch - processPackages [sports-betting]: Downloading https://files.pythonhosted.org/packages/8e/f7/94a48555b077763cbbf3efde8c92d21819a648ea98b098069d308ff8b2a8/sports-betting-0.2.9.tar.gz
+[2023-04-12 15:12:13] INFO root fetch - processPackages [bigraph-viz]: Start processing: napari-bigfish
+[2023-04-12 15:12:13] INFO root fetch - main [MainThread]: End processing [bigraph-viz]: success
+[2023-04-12 15:12:13] INFO root fetch - processPackages [napari-bigfish]: New version: [0.2] Old Version: [0.1]
+[2023-04-12 15:12:13] INFO root fetch - processPackages [napari-bigfish]: executing diffoscope
+[2023-04-12 15:12:13] INFO root fetch - processPackages [napari-bigfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-bigfish-0.1.tar.gz tmp/napari-bigfish-0.2.tar.gz --markdown 20230412/n/napari-bigfish/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-12 15:12:13] INFO root fetch - processPackages [sports-betting]: Downloading https://files.pythonhosted.org/packages/0d/ae/041fbb6eca657aafbc576799cb318faa6896f605d818bc93a96df7150dc6/sports-betting-0.3.1.tar.gz
+[2023-04-12 15:12:13] INFO root fetch - processPackages [Toolkit5G]: executing diffoscope
+[2023-04-12 15:12:13] INFO root fetch - processPackages [Toolkit5G]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Toolkit5G-1.0.tar.gz tmp/Toolkit5G-1.1.tar.gz --markdown 20230412/T/Toolkit5G/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-12 15:12:14] INFO root fetch - processPackages [nbdev-sphinx]: Start processing: plons
+[2023-04-12 15:12:14] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-04-12 15:12:14] INFO root fetch - processPackages [plons]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-12 15:12:14] INFO root fetch - processPackages [sports-betting]: executing diffoscope
+[2023-04-12 15:12:14] INFO root fetch - processPackages [sports-betting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sports-betting-0.2.9.tar.gz tmp/sports-betting-0.3.1.tar.gz --markdown 20230412/s/sports-betting/0.2.9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 15:12:14] INFO root fetch - processPackages [plons]: executing diffoscope
+[2023-04-12 15:12:14] INFO root fetch - processPackages [plons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plons-0.0.7.tar.gz tmp/plons-0.0.9.tar.gz --markdown 20230412/p/plons/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:12:14] INFO root fetch - processPackages [napari-bigfish]: Start processing: zillion
+[2023-04-12 15:12:14] INFO root fetch - main [MainThread]: End processing [napari-bigfish]: success
+[2023-04-12 15:12:14] INFO root fetch - processPackages [zillion]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-12 15:12:15] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-12 15:12:15] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.5.tar.gz tmp/zillion-0.9.6.tar.gz --markdown 20230412/z/zillion/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 15:12:15] INFO root fetch - main [MainThread]: End processing [sports-betting]: success
+[2023-04-12 15:12:15] INFO root fetch - main [MainThread]: End processing [plons]: success
+[2023-04-12 15:12:16] INFO root fetch - main [MainThread]: End processing [zillion]: success
+[2023-04-12 15:12:17] INFO root fetch - main [MainThread]: End processing [Toolkit5G]: success
+[2023-04-12 15:13:01] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
+[2023-04-12 15:13:01] INFO root fetch - main [MainThread]: Store serial: [17676539]
