@@ -20424,3 +20424,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:06:24] INFO root fetch - main [MainThread]: End processing [zenml]: success
 [2023-04-12 19:07:28] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
 [2023-04-12 19:07:28] INFO root fetch - main [MainThread]: Store serial: [17679639]
+[2023-04-12 19:12:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679639]
+[2023-04-12 19:12:36] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MLapp1
+[2023-04-12 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydatasource
+[2023-04-12 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-nets
+[2023-04-12 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capabilities
+[2023-04-12 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netsuite-python
+[2023-04-12 19:12:36] WARNING root fetch - processPackages [capabilities]: Skipping, unable to determine old version
+[2023-04-12 19:12:36] INFO root fetch - processPackages [capabilities]: Start processing: MLapp1
+[2023-04-12 19:12:36] INFO root fetch - main [MainThread]: End processing [capabilities] error
+[2023-04-12 19:12:36] INFO root fetch - processPackages [pydatasource]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 19:12:36] INFO root fetch - processPackages [netsuite-python]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-12 19:12:37] INFO root fetch - processPackages [torch-nets]: New version: [0.0.3rc1] Old Version: [0.0.3rc0]
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:12:37] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:12:37] INFO root fetch - processPackages [torch-nets]: Downloading https://files.pythonhosted.org/packages/2c/69/8c0f49c0d7d97fe0e08609a4d26ab4ec098afff5e64750304e6f784d22a1/torch-nets-0.0.3rc1.tar.gz
+[2023-04-12 19:12:37] INFO root fetch - processPackages [pydatasource]: Downloading https://files.pythonhosted.org/packages/2e/89/05e2ac56ee032330c733302fcd125de9aa27b2d587df31c7543147b1ebc1/pydatasource-0.2.8.tar.gz
+[2023-04-12 19:12:37] INFO root fetch - processPackages [netsuite-python]: Downloading https://files.pythonhosted.org/packages/cf/a4/4aefc9964920087e03db6be00cced3dd2ec469984a7cf3346eb9e41acc37/netsuite_python-1.3.1.tar.gz
+[2023-04-12 19:12:37] INFO root fetch - processPackages [torch-nets]: executing diffoscope
+[2023-04-12 19:12:37] INFO root fetch - processPackages [torch-nets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch-nets-0.0.3rc0.tar.gz tmp/torch-nets-0.0.3rc1.tar.gz --markdown 20230412/t/torch-nets/0.0.3rc0-0.0.3rc1/diff.md --exclude *.pyd
+[2023-04-12 19:12:37] INFO root fetch - processPackages [netsuite-python]: executing diffoscope
+[2023-04-12 19:12:37] INFO root fetch - processPackages [netsuite-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netsuite_python-1.3.0.tar.gz tmp/netsuite_python-1.3.1.tar.gz --markdown 20230412/n/netsuite-python/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-12 19:12:37] INFO root fetch - processPackages [pydatasource]: Downloading https://files.pythonhosted.org/packages/96/96/b743ddce792c0c6b2a1780694dbf06a643c18e69b8ad64a1e0dabfa66e26/pydatasource-0.2.9.tar.gz
+[2023-04-12 19:12:37] INFO root fetch - processPackages [pydatasource]: executing diffoscope
+[2023-04-12 19:12:37] INFO root fetch - processPackages [pydatasource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydatasource-0.2.8.tar.gz tmp/pydatasource-0.2.9.tar.gz --markdown 20230412/p/pydatasource/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 19:12:38] INFO root fetch - processPackages [MLapp1]: Start processing: spawn-lia
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:12:38] INFO root fetch - processPackages [spawn-lia]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 19:12:38] INFO root fetch - processPackages [torch-nets]: Start processing: pyclient2d
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [torch-nets]: success
+[2023-04-12 19:12:38] INFO root fetch - processPackages [pyclient2d]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 19:12:38] INFO root fetch - processPackages [netsuite-python]: Start processing: MLapp1
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [netsuite-python]: success
+[2023-04-12 19:12:38] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:12:38] INFO root fetch - processPackages [spawn-lia]: Downloading https://files.pythonhosted.org/packages/b2/9a/bf0786664c564968a7ca871d11bcc9c8f39da030ec90186cc714ae47b6fe/spawn-lia-0.2.3.tar.gz
+[2023-04-12 19:12:38] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:12:38] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:12:38] INFO root fetch - processPackages [pyclient2d]: Downloading https://files.pythonhosted.org/packages/88/6c/a1fc5c9bcd5861482ccde7e47cce3d5055ba6140d5c9702513515eb22d3f/pyclient2d-0.0.3.tar.gz
+[2023-04-12 19:12:38] INFO root fetch - processPackages [spawn-lia]: executing diffoscope
+[2023-04-12 19:12:38] INFO root fetch - processPackages [spawn-lia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spawn-lia-0.2.2.tar.gz tmp/spawn-lia-0.2.3.tar.gz --markdown 20230412/s/spawn-lia/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 19:12:38] INFO root fetch - processPackages [pydatasource]: Start processing: obeenya
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [pydatasource]: success
+[2023-04-12 19:12:38] ERROR root fetch - processPackages [obeenya]: Unable to get metadata: No such project 'obeenya'
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 19:12:38] INFO root fetch - processPackages [pyclient2d]: executing diffoscope
+[2023-04-12 19:12:38] INFO root fetch - processPackages [pyclient2d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclient2d-0.0.2.tar.gz tmp/pyclient2d-0.0.3.tar.gz --markdown 20230412/p/pyclient2d/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 19:12:38] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:12:39] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:12:39] INFO root fetch - main [MainThread]: End processing [pyclient2d]: success
+[2023-04-12 19:12:39] INFO root fetch - main [MainThread]: End processing [spawn-lia]: success
+[2023-04-12 19:12:39] INFO root fetch - main [MainThread]: Store serial: [17679672]
