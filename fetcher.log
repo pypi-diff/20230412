@@ -16036,3 +16036,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:51:52] INFO root fetch - main [MainThread]: End processing [mofdscribe]: success
 [2023-04-12 15:51:53] INFO root fetch - main [MainThread]: End processing [ipywebgl]: success
 [2023-04-12 15:51:53] INFO root fetch - main [MainThread]: Store serial: [17676960]
+[2023-04-12 15:54:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676960]
+[2023-04-12 15:54:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metaseg
+[2023-04-12 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyQuantimClient
+[2023-04-12 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-polyspace-report2excel
+[2023-04-12 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: longbridge
+[2023-04-12 15:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Toolkit5G
+[2023-04-12 15:54:17] INFO root fetch - processPackages [PyQuantimClient]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 15:54:17] INFO root fetch - processPackages [Toolkit5G]: New version: [1.2] Old Version: [1.1]
+[2023-04-12 15:54:17] INFO root fetch - processPackages [metaseg]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 15:54:17] INFO root fetch - processPackages [test-polyspace-report2excel]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 15:54:17] INFO root fetch - processPackages [longbridge]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 15:54:17] INFO root fetch - processPackages [PyQuantimClient]: executing diffoscope
+[2023-04-12 15:54:17] INFO root fetch - processPackages [PyQuantimClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQuantimClient-1.0.8.tar.gz tmp/PyQuantimClient-1.0.9.tar.gz --markdown 20230412/P/PyQuantimClient/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:54:17] INFO root fetch - processPackages [longbridge]: executing diffoscope
+[2023-04-12 15:54:17] INFO root fetch - processPackages [longbridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longbridge-0.2.8.tar.gz tmp/longbridge-0.2.9.tar.gz --markdown 20230412/l/longbridge/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 15:54:17] INFO root fetch - processPackages [test-polyspace-report2excel]: Downloading https://files.pythonhosted.org/packages/84/6e/7819046e87322a8656b6041f96cf6e5b78d89d35bc452a37543581d5c20c/test-polyspace-report2excel-1.0.3.tar.gz
+[2023-04-12 15:54:17] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/fe/8e/a8b4a7f603cb1456e27c0c8e395be63f0fe3404e1e99bcd204ed6fbfa874/metaseg-0.6.1.tar.gz
+[2023-04-12 15:54:17] INFO root fetch - processPackages [Toolkit5G]: Downloading https://files.pythonhosted.org/packages/de/dc/ae0516c016525dd48e5ebbab0d916b8e6b8794efca035724c724f75ab352/Toolkit5G-1.2.tar.gz
+[2023-04-12 15:54:17] INFO root fetch - processPackages [test-polyspace-report2excel]: executing diffoscope
+[2023-04-12 15:54:17] INFO root fetch - processPackages [test-polyspace-report2excel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test-polyspace-report2excel-1.0.2.tar.gz tmp/test-polyspace-report2excel-1.0.3.tar.gz --markdown 20230412/t/test-polyspace-report2excel/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 15:54:17] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-12 15:54:17] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.6.0.tar.gz tmp/metaseg-0.6.1.tar.gz --markdown 20230412/m/metaseg/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 15:54:18] INFO root fetch - processPackages [Toolkit5G]: executing diffoscope
+[2023-04-12 15:54:18] INFO root fetch - processPackages [Toolkit5G]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Toolkit5G-1.1.tar.gz tmp/Toolkit5G-1.2.tar.gz --markdown 20230412/T/Toolkit5G/1.1-1.2/diff.md --exclude *.pyd
+[2023-04-12 15:54:18] INFO root fetch - processPackages [PyQuantimClient]: Start processing: DFStyler-SimoneCallegarin
+[2023-04-12 15:54:18] INFO root fetch - main [MainThread]: End processing [PyQuantimClient]: success
+[2023-04-12 15:54:18] WARNING root fetch - processPackages [DFStyler-SimoneCallegarin]: Skipping, unable to determine old version
+[2023-04-12 15:54:18] INFO root fetch - processPackages [DFStyler-SimoneCallegarin]: Start processing: pyclient-2d
+[2023-04-12 15:54:18] INFO root fetch - main [MainThread]: End processing [DFStyler-SimoneCallegarin] error
+[2023-04-12 15:54:18] WARNING root fetch - processPackages [pyclient-2d]: Skipping, unable to determine old version
+[2023-04-12 15:54:18] INFO root fetch - processPackages [pyclient-2d]: Start processing: gnuhealth-all-modules
+[2023-04-12 15:54:18] INFO root fetch - main [MainThread]: End processing [pyclient-2d] error
+[2023-04-12 15:54:18] INFO root fetch - processPackages [gnuhealth-all-modules]: New version: [4.2.1] Old Version: [4.2.0]
+[2023-04-12 15:54:18] INFO root fetch - main [MainThread]: End processing [test-polyspace-report2excel]: success
+[2023-04-12 15:54:19] INFO root fetch - main [MainThread]: End processing [metaseg]: success
+[2023-04-12 15:54:19] INFO root fetch - processPackages [gnuhealth-all-modules]: Downloading https://files.pythonhosted.org/packages/59/af/2e9e41c4419ff8a9213e4953b34dd4283d9d0308c454c41b964deb5dc003/gnuhealth-all-modules-4.2.0.tar.gz
+[2023-04-12 15:54:19] INFO root fetch - processPackages [gnuhealth-all-modules]: Downloading https://files.pythonhosted.org/packages/fa/8e/c3c4b34cae349304ff351d76a1e03cb5f6353d86f060060ac50d72a09532/gnuhealth-all-modules-4.2.1.tar.gz
+[2023-04-12 15:54:19] INFO root fetch - processPackages [gnuhealth-all-modules]: executing diffoscope
+[2023-04-12 15:54:19] INFO root fetch - processPackages [gnuhealth-all-modules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnuhealth-all-modules-4.2.0.tar.gz tmp/gnuhealth-all-modules-4.2.1.tar.gz --markdown 20230412/g/gnuhealth-all-modules/4.2.0-4.2.1/diff.md --exclude *.pyd
+[2023-04-12 15:54:20] INFO root fetch - main [MainThread]: End processing [gnuhealth-all-modules]: success
+[2023-04-12 15:54:21] INFO root fetch - main [MainThread]: End processing [Toolkit5G]: success
+[2023-04-12 15:54:21] INFO root fetch - main [MainThread]: End processing [longbridge]: success
+[2023-04-12 15:54:21] INFO root fetch - main [MainThread]: Store serial: [17677016]
