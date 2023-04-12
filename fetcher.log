@@ -2940,3 +2940,46 @@
 [2023-04-12 03:00:09] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaik.HouseholdSim_SemVer-2.0.4rc20230312020457-py2.py3-none-any.whl.zip tmp/mosaik.HouseholdSim_SemVer-2.0.4rc20230412010342-py2.py3-none-any.whl.zip --markdown 20230412/m/mosaik.HouseholdSim-SemVer/2.0.4rc20230312020457-2.0.4rc20230412010342/diff.md --exclude *.pyd
 [2023-04-12 03:00:10] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:00:10] INFO root fetch - main [MainThread]: Store serial: [17668844]
+[2023-04-12 03:05:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17668844]
+[2023-04-12 03:05:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 03:05:17] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 03:05:17] INFO root fetch - processPackages [shiny-mdc]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 03:05:17] INFO root fetch - processPackages [mb-pytorch]: New version: [1.0.202304120105] Old Version: [1.0.202304120004]
+[2023-04-12 03:05:17] INFO root fetch - processPackages [yotpy]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 03:05:17] INFO root fetch - processPackages [pdm-pep517]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-12 03:05:17] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 03:05:17] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 03:05:17] INFO root fetch - processPackages [pdm-pep517]: Downloading https://files.pythonhosted.org/packages/d6/d7/bee6e16a0a5e93f38f2f8224183ea6c36cfde1ee93cf5e941f1d6cdb20cf/pdm-pep517-1.1.3.tar.gz
+[2023-04-12 03:05:17] INFO root fetch - processPackages [yotpy]: Downloading https://files.pythonhosted.org/packages/7a/e5/2b758a2d061a39a99559eeb04f0d5dfcbb0ac21fcc64497bfb5b691ee190/yotpy-0.0.4.tar.gz
+[2023-04-12 03:05:17] INFO root fetch - processPackages [shiny-mdc]: Downloading https://files.pythonhosted.org/packages/93/8e/ad2aa385d6a1d3f4d8d76c15fd3f41d6214671c4b406496e7e747aef1daa/shiny_mdc-1.0.0.tar.gz
+[2023-04-12 03:05:17] INFO root fetch - processPackages [mb-pytorch]: Downloading https://files.pythonhosted.org/packages/f2/75/386e019e7acba40b8dbcc8b6ed195fe4830186bdca99e95742ca05738b93/mb_pytorch-1.0.202304120105-py3-none-any.whl
+[2023-04-12 03:05:18] INFO root fetch - processPackages [yotpy]: executing diffoscope
+[2023-04-12 03:05:18] INFO root fetch - processPackages [yotpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yotpy-0.0.2.tar.gz tmp/yotpy-0.0.4.tar.gz --markdown 20230412/y/yotpy/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 03:05:18] INFO root fetch - processPackages [mb-pytorch]: executing diffoscope
+[2023-04-12 03:05:18] INFO root fetch - processPackages [mb-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mb_pytorch-1.0.202304120004-py3-none-any.whl.zip tmp/mb_pytorch-1.0.202304120105-py3-none-any.whl.zip --markdown 20230412/m/mb-pytorch/1.0.202304120004-1.0.202304120105/diff.md --exclude *.pyd
+[2023-04-12 03:05:18] INFO root fetch - processPackages [pdm-pep517]: Downloading https://files.pythonhosted.org/packages/43/42/5c8818b70fc4b25c99e56aeeb3484ede076114c8a0772675b44a3b7891cc/pdm-pep517-1.1.4.tar.gz
+[2023-04-12 03:05:18] INFO root fetch - processPackages [shiny-mdc]: Downloading https://files.pythonhosted.org/packages/86/82/357118f55a23b21da4693efd534b75c05ea23a3df500b4ff0f1f9ac0daf2/shiny_mdc-1.0.1.tar.gz
+[2023-04-12 03:05:18] INFO root fetch - processPackages [pdm-pep517]: executing diffoscope
+[2023-04-12 03:05:18] INFO root fetch - processPackages [pdm-pep517]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm-pep517-1.1.3.tar.gz tmp/pdm-pep517-1.1.4.tar.gz --markdown 20230412/p/pdm-pep517/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-12 03:05:18] INFO root fetch - processPackages [shiny-mdc]: executing diffoscope
+[2023-04-12 03:05:18] INFO root fetch - processPackages [shiny-mdc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shiny_mdc-1.0.0.tar.gz tmp/shiny_mdc-1.0.1.tar.gz --markdown 20230412/s/shiny-mdc/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 03:05:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:19] INFO root fetch - processPackages [tccli-intl-en]: New version: [3.0.99.1] Old Version: [3.0.98.1]
+[2023-04-12 03:05:19] INFO root fetch - processPackages [tccli-intl-en]: executing diffoscope
+[2023-04-12 03:05:19] INFO root fetch - processPackages [tccli-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tccli-intl-en-3.0.98.1.tar.gz tmp/tccli-intl-en-3.0.99.1.tar.gz --markdown 20230412/t/tccli-intl-en/3.0.98.1-3.0.99.1/diff.md --exclude *.pyd
+[2023-04-12 03:05:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:19] INFO root fetch - processPackages [pathier]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-12 03:05:19] INFO root fetch - processPackages [pathier]: Downloading https://files.pythonhosted.org/packages/a5/87/d2436265d9a45ee2b259e665cd50865e12f49de2eab0504f095dde7d033d/pathier-0.6.0.tar.gz
+[2023-04-12 03:05:19] INFO root fetch - processPackages [pathier]: Downloading https://files.pythonhosted.org/packages/ec/bc/b9699ae0024367f81b3e284f20e8bd37b9ff94abf2f67423a45cb6c36a50/pathier-0.7.0.tar.gz
+[2023-04-12 03:05:20] INFO root fetch - processPackages [pathier]: executing diffoscope
+[2023-04-12 03:05:20] INFO root fetch - processPackages [pathier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathier-0.6.0.tar.gz tmp/pathier-0.7.0.tar.gz --markdown 20230412/p/pathier/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 03:05:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-04-12 03:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: executing diffoscope
+[2023-04-12 03:05:20] INFO root fetch - processPackages [tencentcloud-sdk-python-intl-en]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tencentcloud-sdk-python-intl-en-3.0.98.tar.gz tmp/tencentcloud-sdk-python-intl-en-3.0.99.tar.gz --markdown 20230412/t/tencentcloud-sdk-python-intl-en/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:05:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:05:37] INFO root fetch - main [MainThread]: Store serial: [17668870]
