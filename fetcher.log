@@ -4735,3 +4735,66 @@
 [2023-04-12 03:46:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:46:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:46:11] INFO root fetch - main [MainThread]: Store serial: [17670150]
+[2023-04-12 03:51:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670150]
+[2023-04-12 03:51:19] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 03:51:19] INFO root fetch - processPackages [c8connector]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 03:51:19] INFO root fetch - processPackages [anylabeling]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-xml]: New version: [13.0.1.1.1] Old Version: [13.0.1.1.0]
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-qweb-pdf-watermark]: New version: [13.0.1.0.3] Old Version: [13.0.1.0.2.dev3]
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-py3o]: New version: [13.0.1.0.6.dev2] Old Version: [13.0.1.0.6.dev1]
+[2023-04-12 03:51:19] INFO root fetch - processPackages [c8connector]: Downloading https://files.pythonhosted.org/packages/f5/41/1d6cf1d7e899ee8eb044b7c68250945e84ef99425e6d2c3658bbb903d580/c8connector-0.0.8.tar.gz
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-xml]: Downloading https://files.pythonhosted.org/packages/7b/d3/30a6ab88b1116516bcb124b6f291ac129866237737c93a3c3ffafe094778/odoo13_addon_report_xml-13.0.1.1.0-py3-none-any.whl
+[2023-04-12 03:51:19] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/ef/b1/ce8a45eda04cc8ea039ddf3e4708b2f9192ca40d122f3935642aaf7f4e6a/anylabeling-0.0.6.tar.gz
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-qweb-pdf-watermark]: Downloading https://files.pythonhosted.org/packages/ea/f7/4351205e80563040e4e00ecdb39347daa20c2e9d8eead477a94cc30c9b08/odoo13_addon_report_qweb_pdf_watermark-13.0.1.0.2.dev3-py3-none-any.whl
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-py3o]: Downloading https://files.pythonhosted.org/packages/d2/70/185025921349b557a0e627fe7f13ae56d9254c93cd920d41629066d34257/odoo13_addon_report_py3o-13.0.1.0.6.dev1-py3-none-any.whl
+[2023-04-12 03:51:19] INFO root fetch - processPackages [odoo13-addon-report-xml]: Downloading https://files.pythonhosted.org/packages/ba/9b/1be01922fad3c539be2fbe19e512ae64766074e7bc78de11420f8eff38c6/odoo13_addon_report_xml-13.0.1.1.1-py3-none-any.whl
+[2023-04-12 03:51:19] INFO root fetch - processPackages [c8connector]: Downloading https://files.pythonhosted.org/packages/a4/3a/d5e3d87254f7a5c4983165bbbf9752fb19c15dc5fbdaf03bbe5e5ba41f68/c8connector-0.0.9.tar.gz
+[2023-04-12 03:51:19] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 03:51:19] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.0.5.tar.gz tmp/anylabeling-0.0.6.tar.gz --markdown 20230412/a/anylabeling/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-qweb-pdf-watermark]: Downloading https://files.pythonhosted.org/packages/37/df/42575bba9cd067a97e32976769dacc04888b2f11ef03c711b2eae570512f/odoo13_addon_report_qweb_pdf_watermark-13.0.1.0.3-py3-none-any.whl
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-xml]: executing diffoscope
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-xml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_report_xml-13.0.1.1.0-py3-none-any.whl.zip tmp/odoo13_addon_report_xml-13.0.1.1.1-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-report-xml/13.0.1.1.0-13.0.1.1.1/diff.md --exclude *.pyd
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-py3o]: Downloading https://files.pythonhosted.org/packages/cc/51/3268a7160c899f2cbe4ee54b33b69554454b8c3682329fea767a64ee86f3/odoo13_addon_report_py3o-13.0.1.0.6.dev2-py3-none-any.whl
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-qweb-pdf-watermark]: executing diffoscope
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-qweb-pdf-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_report_qweb_pdf_watermark-13.0.1.0.2.dev3-py3-none-any.whl.zip tmp/odoo13_addon_report_qweb_pdf_watermark-13.0.1.0.3-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-report-qweb-pdf-watermark/13.0.1.0.2.dev3-13.0.1.0.3/diff.md --exclude *.pyd
+[2023-04-12 03:51:20] INFO root fetch - processPackages [c8connector]: executing diffoscope
+[2023-04-12 03:51:20] INFO root fetch - processPackages [c8connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c8connector-0.0.8.tar.gz tmp/c8connector-0.0.9.tar.gz --markdown 20230412/c/c8connector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-py3o]: executing diffoscope
+[2023-04-12 03:51:20] INFO root fetch - processPackages [odoo13-addon-report-py3o]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_report_py3o-13.0.1.0.6.dev1-py3-none-any.whl.zip tmp/odoo13_addon_report_py3o-13.0.1.0.6.dev2-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-report-py3o/13.0.1.0.6.dev1-13.0.1.0.6.dev2/diff.md --exclude *.pyd
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:21] INFO root fetch - processPackages [odoo13-addon-report-xlsx]: New version: [13.0.1.1.1] Old Version: [13.0.1.1.0]
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:21] INFO root fetch - processPackages [pyloobins]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:21] INFO root fetch - processPackages [xj-finance]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:21] INFO root fetch - processPackages [odoo13-addon-report-xlsx]: Downloading https://files.pythonhosted.org/packages/bc/06/3f22abbd5554108862afcb9471c7757bb21cb2ec9c5e55477b306328686a/odoo13_addon_report_xlsx-13.0.1.1.0-py3-none-any.whl
+[2023-04-12 03:51:21] WARNING root fetch - processPackages [example-pkg-kingkong]: Skipping, unable to determine old version
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:51:21] INFO root fetch - processPackages [bible-alignments]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 03:51:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:21] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/54/95/5783b7c6ad11065416bab28a1394fda809debc4106f32316637ac653a08c/xj_finance-1.1.6.tar.gz
+[2023-04-12 03:51:21] INFO root fetch - processPackages [pyloobins]: Downloading https://files.pythonhosted.org/packages/dc/b7/6cdf81feda1d72a380b42cc09409b29596382f14690308ceca357c9d1958/pyloobins-0.1.2.tar.gz
+[2023-04-12 03:51:21] INFO root fetch - processPackages [nvosscript]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-04-12 03:51:21] INFO root fetch - processPackages [bible-alignments]: Downloading https://files.pythonhosted.org/packages/6c/84/169eda4477702ae055b122ea56dd18c51ad655bd3c14f7ba37d4e5977d27/bible_alignments-0.2.2.tar.gz
+[2023-04-12 03:51:21] INFO root fetch - processPackages [odoo13-addon-report-xlsx]: Downloading https://files.pythonhosted.org/packages/d3/1d/66e4c8865250d2fd4b19062a15b1198985b02a3c2a8d6e4ab32fb34ad08e/odoo13_addon_report_xlsx-13.0.1.1.1-py3-none-any.whl
+[2023-04-12 03:51:22] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-04-12 03:51:22] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.1.5.tar.gz tmp/xj_finance-1.1.6.tar.gz --markdown 20230412/x/xj-finance/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-12 03:51:22] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/4d/c5/d9c9289fe8c9e61bc349404ab52c1ae3363aecfb5ad3b0ed249a06d40336/nvosscript-1.2.1.tar.gz
+[2023-04-12 03:51:22] INFO root fetch - processPackages [pyloobins]: executing diffoscope
+[2023-04-12 03:51:22] INFO root fetch - processPackages [pyloobins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyloobins-0.1.1.tar.gz tmp/pyloobins-0.1.2.tar.gz --markdown 20230412/p/pyloobins/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 03:51:22] INFO root fetch - processPackages [odoo13-addon-report-xlsx]: executing diffoscope
+[2023-04-12 03:51:22] INFO root fetch - processPackages [odoo13-addon-report-xlsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_report_xlsx-13.0.1.1.0-py3-none-any.whl.zip tmp/odoo13_addon_report_xlsx-13.0.1.1.1-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-report-xlsx/13.0.1.1.0-13.0.1.1.1/diff.md --exclude *.pyd
+[2023-04-12 03:51:22] INFO root fetch - processPackages [bible-alignments]: Downloading https://files.pythonhosted.org/packages/5e/03/14e4716ea5e9a7d83079a9f69447410be6a23e1acdd367229ccd73f5f2bf/bible_alignments-0.2.3.tar.gz
+[2023-04-12 03:51:22] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-12 03:51:22] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.2.0.tar.gz tmp/nvosscript-1.2.1.tar.gz --markdown 20230412/n/nvosscript/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-04-12 03:51:22] INFO root fetch - processPackages [bible-alignments]: executing diffoscope
+[2023-04-12 03:51:22] INFO root fetch - processPackages [bible-alignments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bible_alignments-0.2.2.tar.gz tmp/bible_alignments-0.2.3.tar.gz --markdown 20230412/b/bible-alignments/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 03:51:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:23] WARNING root fetch - processPackages [secretelf]: Skipping, unable to determine old version
+[2023-04-12 03:51:23] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:51:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:51:27] INFO root fetch - main [MainThread]: Store serial: [17670188]
