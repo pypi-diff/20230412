@@ -11846,3 +11846,171 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 12:26:53] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:26:56] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:26:56] INFO root fetch - main [MainThread]: Store serial: [17674578]
+[2023-04-12 12:31:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674578]
+[2023-04-12 12:32:04] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 12:32:04] INFO root fetch - processPackages [aomaker]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-04-12 12:32:04] INFO root fetch - processPackages [cythoninstallhelpers]: New version: [1.3.0] Old Version: [1.2.1]
+[2023-04-12 12:32:04] INFO root fetch - processPackages [fuse-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 12:32:04] WARNING root fetch - processPackages [mle-flake8-plugins]: Skipping, unable to determine old version
+[2023-04-12 12:32:04] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:32:04] INFO root fetch - processPackages [cythonarrays]: New version: [1.5.0] Old Version: [1.4.1]
+[2023-04-12 12:32:04] INFO root fetch - processPackages [douloader]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 12:32:04] INFO root fetch - processPackages [fuse-client]: executing diffoscope
+[2023-04-12 12:32:04] INFO root fetch - processPackages [fuse-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuse-client-1.0.8.tar.gz tmp/fuse-client-1.0.9.tar.gz --markdown 20230412/f/fuse-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 12:32:04] INFO root fetch - processPackages [aomaker]: Downloading https://files.pythonhosted.org/packages/11/bd/50656939ed9d8cc97b267990e9f47513ba09fd6d7c66e64d0d882aaaa647/aomaker-2.2.1.tar.gz
+[2023-04-12 12:32:04] INFO root fetch - processPackages [cythoninstallhelpers]: Downloading https://files.pythonhosted.org/packages/b1/80/4a6eff5c1dc1f8487a55aee18d7e4297509163803cd8ded09d15fcd67163/cythoninstallhelpers-1.2.1.tar.gz
+[2023-04-12 12:32:04] INFO root fetch - processPackages [douloader]: Downloading https://files.pythonhosted.org/packages/a1/77/88247d83b36a59ecbc241098cb86060e7686fd2b0b006f4b7f50649213d9/douloader-1.0.0.tar.gz
+[2023-04-12 12:32:04] INFO root fetch - processPackages [cythonarrays]: Downloading https://files.pythonhosted.org/packages/e7/12/defb27119c5caa9d13b82e46cd984c0ef58eaf68845e01d66e49d557c835/cythonarrays-1.4.1.tar.gz
+[2023-04-12 12:32:04] INFO root fetch - processPackages [aomaker]: executing diffoscope
+[2023-04-12 12:32:04] INFO root fetch - processPackages [aomaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aomaker-2.2.0.tar.gz tmp/aomaker-2.2.1.tar.gz --markdown 20230412/a/aomaker/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-04-12 12:32:04] INFO root fetch - processPackages [douloader]: Downloading https://files.pythonhosted.org/packages/0b/09/4a81397c34d0b77cac26a4550ace77041367753e3a1f2a8c56ab1af53389/douloader-1.0.1.tar.gz
+[2023-04-12 12:32:04] INFO root fetch - processPackages [cythoninstallhelpers]: Downloading https://files.pythonhosted.org/packages/63/60/336e6936139da12f796c1fe4d49a976e6e4a3f5cf51479672eea55b60976/cythoninstallhelpers-1.3.0.tar.gz
+[2023-04-12 12:32:05] INFO root fetch - processPackages [cythonarrays]: Downloading https://files.pythonhosted.org/packages/b3/c0/38e307c6ef1202af235a37239870dfe6eadba4d5802f9cdfae665d75baca/cythonarrays-1.5.0.tar.gz
+[2023-04-12 12:32:05] INFO root fetch - processPackages [douloader]: executing diffoscope
+[2023-04-12 12:32:05] INFO root fetch - processPackages [douloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/douloader-1.0.0.tar.gz tmp/douloader-1.0.1.tar.gz --markdown 20230412/d/douloader/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 12:32:05] INFO root fetch - processPackages [cythoninstallhelpers]: executing diffoscope
+[2023-04-12 12:32:05] INFO root fetch - processPackages [cythoninstallhelpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythoninstallhelpers-1.2.1.tar.gz tmp/cythoninstallhelpers-1.3.0.tar.gz --markdown 20230412/c/cythoninstallhelpers/1.2.1-1.3.0/diff.md --exclude *.pyd
+[2023-04-12 12:32:05] INFO root fetch - processPackages [cythonarrays]: executing diffoscope
+[2023-04-12 12:32:05] INFO root fetch - processPackages [cythonarrays]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cythonarrays-1.4.1.tar.gz tmp/cythonarrays-1.5.0.tar.gz --markdown 20230412/c/cythonarrays/1.4.1-1.5.0/diff.md --exclude *.pyd
+[2023-04-12 12:32:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:06] INFO root fetch - processPackages [hitchpylibrarytoolkit]: New version: [0.6.9] Old Version: [0.6.7]
+[2023-04-12 12:32:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:06] INFO root fetch - processPackages [matrixconverters]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-04-12 12:32:06] INFO root fetch - processPackages [hitchpylibrarytoolkit]: executing diffoscope
+[2023-04-12 12:32:06] INFO root fetch - processPackages [hitchpylibrarytoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchpylibrarytoolkit-0.6.7.tar.gz tmp/hitchpylibrarytoolkit-0.6.9.tar.gz --markdown 20230412/h/hitchpylibrarytoolkit/0.6.7-0.6.9/diff.md --exclude *.pyd
+[2023-04-12 12:32:06] INFO root fetch - processPackages [matrixconverters]: Downloading https://files.pythonhosted.org/packages/39/64/967b40326ba442d781224217020335d22a7f73c8698355da4835d1679a49/matrixconverters-1.1.5.tar.gz
+[2023-04-12 12:32:06] INFO root fetch - processPackages [matrixconverters]: Downloading https://files.pythonhosted.org/packages/1d/24/d4ed1af429254dc7da3a96d7f951bf3d56a32031abfdec87ebc49b3ed3e0/matrixconverters-1.2.0.tar.gz
+[2023-04-12 12:32:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:06] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-04-12 12:32:06] INFO root fetch - processPackages [matrixconverters]: executing diffoscope
+[2023-04-12 12:32:06] INFO root fetch - processPackages [matrixconverters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrixconverters-1.1.5.tar.gz tmp/matrixconverters-1.2.0.tar.gz --markdown 20230412/m/matrixconverters/1.1.5-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 12:32:06] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/01/af/2a3644984e8ea68901809620645ad217d3313f6bad4256ec04eb0aafe770/nonebot-plugin-clock-0.7.3.tar.gz
+[2023-04-12 12:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:07] INFO root fetch - processPackages [spectacularAI]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 12:32:07] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-12 12:32:07] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.7.2.tar.gz tmp/nonebot-plugin-clock-0.7.3.tar.gz --markdown 20230412/n/nonebot-plugin-clock/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-04-12 12:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:07] WARNING root fetch - processPackages [aiogram-ext]: Skipping, unable to determine old version
+[2023-04-12 12:32:07] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:32:07] INFO root fetch - processPackages [selenium-recaptcha-solver]: New version: [1.7.0] Old Version: [1.6.2]
+[2023-04-12 12:32:07] INFO root fetch - processPackages [spectacularAI]: Downloading https://files.pythonhosted.org/packages/07/34/c7075d79600a0fd2ad101fcb775ecf2d865ccddfd6ad278ca54351cc9e74/spectacularAI-1.8.0-cp39-cp39-win_amd64.whl
+[2023-04-12 12:32:07] INFO root fetch - processPackages [selenium-recaptcha-solver]: Downloading https://files.pythonhosted.org/packages/e6/57/47a4444141a8f6561f463f2b2e9da662a742be8331d29db440ef1f4be120/selenium-recaptcha-solver-1.6.2.tar.gz
+[2023-04-12 12:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:07] INFO root fetch - processPackages [bittrade-binance-websocket]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 12:32:07] INFO root fetch - processPackages [selenium-recaptcha-solver]: Downloading https://files.pythonhosted.org/packages/4c/a8/b969a64b844574623bc809ee0ec21b3e51d5a29d783e0ce6551b0fcc830a/selenium-recaptcha-solver-1.7.0.tar.gz
+[2023-04-12 12:32:07] INFO root fetch - processPackages [selenium-recaptcha-solver]: executing diffoscope
+[2023-04-12 12:32:07] INFO root fetch - processPackages [selenium-recaptcha-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenium-recaptcha-solver-1.6.2.tar.gz tmp/selenium-recaptcha-solver-1.7.0.tar.gz --markdown 20230412/s/selenium-recaptcha-solver/1.6.2-1.7.0/diff.md --exclude *.pyd
+[2023-04-12 12:32:07] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/cc/bb/d408e519cf762a9ecfc054a2090ddd2796339b5ed69aa68aae81be326508/bittrade_binance_websocket-0.1.7.tar.gz
+[2023-04-12 12:32:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:07] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 12:32:08] INFO root fetch - processPackages [bittrade-binance-websocket]: executing diffoscope
+[2023-04-12 12:32:08] INFO root fetch - processPackages [bittrade-binance-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_binance_websocket-0.1.6.tar.gz tmp/bittrade_binance_websocket-0.1.7.tar.gz --markdown 20230412/b/bittrade-binance-websocket/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 12:32:08] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/fa/6d/2d01deaa3692a7efb5d649a3b2208a51cc04118dce072980ee1bfec3d9f8/aiogram_ext-0.0.1-py3-none-any.whl
+[2023-04-12 12:32:08] INFO root fetch - processPackages [spectacularAI]: Downloading https://files.pythonhosted.org/packages/59/13/838f1080972e69faa65654d7a73522bc0b85755f60983a4088f2a8032ef4/spectacularAI-1.9.0-cp39-cp39-win_amd64.whl
+[2023-04-12 12:32:08] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/88/ff/18482c21e3d9dc555eadac7a0cf4049c400dcc39ece283f5db5c356f8633/aiogram-ext-0.0.2.tar.gz
+[2023-04-12 12:32:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:08] INFO root fetch - processPackages [vdx-helper]: New version: [3.2.4] Old Version: [3.2.3]
+[2023-04-12 12:32:08] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-12 12:32:08] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram_ext-0.0.1-py3-none-any.whl.zip tmp/aiogram-ext-0.0.2.tar.gz --markdown 20230412/a/aiogram-ext/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 12:32:08] INFO root fetch - processPackages [vdx-helper]: Downloading https://files.pythonhosted.org/packages/17/e9/0e53083c9cc8c03756a5e9d9579261992fc8cf51e44898d839187ce9d5fb/vdx-helper-3.2.3.tar.gz
+[2023-04-12 12:32:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:09] INFO root fetch - processPackages [vdx-helper]: Downloading https://files.pythonhosted.org/packages/83/dd/6ef2bc42fde8611e91af81ad935f6ce2f2fb95443c0fbd05b18dd3e8fbc7/vdx_helper-3.2.4.tar.gz
+[2023-04-12 12:32:09] INFO root fetch - processPackages [vdx-helper]: executing diffoscope
+[2023-04-12 12:32:09] INFO root fetch - processPackages [vdx-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdx-helper-3.2.3.tar.gz tmp/vdx_helper-3.2.4.tar.gz --markdown 20230412/v/vdx-helper/3.2.3-3.2.4/diff.md --exclude *.pyd
+[2023-04-12 12:32:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:09] INFO root fetch - processPackages [spectacularAI]: executing diffoscope
+[2023-04-12 12:32:09] INFO root fetch - processPackages [spectacularAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectacularAI-1.8.0-cp39-cp39-win_amd64.whl.zip tmp/spectacularAI-1.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20230412/s/spectacularAI/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 12:32:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:32:11] ERROR root fetch - processPackages [spectacularAI]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140501533597024)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 127, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140501667814912)
+
+[2023-04-12 12:32:11] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:32:11] INFO root fetch - main [MainThread]: Store serial: [17674637]
