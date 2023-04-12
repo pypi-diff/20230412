@@ -8570,3 +8570,53 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:05:44] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:05:45] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:05:45] INFO root fetch - main [MainThread]: Store serial: [17672379]
+[2023-04-12 09:10:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672379]
+[2023-04-12 09:10:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 09:10:52] INFO root fetch - processPackages [LFPykit]: New version: [0.5rc0] Old Version: [0.5.1]
+[2023-04-12 09:10:52] INFO root fetch - processPackages [odoo14-addon-purchase-cancel-reason]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2023-04-12 09:10:52] INFO root fetch - processPackages [odoo14-addon-purchase-manual-delivery]: New version: [14.0.1.0.2.dev1] Old Version: [14.0.1.0.1.dev8]
+[2023-04-12 09:10:52] INFO root fetch - processPackages [midas-data-util]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 09:10:52] INFO root fetch - processPackages [power-grid-model]: New version: [1.5.0rc9152109758095] Old Version: [1.5.0rc9150505439162]
+[2023-04-12 09:10:53] INFO root fetch - processPackages [power-grid-model]: executing diffoscope
+[2023-04-12 09:10:53] INFO root fetch - processPackages [power-grid-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_grid_model-1.5.0rc9150505439162-py3-none-win_amd64.whl.zip tmp/power_grid_model-1.5.0rc9152109758095-py3-none-win_amd64.whl.zip --markdown 20230412/p/power-grid-model/1.5.0rc9150505439162-1.5.0rc9152109758095/diff.md --exclude *.pyd
+[2023-04-12 09:10:53] INFO root fetch - processPackages [LFPykit]: Downloading https://files.pythonhosted.org/packages/b4/e0/b5935801a38839b177267f53cf6781941e36d8f832e06612773fdf89504e/LFPykit-0.5.1.tar.gz
+[2023-04-12 09:10:53] INFO root fetch - processPackages [midas-data-util]: Downloading https://files.pythonhosted.org/packages/70/07/378929cbea0629a4e9a3a357b3aeaf4d473a7c6041a843260ff98bbf46fc/midas-data-util-0.2.0.tar.gz
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-cancel-reason]: Downloading https://files.pythonhosted.org/packages/14/f5/2e7ce53b9416d8f4742a586b2a6311460ea81d489cbd1789767241c9db47/odoo14_addon_purchase_cancel_reason-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-manual-delivery]: Downloading https://files.pythonhosted.org/packages/90/7a/68ac4301821a41b86f8de3b50bb31aaaa7c8aabb31a05813a6931dabf475/odoo14_addon_purchase_manual_delivery-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 09:10:53] INFO root fetch - processPackages [midas-data-util]: Downloading https://files.pythonhosted.org/packages/c0/3f/44134945819314003e2e3db6214fb52114243faf0aa8b7f8520f1d5eaff6/midas-data-util-0.2.1.tar.gz
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-manual-delivery]: Downloading https://files.pythonhosted.org/packages/41/81/ea3893a95210d8c0e6644be297c79a46b8375a70ec368d8ce368a3a84d13/odoo14_addon_purchase_manual_delivery-14.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-12 09:10:53] INFO root fetch - processPackages [midas-data-util]: executing diffoscope
+[2023-04-12 09:10:53] INFO root fetch - processPackages [midas-data-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midas-data-util-0.2.0.tar.gz tmp/midas-data-util-0.2.1.tar.gz --markdown 20230412/m/midas-data-util/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-manual-delivery]: executing diffoscope
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-manual-delivery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_manual_delivery-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_purchase_manual_delivery-14.0.1.0.2.dev1-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-purchase-manual-delivery/14.0.1.0.1.dev8-14.0.1.0.2.dev1/diff.md --exclude *.pyd
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-cancel-reason]: Downloading https://files.pythonhosted.org/packages/b4/85/61f7d6d3c232acb5d41939645a5c70b6838a5bf923604dca5a26a83cf299/odoo14_addon_purchase_cancel_reason-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-12 09:10:53] INFO root fetch - processPackages [LFPykit]: Downloading https://files.pythonhosted.org/packages/37/f6/8bbd825b5a62497f66428c85cc4f036be407031e935bb63e6a519bfa8e00/LFPykit-0.5rc0.tar.gz
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-cancel-reason]: executing diffoscope
+[2023-04-12 09:10:53] INFO root fetch - processPackages [odoo14-addon-purchase-cancel-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_cancel_reason-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_purchase_cancel_reason-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-purchase-cancel-reason/14.0.1.0.1.dev8-14.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-12 09:10:54] INFO root fetch - processPackages [LFPykit]: executing diffoscope
+[2023-04-12 09:10:54] INFO root fetch - processPackages [LFPykit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LFPykit-0.5.1.tar.gz tmp/LFPykit-0.5rc0.tar.gz --markdown 20230412/L/LFPykit/0.5.1-0.5rc0/diff.md --exclude *.pyd
+[2023-04-12 09:10:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:54] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: New version: [16.0.20230323.3] Old Version: [16.0.20230318.0]
+[2023-04-12 09:10:54] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/5f/9e/4b772340144925f5c244cc5b83377a270072b71a261333c8d25629da92b8/odoo_addons_oca_purchase_workflow-16.0.20230318.0-py3-none-any.whl
+[2023-04-12 09:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:55] INFO root fetch - processPackages [midas-data-util]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 09:10:55] INFO root fetch - processPackages [midas-data-util]: executing diffoscope
+[2023-04-12 09:10:55] INFO root fetch - processPackages [midas-data-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midas-data-util-0.2.0.tar.gz tmp/midas-data-util-0.2.1.tar.gz --markdown 20230412/m/midas-data-util/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 09:10:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:55] INFO root fetch - processPackages [cis-checks-2023]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-04-12 09:10:55] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/05/1a/3517095e20104598613004bc2000e8e56c8ef42d575dce6f260146128015/odoo_addons_oca_purchase_workflow-16.0.20230323.3-py3-none-any.whl
+[2023-04-12 09:10:55] INFO root fetch - processPackages [cis-checks-2023]: Downloading https://files.pythonhosted.org/packages/b4/18/813f4955fc03211da185dd695f3882db49c3611be1c63eaebf58ac597571/cis_checks_2023-2.0.3.tar.gz
+[2023-04-12 09:10:55] INFO root fetch - processPackages [cis-checks-2023]: executing diffoscope
+[2023-04-12 09:10:55] INFO root fetch - processPackages [cis-checks-2023]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cis_checks_2023-2.0.2.tar.gz tmp/cis_checks_2023-2.0.3.tar.gz --markdown 20230412/c/cis-checks-2023/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-04-12 09:10:55] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: executing diffoscope
+[2023-04-12 09:10:55] INFO root fetch - processPackages [odoo-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_purchase_workflow-16.0.20230318.0-py3-none-any.whl.zip tmp/odoo_addons_oca_purchase_workflow-16.0.20230323.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addons-oca-purchase-workflow/16.0.20230318.0-16.0.20230323.3/diff.md --exclude *.pyd
+[2023-04-12 09:10:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:56] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-12 09:10:56] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-12 09:10:56] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.16.tar.gz tmp/analysisbykwok-0.0.17.tar.gz --markdown 20230412/a/analysisbykwok/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-12 09:10:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:10:57] INFO root fetch - main [MainThread]: Store serial: [17672406]
