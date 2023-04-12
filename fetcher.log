@@ -11276,3 +11276,156 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 11:49:03] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:49:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:49:11] INFO root fetch - main [MainThread]: Store serial: [17674213]
+[2023-04-12 11:54:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674213]
+[2023-04-12 11:54:18] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-12 11:54:18] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.9.0a1681291877] Old Version: [1.9.0a1681291828]
+[2023-04-12 11:54:18] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-12 11:54:18] INFO root fetch - processPackages [design-django-theme]: New version: [2.3.6.post3] Old Version: [2.3.6.post2]
+[2023-04-12 11:54:18] INFO root fetch - processPackages [toollib]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-12 11:54:18] INFO root fetch - processPackages [nb-log]: New version: [8.2] Old Version: [8.1]
+[2023-04-12 11:54:18] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/d9/19/34f55b000b49b2fd9b825b25f7d3a0d13101e30d46419421139eede98e05/lbrlabs_pulumi_scaleway-1.9.0a1681291828.tar.gz
+[2023-04-12 11:54:18] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/aa/36/84e5df8a655079e9633e0e5c9cec019b692811ab8e4db33a3eade461ca2a/watchtower_browser_testing-0.1.4.tar.gz
+[2023-04-12 11:54:18] INFO root fetch - processPackages [nb-log]: Downloading https://files.pythonhosted.org/packages/03/c7/1a6a82dab9d830317f1bd35e61f5b8f889e93e006962e3028d2bf3e73e0c/nb_log-8.1.tar.gz
+[2023-04-12 11:54:18] INFO root fetch - processPackages [design-django-theme]: Downloading https://files.pythonhosted.org/packages/dd/92/c601beb0b3829eaad586c680b6b346621d91f3895d93a56100a8457de455/design-django-theme-2.3.6.post3.tar.gz
+[2023-04-12 11:54:18] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/b6/30/37aa2e9943332673e3b8ff83645326f685ed572c8dca4df83b9d637a71c0/toollib-1.3.1-py3-none-any.whl
+[2023-04-12 11:54:19] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-12 11:54:19] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.3.0-py3-none-any.whl.zip tmp/toollib-1.3.1-py3-none-any.whl.zip --markdown 20230412/t/toollib/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-12 11:54:19] INFO root fetch - processPackages [nb-log]: Downloading https://files.pythonhosted.org/packages/b1/a7/a316a39a9afdfe4c9db5d436ecddd9aaabef69f88bed114a733c7cf7b369/nb_log-8.2.tar.gz
+[2023-04-12 11:54:19] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/ec/89/14e4684e3661747998014e4e5deedfe1569b0713798ab43cad85d8715f43/lbrlabs_pulumi_scaleway-1.9.0a1681291877.tar.gz
+[2023-04-12 11:54:19] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/3e/19/9a7761df777c28f48ed79ce61bc683212720886fe31f3a307fbf517af868/watchtower_browser_testing-0.2.0.tar.gz
+[2023-04-12 11:54:19] INFO root fetch - processPackages [nb-log]: executing diffoscope
+[2023-04-12 11:54:19] INFO root fetch - processPackages [nb-log]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb_log-8.1.tar.gz tmp/nb_log-8.2.tar.gz --markdown 20230412/n/nb-log/8.1-8.2/diff.md --exclude *.pyd
+[2023-04-12 11:54:19] INFO root fetch - processPackages [design-django-theme]: executing diffoscope
+[2023-04-12 11:54:19] INFO root fetch - processPackages [design-django-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/design-django-theme-2.3.6.post2.tar.gz tmp/design-django-theme-2.3.6.post3.tar.gz --markdown 20230412/d/design-django-theme/2.3.6.post2-2.3.6.post3/diff.md --exclude *.pyd
+[2023-04-12 11:54:19] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 11:54:19] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.1.4.tar.gz tmp/watchtower_browser_testing-0.2.0.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 11:54:19] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-12 11:54:19] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291828.tar.gz tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291877.tar.gz --markdown 20230412/l/lbrlabs-pulumi-scaleway/1.9.0a1681291828-1.9.0a1681291877/diff.md --exclude *.pyd
+[2023-04-12 11:54:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:20] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.9.0a1681291877] Old Version: [1.9.0a1681291828]
+[2023-04-12 11:54:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:20] INFO root fetch - processPackages [textgen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 11:54:20] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-12 11:54:20] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291828.tar.gz tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291877.tar.gz --markdown 20230412/l/lbrlabs-pulumi-scaleway/1.9.0a1681291828-1.9.0a1681291877/diff.md --exclude *.pyd
+[2023-04-12 11:54:20] INFO root fetch - processPackages [textgen]: Downloading https://files.pythonhosted.org/packages/4f/6c/96ee0fbc335dd28e7ed3644b4f26876dae572f1bc0c9b9c9841c11b5c93e/textgen-0.1.8.tar.gz
+[2023-04-12 11:54:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:20] INFO root fetch - processPackages [funboost]: New version: [20.3] Old Version: [20.2]
+[2023-04-12 11:54:21] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/12/1a/cf07b44271660d3e5d47645170469cbc1c203e7bf54490d0073e06c84a4b/funboost-20.2-py3-none-any.whl
+[2023-04-12 11:54:21] INFO root fetch - processPackages [textgen]: Downloading https://files.pythonhosted.org/packages/0b/52/5b915eb7ec2ddf2b936a812cf67df3eb820e9231cae3a604019a5f9fcc41/textgen-0.1.9.tar.gz
+[2023-04-12 11:54:21] INFO root fetch - processPackages [textgen]: executing diffoscope
+[2023-04-12 11:54:21] INFO root fetch - processPackages [textgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textgen-0.1.8.tar.gz tmp/textgen-0.1.9.tar.gz --markdown 20230412/t/textgen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 11:54:21] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/a5/c9/457bbd9d0339311353be53ad9ae9fe4d45ec1ec38856a276a35687b9c4d0/funboost-20.3-py3-none-any.whl
+[2023-04-12 11:54:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:21] INFO root fetch - processPackages [clip-client]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-12 11:54:21] INFO root fetch - processPackages [funboost]: executing diffoscope
+[2023-04-12 11:54:21] INFO root fetch - processPackages [funboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funboost-20.2-py3-none-any.whl.zip tmp/funboost-20.3-py3-none-any.whl.zip --markdown 20230412/f/funboost/20.2-20.3/diff.md --exclude *.pyd
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-client]: Downloading https://files.pythonhosted.org/packages/10/e6/9accdae2ac555b06e38f805dc83a230039b357ba3f98541e38ace3d6376c/clip-client-0.8.2.dev6.tar.gz
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-client]: Downloading https://files.pythonhosted.org/packages/ca/2c/399bc35c1a7c66961c905ea4070cb45ea38bb83635fd6ace53b328541756/clip-client-0.8.2.dev9.tar.gz
+[2023-04-12 11:54:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-server]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-server]: Downloading https://files.pythonhosted.org/packages/56/ae/ea6693e8409df984cef31a10c7296023e7571b2960c87482b577408c4515/clip-server-0.8.2.dev6.tar.gz
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-client]: executing diffoscope
+[2023-04-12 11:54:22] INFO root fetch - processPackages [clip-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-client-0.8.2.dev6.tar.gz tmp/clip-client-0.8.2.dev9.tar.gz --markdown 20230412/c/clip-client/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-12 11:54:23] INFO root fetch - processPackages [clip-server]: Downloading https://files.pythonhosted.org/packages/0a/53/031fd57e987383155a1cfe0aceab5af1e0d7657d783f37c2a16e17df1e03/clip-server-0.8.2.dev9.tar.gz
+[2023-04-12 11:54:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:23] INFO root fetch - processPackages [clip-as-service]: New version: [0.8.2.dev9] Old Version: [0.8.2.dev6]
+[2023-04-12 11:54:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:23] INFO root fetch - processPackages [clip-as-service]: Downloading https://files.pythonhosted.org/packages/fb/19/c77d019f7c3d83ccc50b8a0be29cf48f911a3ce00a56c9f9015fb2dc178c/clip-as-service-0.8.2.dev6.tar.gz
+[2023-04-12 11:54:23] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-12 11:54:23] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-12 11:54:23] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230412/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-12 11:54:24] INFO root fetch - processPackages [clip-as-service]: Downloading https://files.pythonhosted.org/packages/2e/9b/5b24dbeec3c5c3516f9bf27e4ab70bf1bbbcb2a75886e1865d967c358d6a/clip-as-service-0.8.2.dev9.tar.gz
+[2023-04-12 11:54:24] ERROR root fetch - processPackages [funboost]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-04-12 11:54:24] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:54:24] INFO root fetch - processPackages [hcpdiff]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 11:54:24] INFO root fetch - processPackages [clip-server]: executing diffoscope
+[2023-04-12 11:54:24] INFO root fetch - processPackages [clip-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-server-0.8.2.dev6.tar.gz tmp/clip-server-0.8.2.dev9.tar.gz --markdown 20230412/c/clip-server/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-12 11:54:24] INFO root fetch - processPackages [clip-as-service]: executing diffoscope
+[2023-04-12 11:54:24] INFO root fetch - processPackages [clip-as-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clip-as-service-0.8.2.dev6.tar.gz tmp/clip-as-service-0.8.2.dev9.tar.gz --markdown 20230412/c/clip-as-service/0.8.2.dev6-0.8.2.dev9/diff.md --exclude *.pyd
+[2023-04-12 11:54:24] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/a1/c7/725e46a7f30b7e505042b896de6f67b63629a608bb65d81887ce2ba8aaa5/hcpdiff-0.1.5.tar.gz
+[2023-04-12 11:54:24] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-04-12 11:54:24] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.1.4.tar.gz tmp/hcpdiff-0.1.5.tar.gz --markdown 20230412/h/hcpdiff/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 11:54:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:25] INFO root fetch - processPackages [ferveo]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 11:54:25] WARNING root fetch - processPackages [oc-preprocessing]: Skipping, unable to determine old version
+[2023-04-12 11:54:25] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:54:25] INFO root fetch - processPackages [autoMMM]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 11:54:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:25] INFO root fetch - processPackages [thunno2]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-12 11:54:25] INFO root fetch - processPackages [ferveo]: Downloading https://files.pythonhosted.org/packages/88/58/8717dc75c7e5bee79eb92b883c85b8342ba12c8c2383029e2a728fed0417/ferveo-0.1.5.tar.gz
+[2023-04-12 11:54:25] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/68/6e/0d6e53bb7f6b39ad68afad16f580edfca31e901e4130d260b0c94a22b9b3/thunno2-2.0.0.tar.gz
+[2023-04-12 11:54:25] INFO root fetch - processPackages [autoMMM]: Downloading https://files.pythonhosted.org/packages/20/c9/c38a59b8ecedd4c2eeb0f9cd2916c9c21e12ac1460eed0e1bc3c66adabb0/autoMMM-0.1.2.tar.gz
+[2023-04-12 11:54:25] INFO root fetch - processPackages [ferveo]: Downloading https://files.pythonhosted.org/packages/4a/de/585cb9b542e8e4d031a2fca6dc965e1a3c04c4883b8133cece077a0a5930/ferveo-0.1.6.tar.gz
+[2023-04-12 11:54:25] INFO root fetch - processPackages [autoMMM]: executing diffoscope
+[2023-04-12 11:54:25] INFO root fetch - processPackages [autoMMM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoMMM-0.1.1.tar.gz tmp/autoMMM-0.1.2.tar.gz --markdown 20230412/a/autoMMM/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 11:54:26] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/89/0d/acd9f2e3cd1516258a610e7b76ee006f2856320f1f2847ac253eb30ca4ac/thunno2-2.0.1.tar.gz
+[2023-04-12 11:54:26] INFO root fetch - processPackages [ferveo]: executing diffoscope
+[2023-04-12 11:54:26] INFO root fetch - processPackages [ferveo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ferveo-0.1.5.tar.gz tmp/ferveo-0.1.6.tar.gz --markdown 20230412/f/ferveo/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 11:54:26] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-12 11:54:26] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.0.tar.gz tmp/thunno2-2.0.1.tar.gz --markdown 20230412/t/thunno2/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-12 11:54:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:27] WARNING root fetch - processPackages [KLog-Lib]: Skipping, unable to determine old version
+[2023-04-12 11:54:27] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:54:27] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 11:54:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:27] INFO root fetch - processPackages [napari-sam]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 11:54:27] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 11:54:27] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 11:54:27] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/40/fb/db6f22d610d051eacf908bea1abb0b79621e273e8ac2d75b9b66464858f0/napari-sam-0.3.0.tar.gz
+[2023-04-12 11:54:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:27] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-12 11:54:27] INFO root fetch - processPackages [napari-sam]: Downloading https://files.pythonhosted.org/packages/5e/ff/78e7e7c9f971a82f7f7f606897fd361b8ae65cdf1e407172bb8991171579/napari-sam-0.3.1.tar.gz
+[2023-04-12 11:54:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:27] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-12 11:54:27] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230412/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 11:54:27] INFO root fetch - processPackages [napari-sam]: executing diffoscope
+[2023-04-12 11:54:27] INFO root fetch - processPackages [napari-sam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-sam-0.3.0.tar.gz tmp/napari-sam-0.3.1.tar.gz --markdown 20230412/n/napari-sam/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 11:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:54:33] INFO root fetch - main [MainThread]: Store serial: [17674271]
