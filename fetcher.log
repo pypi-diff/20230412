@@ -9262,3 +9262,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 09:54:42] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:54:43] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:54:43] INFO root fetch - main [MainThread]: Store serial: [17672935]
+[2023-04-12 09:59:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672935]
+[2023-04-12 09:59:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 09:59:51] INFO root fetch - processPackages [pipreqs]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-multi-image]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev7]
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-exception]: New version: [14.0.2.1.1.dev5] Old Version: [14.0.2.1.1.dev4]
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo-addon-base-search-fuzzy]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-12 09:59:51] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 09:59:51] INFO root fetch - processPackages [pipreqs]: Downloading https://files.pythonhosted.org/packages/cb/d2/773745cb0fafb969efce863a88bfe76e36c0147acc548d7ffac27fca6734/pipreqs-0.4.8.tar.gz
+[2023-04-12 09:59:51] INFO root fetch - processPackages [p-template-crawler]: Downloading https://files.pythonhosted.org/packages/45/9c/aea529d7eca35d1c8acc75e8290e8b4e633d98de9de4220e913e82fa1bf0/p-template-crawler-0.0.8.tar.gz
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-multi-image]: Downloading https://files.pythonhosted.org/packages/12/44/f03c5cac44b23d358565c76a37467df6b30637741997daefa10388f9511d/odoo14_addon_base_multi_image-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo-addon-base-search-fuzzy]: Downloading https://files.pythonhosted.org/packages/f5/22/b797ac1b512d3b718f9509668b0af3d95b13e4546e58912e21041dbea86a/odoo_addon_base_search_fuzzy-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-exception]: Downloading https://files.pythonhosted.org/packages/24/fa/9d2825dd291374915cfe480c9d35f1c3faf1c0c359d4e7062e2dada8c20e/odoo14_addon_base_exception-14.0.2.1.1.dev5-py3-none-any.whl
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo-addon-base-search-fuzzy]: executing diffoscope
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo-addon-base-search-fuzzy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_search_fuzzy-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_base_search_fuzzy-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-base-search-fuzzy/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-multi-image]: executing diffoscope
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-multi-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_multi_image-14.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_base_multi_image-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-base-multi-image/14.0.1.0.1.dev7-14.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-exception]: executing diffoscope
+[2023-04-12 09:59:51] INFO root fetch - processPackages [odoo14-addon-base-exception]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_exception-14.0.2.1.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_base_exception-14.0.2.1.1.dev5-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-base-exception/14.0.2.1.1.dev4-14.0.2.1.1.dev5/diff.md --exclude *.pyd
+[2023-04-12 09:59:52] INFO root fetch - processPackages [p-template-crawler]: Downloading https://files.pythonhosted.org/packages/2e/93/1eb2e14124aacd5278934cdff24ad9d4860e50f82e5881d3d69c66eb4bee/p-template-crawler-0.0.9.tar.gz
+[2023-04-12 09:59:52] INFO root fetch - processPackages [pipreqs]: Downloading https://files.pythonhosted.org/packages/67/63/84409df1acd879d239e53599de2b3df45013e6cf46406fd94e86822635f3/pipreqs-0.4.9.tar.gz
+[2023-04-12 09:59:52] INFO root fetch - processPackages [pipreqs]: executing diffoscope
+[2023-04-12 09:59:52] INFO root fetch - processPackages [pipreqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipreqs-0.4.8.tar.gz tmp/pipreqs-0.4.9.tar.gz --markdown 20230412/p/pipreqs/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 09:59:52] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-04-12 09:59:52] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230412/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 09:59:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:53] INFO root fetch - processPackages [neulabs-cdk-constructs]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 09:59:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:53] INFO root fetch - processPackages [claspy]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 09:59:53] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/1c/40/8d16e6242391a05618dcea100da96828df93f0f2749ddf373fd77ca39f40/neulabs-cdk-constructs-0.2.1.tar.gz
+[2023-04-12 09:59:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:53] INFO root fetch - processPackages [claspy]: Downloading https://files.pythonhosted.org/packages/f5/f2/f56bda1ffc71aca44c5862dbd1b4a6b1dd9988af24b7605306f90821af16/claspy-0.1.6.tar.gz
+[2023-04-12 09:59:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:53] INFO root fetch - processPackages [neulabs-cdk-constructs]: Downloading https://files.pythonhosted.org/packages/f8/2f/16cd0a334de91bfc8b5eb1f30c9891df79a4595c1c6cd793c69aa92b7ad6/neulabs-cdk-constructs-0.2.2.tar.gz
+[2023-04-12 09:59:53] INFO root fetch - processPackages [neulabs-cdk-constructs]: executing diffoscope
+[2023-04-12 09:59:53] INFO root fetch - processPackages [neulabs-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neulabs-cdk-constructs-0.2.1.tar.gz tmp/neulabs-cdk-constructs-0.2.2.tar.gz --markdown 20230412/n/neulabs-cdk-constructs/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 09:59:53] INFO root fetch - processPackages [claspy]: Downloading https://files.pythonhosted.org/packages/7e/08/de0c21758d11b349d360ccaccafb51a9ddc1624b5457b7fc09daa08a1869/claspy-0.1.7.tar.gz
+[2023-04-12 09:59:53] INFO root fetch - processPackages [claspy]: executing diffoscope
+[2023-04-12 09:59:53] INFO root fetch - processPackages [claspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claspy-0.1.6.tar.gz tmp/claspy-0.1.7.tar.gz --markdown 20230412/c/claspy/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 09:59:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:59:55] INFO root fetch - main [MainThread]: Store serial: [17672956]
