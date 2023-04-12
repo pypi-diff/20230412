@@ -7271,3 +7271,19 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:36:14] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:36:14] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:36:14] INFO root fetch - main [MainThread]: Store serial: [17671579]
+[2023-04-12 07:41:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671579]
+[2023-04-12 07:41:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-04-12 07:41:22] INFO root fetch - processPackages [JustDeepIt]: New version: [0.1.27] Old Version: [0.1.26]
+[2023-04-12 07:41:22] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 07:41:22] WARNING root fetch - processPackages [dagi]: Skipping, unable to determine old version
+[2023-04-12 07:41:22] INFO root fetch - main [MainThread]: error
+[2023-04-12 07:41:22] INFO root fetch - processPackages [JustDeepIt]: Downloading https://files.pythonhosted.org/packages/ea/c8/3bb918a022e88d0218846eb0039e7c6856c848e9190ced7d231a2f308457/JustDeepIt-0.1.26.tar.gz
+[2023-04-12 07:41:22] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/d9/96/f800f28c9ccf7aaee9fee12181bc183690e4a5ac5f366cca776e8daa302a/langchain_utils-0.3.9.tar.gz
+[2023-04-12 07:41:22] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-12 07:41:22] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230412/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 07:41:22] INFO root fetch - processPackages [JustDeepIt]: Downloading https://files.pythonhosted.org/packages/81/cd/418a5561ba5c8b4c3fe7c5d6ab2b435608c721a22d58678a8cab0c692f80/JustDeepIt-0.1.27.tar.gz
+[2023-04-12 07:41:22] INFO root fetch - processPackages [JustDeepIt]: executing diffoscope
+[2023-04-12 07:41:22] INFO root fetch - processPackages [JustDeepIt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JustDeepIt-0.1.26.tar.gz tmp/JustDeepIt-0.1.27.tar.gz --markdown 20230412/J/JustDeepIt/0.1.26-0.1.27/diff.md --exclude *.pyd
+[2023-04-12 07:41:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:41:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:41:24] INFO root fetch - main [MainThread]: Store serial: [17671592]
