@@ -6546,3 +6546,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:09:25] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:09:26] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:09:26] INFO root fetch - main [MainThread]: Store serial: [17671155]
+[2023-04-12 06:14:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671155]
+[2023-04-12 06:14:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 06:14:34] INFO root fetch - processPackages [ablog]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 06:14:34] INFO root fetch - processPackages [gnssanalysis]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 06:14:34] INFO root fetch - processPackages [tinytuya]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 06:14:34] INFO root fetch - processPackages [ablog]: Downloading https://files.pythonhosted.org/packages/63/e8/82790091411d74571d1e67b11a8175e175f6234dac63bba89bdb87447290/ablog-0.9.4.tar.gz
+[2023-04-12 06:14:34] INFO root fetch - processPackages [gnssanalysis]: Downloading https://files.pythonhosted.org/packages/e0/2d/6e9b2e6b7338eb4ade3a80238c53fe3d7046af99576c4229b166e23c1a3a/gnssanalysis-0.0.8.tar.gz
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 06:14:34] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 06:14:34] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/22/7d/9d5fa82f83de2bc3db572f4410c55462fbeac68779f13c61ab259b930b3b/tinytuya-1.9.0-py2.py3-none-any.whl
+[2023-04-12 06:14:34] INFO root fetch - processPackages [gnssanalysis]: Downloading https://files.pythonhosted.org/packages/e1/ac/da507121836c683adba00ccb9f5f955063e24f97656ce240e4354a9cbe10/gnssanalysis-0.0.9.tar.gz
+[2023-04-12 06:14:34] INFO root fetch - processPackages [tinytuya]: Downloading https://files.pythonhosted.org/packages/6b/dd/19d76df53a7c336d3c501f30b519cec78154f50351414491f01fa4ea7c75/tinytuya-1.9.1-py2.py3-none-any.whl
+[2023-04-12 06:14:35] INFO root fetch - processPackages [ablog]: Downloading https://files.pythonhosted.org/packages/7b/1f/2e363c1ad1dd60b7f4feb29a57cf90fede60e9513e5b9d17e474b8e9af32/ablog-0.9.5.tar.gz
+[2023-04-12 06:14:35] INFO root fetch - processPackages [gnssanalysis]: executing diffoscope
+[2023-04-12 06:14:35] INFO root fetch - processPackages [gnssanalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssanalysis-0.0.8.tar.gz tmp/gnssanalysis-0.0.9.tar.gz --markdown 20230412/g/gnssanalysis/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 06:14:35] INFO root fetch - processPackages [tinytuya]: executing diffoscope
+[2023-04-12 06:14:35] INFO root fetch - processPackages [tinytuya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinytuya-1.9.0-py2.py3-none-any.whl.zip tmp/tinytuya-1.9.1-py2.py3-none-any.whl.zip --markdown 20230412/t/tinytuya/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-12 06:14:35] INFO root fetch - processPackages [ablog]: executing diffoscope
+[2023-04-12 06:14:35] INFO root fetch - processPackages [ablog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ablog-0.9.4.tar.gz tmp/ablog-0.9.5.tar.gz --markdown 20230412/a/ablog/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:14:36] INFO root fetch - main [MainThread]: Store serial: [17671167]
