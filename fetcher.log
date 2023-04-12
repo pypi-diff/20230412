@@ -7022,3 +7022,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:09:59] ERROR root fetch - processPackages [msgraph-beta-sdk]: Timeout during execution of pkgdiff
 [2023-04-12 07:09:59] INFO root fetch - main [MainThread]: error
 [2023-04-12 07:09:59] INFO root fetch - main [MainThread]: Store serial: [17671430]
+[2023-04-12 07:15:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671430]
+[2023-04-12 07:15:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 07:15:06] INFO root fetch - processPackages [bingbong]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 07:15:06] INFO root fetch - processPackages [aptos-brownie]: New version: [3.0.0] Old Version: [2.7.0]
+[2023-04-12 07:15:06] INFO root fetch - processPackages [mrx-link-core]: New version: [1.1.0.dev0] Old Version: [1.0.0.dev1]
+[2023-04-12 07:15:06] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-12 07:15:06] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.0.9.dev20230323] Old Version: [0.0.9.dev20230322]
+[2023-04-12 07:15:06] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-12 07:15:06] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230412/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-12 07:15:06] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-04-12 07:15:06] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.0.9.dev20230322.tar.gz tmp/rapidpe_rift_pipe-0.0.9.dev20230323.tar.gz --markdown 20230412/r/rapidpe-rift-pipe/0.0.9.dev20230322-0.0.9.dev20230323/diff.md --exclude *.pyd
+[2023-04-12 07:15:06] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/41/ea/c934eaac192f4a843055e8453a45ad628430e1c7e4582d6e31c306a29659/bingbong-0.1.2.tar.gz
+[2023-04-12 07:15:07] INFO root fetch - processPackages [mrx-link-core]: Downloading https://files.pythonhosted.org/packages/63/26/db8a49c1310c27256d49905c7d244ddc29d4795acbe10bd2f4896627c9c0/mrx_link_core-1.0.0.dev1-cp39-cp39-win_amd64.whl
+[2023-04-12 07:15:07] INFO root fetch - processPackages [aptos-brownie]: Downloading https://files.pythonhosted.org/packages/d0/bd/302812f502f4a0f3cfb9d8e09377333aea571be5eb0497c58aa9a274d528/aptos_brownie-3.0.0-py3-none-any.whl
+[2023-04-12 07:15:07] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-12 07:15:07] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.1.tar.gz tmp/bingbong-0.1.2.tar.gz --markdown 20230412/b/bingbong/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 07:15:07] INFO root fetch - processPackages [aptos-brownie]: executing diffoscope
+[2023-04-12 07:15:07] INFO root fetch - processPackages [aptos-brownie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aptos_brownie-2.7.0-py3-none-any.whl.zip tmp/aptos_brownie-3.0.0-py3-none-any.whl.zip --markdown 20230412/a/aptos-brownie/2.7.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-12 07:15:07] INFO root fetch - processPackages [mrx-link-core]: Downloading https://files.pythonhosted.org/packages/01/42/f1134e3ecd2be4d0736f5632e030042182014246926c64f92f496f53b349/mrx_link_core-1.1.0.dev0-cp39-cp39-win_amd64.whl
+[2023-04-12 07:15:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:08] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 07:15:08] INFO root fetch - processPackages [mrx-link-core]: executing diffoscope
+[2023-04-12 07:15:08] INFO root fetch - processPackages [mrx-link-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrx_link_core-1.0.0.dev1-cp39-cp39-win_amd64.whl.zip tmp/mrx_link_core-1.1.0.dev0-cp39-cp39-win_amd64.whl.zip --markdown 20230412/m/mrx-link-core/1.0.0.dev1-1.1.0.dev0/diff.md --exclude *.pyd
+[2023-04-12 07:15:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:08] INFO root fetch - processPackages [cpggen]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-12 07:15:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:08] INFO root fetch - processPackages [c8connector]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:15:08] INFO root fetch - processPackages [cpggen]: executing diffoscope
+[2023-04-12 07:15:08] INFO root fetch - processPackages [cpggen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpggen-0.8.1.tar.gz tmp/cpggen-0.9.0.tar.gz --markdown 20230412/c/cpggen/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 07:15:08] INFO root fetch - processPackages [c8connector]: executing diffoscope
+[2023-04-12 07:15:08] INFO root fetch - processPackages [c8connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c8connector-0.0.8.tar.gz tmp/c8connector-0.0.9.tar.gz --markdown 20230412/c/c8connector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:15:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:08] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-04-12 07:15:08] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230412/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:15:09] INFO root fetch - main [MainThread]: Store serial: [17671471]
