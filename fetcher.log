@@ -22533,3 +22533,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:25:49] INFO root fetch - main [MainThread]: End processing [xia-user]: success
 [2023-04-12 21:25:53] INFO root fetch - main [MainThread]: End processing [dvc]: success
 [2023-04-12 21:25:53] INFO root fetch - main [MainThread]: Store serial: [17680984]
+[2023-04-12 21:30:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680984]
+[2023-04-12 21:31:01] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-12 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-user
+[2023-04-12 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-info-generation
+[2023-04-12 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-data-visualization
+[2023-04-12 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantconnect-stubs
+[2023-04-12 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybrainlife
+[2023-04-12 21:31:01] WARNING root fetch - processPackages [test-data-visualization]: Skipping, unable to determine old version
+[2023-04-12 21:31:01] INFO root fetch - processPackages [test-data-visualization]: Start processing: cupid-matching
+[2023-04-12 21:31:01] INFO root fetch - main [MainThread]: End processing [test-data-visualization] error
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.96] Old Version: [1.0.95]
+[2023-04-12 21:31:01] WARNING root fetch - processPackages [fake-info-generation]: Skipping, unable to determine old version
+[2023-04-12 21:31:01] INFO root fetch - processPackages [fake-info-generation]: Start processing: pop-config
+[2023-04-12 21:31:01] INFO root fetch - main [MainThread]: End processing [fake-info-generation] error
+[2023-04-12 21:31:01] INFO root fetch - processPackages [cupid-matching]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-12 21:31:01] INFO root fetch - processPackages [xia-user]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pop-config]: New version: [9.0.0] Old Version: [8.0.2]
+[2023-04-12 21:31:01] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-04-12 21:31:01] INFO root fetch - processPackages [cupid-matching]: Downloading https://files.pythonhosted.org/packages/54/cc/d071cb31077022e7b5f88704dcf6e352ca68660d35353e592be269201257/cupid_matching-1.0.4.tar.gz
+[2023-04-12 21:31:01] INFO root fetch - processPackages [xia-user]: executing diffoscope
+[2023-04-12 21:31:01] INFO root fetch - processPackages [xia-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_user-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_user-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230412/x/xia-user/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 21:31:01] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-04-12 21:31:01] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230412/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/d2/07/314f3a89418b1d9f73457612289c598775d30b54f84a85cbc344cfa872f6/pybrainlife-1.0.96.tar.gz
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pop-config]: Downloading https://files.pythonhosted.org/packages/6b/fa/ee072f15914d3821ae981f3033ced424cfc974091814e7f5fa9d032b7fe0/pop-config-8.0.2.tar.gz
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 21:31:01] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.95.tar.gz tmp/pybrainlife-1.0.96.tar.gz --markdown 20230412/p/pybrainlife/1.0.95-1.0.96/diff.md --exclude *.pyd
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pop-config]: Downloading https://files.pythonhosted.org/packages/76/f3/9b83407482a7ed535e074da5f8da536ed0e595bb49186f53c2eda611cfaf/pop-config-9.0.0.tar.gz
+[2023-04-12 21:31:02] INFO root fetch - processPackages [cupid-matching]: Downloading https://files.pythonhosted.org/packages/4a/79/0b937c9f803d6b27ac31cebbf173dfd9396f81a12afe3901213913fd2633/cupid_matching-1.0.5.tar.gz
+[2023-04-12 21:31:02] INFO root fetch - processPackages [xia-user]: Start processing: TransLiter
+[2023-04-12 21:31:02] INFO root fetch - main [MainThread]: End processing [xia-user]: success
+[2023-04-12 21:31:02] WARNING root fetch - processPackages [TransLiter]: Skipping, unable to determine old version
+[2023-04-12 21:31:02] INFO root fetch - processPackages [TransLiter]: Start processing: kwil
+[2023-04-12 21:31:02] INFO root fetch - main [MainThread]: End processing [TransLiter] error
+[2023-04-12 21:31:02] WARNING root fetch - processPackages [kwil]: Skipping, unable to determine old version
+[2023-04-12 21:31:02] INFO root fetch - processPackages [kwil]: Start processing: pyvalhalla
+[2023-04-12 21:31:02] INFO root fetch - main [MainThread]: End processing [kwil] error
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pyvalhalla]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pyvalhalla]: Downloading https://files.pythonhosted.org/packages/4c/a0/eb5dcf0b9f88cfd35ea39e74266165b66a9b8c22ac77efc849ae97a00886/pyvalhalla-3.0.3-cp39-cp39-win_amd64.whl
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pybrainlife]: Start processing: nshare-calc
+[2023-04-12 21:31:02] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 21:31:02] WARNING root fetch - processPackages [nshare-calc]: Skipping, unable to determine old version
+[2023-04-12 21:31:02] INFO root fetch - processPackages [nshare-calc]: Start processing: volatility3
+[2023-04-12 21:31:02] INFO root fetch - main [MainThread]: End processing [nshare-calc] error
+[2023-04-12 21:31:02] INFO root fetch - processPackages [cupid-matching]: executing diffoscope
+[2023-04-12 21:31:02] INFO root fetch - processPackages [cupid-matching]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cupid_matching-1.0.4.tar.gz tmp/cupid_matching-1.0.5.tar.gz --markdown 20230412/c/cupid-matching/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-12 21:31:02] INFO root fetch - processPackages [volatility3]: New version: [2.4.1] Old Version: [2.4.0]
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pop-config]: executing diffoscope
+[2023-04-12 21:31:02] INFO root fetch - processPackages [pop-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pop-config-8.0.2.tar.gz tmp/pop-config-9.0.0.tar.gz --markdown 20230412/p/pop-config/8.0.2-9.0.0/diff.md --exclude *.pyd
+[2023-04-12 21:31:02] INFO root fetch - processPackages [volatility3]: Downloading https://files.pythonhosted.org/packages/5f/81/72ad1b892e6c71d6f868af90f2df9505c29c393eb822c175f30f4ed5a18c/volatility3-2.4.0.tar.gz
+[2023-04-12 21:31:03] INFO root fetch - processPackages [pyvalhalla]: Downloading https://files.pythonhosted.org/packages/63/64/0bfd237a028dedfb691542bcbd721b6d032755d7cbf052159ea3d6f2223e/pyvalhalla-3.0.4-cp39-cp39-win_amd64.whl
+[2023-04-12 21:31:03] INFO root fetch - processPackages [volatility3]: Downloading https://files.pythonhosted.org/packages/d6/e5/b9a3c053dcca7688477ac004a9d6e700cd1a29272ddee4188f09f1bc0d62/volatility3-2.4.1.tar.gz
+[2023-04-12 21:31:03] INFO root fetch - processPackages [volatility3]: executing diffoscope
+[2023-04-12 21:31:03] INFO root fetch - processPackages [volatility3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/volatility3-2.4.0.tar.gz tmp/volatility3-2.4.1.tar.gz --markdown 20230412/v/volatility3/2.4.0-2.4.1/diff.md --exclude *.pyd
+[2023-04-12 21:31:04] INFO root fetch - processPackages [pyvalhalla]: executing diffoscope
+[2023-04-12 21:31:04] INFO root fetch - processPackages [pyvalhalla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvalhalla-3.0.3-cp39-cp39-win_amd64.whl.zip tmp/pyvalhalla-3.0.4-cp39-cp39-win_amd64.whl.zip --markdown 20230412/p/pyvalhalla/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-04-12 21:31:04] INFO root fetch - processPackages [pop-config]: Start processing: mediaify
+[2023-04-12 21:31:04] INFO root fetch - main [MainThread]: End processing [pop-config]: success
+[2023-04-12 21:31:04] INFO root fetch - processPackages [mediaify]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-04-12 21:31:04] INFO root fetch - processPackages [mediaify]: executing diffoscope
+[2023-04-12 21:31:04] INFO root fetch - processPackages [mediaify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediaify-1.1.1.tar.gz tmp/mediaify-1.2.0.tar.gz --markdown 20230412/m/mediaify/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 21:31:04] INFO root fetch - processPackages [cupid-matching]: Start processing: phml
+[2023-04-12 21:31:04] INFO root fetch - main [MainThread]: End processing [cupid-matching]: success
+[2023-04-12 21:31:04] INFO root fetch - processPackages [phml]: New version: [0.3.0] Old Version: [0.2.3]
+[2023-04-12 21:31:04] INFO root fetch - processPackages [phml]: executing diffoscope
+[2023-04-12 21:31:04] INFO root fetch - processPackages [phml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phml-0.2.3.tar.gz tmp/phml-0.3.0.tar.gz --markdown 20230412/p/phml/0.2.3-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 21:31:05] INFO root fetch - processPackages [mediaify]: Start processing: fschat
+[2023-04-12 21:31:05] INFO root fetch - main [MainThread]: End processing [mediaify]: success
+[2023-04-12 21:31:05] INFO root fetch - processPackages [fschat]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-12 21:31:05] INFO root fetch - processPackages [fschat]: Downloading https://files.pythonhosted.org/packages/fd/5a/23bace7dd5c43eb4764378b5e312a8d35b6745663d3cf90e95bf86e6534d/fschat-0.2.0.tar.gz
+[2023-04-12 21:31:06] INFO root fetch - processPackages [fschat]: executing diffoscope
+[2023-04-12 21:31:06] INFO root fetch - processPackages [fschat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fschat-0.1.9.tar.gz tmp/fschat-0.2.0.tar.gz --markdown 20230412/f/fschat/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 21:31:06] INFO root fetch - processPackages [quantconnect-stubs]: Start processing: prefab
+[2023-04-12 21:31:06] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-04-12 21:31:06] INFO root fetch - processPackages [prefab]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 21:31:06] INFO root fetch - processPackages [prefab]: Downloading https://files.pythonhosted.org/packages/27/4c/ce8256273d4f56ba492b8cd04fd7a3805573d207f77517eb458d867377b0/prefab-0.2.4.tar.gz
+[2023-04-12 21:31:07] INFO root fetch - processPackages [prefab]: Downloading https://files.pythonhosted.org/packages/64/56/8975869c8693cbae44b21f0042468b1726b4811637854b474c045106a8f3/prefab-0.2.5.tar.gz
+[2023-04-12 21:31:07] INFO root fetch - processPackages [fschat]: Start processing: qumulo-api
+[2023-04-12 21:31:07] INFO root fetch - main [MainThread]: End processing [fschat]: success
+[2023-04-12 21:31:07] INFO root fetch - processPackages [qumulo-api]: New version: [6.0.2] Old Version: [6.0.1.1]
+[2023-04-12 21:31:07] INFO root fetch - processPackages [prefab]: executing diffoscope
+[2023-04-12 21:31:07] INFO root fetch - processPackages [prefab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefab-0.2.4.tar.gz tmp/prefab-0.2.5.tar.gz --markdown 20230412/p/prefab/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 21:31:07] INFO root fetch - processPackages [qumulo-api]: Downloading https://files.pythonhosted.org/packages/98/08/3f6e8f82313374f96a01b18f026a3713380f1de642b8c2ab95803d91c1dc/qumulo_api-6.0.2-py3-none-any.whl
+[2023-04-12 21:31:07] INFO root fetch - processPackages [qumulo-api]: executing diffoscope
+[2023-04-12 21:31:07] INFO root fetch - processPackages [qumulo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qumulo_api-6.0.1.1-py3-none-any.whl.zip tmp/qumulo_api-6.0.2-py3-none-any.whl.zip --markdown 20230412/q/qumulo-api/6.0.1.1-6.0.2/diff.md --exclude *.pyd
+[2023-04-12 21:31:08] INFO root fetch - processPackages [prefab]: Start processing: custom-pandas-extensions
+[2023-04-12 21:31:08] INFO root fetch - main [MainThread]: End processing [prefab]: success
+[2023-04-12 21:31:08] INFO root fetch - processPackages [custom-pandas-extensions]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 21:31:08] INFO root fetch - processPackages [custom-pandas-extensions]: Downloading https://files.pythonhosted.org/packages/ec/0d/2e9ae74073b609180ccf360625c52bf5ebeb248c3b041e487801d20a5d23/custom_pandas_extensions-0.0.1-py3-none-any.whl
+[2023-04-12 21:31:08] INFO root fetch - processPackages [volatility3]: Start processing: gpush
+[2023-04-12 21:31:08] INFO root fetch - main [MainThread]: End processing [volatility3]: success
+[2023-04-12 21:31:08] INFO root fetch - processPackages [gpush]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-12 21:31:09] INFO root fetch - processPackages [custom-pandas-extensions]: Downloading https://files.pythonhosted.org/packages/18/8b/3d52bab30c66eaef9d04e2f9f2950239e7dc5428c8e202f9d0d9345c9697/custom_pandas_extensions-0.0.2.tar.gz
+[2023-04-12 21:31:09] INFO root fetch - processPackages [gpush]: Downloading https://files.pythonhosted.org/packages/2b/16/c71110b2afd9447f9bdc2250eca6f26b1c12eb02f788a246cd10060126a2/gpush-2.1.1.tar.gz
+[2023-04-12 21:31:09] INFO root fetch - processPackages [custom-pandas-extensions]: executing diffoscope
+[2023-04-12 21:31:09] INFO root fetch - processPackages [custom-pandas-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custom_pandas_extensions-0.0.1-py3-none-any.whl.zip tmp/custom_pandas_extensions-0.0.2.tar.gz --markdown 20230412/c/custom-pandas-extensions/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 21:31:09] INFO root fetch - main [MainThread]: End processing [qumulo-api]: success
+[2023-04-12 21:31:09] INFO root fetch - processPackages [gpush]: executing diffoscope
+[2023-04-12 21:31:09] INFO root fetch - processPackages [gpush]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpush-2.1.0.tar.gz tmp/gpush-2.1.1.tar.gz --markdown 20230412/g/gpush/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-12 21:31:10] INFO root fetch - main [MainThread]: End processing [phml]: success
+[2023-04-12 21:31:10] INFO root fetch - main [MainThread]: End processing [custom-pandas-extensions]: success
+[2023-04-12 21:31:10] INFO root fetch - main [MainThread]: End processing [gpush]: success
+[2023-04-12 21:31:13] INFO root fetch - main [MainThread]: End processing [pyvalhalla]: success
+[2023-04-12 21:31:13] INFO root fetch - main [MainThread]: Store serial: [17681059]
