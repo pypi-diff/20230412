@@ -14632,3 +14632,81 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 14:39:26] INFO root fetch - main [MainThread]: End processing [tickit]: success
 [2023-04-12 14:39:28] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-04-12 14:39:28] INFO root fetch - main [MainThread]: Store serial: [17676108]
+[2023-04-12 14:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676108]
+[2023-04-12 14:44:36] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 14:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-chronos-spark3
+[2023-04-12 14:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-spark3
+[2023-04-12 14:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airlabs
+[2023-04-12 14:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poppt
+[2023-04-12 14:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: manticore
+[2023-04-12 14:44:36] INFO root fetch - processPackages [poppt]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.3.0b20230412] Old Version: [2.3.0b20230410]
+[2023-04-12 14:44:36] INFO root fetch - processPackages [airlabs]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.3.0b20230412] Old Version: [2.3.0b20230410]
+[2023-04-12 14:44:36] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230412] Old Version: [0.3.8.dev230411]
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.3.0b20230410-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.3.0b20230412-py3-none-manylinux1_x86_64.whl.zip --markdown 20230412/b/bigdl-chronos-spark3/2.3.0b20230410-2.3.0b20230412/diff.md --exclude *.pyd
+[2023-04-12 14:44:36] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/a3/ba/1d716f398fd9696b842a4707d87f088cb99e7d734810206429045a4de522/poppt-0.0.4.tar.gz
+[2023-04-12 14:44:36] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/ce/e6/39149d215814b7876c88e679b3079afdff79c92b28960f6082051d95b170/manticore-0.3.8.dev230412.tar.gz
+[2023-04-12 14:44:36] INFO root fetch - processPackages [airlabs]: Downloading https://files.pythonhosted.org/packages/13/68/d50a3cc2d3b404e3949f121108ff9c691541d2dfadbf3772fd3545a56c94/airlabs-0.0.5.tar.gz
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/c9/c2/f5c29d5c88cd4dba48de04d5b0f2a3ce89c9acf8674a31281223bd6f0047/bigdl_spark3-2.3.0b20230412-py3-none-manylinux1_x86_64.whl
+[2023-04-12 14:44:36] INFO root fetch - processPackages [poppt]: Downloading https://files.pythonhosted.org/packages/9c/46/5334e1a85417f4affa82ced46ee9725e96f2ee4a7ab862f591a5c9ff91aa/poppt-0.0.5.tar.gz
+[2023-04-12 14:44:36] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-04-12 14:44:36] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230411.tar.gz tmp/manticore-0.3.8.dev230412.tar.gz --markdown 20230412/m/manticore/0.3.8.dev230411-0.3.8.dev230412/diff.md --exclude *.pyd
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-04-12 14:44:36] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.3.0b20230410-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.3.0b20230412-py3-none-manylinux1_x86_64.whl.zip --markdown 20230412/b/bigdl-spark3/2.3.0b20230410-2.3.0b20230412/diff.md --exclude *.pyd
+[2023-04-12 14:44:36] INFO root fetch - processPackages [airlabs]: executing diffoscope
+[2023-04-12 14:44:36] INFO root fetch - processPackages [airlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airlabs-0.0.4.tar.gz tmp/airlabs-0.0.5.tar.gz --markdown 20230412/a/airlabs/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 14:44:37] INFO root fetch - processPackages [poppt]: executing diffoscope
+[2023-04-12 14:44:37] INFO root fetch - processPackages [poppt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poppt-0.0.4.tar.gz tmp/poppt-0.0.5.tar.gz --markdown 20230412/p/poppt/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 14:44:38] INFO root fetch - processPackages [bigdl-spark3]: Start processing: pyprojectx
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-04-12 14:44:38] INFO root fetch - processPackages [pyprojectx]: New version: [1.0.0b3] Old Version: [1.0.0b1]
+[2023-04-12 14:44:38] INFO root fetch - processPackages [airlabs]: Start processing: babelplot
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [airlabs]: success
+[2023-04-12 14:44:38] INFO root fetch - processPackages [babelplot]: New version: [2022.9] Old Version: [2022.8]
+[2023-04-12 14:44:38] INFO root fetch - processPackages [pyprojectx]: Downloading https://files.pythonhosted.org/packages/27/0e/04ec5e93fd843c14c1310d78e5b84c4d6eae2df6f1468ca02718d3ffac78/pyprojectx-1.0.0b3.tar.gz
+[2023-04-12 14:44:38] INFO root fetch - processPackages [poppt]: Start processing: hsml
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [poppt]: success
+[2023-04-12 14:44:38] INFO root fetch - processPackages [hsml]: New version: [3.2.0rc0] Old Version: [3.1.0rc0]
+[2023-04-12 14:44:38] INFO root fetch - processPackages [babelplot]: Downloading https://files.pythonhosted.org/packages/f7/01/c7ddc1b0940e2a8af4347be75a625b057f0d23fb14ab0af6024993724521/babelplot-2022.8.tar.gz
+[2023-04-12 14:44:38] INFO root fetch - processPackages [pyprojectx]: executing diffoscope
+[2023-04-12 14:44:38] INFO root fetch - processPackages [pyprojectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprojectx-1.0.0b1.tar.gz tmp/pyprojectx-1.0.0b3.tar.gz --markdown 20230412/p/pyprojectx/1.0.0b1-1.0.0b3/diff.md --exclude *.pyd
+[2023-04-12 14:44:38] INFO root fetch - processPackages [hsml]: Downloading https://files.pythonhosted.org/packages/81/42/942deaa266e705ba2cb1d09c8c5d22642bcf35c38831c7a89bcf55589705/hsml-3.1.0rc0.tar.gz
+[2023-04-12 14:44:38] INFO root fetch - processPackages [manticore]: Start processing: qiskit-bip-mapper
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-04-12 14:44:38] WARNING root fetch - processPackages [qiskit-bip-mapper]: Skipping, unable to determine old version
+[2023-04-12 14:44:38] INFO root fetch - processPackages [qiskit-bip-mapper]: Start processing: adt-clients
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [qiskit-bip-mapper] error
+[2023-04-12 14:44:38] INFO root fetch - processPackages [adt-clients]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-12 14:44:38] INFO root fetch - processPackages [bigdl-chronos-spark3]: Start processing: ifd-python
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-04-12 14:44:38] WARNING root fetch - processPackages [ifd-python]: Skipping, unable to determine old version
+[2023-04-12 14:44:38] INFO root fetch - processPackages [ifd-python]: Start processing: webviz-subsurface-components
+[2023-04-12 14:44:38] INFO root fetch - main [MainThread]: End processing [ifd-python] error
+[2023-04-12 14:44:38] INFO root fetch - processPackages [babelplot]: Downloading https://files.pythonhosted.org/packages/ff/98/c81f5c406e47ead2adf447da7ff1bccb3f3d10a44095e85c9323085e2725/babelplot-2022.9.tar.gz
+[2023-04-12 14:44:38] INFO root fetch - processPackages [webviz-subsurface-components]: New version: [0.4.9rc0] Old Version: [0.4.9a1]
+[2023-04-12 14:44:38] INFO root fetch - processPackages [hsml]: Downloading https://files.pythonhosted.org/packages/d5/13/7ee95366cb6a112245678bdc4f90af17aea8bb2635d62f2eb5d12c205a64/hsml-3.2.0rc0.tar.gz
+[2023-04-12 14:44:38] INFO root fetch - processPackages [adt-clients]: Downloading https://files.pythonhosted.org/packages/eb/5f/d6d5fdaa422d965fb14dc5a7f87b416d788fbb8a2d0f6499af1caaed9069/adt_clients-2.1.0-py3-none-any.whl
+[2023-04-12 14:44:39] INFO root fetch - processPackages [babelplot]: executing diffoscope
+[2023-04-12 14:44:39] INFO root fetch - processPackages [babelplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/babelplot-2022.8.tar.gz tmp/babelplot-2022.9.tar.gz --markdown 20230412/b/babelplot/2022.8-2022.9/diff.md --exclude *.pyd
+[2023-04-12 14:44:39] INFO root fetch - processPackages [webviz-subsurface-components]: Downloading https://files.pythonhosted.org/packages/ed/c8/cdab60dbbc8ab4463b6ac2f6f620dbacafdf95d01c005d5786000d7714ba/webviz_subsurface_components-0.4.9a1.tar.gz
+[2023-04-12 14:44:39] INFO root fetch - processPackages [hsml]: executing diffoscope
+[2023-04-12 14:44:39] INFO root fetch - processPackages [hsml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hsml-3.1.0rc0.tar.gz tmp/hsml-3.2.0rc0.tar.gz --markdown 20230412/h/hsml/3.1.0rc0-3.2.0rc0/diff.md --exclude *.pyd
+[2023-04-12 14:44:39] INFO root fetch - processPackages [adt-clients]: Downloading https://files.pythonhosted.org/packages/d0/f8/35d5e14d18c84fcfd95c32a240451a182cec553707306025a534b5d7190d/adt_clients-2.2.0-py3-none-any.whl
+[2023-04-12 14:44:39] INFO root fetch - processPackages [adt-clients]: executing diffoscope
+[2023-04-12 14:44:39] INFO root fetch - processPackages [adt-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adt_clients-2.1.0-py3-none-any.whl.zip tmp/adt_clients-2.2.0-py3-none-any.whl.zip --markdown 20230412/a/adt-clients/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 14:44:39] WARNING root fetch - processPackages [webviz-subsurface-components]: Skipping package: exceeds size limit 34838205>=10485760
+[2023-04-12 14:44:39] INFO root fetch - processPackages [webviz-subsurface-components]: Start processing: pochas-geoutils
+[2023-04-12 14:44:39] INFO root fetch - main [MainThread]: End processing [webviz-subsurface-components] error
+[2023-04-12 14:44:39] INFO root fetch - processPackages [pochas-geoutils]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 14:44:39] INFO root fetch - processPackages [pochas-geoutils]: Downloading https://files.pythonhosted.org/packages/42/b1/afeeb1b048f69c6d6cbbc24992789d495d8d97de81478b96e160cb0514e5/pochas-geoutils-0.1.2.tar.gz
+[2023-04-12 14:44:39] INFO root fetch - main [MainThread]: End processing [pyprojectx]: success
+[2023-04-12 14:44:40] INFO root fetch - processPackages [pochas-geoutils]: Downloading https://files.pythonhosted.org/packages/54/49/cc374cdca41337e9fa9e0802966d4a8d35e7918e8e84474332a6fef4b9a9/pochas-geoutils-0.1.3.tar.gz
+[2023-04-12 14:44:40] INFO root fetch - main [MainThread]: End processing [babelplot]: success
+[2023-04-12 14:44:40] INFO root fetch - processPackages [pochas-geoutils]: executing diffoscope
+[2023-04-12 14:44:40] INFO root fetch - processPackages [pochas-geoutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pochas-geoutils-0.1.2.tar.gz tmp/pochas-geoutils-0.1.3.tar.gz --markdown 20230412/p/pochas-geoutils/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 14:44:40] INFO root fetch - main [MainThread]: End processing [adt-clients]: success
+[2023-04-12 14:44:40] INFO root fetch - main [MainThread]: End processing [hsml]: success
+[2023-04-12 14:44:41] INFO root fetch - main [MainThread]: End processing [pochas-geoutils]: success
+[2023-04-12 14:44:41] INFO root fetch - main [MainThread]: Store serial: [17676151]
