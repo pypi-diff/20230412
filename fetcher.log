@@ -16388,3 +16388,101 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:09:04] INFO root fetch - main [MainThread]: End processing [returnn]: success
 [2023-04-12 16:09:05] INFO root fetch - main [MainThread]: End processing [hvcc]: success
 [2023-04-12 16:09:05] INFO root fetch - main [MainThread]: Store serial: [17677191]
+[2023-04-12 16:14:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677191]
+[2023-04-12 16:14:13] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 16:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-cloud-video-transcoder
+[2023-04-12 16:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: u8darts
+[2023-04-12 16:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: google-cloud-bigquery-biglake
+[2023-04-12 16:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pams
+[2023-04-12 16:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymisp
+[2023-04-12 16:14:14] INFO root fetch - processPackages [u8darts]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pymisp]: New version: [2.4.99] Old Version: [2.4.98]
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pams]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-video-transcoder]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pams]: executing diffoscope
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pams-0.0.8.tar.gz tmp/pams-0.0.9.tar.gz --markdown 20230412/p/pams/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: Downloading https://files.pythonhosted.org/packages/85/a9/ec17ca0560c9e42b5d5747e2b1ac496bc24ab19cf073c97ac253bbc2caa2/google-cloud-bigquery-biglake-0.2.0.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [u8darts]: Downloading https://files.pythonhosted.org/packages/e2/5c/d8a040d8aa80cbbf1a15df45305b100465df0c4f0a3d663834c8f6e04141/u8darts-0.9.0.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-video-transcoder]: Downloading https://files.pythonhosted.org/packages/9a/b6/8cf19ccb919e41129e0d22c7c92a54237a0272db9653f8194760adf1fc02/google-cloud-video-transcoder-1.8.1.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pymisp]: Downloading https://files.pythonhosted.org/packages/32/19/f2d78346e3750b7467c1e65c2260eacb925199f89b4c2184ab360e413770/pymisp-2.4.98.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: Downloading https://files.pythonhosted.org/packages/d3/ba/120059b4752d7e24beab262e6de983e7b97a853ec5e9313db1f2234b055b/google-cloud-bigquery-biglake-0.3.0.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-video-transcoder]: Downloading https://files.pythonhosted.org/packages/31/8b/a86753f752a83a7a7745fad3d96fd8322f0a4cef31641b612d06ce194107/google-cloud-video-transcoder-1.8.2.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-video-transcoder]: executing diffoscope
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-video-transcoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-video-transcoder-1.8.1.tar.gz tmp/google-cloud-video-transcoder-1.8.2.tar.gz --markdown 20230412/g/google-cloud-video-transcoder/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-04-12 16:14:14] INFO root fetch - processPackages [u8darts]: Downloading https://files.pythonhosted.org/packages/7c/6c/16de4020c6077cc746e12da1a02546b899ac11f9185e0ae358fe291eb44e/u8darts-0.9.1.tar.gz
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: executing diffoscope
+[2023-04-12 16:14:14] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-bigquery-biglake-0.2.0.tar.gz tmp/google-cloud-bigquery-biglake-0.3.0.tar.gz --markdown 20230412/g/google-cloud-bigquery-biglake/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 16:14:14] INFO root fetch - processPackages [pymisp]: Downloading https://files.pythonhosted.org/packages/74/20/acd9637c4e60fd8e1b28fb5b24b31dcd7b41f7fcd542494bde4753facec9/pymisp-2.4.99.tar.gz
+[2023-04-12 16:14:15] INFO root fetch - processPackages [u8darts]: executing diffoscope
+[2023-04-12 16:14:15] INFO root fetch - processPackages [u8darts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/u8darts-0.9.0.tar.gz tmp/u8darts-0.9.1.tar.gz --markdown 20230412/u/u8darts/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 16:14:15] INFO root fetch - processPackages [pams]: Start processing: dwh-oppfolging
+[2023-04-12 16:14:15] INFO root fetch - main [MainThread]: End processing [pams]: success
+[2023-04-12 16:14:15] INFO root fetch - processPackages [dwh-oppfolging]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:14:15] INFO root fetch - processPackages [pymisp]: executing diffoscope
+[2023-04-12 16:14:15] INFO root fetch - processPackages [pymisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymisp-2.4.98.tar.gz tmp/pymisp-2.4.99.tar.gz --markdown 20230412/p/pymisp/2.4.98-2.4.99/diff.md --exclude *.pyd
+[2023-04-12 16:14:15] INFO root fetch - processPackages [dwh-oppfolging]: executing diffoscope
+[2023-04-12 16:14:15] INFO root fetch - processPackages [dwh-oppfolging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwh_oppfolging-0.0.8.tar.gz tmp/dwh_oppfolging-0.0.9.tar.gz --markdown 20230412/d/dwh-oppfolging/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:14:16] INFO root fetch - processPackages [google-cloud-video-transcoder]: Start processing: tegracli
+[2023-04-12 16:14:16] INFO root fetch - main [MainThread]: End processing [google-cloud-video-transcoder]: success
+[2023-04-12 16:14:16] INFO root fetch - processPackages [tegracli]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-12 16:14:16] INFO root fetch - processPackages [google-cloud-bigquery-biglake]: Start processing: optim3d
+[2023-04-12 16:14:16] INFO root fetch - main [MainThread]: End processing [google-cloud-bigquery-biglake]: success
+[2023-04-12 16:14:16] INFO root fetch - processPackages [optim3d]: New version: [0.2.1] Old Version: [0.1.9]
+[2023-04-12 16:14:16] INFO root fetch - processPackages [tegracli]: Downloading https://files.pythonhosted.org/packages/55/77/758aba1f6a09a29211ade3aad2c0fc5f7334d5f5428ed050e24b1d0699c1/tegracli-0.1.3.tar.gz
+[2023-04-12 16:14:16] INFO root fetch - processPackages [optim3d]: Downloading https://files.pythonhosted.org/packages/a7/06/0d5b9832dfe9d261a4f7b72fe43a76e69a4d9289d529bb8fff409934a678/optim3d-0.1.9.tar.gz
+[2023-04-12 16:14:16] INFO root fetch - processPackages [tegracli]: Downloading https://files.pythonhosted.org/packages/bb/78/9716cba747e97de888df4d21085184a8f1f26d0df4d4d524a33b68af8eb7/tegracli-0.2.0.tar.gz
+[2023-04-12 16:14:16] INFO root fetch - processPackages [optim3d]: Downloading https://files.pythonhosted.org/packages/23/26/df308a4a97bdcf77f3042f962c2e327dca6e89158e3c6d9e740697d57fee/optim3d-0.2.1.tar.gz
+[2023-04-12 16:14:16] INFO root fetch - processPackages [tegracli]: executing diffoscope
+[2023-04-12 16:14:16] INFO root fetch - processPackages [tegracli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegracli-0.1.3.tar.gz tmp/tegracli-0.2.0.tar.gz --markdown 20230412/t/tegracli/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 16:14:16] INFO root fetch - processPackages [optim3d]: executing diffoscope
+[2023-04-12 16:14:16] INFO root fetch - processPackages [optim3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optim3d-0.1.9.tar.gz tmp/optim3d-0.2.1.tar.gz --markdown 20230412/o/optim3d/0.1.9-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 16:14:17] INFO root fetch - processPackages [dwh-oppfolging]: Start processing: replicate
+[2023-04-12 16:14:17] INFO root fetch - main [MainThread]: End processing [dwh-oppfolging]: success
+[2023-04-12 16:14:17] INFO root fetch - processPackages [replicate]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-04-12 16:14:17] INFO root fetch - processPackages [replicate]: Downloading https://files.pythonhosted.org/packages/a9/de/6256de91ef65594c782d7fb726e5e4561ab2023dde1d69d42300b89ac638/replicate-0.8.1.tar.gz
+[2023-04-12 16:14:17] INFO root fetch - processPackages [u8darts]: Start processing: pydflow
+[2023-04-12 16:14:17] INFO root fetch - main [MainThread]: End processing [u8darts]: success
+[2023-04-12 16:14:17] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-04-12 16:14:17] INFO root fetch - processPackages [replicate]: executing diffoscope
+[2023-04-12 16:14:17] INFO root fetch - processPackages [replicate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicate-0.8.0.tar.gz tmp/replicate-0.8.1.tar.gz --markdown 20230412/r/replicate/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-04-12 16:14:17] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/c6/42/d4b1986a307020d3007742d6f25422e7aebd391ade1cb451d28a4865e7d2/pydflow-1.6.98.tar.gz
+[2023-04-12 16:14:17] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/86/ec/1d1f51e2ef9a626c2621695ed39210c378d699e371457fcd1efe70b1c890/pydflow-1.6.99.tar.gz
+[2023-04-12 16:14:17] INFO root fetch - processPackages [tegracli]: Start processing: darts
+[2023-04-12 16:14:17] INFO root fetch - main [MainThread]: End processing [tegracli]: success
+[2023-04-12 16:14:18] INFO root fetch - processPackages [darts]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 16:14:18] INFO root fetch - processPackages [optim3d]: Start processing: PigBotFramework
+[2023-04-12 16:14:18] INFO root fetch - main [MainThread]: End processing [optim3d]: success
+[2023-04-12 16:14:18] INFO root fetch - processPackages [PigBotFramework]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-04-12 16:14:18] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-04-12 16:14:18] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230412/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-04-12 16:14:18] INFO root fetch - processPackages [PigBotFramework]: executing diffoscope
+[2023-04-12 16:14:18] INFO root fetch - processPackages [PigBotFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PigBotFramework-4.1.8.tar.gz tmp/PigBotFramework-4.1.9.tar.gz --markdown 20230412/P/PigBotFramework/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-04-12 16:14:18] INFO root fetch - processPackages [darts]: Downloading https://files.pythonhosted.org/packages/d6/a2/c1b9872ad6cd19eab66c555244186070e65169683154e9aa1058968fb149/darts-0.9.0.tar.gz
+[2023-04-12 16:14:18] INFO root fetch - processPackages [replicate]: Start processing: insightconnect-plugin-runtime
+[2023-04-12 16:14:18] INFO root fetch - main [MainThread]: End processing [replicate]: success
+[2023-04-12 16:14:18] INFO root fetch - processPackages [insightconnect-plugin-runtime]: New version: [5.0.0] Old Version: [4.9.0]
+[2023-04-12 16:14:18] INFO root fetch - processPackages [insightconnect-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/78/cc/c52946ec2b6234e892cb7aaa37810b02758ef2fd904cd6c45d3eafc584e8/insightconnect-plugin-runtime-4.9.0.tar.gz
+[2023-04-12 16:14:18] INFO root fetch - processPackages [pymisp]: Start processing: pandacolumns
+[2023-04-12 16:14:18] INFO root fetch - main [MainThread]: End processing [pymisp]: success
+[2023-04-12 16:14:18] INFO root fetch - processPackages [pandacolumns]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-12 16:14:19] INFO root fetch - processPackages [pandacolumns]: Downloading https://files.pythonhosted.org/packages/75/9a/150d7b2878e8c6825cfbc2e8af2471caf4a670b94296e158043312419df0/pandacolumns-0.2.4.tar.gz
+[2023-04-12 16:14:19] INFO root fetch - processPackages [insightconnect-plugin-runtime]: Downloading https://files.pythonhosted.org/packages/0a/01/0fc4d6f9c1f063683b3faf34c57190313dabada6a7d92c28a2cf0ed1eb01/insightconnect-plugin-runtime-5.0.0.tar.gz
+[2023-04-12 16:14:19] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-12 16:14:19] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.2.3-py3-none-any.whl.zip tmp/pandacolumns-0.2.4.tar.gz --markdown 20230412/p/pandacolumns/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-12 16:14:19] INFO root fetch - processPackages [insightconnect-plugin-runtime]: executing diffoscope
+[2023-04-12 16:14:19] INFO root fetch - processPackages [insightconnect-plugin-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/insightconnect-plugin-runtime-4.9.0.tar.gz tmp/insightconnect-plugin-runtime-5.0.0.tar.gz --markdown 20230412/i/insightconnect-plugin-runtime/4.9.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-12 16:14:19] INFO root fetch - processPackages [PigBotFramework]: Start processing: nudecrawler
+[2023-04-12 16:14:19] INFO root fetch - main [MainThread]: End processing [PigBotFramework]: success
+[2023-04-12 16:14:19] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 16:14:19] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-12 16:14:19] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230412/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 16:14:19] INFO root fetch - processPackages [darts]: Downloading https://files.pythonhosted.org/packages/5f/9c/f634eef74d4981292949f8f634477d3f4a255d5a51bfc223884dbedde012/darts-0.9.1.tar.gz
+[2023-04-12 16:14:20] INFO root fetch - main [MainThread]: End processing [pandacolumns]: success
+[2023-04-12 16:14:20] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
+[2023-04-12 16:14:20] INFO root fetch - main [MainThread]: End processing [insightconnect-plugin-runtime]: success
+[2023-04-12 16:14:21] INFO root fetch - processPackages [darts]: executing diffoscope
+[2023-04-12 16:14:21] INFO root fetch - processPackages [darts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/darts-0.9.0.tar.gz tmp/darts-0.9.1.tar.gz --markdown 20230412/d/darts/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 16:14:21] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-04-12 16:14:24] INFO root fetch - main [MainThread]: End processing [darts]: success
+[2023-04-12 16:14:24] INFO root fetch - main [MainThread]: Store serial: [17677241]
