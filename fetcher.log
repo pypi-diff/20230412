@@ -7618,3 +7618,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 08:11:12] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:11:12] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:11:12] INFO root fetch - main [MainThread]: Store serial: [17671789]
+[2023-04-12 08:16:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671789]
+[2023-04-12 08:16:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-12 08:16:20] INFO root fetch - processPackages [promptx]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 08:16:20] INFO root fetch - processPackages [oimbot]: New version: [6.6.0] Old Version: [5.0.0]
+[2023-04-12 08:16:20] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-04-12 08:16:20] INFO root fetch - processPackages [kttools]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 08:16:20] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230412] Old Version: [1.5.3.dev20230409]
+[2023-04-12 08:16:21] INFO root fetch - processPackages [promptx]: Downloading https://files.pythonhosted.org/packages/66/e9/340e6aaa6f0058f051c8217f23717a995912856aab035c744cb7eb9e48df/promptx-0.0.2.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [oimbot]: Downloading https://files.pythonhosted.org/packages/29/fa/60e869b7b4e5a6562ec235a5dc924d130f5723f1427505ac416d94da563b/oimbot-5.0.0-py3-none-any.whl
+[2023-04-12 08:16:21] INFO root fetch - processPackages [kttools]: Downloading https://files.pythonhosted.org/packages/89/70/21653afc88cae4d7e2fe260754647f7272b02450be7ba9308951b42ea79b/kttools-0.1.0.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [hapdoc]: Downloading https://files.pythonhosted.org/packages/cd/81/7616d46cf39e4148ada4453485d31f68043e2b1dc21862ce31e2dcfc968d/hapdoc-1.9.9.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/be/a9/cabf7607eea7b7193a700fe63191d04ec14ea602f4bd91eb946b90ab83ad/pretext-1.5.3.dev20230412.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [promptx]: Downloading https://files.pythonhosted.org/packages/fa/b7/da5176c960ca936d2c5ea4802ba2306b0018494e47adf5b3f72d747fdf74/promptx-0.0.3.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [kttools]: Downloading https://files.pythonhosted.org/packages/ef/52/232fa84c3fd6407a136c1c784bb636e0d48d6c2774e3b307b193917cc3aa/kttools-0.2.0.tar.gz
+[2023-04-12 08:16:21] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-04-12 08:16:21] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230412/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-04-12 08:16:21] INFO root fetch - processPackages [promptx]: executing diffoscope
+[2023-04-12 08:16:21] INFO root fetch - processPackages [promptx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptx-0.0.2.tar.gz tmp/promptx-0.0.3.tar.gz --markdown 20230412/p/promptx/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 08:16:21] INFO root fetch - processPackages [kttools]: executing diffoscope
+[2023-04-12 08:16:21] INFO root fetch - processPackages [kttools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kttools-0.1.0.tar.gz tmp/kttools-0.2.0.tar.gz --markdown 20230412/k/kttools/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 08:16:21] INFO root fetch - processPackages [oimbot]: Downloading https://files.pythonhosted.org/packages/55/90/35989741f9dda9c617d30a97b00e310dfaf145fed09d2abd96caac336e8e/oimbot-6.6.0-py3-none-any.whl
+[2023-04-12 08:16:21] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-04-12 08:16:21] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230409.tar.gz tmp/pretext-1.5.3.dev20230412.tar.gz --markdown 20230412/p/pretext/1.5.3.dev20230409-1.5.3.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 08:16:21] INFO root fetch - processPackages [oimbot]: executing diffoscope
+[2023-04-12 08:16:21] INFO root fetch - processPackages [oimbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oimbot-5.0.0-py3-none-any.whl.zip tmp/oimbot-6.6.0-py3-none-any.whl.zip --markdown 20230412/o/oimbot/5.0.0-6.6.0/diff.md --exclude *.pyd
+[2023-04-12 08:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:16:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:16:26] INFO root fetch - main [MainThread]: Store serial: [17671803]
