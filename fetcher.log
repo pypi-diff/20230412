@@ -22196,3 +22196,76 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:59:34] INFO root fetch - main [MainThread]: End processing [paxml]: success
 [2023-04-12 20:59:34] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
 [2023-04-12 20:59:34] INFO root fetch - main [MainThread]: Store serial: [17680779]
+[2023-04-12 21:04:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680779]
+[2023-04-12 21:04:42] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 21:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alia
+[2023-04-12 21:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nanoatp
+[2023-04-12 21:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aind-data-transfer
+[2023-04-12 21:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rs-parsepatch
+[2023-04-12 21:04:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SyntaxMorph
+[2023-04-12 21:04:42] INFO root fetch - processPackages [alia]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 21:04:42] INFO root fetch - processPackages [aind-data-transfer]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-12 21:04:42] WARNING root fetch - processPackages [SyntaxMorph]: Skipping, unable to determine old version
+[2023-04-12 21:04:42] INFO root fetch - processPackages [SyntaxMorph]: Start processing: pdfstitcher
+[2023-04-12 21:04:42] WARNING root fetch - processPackages [nanoatp]: Skipping, unable to determine old version
+[2023-04-12 21:04:42] INFO root fetch - main [MainThread]: End processing [SyntaxMorph] error
+[2023-04-12 21:04:42] INFO root fetch - processPackages [nanoatp]: Start processing: scancode-toolkit
+[2023-04-12 21:04:42] INFO root fetch - main [MainThread]: End processing [nanoatp] error
+[2023-04-12 21:04:42] INFO root fetch - processPackages [rs-parsepatch]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 21:04:42] INFO root fetch - processPackages [pdfstitcher]: New version: [0.8b1] Old Version: [0.8.5]
+[2023-04-12 21:04:42] INFO root fetch - processPackages [scancode-toolkit]: New version: [32.0.0rc3] Old Version: [32.0.0rc2]
+[2023-04-12 21:04:42] INFO root fetch - processPackages [pdfstitcher]: Downloading https://files.pythonhosted.org/packages/c2/c2/fb1fa31fc109428c7b0507975aeed394442958704e587ddad3b6d6bcd1b7/pdfstitcher-0.8.5.tar.gz
+[2023-04-12 21:04:42] INFO root fetch - processPackages [rs-parsepatch]: Downloading https://files.pythonhosted.org/packages/70/b6/6ec2f627d2515d69605897a6d3e57b2d7e11b8602b0c13d972ae0a84a22a/rs_parsepatch-0.3.8.tar.gz
+[2023-04-12 21:04:42] INFO root fetch - processPackages [scancode-toolkit]: Downloading https://files.pythonhosted.org/packages/f7/98/24c9e8c9a5841727f31eafbabf34d20e03cd4e2465c5e68ec634878928d3/scancode-toolkit-32.0.0rc2.tar.gz
+[2023-04-12 21:04:43] INFO root fetch - processPackages [alia]: Downloading https://files.pythonhosted.org/packages/e0/73/62e169a87d0513d4bca5b39841a17d32d24b08b9f66d2dcfed4e89bb7fb0/alia-0.1.8.tar.gz
+[2023-04-12 21:04:43] INFO root fetch - processPackages [aind-data-transfer]: executing diffoscope
+[2023-04-12 21:04:43] INFO root fetch - processPackages [aind-data-transfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-transfer-0.9.2.tar.gz tmp/aind-data-transfer-0.9.3.tar.gz --markdown 20230412/a/aind-data-transfer/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-12 21:04:43] INFO root fetch - processPackages [alia]: executing diffoscope
+[2023-04-12 21:04:43] INFO root fetch - processPackages [alia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alia-0.1.7.tar.gz tmp/alia-0.1.8.tar.gz --markdown 20230412/a/alia/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 21:04:43] INFO root fetch - processPackages [pdfstitcher]: Downloading https://files.pythonhosted.org/packages/df/0d/f6554b90e5a47731195fc3173a4b9dbc846b780333ceca91b60ac636606e/pdfstitcher-0.8b1.tar.gz
+[2023-04-12 21:04:43] INFO root fetch - processPackages [rs-parsepatch]: Downloading https://files.pythonhosted.org/packages/9e/09/55cb30ce3751cd1f32ecfc3420c7b0d278c2b9c3f46814d4947774283883/rs_parsepatch-0.3.9.tar.gz
+[2023-04-12 21:04:43] INFO root fetch - processPackages [rs-parsepatch]: executing diffoscope
+[2023-04-12 21:04:43] INFO root fetch - processPackages [rs-parsepatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rs_parsepatch-0.3.8.tar.gz tmp/rs_parsepatch-0.3.9.tar.gz --markdown 20230412/r/rs-parsepatch/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 21:04:43] WARNING root fetch - processPackages [scancode-toolkit]: Skipping package: exceeds size limit 14352419>=10485760
+[2023-04-12 21:04:43] INFO root fetch - processPackages [scancode-toolkit]: Start processing: scancode-toolkit-mini
+[2023-04-12 21:04:43] INFO root fetch - main [MainThread]: End processing [scancode-toolkit] error
+[2023-04-12 21:04:43] INFO root fetch - processPackages [scancode-toolkit-mini]: New version: [32.0.0rc1] Old Version: [31.2.5]
+[2023-04-12 21:04:43] INFO root fetch - processPackages [pdfstitcher]: executing diffoscope
+[2023-04-12 21:04:43] INFO root fetch - processPackages [pdfstitcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfstitcher-0.8.5.tar.gz tmp/pdfstitcher-0.8b1.tar.gz --markdown 20230412/p/pdfstitcher/0.8.5-0.8b1/diff.md --exclude *.pyd
+[2023-04-12 21:04:43] INFO root fetch - processPackages [scancode-toolkit-mini]: Downloading https://files.pythonhosted.org/packages/74/1a/a58932a281d92053d14af7d3bb84727ef5581ca59272f9c4fb5b7aa1d949/scancode-toolkit-mini-31.2.5.tar.gz
+[2023-04-12 21:04:43] WARNING root fetch - processPackages [scancode-toolkit-mini]: Skipping package: exceeds size limit 15946875>=10485760
+[2023-04-12 21:04:43] INFO root fetch - processPackages [scancode-toolkit-mini]: Start processing: croydon
+[2023-04-12 21:04:43] INFO root fetch - main [MainThread]: End processing [scancode-toolkit-mini] error
+[2023-04-12 21:04:43] INFO root fetch - processPackages [croydon]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 21:04:44] INFO root fetch - processPackages [croydon]: executing diffoscope
+[2023-04-12 21:04:44] INFO root fetch - processPackages [croydon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croydon-0.9.0.tar.gz tmp/croydon-0.9.1.tar.gz --markdown 20230412/c/croydon/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 21:04:44] INFO root fetch - processPackages [alia]: Start processing: transformers-gradients
+[2023-04-12 21:04:44] INFO root fetch - main [MainThread]: End processing [alia]: success
+[2023-04-12 21:04:44] WARNING root fetch - processPackages [transformers-gradients]: Skipping, unable to determine old version
+[2023-04-12 21:04:44] INFO root fetch - processPackages [transformers-gradients]: Start processing: djackal
+[2023-04-12 21:04:44] INFO root fetch - main [MainThread]: End processing [transformers-gradients] error
+[2023-04-12 21:04:44] INFO root fetch - processPackages [djackal]: New version: [0.5.3] Old Version: [0.5.0]
+[2023-04-12 21:04:44] INFO root fetch - processPackages [rs-parsepatch]: Start processing: earthengine-api
+[2023-04-12 21:04:44] INFO root fetch - main [MainThread]: End processing [rs-parsepatch]: success
+[2023-04-12 21:04:44] INFO root fetch - processPackages [earthengine-api]: New version: [0.1.99] Old Version: [0.1.97]
+[2023-04-12 21:04:44] INFO root fetch - processPackages [djackal]: Downloading https://files.pythonhosted.org/packages/d8/bf/0f9c29e1c05c8fb578170460f11af6e74710cb2317302b2b51110186837a/djackal-0.5.3.tar.gz
+[2023-04-12 21:04:44] INFO root fetch - processPackages [djackal]: executing diffoscope
+[2023-04-12 21:04:44] INFO root fetch - processPackages [djackal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djackal-0.5.0.tar.gz tmp/djackal-0.5.3.tar.gz --markdown 20230412/d/djackal/0.5.0-0.5.3/diff.md --exclude *.pyd
+[2023-04-12 21:04:44] INFO root fetch - processPackages [earthengine-api]: Downloading https://files.pythonhosted.org/packages/34/ab/ffc5a8a504b242a55990eb9ac363c9e5e30cdbb203f0362d6e7ba41bbcad/earthengine-api-0.1.97.tar.gz
+[2023-04-12 21:04:45] INFO root fetch - processPackages [pdfstitcher]: Start processing: fringes-gui
+[2023-04-12 21:04:45] INFO root fetch - main [MainThread]: End processing [pdfstitcher]: success
+[2023-04-12 21:04:45] INFO root fetch - processPackages [earthengine-api]: Downloading https://files.pythonhosted.org/packages/57/32/e9962f84ea0857b1d931597eb5b674e5a023c9162b7e369593bcab88756d/earthengine-api-0.1.99.tar.gz
+[2023-04-12 21:04:45] INFO root fetch - processPackages [earthengine-api]: executing diffoscope
+[2023-04-12 21:04:45] INFO root fetch - processPackages [earthengine-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/earthengine-api-0.1.97.tar.gz tmp/earthengine-api-0.1.99.tar.gz --markdown 20230412/e/earthengine-api/0.1.97-0.1.99/diff.md --exclude *.pyd
+[2023-04-12 21:04:45] WARNING root fetch - processPackages [fringes-gui]: Skipping, unable to determine old version
+[2023-04-12 21:04:45] INFO root fetch - processPackages [fringes-gui]: Start processing: protocol-verwerker
+[2023-04-12 21:04:45] INFO root fetch - main [MainThread]: End processing [fringes-gui] error
+[2023-04-12 21:04:45] INFO root fetch - processPackages [protocol-verwerker]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 21:04:45] INFO root fetch - processPackages [protocol-verwerker]: executing diffoscope
+[2023-04-12 21:04:45] INFO root fetch - processPackages [protocol-verwerker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protocol_verwerker-0.0.1-py3-none-any.whl.zip tmp/protocol_verwerker-0.0.2.tar.gz --markdown 20230412/p/protocol-verwerker/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 21:04:45] INFO root fetch - main [MainThread]: End processing [aind-data-transfer]: success
+[2023-04-12 21:04:45] INFO root fetch - main [MainThread]: End processing [croydon]: success
+[2023-04-12 21:04:46] INFO root fetch - main [MainThread]: End processing [djackal]: success
+[2023-04-12 21:04:46] INFO root fetch - main [MainThread]: End processing [protocol-verwerker]: success
+[2023-04-12 21:04:46] INFO root fetch - main [MainThread]: End processing [earthengine-api]: success
+[2023-04-12 21:04:46] INFO root fetch - main [MainThread]: Store serial: [17680842]
