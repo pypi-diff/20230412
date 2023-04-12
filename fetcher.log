@@ -21569,3 +21569,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [macrometa-target-collection]: success
 [2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [tts-arranger]: success
 [2023-04-12 20:10:47] INFO root fetch - main [MainThread]: Store serial: [17680394]
+[2023-04-12 20:15:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680394]
+[2023-04-12 20:15:55] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 20:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anyhedge
+[2023-04-12 20:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fyle-accounting-mappings
+[2023-04-12 20:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-vendor
+[2023-04-12 20:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lccpy
+[2023-04-12 20:15:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macrometa-source-snowflake
+[2023-04-12 20:15:55] INFO root fetch - processPackages [lccpy]: New version: [1.4.3] Old Version: [1.4]
+[2023-04-12 20:15:55] INFO root fetch - processPackages [anyhedge]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-12 20:15:55] INFO root fetch - processPackages [django-vendor]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 20:15:55] INFO root fetch - processPackages [fyle-accounting-mappings]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 20:15:55] INFO root fetch - processPackages [macrometa-source-snowflake]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:15:55] INFO root fetch - processPackages [macrometa-source-snowflake]: executing diffoscope
+[2023-04-12 20:15:55] INFO root fetch - processPackages [macrometa-source-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-snowflake-0.0.8.tar.gz tmp/macrometa-source-snowflake-0.0.9.tar.gz --markdown 20230412/m/macrometa-source-snowflake/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:15:55] INFO root fetch - processPackages [django-vendor]: Downloading https://files.pythonhosted.org/packages/43/dc/bccc1b46e8c7260a01170a29620c3cd947d920bf7fd7d761032b46c3a788/django-vendor-0.3.8.tar.gz
+[2023-04-12 20:15:55] INFO root fetch - processPackages [fyle-accounting-mappings]: Downloading https://files.pythonhosted.org/packages/ee/e4/584f8a92de035d96a9702ffb19955efc4d93d5610034bbfaa3eb3e345586/fyle-accounting-mappings-1.8.0.tar.gz
+[2023-04-12 20:15:55] INFO root fetch - processPackages [anyhedge]: Downloading https://files.pythonhosted.org/packages/03/89/8d3187522a6397dd09258efa23484554b94574afe2d21efb5a52436e63d5/anyhedge-0.3.6.tar.gz
+[2023-04-12 20:15:55] INFO root fetch - processPackages [anyhedge]: executing diffoscope
+[2023-04-12 20:15:55] INFO root fetch - processPackages [anyhedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyhedge-0.3.5.tar.gz tmp/anyhedge-0.3.6.tar.gz --markdown 20230412/a/anyhedge/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-12 20:15:55] INFO root fetch - processPackages [lccpy]: Downloading https://files.pythonhosted.org/packages/ee/b1/507e7e5c07198727923e3d9a857818de2bbb5c98daf0c6fb6947569bda95/lccpy-1.4.3.tar.gz
+[2023-04-12 20:15:55] INFO root fetch - processPackages [lccpy]: executing diffoscope
+[2023-04-12 20:15:55] INFO root fetch - processPackages [lccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lccpy-1.4.tar.gz tmp/lccpy-1.4.3.tar.gz --markdown 20230412/l/lccpy/1.4-1.4.3/diff.md --exclude *.pyd
+[2023-04-12 20:15:55] INFO root fetch - processPackages [fyle-accounting-mappings]: Downloading https://files.pythonhosted.org/packages/0e/69/e0030f5b6d0b91631cfdb65f832ec00fda7e938ac982a3a43b6587639e62/fyle-accounting-mappings-1.9.0.tar.gz
+[2023-04-12 20:15:55] INFO root fetch - processPackages [fyle-accounting-mappings]: executing diffoscope
+[2023-04-12 20:15:55] INFO root fetch - processPackages [fyle-accounting-mappings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fyle-accounting-mappings-1.8.0.tar.gz tmp/fyle-accounting-mappings-1.9.0.tar.gz --markdown 20230412/f/fyle-accounting-mappings/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 20:15:56] INFO root fetch - processPackages [django-vendor]: Downloading https://files.pythonhosted.org/packages/70/19/fd195d1c65df31b178e1b3de2ac659cf8ceb30efd94d571056e1da463eb1/django-vendor-0.3.9.tar.gz
+[2023-04-12 20:15:56] INFO root fetch - processPackages [django-vendor]: executing diffoscope
+[2023-04-12 20:15:56] INFO root fetch - processPackages [django-vendor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-vendor-0.3.8.tar.gz tmp/django-vendor-0.3.9.tar.gz --markdown 20230412/d/django-vendor/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 20:15:56] INFO root fetch - processPackages [macrometa-source-snowflake]: Start processing: dcTrackClient
+[2023-04-12 20:15:56] INFO root fetch - main [MainThread]: End processing [macrometa-source-snowflake]: success
+[2023-04-12 20:15:56] INFO root fetch - processPackages [dcTrackClient]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 20:15:56] INFO root fetch - processPackages [dcTrackClient]: Downloading https://files.pythonhosted.org/packages/4e/57/8c3e5f391620749757fe9439fb6a9b247305c250f306c404c5834cb769cd/dctrackclient-0.1.2.tar.gz
+[2023-04-12 20:15:56] INFO root fetch - processPackages [dcTrackClient]: executing diffoscope
+[2023-04-12 20:15:56] INFO root fetch - processPackages [dcTrackClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dctrackclient-0.1.1.tar.gz tmp/dctrackclient-0.1.2.tar.gz --markdown 20230412/d/dcTrackClient/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 20:15:56] INFO root fetch - processPackages [anyhedge]: Start processing: fastsim
+[2023-04-12 20:15:56] INFO root fetch - main [MainThread]: End processing [anyhedge]: success
+[2023-04-12 20:15:57] INFO root fetch - processPackages [fastsim]: New version: [2.0.14] Old Version: [2.0.13]
+[2023-04-12 20:15:57] INFO root fetch - processPackages [fyle-accounting-mappings]: Start processing: iron-toolbox
+[2023-04-12 20:15:57] INFO root fetch - main [MainThread]: End processing [fyle-accounting-mappings]: success
+[2023-04-12 20:15:57] INFO root fetch - processPackages [iron-toolbox]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-12 20:15:57] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/56/13/cf71b5824d9eabc702a3773349f68718d72727f3c66d97548e43039d1e24/fastsim-2.0.13.tar.gz
+[2023-04-12 20:15:57] INFO root fetch - processPackages [lccpy]: Start processing: ordpy
+[2023-04-12 20:15:57] INFO root fetch - main [MainThread]: End processing [lccpy]: success
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ordpy]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 20:15:57] INFO root fetch - processPackages [iron-toolbox]: Downloading https://files.pythonhosted.org/packages/b4/90/47d185557b26da8baf950d14c982c9d1e660cf8965111db1ca53b4e2864f/iron_toolbox-1.0.7.tar.gz
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ordpy]: Downloading https://files.pythonhosted.org/packages/02/0f/5bf6d3c66e5f96362ff075c759c95ec3931fcca61652096ec073bf607c9f/ordpy-1.1.2.tar.gz
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ordpy]: executing diffoscope
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ordpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ordpy-1.1.1.tar.gz tmp/ordpy-1.1.2.tar.gz --markdown 20230412/o/ordpy/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 20:15:57] INFO root fetch - processPackages [iron-toolbox]: Downloading https://files.pythonhosted.org/packages/14/56/607715d5f0a4a64f571ffe260dbd6c986eb107b6942e4a94bd250688ae9d/iron_toolbox-1.0.8.tar.gz
+[2023-04-12 20:15:57] INFO root fetch - processPackages [django-vendor]: Start processing: ImaginaryInfo
+[2023-04-12 20:15:57] INFO root fetch - main [MainThread]: End processing [django-vendor]: success
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ImaginaryInfo]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 20:15:57] INFO root fetch - processPackages [iron-toolbox]: executing diffoscope
+[2023-04-12 20:15:57] INFO root fetch - processPackages [iron-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iron_toolbox-1.0.7.tar.gz tmp/iron_toolbox-1.0.8.tar.gz --markdown 20230412/i/iron-toolbox/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ImaginaryInfo]: Downloading https://files.pythonhosted.org/packages/38/b7/70458494a587dc6688debc8e1f4574bbdabeb56f0e7ee8fe7528ab90a6ba/ImaginaryInfo-0.0.3.tar.gz
+[2023-04-12 20:15:57] INFO root fetch - processPackages [dcTrackClient]: Start processing: markdown-data-tables
+[2023-04-12 20:15:57] INFO root fetch - main [MainThread]: End processing [dcTrackClient]: success
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ImaginaryInfo]: executing diffoscope
+[2023-04-12 20:15:57] INFO root fetch - processPackages [ImaginaryInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImaginaryInfo-0.0.2.tar.gz tmp/ImaginaryInfo-0.0.3.tar.gz --markdown 20230412/I/ImaginaryInfo/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 20:15:57] WARNING root fetch - processPackages [markdown-data-tables]: Skipping, unable to determine old version
+[2023-04-12 20:15:57] INFO root fetch - processPackages [markdown-data-tables]: Start processing: tggl-client
+[2023-04-12 20:15:57] INFO root fetch - main [MainThread]: End processing [markdown-data-tables] error
+[2023-04-12 20:15:57] INFO root fetch - processPackages [tggl-client]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: Downloading https://files.pythonhosted.org/packages/ee/66/aca837e510f665283526808c61f1e49b3935060db35ccb424105f0023aa7/tggl_client-0.1.0.tar.gz
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: Downloading https://files.pythonhosted.org/packages/46/81/6b02f46d11866596b6ba2da9356a42a660de4ceb92fbd749a4c0a7821bec/tggl_client-1.0.0.tar.gz
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: executing diffoscope
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tggl_client-0.1.0.tar.gz tmp/tggl_client-1.0.0.tar.gz --markdown 20230412/t/tggl-client/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 20:15:58] INFO root fetch - processPackages [ordpy]: Start processing: tggl-client
+[2023-04-12 20:15:58] INFO root fetch - main [MainThread]: End processing [ordpy]: success
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-12 20:15:58] INFO root fetch - processPackages [iron-toolbox]: Start processing: hordelib
+[2023-04-12 20:15:58] INFO root fetch - main [MainThread]: End processing [iron-toolbox]: success
+[2023-04-12 20:15:58] INFO root fetch - processPackages [hordelib]: New version: [0.7.3] Old Version: [0.6.1]
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: executing diffoscope
+[2023-04-12 20:15:58] INFO root fetch - processPackages [tggl-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tggl_client-0.1.0.tar.gz tmp/tggl_client-1.0.0.tar.gz --markdown 20230412/t/tggl-client/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 20:15:58] INFO root fetch - processPackages [ImaginaryInfo]: Start processing: fastsim
+[2023-04-12 20:15:58] INFO root fetch - main [MainThread]: End processing [ImaginaryInfo]: success
+[2023-04-12 20:15:58] INFO root fetch - processPackages [fastsim]: New version: [2.0.14] Old Version: [2.0.13]
+[2023-04-12 20:15:58] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/56/13/cf71b5824d9eabc702a3773349f68718d72727f3c66d97548e43039d1e24/fastsim-2.0.13.tar.gz
+[2023-04-12 20:15:59] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/71/e5/980f1e3f3bf39252cf856984f5b8ff7d62dc5878d93ddf7de9b59f68b864/hordelib-0.7.3.tar.gz
+[2023-04-12 20:15:59] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-12 20:15:59] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.6.1.tar.gz tmp/hordelib-0.7.3.tar.gz --markdown 20230412/h/hordelib/0.6.1-0.7.3/diff.md --exclude *.pyd
+[2023-04-12 20:15:59] INFO root fetch - processPackages [tggl-client]: Start processing: miniircd
+[2023-04-12 20:15:59] INFO root fetch - main [MainThread]: End processing [tggl-client]: success
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/42/fd/19105f95d430b797c5f6a4c0d370458947f4b33ab5330cce1fd9f55afc45/fastsim-2.0.14.tar.gz
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/42/fd/19105f95d430b797c5f6a4c0d370458947f4b33ab5330cce1fd9f55afc45/fastsim-2.0.14.tar.gz
+[2023-04-12 20:15:59] INFO root fetch - processPackages [miniircd]: New version: [2.2] Old Version: [2.1]
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: executing diffoscope
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsim-2.0.13.tar.gz tmp/fastsim-2.0.14.tar.gz --markdown 20230412/f/fastsim/2.0.13-2.0.14/diff.md --exclude *.pyd
+[2023-04-12 20:15:59] INFO root fetch - processPackages [tggl-client]: Start processing: challengerteco
+[2023-04-12 20:15:59] INFO root fetch - main [MainThread]: End processing [tggl-client]: success
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: executing diffoscope
+[2023-04-12 20:15:59] INFO root fetch - processPackages [fastsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsim-2.0.13.tar.gz tmp/fastsim-2.0.14.tar.gz --markdown 20230412/f/fastsim/2.0.13-2.0.14/diff.md --exclude *.pyd
+[2023-04-12 20:15:59] WARNING root fetch - processPackages [challengerteco]: Skipping, unable to determine old version
+[2023-04-12 20:15:59] INFO root fetch - main [MainThread]: End processing [challengerteco] error
+[2023-04-12 20:15:59] INFO root fetch - processPackages [miniircd]: Downloading https://files.pythonhosted.org/packages/e6/5e/9c8b18ebdd68ef18f66aad8d40929ad6dcae505cf52695b7feb49a22422d/miniircd-2.1.tar.gz
+[2023-04-12 20:15:59] INFO root fetch - processPackages [miniircd]: Downloading https://files.pythonhosted.org/packages/b5/41/dc5474547d65bf93fd133a9720720b1d5bb3a983360f383fbefd0c543b6b/miniircd-2.2.tar.gz
+[2023-04-12 20:16:00] INFO root fetch - processPackages [miniircd]: executing diffoscope
+[2023-04-12 20:16:00] INFO root fetch - processPackages [miniircd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniircd-2.1.tar.gz tmp/miniircd-2.2.tar.gz --markdown 20230412/m/miniircd/2.1-2.2/diff.md --exclude *.pyd
+[2023-04-12 20:16:01] INFO root fetch - main [MainThread]: End processing [miniircd]: success
+[2023-04-12 20:16:02] INFO root fetch - main [MainThread]: End processing [fastsim]: success
+[2023-04-12 20:16:02] INFO root fetch - main [MainThread]: End processing [fastsim]: success
+[2023-04-12 20:16:05] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-04-12 20:16:05] INFO root fetch - main [MainThread]: Store serial: [17680459]
