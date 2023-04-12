@@ -22726,3 +22726,88 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:36:27] INFO root fetch - main [MainThread]: End processing [ipynbcompress]: success
 [2023-04-12 21:36:29] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
 [2023-04-12 21:36:29] INFO root fetch - main [MainThread]: Store serial: [17681107]
+[2023-04-12 21:41:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17681107]
+[2023-04-12 21:41:37] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 21:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qudi-hira-analysis
+[2023-04-12 21:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowtask
+[2023-04-12 21:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simeon
+[2023-04-12 21:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-info-generation
+[2023-04-12 21:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: web3
+[2023-04-12 21:41:37] INFO root fetch - processPackages [qudi-hira-analysis]: New version: [1.4.0] Old Version: [1.3.5]
+[2023-04-12 21:41:37] INFO root fetch - processPackages [fake-info-generation]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 21:41:37] INFO root fetch - processPackages [flowtask]: New version: [4.3.4] Old Version: [4.3.3]
+[2023-04-12 21:41:37] INFO root fetch - processPackages [web3]: New version: [6.2.0] Old Version: [6.1.0]
+[2023-04-12 21:41:37] INFO root fetch - processPackages [simeon]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 21:41:38] INFO root fetch - processPackages [qudi-hira-analysis]: executing diffoscope
+[2023-04-12 21:41:38] INFO root fetch - processPackages [qudi-hira-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qudi_hira_analysis-1.3.5.tar.gz tmp/qudi_hira_analysis-1.4.0.tar.gz --markdown 20230412/q/qudi-hira-analysis/1.3.5-1.4.0/diff.md --exclude *.pyd
+[2023-04-12 21:41:38] INFO root fetch - processPackages [fake-info-generation]: Downloading https://files.pythonhosted.org/packages/c3/fb/fee0aee8fcf7c035c06e6ea9c20f14707a16449d4d03110bbf8ecc7470e3/fake_info_generation-0.0.1.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [web3]: Downloading https://files.pythonhosted.org/packages/a2/07/916bb3a83f8971793448ca8bce36000cd68b89fb1b48071ae3ff0aa32817/web3-6.1.0.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [simeon]: Downloading https://files.pythonhosted.org/packages/5d/1e/c6787eaec3d5f93181b6aaad03efee8667941c27c3aaef9b744f9c224a87/simeon-0.0.8.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [flowtask]: Downloading https://files.pythonhosted.org/packages/08/46/0d52accded2ad2b7271196db6002949d53399205a8af2845c7c7752bc270/flowtask-4.3.4.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [fake-info-generation]: Downloading https://files.pythonhosted.org/packages/34/15/19c5ad3654e094dd7b71a890bfb8864aba59cec0a28f9b9a73b9fdb451c8/fake_info_generation-0.0.2.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-04-12 21:41:38] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.3.tar.gz tmp/flowtask-4.3.4.tar.gz --markdown 20230412/f/flowtask/4.3.3-4.3.4/diff.md --exclude *.pyd
+[2023-04-12 21:41:38] INFO root fetch - processPackages [web3]: Downloading https://files.pythonhosted.org/packages/bd/81/a7df63024ade35ba9881a0511dad4adcb57005e4301d7df9fbeab491a805/web3-6.2.0.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [fake-info-generation]: executing diffoscope
+[2023-04-12 21:41:38] INFO root fetch - processPackages [fake-info-generation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_info_generation-0.0.1.tar.gz tmp/fake_info_generation-0.0.2.tar.gz --markdown 20230412/f/fake-info-generation/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 21:41:38] INFO root fetch - processPackages [web3]: executing diffoscope
+[2023-04-12 21:41:38] INFO root fetch - processPackages [web3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web3-6.1.0.tar.gz tmp/web3-6.2.0.tar.gz --markdown 20230412/w/web3/6.1.0-6.2.0/diff.md --exclude *.pyd
+[2023-04-12 21:41:38] INFO root fetch - processPackages [simeon]: Downloading https://files.pythonhosted.org/packages/89/70/b589cdf2894c942a74c61cd2ece7d96613414c1b4cf09786bcfbb2a6f10a/simeon-0.0.9.tar.gz
+[2023-04-12 21:41:38] INFO root fetch - processPackages [simeon]: executing diffoscope
+[2023-04-12 21:41:38] INFO root fetch - processPackages [simeon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simeon-0.0.8.tar.gz tmp/simeon-0.0.9.tar.gz --markdown 20230412/s/simeon/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:41:39] INFO root fetch - processPackages [qudi-hira-analysis]: Start processing: django-advanced-pages
+[2023-04-12 21:41:39] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
+[2023-04-12 21:41:39] INFO root fetch - processPackages [django-advanced-pages]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-12 21:41:39] INFO root fetch - processPackages [fake-info-generation]: Start processing: watchtower-browser-testing
+[2023-04-12 21:41:39] INFO root fetch - main [MainThread]: End processing [fake-info-generation]: success
+[2023-04-12 21:41:39] INFO root fetch - processPackages [django-advanced-pages]: Downloading https://files.pythonhosted.org/packages/29/8f/c3af8c768882ff56219f55a1656f2e8150f645bac180a0e676bdd49d6d60/django-advanced-pages-0.8.3.tar.gz
+[2023-04-12 21:41:39] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 21:41:39] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 21:41:39] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 21:41:39] INFO root fetch - processPackages [django-advanced-pages]: Downloading https://files.pythonhosted.org/packages/b9/a9/81855a9efa9e57584094236114db4534465a7958b2cd92852781518ada45/django-advanced-pages-0.8.4.tar.gz
+[2023-04-12 21:41:40] INFO root fetch - processPackages [django-advanced-pages]: executing diffoscope
+[2023-04-12 21:41:40] INFO root fetch - processPackages [django-advanced-pages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-advanced-pages-0.8.3.tar.gz tmp/django-advanced-pages-0.8.4.tar.gz --markdown 20230412/d/django-advanced-pages/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-12 21:41:40] INFO root fetch - processPackages [simeon]: Start processing: fenrircore
+[2023-04-12 21:41:40] INFO root fetch - main [MainThread]: End processing [simeon]: success
+[2023-04-12 21:41:40] INFO root fetch - processPackages [fenrircore]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-12 21:41:40] INFO root fetch - processPackages [fenrircore]: Downloading https://files.pythonhosted.org/packages/fe/98/31a7500c5fd139f8f514890dc927b8fb669c8c6245c89af1b9f3341425e9/fenrircore-0.6.0.tar.gz
+[2023-04-12 21:41:40] INFO root fetch - processPackages [flowtask]: Start processing: pyrefinebio
+[2023-04-12 21:41:40] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-04-12 21:41:40] INFO root fetch - processPackages [pyrefinebio]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 21:41:40] INFO root fetch - processPackages [fenrircore]: executing diffoscope
+[2023-04-12 21:41:40] INFO root fetch - processPackages [fenrircore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fenrircore-0.5.0.tar.gz tmp/fenrircore-0.6.0.tar.gz --markdown 20230412/f/fenrircore/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-12 21:41:40] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: cognite-sdk
+[2023-04-12 21:41:40] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 21:41:40] INFO root fetch - processPackages [cognite-sdk]: New version: [5.9.3] Old Version: [5.9.2]
+[2023-04-12 21:41:40] INFO root fetch - processPackages [pyrefinebio]: Downloading https://files.pythonhosted.org/packages/32/9c/3190e4e7becc840465702b645a889f9779846dc46b6222b173e16a202f75/pyrefinebio-0.4.8.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [cognite-sdk]: Downloading https://files.pythonhosted.org/packages/0d/ee/674d94182ccc1ac10b673f88d39b1df8d69c60d6b5b8a3c51f6fe7c830c2/cognite_sdk-5.9.2.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [django-advanced-pages]: Start processing: sapiopylib
+[2023-04-12 21:41:41] INFO root fetch - main [MainThread]: End processing [django-advanced-pages]: success
+[2023-04-12 21:41:41] INFO root fetch - processPackages [sapiopylib]: New version: [2023.4.12.126] Old Version: [2023.3.7.116]
+[2023-04-12 21:41:41] INFO root fetch - processPackages [pyrefinebio]: Downloading https://files.pythonhosted.org/packages/8b/3d/1f070ea02f065d477cf79db691306dbc9bf7f12f762bd7f5ee304f0751b7/pyrefinebio-0.4.9.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/46/93/bfff9517fe5db44647828740e33274a93d1fd309d64e7144e36a2f0e7fc8/sapiopylib-2023.3.7.116.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [cognite-sdk]: Downloading https://files.pythonhosted.org/packages/f9/7d/a4e46f56fcd0666ad582be2f0aef4c9f4c01c25fd1166434656c824690ef/cognite_sdk-5.9.3.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [pyrefinebio]: executing diffoscope
+[2023-04-12 21:41:41] INFO root fetch - processPackages [pyrefinebio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrefinebio-0.4.8.tar.gz tmp/pyrefinebio-0.4.9.tar.gz --markdown 20230412/p/pyrefinebio/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 21:41:41] INFO root fetch - processPackages [cognite-sdk]: executing diffoscope
+[2023-04-12 21:41:41] INFO root fetch - processPackages [cognite-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_sdk-5.9.2.tar.gz tmp/cognite_sdk-5.9.3.tar.gz --markdown 20230412/c/cognite-sdk/5.9.2-5.9.3/diff.md --exclude *.pyd
+[2023-04-12 21:41:41] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/6e/c7/ee4b1788b1b7c9bdc9a7fafefbfc817a85a1dd599eb7b03048fe2d2a0d81/sapiopylib-2023.4.12.126.tar.gz
+[2023-04-12 21:41:41] INFO root fetch - processPackages [fenrircore]: Start processing: duet
+[2023-04-12 21:41:41] INFO root fetch - main [MainThread]: End processing [fenrircore]: success
+[2023-04-12 21:41:41] INFO root fetch - processPackages [duet]: New version: [0.2.8.dev20230408103252] Old Version: [0.2.8.dev20221107154801]
+[2023-04-12 21:41:41] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2023-04-12 21:41:41] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2023.3.7.116.tar.gz tmp/sapiopylib-2023.4.12.126.tar.gz --markdown 20230412/s/sapiopylib/2023.3.7.116-2023.4.12.126/diff.md --exclude *.pyd
+[2023-04-12 21:41:42] INFO root fetch - processPackages [duet]: executing diffoscope
+[2023-04-12 21:41:42] INFO root fetch - processPackages [duet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duet-0.2.8.dev20221107154801.tar.gz tmp/duet-0.2.8.dev20230408103252.tar.gz --markdown 20230412/d/duet/0.2.8.dev20221107154801-0.2.8.dev20230408103252/diff.md --exclude *.pyd
+[2023-04-12 21:41:43] INFO root fetch - processPackages [cognite-sdk]: Start processing: fake-info-generation
+[2023-04-12 21:41:43] INFO root fetch - main [MainThread]: End processing [cognite-sdk]: success
+[2023-04-12 21:41:43] INFO root fetch - main [MainThread]: End processing [duet]: success
+[2023-04-12 21:41:43] INFO root fetch - processPackages [fake-info-generation]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 21:41:43] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2023-04-12 21:41:43] INFO root fetch - processPackages [fake-info-generation]: Downloading https://files.pythonhosted.org/packages/45/30/0ec040f9165937b67ad4c420d709d332f65dea34bea9adf3b57456a22e48/fake_info_generation-0.0.3.tar.gz
+[2023-04-12 21:41:43] INFO root fetch - main [MainThread]: End processing [pyrefinebio]: success
+[2023-04-12 21:41:43] INFO root fetch - processPackages [fake-info-generation]: executing diffoscope
+[2023-04-12 21:41:43] INFO root fetch - processPackages [fake-info-generation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_info_generation-0.0.2.tar.gz tmp/fake_info_generation-0.0.3.tar.gz --markdown 20230412/f/fake-info-generation/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 21:41:43] INFO root fetch - main [MainThread]: End processing [web3]: success
+[2023-04-12 21:41:44] INFO root fetch - main [MainThread]: End processing [fake-info-generation]: success
+[2023-04-12 21:41:44] INFO root fetch - main [MainThread]: Store serial: [17681159]
