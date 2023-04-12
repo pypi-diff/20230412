@@ -22404,3 +22404,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:15:17] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
 [2023-04-12 21:15:21] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-12 21:15:21] INFO root fetch - main [MainThread]: Store serial: [17680909]
+[2023-04-12 21:20:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680909]
+[2023-04-12 21:20:32] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 21:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astro-gdt
+[2023-04-12 21:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Jetson.GPIO
+[2023-04-12 21:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zoinks
+[2023-04-12 21:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbis-relational-algebra
+[2023-04-12 21:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datadog-lambda
+[2023-04-12 21:20:32] INFO root fetch - processPackages [Jetson.GPIO]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-04-12 21:20:32] INFO root fetch - processPackages [dbis-relational-algebra]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-12 21:20:32] INFO root fetch - processPackages [zoinks]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 21:20:32] WARNING root fetch - processPackages [astro-gdt]: Skipping, unable to determine old version
+[2023-04-12 21:20:32] INFO root fetch - processPackages [astro-gdt]: Start processing: cityseer
+[2023-04-12 21:20:32] INFO root fetch - main [MainThread]: End processing [astro-gdt] error
+[2023-04-12 21:20:32] INFO root fetch - processPackages [datadog-lambda]: New version: [4.70.0] Old Version: [4.69.0]
+[2023-04-12 21:20:32] INFO root fetch - processPackages [cityseer]: New version: [3.7.2] Old Version: [3.7.1]
+[2023-04-12 21:20:32] INFO root fetch - processPackages [datadog-lambda]: Downloading https://files.pythonhosted.org/packages/a2/03/df8400c9475a793e2d45700f337affd331f0814d95cbad0ba0d46b9973af/datadog_lambda-4.69.0.tar.gz
+[2023-04-12 21:20:32] INFO root fetch - processPackages [dbis-relational-algebra]: Downloading https://files.pythonhosted.org/packages/2d/31/5e9ed86b0b89b586e2744138be195bc3570c44831e1cef0108c88a988b65/dbis-relational-algebra-1.1.3.tar.gz
+[2023-04-12 21:20:32] INFO root fetch - processPackages [Jetson.GPIO]: Downloading https://files.pythonhosted.org/packages/1e/3e/ffa1ab8f98818a9896e883b36a57f754662c14f315c5164fb0f8636089ab/Jetson.GPIO-2.1.0.tar.gz
+[2023-04-12 21:20:32] INFO root fetch - processPackages [cityseer]: Downloading https://files.pythonhosted.org/packages/da/97/be455a692f7a8014d6af718026d2a7acea3459aeb01d76971a2b5cd4059e/cityseer-3.7.1.tar.gz
+[2023-04-12 21:20:33] INFO root fetch - processPackages [zoinks]: Downloading https://files.pythonhosted.org/packages/e4/7c/266f94b8d994f3e5ddde45a712aac49d226fb2832742c989ea09abf7c1fc/zoinks-0.0.7.tar.gz
+[2023-04-12 21:20:33] WARNING root fetch - processPackages [cityseer]: Skipping package: exceeds size limit 52543968>=10485760
+[2023-04-12 21:20:33] INFO root fetch - processPackages [cityseer]: Start processing: developergpt
+[2023-04-12 21:20:33] INFO root fetch - main [MainThread]: End processing [cityseer] error
+[2023-04-12 21:20:33] INFO root fetch - processPackages [Jetson.GPIO]: Downloading https://files.pythonhosted.org/packages/5a/c7/6c2c66cf7b34823382840787a2ecbd77e13bda0ae6c2d6ee3271b1661cdc/Jetson.GPIO-2.1.1.tar.gz
+[2023-04-12 21:20:33] INFO root fetch - processPackages [developergpt]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 21:20:33] INFO root fetch - processPackages [zoinks]: executing diffoscope
+[2023-04-12 21:20:33] INFO root fetch - processPackages [zoinks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoinks-0.0.6.tar.gz tmp/zoinks-0.0.7.tar.gz --markdown 20230412/z/zoinks/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 21:20:33] INFO root fetch - processPackages [Jetson.GPIO]: executing diffoscope
+[2023-04-12 21:20:33] INFO root fetch - processPackages [Jetson.GPIO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jetson.GPIO-2.1.0.tar.gz tmp/Jetson.GPIO-2.1.1.tar.gz --markdown 20230412/J/Jetson.GPIO/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-04-12 21:20:33] INFO root fetch - processPackages [dbis-relational-algebra]: Downloading https://files.pythonhosted.org/packages/b9/1f/335b93fe1319bfa960810a399e02fa2e00a76210d2aff7b0be66011b2935/dbis-relational-algebra-1.1.4.tar.gz
+[2023-04-12 21:20:33] INFO root fetch - processPackages [datadog-lambda]: Downloading https://files.pythonhosted.org/packages/2a/31/27cd996ab204f759ae150c154f5266fce344e7f1ac65383ed9e1248536f1/datadog_lambda-4.70.0.tar.gz
+[2023-04-12 21:20:33] INFO root fetch - processPackages [datadog-lambda]: executing diffoscope
+[2023-04-12 21:20:33] INFO root fetch - processPackages [datadog-lambda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadog_lambda-4.69.0.tar.gz tmp/datadog_lambda-4.70.0.tar.gz --markdown 20230412/d/datadog-lambda/4.69.0-4.70.0/diff.md --exclude *.pyd
+[2023-04-12 21:20:33] INFO root fetch - processPackages [dbis-relational-algebra]: executing diffoscope
+[2023-04-12 21:20:33] INFO root fetch - processPackages [dbis-relational-algebra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbis-relational-algebra-1.1.3.tar.gz tmp/dbis-relational-algebra-1.1.4.tar.gz --markdown 20230412/d/dbis-relational-algebra/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-12 21:20:33] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/0c/31/4d22f63a4fa9ae12cc9d4cbd2efa7184eb77114c60c2f1b794b317ff9c20/developergpt-0.1.6.tar.gz
+[2023-04-12 21:20:33] INFO root fetch - processPackages [developergpt]: executing diffoscope
+[2023-04-12 21:20:33] INFO root fetch - processPackages [developergpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developergpt-0.1.5.tar.gz tmp/developergpt-0.1.6.tar.gz --markdown 20230412/d/developergpt/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 21:20:34] INFO root fetch - processPackages [zoinks]: Start processing: fieldedge-utilities
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [zoinks]: success
+[2023-04-12 21:20:34] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 21:20:34] INFO root fetch - processPackages [Jetson.GPIO]: Start processing: lightning-pose
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [Jetson.GPIO]: success
+[2023-04-12 21:20:34] WARNING root fetch - processPackages [lightning-pose]: Skipping, unable to determine old version
+[2023-04-12 21:20:34] INFO root fetch - processPackages [lightning-pose]: Start processing: example-pkg-data-pomelo-bi
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [lightning-pose] error
+[2023-04-12 21:20:34] WARNING root fetch - processPackages [example-pkg-data-pomelo-bi]: Skipping, unable to determine old version
+[2023-04-12 21:20:34] INFO root fetch - processPackages [example-pkg-data-pomelo-bi]: Start processing: hu-names
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [example-pkg-data-pomelo-bi] error
+[2023-04-12 21:20:34] WARNING root fetch - processPackages [hu-names]: Skipping, unable to determine old version
+[2023-04-12 21:20:34] INFO root fetch - processPackages [hu-names]: Start processing: polywrap-plugin
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [hu-names] error
+[2023-04-12 21:20:34] INFO root fetch - processPackages [datadog-lambda]: Start processing: coiled
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [datadog-lambda]: success
+[2023-04-12 21:20:34] INFO root fetch - processPackages [polywrap-plugin]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-12 21:20:34] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 21:20:34] INFO root fetch - main [MainThread]: End processing [developergpt]: success
+[2023-04-12 21:20:34] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 21:20:34] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 21:20:34] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-04-12 21:20:34] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230412/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 21:20:34] INFO root fetch - processPackages [polywrap-plugin]: executing diffoscope
+[2023-04-12 21:20:34] INFO root fetch - processPackages [polywrap-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_plugin-0.1.0a6.tar.gz tmp/polywrap_plugin-0.1.0a7.tar.gz --markdown 20230412/p/polywrap-plugin/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-12 21:20:35] INFO root fetch - main [MainThread]: End processing [dbis-relational-algebra]: success
+[2023-04-12 21:20:35] INFO root fetch - main [MainThread]: End processing [polywrap-plugin]: success
+[2023-04-12 21:20:35] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-04-12 21:20:37] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-12 21:20:37] INFO root fetch - main [MainThread]: Store serial: [17680956]
