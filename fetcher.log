@@ -22977,3 +22977,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:52:28] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
 [2023-04-12 21:52:31] INFO root fetch - main [MainThread]: End processing [monai]: success
 [2023-04-12 21:52:31] INFO root fetch - main [MainThread]: Store serial: [17681279]
+[2023-04-12 21:57:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17681279]
+[2023-04-12 21:57:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 21:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixelenv
+[2023-04-12 21:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: circt
+[2023-04-12 21:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superpowered-sdk
+[2023-04-12 21:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcfg
+[2023-04-12 21:57:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotframework-debug
+[2023-04-12 21:57:40] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 21:57:40] INFO root fetch - processPackages [robotframework-debug]: New version: [4.3.2] Old Version: [4.3.1]
+[2023-04-12 21:57:40] INFO root fetch - processPackages [tcfg]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-12 21:57:40] WARNING root fetch - processPackages [pixelenv]: Skipping, unable to determine old version
+[2023-04-12 21:57:40] INFO root fetch - processPackages [pixelenv]: Start processing: polywrap-core
+[2023-04-12 21:57:40] INFO root fetch - main [MainThread]: End processing [pixelenv] error
+[2023-04-12 21:57:40] INFO root fetch - processPackages [circt]: New version: [1.39.0] Old Version: [1.38.0]
+[2023-04-12 21:57:40] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-12 21:57:40] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-12 21:57:40] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230412/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:57:40] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-12 21:57:40] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230412/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-12 21:57:40] INFO root fetch - processPackages [robotframework-debug]: Downloading https://files.pythonhosted.org/packages/0a/e7/ce2c5a027a0216893eed9f04e60a56bc23834c207a04e9901f0727c283b4/robotframework-debug-4.3.1.tar.gz
+[2023-04-12 21:57:40] INFO root fetch - processPackages [tcfg]: Downloading https://files.pythonhosted.org/packages/a9/76/5b74736023936276882ab71f3471764dd77528befc7c71d8b541aba1f04b/tcfg-0.4.3.tar.gz
+[2023-04-12 21:57:40] INFO root fetch - processPackages [circt]: Downloading https://files.pythonhosted.org/packages/47/7b/b3c758fab428db3ddc6159c5dcbef23e2d3b165bc8093b1d5c00e3c430be/circt-1.39.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 21:57:40] INFO root fetch - processPackages [circt]: executing diffoscope
+[2023-04-12 21:57:40] INFO root fetch - processPackages [circt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circt-1.38.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/circt-1.39.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/c/circt/1.38.0-1.39.0/diff.md --exclude *.pyd
+[2023-04-12 21:57:40] INFO root fetch - processPackages [robotframework-debug]: Downloading https://files.pythonhosted.org/packages/62/4f/d1e38f8a1287e4522e9dbf6c75ea24e41d542676f01ef72f6c5e11915d85/robotframework-debug-4.3.2.tar.gz
+[2023-04-12 21:57:40] INFO root fetch - processPackages [robotframework-debug]: executing diffoscope
+[2023-04-12 21:57:40] INFO root fetch - processPackages [robotframework-debug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-debug-4.3.1.tar.gz tmp/robotframework-debug-4.3.2.tar.gz --markdown 20230412/r/robotframework-debug/4.3.1-4.3.2/diff.md --exclude *.pyd
+[2023-04-12 21:57:41] INFO root fetch - processPackages [tcfg]: Downloading https://files.pythonhosted.org/packages/67/46/6123748674632863219df26c34e4a6646e064a25a2ca3af33f6fbafd047e/tcfg-0.4.4.tar.gz
+[2023-04-12 21:57:41] INFO root fetch - processPackages [tcfg]: executing diffoscope
+[2023-04-12 21:57:41] INFO root fetch - processPackages [tcfg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcfg-0.4.3.tar.gz tmp/tcfg-0.4.4.tar.gz --markdown 20230412/t/tcfg/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-12 21:57:41] INFO root fetch - processPackages [superpowered-sdk]: Start processing: stormevents
+[2023-04-12 21:57:41] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-12 21:57:41] INFO root fetch - processPackages [stormevents]: New version: [2.1.4] Old Version: [2.1.3]
+[2023-04-12 21:57:41] INFO root fetch - processPackages [polywrap-core]: Start processing: opengpt
+[2023-04-12 21:57:41] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-12 21:57:41] INFO root fetch - processPackages [stormevents]: Downloading https://files.pythonhosted.org/packages/40/40/ce19192f2657678ebc5b0f7a2916b5bf787e24c2d9531dba9ce46cba3b18/stormevents-2.1.3-py3-none-any.whl
+[2023-04-12 21:57:41] INFO root fetch - processPackages [opengpt]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 21:57:41] INFO root fetch - processPackages [opengpt]: Downloading https://files.pythonhosted.org/packages/09/61/2095f8afb614498897c2e1323dcf931430211655a0d503c22d4ae7349b87/opengpt-0.0.2.tar.gz
+[2023-04-12 21:57:41] INFO root fetch - processPackages [stormevents]: Downloading https://files.pythonhosted.org/packages/fb/8e/ec2956bf60b02ab6551e6128d5464dc44905c12f0f3d07bd19e9d2ee5d0f/stormevents-2.1.4-py3-none-any.whl
+[2023-04-12 21:57:41] INFO root fetch - processPackages [robotframework-debug]: Start processing: certora-cli-alpha-master
+[2023-04-12 21:57:41] INFO root fetch - main [MainThread]: End processing [robotframework-debug]: success
+[2023-04-12 21:57:41] INFO root fetch - processPackages [stormevents]: executing diffoscope
+[2023-04-12 21:57:41] INFO root fetch - processPackages [stormevents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stormevents-2.1.3-py3-none-any.whl.zip tmp/stormevents-2.1.4-py3-none-any.whl.zip --markdown 20230412/s/stormevents/2.1.3-2.1.4/diff.md --exclude *.pyd
+[2023-04-12 21:57:41] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.17.31.123961] Old Version: [20230412.15.29.941542]
+[2023-04-12 21:57:41] INFO root fetch - processPackages [opengpt]: Downloading https://files.pythonhosted.org/packages/4f/be/431a4cab987a86daf6f6e0d33c03fc3fa1b4641bcedd5feca838f2f12dee/opengpt-0.0.3-py3-none-any.whl
+[2023-04-12 21:57:42] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/47/f3/1c0816044e8f4ea5f63b1fe7aad9e041df22a50327871a10bb9e09255e56/certora-cli-alpha-master-20230412.15.29.941542.tar.gz
+[2023-04-12 21:57:42] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28057932>=10485760
+[2023-04-12 21:57:42] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: dnacentersdk
+[2023-04-12 21:57:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-12 21:57:42] INFO root fetch - processPackages [opengpt]: executing diffoscope
+[2023-04-12 21:57:42] INFO root fetch - processPackages [opengpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengpt-0.0.2.tar.gz tmp/opengpt-0.0.3-py3-none-any.whl.zip --markdown 20230412/o/opengpt/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 21:57:42] INFO root fetch - processPackages [dnacentersdk]: New version: [2.6.0] Old Version: [2.5.6]
+[2023-04-12 21:57:42] INFO root fetch - processPackages [dnacentersdk]: Downloading https://files.pythonhosted.org/packages/27/6e/75b0ce96914e2eb04b17e04367fb211b36d776f9667bbea386f4b87d7d3a/dnacentersdk-2.5.6.tar.gz
+[2023-04-12 21:57:42] INFO root fetch - processPackages [dnacentersdk]: Downloading https://files.pythonhosted.org/packages/52/11/8a821b3268bb9c6b70cb4ad8357acba88e55867e90d99099e1cc9db8aaef/dnacentersdk-2.6.0.tar.gz
+[2023-04-12 21:57:43] INFO root fetch - processPackages [dnacentersdk]: executing diffoscope
+[2023-04-12 21:57:43] INFO root fetch - processPackages [dnacentersdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnacentersdk-2.5.6.tar.gz tmp/dnacentersdk-2.6.0.tar.gz --markdown 20230412/d/dnacentersdk/2.5.6-2.6.0/diff.md --exclude *.pyd
+[2023-04-12 21:57:43] INFO root fetch - main [MainThread]: End processing [stormevents]: success
+[2023-04-12 21:57:43] INFO root fetch - main [MainThread]: End processing [opengpt]: success
+[2023-04-12 21:57:43] INFO root fetch - main [MainThread]: End processing [tcfg]: success
+[2023-04-12 21:58:06] INFO root fetch - main [MainThread]: End processing [dnacentersdk]: success
+[2023-04-12 22:00:40] ERROR root fetch - processPackages [circt]: Timeout during execution of pkgdiff
+[2023-04-12 22:00:40] INFO root fetch - main [MainThread]: End processing [circt] error
+[2023-04-12 22:00:40] INFO root fetch - main [MainThread]: Store serial: [17681317]
