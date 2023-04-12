@@ -20342,3 +20342,85 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:01:00] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2023-04-12 19:01:08] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
 [2023-04-12 19:01:08] INFO root fetch - main [MainThread]: Store serial: [17679598]
+[2023-04-12 19:06:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679598]
+[2023-04-12 19:06:16] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 19:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LRphase
+[2023-04-12 19:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-httpx
+[2023-04-12 19:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: obeenya
+[2023-04-12 19:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MLapp1
+[2023-04-12 19:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zenml
+[2023-04-12 19:06:16] INFO root fetch - processPackages [zenml]: New version: [0.9.0] Old Version: [0.8.1rc0]
+[2023-04-12 19:06:16] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:06:16] INFO root fetch - processPackages [LRphase]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 19:06:16] INFO root fetch - processPackages [pytest-httpx]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 19:06:16] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:06:16] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:06:16] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 19:06:16] INFO root fetch - processPackages [obeenya]: Start processing: sdkms
+[2023-04-12 19:06:16] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 19:06:16] INFO root fetch - processPackages [sdkms]: New version: [4.9.2084] Old Version: [4.8.2070]
+[2023-04-12 19:06:16] INFO root fetch - processPackages [pytest-httpx]: Downloading https://files.pythonhosted.org/packages/bb/16/cf59ab9b9c7ba8a94f214103e97fc2a3ef726231ff02993cb00d55381786/pytest_httpx-0.8.0.tar.gz
+[2023-04-12 19:06:16] INFO root fetch - processPackages [LRphase]: Downloading https://files.pythonhosted.org/packages/45/f4/f15e00a50b764c931637d562c56d680e38aad2a753c348a67947f9dabc9d/LRphase-1.1.2.tar.gz
+[2023-04-12 19:06:16] INFO root fetch - processPackages [sdkms]: Downloading https://files.pythonhosted.org/packages/0b/12/f154bd6392853b2df37d767d669bc0fd1e1bfe3716307c8f01e9bde82431/sdkms-4.8.2070-py2.py3-none-any.whl
+[2023-04-12 19:06:16] INFO root fetch - processPackages [zenml]: Downloading https://files.pythonhosted.org/packages/a4/ba/9dd131570801a06d93e9cd4378d1f0d8501cf5e70ba8de510e199e4d3cc5/zenml-0.8.1rc0.tar.gz
+[2023-04-12 19:06:16] INFO root fetch - processPackages [LRphase]: executing diffoscope
+[2023-04-12 19:06:16] INFO root fetch - processPackages [LRphase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LRphase-1.1.1.tar.gz tmp/LRphase-1.1.2.tar.gz --markdown 20230412/L/LRphase/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 19:06:17] INFO root fetch - processPackages [zenml]: Downloading https://files.pythonhosted.org/packages/2c/42/78e070bea92d65044e034f70260230101d041ea1f99d781d2f29f7c995c5/zenml-0.9.0.tar.gz
+[2023-04-12 19:06:17] INFO root fetch - processPackages [sdkms]: Downloading https://files.pythonhosted.org/packages/b4/9b/5511388b0b85a13b4c1ca019c5e0d1ea2278e821fb326de8067eded7eb98/sdkms-4.9.2084-py2.py3-none-any.whl
+[2023-04-12 19:06:17] INFO root fetch - processPackages [sdkms]: executing diffoscope
+[2023-04-12 19:06:17] INFO root fetch - processPackages [sdkms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkms-4.8.2070-py2.py3-none-any.whl.zip tmp/sdkms-4.9.2084-py2.py3-none-any.whl.zip --markdown 20230412/s/sdkms/4.8.2070-4.9.2084/diff.md --exclude *.pyd
+[2023-04-12 19:06:17] INFO root fetch - processPackages [MLapp1]: Start processing: lbt-dragonfly
+[2023-04-12 19:06:17] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:06:17] INFO root fetch - processPackages [pytest-httpx]: Downloading https://files.pythonhosted.org/packages/67/55/9e0c7edf35ff5b19e5d51c3867dfd140ce9e1706862e34e9d78d3b4aeece/pytest_httpx-0.9.0.tar.gz
+[2023-04-12 19:06:17] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-12 19:06:17] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-12 19:06:17] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230412/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-12 19:06:17] INFO root fetch - processPackages [zenml]: executing diffoscope
+[2023-04-12 19:06:17] INFO root fetch - processPackages [zenml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenml-0.8.1rc0.tar.gz tmp/zenml-0.9.0.tar.gz --markdown 20230412/z/zenml/0.8.1rc0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:06:17] INFO root fetch - processPackages [pytest-httpx]: executing diffoscope
+[2023-04-12 19:06:17] INFO root fetch - processPackages [pytest-httpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_httpx-0.8.0.tar.gz tmp/pytest_httpx-0.9.0.tar.gz --markdown 20230412/p/pytest-httpx/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:06:18] INFO root fetch - processPackages [LRphase]: Start processing: lccpy
+[2023-04-12 19:06:18] INFO root fetch - main [MainThread]: End processing [LRphase]: success
+[2023-04-12 19:06:18] INFO root fetch - processPackages [lccpy]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-12 19:06:18] INFO root fetch - processPackages [lccpy]: Downloading https://files.pythonhosted.org/packages/dd/6b/66afbc22f6cc3ec2071eae7a90f4a5635a268c186f90f8b0d69859dd9331/lccpy-1.4.2.tar.gz
+[2023-04-12 19:06:18] INFO root fetch - processPackages [lccpy]: executing diffoscope
+[2023-04-12 19:06:18] INFO root fetch - processPackages [lccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lccpy-1.4.1.tar.gz tmp/lccpy-1.4.2.tar.gz --markdown 20230412/l/lccpy/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-12 19:06:18] INFO root fetch - processPackages [lbt-dragonfly]: Start processing: flash-attn
+[2023-04-12 19:06:18] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-12 19:06:18] INFO root fetch - processPackages [flash-attn]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 19:06:19] INFO root fetch - processPackages [flash-attn]: Downloading https://files.pythonhosted.org/packages/da/91/deec91e54d7876b73c5ad37004fa0d7cd6eb1e816b355252f0b7fdfe8d51/flash_attn-1.0.1.tar.gz
+[2023-04-12 19:06:19] INFO root fetch - processPackages [flash-attn]: executing diffoscope
+[2023-04-12 19:06:19] INFO root fetch - processPackages [flash-attn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_attn-1.0.0.tar.gz tmp/flash_attn-1.0.1.tar.gz --markdown 20230412/f/flash-attn/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 19:06:19] INFO root fetch - processPackages [pytest-httpx]: Start processing: interactions-restful
+[2023-04-12 19:06:19] INFO root fetch - main [MainThread]: End processing [pytest-httpx]: success
+[2023-04-12 19:06:19] WARNING root fetch - processPackages [interactions-restful]: Skipping, unable to determine old version
+[2023-04-12 19:06:19] INFO root fetch - processPackages [interactions-restful]: Start processing: simple-hierarchical-transformer
+[2023-04-12 19:06:19] INFO root fetch - main [MainThread]: End processing [interactions-restful] error
+[2023-04-12 19:06:19] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:06:19] INFO root fetch - processPackages [lccpy]: Start processing: MLapp1
+[2023-04-12 19:06:19] INFO root fetch - main [MainThread]: End processing [lccpy]: success
+[2023-04-12 19:06:19] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:06:19] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-12 19:06:19] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230412/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:06:19] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:06:19] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:06:20] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: sdkms-cli
+[2023-04-12 19:06:20] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-12 19:06:20] INFO root fetch - processPackages [MLapp1]: Start processing: smartkey-cli
+[2023-04-12 19:06:20] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:06:20] INFO root fetch - processPackages [sdkms-cli]: New version: [4.9.2084] Old Version: [4.8.2070]
+[2023-04-12 19:06:21] INFO root fetch - processPackages [smartkey-cli]: New version: [4.9.2084] Old Version: [4.8.2070]
+[2023-04-12 19:06:21] INFO root fetch - processPackages [sdkms-cli]: Downloading https://files.pythonhosted.org/packages/ce/df/888a73dc14736bafe467cac490c2a231c34270ef4a248dc7e95c23a21cc6/sdkms_cli-4.8.2070-py2.py3-none-any.whl
+[2023-04-12 19:06:21] INFO root fetch - processPackages [smartkey-cli]: Downloading https://files.pythonhosted.org/packages/ce/7f/001d24ce2bc35bcbc60039e7661442bdee657d5407a35f7c20b13c28eedf/smartkey_cli-4.8.2070-py2.py3-none-any.whl
+[2023-04-12 19:06:21] INFO root fetch - processPackages [sdkms-cli]: Downloading https://files.pythonhosted.org/packages/1d/ab/2ce96f7ea033e0563c2cf90b1912ff4248926a3362c7af09515ba3b6c790/sdkms_cli-4.9.2084-py3-none-any.whl
+[2023-04-12 19:06:21] INFO root fetch - processPackages [smartkey-cli]: Downloading https://files.pythonhosted.org/packages/37/13/b20a475fdb812f59d94fa3522bb4a8625fa1b85c10b0daac1e9eaf549d60/smartkey_cli-4.9.2084-py3-none-any.whl
+[2023-04-12 19:06:21] INFO root fetch - processPackages [smartkey-cli]: executing diffoscope
+[2023-04-12 19:06:21] INFO root fetch - processPackages [smartkey-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartkey_cli-4.8.2070-py2.py3-none-any.whl.zip tmp/smartkey_cli-4.9.2084-py3-none-any.whl.zip --markdown 20230412/s/smartkey-cli/4.8.2070-4.9.2084/diff.md --exclude *.pyd
+[2023-04-12 19:06:22] INFO root fetch - processPackages [sdkms-cli]: executing diffoscope
+[2023-04-12 19:06:22] INFO root fetch - processPackages [sdkms-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkms_cli-4.8.2070-py2.py3-none-any.whl.zip tmp/sdkms_cli-4.9.2084-py3-none-any.whl.zip --markdown 20230412/s/sdkms-cli/4.8.2070-4.9.2084/diff.md --exclude *.pyd
+[2023-04-12 19:06:23] INFO root fetch - main [MainThread]: End processing [sdkms]: success
+[2023-04-12 19:06:23] INFO root fetch - main [MainThread]: End processing [sdkms-cli]: success
+[2023-04-12 19:06:23] INFO root fetch - main [MainThread]: End processing [smartkey-cli]: success
+[2023-04-12 19:06:24] INFO root fetch - main [MainThread]: End processing [zenml]: success
+[2023-04-12 19:07:28] INFO root fetch - main [MainThread]: End processing [flash-attn]: success
+[2023-04-12 19:07:28] INFO root fetch - main [MainThread]: Store serial: [17679639]
