@@ -21058,3 +21058,122 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:42:29] INFO root fetch - main [MainThread]: End processing [fastsim]: success
 [2023-04-12 19:43:09] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2023-04-12 19:43:09] INFO root fetch - main [MainThread]: Store serial: [17680120]
+[2023-04-12 19:48:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680120]
+[2023-04-12 19:48:17] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-12 19:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlflow-watsonml
+[2023-04-12 19:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyeph
+[2023-04-12 19:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: socketio-notfier
+[2023-04-12 19:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2023-04-12 19:48:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dtflw
+[2023-04-12 19:48:17] INFO root fetch - processPackages [pyeph]: New version: [1.2.0] Old Version: [1.1.7]
+[2023-04-12 19:48:17] INFO root fetch - processPackages [socketio-notfier]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-12 19:48:17] INFO root fetch - processPackages [dtflw]: New version: [0.6.3] Old Version: [0.6.1]
+[2023-04-12 19:48:17] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-04-12 19:48:17] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-04-12 19:48:17] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230412/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-04-12 19:48:17] INFO root fetch - processPackages [socketio-notfier]: Downloading https://files.pythonhosted.org/packages/a2/a5/311506c694ae8d255c802e8d6db11f0d6e1208cfe167e5560b5b321e75a2/socketio_notfier-0.1.0.tar.gz
+[2023-04-12 19:48:17] INFO root fetch - processPackages [pyeph]: Downloading https://files.pythonhosted.org/packages/3d/52/7fdb0a4b9786f7fb4939a462097863be7bf90e54b5a7282f06eedf578b2b/pyeph-1.1.7.tar.gz
+[2023-04-12 19:48:17] INFO root fetch - processPackages [dtflw]: Downloading https://files.pythonhosted.org/packages/d9/68/63db38f374268406d97b37fe78d19a4c02353c89709ebff95fd53c2ea9e7/dtflw-0.6.1.tar.gz
+[2023-04-12 19:48:18] INFO root fetch - processPackages [pyeph]: Downloading https://files.pythonhosted.org/packages/c9/28/f7711d648c94eaa3757213f9a96f3d043341e749f97df2a9c3ff0e3bfe53/pyeph-1.2.0.tar.gz
+[2023-04-12 19:48:18] INFO root fetch - processPackages [socketio-notfier]: Downloading https://files.pythonhosted.org/packages/47/44/38cc00c464fe23d7235338e149af8cfd3bc8799f145f5654258893755cc4/socketio_notfier-1.0.0.tar.gz
+[2023-04-12 19:48:18] INFO root fetch - processPackages [pyeph]: executing diffoscope
+[2023-04-12 19:48:18] INFO root fetch - processPackages [pyeph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeph-1.1.7.tar.gz tmp/pyeph-1.2.0.tar.gz --markdown 20230412/p/pyeph/1.1.7-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:18] INFO root fetch - processPackages [socketio-notfier]: executing diffoscope
+[2023-04-12 19:48:18] INFO root fetch - processPackages [socketio-notfier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/socketio_notfier-0.1.0.tar.gz tmp/socketio_notfier-1.0.0.tar.gz --markdown 20230412/s/socketio-notfier/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:18] INFO root fetch - processPackages [dtflw]: Downloading https://files.pythonhosted.org/packages/0d/ff/ca7c2859bf183c3630528e237a4d9315711b2547d8ae2d4c99c705499ada/dtflw-0.6.3.tar.gz
+[2023-04-12 19:48:18] INFO root fetch - processPackages [dtflw]: executing diffoscope
+[2023-04-12 19:48:18] INFO root fetch - processPackages [dtflw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtflw-0.6.1.tar.gz tmp/dtflw-0.6.3.tar.gz --markdown 20230412/d/dtflw/0.6.1-0.6.3/diff.md --exclude *.pyd
+[2023-04-12 19:48:18] INFO root fetch - processPackages [mlflow-watsonml]: New version: [0.4.0] Old Version: [0.2.3]
+[2023-04-12 19:48:19] INFO root fetch - processPackages [mlflow-watsonml]: Downloading https://files.pythonhosted.org/packages/17/84/c3b5c3e99441aad76e381652ba19c5b3b4bd4190f5a0159584911df2be43/mlflow-watsonml-0.4.0.tar.gz
+[2023-04-12 19:48:19] INFO root fetch - processPackages [mlflow-watsonml]: executing diffoscope
+[2023-04-12 19:48:19] INFO root fetch - processPackages [mlflow-watsonml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow-watsonml-0.2.3.tar.gz tmp/mlflow-watsonml-0.4.0.tar.gz --markdown 20230412/m/mlflow-watsonml/0.2.3-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:19] INFO root fetch - processPackages [socketio-notfier]: Start processing: RecruitPlotEasy
+[2023-04-12 19:48:19] INFO root fetch - main [MainThread]: End processing [socketio-notfier]: success
+[2023-04-12 19:48:19] INFO root fetch - processPackages [RecruitPlotEasy]: New version: [3.1.0] Old Version: [3.0.9]
+[2023-04-12 19:48:19] INFO root fetch - processPackages [pyeph]: Start processing: odoo-addon-pos-event-sale
+[2023-04-12 19:48:19] INFO root fetch - main [MainThread]: End processing [pyeph]: success
+[2023-04-12 19:48:19] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: New version: [15.0.3.1.0] Old Version: [15.0.3.0.1.2]
+[2023-04-12 19:48:19] INFO root fetch - processPackages [peaqevcore]: Start processing: battlepy
+[2023-04-12 19:48:19] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-04-12 19:48:19] INFO root fetch - processPackages [RecruitPlotEasy]: Downloading https://files.pythonhosted.org/packages/f8/3c/90a0d43826f148aeac7418ac81551cdf3f96ffbab37e57bfb8cb678b8c10/RecruitPlotEasy-3.0.9.tar.gz
+[2023-04-12 19:48:19] WARNING root fetch - processPackages [battlepy]: Skipping, unable to determine old version
+[2023-04-12 19:48:19] INFO root fetch - processPackages [battlepy]: Start processing: pyfeyn2
+[2023-04-12 19:48:19] INFO root fetch - main [MainThread]: End processing [battlepy] error
+[2023-04-12 19:48:19] INFO root fetch - processPackages [pyfeyn2]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-04-12 19:48:19] INFO root fetch - processPackages [dtflw]: Start processing: satellite-weather-downloader
+[2023-04-12 19:48:19] INFO root fetch - main [MainThread]: End processing [dtflw]: success
+[2023-04-12 19:48:19] INFO root fetch - processPackages [satellite-weather-downloader]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-04-12 19:48:19] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/d0/38/3438052466ee041b800c8b6091b2fd124c7ee0bc7705663a88bad74b1a80/pyfeyn2-2.2.6.tar.gz
+[2023-04-12 19:48:19] INFO root fetch - processPackages [RecruitPlotEasy]: Downloading https://files.pythonhosted.org/packages/c9/d2/03c3653955b2c0620779bf751199fac1d88105b957591bacdb3120581406/RecruitPlotEasy-3.1.0.tar.gz
+[2023-04-12 19:48:19] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: Downloading https://files.pythonhosted.org/packages/4a/75/bb0813cab3f105f329be24f8dcc52e4238ff6f9c368c0436387eeabc7882/odoo_addon_pos_event_sale-15.0.3.1.0-py3-none-any.whl
+[2023-04-12 19:48:19] INFO root fetch - processPackages [RecruitPlotEasy]: executing diffoscope
+[2023-04-12 19:48:19] INFO root fetch - processPackages [RecruitPlotEasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RecruitPlotEasy-3.0.9.tar.gz tmp/RecruitPlotEasy-3.1.0.tar.gz --markdown 20230412/R/RecruitPlotEasy/3.0.9-3.1.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:19] INFO root fetch - processPackages [pyfeyn2]: executing diffoscope
+[2023-04-12 19:48:19] INFO root fetch - processPackages [pyfeyn2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfeyn2-2.2.5.tar.gz tmp/pyfeyn2-2.2.6.tar.gz --markdown 20230412/p/pyfeyn2/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-04-12 19:48:19] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: executing diffoscope
+[2023-04-12 19:48:19] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_event_sale-15.0.3.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_pos_event_sale-15.0.3.1.0-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-pos-event-sale/15.0.3.0.1.2-15.0.3.1.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:19] INFO root fetch - processPackages [satellite-weather-downloader]: Downloading https://files.pythonhosted.org/packages/1f/52/df256b834877fc395b432da461e5a9de8b5c40e116ad4b3f81f0e563b433/satellite_weather_downloader-1.8.0.tar.gz
+[2023-04-12 19:48:20] INFO root fetch - processPackages [mlflow-watsonml]: Start processing: qudi-hira-analysis
+[2023-04-12 19:48:20] INFO root fetch - main [MainThread]: End processing [mlflow-watsonml]: success
+[2023-04-12 19:48:20] INFO root fetch - processPackages [qudi-hira-analysis]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-04-12 19:48:20] INFO root fetch - processPackages [qudi-hira-analysis]: Downloading https://files.pythonhosted.org/packages/0c/ce/5796b3b54d0c4fd6465310171e6855cce205aba7e53380c4a224da88d4a8/qudi_hira_analysis-1.3.3.tar.gz
+[2023-04-12 19:48:20] INFO root fetch - processPackages [RecruitPlotEasy]: Start processing: akira3d
+[2023-04-12 19:48:20] INFO root fetch - main [MainThread]: End processing [RecruitPlotEasy]: success
+[2023-04-12 19:48:20] INFO root fetch - processPackages [akira3d]: New version: [4.8.1] Old Version: [4.7.2]
+[2023-04-12 19:48:21] INFO root fetch - processPackages [pyfeyn2]: Start processing: dwdparse
+[2023-04-12 19:48:21] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
+[2023-04-12 19:48:21] INFO root fetch - processPackages [qudi-hira-analysis]: Downloading https://files.pythonhosted.org/packages/8d/e7/ad8ffdf90abb579f5c1662e420708b348ff3e18381201f30d804b88c4b94/qudi_hira_analysis-1.3.4.tar.gz
+[2023-04-12 19:48:21] INFO root fetch - processPackages [dwdparse]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 19:48:21] INFO root fetch - processPackages [akira3d]: Downloading https://files.pythonhosted.org/packages/93/0f/23e90eb9c9654cee852f52d1c90d3c9656d9bfe040a3c848f8ec0a910f97/akira3d-4.8.1.tar.gz
+[2023-04-12 19:48:21] INFO root fetch - processPackages [qudi-hira-analysis]: executing diffoscope
+[2023-04-12 19:48:21] INFO root fetch - processPackages [qudi-hira-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qudi_hira_analysis-1.3.3.tar.gz tmp/qudi_hira_analysis-1.3.4.tar.gz --markdown 20230412/q/qudi-hira-analysis/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-04-12 19:48:21] INFO root fetch - processPackages [akira3d]: executing diffoscope
+[2023-04-12 19:48:21] INFO root fetch - processPackages [akira3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akira3d-4.7.2.tar.gz tmp/akira3d-4.8.1.tar.gz --markdown 20230412/a/akira3d/4.7.2-4.8.1/diff.md --exclude *.pyd
+[2023-04-12 19:48:21] INFO root fetch - processPackages [dwdparse]: Downloading https://files.pythonhosted.org/packages/61/f1/5445b81eadbed4f2353344866bec523d37fa6ac8e723ca52f82567ad22a7/dwdparse-0.9.4.tar.gz
+[2023-04-12 19:48:21] INFO root fetch - processPackages [odoo-addon-pos-event-sale]: Start processing: string-py
+[2023-04-12 19:48:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-event-sale]: success
+[2023-04-12 19:48:21] INFO root fetch - processPackages [string-py]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 19:48:21] INFO root fetch - processPackages [string-py]: Downloading https://files.pythonhosted.org/packages/e5/1e/62786ebbc3988c3203547958c3e819e802127f46510898ceb8de4e6b006a/string_py-0.1.2.tar.gz
+[2023-04-12 19:48:22] INFO root fetch - processPackages [string-py]: executing diffoscope
+[2023-04-12 19:48:22] INFO root fetch - processPackages [string-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/string_py-0.1.1.tar.gz tmp/string_py-0.1.2.tar.gz --markdown 20230412/s/string-py/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 19:48:22] INFO root fetch - processPackages [akira3d]: Start processing: whisper-ctranslate2
+[2023-04-12 19:48:22] INFO root fetch - main [MainThread]: End processing [akira3d]: success
+[2023-04-12 19:48:22] INFO root fetch - processPackages [whisper-ctranslate2]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 19:48:22] INFO root fetch - processPackages [qudi-hira-analysis]: Start processing: data-repo-client
+[2023-04-12 19:48:22] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
+[2023-04-12 19:48:22] INFO root fetch - processPackages [data-repo-client]: New version: [1.64.0] Old Version: [1.471.0]
+[2023-04-12 19:48:22] INFO root fetch - processPackages [satellite-weather-downloader]: Downloading https://files.pythonhosted.org/packages/bb/e5/3602ce0d3df55fa8a1780d5160cf6c6978109ed2606691473482fa9b5503/satellite_weather_downloader-1.8.1.tar.gz
+[2023-04-12 19:48:22] INFO root fetch - processPackages [dwdparse]: Downloading https://files.pythonhosted.org/packages/8a/f4/1dc0e9277a8132ba41a9ad8385a680671476ccc4268624226ad9a5280d06/dwdparse-0.9.5.tar.gz
+[2023-04-12 19:48:22] INFO root fetch - processPackages [data-repo-client]: Downloading https://files.pythonhosted.org/packages/83/c4/f547d651f2d8df3178429d506fa16659a66f01321bdd42ef23d3625603b0/data-repo-client-1.471.0.tar.gz
+[2023-04-12 19:48:22] INFO root fetch - processPackages [whisper-ctranslate2]: Downloading https://files.pythonhosted.org/packages/37/5b/e3df201c2f455d6c8dc34dd9bcd34567d1bedd0f1d3c0fbb3505814c385b/whisper-ctranslate2-0.1.7.tar.gz
+[2023-04-12 19:48:22] INFO root fetch - processPackages [dwdparse]: executing diffoscope
+[2023-04-12 19:48:22] INFO root fetch - processPackages [dwdparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwdparse-0.9.4.tar.gz tmp/dwdparse-0.9.5.tar.gz --markdown 20230412/d/dwdparse/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 19:48:22] INFO root fetch - processPackages [satellite-weather-downloader]: executing diffoscope
+[2023-04-12 19:48:22] INFO root fetch - processPackages [satellite-weather-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satellite_weather_downloader-1.8.0.tar.gz tmp/satellite_weather_downloader-1.8.1.tar.gz --markdown 20230412/s/satellite-weather-downloader/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-04-12 19:48:22] INFO root fetch - processPackages [data-repo-client]: executing diffoscope
+[2023-04-12 19:48:22] INFO root fetch - processPackages [data-repo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-repo-client-1.471.0.tar.gz tmp/data-repo-client-1.64.0.tar.gz --markdown 20230412/d/data-repo-client/1.471.0-1.64.0/diff.md --exclude *.pyd
+[2023-04-12 19:48:22] INFO root fetch - processPackages [whisper-ctranslate2]: executing diffoscope
+[2023-04-12 19:48:22] INFO root fetch - processPackages [whisper-ctranslate2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whisper-ctranslate2-0.1.6.tar.gz tmp/whisper-ctranslate2-0.1.7.tar.gz --markdown 20230412/w/whisper-ctranslate2/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 19:48:23] INFO root fetch - processPackages [string-py]: Start processing: tupa123
+[2023-04-12 19:48:23] INFO root fetch - main [MainThread]: End processing [string-py]: success
+[2023-04-12 19:48:23] INFO root fetch - processPackages [tupa123]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 19:48:23] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-04-12 19:48:23] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.2.8.tar.gz tmp/tupa123-1.2.9.tar.gz --markdown 20230412/t/tupa123/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 19:48:23] INFO root fetch - processPackages [dwdparse]: Start processing: apache-airflow-providers-google
+[2023-04-12 19:48:23] INFO root fetch - main [MainThread]: End processing [dwdparse]: success
+[2023-04-12 19:48:24] INFO root fetch - processPackages [whisper-ctranslate2]: Start processing: apache-airflow-providers-microsoft-azure
+[2023-04-12 19:48:24] INFO root fetch - main [MainThread]: End processing [whisper-ctranslate2]: success
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-google]: New version: [9.0.0rc2] Old Version: [9.0.0rc1]
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: New version: [5.3.1rc2] Old Version: [5.3.1rc1]
+[2023-04-12 19:48:24] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-google]: Downloading https://files.pythonhosted.org/packages/c9/a9/4d2d2be9368e88a481079184119d20b7f5a9d7e3f56f7303b1bf2508169b/apache-airflow-providers-google-9.0.0rc2.tar.gz
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: Downloading https://files.pythonhosted.org/packages/fc/62/00d366e32693cbbd10b9eb350a9f5d2e01231d9595f2ce359d5ae602d518/apache-airflow-providers-microsoft-azure-5.3.1rc2.tar.gz
+[2023-04-12 19:48:24] INFO root fetch - main [MainThread]: End processing [satellite-weather-downloader]: success
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: executing diffoscope
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-microsoft-azure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-microsoft-azure-5.3.1rc1.tar.gz tmp/apache-airflow-providers-microsoft-azure-5.3.1rc2.tar.gz --markdown 20230412/a/apache-airflow-providers-microsoft-azure/5.3.1rc1-5.3.1rc2/diff.md --exclude *.pyd
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-google]: executing diffoscope
+[2023-04-12 19:48:24] INFO root fetch - processPackages [apache-airflow-providers-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apache-airflow-providers-google-9.0.0rc1.tar.gz tmp/apache-airflow-providers-google-9.0.0rc2.tar.gz --markdown 20230412/a/apache-airflow-providers-google/9.0.0rc1-9.0.0rc2/diff.md --exclude *.pyd
+[2023-04-12 19:48:25] INFO root fetch - main [MainThread]: End processing [data-repo-client]: success
+[2023-04-12 19:48:26] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-microsoft-azure]: success
+[2023-04-12 19:48:50] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
+[2023-04-12 19:48:50] INFO root fetch - main [MainThread]: Store serial: [17680175]
