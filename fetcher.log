@@ -8620,3 +8620,65 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:10:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:10:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:10:57] INFO root fetch - main [MainThread]: Store serial: [17672406]
+[2023-04-12 09:16:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672406]
+[2023-04-12 09:16:05] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 09:16:06] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [dipex]: New version: [4.9.2] Old Version: [4.9.1]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [pyquil]: New version: [4.0.0rc9] Old Version: [4.0.0rc8]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230411] Old Version: [0.7.3.dev20230410]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-04-12 09:16:06] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230412/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-04-12 09:16:06] INFO root fetch - processPackages [dipex]: executing diffoscope
+[2023-04-12 09:16:06] INFO root fetch - processPackages [dipex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dipex-4.9.1.tar.gz tmp/dipex-4.9.2.tar.gz --markdown 20230412/d/dipex/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2023-04-12 09:16:06] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2023-04-12 09:16:06] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20230412/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2023-04-12 09:16:06] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/13/c1/2dd7e1d6b37d50cabd367efed4ba49841861db735e7740907f4ff60457a5/tfq_nightly-0.7.3.dev20230410-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 09:16:06] INFO root fetch - processPackages [pyquil]: Downloading https://files.pythonhosted.org/packages/d9/31/04bebe8a0e1e9f50a7c18106b7d8ade8b3377f99c6a2249e5a49105b59b4/pyquil-4.0.0rc8.tar.gz
+[2023-04-12 09:16:06] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819849>=10485760
+[2023-04-12 09:16:06] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:16:06] INFO root fetch - processPackages [odoo14-addon-printer-zpl2]: New version: [14.0.2.1.1.dev3] Old Version: [14.0.2.1.1.dev2]
+[2023-04-12 09:16:06] INFO root fetch - processPackages [pyquil]: Downloading https://files.pythonhosted.org/packages/3f/f5/a07361d9cd9abaff042e646976f0046519493e9c310c03d2e627f3ff97e8/pyquil-4.0.0rc9.tar.gz
+[2023-04-12 09:16:06] INFO root fetch - processPackages [odoo14-addon-printer-zpl2]: Downloading https://files.pythonhosted.org/packages/16/32/d42401d7c07a5da181c1366f0bfd51e3a1299045d3502abe985171b85c55/odoo14_addon_printer_zpl2-14.0.2.1.1.dev2-py3-none-any.whl
+[2023-04-12 09:16:06] INFO root fetch - processPackages [pyquil]: executing diffoscope
+[2023-04-12 09:16:06] INFO root fetch - processPackages [pyquil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquil-4.0.0rc8.tar.gz tmp/pyquil-4.0.0rc9.tar.gz --markdown 20230412/p/pyquil/4.0.0rc8-4.0.0rc9/diff.md --exclude *.pyd
+[2023-04-12 09:16:07] INFO root fetch - processPackages [odoo14-addon-printer-zpl2]: Downloading https://files.pythonhosted.org/packages/07/92/6ddbfe6dc318df547b535b8b5c9cf700b1a0d3302637efd610ef2ea00a24/odoo14_addon_printer_zpl2-14.0.2.1.1.dev3-py3-none-any.whl
+[2023-04-12 09:16:07] INFO root fetch - processPackages [odoo14-addon-printer-zpl2]: executing diffoscope
+[2023-04-12 09:16:07] INFO root fetch - processPackages [odoo14-addon-printer-zpl2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_printer_zpl2-14.0.2.1.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_printer_zpl2-14.0.2.1.1.dev3-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-printer-zpl2/14.0.2.1.1.dev2-14.0.2.1.1.dev3/diff.md --exclude *.pyd
+[2023-04-12 09:16:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:07] WARNING root fetch - processPackages [hj-mytest]: Skipping, unable to determine old version
+[2023-04-12 09:16:07] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:16:07] INFO root fetch - processPackages [midas-data-util]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 09:16:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:07] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 09:16:07] INFO root fetch - processPackages [midas-data-util]: Downloading https://files.pythonhosted.org/packages/08/9c/1f9fb40fbda564eddc13124b4cbc7314c9c8b6fe54b2788d62f8a2f6f74c/midas-data-util-0.2.2.tar.gz
+[2023-04-12 09:16:07] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-12 09:16:07] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230412/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 09:16:07] INFO root fetch - processPackages [midas-data-util]: executing diffoscope
+[2023-04-12 09:16:07] INFO root fetch - processPackages [midas-data-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midas-data-util-0.2.1.tar.gz tmp/midas-data-util-0.2.2.tar.gz --markdown 20230412/m/midas-data-util/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 09:16:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:08] INFO root fetch - processPackages [waveforms]: New version: [1.5.83] Old Version: [1.5.82]
+[2023-04-12 09:16:08] INFO root fetch - processPackages [waveforms]: Downloading https://files.pythonhosted.org/packages/ab/20/f9937a5fd2d5c77a599f992251f1e4d0264044c64a0cfdfdf820e790d25a/waveforms-1.5.82.tar.gz
+[2023-04-12 09:16:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:08] INFO root fetch - processPackages [waveforms]: Downloading https://files.pythonhosted.org/packages/56/9d/1f06e4cb572174711a827f055af89df2f943131d5c6fa2cb2e2202cac96a/waveforms-1.5.83.tar.gz
+[2023-04-12 09:16:08] INFO root fetch - processPackages [localstack-core]: New version: [2.0.2.dev20230411162949] Old Version: [2.0.2.dev20230411153725]
+[2023-04-12 09:16:08] INFO root fetch - processPackages [odoo14-addon-report-qweb-signer]: New version: [14.0.2.0.2.dev2] Old Version: [14.0.2.0.2.dev1]
+[2023-04-12 09:16:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:08] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2023-04-12 09:16:08] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack-core-2.0.2.dev20230411153725.tar.gz tmp/localstack-core-2.0.2.dev20230411162949.tar.gz --markdown 20230412/l/localstack-core/2.0.2.dev20230411153725-2.0.2.dev20230411162949/diff.md --exclude *.pyd
+[2023-04-12 09:16:08] INFO root fetch - processPackages [precise-lite-runner]: New version: [0.4.2a1] Old Version: [0.4.1a2]
+[2023-04-12 09:16:08] INFO root fetch - processPackages [waveforms]: executing diffoscope
+[2023-04-12 09:16:08] INFO root fetch - processPackages [waveforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waveforms-1.5.82.tar.gz tmp/waveforms-1.5.83.tar.gz --markdown 20230412/w/waveforms/1.5.82-1.5.83/diff.md --exclude *.pyd
+[2023-04-12 09:16:08] INFO root fetch - processPackages [odoo14-addon-report-qweb-signer]: Downloading https://files.pythonhosted.org/packages/6e/b8/fd016d379ea669f9fdff323c3b1866ea35a1ea45c02356da350c83861aa5/odoo14_addon_report_qweb_signer-14.0.2.0.2.dev1-py3-none-any.whl
+[2023-04-12 09:16:09] INFO root fetch - processPackages [precise-lite-runner]: Downloading https://files.pythonhosted.org/packages/16/69/7f699a5c219dce5b74b09dcbc509b1efab7f63734b9ea72eb33b1567ad84/precise_lite_runner-0.4.1a2-py3-none-any.whl
+[2023-04-12 09:16:09] WARNING root fetch - processPackages [odoo14-addon-report-qweb-signer]: Skipping package: exceeds size limit 18122252>=10485760
+[2023-04-12 09:16:09] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:16:09] INFO root fetch - processPackages [precise-lite-runner]: Downloading https://files.pythonhosted.org/packages/4f/13/ad49b3ab16bc170028e0582e05b0e27a11d0455350c6c5c4dd33facc4655/precise_lite_runner-0.4.2a1-py3-none-any.whl
+[2023-04-12 09:16:09] INFO root fetch - processPackages [precise-lite-runner]: executing diffoscope
+[2023-04-12 09:16:09] INFO root fetch - processPackages [precise-lite-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/precise_lite_runner-0.4.1a2-py3-none-any.whl.zip tmp/precise_lite_runner-0.4.2a1-py3-none-any.whl.zip --markdown 20230412/p/precise-lite-runner/0.4.1a2-0.4.2a1/diff.md --exclude *.pyd
+[2023-04-12 09:16:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:16:14] INFO root fetch - main [MainThread]: Store serial: [17672449]
