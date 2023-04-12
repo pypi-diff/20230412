@@ -14014,3 +14014,171 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 14:17:35] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-12 14:17:44] INFO root fetch - main [MainThread]: End processing [pandapower]: success
 [2023-04-12 14:17:44] INFO root fetch - main [MainThread]: Store serial: [17675770]
+[2023-04-12 14:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675770]
+[2023-04-12 14:22:51] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ingescape
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cm-two
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dac
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiohec
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datarobot-predict
+[2023-04-12 14:22:51] INFO root fetch - processPackages [cm-two]: New version: [2.2.66] Old Version: [2.2.64]
+[2023-04-12 14:22:51] INFO root fetch - processPackages [dac]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-12 14:22:51] WARNING root fetch - processPackages [aiohec]: Skipping, unable to determine old version
+[2023-04-12 14:22:51] INFO root fetch - processPackages [aiohec]: Start processing: wordpress-markdown-blog-loader
+[2023-04-12 14:22:51] INFO root fetch - main [MainThread]: End processing [aiohec] error
+[2023-04-12 14:22:51] INFO root fetch - processPackages [ingescape]: New version: [3.4.0] Old Version: [3.3.2]
+[2023-04-12 14:22:51] INFO root fetch - processPackages [datarobot-predict]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 14:22:51] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-12 14:22:52] INFO root fetch - processPackages [datarobot-predict]: Downloading https://files.pythonhosted.org/packages/ae/de/9ac556f8933d3f35383840a6866acf57020b648dd1528081fe3c4dd52050/datarobot_predict-1.0.2-py3-none-any.whl
+[2023-04-12 14:22:52] INFO root fetch - processPackages [cm-two]: Downloading https://files.pythonhosted.org/packages/79/94/7be3af111720d3d7dc5292ef10ec5bbef742ea9088320564119f606bb844/cm_two-2.2.66-py3-none-any.whl
+[2023-04-12 14:22:52] INFO root fetch - processPackages [dac]: Downloading https://files.pythonhosted.org/packages/14/2f/b110cc5cea8a65573cafdb952d409a6d855646ffaec17c89f7447dde12c8/dac-0.2.0.tar.gz
+[2023-04-12 14:22:52] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: Downloading https://files.pythonhosted.org/packages/a3/73/f97ffea2fda9c26918481dacab7afa78bbcc4ff4e6eaa3516bdf972f6e81/wordpress-markdown-blog-loader-1.0.1.tar.gz
+[2023-04-12 14:22:52] INFO root fetch - processPackages [ingescape]: Downloading https://files.pythonhosted.org/packages/56/ff/392fd75a25c5832d69129ca07a04bc24fff06a0a2b57f21fcddcc023770b/ingescape-3.3.2.tar.gz
+[2023-04-12 14:22:52] INFO root fetch - processPackages [cm-two]: executing diffoscope
+[2023-04-12 14:22:52] INFO root fetch - processPackages [cm-two]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cm_two-2.2.64-py3-none-any.whl.zip tmp/cm_two-2.2.66-py3-none-any.whl.zip --markdown 20230412/c/cm-two/2.2.64-2.2.66/diff.md --exclude *.pyd
+[2023-04-12 14:22:52] INFO root fetch - processPackages [datarobot-predict]: Downloading https://files.pythonhosted.org/packages/64/02/d8e8d684032204e5357667d3d583c093dce9734ab5477fd03fc1f68509a3/datarobot_predict-1.0.3-py3-none-any.whl
+[2023-04-12 14:22:52] WARNING root fetch - processPackages [ingescape]: Skipping package: exceeds size limit 15113563>=10485760
+[2023-04-12 14:22:52] INFO root fetch - processPackages [ingescape]: Start processing: OmniBridge
+[2023-04-12 14:22:52] INFO root fetch - main [MainThread]: End processing [ingescape] error
+[2023-04-12 14:22:52] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 14:22:52] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: Downloading https://files.pythonhosted.org/packages/ab/34/8236b2ded49f5e28d7c4dfd35b840643841d2e6421b73c1943c53a6ce1b8/wordpress-markdown-blog-loader-1.1.0.tar.gz
+[2023-04-12 14:22:52] INFO root fetch - processPackages [dac]: Downloading https://files.pythonhosted.org/packages/23/a6/233c82c6723d37fdfed1e1ab1dfc8499c6b026db1289963a162767662d5c/dac-0.3.0.tar.gz
+[2023-04-12 14:22:52] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-12 14:22:52] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230412/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 14:22:52] INFO root fetch - processPackages [datarobot-predict]: executing diffoscope
+[2023-04-12 14:22:52] INFO root fetch - processPackages [datarobot-predict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datarobot_predict-1.0.2-py3-none-any.whl.zip tmp/datarobot_predict-1.0.3-py3-none-any.whl.zip --markdown 20230412/d/datarobot-predict/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 14:22:52] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: executing diffoscope
+[2023-04-12 14:22:52] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wordpress-markdown-blog-loader-1.0.1.tar.gz tmp/wordpress-markdown-blog-loader-1.1.0.tar.gz --markdown 20230412/w/wordpress-markdown-blog-loader/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 14:22:52] INFO root fetch - processPackages [dac]: executing diffoscope
+[2023-04-12 14:22:52] INFO root fetch - processPackages [dac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dac-0.2.0.tar.gz tmp/dac-0.3.0.tar.gz --markdown 20230412/d/dac/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 14:22:53] ERROR root fetch - processPackages [cm-two]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid continuation byte
+
+[2023-04-12 14:22:53] INFO root fetch - processPackages [cm-two]: Start processing: castor-extractor
+[2023-04-12 14:22:53] INFO root fetch - main [MainThread]: End processing [cm-two] error
+[2023-04-12 14:22:53] INFO root fetch - processPackages [castor-extractor]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-12 14:22:53] INFO root fetch - processPackages [datarobot-predict]: Start processing: datarobot-predict
+[2023-04-12 14:22:53] INFO root fetch - main [MainThread]: End processing [datarobot-predict]: success
+[2023-04-12 14:22:53] INFO root fetch - processPackages [datarobot-predict]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 14:22:53] INFO root fetch - processPackages [OmniBridge]: Start processing: gotya-text-anonymizer
+[2023-04-12 14:22:53] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-12 14:22:53] INFO root fetch - processPackages [gotya-text-anonymizer]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-04-12 14:22:54] INFO root fetch - processPackages [datarobot-predict]: executing diffoscope
+[2023-04-12 14:22:54] INFO root fetch - processPackages [datarobot-predict]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datarobot_predict-1.0.2-py3-none-any.whl.zip tmp/datarobot_predict-1.0.3-py3-none-any.whl.zip --markdown 20230412/d/datarobot-predict/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 14:22:54] INFO root fetch - processPackages [wordpress-markdown-blog-loader]: Start processing: rcd-dev-kit
+[2023-04-12 14:22:54] INFO root fetch - main [MainThread]: End processing [wordpress-markdown-blog-loader]: success
+[2023-04-12 14:22:54] INFO root fetch - processPackages [castor-extractor]: Downloading https://files.pythonhosted.org/packages/2b/3c/d1a96d238d6e5b92793705689440ee401d7b4e8b7b7c8201e19d6926a2fb/castor_extractor-0.3.4.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [rcd-dev-kit]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-12 14:22:54] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/09/23/2b3c6defc702f8dea1bf5da7de6d195a0c7c8deffe2931da139d93da4981/gotya-text-anonymizer-1.1.6.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [rcd-dev-kit]: Downloading https://files.pythonhosted.org/packages/35/8a/f13006536c5b3f6bf9897c18797f84e86ee9a7a8ec78a223d6c4a7fa4568/rcd_dev_kit-2.0.3.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [gotya-text-anonymizer]: Downloading https://files.pythonhosted.org/packages/fb/2f/0b4eef8a63fb22252967d989917e60cbec19b7fbe1ec82d988a9b0909702/gotya-text-anonymizer-1.1.7.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [rcd-dev-kit]: Downloading https://files.pythonhosted.org/packages/0b/9f/7f7044e86a3801bfae6adc3e9a01183e316f3381a1955508003a2fce1ddf/rcd_dev_kit-2.0.4.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [castor-extractor]: Downloading https://files.pythonhosted.org/packages/26/ca/25bf8274cc9ed0b8ebf7802f2f4af4bac4a90e2cfc00cea598d8d89d5772/castor_extractor-0.3.5.tar.gz
+[2023-04-12 14:22:54] INFO root fetch - processPackages [gotya-text-anonymizer]: executing diffoscope
+[2023-04-12 14:22:54] INFO root fetch - processPackages [gotya-text-anonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gotya-text-anonymizer-1.1.6.tar.gz tmp/gotya-text-anonymizer-1.1.7.tar.gz --markdown 20230412/g/gotya-text-anonymizer/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-04-12 14:22:54] INFO root fetch - processPackages [rcd-dev-kit]: executing diffoscope
+[2023-04-12 14:22:54] INFO root fetch - processPackages [rcd-dev-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcd_dev_kit-2.0.3.tar.gz tmp/rcd_dev_kit-2.0.4.tar.gz --markdown 20230412/r/rcd-dev-kit/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-12 14:22:54] INFO root fetch - processPackages [castor-extractor]: executing diffoscope
+[2023-04-12 14:22:54] INFO root fetch - processPackages [castor-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/castor_extractor-0.3.4.tar.gz tmp/castor_extractor-0.3.5.tar.gz --markdown 20230412/c/castor-extractor/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-12 14:22:55] INFO root fetch - processPackages [datarobot-predict]: Start processing: IoddComCheckerGui
+[2023-04-12 14:22:55] INFO root fetch - main [MainThread]: End processing [datarobot-predict]: success
+[2023-04-12 14:22:55] INFO root fetch - processPackages [IoddComCheckerGui]: New version: [1.6.5.post1] Old Version: [1.6.5]
+[2023-04-12 14:22:55] INFO root fetch - processPackages [dac]: Start processing: rstream
+[2023-04-12 14:22:55] INFO root fetch - main [MainThread]: End processing [dac]: success
+[2023-04-12 14:22:55] INFO root fetch - processPackages [IoddComCheckerGui]: Downloading https://files.pythonhosted.org/packages/df/90/654148f9a66b14a444d9c07a9e7241fc83d56955f102999bd5121dcb5acf/ioddcomcheckergui-1.6.5.post1-py3-none-any.whl
+[2023-04-12 14:22:55] INFO root fetch - processPackages [rstream]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-12 14:22:55] INFO root fetch - processPackages [IoddComCheckerGui]: executing diffoscope
+[2023-04-12 14:22:55] INFO root fetch - processPackages [IoddComCheckerGui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ioddcomcheckergui-1.6.5-py3-none-any.whl.zip tmp/ioddcomcheckergui-1.6.5.post1-py3-none-any.whl.zip --markdown 20230412/I/IoddComCheckerGui/1.6.5-1.6.5.post1/diff.md --exclude *.pyd
+[2023-04-12 14:22:55] INFO root fetch - processPackages [rstream]: Downloading https://files.pythonhosted.org/packages/4e/68/984c2ded6584487c7b007d19e454832bffa5e2a9e0729dcab2ad6291a2cc/rstream-0.5.0.tar.gz
+[2023-04-12 14:22:55] INFO root fetch - main [MainThread]: End processing [gotya-text-anonymizer]: success
+[2023-04-12 14:22:55] INFO root fetch - processPackages [rstream]: Downloading https://files.pythonhosted.org/packages/61/49/0b81532bbd7463ca23e4d83f655dfedc75b6a6682848072628c9baaea3ae/rstream-0.6.0.tar.gz
+[2023-04-12 14:22:56] INFO root fetch - processPackages [rstream]: executing diffoscope
+[2023-04-12 14:22:56] INFO root fetch - processPackages [rstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rstream-0.5.0.tar.gz tmp/rstream-0.6.0.tar.gz --markdown 20230412/r/rstream/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-12 14:22:56] INFO root fetch - main [MainThread]: End processing [IoddComCheckerGui]: success
+[2023-04-12 14:22:56] INFO root fetch - main [MainThread]: End processing [rcd-dev-kit]: success
+[2023-04-12 14:22:57] INFO root fetch - main [MainThread]: End processing [rstream]: success
+[2023-04-12 14:22:57] INFO root fetch - main [MainThread]: End processing [castor-extractor]: success
+[2023-04-12 14:22:57] INFO root fetch - main [MainThread]: Store serial: [17675828]
