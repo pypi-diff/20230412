@@ -2874,3 +2874,69 @@
 [2023-04-12 02:54:56] ERROR root fetch - processPackages [amplify]: Timeout during execution of pkgdiff
 [2023-04-12 02:54:56] INFO root fetch - main [MainThread]: error
 [2023-04-12 02:54:56] INFO root fetch - main [MainThread]: Store serial: [17668783]
+[2023-04-12 02:59:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17668783]
+[2023-04-12 03:00:04] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 03:00:04] INFO root fetch - processPackages [xnat4tests]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-12 03:00:04] WARNING root fetch - processPackages [libdnf5-cli]: Skipping, unable to determine old version
+[2023-04-12 03:00:04] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 03:00:04] INFO root fetch - processPackages [clouddrift]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-12 03:00:04] INFO root fetch - processPackages [aemcmc-nightly]: New version: [0.0.8.dev20230412] Old Version: [0.0.8.dev20230411]
+[2023-04-12 03:00:04] INFO root fetch - processPackages [clouddrift]: executing diffoscope
+[2023-04-12 03:00:04] INFO root fetch - processPackages [clouddrift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clouddrift-0.8.0.tar.gz tmp/clouddrift-0.9.0.tar.gz --markdown 20230412/c/clouddrift/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 03:00:04] INFO root fetch - processPackages [xnat4tests]: Downloading https://files.pythonhosted.org/packages/42/5d/b386a86ab7082964a06f6e9c65255c004da79e862ac7d4bb298ff89ac108/xnat4tests-0.3.4-py3-none-any.whl
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230412/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:00:04] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/b7/fa/6db816d70a4a31714ca8fed4d3ad9d4e5780995a2f38e30b9d1c273929b4/aemcmc-nightly-0.0.8.dev20230411.tar.gz
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 03:00:04] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 03:00:05] INFO root fetch - processPackages [aemcmc-nightly]: Downloading https://files.pythonhosted.org/packages/92/2f/635a7b58bac46baa08c91fe0ff57e2bee574aaa2a0b6efa69e7b727d17b3/aemcmc-nightly-0.0.8.dev20230412.tar.gz
+[2023-04-12 03:00:05] INFO root fetch - processPackages [xnat4tests]: Downloading https://files.pythonhosted.org/packages/75/8f/c490dbab95bfb024a271ae476f190a84212c8f58ad0025ce0a3e4c8978ec/xnat4tests-0.3.5-py3-none-any.whl
+[2023-04-12 03:00:05] INFO root fetch - processPackages [aemcmc-nightly]: executing diffoscope
+[2023-04-12 03:00:05] INFO root fetch - processPackages [aemcmc-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aemcmc-nightly-0.0.8.dev20230411.tar.gz tmp/aemcmc-nightly-0.0.8.dev20230412.tar.gz --markdown 20230412/a/aemcmc-nightly/0.0.8.dev20230411-0.0.8.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 03:00:05] INFO root fetch - processPackages [xnat4tests]: executing diffoscope
+[2023-04-12 03:00:05] INFO root fetch - processPackages [xnat4tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xnat4tests-0.3.4-py3-none-any.whl.zip tmp/xnat4tests-0.3.5-py3-none-any.whl.zip --markdown 20230412/x/xnat4tests/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-12 03:00:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:06] INFO root fetch - processPackages [wtt01]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-12 03:00:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:06] WARNING root fetch - processPackages [choosegpu]: Skipping, unable to determine old version
+[2023-04-12 03:00:06] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:00:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:06] INFO root fetch - processPackages [bcsfe-discord]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-04-12 03:00:06] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 03:00:06] INFO root fetch - processPackages [grimm]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 03:00:06] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 03:00:06] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 03:00:06] INFO root fetch - processPackages [wtt01]: Downloading https://files.pythonhosted.org/packages/3b/d3/3ee66d488ba245e6992db58980801739689a1f1f80a1afdfa24326c46b7a/wtt01-0.2.6.tar.gz
+[2023-04-12 03:00:06] INFO root fetch - processPackages [bcsfe-discord]: Downloading https://files.pythonhosted.org/packages/f8/96/06f4955f5ebb27d0ed680efed29e921b6e1f4ae17e0d472c868864782b93/bcsfe-discord-2.7.8.tar.gz
+[2023-04-12 03:00:06] INFO root fetch - processPackages [wtt01]: executing diffoscope
+[2023-04-12 03:00:06] INFO root fetch - processPackages [wtt01]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wtt01-0.2.5.tar.gz tmp/wtt01-0.2.6.tar.gz --markdown 20230412/w/wtt01/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-12 03:00:06] INFO root fetch - processPackages [grimm]: Downloading https://files.pythonhosted.org/packages/1e/64/a2863a4b46b40da2d85e911e45a13522845f48054e8331865285cacbd436/grimm-0.1.0.tar.gz
+[2023-04-12 03:00:07] INFO root fetch - processPackages [grimm]: Downloading https://files.pythonhosted.org/packages/83/3a/51d27cd717bacf36a41b19b1f043cd54943e78ccf0ed3eeafa2432064a4b/grimm-0.1.1.tar.gz
+[2023-04-12 03:00:07] INFO root fetch - processPackages [grimm]: executing diffoscope
+[2023-04-12 03:00:07] INFO root fetch - processPackages [grimm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grimm-0.1.0.tar.gz tmp/grimm-0.1.1.tar.gz --markdown 20230412/g/grimm/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 03:00:07] INFO root fetch - processPackages [bcsfe-discord]: Downloading https://files.pythonhosted.org/packages/0a/a8/407cf9aa5ac882cd61a9b30eeaaa35a3a56f727904ad9cdaeb2dc2587e46/bcsfe-discord-2.7.9.tar.gz
+[2023-04-12 03:00:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:07] INFO root fetch - processPackages [bcsfe-discord]: executing diffoscope
+[2023-04-12 03:00:07] INFO root fetch - processPackages [bcsfe-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcsfe-discord-2.7.8.tar.gz tmp/bcsfe-discord-2.7.9.tar.gz --markdown 20230412/b/bcsfe-discord/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-04-12 03:00:07] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.7.1.9.dev202304111681056266] Old Version: [1.7.1.9.dev202304101681056266]
+[2023-04-12 03:00:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:07] INFO root fetch - processPackages [nimblephysics]: New version: [0.8.92] Old Version: [0.8.91]
+[2023-04-12 03:00:07] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-04-12 03:00:07] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.7.1.9.dev202304101681056266-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.7.1.9.dev202304111681056266-cp39-cp39-win_amd64.whl.zip --markdown 20230412/p/pyagrum-nightly/1.7.1.9.dev202304101681056266-1.7.1.9.dev202304111681056266/diff.md --exclude *.pyd
+[2023-04-12 03:00:08] INFO root fetch - processPackages [nimblephysics]: Downloading https://files.pythonhosted.org/packages/e6/4b/fd825d485612532a59c750d16358488526f2e8a347e73696aeb7d3e9757e/nimblephysics-0.8.91-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 03:00:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:08] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: New version: [2.0.4rc20230412010342] Old Version: [2.0.4rc20230312020457]
+[2023-04-12 03:00:08] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: Downloading https://files.pythonhosted.org/packages/c7/13/519364f95c79619ab6c59f4f0e44dbba8ffe8cd8567adb1015b186753aa1/mosaik.HouseholdSim_SemVer-2.0.4rc20230312020457-py2.py3-none-any.whl
+[2023-04-12 03:00:08] WARNING root fetch - processPackages [nimblephysics]: Skipping package: exceeds size limit 67414818>=10485760
+[2023-04-12 03:00:08] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:00:09] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: Downloading https://files.pythonhosted.org/packages/be/be/ffd3779c181026bd8f9be66d51ad078b23ccca1e1f8a487e23f810160057/mosaik.HouseholdSim_SemVer-2.0.4rc20230412010342-py2.py3-none-any.whl
+[2023-04-12 03:00:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:09] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: executing diffoscope
+[2023-04-12 03:00:09] INFO root fetch - processPackages [mosaik.HouseholdSim-SemVer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaik.HouseholdSim_SemVer-2.0.4rc20230312020457-py2.py3-none-any.whl.zip tmp/mosaik.HouseholdSim_SemVer-2.0.4rc20230412010342-py2.py3-none-any.whl.zip --markdown 20230412/m/mosaik.HouseholdSim-SemVer/2.0.4rc20230312020457-2.0.4rc20230412010342/diff.md --exclude *.pyd
+[2023-04-12 03:00:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:00:10] INFO root fetch - main [MainThread]: Store serial: [17668844]
