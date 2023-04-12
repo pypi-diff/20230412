@@ -10857,3 +10857,83 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 11:27:36] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:27:42] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:27:42] INFO root fetch - main [MainThread]: Store serial: [17673960]
+[2023-04-12 11:32:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673960]
+[2023-04-12 11:32:51] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: New version: [0.5.4] Old Version: [0.5.3b2]
+[2023-04-12 11:32:51] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 11:32:51] INFO root fetch - processPackages [analogic-framework]: New version: [4.1.0] Old Version: [4.0.2]
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: New version: [0.5.4] Old Version: [0.5.3b2]
+[2023-04-12 11:32:51] INFO root fetch - processPackages [gocardless-pro]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 11:32:51] INFO root fetch - processPackages [gocardless-pro]: executing diffoscope
+[2023-04-12 11:32:51] INFO root fetch - processPackages [gocardless-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gocardless_pro-1.8.0.tar.gz tmp/gocardless_pro-1.9.0.tar.gz --markdown 20230412/g/gocardless-pro/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/78/ee/ac9a235299442d27421ca199db715ae5f22b0f6f7892ecf90f746420a7f3/irissqlcli-0.5.3b2.tar.gz
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/78/ee/ac9a235299442d27421ca199db715ae5f22b0f6f7892ecf90f746420a7f3/irissqlcli-0.5.3b2.tar.gz
+[2023-04-12 11:32:51] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419]: Downloading https://files.pythonhosted.org/packages/74/68/f24a6a42fd4cca4057cde7dc6881d3a3214199c79805f1bd07736f781530/alibabacloud_resourcedirectorymaster20220419-1.0.0.tar.gz
+[2023-04-12 11:32:51] INFO root fetch - processPackages [analogic-framework]: Downloading https://files.pythonhosted.org/packages/e5/0e/dcd6d43362ffa401d634015c01157198aa857479036e3e9adcffd68cc87a/analogic-framework-4.0.2.tar.gz
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/5a/d3/4d261cdcaa4dc253bbd6d00405b6c1f455fd7f7902a63b1b02cd58a2dc31/irissqlcli-0.5.4.tar.gz
+[2023-04-12 11:32:51] INFO root fetch - processPackages [irissqlcli]: Downloading https://files.pythonhosted.org/packages/5a/d3/4d261cdcaa4dc253bbd6d00405b6c1f455fd7f7902a63b1b02cd58a2dc31/irissqlcli-0.5.4.tar.gz
+[2023-04-12 11:32:52] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419]: Downloading https://files.pythonhosted.org/packages/db/c0/7c7bd56d69aff540424a33b658cdf3519ebccb8f859ea56da17325f0dd6c/alibabacloud_resourcedirectorymaster20220419-1.0.1.tar.gz
+[2023-04-12 11:32:52] INFO root fetch - processPackages [analogic-framework]: Downloading https://files.pythonhosted.org/packages/3a/0c/d35494e4175e7e5ead47255ae2f45a5f8cd5c05ad89828e4aa64408d6844/analogic-framework-4.1.0.tar.gz
+[2023-04-12 11:32:52] INFO root fetch - processPackages [irissqlcli]: executing diffoscope
+[2023-04-12 11:32:52] INFO root fetch - processPackages [irissqlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irissqlcli-0.5.3b2.tar.gz tmp/irissqlcli-0.5.4.tar.gz --markdown 20230412/i/irissqlcli/0.5.3b2-0.5.4/diff.md --exclude *.pyd
+[2023-04-12 11:32:52] INFO root fetch - processPackages [irissqlcli]: executing diffoscope
+[2023-04-12 11:32:52] INFO root fetch - processPackages [irissqlcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irissqlcli-0.5.3b2.tar.gz tmp/irissqlcli-0.5.4.tar.gz --markdown 20230412/i/irissqlcli/0.5.3b2-0.5.4/diff.md --exclude *.pyd
+[2023-04-12 11:32:52] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419]: executing diffoscope
+[2023-04-12 11:32:52] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_resourcedirectorymaster20220419-1.0.0.tar.gz tmp/alibabacloud_resourcedirectorymaster20220419-1.0.1.tar.gz --markdown 20230412/a/alibabacloud-resourcedirectorymaster20220419/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 11:32:52] INFO root fetch - processPackages [analogic-framework]: executing diffoscope
+[2023-04-12 11:32:52] INFO root fetch - processPackages [analogic-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analogic-framework-4.0.2.tar.gz tmp/analogic-framework-4.1.0.tar.gz --markdown 20230412/a/analogic-framework/4.0.2-4.1.0/diff.md --exclude *.pyd
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:53] INFO root fetch - processPackages [aiida-vasp]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:53] WARNING root fetch - processPackages [ms-sqlserver-api]: Skipping, unable to determine old version
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:32:53] INFO root fetch - processPackages [MindsDB]: New version: [23.4.3.0] Old Version: [23.3.5.0]
+[2023-04-12 11:32:53] INFO root fetch - processPackages [aiida-vasp]: Downloading https://files.pythonhosted.org/packages/d8/4d/e83292f2cfc808e4191651dcee614d9a80f07af57e6e26fbbec487a88525/aiida-vasp-2.1.1.tar.gz
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:53] INFO root fetch - processPackages [MindsDB]: Downloading https://files.pythonhosted.org/packages/83/46/c26f96e3d9a21399462aaaeca89ead45a0f1e9323d1d0b63375bc3109663/MindsDB-23.3.5.0.tar.gz
+[2023-04-12 11:32:53] INFO root fetch - processPackages [pypendency]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:53] INFO root fetch - processPackages [sentencepiece]: New version: [0.1.98] Old Version: [0.1.97]
+[2023-04-12 11:32:53] INFO root fetch - processPackages [aiida-vasp]: Downloading https://files.pythonhosted.org/packages/e3/30/01d26b94a8df19ab372ba3d21ca8ac8aee0c69562439c6d5d315d5db375d/aiida-vasp-2.2.0.tar.gz
+[2023-04-12 11:32:53] INFO root fetch - processPackages [pypendency]: Downloading https://files.pythonhosted.org/packages/61/a6/5e3f5058c2f1253e7c6f940f3eabc2fe452ad26d2e63e643497478a313ca/pypendency-0.1.0.tar.gz
+[2023-04-12 11:32:53] WARNING root fetch - processPackages [aiida-vasp]: Skipping package: exceeds size limit 11725384>=10485760
+[2023-04-12 11:32:53] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:32:53] INFO root fetch - processPackages [autoMMM]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 11:32:53] INFO root fetch - processPackages [sentencepiece]: Downloading https://files.pythonhosted.org/packages/ec/87/f26695307c0aa00e6938f5de795fc7f2c718a448b48d29a4c8c8dbf829d3/sentencepiece-0.1.97.tar.gz
+[2023-04-12 11:32:53] INFO root fetch - processPackages [autoMMM]: Downloading https://files.pythonhosted.org/packages/85/22/dbaa0dec57f37e812c522bb8767d4cfec0eda10865d58de87593781d77ce/autoMMM-0.1.0.tar.gz
+[2023-04-12 11:32:54] INFO root fetch - processPackages [pypendency]: Downloading https://files.pythonhosted.org/packages/4e/1c/c96357be065850e4bc8669e5a2b60d93fd09825578f115b14c9e6f0346c0/pypendency-0.2.0.tar.gz
+[2023-04-12 11:32:54] INFO root fetch - processPackages [MindsDB]: Downloading https://files.pythonhosted.org/packages/2c/42/481f657e1dddb3af2d2981734c9519894544b6ce46ced9c974276df28f98/MindsDB-23.4.3.0.tar.gz
+[2023-04-12 11:32:54] INFO root fetch - processPackages [pypendency]: executing diffoscope
+[2023-04-12 11:32:54] INFO root fetch - processPackages [pypendency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypendency-0.1.0.tar.gz tmp/pypendency-0.2.0.tar.gz --markdown 20230412/p/pypendency/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 11:32:54] INFO root fetch - processPackages [autoMMM]: Downloading https://files.pythonhosted.org/packages/a0/8e/23cd8bb2c40ebef35f7d000656a77af8d716d7822310a814ca490959b079/autoMMM-0.1.1.tar.gz
+[2023-04-12 11:32:54] INFO root fetch - processPackages [sentencepiece]: Downloading https://files.pythonhosted.org/packages/c3/b5/935d75c25c9f990c47910a88bf0b2d24936cb375be1c8d965bdb28a722ae/sentencepiece-0.1.98-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl
+[2023-04-12 11:32:54] INFO root fetch - processPackages [MindsDB]: executing diffoscope
+[2023-04-12 11:32:54] INFO root fetch - processPackages [MindsDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MindsDB-23.3.5.0.tar.gz tmp/MindsDB-23.4.3.0.tar.gz --markdown 20230412/M/MindsDB/23.3.5.0-23.4.3.0/diff.md --exclude *.pyd
+[2023-04-12 11:32:54] INFO root fetch - processPackages [autoMMM]: executing diffoscope
+[2023-04-12 11:32:54] INFO root fetch - processPackages [autoMMM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoMMM-0.1.0.tar.gz tmp/autoMMM-0.1.1.tar.gz --markdown 20230412/a/autoMMM/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 11:32:54] INFO root fetch - processPackages [sentencepiece]: executing diffoscope
+[2023-04-12 11:32:54] INFO root fetch - processPackages [sentencepiece]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentencepiece-0.1.97.tar.gz tmp/sentencepiece-0.1.98-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20230412/s/sentencepiece/0.1.97-0.1.98/diff.md --exclude *.pyd
+[2023-04-12 11:32:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-behave]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-12 11:32:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-behave]: Downloading https://files.pythonhosted.org/packages/60/6a/fda7487a723ab658cc59e1271bf67529de8774e6ffeacb000cbc66bc11e2/testit-adapter-behave-2.1.5.tar.gz
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-nose]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-nose]: Downloading https://files.pythonhosted.org/packages/f2/01/ac47732a2721ed7abf51970526386ebeb5007e0aa90c669ab0d998449527/testit-adapter-nose-2.1.5.tar.gz
+[2023-04-12 11:32:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-behave]: Downloading https://files.pythonhosted.org/packages/ad/20/76c1b7ddd2fe92b1321d6be8f5af208df753f28744560d72b78f13743431/testit-adapter-behave-2.1.6.tar.gz
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-pytest]: New version: [2.1.6] Old Version: [2.1.5]
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-behave]: executing diffoscope
+[2023-04-12 11:32:55] INFO root fetch - processPackages [testit-adapter-behave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-behave-2.1.5.tar.gz tmp/testit-adapter-behave-2.1.6.tar.gz --markdown 20230412/t/testit-adapter-behave/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-nose]: Downloading https://files.pythonhosted.org/packages/4e/7f/5e8b6e84f514de5b59c851a31f53ff2505674c6670ae07cdf22bf7ad78bb/testit-adapter-nose-2.1.6.tar.gz
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-pytest]: Downloading https://files.pythonhosted.org/packages/34/0c/e2ba70d3e98c5a2d3d7b55302f143fcfdb82ca4deececc8adb8c02782c46/testit-adapter-pytest-2.1.5.tar.gz
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-nose]: executing diffoscope
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-nose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-nose-2.1.5.tar.gz tmp/testit-adapter-nose-2.1.6.tar.gz --markdown 20230412/t/testit-adapter-nose/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-pytest]: Downloading https://files.pythonhosted.org/packages/da/d9/1fff14c2b29266dd9100ff098f36325d322d0e0a1213e08b7a005ec4d95e/testit-adapter-pytest-2.1.6.tar.gz
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-pytest]: executing diffoscope
+[2023-04-12 11:32:56] INFO root fetch - processPackages [testit-adapter-pytest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testit-adapter-pytest-2.1.5.tar.gz tmp/testit-adapter-pytest-2.1.6.tar.gz --markdown 20230412/t/testit-adapter-pytest/2.1.5-2.1.6/diff.md --exclude *.pyd
+[2023-04-12 11:32:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:32:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:33:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:33:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:33:08] INFO root fetch - main [MainThread]: Store serial: [17674046]
