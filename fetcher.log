@@ -21411,3 +21411,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:59:36] INFO root fetch - processPackages [interpret-community]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interpret-community-0.9.1.tar.gz tmp/interpret-community-0.9.2.tar.gz --markdown 20230412/i/interpret-community/0.9.1-0.9.2/diff.md --exclude *.pyd
 [2023-04-12 19:59:39] INFO root fetch - main [MainThread]: End processing [interpret-community]: success
 [2023-04-12 19:59:39] INFO root fetch - main [MainThread]: Store serial: [17680282]
+[2023-04-12 20:04:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680282]
+[2023-04-12 20:04:53] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 20:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DBRetina
+[2023-04-12 20:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyalpa
+[2023-04-12 20:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-import-export
+[2023-04-12 20:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: InstaReq
+[2023-04-12 20:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchmd
+[2023-04-12 20:04:53] INFO root fetch - processPackages [DBRetina]: New version: [2.0.5] Old Version: [2.0.3.dev0]
+[2023-04-12 20:04:53] INFO root fetch - processPackages [pyalpa]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-12 20:04:53] INFO root fetch - processPackages [InstaReq]: New version: [0.1.2] Old Version: [0.1]
+[2023-04-12 20:04:53] INFO root fetch - processPackages [torchmd]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 20:04:53] INFO root fetch - processPackages [django-import-export]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-12 20:04:53] INFO root fetch - processPackages [DBRetina]: Downloading https://files.pythonhosted.org/packages/ee/96/b8c0f7b99a6923457f4a84590288fd2df3bcec9da36a5c852f1c703eb2d0/DBRetina-2.0.3.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 20:04:53] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/85/08/facaaa18c463cb91c9d1e814372c546819952822ed7f679ac5a6392132f3/django-import-export-3.1.0.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [pyalpa]: Downloading https://files.pythonhosted.org/packages/7f/2a/28a6ee907eb4ff7cc15c7b7ec6d543edde98c17381553a7f5e158fdf76d4/pyalpa-0.7.2.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [torchmd]: Downloading https://files.pythonhosted.org/packages/dd/22/9a54a2917016093713dcc3c8bfa7ab5def160a2582843a06aedcb5ba16eb/torchmd-0.0.2.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [InstaReq]: Downloading https://files.pythonhosted.org/packages/3a/59/18b467e4f75b2348cd293c9914ea57ec6901bce3fbf0d73aede2a2266b0f/InstaReq-0.1.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [django-import-export]: Downloading https://files.pythonhosted.org/packages/f3/5d/ac971fb19d2b88af46e712e600c7d625f762fb6498d7b69a3e7501ebc029/django-import-export-3.2.0.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [pyalpa]: executing diffoscope
+[2023-04-12 20:04:53] INFO root fetch - processPackages [pyalpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalpa-0.7.1.tar.gz tmp/pyalpa-0.7.2.tar.gz --markdown 20230412/p/pyalpa/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-12 20:04:53] INFO root fetch - processPackages [django-import-export]: executing diffoscope
+[2023-04-12 20:04:53] INFO root fetch - processPackages [django-import-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-import-export-3.1.0.tar.gz tmp/django-import-export-3.2.0.tar.gz --markdown 20230412/d/django-import-export/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:04:53] INFO root fetch - processPackages [torchmd]: Downloading https://files.pythonhosted.org/packages/72/21/68ea222e9bae0d151bdac499895d303c6dcfbf3738eceba7c0386c6a5f46/torchmd-0.0.4.tar.gz
+[2023-04-12 20:04:53] INFO root fetch - processPackages [InstaReq]: Downloading https://files.pythonhosted.org/packages/72/28/52d93de47db708951763053f521eb75af4c76191c0b50a4dba237d421fb4/InstaReq-0.1.2.tar.gz
+[2023-04-12 20:04:54] INFO root fetch - processPackages [DBRetina]: Downloading https://files.pythonhosted.org/packages/46/18/0d326d089f66a89321202fe295aec64407f9b36c76c1e84719ca6803481e/DBRetina-2.0.5-cp39-cp39-manylinux2014_x86_64.whl
+[2023-04-12 20:04:54] INFO root fetch - processPackages [torchmd]: executing diffoscope
+[2023-04-12 20:04:54] INFO root fetch - processPackages [torchmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchmd-0.0.2.tar.gz tmp/torchmd-0.0.4.tar.gz --markdown 20230412/t/torchmd/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 20:04:54] INFO root fetch - processPackages [InstaReq]: executing diffoscope
+[2023-04-12 20:04:54] INFO root fetch - processPackages [InstaReq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InstaReq-0.1.tar.gz tmp/InstaReq-0.1.2.tar.gz --markdown 20230412/I/InstaReq/0.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 20:04:54] INFO root fetch - processPackages [DBRetina]: executing diffoscope
+[2023-04-12 20:04:54] INFO root fetch - processPackages [DBRetina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DBRetina-2.0.3.dev0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/DBRetina-2.0.5-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230412/D/DBRetina/2.0.3.dev0-2.0.5/diff.md --exclude *.pyd
+[2023-04-12 20:04:54] INFO root fetch - processPackages [pyalpa]: Start processing: arch
+[2023-04-12 20:04:54] INFO root fetch - main [MainThread]: End processing [pyalpa]: success
+[2023-04-12 20:04:55] INFO root fetch - processPackages [arch]: New version: [5.4.0] Old Version: [5.3.1]
+[2023-04-12 20:04:55] INFO root fetch - processPackages [arch]: Downloading https://files.pythonhosted.org/packages/fa/78/7ea7abfe27e7c9d95160e38b16cca24cb4b6adc915d3d94eaf74b5e1f901/arch-5.3.1.tar.gz
+[2023-04-12 20:04:55] INFO root fetch - processPackages [torchmd]: Start processing: triton-model-navigator
+[2023-04-12 20:04:55] INFO root fetch - main [MainThread]: End processing [torchmd]: success
+[2023-04-12 20:04:55] INFO root fetch - processPackages [triton-model-navigator]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-12 20:04:55] INFO root fetch - processPackages [InstaReq]: Start processing: picovoice
+[2023-04-12 20:04:55] INFO root fetch - main [MainThread]: End processing [InstaReq]: success
+[2023-04-12 20:04:55] INFO root fetch - processPackages [picovoice]: New version: [2.2.0] Old Version: [2.1.5]
+[2023-04-12 20:04:55] INFO root fetch - processPackages [triton-model-navigator]: Downloading https://files.pythonhosted.org/packages/7b/82/6e189443ca8cbb086455adbad37ef586cb2064f34a8d4e5c776db30baf8f/triton_model_navigator-0.5.1-py3-none-any.whl
+[2023-04-12 20:04:55] INFO root fetch - processPackages [picovoice]: Downloading https://files.pythonhosted.org/packages/d9/e3/c826eaa100d626af832287542c0c904ec2420df6927817d3da96fe356bbb/picovoice-2.1.5.tar.gz
+[2023-04-12 20:04:55] INFO root fetch - processPackages [arch]: Downloading https://files.pythonhosted.org/packages/f0/f6/4306a2c1171e562806e927632398bc3a0eeb6063cbb99e781820eb62aecc/arch-5.4.0.tar.gz
+[2023-04-12 20:04:55] INFO root fetch - processPackages [django-import-export]: Start processing: piperider-nightly
+[2023-04-12 20:04:55] INFO root fetch - main [MainThread]: End processing [django-import-export]: success
+[2023-04-12 20:04:55] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-04-12 20:04:55] INFO root fetch - processPackages [arch]: executing diffoscope
+[2023-04-12 20:04:55] INFO root fetch - processPackages [arch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arch-5.3.1.tar.gz tmp/arch-5.4.0.tar.gz --markdown 20230412/a/arch/5.3.1-5.4.0/diff.md --exclude *.pyd
+[2023-04-12 20:04:55] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-04-12 20:04:55] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230412/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-04-12 20:04:55] INFO root fetch - processPackages [triton-model-navigator]: Downloading https://files.pythonhosted.org/packages/17/57/4e07201d59d9f23f793714ffb979d398809f91df5cc27ffd38808f6552fe/triton_model_navigator-0.5.2-py3-none-any.whl
+[2023-04-12 20:04:55] INFO root fetch - processPackages [picovoice]: Downloading https://files.pythonhosted.org/packages/fe/87/56ca29d38a8b5d0c9828677dae5f5fec75a98300c967fd96d1954258d4e7/picovoice-2.2.0.tar.gz
+[2023-04-12 20:04:55] INFO root fetch - processPackages [triton-model-navigator]: executing diffoscope
+[2023-04-12 20:04:55] INFO root fetch - processPackages [triton-model-navigator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triton_model_navigator-0.5.1-py3-none-any.whl.zip tmp/triton_model_navigator-0.5.2-py3-none-any.whl.zip --markdown 20230412/t/triton-model-navigator/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-12 20:04:55] INFO root fetch - processPackages [picovoice]: executing diffoscope
+[2023-04-12 20:04:55] INFO root fetch - processPackages [picovoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picovoice-2.1.5.tar.gz tmp/picovoice-2.2.0.tar.gz --markdown 20230412/p/picovoice/2.1.5-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:04:56] INFO root fetch - processPackages [picovoice]: Start processing: tekore
+[2023-04-12 20:04:56] INFO root fetch - main [MainThread]: End processing [picovoice]: success
+[2023-04-12 20:04:56] INFO root fetch - processPackages [tekore]: New version: [4.6.0] Old Version: [4.5.0]
+[2023-04-12 20:04:57] INFO root fetch - processPackages [tekore]: Downloading https://files.pythonhosted.org/packages/86/db/94850b651933156884090ded37a91c6b8b32011af57eefe850e39219f2c7/tekore-4.5.0.tar.gz
+[2023-04-12 20:04:57] INFO root fetch - processPackages [triton-model-navigator]: Start processing: intake-dynamodb
+[2023-04-12 20:04:57] INFO root fetch - main [MainThread]: End processing [triton-model-navigator]: success
+[2023-04-12 20:04:57] INFO root fetch - processPackages [intake-dynamodb]: New version: [2023.4.1] Old Version: [2023.4.0]
+[2023-04-12 20:04:57] INFO root fetch - processPackages [tekore]: Downloading https://files.pythonhosted.org/packages/6c/3d/f93084fe0d8844dc114abd07fae32085ce38ad6c9682a9a349927f4156da/tekore-4.6.0.tar.gz
+[2023-04-12 20:04:57] INFO root fetch - processPackages [tekore]: executing diffoscope
+[2023-04-12 20:04:57] INFO root fetch - processPackages [tekore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tekore-4.5.0.tar.gz tmp/tekore-4.6.0.tar.gz --markdown 20230412/t/tekore/4.5.0-4.6.0/diff.md --exclude *.pyd
+[2023-04-12 20:04:57] INFO root fetch - processPackages [intake-dynamodb]: Downloading https://files.pythonhosted.org/packages/2c/1e/0c4386862a48a6ee371b53874dc7dedf30b78ca19ebb06bfe80a322d12dd/intake-dynamodb-2023.4.0.tar.gz
+[2023-04-12 20:04:58] INFO root fetch - processPackages [intake-dynamodb]: Downloading https://files.pythonhosted.org/packages/30/5f/77d3f79fb10af647f8d488fda70fb9f88056bd9c48519b322c9895ad451c/intake-dynamodb-2023.4.1.tar.gz
+[2023-04-12 20:04:58] INFO root fetch - processPackages [intake-dynamodb]: executing diffoscope
+[2023-04-12 20:04:58] INFO root fetch - processPackages [intake-dynamodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intake-dynamodb-2023.4.0.tar.gz tmp/intake-dynamodb-2023.4.1.tar.gz --markdown 20230412/i/intake-dynamodb/2023.4.0-2023.4.1/diff.md --exclude *.pyd
+[2023-04-12 20:04:58] INFO root fetch - processPackages [piperider-nightly]: Start processing: Files.com
+[2023-04-12 20:04:58] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-04-12 20:04:58] INFO root fetch - processPackages [Files.com]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-04-12 20:04:58] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2023-04-12 20:04:58] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.0.98.tar.gz tmp/Files.com-1.0.99.tar.gz --markdown 20230412/F/Files.com/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-04-12 20:04:59] INFO root fetch - processPackages [intake-dynamodb]: Start processing: splight-cli
+[2023-04-12 20:04:59] INFO root fetch - main [MainThread]: End processing [intake-dynamodb]: success
+[2023-04-12 20:04:59] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-12 20:04:59] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-12 20:04:59] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230412/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-12 20:05:00] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2023-04-12 20:05:00] INFO root fetch - main [MainThread]: End processing [tekore]: success
+[2023-04-12 20:05:00] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-04-12 20:05:01] INFO root fetch - main [MainThread]: End processing [arch]: success
+[2023-04-12 20:05:27] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
+[2023-04-12 20:05:27] INFO root fetch - main [MainThread]: Store serial: [17680339]
