@@ -6485,3 +6485,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:04:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:04:13] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:04:13] INFO root fetch - main [MainThread]: Store serial: [17671125]
+[2023-04-12 06:09:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671125]
+[2023-04-12 06:09:21] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 06:09:21] INFO root fetch - processPackages [repo-autoindex]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-12 06:09:21] INFO root fetch - processPackages [pcleaner]: New version: [1.4.0] Old Version: [1.3.0]
+[2023-04-12 06:09:21] INFO root fetch - processPackages [body-matrix]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-12 06:09:21] INFO root fetch - processPackages [hoppr-nexus-bundler]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-12 06:09:21] WARNING root fetch - processPackages [localizedpydantic]: Skipping, unable to determine old version
+[2023-04-12 06:09:21] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:09:21] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 06:09:21] INFO root fetch - processPackages [repo-autoindex]: Downloading https://files.pythonhosted.org/packages/fa/7a/32cf8f26f3e02513d6da48c8b0c93e91aca1d158083eaad314690c356158/repo_autoindex-1.1.0.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [body-matrix]: Downloading https://files.pythonhosted.org/packages/09/43/921f30e1d6ffbbaec917159e1c7b06742ee3b841887bb6af7db284cecfd5/body_matrix-0.4.2.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [hoppr-nexus-bundler]: Downloading https://files.pythonhosted.org/packages/94/f0/f305685a722c4c97d9f7b579e55f8b2aedeac3090241b612a1aa74386dc4/hoppr_nexus_bundler-0.4.1.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [pcleaner]: Downloading https://files.pythonhosted.org/packages/13/c1/5894734fa97d3806754c478b5dfa195227e6245c04c631a4ae0ac6b68a7b/pcleaner-1.4.0.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [body-matrix]: Downloading https://files.pythonhosted.org/packages/ea/6f/ba44ee27df4405f42c04ba93d63309fa2b24a05a8fa7f6593c188b88cc48/body_matrix-0.4.3.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [repo-autoindex]: Downloading https://files.pythonhosted.org/packages/36/79/236dd85a788763157f24ac41659806578527099cf53462390201b32ef9a2/repo_autoindex-1.1.1.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [hoppr-nexus-bundler]: Downloading https://files.pythonhosted.org/packages/dc/80/1543d78feb67b9cea0cdb6a8c897c07024f3843dee1fd9a398152638bb59/hoppr_nexus_bundler-0.4.2.tar.gz
+[2023-04-12 06:09:21] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-12 06:09:21] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230412/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 06:09:21] INFO root fetch - processPackages [pcleaner]: executing diffoscope
+[2023-04-12 06:09:21] INFO root fetch - processPackages [pcleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcleaner-1.3.0.tar.gz tmp/pcleaner-1.4.0.tar.gz --markdown 20230412/p/pcleaner/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2023-04-12 06:09:21] INFO root fetch - processPackages [body-matrix]: executing diffoscope
+[2023-04-12 06:09:21] INFO root fetch - processPackages [body-matrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/body_matrix-0.4.2.tar.gz tmp/body_matrix-0.4.3.tar.gz --markdown 20230412/b/body-matrix/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-12 06:09:21] INFO root fetch - processPackages [hoppr-nexus-bundler]: executing diffoscope
+[2023-04-12 06:09:21] INFO root fetch - processPackages [hoppr-nexus-bundler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoppr_nexus_bundler-0.4.1.tar.gz tmp/hoppr_nexus_bundler-0.4.2.tar.gz --markdown 20230412/h/hoppr-nexus-bundler/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-12 06:09:21] INFO root fetch - processPackages [repo-autoindex]: executing diffoscope
+[2023-04-12 06:09:21] INFO root fetch - processPackages [repo-autoindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repo_autoindex-1.1.0.tar.gz tmp/repo_autoindex-1.1.1.tar.gz --markdown 20230412/r/repo-autoindex/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-12 06:09:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo9-addon-delivery-carrier-deposit]: New version: [9.0.0.1.1.99.dev7] Old Version: [9.0.0.1.1.99.dev6]
+[2023-04-12 06:09:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:23] INFO root fetch - processPackages [turbo-broccoli]: New version: [2.3.8] Old Version: [2.3.0]
+[2023-04-12 06:09:23] INFO root fetch - processPackages [hatlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 06:09:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo9-addon-delivery-carrier-deposit]: Downloading https://files.pythonhosted.org/packages/76/bd/2a4954f8645e77860854c9c42cb9b79f51595dd169cd1f3c048c5a96753c/odoo9_addon_delivery_carrier_deposit-9.0.0.1.1.99.dev6-py2-none-any.whl
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo14-addon-base-delivery-carrier-label]: New version: [14.0.1.3.1.dev2] Old Version: [14.0.1.3.1.dev1]
+[2023-04-12 06:09:23] INFO root fetch - processPackages [turbo-broccoli]: Downloading https://files.pythonhosted.org/packages/72/f8/59969cbff9324f8766c00e85b56ba90682e4dcb8395d553fd8901299f3eb/turbo_broccoli-2.3.0.tar.gz
+[2023-04-12 06:09:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:23] INFO root fetch - processPackages [hatlib]: Downloading https://files.pythonhosted.org/packages/32/55/17ef378eaefc88149c5905c51c613252813d6c1d6161019fa55b10b658e0/hatlib-0.0.8.tar.gz
+[2023-04-12 06:09:23] INFO root fetch - processPackages [noteyXMLParser]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo14-addon-base-delivery-carrier-label]: Downloading https://files.pythonhosted.org/packages/73/c2/df6e7b083aba3c7f2df65e5f15e851b1ffd7b2d3dc6583c96d67db0fb0d8/odoo14_addon_base_delivery_carrier_label-14.0.1.3.1.dev1-py3-none-any.whl
+[2023-04-12 06:09:23] INFO root fetch - processPackages [turbo-broccoli]: Downloading https://files.pythonhosted.org/packages/b0/82/78fa5d8c1ac463423bf47c7764dc6a1ab449b8ae1c6ebc778a144ac4e8ea/turbo_broccoli-2.3.8.tar.gz
+[2023-04-12 06:09:23] INFO root fetch - processPackages [noteyXMLParser]: Downloading https://files.pythonhosted.org/packages/cf/ee/3c6d6f9c9428e6faec9360536f6a8cfe0aca275b9748cae2be95e7e961a5/noteyXMLParser-0.2.5.tar.gz
+[2023-04-12 06:09:23] INFO root fetch - processPackages [turbo-broccoli]: executing diffoscope
+[2023-04-12 06:09:23] INFO root fetch - processPackages [turbo-broccoli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_broccoli-2.3.0.tar.gz tmp/turbo_broccoli-2.3.8.tar.gz --markdown 20230412/t/turbo-broccoli/2.3.0-2.3.8/diff.md --exclude *.pyd
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo9-addon-delivery-carrier-deposit]: Downloading https://files.pythonhosted.org/packages/1c/8e/f92f52f9d99d66528498e7a68e6068e8e5eeb3510d4b7d971ea5d8133d1f/odoo9_addon_delivery_carrier_deposit-9.0.0.1.1.99.dev7-py2-none-any.whl
+[2023-04-12 06:09:23] INFO root fetch - processPackages [noteyXMLParser]: executing diffoscope
+[2023-04-12 06:09:23] INFO root fetch - processPackages [noteyXMLParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteyXMLParser-0.2.4.tar.gz tmp/noteyXMLParser-0.2.5.tar.gz --markdown 20230412/n/noteyXMLParser/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo14-addon-base-delivery-carrier-label]: Downloading https://files.pythonhosted.org/packages/0e/a8/9ca20815c33f7e446931734246c086a3f59b5f88ac003fcc28317e42f4fc/odoo14_addon_base_delivery_carrier_label-14.0.1.3.1.dev2-py3-none-any.whl
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo9-addon-delivery-carrier-deposit]: executing diffoscope
+[2023-04-12 06:09:23] INFO root fetch - processPackages [odoo9-addon-delivery-carrier-deposit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_delivery_carrier_deposit-9.0.0.1.1.99.dev6-py2-none-any.whl.zip tmp/odoo9_addon_delivery_carrier_deposit-9.0.0.1.1.99.dev7-py2-none-any.whl.zip --markdown 20230412/o/odoo9-addon-delivery-carrier-deposit/9.0.0.1.1.99.dev6-9.0.0.1.1.99.dev7/diff.md --exclude *.pyd
+[2023-04-12 06:09:23] INFO root fetch - processPackages [hatlib]: Downloading https://files.pythonhosted.org/packages/4b/e5/ffd7ad8cd55baf1f9a450ce4bba53035fc84c08beabab0720722189799d2/hatlib-0.0.9.tar.gz
+[2023-04-12 06:09:24] INFO root fetch - processPackages [odoo14-addon-base-delivery-carrier-label]: executing diffoscope
+[2023-04-12 06:09:24] INFO root fetch - processPackages [odoo14-addon-base-delivery-carrier-label]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_delivery_carrier_label-14.0.1.3.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_base_delivery_carrier_label-14.0.1.3.1.dev2-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-base-delivery-carrier-label/14.0.1.3.1.dev1-14.0.1.3.1.dev2/diff.md --exclude *.pyd
+[2023-04-12 06:09:24] INFO root fetch - processPackages [hatlib]: executing diffoscope
+[2023-04-12 06:09:24] INFO root fetch - processPackages [hatlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatlib-0.0.8.tar.gz tmp/hatlib-0.0.9.tar.gz --markdown 20230412/h/hatlib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 06:09:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:09:26] INFO root fetch - main [MainThread]: Store serial: [17671155]
