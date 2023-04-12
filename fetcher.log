@@ -8828,3 +8828,71 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:26:46] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:26:47] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:26:47] INFO root fetch - main [MainThread]: Store serial: [17672589]
+[2023-04-12 09:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672589]
+[2023-04-12 09:31:54] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 09:31:54] INFO root fetch - processPackages [inmanta-core]: New version: [8.3.0] Old Version: [8.2.0]
+[2023-04-12 09:31:54] INFO root fetch - processPackages [inmanta-ui]: New version: [4.0.2] Old Version: [4.0.1]
+[2023-04-12 09:31:54] INFO root fetch - processPackages [hcpdiff]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 09:31:54] INFO root fetch - processPackages [customized-table]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 09:31:54] INFO root fetch - processPackages [pytest-inmanta-extensions]: New version: [8.3.0] Old Version: [8.2.0]
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-core]: Downloading https://files.pythonhosted.org/packages/ef/21/8a6c4ebabbce741c5aa805591be11499989430c9dfac06f57c7afb33a027/inmanta-core-8.2.0.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [pytest-inmanta-extensions]: Downloading https://files.pythonhosted.org/packages/9a/75/59d1c84098f05169e99e52c212c4d4adc65673af54ba2d35df2e50c77543/pytest-inmanta-extensions-8.2.0.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/09/55/5d3b4ad4d5b83d6c229d797d591316c18adf3032834524a47df3342f71ac/hcpdiff-0.1.1.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [customized-table]: executing diffoscope
+[2023-04-12 09:31:55] INFO root fetch - processPackages [customized-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customized_table-0.1.8.tar.gz tmp/customized_table-0.1.9.tar.gz --markdown 20230412/c/customized-table/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 09:31:55] INFO root fetch - processPackages [pytest-inmanta-extensions]: Downloading https://files.pythonhosted.org/packages/de/75/91f589e90d12cb85261c275163cf1c20bf8522b6f3948bc3e937cdb0662c/pytest-inmanta-extensions-8.3.0.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [hcpdiff]: Downloading https://files.pythonhosted.org/packages/7e/26/90fda2afd4a23c6f837acc0ed81d6f5effecded43845abae96ef1cc37777/hcpdiff-0.1.2.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-ui]: Downloading https://files.pythonhosted.org/packages/01/1f/4c8ffa4a06e83e80be7770e49146701452352ac7de540021c9172727d6e5/inmanta-ui-4.0.1.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [pytest-inmanta-extensions]: executing diffoscope
+[2023-04-12 09:31:55] INFO root fetch - processPackages [pytest-inmanta-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-inmanta-extensions-8.2.0.tar.gz tmp/pytest-inmanta-extensions-8.3.0.tar.gz --markdown 20230412/p/pytest-inmanta-extensions/8.2.0-8.3.0/diff.md --exclude *.pyd
+[2023-04-12 09:31:55] INFO root fetch - processPackages [hcpdiff]: executing diffoscope
+[2023-04-12 09:31:55] INFO root fetch - processPackages [hcpdiff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcpdiff-0.1.1.tar.gz tmp/hcpdiff-0.1.2.tar.gz --markdown 20230412/h/hcpdiff/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-core]: Downloading https://files.pythonhosted.org/packages/d9/e8/0c25f0403462f9be6711acb6a26f2330a8e4022ab58fb580dc5feee7259e/inmanta-core-8.3.0.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-core]: executing diffoscope
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta-core-8.2.0.tar.gz tmp/inmanta-core-8.3.0.tar.gz --markdown 20230412/i/inmanta-core/8.2.0-8.3.0/diff.md --exclude *.pyd
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-ui]: Downloading https://files.pythonhosted.org/packages/1a/4e/79e050e94cfa1d6166781a38f42af69ca9bb081678fe66113eaeab319609/inmanta-ui-4.0.2.tar.gz
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-ui]: executing diffoscope
+[2023-04-12 09:31:55] INFO root fetch - processPackages [inmanta-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inmanta-ui-4.0.1.tar.gz tmp/inmanta-ui-4.0.2.tar.gz --markdown 20230412/i/inmanta-ui/4.0.1-4.0.2/diff.md --exclude *.pyd
+[2023-04-12 09:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:56] INFO root fetch - processPackages [compact-distillation]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 09:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:56] INFO root fetch - processPackages [hordelib]: New version: [0.5.23] Old Version: [0.5.22]
+[2023-04-12 09:31:56] INFO root fetch - processPackages [compact-distillation]: executing diffoscope
+[2023-04-12 09:31:56] INFO root fetch - processPackages [compact-distillation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compact-distillation-0.0.8.tar.gz tmp/compact-distillation-0.0.9.tar.gz --markdown 20230412/c/compact-distillation/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 09:31:56] INFO root fetch - processPackages [kogger]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-12 09:31:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:56] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-04-12 09:31:56] INFO root fetch - processPackages [kogger]: Downloading https://files.pythonhosted.org/packages/b9/d6/23e5cf93e87acbc8d66a084e5728a6d6719b35d2aeb5e0ae7f05370da173/kogger-0.1.tar.gz
+[2023-04-12 09:31:56] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 09:31:56] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/b2/e6/92226090fb5a135f6c5fb2af8e95c44283e27ca2cdd247727668f3132495/hordelib-0.5.23.tar.gz
+[2023-04-12 09:31:56] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-04-12 09:31:57] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:31:57] INFO root fetch - processPackages [odoo8-addon-sale-service-project]: New version: [8.0.1.1.1.99.dev9] Old Version: [8.0.1.1.1.99.dev8]
+[2023-04-12 09:31:57] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-04-12 09:31:57] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.5.22.tar.gz tmp/hordelib-0.5.23.tar.gz --markdown 20230412/h/hordelib/0.5.22-0.5.23/diff.md --exclude *.pyd
+[2023-04-12 09:31:57] INFO root fetch - processPackages [kogger]: Downloading https://files.pythonhosted.org/packages/10/80/555a2f56c5f220f7baa5bf72256093138cb1effc36ffb2fe341798429db4/kogger-0.1.1.tar.gz
+[2023-04-12 09:31:57] INFO root fetch - processPackages [kogger]: executing diffoscope
+[2023-04-12 09:31:57] INFO root fetch - processPackages [kogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kogger-0.1.tar.gz tmp/kogger-0.1.1.tar.gz --markdown 20230412/k/kogger/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 09:31:57] INFO root fetch - processPackages [odoo8-addon-sale-service-project]: executing diffoscope
+[2023-04-12 09:31:57] INFO root fetch - processPackages [odoo8-addon-sale-service-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_sale_service_project-8.0.1.1.1.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_sale_service_project-8.0.1.1.1.99.dev9-py2-none-any.whl.zip --markdown 20230412/o/odoo8-addon-sale-service-project/8.0.1.1.1.99.dev8-8.0.1.1.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 09:31:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:57] INFO root fetch - processPackages [sirms]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-12 09:31:58] INFO root fetch - processPackages [sirms]: Downloading https://files.pythonhosted.org/packages/4d/d0/a0391bc4e17c062c7cc29150d2f03a2dfa96c007314c46b5c46db41937e4/sirms-1.2.1.tar.gz
+[2023-04-12 09:31:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:58] WARNING root fetch - processPackages [casers]: Skipping, unable to determine old version
+[2023-04-12 09:31:58] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:31:58] INFO root fetch - processPackages [sirms]: Downloading https://files.pythonhosted.org/packages/b9/c0/47008d1f9cfa90bd73644ae59fa023a13a91a93413a54263ffac08160cd1/sirms-1.2.2.tar.gz
+[2023-04-12 09:31:58] INFO root fetch - processPackages [areixio]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 09:31:58] INFO root fetch - processPackages [sirms]: executing diffoscope
+[2023-04-12 09:31:58] INFO root fetch - processPackages [sirms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sirms-1.2.1.tar.gz tmp/sirms-1.2.2.tar.gz --markdown 20230412/s/sirms/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-12 09:31:58] INFO root fetch - processPackages [areixio]: Downloading https://files.pythonhosted.org/packages/c4/91/5a3b1feda3385e907a43cbf462c489d3515930893925430b210d5c7cf7ec/areixio-0.2.8.tar.gz
+[2023-04-12 09:31:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:31:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:32:00] INFO root fetch - processPackages [areixio]: Downloading https://files.pythonhosted.org/packages/b6/2c/9db3134c3fd073a3fdfaf56d0fb236a19d3888fb5a806ebdfb891c5dc09b/areixio-0.2.9.tar.gz
+[2023-04-12 09:32:01] INFO root fetch - processPackages [areixio]: executing diffoscope
+[2023-04-12 09:32:01] INFO root fetch - processPackages [areixio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/areixio-0.2.8.tar.gz tmp/areixio-0.2.9.tar.gz --markdown 20230412/a/areixio/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 09:32:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:32:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:32:11] INFO root fetch - main [MainThread]: Store serial: [17672672]
