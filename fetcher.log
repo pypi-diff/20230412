@@ -12548,3 +12548,270 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:00:59] INFO root fetch - main [MainThread]: End processing [peek-core-user]: success
 [2023-04-12 13:01:50] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
 [2023-04-12 13:01:50] INFO root fetch - main [MainThread]: Store serial: [17674938]
+[2023-04-12 13:07:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674938]
+[2023-04-12 13:07:12] INFO root fetch - main [MainThread]: Found 40 changed packages
+[2023-04-12 13:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peek-core-api
+[2023-04-12 13:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peek-field-doc
+[2023-04-12 13:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peek-field-app
+[2023-04-12 13:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peek-field-service
+[2023-04-12 13:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: peek-logic-service
+[2023-04-12 13:07:12] INFO root fetch - processPackages [peek-logic-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:12] INFO root fetch - processPackages [peek-core-api]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:12] INFO root fetch - processPackages [peek-field-doc]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:12] INFO root fetch - processPackages [peek-field-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:12] INFO root fetch - processPackages [peek-field-app]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-core-api]: executing diffoscope
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-core-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-core-api-3.3.3.tar.gz tmp/peek-core-api-3.4.0.tar.gz --markdown 20230412/p/peek-core-api/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-logic-service]: Downloading https://files.pythonhosted.org/packages/57/06/4e92374c6570578eb4d5a292e21c97ffb91c107f51f7dc8329913230edad/peek-logic-service-3.3.3.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-doc]: Downloading https://files.pythonhosted.org/packages/fc/c4/a6dcd47c8568ff7f45c3651f66209b9feb01b5fcea28c1bf305a225530f0/peek-field-doc-3.3.3.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-service]: Downloading https://files.pythonhosted.org/packages/4c/5d/91fb88a767e6527215b0de3b7b49c8f9666ad205abcab66023bf4e8fe875/peek-field-service-3.3.3.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-app]: Downloading https://files.pythonhosted.org/packages/42/d1/9a6b830e429aebb975e15b4db5b82630440abdf42c0d0e9b1d459c5795b7/peek-field-app-3.3.3.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-logic-service]: Downloading https://files.pythonhosted.org/packages/3a/2a/01c8cbd16e9bfdfd649b6eb1a05188fa5b3c07a2672d1a6bea1858272811/peek-logic-service-3.4.0.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-doc]: Downloading https://files.pythonhosted.org/packages/ba/83/db9a2ee4acf09d8d5e14895761e9f5c2d7f257fc7787ce9b916621ede7c9/peek-field-doc-3.4.0.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-service]: Downloading https://files.pythonhosted.org/packages/1f/a1/1322b07419f7daa0c634ee35701a395329753efb7f3ca073052c0d93ee6e/peek-field-service-3.4.0.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-app]: Downloading https://files.pythonhosted.org/packages/b8/80/912b4fec0b29e252d6f7e7e47e7a21b214a504222c3700456da35c91b2d2/peek-field-app-3.4.0.tar.gz
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-logic-service]: executing diffoscope
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-logic-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-logic-service-3.3.3.tar.gz tmp/peek-logic-service-3.4.0.tar.gz --markdown 20230412/p/peek-logic-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-service]: executing diffoscope
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-field-service-3.3.3.tar.gz tmp/peek-field-service-3.4.0.tar.gz --markdown 20230412/p/peek-field-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-doc]: executing diffoscope
+[2023-04-12 13:07:13] INFO root fetch - processPackages [peek-field-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-field-doc-3.3.3.tar.gz tmp/peek-field-doc-3.4.0.tar.gz --markdown 20230412/p/peek-field-doc/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-core-api]: Start processing: searchkit
+[2023-04-12 13:07:14] INFO root fetch - main [MainThread]: End processing [peek-core-api]: success
+[2023-04-12 13:07:14] INFO root fetch - processPackages [searchkit]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-field-app]: executing diffoscope
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-field-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-field-app-3.3.3.tar.gz tmp/peek-field-app-3.4.0.tar.gz --markdown 20230412/p/peek-field-app/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:14] INFO root fetch - processPackages [searchkit]: Downloading https://files.pythonhosted.org/packages/9c/68/5da36aeeb709f55d82210863c9be33d2d5838435ca7f6558580777c5fce7/searchkit-0.2.0.tar.gz
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-field-doc]: Start processing: peek-office-doc
+[2023-04-12 13:07:14] INFO root fetch - main [MainThread]: End processing [peek-field-doc]: success
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-office-doc]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-logic-service]: Start processing: peek-office-app
+[2023-04-12 13:07:14] INFO root fetch - main [MainThread]: End processing [peek-logic-service]: success
+[2023-04-12 13:07:14] INFO root fetch - processPackages [searchkit]: executing diffoscope
+[2023-04-12 13:07:14] INFO root fetch - processPackages [searchkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searchkit-0.1.9.tar.gz tmp/searchkit-0.2.0.tar.gz --markdown 20230412/s/searchkit/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-office-app]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-field-service]: Start processing: peek-office-service
+[2023-04-12 13:07:14] INFO root fetch - main [MainThread]: End processing [peek-field-service]: success
+[2023-04-12 13:07:14] INFO root fetch - processPackages [peek-office-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-doc]: Downloading https://files.pythonhosted.org/packages/23/2b/a9d530412f5590bd4871a5d07f3314b198fe101746491fe73eca04728e74/peek-office-doc-3.3.3.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-app]: Downloading https://files.pythonhosted.org/packages/ea/9f/ca81adff4eca30285addd8a0744e00497a4ef3b9aa26e2b131a7ac40c657/peek-office-app-3.3.3.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-service]: Downloading https://files.pythonhosted.org/packages/63/f5/5294b86fa461c641a6d90718cee83624a3906b1d4931457f8c000c8ea01c/peek-office-service-3.3.3.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-doc]: Downloading https://files.pythonhosted.org/packages/e6/bd/88c8a0d52e05d104721a3fb4eeddf8fe9700a289a65edf9976b71f1681a1/peek-office-doc-3.4.0.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-service]: Downloading https://files.pythonhosted.org/packages/99/1b/b9117f7e55ff58534e5ca7d97d1905dea05d2b1af490f8fc86d5034a0e56/peek-office-service-3.4.0.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-doc]: executing diffoscope
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-office-doc-3.3.3.tar.gz tmp/peek-office-doc-3.4.0.tar.gz --markdown 20230412/p/peek-office-doc/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-app]: Downloading https://files.pythonhosted.org/packages/ef/08/670a85ec9c6b9797a218271aedbbc44d985b6d4a3d83e31db84574f71678/peek-office-app-3.4.0.tar.gz
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-service]: executing diffoscope
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-office-service-3.3.3.tar.gz tmp/peek-office-service-3.4.0.tar.gz --markdown 20230412/p/peek-office-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-app]: executing diffoscope
+[2023-04-12 13:07:15] INFO root fetch - processPackages [peek-office-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-office-app-3.3.3.tar.gz tmp/peek-office-app-3.4.0.tar.gz --markdown 20230412/p/peek-office-app/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:16] INFO root fetch - processPackages [searchkit]: Start processing: django-data-history
+[2023-04-12 13:07:16] INFO root fetch - main [MainThread]: End processing [searchkit]: success
+[2023-04-12 13:07:16] INFO root fetch - processPackages [django-data-history]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 13:07:16] INFO root fetch - processPackages [django-data-history]: Downloading https://files.pythonhosted.org/packages/b0/23/5a4acf2976e774c756afc3414a159fe989aec091490f871134c94d8a5d5c/django-data-history-0.1.7.tar.gz
+[2023-04-12 13:07:16] INFO root fetch - processPackages [django-data-history]: Downloading https://files.pythonhosted.org/packages/e4/b0/2b61828b1c223254ecf80421e2fb2bfda1055d1fbdf57b66d187a25bb99c/django-data-history-0.1.8.tar.gz
+[2023-04-12 13:07:16] INFO root fetch - processPackages [django-data-history]: executing diffoscope
+[2023-04-12 13:07:16] INFO root fetch - processPackages [django-data-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-data-history-0.1.7.tar.gz tmp/django-data-history-0.1.8.tar.gz --markdown 20230412/d/django-data-history/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-office-service]: Start processing: peek-plugin-base
+[2023-04-12 13:07:16] INFO root fetch - main [MainThread]: End processing [peek-office-service]: success
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-plugin-base]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-field-app]: Start processing: peek-platform
+[2023-04-12 13:07:16] INFO root fetch - main [MainThread]: End processing [peek-field-app]: success
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-platform]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-plugin-base]: Downloading https://files.pythonhosted.org/packages/66/63/b8229d88128fcc78741c20651948eafadf384be253cc570cc723f9d9f7fc/peek-plugin-base-3.3.3.tar.gz
+[2023-04-12 13:07:16] INFO root fetch - processPackages [peek-platform]: Downloading https://files.pythonhosted.org/packages/44/cb/f4ef8d52fad37533ccadc58050ef8b3c135d2dddf7c44d8e0875966963ab/peek-platform-3.3.3.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-plugin-base]: Downloading https://files.pythonhosted.org/packages/1c/30/d1dd306903f3e53108cefa60fd798641015b3d9459f3971ea8f363d47f19/peek-plugin-base-3.4.0.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-platform]: Downloading https://files.pythonhosted.org/packages/09/0d/00180000e42ca72d49cebd5fa5c4675a04897a80e56dcb7dc181ed83bc1c/peek-platform-3.4.0.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-plugin-base]: executing diffoscope
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-plugin-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-base-3.3.3.tar.gz tmp/peek-plugin-base-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-base/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-platform]: executing diffoscope
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-platform-3.3.3.tar.gz tmp/peek-platform-3.4.0.tar.gz --markdown 20230412/p/peek-platform/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-office-doc]: Start processing: peek-storage-service
+[2023-04-12 13:07:17] INFO root fetch - main [MainThread]: End processing [peek-office-doc]: success
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-storage-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-office-app]: Start processing: hbutils
+[2023-04-12 13:07:17] INFO root fetch - main [MainThread]: End processing [peek-office-app]: success
+[2023-04-12 13:07:17] INFO root fetch - processPackages [hbutils]: New version: [0.8.6] Old Version: [0.8.5]
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-storage-service]: Downloading https://files.pythonhosted.org/packages/22/b7/8e94f8223f86732c792d792a93847d6411490eeb4ba22ea9a1a7df9561be/peek-storage-service-3.3.3.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [hbutils]: Downloading https://files.pythonhosted.org/packages/32/d1/008ce30fbaa4a01e90ff17bad9ef2af961da3bff57043f1c1d6d58ceafb1/hbutils-0.8.6.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [peek-storage-service]: Downloading https://files.pythonhosted.org/packages/72/e5/bda1d222367d3ef2c04654838cb165299da2561ed144a67e8af41f8910f0/peek-storage-service-3.4.0.tar.gz
+[2023-04-12 13:07:17] INFO root fetch - processPackages [hbutils]: executing diffoscope
+[2023-04-12 13:07:17] INFO root fetch - processPackages [hbutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hbutils-0.8.5.tar.gz tmp/hbutils-0.8.6.tar.gz --markdown 20230412/h/hbutils/0.8.5-0.8.6/diff.md --exclude *.pyd
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-storage-service]: executing diffoscope
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-storage-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-storage-service-3.3.3.tar.gz tmp/peek-storage-service-3.4.0.tar.gz --markdown 20230412/p/peek-storage-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:18] INFO root fetch - processPackages [django-data-history]: Start processing: peek-worker-service
+[2023-04-12 13:07:18] INFO root fetch - main [MainThread]: End processing [django-data-history]: success
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-worker-service]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-worker-service]: Downloading https://files.pythonhosted.org/packages/db/00/976b04bfa3b74b2b45f45ae608b0a21037f47517e7d9e16e0970645c2b99/peek-worker-service-3.3.3.tar.gz
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-plugin-base]: Start processing: synerty-peek
+[2023-04-12 13:07:18] INFO root fetch - main [MainThread]: End processing [peek-plugin-base]: success
+[2023-04-12 13:07:18] INFO root fetch - processPackages [synerty-peek]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-platform]: Start processing: peek-plugin-branch
+[2023-04-12 13:07:18] INFO root fetch - main [MainThread]: End processing [peek-platform]: success
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-plugin-branch]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:18] INFO root fetch - processPackages [synerty-peek]: Downloading https://files.pythonhosted.org/packages/4c/5a/d9b7eaedf7c8afafeb1d2c730bb81872da4196c519716f68ae8d2acaebc9/synerty-peek-3.3.3.tar.gz
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-worker-service]: Downloading https://files.pythonhosted.org/packages/f3/93/f61477e855ac452f15b4edab1d5c52bd415888c892ba9a08340a82462b5d/peek-worker-service-3.4.0.tar.gz
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-plugin-branch]: Downloading https://files.pythonhosted.org/packages/29/8a/eb7722e9f4e2aa4011f61e8d9c481a9539336f74faf6b62d71382f8f93bd/peek-plugin-branch-3.3.3.tar.gz
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-worker-service]: executing diffoscope
+[2023-04-12 13:07:18] INFO root fetch - processPackages [peek-worker-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-worker-service-3.3.3.tar.gz tmp/peek-worker-service-3.4.0.tar.gz --markdown 20230412/p/peek-worker-service/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:19] INFO root fetch - processPackages [synerty-peek]: Downloading https://files.pythonhosted.org/packages/09/c2/30ea9e77622858c5c76f31babd38d67f00721f5bc59eb020dac18eb0b9e2/synerty-peek-3.4.0.tar.gz
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-plugin-branch]: Downloading https://files.pythonhosted.org/packages/58/de/2ab29d09405486a5ec3a565520a615b17745562239521b1ca8fc5ac249c9/peek-plugin-branch-3.4.0.tar.gz
+[2023-04-12 13:07:19] INFO root fetch - processPackages [synerty-peek]: executing diffoscope
+[2023-04-12 13:07:19] INFO root fetch - processPackages [synerty-peek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synerty-peek-3.3.3.tar.gz tmp/synerty-peek-3.4.0.tar.gz --markdown 20230412/s/synerty-peek/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-plugin-branch]: executing diffoscope
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-plugin-branch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-branch-3.3.3.tar.gz tmp/peek-plugin-branch-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-branch/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:19] INFO root fetch - processPackages [hbutils]: Start processing: dwh-oppfolging
+[2023-04-12 13:07:19] INFO root fetch - main [MainThread]: End processing [hbutils]: success
+[2023-04-12 13:07:19] INFO root fetch - processPackages [dwh-oppfolging]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-storage-service]: Start processing: peek-plugin-chat
+[2023-04-12 13:07:19] INFO root fetch - main [MainThread]: End processing [peek-storage-service]: success
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-plugin-chat]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:19] INFO root fetch - processPackages [peek-plugin-chat]: Downloading https://files.pythonhosted.org/packages/45/21/791f1a1a68efa371fc054e95ae39e8fd9898cd23c11c8df7901ba7c80b2b/peek-plugin-chat-3.3.3.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [dwh-oppfolging]: executing diffoscope
+[2023-04-12 13:07:20] INFO root fetch - processPackages [dwh-oppfolging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dwh_oppfolging-0.0.8.tar.gz tmp/dwh_oppfolging-0.0.9.tar.gz --markdown 20230412/d/dwh-oppfolging/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-worker-service]: Start processing: peek-plugin-diagram
+[2023-04-12 13:07:20] INFO root fetch - main [MainThread]: End processing [peek-worker-service]: success
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-chat]: Downloading https://files.pythonhosted.org/packages/9e/9c/84c17678acc00bf8860d94503dacafc6af4247dff95281e875b53dfae896/peek-plugin-chat-3.4.0.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [synerty-peek]: Start processing: peek-plugin-diagram-trace
+[2023-04-12 13:07:20] INFO root fetch - main [MainThread]: End processing [synerty-peek]: success
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-chat]: executing diffoscope
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-chat-3.3.3.tar.gz tmp/peek-plugin-chat-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-chat/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram-trace]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram]: Downloading https://files.pythonhosted.org/packages/e9/cb/e7931036bb16bdac076b4d74e282cac9872319e5ff646f9a84732f3081a2/peek-plugin-diagram-3.3.3.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram-trace]: Downloading https://files.pythonhosted.org/packages/2f/ef/e573975f8a12c3f0c944ebf59e7b0dfffd466e4ebeab6ea384563641ffe3/peek-plugin-diagram-trace-3.3.3.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram]: Downloading https://files.pythonhosted.org/packages/d9/79/c9ac1dac6db63b34fec4d040a47855315ef79fc7909641707aeb7ddf7d1e/peek-plugin-diagram-3.4.0.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram-trace]: Downloading https://files.pythonhosted.org/packages/40/34/9515a42c90f313c102cf0411f8c890a027aeae2242bd2ef6421712e80177/peek-plugin-diagram-trace-3.4.0.tar.gz
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram]: executing diffoscope
+[2023-04-12 13:07:20] INFO root fetch - processPackages [peek-plugin-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-diagram-3.3.3.tar.gz tmp/peek-plugin-diagram-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-diagram/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-diagram-trace]: executing diffoscope
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-diagram-trace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-diagram-trace-3.3.3.tar.gz tmp/peek-plugin-diagram-trace-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-diagram-trace/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-branch]: Start processing: inels-mqtt-new
+[2023-04-12 13:07:21] INFO root fetch - main [MainThread]: End processing [peek-plugin-branch]: success
+[2023-04-12 13:07:21] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 13:07:21] INFO root fetch - processPackages [dwh-oppfolging]: Start processing: pydae
+[2023-04-12 13:07:21] INFO root fetch - main [MainThread]: End processing [dwh-oppfolging]: success
+[2023-04-12 13:07:21] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-chat]: Start processing: peek-plugin-docdb-generic-menu
+[2023-04-12 13:07:21] INFO root fetch - main [MainThread]: End processing [peek-plugin-chat]: success
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:21] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 13:07:21] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 13:07:21] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-12 13:07:21] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-12 13:07:21] INFO root fetch - processPackages [pydae]: Start processing: peek-plugin-eventdb
+[2023-04-12 13:07:21] INFO root fetch - main [MainThread]: End processing [pydae] error
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-eventdb]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: Downloading https://files.pythonhosted.org/packages/d3/3b/d2d0cc0122ac97977d52874bd35cfe83aa5d100768bcbe1ded14c6a70ccc/peek-plugin-docdb-generic-menu-3.3.3.tar.gz
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-eventdb]: Downloading https://files.pythonhosted.org/packages/5c/9a/2b237c1a8828c37a3101f01a69d9cdd9d73e237a0e2df08fc3e5e407a413/peek-plugin-eventdb-3.3.3.tar.gz
+[2023-04-12 13:07:21] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: Downloading https://files.pythonhosted.org/packages/dd/c1/6b9c1d8044b2321f9edb7b45fe5357fc0026524643a53cfd5c92f4ff003f/peek-plugin-docdb-generic-menu-3.4.0.tar.gz
+[2023-04-12 13:07:22] INFO root fetch - processPackages [peek-plugin-eventdb]: Downloading https://files.pythonhosted.org/packages/ba/60/e7b08ae5a7a313a7e077483e94d73dbaaf87313df643e76b42a54a3d8362/peek-plugin-eventdb-3.4.0.tar.gz
+[2023-04-12 13:07:22] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: executing diffoscope
+[2023-04-12 13:07:22] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-docdb-generic-menu-3.3.3.tar.gz tmp/peek-plugin-docdb-generic-menu-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-docdb-generic-menu/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:22] INFO root fetch - processPackages [peek-plugin-eventdb]: executing diffoscope
+[2023-04-12 13:07:22] INFO root fetch - processPackages [peek-plugin-eventdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-eventdb-3.3.3.tar.gz tmp/peek-plugin-eventdb-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-eventdb/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-docdb-generic-menu]: Start processing: peek-plugin-gis-diagram
+[2023-04-12 13:07:23] INFO root fetch - main [MainThread]: End processing [peek-plugin-docdb-generic-menu]: success
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-gis-diagram]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-gis-diagram]: Downloading https://files.pythonhosted.org/packages/61/6f/5a919980ee0b5cd13e6be68b6005c3da76e6d8d4f23fb565d0af6c829bf6/peek-plugin-gis-diagram-3.3.3.tar.gz
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-diagram-trace]: Start processing: etos-test-runner
+[2023-04-12 13:07:23] INFO root fetch - main [MainThread]: End processing [peek-plugin-diagram-trace]: success
+[2023-04-12 13:07:23] INFO root fetch - processPackages [etos-test-runner]: New version: [3.0.0] Old Version: [2.5.0]
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-eventdb]: Start processing: slackflylog
+[2023-04-12 13:07:23] INFO root fetch - main [MainThread]: End processing [peek-plugin-eventdb]: success
+[2023-04-12 13:07:23] INFO root fetch - processPackages [slackflylog]: New version: [1.0.2] Old Version: [0.0.2]
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-gis-diagram]: Downloading https://files.pythonhosted.org/packages/91/37/19390ad36d5700d27b6ee65ea5b9fd17a3de65d4d6cbe00f389a2ad84118/peek-plugin-gis-diagram-3.4.0.tar.gz
+[2023-04-12 13:07:23] INFO root fetch - processPackages [etos-test-runner]: Downloading https://files.pythonhosted.org/packages/26/f9/4acf9c5e289bb137cab6e173f53954731e3f1c7f39461ffce27f0cd4ada8/etos_test_runner-2.5.0.tar.gz
+[2023-04-12 13:07:23] INFO root fetch - processPackages [inels-mqtt-new]: Start processing: peek-plugin-graphdb
+[2023-04-12 13:07:23] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-graphdb]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:23] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/f2/3d/a38ca367eb58e0a74d3655e914fd034a7bdda70146261ad409b66e471092/slackflylog-0.0.2.tar.gz
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-gis-diagram]: executing diffoscope
+[2023-04-12 13:07:23] INFO root fetch - processPackages [peek-plugin-gis-diagram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-gis-diagram-3.3.3.tar.gz tmp/peek-plugin-gis-diagram-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-gis-diagram/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:24] INFO root fetch - processPackages [peek-plugin-graphdb]: Downloading https://files.pythonhosted.org/packages/95/aa/7ded7a1f24410a51698f87a4d4b214fa50c91b3922cb8a0ec731497e62b3/peek-plugin-graphdb-3.3.3.tar.gz
+[2023-04-12 13:07:24] INFO root fetch - processPackages [etos-test-runner]: Downloading https://files.pythonhosted.org/packages/f8/5b/8877f2de2c8efcf039be0ac39072a6d3cc8e8dee4ae3046ff5eb1c7a27b0/etos_test_runner-3.0.0.tar.gz
+[2023-04-12 13:07:24] INFO root fetch - processPackages [slackflylog]: Downloading https://files.pythonhosted.org/packages/70/a5/72b5efc114d6da2c9cf330b11f2132158da923e51fe68be1def4be2895a3/slackflylog-1.0.2.tar.gz
+[2023-04-12 13:07:24] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-12 13:07:24] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-0.0.2.tar.gz tmp/slackflylog-1.0.2.tar.gz --markdown 20230412/s/slackflylog/0.0.2-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 13:07:24] INFO root fetch - processPackages [peek-plugin-graphdb]: Downloading https://files.pythonhosted.org/packages/0b/77/b857d42290d197b402a1e47f4304311c34dbace5cfeb933a57edd30ed94c/peek-plugin-graphdb-3.4.0.tar.gz
+[2023-04-12 13:07:24] INFO root fetch - processPackages [etos-test-runner]: executing diffoscope
+[2023-04-12 13:07:24] INFO root fetch - processPackages [etos-test-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etos_test_runner-2.5.0.tar.gz tmp/etos_test_runner-3.0.0.tar.gz --markdown 20230412/e/etos-test-runner/2.5.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:24] INFO root fetch - processPackages [peek-plugin-graphdb]: executing diffoscope
+[2023-04-12 13:07:24] INFO root fetch - processPackages [peek-plugin-graphdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-graphdb-3.3.3.tar.gz tmp/peek-plugin-graphdb-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-graphdb/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-gis-diagram]: Start processing: peek-plugin-inbox
+[2023-04-12 13:07:25] INFO root fetch - main [MainThread]: End processing [peek-plugin-gis-diagram]: success
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-inbox]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:25] INFO root fetch - processPackages [slackflylog]: Start processing: peek-plugin-livedb
+[2023-04-12 13:07:25] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-livedb]: New version: [3.4.0] Old Version: [3.3.3]
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-livedb]: Downloading https://files.pythonhosted.org/packages/b0/6c/b870dd50eea630a6cb55b7ff069e06907c242f5602cc7dff673108da04d3/peek-plugin-livedb-3.3.3.tar.gz
+[2023-04-12 13:07:25] INFO root fetch - processPackages [etos-test-runner]: Start processing: pyriksdagen
+[2023-04-12 13:07:25] INFO root fetch - main [MainThread]: End processing [etos-test-runner]: success
+[2023-04-12 13:07:25] INFO root fetch - processPackages [pyriksdagen]: New version: [0.8.0] Old Version: [0.4.0]
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-livedb]: Downloading https://files.pythonhosted.org/packages/7d/a2/61adf5224b50b1c4b5b9e82a557a81fa17a3882848a81dc52fbe489cfaba/peek-plugin-livedb-3.4.0.tar.gz
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-inbox]: Downloading https://files.pythonhosted.org/packages/1b/ba/b4bf635c024a9182d13d811d0e27afd12c69b652782ed676c56181c8f2db/peek-plugin-inbox-3.3.3.tar.gz
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-livedb]: executing diffoscope
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-livedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-livedb-3.3.3.tar.gz tmp/peek-plugin-livedb-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-livedb/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:25] INFO root fetch - processPackages [pyriksdagen]: Downloading https://files.pythonhosted.org/packages/10/be/0b8b6b95b9ccf6771ad3dad5d1078a4529488fc1d6222e04a821b8926128/pyriksdagen-0.4.0.tar.gz
+[2023-04-12 13:07:25] INFO root fetch - processPackages [peek-plugin-inbox]: Downloading https://files.pythonhosted.org/packages/85/c6/6ad62055e64eb728c08b6a7c77633bd51221c9f0321b2fce784157c42e39/peek-plugin-inbox-3.4.0.tar.gz
+[2023-04-12 13:07:26] INFO root fetch - processPackages [peek-plugin-inbox]: executing diffoscope
+[2023-04-12 13:07:26] INFO root fetch - processPackages [peek-plugin-inbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peek-plugin-inbox-3.3.3.tar.gz tmp/peek-plugin-inbox-3.4.0.tar.gz --markdown 20230412/p/peek-plugin-inbox/3.3.3-3.4.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:26] INFO root fetch - processPackages [pyriksdagen]: Downloading https://files.pythonhosted.org/packages/b6/d2/d5fb74e3f75ef56b195bbe32a5da7d07bee2a8eda7cab4f548be54c28f14/pyriksdagen-0.8.0.tar.gz
+[2023-04-12 13:07:26] INFO root fetch - processPackages [pyriksdagen]: executing diffoscope
+[2023-04-12 13:07:26] INFO root fetch - processPackages [pyriksdagen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyriksdagen-0.4.0.tar.gz tmp/pyriksdagen-0.8.0.tar.gz --markdown 20230412/p/pyriksdagen/0.4.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-12 13:07:26] INFO root fetch - processPackages [peek-plugin-graphdb]: Start processing: shashvault
+[2023-04-12 13:07:26] INFO root fetch - main [MainThread]: End processing [peek-plugin-graphdb]: success
+[2023-04-12 13:07:26] INFO root fetch - processPackages [shashvault]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 13:07:26] INFO root fetch - processPackages [peek-plugin-diagram]: Start processing: ms-salesforce-to-bigquery
+[2023-04-12 13:07:26] INFO root fetch - main [MainThread]: End processing [peek-plugin-diagram]: success
+[2023-04-12 13:07:26] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 13:07:26] INFO root fetch - processPackages [shashvault]: Downloading https://files.pythonhosted.org/packages/71/62/3bb389ceff55bfdb951eda2bca4001868969fd8ab456f535c8ac22ef74db/shashvault-0.1.1-py3-none-any.whl
+[2023-04-12 13:07:26] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/a0/6a/0bdf552c55bb8de11d5b9009131dd47c0cf72c1bcff01a0b730517d0389d/ms_salesforce_to_bigquery-0.0.3.tar.gz
+[2023-04-12 13:07:26] INFO root fetch - processPackages [shashvault]: executing diffoscope
+[2023-04-12 13:07:26] INFO root fetch - processPackages [shashvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shashvault-0.1.0-py3-none-any.whl.zip tmp/shashvault-0.1.1-py3-none-any.whl.zip --markdown 20230412/s/shashvault/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 13:07:26] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: executing diffoscope
+[2023-04-12 13:07:26] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_salesforce_to_bigquery-0.0.2.tar.gz tmp/ms_salesforce_to_bigquery-0.0.3.tar.gz --markdown 20230412/m/ms-salesforce-to-bigquery/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 13:07:27] INFO root fetch - processPackages [peek-plugin-livedb]: Start processing: aiogram-ext
+[2023-04-12 13:07:27] INFO root fetch - main [MainThread]: End processing [peek-plugin-livedb]: success
+[2023-04-12 13:07:27] INFO root fetch - processPackages [aiogram-ext]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 13:07:27] INFO root fetch - processPackages [aiogram-ext]: Downloading https://files.pythonhosted.org/packages/6a/1f/0a9d12cb5ef991a0c4134317424e48ad20c15527f9b153193beddd4ecb80/aiogram-ext-0.0.4.tar.gz
+[2023-04-12 13:07:27] INFO root fetch - processPackages [aiogram-ext]: executing diffoscope
+[2023-04-12 13:07:27] INFO root fetch - processPackages [aiogram-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram-ext-0.0.3.tar.gz tmp/aiogram-ext-0.0.4.tar.gz --markdown 20230412/a/aiogram-ext/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:07:27] INFO root fetch - processPackages [pyriksdagen]: Start processing: gmltools
+[2023-04-12 13:07:27] INFO root fetch - main [MainThread]: End processing [pyriksdagen]: success
+[2023-04-12 13:07:27] INFO root fetch - processPackages [gmltools]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-04-12 13:07:27] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/d8/05/5e6c9392ff749b62a56d14450f05cafaa75c7593d125f492f6f0786d84a8/gmltools-0.0.46.tar.gz
+[2023-04-12 13:07:27] INFO root fetch - processPackages [shashvault]: Start processing: slackflylog
+[2023-04-12 13:07:27] INFO root fetch - main [MainThread]: End processing [shashvault]: success
+[2023-04-12 13:07:27] INFO root fetch - processPackages [slackflylog]: New version: [1.0.2] Old Version: [0.0.2]
+[2023-04-12 13:07:27] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-12 13:07:27] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.45.tar.gz tmp/gmltools-0.0.46.tar.gz --markdown 20230412/g/gmltools/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-04-12 13:07:28] INFO root fetch - processPackages [slackflylog]: executing diffoscope
+[2023-04-12 13:07:28] INFO root fetch - processPackages [slackflylog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slackflylog-0.0.2.tar.gz tmp/slackflylog-1.0.2.tar.gz --markdown 20230412/s/slackflylog/0.0.2-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 13:07:28] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Start processing: django-yubin
+[2023-04-12 13:07:28] INFO root fetch - main [MainThread]: End processing [ms-salesforce-to-bigquery]: success
+[2023-04-12 13:07:28] INFO root fetch - processPackages [django-yubin]: New version: [2.0.0b2] Old Version: [2.0.0b1]
+[2023-04-12 13:07:28] INFO root fetch - processPackages [peek-plugin-inbox]: Start processing: snyk-metrics
+[2023-04-12 13:07:28] INFO root fetch - main [MainThread]: End processing [peek-plugin-inbox]: success
+[2023-04-12 13:07:28] INFO root fetch - processPackages [snyk-metrics]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 13:07:28] INFO root fetch - processPackages [django-yubin]: Downloading https://files.pythonhosted.org/packages/fd/bb/c4620ec0e6599cf717ce6b5904224accb54869352cbb4464e948751fda9c/django-yubin-2.0.0b1.tar.gz
+[2023-04-12 13:07:28] INFO root fetch - processPackages [snyk-metrics]: Downloading https://files.pythonhosted.org/packages/e0/2e/d151cd25d7c2bcebdb64fdf241511a9cb728dcc8df870c0b96e7416be2f0/snyk-metrics-0.0.3.tar.gz
+[2023-04-12 13:07:28] INFO root fetch - processPackages [django-yubin]: Downloading https://files.pythonhosted.org/packages/9c/c5/4a28a6ebb767330fcf5d6e1b299231f0be52fac9ab8767c889d8b4a22e9b/django-yubin-2.0.0b2.tar.gz
+[2023-04-12 13:07:28] INFO root fetch - processPackages [aiogram-ext]: Start processing: xj-flow
+[2023-04-12 13:07:28] INFO root fetch - main [MainThread]: End processing [aiogram-ext]: success
+[2023-04-12 13:07:29] INFO root fetch - processPackages [xj-flow]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 13:07:29] INFO root fetch - processPackages [snyk-metrics]: Downloading https://files.pythonhosted.org/packages/15/87/1e710a631ea4cdd2cacf4c783a4cdc831d7b9cf04bcd1d4a2b97bfec3d6f/snyk_metrics-0.0.4.tar.gz
+[2023-04-12 13:07:29] INFO root fetch - processPackages [django-yubin]: executing diffoscope
+[2023-04-12 13:07:29] INFO root fetch - processPackages [django-yubin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-yubin-2.0.0b1.tar.gz tmp/django-yubin-2.0.0b2.tar.gz --markdown 20230412/d/django-yubin/2.0.0b1-2.0.0b2/diff.md --exclude *.pyd
+[2023-04-12 13:07:29] INFO root fetch - processPackages [snyk-metrics]: executing diffoscope
+[2023-04-12 13:07:29] INFO root fetch - processPackages [snyk-metrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snyk-metrics-0.0.3.tar.gz tmp/snyk_metrics-0.0.4.tar.gz --markdown 20230412/s/snyk-metrics/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:07:29] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
+[2023-04-12 13:07:29] INFO root fetch - processPackages [xj-flow]: Downloading https://files.pythonhosted.org/packages/4b/98/1a3f618c2c4858fcf9b224f239f42c312217e8a3deb7f2ac59a023163a9f/xj_flow-1.0.8.tar.gz
+[2023-04-12 13:07:29] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-12 13:07:29] INFO root fetch - processPackages [xj-flow]: Downloading https://files.pythonhosted.org/packages/93/02/013abb0effbefa548538af1945ba2798a7c0ccbda7de2e19a099047da628/xj_flow-1.0.9.tar.gz
+[2023-04-12 13:07:29] INFO root fetch - processPackages [xj-flow]: executing diffoscope
+[2023-04-12 13:07:29] INFO root fetch - processPackages [xj-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_flow-1.0.8.tar.gz tmp/xj_flow-1.0.9.tar.gz --markdown 20230412/x/xj-flow/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 13:07:30] INFO root fetch - main [MainThread]: End processing [snyk-metrics]: success
+[2023-04-12 13:07:30] INFO root fetch - main [MainThread]: End processing [django-yubin]: success
+[2023-04-12 13:07:30] INFO root fetch - main [MainThread]: End processing [xj-flow]: success
+[2023-04-12 13:07:30] INFO root fetch - main [MainThread]: Store serial: [17675036]
