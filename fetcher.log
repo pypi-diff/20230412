@@ -21286,3 +21286,128 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:54:07] INFO root fetch - main [MainThread]: End processing [azureml-automl-runtime]: success
 [2023-04-12 19:54:15] INFO root fetch - main [MainThread]: End processing [pvporcupine]: success
 [2023-04-12 19:54:15] INFO root fetch - main [MainThread]: Store serial: [17680226]
+[2023-04-12 19:59:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680226]
+[2023-04-12 19:59:26] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-12 19:59:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: splight-lib
+[2023-04-12 19:59:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Termighty
+[2023-04-12 19:59:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MLapp1
+[2023-04-12 19:59:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SenderSMTPClient
+[2023-04-12 19:59:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DyaGram
+[2023-04-12 19:59:26] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:59:26] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 19:59:26] INFO root fetch - processPackages [Termighty]: New version: [3.0.1] Old Version: [0.0.9]
+[2023-04-12 19:59:26] WARNING root fetch - processPackages [SenderSMTPClient]: Skipping, unable to determine old version
+[2023-04-12 19:59:26] INFO root fetch - processPackages [SenderSMTPClient]: Start processing: colored-debug-prints
+[2023-04-12 19:59:26] INFO root fetch - main [MainThread]: End processing [SenderSMTPClient] error
+[2023-04-12 19:59:26] INFO root fetch - processPackages [splight-lib]: New version: [2.2.6] Old Version: [2.2.5]
+[2023-04-12 19:59:26] INFO root fetch - processPackages [colored-debug-prints]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 19:59:26] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:59:26] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:59:26] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-12 19:59:26] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230412/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 19:59:26] INFO root fetch - processPackages [Termighty]: Downloading https://files.pythonhosted.org/packages/e9/18/2585782cb4ca5a609ec99b21b959a94c542295e3f265c574044c0fb84e54/Termighty-0.0.9.tar.gz
+[2023-04-12 19:59:26] INFO root fetch - processPackages [colored-debug-prints]: Downloading https://files.pythonhosted.org/packages/53/63/e7cee889c41e97b23d5a0c34da7993770d6785153ea84507b91866e64f0b/colored_debug_prints-0.1.7.tar.gz
+[2023-04-12 19:59:26] INFO root fetch - processPackages [splight-lib]: Downloading https://files.pythonhosted.org/packages/fd/af/71192dd7d81702f2aa0863650abdfa18630f8b3d9593a1283695231a8c4f/splight-lib-2.2.6.tar.gz
+[2023-04-12 19:59:26] INFO root fetch - processPackages [splight-lib]: executing diffoscope
+[2023-04-12 19:59:26] INFO root fetch - processPackages [splight-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-lib-2.2.5.tar.gz tmp/splight-lib-2.2.6.tar.gz --markdown 20230412/s/splight-lib/2.2.5-2.2.6/diff.md --exclude *.pyd
+[2023-04-12 19:59:26] INFO root fetch - processPackages [colored-debug-prints]: Downloading https://files.pythonhosted.org/packages/c9/4c/6c572bb5ba7e1d1c37073ca194ad24d583282d8493d02f730d7e966b76eb/colored_debug_prints-0.1.8.tar.gz
+[2023-04-12 19:59:26] INFO root fetch - processPackages [Termighty]: Downloading https://files.pythonhosted.org/packages/97/0a/2aa69a4f9151fade6d86a431cf1039e81cf6578073db37df9eff92409e3a/Termighty-3.0.1.tar.gz
+[2023-04-12 19:59:26] INFO root fetch - processPackages [colored-debug-prints]: executing diffoscope
+[2023-04-12 19:59:26] INFO root fetch - processPackages [colored-debug-prints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colored_debug_prints-0.1.7.tar.gz tmp/colored_debug_prints-0.1.8.tar.gz --markdown 20230412/c/colored-debug-prints/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 19:59:26] INFO root fetch - processPackages [Termighty]: executing diffoscope
+[2023-04-12 19:59:26] INFO root fetch - processPackages [Termighty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Termighty-0.0.9.tar.gz tmp/Termighty-3.0.1.tar.gz --markdown 20230412/T/Termighty/0.0.9-3.0.1/diff.md --exclude *.pyd
+[2023-04-12 19:59:27] INFO root fetch - processPackages [DyaGram]: Start processing: macrometa-target-collection
+[2023-04-12 19:59:27] INFO root fetch - main [MainThread]: End processing [DyaGram]: success
+[2023-04-12 19:59:27] INFO root fetch - processPackages [macrometa-target-collection]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-04-12 19:59:27] INFO root fetch - processPackages [macrometa-target-collection]: Downloading https://files.pythonhosted.org/packages/4e/57/75ac2784486a52a772d72b4a4cb5a8d4ad5f811d1a403dad72f402d3730b/macrometa-target-collection-0.0.52.tar.gz
+[2023-04-12 19:59:27] INFO root fetch - processPackages [Termighty]: Start processing: python-mcs-sdk
+[2023-04-12 19:59:27] INFO root fetch - main [MainThread]: End processing [Termighty]: success
+[2023-04-12 19:59:27] INFO root fetch - processPackages [colored-debug-prints]: Start processing: truera
+[2023-04-12 19:59:27] INFO root fetch - main [MainThread]: End processing [colored-debug-prints]: success
+[2023-04-12 19:59:27] INFO root fetch - processPackages [macrometa-target-collection]: executing diffoscope
+[2023-04-12 19:59:27] INFO root fetch - processPackages [macrometa-target-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-collection-0.0.51.tar.gz tmp/macrometa-target-collection-0.0.52.tar.gz --markdown 20230412/m/macrometa-target-collection/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-04-12 19:59:28] INFO root fetch - processPackages [python-mcs-sdk]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 19:59:28] INFO root fetch - processPackages [truera]: New version: [9.9.0] Old Version: [9.8.2]
+[2023-04-12 19:59:28] INFO root fetch - processPackages [splight-lib]: Start processing: etl-csm
+[2023-04-12 19:59:28] INFO root fetch - main [MainThread]: End processing [splight-lib]: success
+[2023-04-12 19:59:28] INFO root fetch - processPackages [etl-csm]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 19:59:28] INFO root fetch - processPackages [python-mcs-sdk]: Downloading https://files.pythonhosted.org/packages/e1/46/a3d684c5c798362791b2cf2c8cb452d2b106d174e92f7f93fb73f612103a/python-mcs-sdk-0.3.1.tar.gz
+[2023-04-12 19:59:28] INFO root fetch - processPackages [truera]: Downloading https://files.pythonhosted.org/packages/dd/55/b3b828a4152d8509dde06e7e6b13009dd7e66cba7cac92d46474789d7c21/truera-9.8.2-py3-none-any.whl
+[2023-04-12 19:59:28] INFO root fetch - processPackages [python-mcs-sdk]: executing diffoscope
+[2023-04-12 19:59:28] INFO root fetch - processPackages [python-mcs-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-mcs-sdk-0.3.0.tar.gz tmp/python-mcs-sdk-0.3.1.tar.gz --markdown 20230412/p/python-mcs-sdk/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 19:59:28] INFO root fetch - processPackages [etl-csm]: Downloading https://files.pythonhosted.org/packages/a7/e1/43cabeb4e4a37b1de889be6283671779a57318c5f7d5c29e871bcd7fda84/etl_csm-0.1.1.tar.gz
+[2023-04-12 19:59:28] INFO root fetch - processPackages [etl-csm]: executing diffoscope
+[2023-04-12 19:59:28] INFO root fetch - processPackages [etl-csm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etl_csm-0.1.0.tar.gz tmp/etl_csm-0.1.1.tar.gz --markdown 20230412/e/etl-csm/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:59:28] INFO root fetch - processPackages [MLapp1]: Start processing: pvrhino
+[2023-04-12 19:59:28] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:59:28] INFO root fetch - processPackages [pvrhino]: New version: [2.2.0] Old Version: [2.1.7]
+[2023-04-12 19:59:28] INFO root fetch - processPackages [truera]: Downloading https://files.pythonhosted.org/packages/da/5c/46e66b4a298d0c50335401afc22a359b87ea349f143c05316973514d60fa/truera-9.9.0-py3-none-any.whl
+[2023-04-12 19:59:28] INFO root fetch - processPackages [pvrhino]: Downloading https://files.pythonhosted.org/packages/6b/8f/bf248137c432dffa816d28a0fc2e61fdeaac67d72cd38faeba505530c3b4/pvrhino-2.1.7.tar.gz
+[2023-04-12 19:59:28] INFO root fetch - processPackages [truera]: executing diffoscope
+[2023-04-12 19:59:28] INFO root fetch - processPackages [truera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/truera-9.8.2-py3-none-any.whl.zip tmp/truera-9.9.0-py3-none-any.whl.zip --markdown 20230412/t/truera/9.8.2-9.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:59:29] INFO root fetch - processPackages [macrometa-target-collection]: Start processing: brightsky
+[2023-04-12 19:59:29] INFO root fetch - main [MainThread]: End processing [macrometa-target-collection]: success
+[2023-04-12 19:59:29] INFO root fetch - processPackages [brightsky]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-04-12 19:59:29] INFO root fetch - processPackages [brightsky]: Downloading https://files.pythonhosted.org/packages/6e/d0/c1e87c8c086370d4bd378f32f4de17a28d0138c0eea5ff3b79f270f755d8/brightsky-2.0.0.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [python-mcs-sdk]: Start processing: pvrhinodemo
+[2023-04-12 19:59:29] INFO root fetch - main [MainThread]: End processing [python-mcs-sdk]: success
+[2023-04-12 19:59:29] INFO root fetch - processPackages [etl-csm]: Start processing: image-charts
+[2023-04-12 19:59:29] INFO root fetch - main [MainThread]: End processing [etl-csm]: success
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhinodemo]: New version: [2.2.0] Old Version: [2.1.9]
+[2023-04-12 19:59:29] INFO root fetch - processPackages [image-charts]: New version: [6.1.27] Old Version: [6.1.26]
+[2023-04-12 19:59:29] INFO root fetch - processPackages [brightsky]: Downloading https://files.pythonhosted.org/packages/c4/e0/f70e8edf29e3b9b40a38eb4030f9746bf19fd8c36c5015950369bf183013/brightsky-2.0.1.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhinodemo]: Downloading https://files.pythonhosted.org/packages/3a/f1/e67ed4354e3a3c4c211f4b347fe310a0de58619e05c3419b47a5fe9c3c57/pvrhinodemo-2.1.9.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [image-charts]: Downloading https://files.pythonhosted.org/packages/30/c8/e98158471603decbc2212510faa361bd1178a2a69de30924633635a0ed40/image-charts-6.1.26.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [brightsky]: executing diffoscope
+[2023-04-12 19:59:29] INFO root fetch - processPackages [brightsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brightsky-2.0.0.tar.gz tmp/brightsky-2.0.1.tar.gz --markdown 20230412/b/brightsky/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhino]: Downloading https://files.pythonhosted.org/packages/ad/45/fb8f0ce41e943b5d122a3dec72f0bca29f0eee6bade5ce8f197d7203ff69/pvrhino-2.2.0.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhinodemo]: Downloading https://files.pythonhosted.org/packages/d0/58/51e11d138c613a5f95bae2f0a5f44dac48215d4a87d84e1521e361d61d04/pvrhinodemo-2.2.0.tar.gz
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhino]: executing diffoscope
+[2023-04-12 19:59:29] INFO root fetch - processPackages [pvrhino]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvrhino-2.1.7.tar.gz tmp/pvrhino-2.2.0.tar.gz --markdown 20230412/p/pvrhino/2.1.7-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:59:29] INFO root fetch - processPackages [image-charts]: Downloading https://files.pythonhosted.org/packages/a1/4a/c5c524bd15551c9a2100169ab5af343091673f399ccb225265d8568f0519/image-charts-6.1.27.tar.gz
+[2023-04-12 19:59:30] INFO root fetch - processPackages [pvrhinodemo]: executing diffoscope
+[2023-04-12 19:59:30] INFO root fetch - processPackages [pvrhinodemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvrhinodemo-2.1.9.tar.gz tmp/pvrhinodemo-2.2.0.tar.gz --markdown 20230412/p/pvrhinodemo/2.1.9-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:59:30] INFO root fetch - processPackages [image-charts]: executing diffoscope
+[2023-04-12 19:59:30] INFO root fetch - processPackages [image-charts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-charts-6.1.26.tar.gz tmp/image-charts-6.1.27.tar.gz --markdown 20230412/i/image-charts/6.1.26-6.1.27/diff.md --exclude *.pyd
+[2023-04-12 19:59:31] INFO root fetch - processPackages [pvrhinodemo]: Start processing: MLapp1
+[2023-04-12 19:59:31] INFO root fetch - main [MainThread]: End processing [pvrhinodemo]: success
+[2023-04-12 19:59:31] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:59:31] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:59:31] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:59:31] INFO root fetch - processPackages [image-charts]: Start processing: plantuml-markdown
+[2023-04-12 19:59:31] INFO root fetch - main [MainThread]: End processing [image-charts]: success
+[2023-04-12 19:59:31] INFO root fetch - processPackages [plantuml-markdown]: New version: [3.8.3] Old Version: [3.8.2]
+[2023-04-12 19:59:31] INFO root fetch - processPackages [brightsky]: Start processing: gpt-index
+[2023-04-12 19:59:31] INFO root fetch - main [MainThread]: End processing [brightsky]: success
+[2023-04-12 19:59:31] INFO root fetch - processPackages [gpt-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 19:59:31] INFO root fetch - processPackages [plantuml-markdown]: Downloading https://files.pythonhosted.org/packages/52/6f/1cd91817ebcc07b6a903f0f310f559f717c230dad16c929340b612d2b8f9/plantuml_markdown-3.8.2-py3-none-any.whl
+[2023-04-12 19:59:31] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-04-12 19:59:31] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.5.8.tar.gz tmp/gpt_index-0.5.9.tar.gz --markdown 20230412/g/gpt-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 19:59:31] INFO root fetch - processPackages [plantuml-markdown]: Downloading https://files.pythonhosted.org/packages/9d/d4/1b35ab6f68cb3e9364aa166511978ad1a146f2d0e847741bfbffb3ec350a/plantuml_markdown-3.8.3-py3-none-any.whl
+[2023-04-12 19:59:31] INFO root fetch - processPackages [plantuml-markdown]: executing diffoscope
+[2023-04-12 19:59:31] INFO root fetch - processPackages [plantuml-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plantuml_markdown-3.8.2-py3-none-any.whl.zip tmp/plantuml_markdown-3.8.3-py3-none-any.whl.zip --markdown 20230412/p/plantuml-markdown/3.8.2-3.8.3/diff.md --exclude *.pyd
+[2023-04-12 19:59:32] INFO root fetch - processPackages [MLapp1]: Start processing: interpret-community
+[2023-04-12 19:59:32] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:59:32] INFO root fetch - processPackages [interpret-community]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-12 19:59:32] INFO root fetch - processPackages [interpret-community]: Downloading https://files.pythonhosted.org/packages/22/23/ba5b2045a0a6a1a8db5e4985c9f30904a7511ae05b330a486c708ff997e3/interpret-community-0.9.1.tar.gz
+[2023-04-12 19:59:32] INFO root fetch - processPackages [plantuml-markdown]: Start processing: azure-monitor-opentelemetry-exporter
+[2023-04-12 19:59:32] INFO root fetch - main [MainThread]: End processing [plantuml-markdown]: success
+[2023-04-12 19:59:32] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-12 19:59:32] INFO root fetch - processPackages [pvrhino]: Start processing: llama-index
+[2023-04-12 19:59:32] INFO root fetch - main [MainThread]: End processing [pvrhino]: success
+[2023-04-12 19:59:33] INFO root fetch - processPackages [llama-index]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 19:59:33] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Downloading https://files.pythonhosted.org/packages/83/8f/8ef839805feec9b607ef71d1d825bc8321fda8938059af0e6bf75d63500d/azure-monitor-opentelemetry-exporter-1.0.0b8.zip
+[2023-04-12 19:59:33] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-04-12 19:59:33] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.5.8.tar.gz tmp/llama_index-0.5.9.tar.gz --markdown 20230412/l/llama-index/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 19:59:33] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Downloading https://files.pythonhosted.org/packages/63/6d/d871334d91ecfa8207453d25c119b0c56890110047598066aed73eed3565/azure-monitor-opentelemetry-exporter-1.0.0b9.zip
+[2023-04-12 19:59:33] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: executing diffoscope
+[2023-04-12 19:59:33] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-monitor-opentelemetry-exporter-1.0.0b8.zip tmp/azure-monitor-opentelemetry-exporter-1.0.0b9.zip --markdown 20230412/a/azure-monitor-opentelemetry-exporter/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2023-04-12 19:59:33] INFO root fetch - main [MainThread]: End processing [truera]: success
+[2023-04-12 19:59:34] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-04-12 19:59:34] INFO root fetch - processPackages [interpret-community]: Downloading https://files.pythonhosted.org/packages/33/eb/9e4804dcbdd69a2b8efb987e43162ced1471d5fe5de24830cced6a7f09e8/interpret-community-0.9.2.tar.gz
+[2023-04-12 19:59:35] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-04-12 19:59:35] INFO root fetch - main [MainThread]: End processing [azure-monitor-opentelemetry-exporter]: success
+[2023-04-12 19:59:36] INFO root fetch - processPackages [interpret-community]: executing diffoscope
+[2023-04-12 19:59:36] INFO root fetch - processPackages [interpret-community]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interpret-community-0.9.1.tar.gz tmp/interpret-community-0.9.2.tar.gz --markdown 20230412/i/interpret-community/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-12 19:59:39] INFO root fetch - main [MainThread]: End processing [interpret-community]: success
+[2023-04-12 19:59:39] INFO root fetch - main [MainThread]: Store serial: [17680282]
