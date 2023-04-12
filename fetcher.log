@@ -5034,3 +5034,59 @@
 [2023-04-12 04:18:33] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:18:34] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:18:34] INFO root fetch - main [MainThread]: Store serial: [17670368]
+[2023-04-12 04:23:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670368]
+[2023-04-12 04:23:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 04:23:41] INFO root fetch - processPackages [pydash]: New version: [7.0.0] Old Version: [6.0.2]
+[2023-04-12 04:23:41] INFO root fetch - processPackages [zytlib]: New version: [0.3.321] Old Version: [0.3.320]
+[2023-04-12 04:23:41] INFO root fetch - processPackages [zytlib]: New version: [0.3.321] Old Version: [0.3.320]
+[2023-04-12 04:23:41] INFO root fetch - processPackages [pbit]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-12 04:23:41] INFO root fetch - processPackages [torchfunction]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 04:23:42] INFO root fetch - processPackages [torchfunction]: executing diffoscope
+[2023-04-12 04:23:42] INFO root fetch - processPackages [torchfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchfunction-0.0.8-py3-none-any.whl.zip tmp/torchfunction-0.0.9-py3-none-any.whl.zip --markdown 20230412/t/torchfunction/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/4b/59/6d8a6c0005f1341d5bc6073fffe88d3f81d1cea288ac768b7c00ad1d2a7b/zytlib-0.3.320-py3-none-any.whl
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/4b/59/6d8a6c0005f1341d5bc6073fffe88d3f81d1cea288ac768b7c00ad1d2a7b/zytlib-0.3.320-py3-none-any.whl
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pydash]: Downloading https://files.pythonhosted.org/packages/2a/d6/a0bf5a313f8888df7d45b9bc953335b0149a07b90890be84f4ca24960318/pydash-6.0.2.tar.gz
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/dc/6c/8827ac979cedceef4e0d77b607d79460ef43ca130f296cdf8e7c314e6ea0/pbit-0.2.6.tar.gz
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.5.tar.gz tmp/pbit-0.2.6.tar.gz --markdown 20230412/p/pbit/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/29/4a/b62aabf1f051c382c63d0e16e0a385d80cdae1dcc3d37e57257f399ad7a2/zytlib-0.3.321-py3-none-any.whl
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: Downloading https://files.pythonhosted.org/packages/29/4a/b62aabf1f051c382c63d0e16e0a385d80cdae1dcc3d37e57257f399ad7a2/zytlib-0.3.321-py3-none-any.whl
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.320-py3-none-any.whl.zip tmp/zytlib-0.3.321-py3-none-any.whl.zip --markdown 20230412/z/zytlib/0.3.320-0.3.321/diff.md --exclude *.pyd
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: executing diffoscope
+[2023-04-12 04:23:42] INFO root fetch - processPackages [zytlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zytlib-0.3.320-py3-none-any.whl.zip tmp/zytlib-0.3.321-py3-none-any.whl.zip --markdown 20230412/z/zytlib/0.3.320-0.3.321/diff.md --exclude *.pyd
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pydash]: Downloading https://files.pythonhosted.org/packages/d8/52/fc750dad65b455f98b8c95f88835fac35390891aac5b9ca500963707e300/pydash-7.0.0.tar.gz
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pydash]: executing diffoscope
+[2023-04-12 04:23:42] INFO root fetch - processPackages [pydash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydash-6.0.2.tar.gz tmp/pydash-7.0.0.tar.gz --markdown 20230412/p/pydash/6.0.2-7.0.0/diff.md --exclude *.pyd
+[2023-04-12 04:23:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:43] INFO root fetch - processPackages [RiskQuantLib]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-12 04:23:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:43] INFO root fetch - processPackages [snemail]: New version: [1.1.14] Old Version: [1.1.13]
+[2023-04-12 04:23:43] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/7f/03/2e88799066ebd9d59e6f36267fac306db4ba59ba1585ff78fe449b324a12/RiskQuantLib-0.2.6.tar.gz
+[2023-04-12 04:23:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:43] INFO root fetch - processPackages [arthub-api]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-12 04:23:43] INFO root fetch - processPackages [arthub-api]: executing diffoscope
+[2023-04-12 04:23:43] INFO root fetch - processPackages [arthub-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arthub_api-1.5.0.tar.gz tmp/arthub_api-1.5.1.tar.gz --markdown 20230412/a/arthub-api/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-12 04:23:43] INFO root fetch - processPackages [snemail]: Downloading https://files.pythonhosted.org/packages/ba/27/198652ed702d288216a30ec05e1d02d77b4eb8b3297df7a385cf69d374fa/snemail-1.1.14.tar.gz
+[2023-04-12 04:23:43] INFO root fetch - processPackages [snemail]: executing diffoscope
+[2023-04-12 04:23:43] INFO root fetch - processPackages [snemail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snemail-1.1.13.tar.gz tmp/snemail-1.1.14.tar.gz --markdown 20230412/s/snemail/1.1.13-1.1.14/diff.md --exclude *.pyd
+[2023-04-12 04:23:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:43] INFO root fetch - processPackages [RiskQuantLib]: Downloading https://files.pythonhosted.org/packages/a5/a6/a32a5034f7b3fbced25ed70738cd8931154266ea6e83fbbb00cf9f7fc62b/RiskQuantLib-0.2.7.tar.gz
+[2023-04-12 04:23:43] INFO root fetch - processPackages [RiskQuantLib]: executing diffoscope
+[2023-04-12 04:23:43] INFO root fetch - processPackages [RiskQuantLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RiskQuantLib-0.2.6.tar.gz tmp/RiskQuantLib-0.2.7.tar.gz --markdown 20230412/R/RiskQuantLib/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-12 04:23:43] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230412] Old Version: [1.2.20230411]
+[2023-04-12 04:23:43] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/99/96/448a0c1c2bef263668222da03fe48c92f809858b5b864af503cb8347bed2/iam_actions-1.2.20230412.tar.gz
+[2023-04-12 04:23:44] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-04-12 04:23:44] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230411.tar.gz tmp/iam_actions-1.2.20230412.tar.gz --markdown 20230412/i/iam-actions/1.2.20230411-1.2.20230412/diff.md --exclude *.pyd
+[2023-04-12 04:23:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:44] INFO root fetch - processPackages [badsecrets]: New version: [0.1.303] Old Version: [0.1.300]
+[2023-04-12 04:23:44] WARNING root fetch - processPackages [portbt]: Skipping, unable to determine old version
+[2023-04-12 04:23:44] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:23:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:44] INFO root fetch - processPackages [badsecrets]: executing diffoscope
+[2023-04-12 04:23:44] INFO root fetch - processPackages [badsecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badsecrets-0.1.300.tar.gz tmp/badsecrets-0.1.303.tar.gz --markdown 20230412/b/badsecrets/0.1.300-0.1.303/diff.md --exclude *.pyd
+[2023-04-12 04:23:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:23:46] INFO root fetch - main [MainThread]: Store serial: [17670399]
