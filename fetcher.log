@@ -21830,3 +21830,46 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:32:15] INFO root fetch - main [MainThread]: End processing [ansible-rulebook]: success
 [2023-04-12 20:32:19] INFO root fetch - main [MainThread]: End processing [fastsim]: success
 [2023-04-12 20:32:19] INFO root fetch - main [MainThread]: Store serial: [17680565]
+[2023-04-12 20:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680565]
+[2023-04-12 20:37:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 20:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openwillis
+[2023-04-12 20:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hmd-lib-auth
+[2023-04-12 20:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poetry-git-version-plugin
+[2023-04-12 20:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peptides
+[2023-04-12 20:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shaka
+[2023-04-12 20:37:28] INFO root fetch - processPackages [peptides]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-04-12 20:37:28] INFO root fetch - processPackages [openwillis]: New version: [0.5] Old Version: [0.4.3]
+[2023-04-12 20:37:28] INFO root fetch - processPackages [hmd-lib-auth]: New version: [0.1.74] Old Version: [0.1.67]
+[2023-04-12 20:37:28] WARNING root fetch - processPackages [shaka]: Skipping, unable to determine old version
+[2023-04-12 20:37:28] INFO root fetch - processPackages [shaka]: Start processing: pybrainlife
+[2023-04-12 20:37:28] INFO root fetch - main [MainThread]: End processing [shaka] error
+[2023-04-12 20:37:28] INFO root fetch - processPackages [poetry-git-version-plugin]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 20:37:28] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-12 20:37:28] INFO root fetch - processPackages [peptides]: Downloading https://files.pythonhosted.org/packages/dd/04/f67d53cdd071ea25a13bf0bb9638ca4033b4bbbf8e1e30fe4e7652da12d1/peptides-0.3.1.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [poetry-git-version-plugin]: Downloading https://files.pythonhosted.org/packages/6d/1b/f560c68636af450d5bd0e8cf61556cce13278ef75c393827bdeb54924e3d/poetry_git_version_plugin-0.1.0.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/83/66/a2b96464d200582a1dfc2edb7a0ac635dd7d0e147c2e14b81908e72aad7a/pybrainlife-1.0.6.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [hmd-lib-auth]: Downloading https://files.pythonhosted.org/packages/3f/c2/f20be3d45e889240a9c9cb118bb27f488decdb1b762db4cd4e090fdabcb9/hmd_lib_auth-0.1.67-py3-none-any.whl
+[2023-04-12 20:37:28] INFO root fetch - processPackages [openwillis]: Downloading https://files.pythonhosted.org/packages/cd/81/c92d26541b5af38f3b8bb4e1642651f73807bb8768caa59a417bbb82f0d3/openwillis-0.5.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [openwillis]: executing diffoscope
+[2023-04-12 20:37:28] INFO root fetch - processPackages [openwillis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openwillis-0.4.3.tar.gz tmp/openwillis-0.5.tar.gz --markdown 20230412/o/openwillis/0.4.3-0.5/diff.md --exclude *.pyd
+[2023-04-12 20:37:28] INFO root fetch - processPackages [poetry-git-version-plugin]: Downloading https://files.pythonhosted.org/packages/9d/80/a1c9a3498a6ae165f58fcc230d5845e6f3ecb531802e06c48637652a86af/poetry_git_version_plugin-0.1.1.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [peptides]: Downloading https://files.pythonhosted.org/packages/3c/0d/cc978e1a9129b235bc0282da0809c388c34f7ee9b3d7a419b90db6f3a224/peptides-0.3.2.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/54/67/4498de42f5fa0aba2f489120b3d7ab5e279df881927d9cd4984568e966e2/pybrainlife-1.0.7.tar.gz
+[2023-04-12 20:37:28] INFO root fetch - processPackages [peptides]: executing diffoscope
+[2023-04-12 20:37:28] INFO root fetch - processPackages [peptides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peptides-0.3.1.tar.gz tmp/peptides-0.3.2.tar.gz --markdown 20230412/p/peptides/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-04-12 20:37:28] INFO root fetch - processPackages [poetry-git-version-plugin]: executing diffoscope
+[2023-04-12 20:37:28] INFO root fetch - processPackages [poetry-git-version-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_git_version_plugin-0.1.0.tar.gz tmp/poetry_git_version_plugin-0.1.1.tar.gz --markdown 20230412/p/poetry-git-version-plugin/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 20:37:28] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 20:37:28] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.6.tar.gz tmp/pybrainlife-1.0.7.tar.gz --markdown 20230412/p/pybrainlife/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-12 20:37:29] INFO root fetch - processPackages [hmd-lib-auth]: Downloading https://files.pythonhosted.org/packages/dc/1c/8cea76dd705114a4f3253e44f16c01a5ca83f137bd7cbc111c85fcb60ba4/hmd_lib_auth-0.1.74-py3-none-any.whl
+[2023-04-12 20:37:29] INFO root fetch - processPackages [hmd-lib-auth]: executing diffoscope
+[2023-04-12 20:37:29] INFO root fetch - processPackages [hmd-lib-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmd_lib_auth-0.1.67-py3-none-any.whl.zip tmp/hmd_lib_auth-0.1.74-py3-none-any.whl.zip --markdown 20230412/h/hmd-lib-auth/0.1.67-0.1.74/diff.md --exclude *.pyd
+[2023-04-12 20:37:29] INFO root fetch - processPackages [openwillis]: Start processing: pmpsdb-client
+[2023-04-12 20:37:29] INFO root fetch - main [MainThread]: End processing [openwillis]: success
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: End processing [poetry-git-version-plugin]: success
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 20:37:30] WARNING root fetch - processPackages [pmpsdb-client]: Skipping, unable to determine old version
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: End processing [pmpsdb-client] error
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: End processing [hmd-lib-auth]: success
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: End processing [peptides]: success
+[2023-04-12 20:37:30] INFO root fetch - main [MainThread]: Store serial: [17680591]
