@@ -15812,3 +15812,113 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:40:47] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-04-12 15:40:47] INFO root fetch - main [MainThread]: End processing [origen-ai-ecl]: success
 [2023-04-12 15:40:47] INFO root fetch - main [MainThread]: Store serial: [17676836]
+[2023-04-12 15:46:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676836]
+[2023-04-12 15:46:09] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-12 15:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymediawikidocker
+[2023-04-12 15:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flipt
+[2023-04-12 15:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: playmolecule
+[2023-04-12 15:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: curl-cffi
+[2023-04-12 15:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: talkwave
+[2023-04-12 15:46:09] WARNING root fetch - processPackages [flipt]: Skipping, unable to determine old version
+[2023-04-12 15:46:09] INFO root fetch - processPackages [flipt]: Start processing: edgehog
+[2023-04-12 15:46:09] INFO root fetch - main [MainThread]: End processing [flipt] error
+[2023-04-12 15:46:09] INFO root fetch - processPackages [curl-cffi]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-04-12 15:46:09] INFO root fetch - processPackages [talkwave]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 15:46:09] WARNING root fetch - processPackages [edgehog]: Skipping, unable to determine old version
+[2023-04-12 15:46:09] INFO root fetch - processPackages [edgehog]: Start processing: time-series-cross-validation
+[2023-04-12 15:46:09] INFO root fetch - main [MainThread]: End processing [edgehog] error
+[2023-04-12 15:46:09] INFO root fetch - processPackages [playmolecule]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-04-12 15:46:09] INFO root fetch - processPackages [time-series-cross-validation]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 15:46:09] INFO root fetch - processPackages [pymediawikidocker]: New version: [0.9.6] Old Version: [0.9.4]
+[2023-04-12 15:46:09] INFO root fetch - processPackages [playmolecule]: Downloading https://files.pythonhosted.org/packages/02/5a/fc8bf6ba79eaa1fba236af7ba3fb2668eaf1719d45bb20bc5e39a0e015d0/playmolecule-1.6.4.tar.gz
+[2023-04-12 15:46:09] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/3f/86/2df1a3078f15360eabab247ead954ce8d194ce5145347299ed5453ff8c71/curl_cffi-0.5.3.tar.gz
+[2023-04-12 15:46:09] INFO root fetch - processPackages [time-series-cross-validation]: Downloading https://files.pythonhosted.org/packages/01/75/d031d20584c028432bf394b5acae8ea74f5bf2171505b794b736e9cbe1b8/time_series_cross_validation-1.0.3.tar.gz
+[2023-04-12 15:46:09] INFO root fetch - processPackages [talkwave]: Downloading https://files.pythonhosted.org/packages/d6/b7/cda6534bb9f5af7a914a542f7bb1bec18e0ae4f65f239e7eec02a82bfb8c/talkwave-0.0.5.tar.gz
+[2023-04-12 15:46:09] INFO root fetch - processPackages [playmolecule]: executing diffoscope
+[2023-04-12 15:46:09] INFO root fetch - processPackages [playmolecule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playmolecule-1.6.3.tar.gz tmp/playmolecule-1.6.4.tar.gz --markdown 20230412/p/playmolecule/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-04-12 15:46:10] INFO root fetch - processPackages [time-series-cross-validation]: executing diffoscope
+[2023-04-12 15:46:10] INFO root fetch - processPackages [time-series-cross-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_series_cross_validation-1.0.2.tar.gz tmp/time_series_cross_validation-1.0.3.tar.gz --markdown 20230412/t/time-series-cross-validation/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 15:46:10] INFO root fetch - processPackages [talkwave]: executing diffoscope
+[2023-04-12 15:46:10] INFO root fetch - processPackages [talkwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talkwave-0.0.4.tar.gz tmp/talkwave-0.0.5.tar.gz --markdown 20230412/t/talkwave/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 15:46:10] INFO root fetch - processPackages [pymediawikidocker]: Downloading https://files.pythonhosted.org/packages/2e/45/a2fdd4f33792b2741ab4319a5dbd3bdd352aa8ef1f4c1a87d1797114920c/pymediawikidocker-0.9.6.tar.gz
+[2023-04-12 15:46:10] INFO root fetch - processPackages [pymediawikidocker]: executing diffoscope
+[2023-04-12 15:46:10] INFO root fetch - processPackages [pymediawikidocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymediawikidocker-0.9.4.tar.gz tmp/pymediawikidocker-0.9.6.tar.gz --markdown 20230412/p/pymediawikidocker/0.9.4-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 15:46:10] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/8e/20/e8767d0937ff55ffd1cce8165e3a95d0ce0e9c96cb52ef7c5ef2fe04cb6e/curl_cffi-0.5.4-cp37-abi3-macosx_11_0_arm64.whl
+[2023-04-12 15:46:10] INFO root fetch - processPackages [curl-cffi]: executing diffoscope
+[2023-04-12 15:46:10] INFO root fetch - processPackages [curl-cffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_cffi-0.5.3.tar.gz tmp/curl_cffi-0.5.4-cp37-abi3-macosx_11_0_arm64.whl.zip --markdown 20230412/c/curl-cffi/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-04-12 15:46:11] INFO root fetch - processPackages [time-series-cross-validation]: Start processing: fastq-handler
+[2023-04-12 15:46:11] INFO root fetch - main [MainThread]: End processing [time-series-cross-validation]: success
+[2023-04-12 15:46:11] INFO root fetch - processPackages [fastq-handler]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-04-12 15:46:11] INFO root fetch - processPackages [fastq-handler]: Downloading https://files.pythonhosted.org/packages/fb/fb/e6d35c162dda80590c5086fec022e8525545ae978055c25b74bd80cda1f5/fastq_handler-0.2.0.tar.gz
+[2023-04-12 15:46:11] INFO root fetch - processPackages [pymediawikidocker]: Start processing: nudecrawler
+[2023-04-12 15:46:11] INFO root fetch - main [MainThread]: End processing [pymediawikidocker]: success
+[2023-04-12 15:46:11] INFO root fetch - processPackages [fastq-handler]: executing diffoscope
+[2023-04-12 15:46:11] INFO root fetch - processPackages [fastq-handler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastq_handler-0.1.3.tar.gz tmp/fastq_handler-0.2.0.tar.gz --markdown 20230412/f/fastq-handler/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 15:46:11] INFO root fetch - processPackages [nudecrawler]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 15:46:11] INFO root fetch - processPackages [curl-cffi]: Start processing: python-manilaclient
+[2023-04-12 15:46:11] INFO root fetch - main [MainThread]: End processing [curl-cffi]: success
+[2023-04-12 15:46:11] INFO root fetch - processPackages [nudecrawler]: executing diffoscope
+[2023-04-12 15:46:11] INFO root fetch - processPackages [nudecrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nudecrawler-0.3.8.tar.gz tmp/nudecrawler-0.3.9.tar.gz --markdown 20230412/n/nudecrawler/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 15:46:11] INFO root fetch - processPackages [python-manilaclient]: New version: [4.3.0] Old Version: [4.2.0]
+[2023-04-12 15:46:11] INFO root fetch - processPackages [playmolecule]: Start processing: thunno2
+[2023-04-12 15:46:11] INFO root fetch - main [MainThread]: End processing [playmolecule]: success
+[2023-04-12 15:46:11] INFO root fetch - processPackages [thunno2]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-12 15:46:12] INFO root fetch - processPackages [talkwave]: Start processing: great-expectations-experimental
+[2023-04-12 15:46:12] INFO root fetch - main [MainThread]: End processing [talkwave]: success
+[2023-04-12 15:46:12] INFO root fetch - processPackages [python-manilaclient]: Downloading https://files.pythonhosted.org/packages/52/86/4a2e4b2137733a6b62a398a5b3325c18c8480a8d4ea73dee1d6000356fb8/python-manilaclient-4.2.0.tar.gz
+[2023-04-12 15:46:12] INFO root fetch - processPackages [great-expectations-experimental]: New version: [0.1.20230412016] Old Version: [0.1.20230401039]
+[2023-04-12 15:46:12] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/83/ab/a91c98dbd7ab564940d8a7a5f95a6ad75cabfb57c656a36a7a59433b4b68/thunno2-2.0.4.tar.gz
+[2023-04-12 15:46:12] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/c9/70/504e85b3ed18f94ed254d5abaac00b3db586b57f28838c3cb2fa38f77b38/great_expectations_experimental-0.1.20230401039.tar.gz
+[2023-04-12 15:46:12] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-12 15:46:12] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.3.tar.gz tmp/thunno2-2.0.4.tar.gz --markdown 20230412/t/thunno2/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-12 15:46:12] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/22/fa/3ff27420a993204a1a0d9e8ddd79db3ee363bb3bf7e0b85ae458e5a38fa4/great_expectations_experimental-0.1.20230412016.tar.gz
+[2023-04-12 15:46:12] INFO root fetch - processPackages [python-manilaclient]: Downloading https://files.pythonhosted.org/packages/aa/7d/e1c532d57adab64c8347117fe4080cd0dba0c10b07caaa2f57dbc321a891/python-manilaclient-4.3.0.tar.gz
+[2023-04-12 15:46:12] INFO root fetch - processPackages [great-expectations-experimental]: executing diffoscope
+[2023-04-12 15:46:12] INFO root fetch - processPackages [great-expectations-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_experimental-0.1.20230401039.tar.gz tmp/great_expectations_experimental-0.1.20230412016.tar.gz --markdown 20230412/g/great-expectations-experimental/0.1.20230401039-0.1.20230412016/diff.md --exclude *.pyd
+[2023-04-12 15:46:12] INFO root fetch - processPackages [python-manilaclient]: executing diffoscope
+[2023-04-12 15:46:12] INFO root fetch - processPackages [python-manilaclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-manilaclient-4.2.0.tar.gz tmp/python-manilaclient-4.3.0.tar.gz --markdown 20230412/p/python-manilaclient/4.2.0-4.3.0/diff.md --exclude *.pyd
+[2023-04-12 15:46:13] INFO root fetch - processPackages [nudecrawler]: Start processing: plons
+[2023-04-12 15:46:13] INFO root fetch - main [MainThread]: End processing [nudecrawler]: success
+[2023-04-12 15:46:13] INFO root fetch - processPackages [plons]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-12 15:46:13] INFO root fetch - processPackages [plons]: executing diffoscope
+[2023-04-12 15:46:13] INFO root fetch - processPackages [plons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plons-0.0.7.tar.gz tmp/plons-0.0.9.tar.gz --markdown 20230412/p/plons/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:46:13] INFO root fetch - processPackages [fastq-handler]: Start processing: obeenya
+[2023-04-12 15:46:13] INFO root fetch - main [MainThread]: End processing [fastq-handler]: success
+[2023-04-12 15:46:13] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 15:46:13] INFO root fetch - processPackages [obeenya]: Start processing: jupyterlab-nvdashboard
+[2023-04-12 15:46:13] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 15:46:13] INFO root fetch - processPackages [jupyterlab-nvdashboard]: New version: [0.8.0a22112312] Old Version: [0.8.0a22103111]
+[2023-04-12 15:46:13] INFO root fetch - processPackages [jupyterlab-nvdashboard]: Downloading https://files.pythonhosted.org/packages/b3/4c/ea6dfb8fbd5e3d6e5f83164e71ca51187d2d2468af68a7573d908d461e43/jupyterlab_nvdashboard-0.8.0a22103111.tar.gz
+[2023-04-12 15:46:14] INFO root fetch - processPackages [jupyterlab-nvdashboard]: Downloading https://files.pythonhosted.org/packages/d9/4b/71fbe8280910ff766b906258764aba779ebb18c7f630111284e7572ff61f/jupyterlab_nvdashboard-0.8.0a22112312.tar.gz
+[2023-04-12 15:46:14] INFO root fetch - processPackages [jupyterlab-nvdashboard]: executing diffoscope
+[2023-04-12 15:46:14] INFO root fetch - processPackages [jupyterlab-nvdashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_nvdashboard-0.8.0a22103111.tar.gz tmp/jupyterlab_nvdashboard-0.8.0a22112312.tar.gz --markdown 20230412/j/jupyterlab-nvdashboard/0.8.0a22103111-0.8.0a22112312/diff.md --exclude *.pyd
+[2023-04-12 15:46:15] INFO root fetch - processPackages [thunno2]: Start processing: quantfreedom
+[2023-04-12 15:46:15] INFO root fetch - main [MainThread]: End processing [thunno2]: success
+[2023-04-12 15:46:15] INFO root fetch - processPackages [quantfreedom]: New version: [0.0.3.post1] Old Version: [0.0.3]
+[2023-04-12 15:46:15] INFO root fetch - processPackages [quantfreedom]: Downloading https://files.pythonhosted.org/packages/7c/d2/08b7f4d08ebe11097a00d79b3000c2a317448eed48734a23935166ecea6d/quantfreedom-0.0.3.post1.tar.gz
+[2023-04-12 15:46:15] INFO root fetch - processPackages [quantfreedom]: executing diffoscope
+[2023-04-12 15:46:15] INFO root fetch - processPackages [quantfreedom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantfreedom-0.0.3.tar.gz tmp/quantfreedom-0.0.3.post1.tar.gz --markdown 20230412/q/quantfreedom/0.0.3-0.0.3.post1/diff.md --exclude *.pyd
+[2023-04-12 15:46:15] INFO root fetch - processPackages [plons]: Start processing: i2
+[2023-04-12 15:46:15] INFO root fetch - main [MainThread]: End processing [plons]: success
+[2023-04-12 15:46:15] INFO root fetch - processPackages [jupyterlab-nvdashboard]: Start processing: MJOLNIR
+[2023-04-12 15:46:15] INFO root fetch - main [MainThread]: End processing [jupyterlab-nvdashboard]: success
+[2023-04-12 15:46:15] INFO root fetch - processPackages [i2]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:46:15] INFO root fetch - processPackages [MJOLNIR]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-04-12 15:46:16] INFO root fetch - processPackages [great-expectations-experimental]: Start processing: ms-salesforce-to-bigquery
+[2023-04-12 15:46:16] INFO root fetch - main [MainThread]: End processing [great-expectations-experimental]: success
+[2023-04-12 15:46:16] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 15:46:16] INFO root fetch - processPackages [i2]: Downloading https://files.pythonhosted.org/packages/51/20/bca65a210e23666e5c36c23449c164e4577bc577bed71b0c5283d0d11e47/i2-0.0.98.tar.gz
+[2023-04-12 15:46:16] INFO root fetch - processPackages [MJOLNIR]: Downloading https://files.pythonhosted.org/packages/69/6b/9943f8e3093165b214ac15618e8de2a9d081ec379cfa40334d4608c1d436/MJOLNIR-1.2.5.tar.gz
+[2023-04-12 15:46:16] WARNING root fetch - processPackages [MJOLNIR]: Skipping package: exceeds size limit 21237019>=10485760
+[2023-04-12 15:46:16] INFO root fetch - main [MainThread]: End processing [MJOLNIR] error
+[2023-04-12 15:46:16] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/44/6b/c2119698448e24eed4eb8e2036db03e63497142b143cd3c9db51c019e723/ms_salesforce_to_bigquery-0.0.4.tar.gz
+[2023-04-12 15:46:16] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: executing diffoscope
+[2023-04-12 15:46:16] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_salesforce_to_bigquery-0.0.3.tar.gz tmp/ms_salesforce_to_bigquery-0.0.4.tar.gz --markdown 20230412/m/ms-salesforce-to-bigquery/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 15:46:16] INFO root fetch - processPackages [i2]: Downloading https://files.pythonhosted.org/packages/66/2a/3f837ef0d597497c19c5f4903a61f79c5d96045bde741358a73871d5311d/i2-0.0.99.tar.gz
+[2023-04-12 15:46:17] INFO root fetch - main [MainThread]: End processing [quantfreedom]: success
+[2023-04-12 15:46:17] INFO root fetch - processPackages [i2]: executing diffoscope
+[2023-04-12 15:46:17] INFO root fetch - processPackages [i2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2-0.0.98.tar.gz tmp/i2-0.0.99.tar.gz --markdown 20230412/i/i2/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:46:17] INFO root fetch - main [MainThread]: End processing [python-manilaclient]: success
+[2023-04-12 15:46:17] INFO root fetch - main [MainThread]: End processing [ms-salesforce-to-bigquery]: success
+[2023-04-12 15:46:18] INFO root fetch - main [MainThread]: End processing [i2]: success
+[2023-04-12 15:46:18] INFO root fetch - main [MainThread]: Store serial: [17676895]
