@@ -12093,3 +12093,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 12:39:33] INFO root fetch - processPackages [torchkeras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchkeras-3.8.1.tar.gz tmp/torchkeras-3.8.2.tar.gz --markdown 20230412/t/torchkeras/3.8.1-3.8.2/diff.md --exclude *.pyd
 [2023-04-12 12:39:35] INFO root fetch - main [MainThread]: [torchkeras]success
 [2023-04-12 12:39:35] INFO root fetch - main [MainThread]: Store serial: [17674688]
+[2023-04-12 12:40:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674688]
+[2023-04-12 12:40:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-12 12:40:12] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 12:40:12] INFO root fetch - processPackages [metaseg]: New version: [0.5.5] Old Version: [0.5.3]
+[2023-04-12 12:40:12] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 12:40:12] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 12:40:12] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/6a/30/73ed89c73030013f481b0bb4149f4788eec7fa7d10855fc318764ebfe458/metaseg-0.5.5.tar.gz
+[2023-04-12 12:40:12] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-12 12:40:12] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.5.3.tar.gz tmp/metaseg-0.5.5.tar.gz --markdown 20230412/m/metaseg/0.5.3-0.5.5/diff.md --exclude *.pyd
+[2023-04-12 12:40:13] INFO root fetch - main [MainThread]: [inels-mqtt-new] success
+[2023-04-12 12:40:13] INFO root fetch - main [MainThread]: [metaseg] success
+[2023-04-12 12:40:13] INFO root fetch - main [MainThread]: Store serial: [17674693]
