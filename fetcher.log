@@ -20084,3 +20084,78 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:43:55] INFO root fetch - main [MainThread]: End processing [fastsim]: success
 [2023-04-12 18:44:43] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
 [2023-04-12 18:44:43] INFO root fetch - main [MainThread]: Store serial: [17679404]
+[2023-04-12 18:49:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679404]
+[2023-04-12 18:49:53] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 18:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MLapp1
+[2023-04-12 18:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyams-zmi
+[2023-04-12 18:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lccpy
+[2023-04-12 18:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: martin-binance
+[2023-04-12 18:49:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rich
+[2023-04-12 18:49:53] INFO root fetch - processPackages [lccpy]: New version: [1.4.1] Old Version: [1.4]
+[2023-04-12 18:49:53] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:49:53] INFO root fetch - processPackages [pyams-zmi]: New version: [1.9.2] Old Version: [1.9.0]
+[2023-04-12 18:49:53] INFO root fetch - processPackages [martin-binance]: New version: [1.2.9.post19] Old Version: [1.2.9.post18]
+[2023-04-12 18:49:53] INFO root fetch - processPackages [rich]: New version: [9.9.0] Old Version: [9.8.2]
+[2023-04-12 18:49:53] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/cf/eb/97ec26376e59b00c6cfacb3ce8dcda3e0d888e05ee28f2d054a5104a1159/pyams_zmi-1.9.0.tar.gz
+[2023-04-12 18:49:53] INFO root fetch - processPackages [lccpy]: Downloading https://files.pythonhosted.org/packages/bd/b6/c44b9ef5f98cf6418addd52a4dbfc8af20dcfac8526346463ac769584e21/lccpy-1.4.1.tar.gz
+[2023-04-12 18:49:53] INFO root fetch - processPackages [rich]: Downloading https://files.pythonhosted.org/packages/fb/96/b268c7ac622597f8660e14e01d8b66b84a34fbbaed3b920bfca440f742fe/rich-9.8.2.tar.gz
+[2023-04-12 18:49:53] INFO root fetch - processPackages [martin-binance]: Downloading https://files.pythonhosted.org/packages/44/47/429dce3435b6f022f49d1a3fab67e1a0be3ca979bb7b932122b617ee1126/martin-binance-1.2.9.post18.tar.gz
+[2023-04-12 18:49:53] INFO root fetch - processPackages [lccpy]: executing diffoscope
+[2023-04-12 18:49:53] INFO root fetch - processPackages [lccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lccpy-1.4.tar.gz tmp/lccpy-1.4.1.tar.gz --markdown 20230412/l/lccpy/1.4-1.4.1/diff.md --exclude *.pyd
+[2023-04-12 18:49:53] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:49:53] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:49:54] INFO root fetch - processPackages [rich]: Downloading https://files.pythonhosted.org/packages/5a/2d/5e92c69f971cb2a373a5203fe2ff0a06751b3eea918c709318e19f7caf62/rich-9.9.0.tar.gz
+[2023-04-12 18:49:54] INFO root fetch - processPackages [rich]: executing diffoscope
+[2023-04-12 18:49:54] INFO root fetch - processPackages [rich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rich-9.8.2.tar.gz tmp/rich-9.9.0.tar.gz --markdown 20230412/r/rich/9.8.2-9.9.0/diff.md --exclude *.pyd
+[2023-04-12 18:49:54] INFO root fetch - processPackages [pyams-zmi]: Downloading https://files.pythonhosted.org/packages/49/2c/9d4f8462fea4bce40226459734e3be58bd792ec5aaa2ea1e2a2e95d905dc/pyams_zmi-1.9.2.tar.gz
+[2023-04-12 18:49:54] INFO root fetch - processPackages [pyams-zmi]: executing diffoscope
+[2023-04-12 18:49:54] INFO root fetch - processPackages [pyams-zmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_zmi-1.9.0.tar.gz tmp/pyams_zmi-1.9.2.tar.gz --markdown 20230412/p/pyams-zmi/1.9.0-1.9.2/diff.md --exclude *.pyd
+[2023-04-12 18:49:54] INFO root fetch - processPackages [lccpy]: Start processing: MLapp1
+[2023-04-12 18:49:54] INFO root fetch - main [MainThread]: End processing [lccpy]: success
+[2023-04-12 18:49:54] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:49:54] INFO root fetch - processPackages [MLapp1]: Start processing: MLapp1
+[2023-04-12 18:49:54] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:49:55] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:49:55] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:49:55] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:49:55] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:49:55] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:49:55] INFO root fetch - processPackages [martin-binance]: Downloading https://files.pythonhosted.org/packages/af/a6/769ade28e055f972e4104c164e79c01e4c9b0e4a20a4c33e18f744f6f208/martin-binance-1.2.9.post19.tar.gz
+[2023-04-12 18:49:55] INFO root fetch - processPackages [rich]: Start processing: nextcloudtalkbot
+[2023-04-12 18:49:55] INFO root fetch - main [MainThread]: End processing [rich]: success
+[2023-04-12 18:49:55] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:49:55] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-12 18:49:55] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230412/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:49:56] INFO root fetch - processPackages [MLapp1]: Start processing: torch-nets
+[2023-04-12 18:49:56] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:49:56] INFO root fetch - processPackages [MLapp1]: Start processing: SIOTCommon
+[2023-04-12 18:49:56] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:49:56] INFO root fetch - processPackages [SIOTCommon]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 18:49:56] INFO root fetch - processPackages [torch-nets]: New version: [0.0.3rc0] Old Version: [0.0.2rc1]
+[2023-04-12 18:49:56] INFO root fetch - processPackages [SIOTCommon]: executing diffoscope
+[2023-04-12 18:49:56] INFO root fetch - processPackages [SIOTCommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SIOTCommon-0.0.4.tar.gz tmp/SIOTCommon-0.0.5.tar.gz --markdown 20230412/S/SIOTCommon/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 18:49:56] INFO root fetch - processPackages [martin-binance]: executing diffoscope
+[2023-04-12 18:49:56] INFO root fetch - processPackages [martin-binance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/martin-binance-1.2.9.post18.tar.gz tmp/martin-binance-1.2.9.post19.tar.gz --markdown 20230412/m/martin-binance/1.2.9.post18-1.2.9.post19/diff.md --exclude *.pyd
+[2023-04-12 18:49:56] INFO root fetch - processPackages [torch-nets]: Downloading https://files.pythonhosted.org/packages/06/04/5d23fe0561fcd3c8704f8e69eb4bd42b54b4dafb43e1ff5524360b512cb5/torch-nets-0.0.2rc1.tar.gz
+[2023-04-12 18:49:56] INFO root fetch - processPackages [pyams-zmi]: Start processing: pensando-dss
+[2023-04-12 18:49:56] INFO root fetch - main [MainThread]: End processing [pyams-zmi]: success
+[2023-04-12 18:49:56] INFO root fetch - processPackages [pensando-dss]: New version: [1.62.0b1] Old Version: [1.54.1]
+[2023-04-12 18:49:57] INFO root fetch - processPackages [torch-nets]: Downloading https://files.pythonhosted.org/packages/10/57/fee88843f0fb5c3d56e591052a1359071e040c04ee3a11d13586c9921895/torch-nets-0.0.3rc0.tar.gz
+[2023-04-12 18:49:57] INFO root fetch - processPackages [torch-nets]: executing diffoscope
+[2023-04-12 18:49:57] INFO root fetch - processPackages [torch-nets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch-nets-0.0.2rc1.tar.gz tmp/torch-nets-0.0.3rc0.tar.gz --markdown 20230412/t/torch-nets/0.0.2rc1-0.0.3rc0/diff.md --exclude *.pyd
+[2023-04-12 18:49:57] INFO root fetch - processPackages [pensando-dss]: Downloading https://files.pythonhosted.org/packages/83/25/db50e4d94a7f53437cfce22345505d13392c2cfc9921f01f154df6f995cd/pensando_dss-1.54.1.tar.gz
+[2023-04-12 18:49:57] INFO root fetch - processPackages [SIOTCommon]: Start processing: postleid
+[2023-04-12 18:49:57] INFO root fetch - main [MainThread]: End processing [SIOTCommon]: success
+[2023-04-12 18:49:57] INFO root fetch - processPackages [postleid]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-12 18:49:57] INFO root fetch - processPackages [pensando-dss]: Downloading https://files.pythonhosted.org/packages/d2/06/3de7c6934f5d7310944f47f0b48e02b5b85ba2ea3ba6f40c76c517f3742a/pensando_dss-1.62.0b1.tar.gz
+[2023-04-12 18:49:57] INFO root fetch - main [MainThread]: End processing [nextcloudtalkbot]: success
+[2023-04-12 18:49:57] INFO root fetch - processPackages [pensando-dss]: executing diffoscope
+[2023-04-12 18:49:57] INFO root fetch - processPackages [pensando-dss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pensando_dss-1.54.1.tar.gz tmp/pensando_dss-1.62.0b1.tar.gz --markdown 20230412/p/pensando-dss/1.54.1-1.62.0b1/diff.md --exclude *.pyd
+[2023-04-12 18:49:57] INFO root fetch - processPackages [postleid]: Downloading https://files.pythonhosted.org/packages/3c/58/e5d7799175769f02fdbd873de8ac36067eecd2c3c6e6d39096ae89ad6ae4/postleid-0.6.5.tar.gz
+[2023-04-12 18:49:57] INFO root fetch - processPackages [postleid]: executing diffoscope
+[2023-04-12 18:49:57] INFO root fetch - processPackages [postleid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postleid-0.6.4.tar.gz tmp/postleid-0.6.5.tar.gz --markdown 20230412/p/postleid/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-12 18:49:57] INFO root fetch - main [MainThread]: End processing [martin-binance]: success
+[2023-04-12 18:49:58] INFO root fetch - main [MainThread]: End processing [torch-nets]: success
+[2023-04-12 18:49:58] INFO root fetch - main [MainThread]: End processing [postleid]: success
+[2023-04-12 18:50:20] INFO root fetch - main [MainThread]: End processing [pensando-dss]: success
+[2023-04-12 18:50:20] INFO root fetch - main [MainThread]: Store serial: [17679440]
