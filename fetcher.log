@@ -21498,3 +21498,74 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:05:01] INFO root fetch - main [MainThread]: End processing [arch]: success
 [2023-04-12 20:05:27] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
 [2023-04-12 20:05:27] INFO root fetch - main [MainThread]: Store serial: [17680339]
+[2023-04-12 20:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680339]
+[2023-04-12 20:10:42] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 20:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-cloud-spanner
+[2023-04-12 20:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clarifai
+[2023-04-12 20:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-files
+[2023-04-12 20:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langchain
+[2023-04-12 20:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DyaGram
+[2023-04-12 20:10:42] INFO root fetch - processPackages [clarifai]: New version: [9.3.2] Old Version: [9.3.1]
+[2023-04-12 20:10:42] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 20:10:42] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-04-12 20:10:42] INFO root fetch - processPackages [google-cloud-spanner]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-04-12 20:10:42] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 20:10:42] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-12 20:10:42] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230412/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 20:10:42] INFO root fetch - processPackages [google-cloud-spanner]: Downloading https://files.pythonhosted.org/packages/c0/2d/9383b183858aaf9f33a19f695d5db62abbd3750f41e5461f5d4dd68d2da2/google-cloud-spanner-3.8.0.tar.gz
+[2023-04-12 20:10:42] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/6e/c5/8e1f28d83fdb696bdeb08b84402aad7b6a0892ed6bc9c27e0fc0bcdabb29/katalytic-files-0.3.9.tar.gz
+[2023-04-12 20:10:42] INFO root fetch - processPackages [clarifai]: Downloading https://files.pythonhosted.org/packages/53/56/c0cdcd8a8571366cd583a0f95181c758dad6cd1110c8cd0cc8ad0c4e5d3a/clarifai-9.3.2.tar.gz
+[2023-04-12 20:10:42] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-12 20:10:42] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230412/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 20:10:42] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-04-12 20:10:42] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230412/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-04-12 20:10:43] INFO root fetch - processPackages [google-cloud-spanner]: Downloading https://files.pythonhosted.org/packages/7f/af/852f011a0e2347701621b19205ec8b0037c7a76ce4c0705f0ee8e7788671/google-cloud-spanner-3.9.0.tar.gz
+[2023-04-12 20:10:43] INFO root fetch - processPackages [clarifai]: executing diffoscope
+[2023-04-12 20:10:43] INFO root fetch - processPackages [clarifai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clarifai-9.3.1.tar.gz tmp/clarifai-9.3.2.tar.gz --markdown 20230412/c/clarifai/9.3.1-9.3.2/diff.md --exclude *.pyd
+[2023-04-12 20:10:43] INFO root fetch - processPackages [google-cloud-spanner]: executing diffoscope
+[2023-04-12 20:10:43] INFO root fetch - processPackages [google-cloud-spanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-cloud-spanner-3.8.0.tar.gz tmp/google-cloud-spanner-3.9.0.tar.gz --markdown 20230412/g/google-cloud-spanner/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-04-12 20:10:44] INFO root fetch - processPackages [DyaGram]: Start processing: ChessAnalysisPipeline
+[2023-04-12 20:10:44] INFO root fetch - main [MainThread]: End processing [DyaGram]: success
+[2023-04-12 20:10:44] INFO root fetch - processPackages [ChessAnalysisPipeline]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 20:10:44] INFO root fetch - processPackages [katalytic-files]: Start processing: picovoicedemo
+[2023-04-12 20:10:44] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-12 20:10:44] INFO root fetch - processPackages [picovoicedemo]: New version: [2.2.0] Old Version: [2.1.5]
+[2023-04-12 20:10:44] INFO root fetch - processPackages [ChessAnalysisPipeline]: Downloading https://files.pythonhosted.org/packages/38/1f/6cc7ac6b522014dba7fad0bbc1f366d5b976a17e56c47aeffd821f13c72c/ChessAnalysisPipeline-0.0.5.tar.gz
+[2023-04-12 20:10:44] INFO root fetch - processPackages [clarifai]: Start processing: tts-arranger
+[2023-04-12 20:10:44] INFO root fetch - main [MainThread]: End processing [clarifai]: success
+[2023-04-12 20:10:44] INFO root fetch - processPackages [picovoicedemo]: Downloading https://files.pythonhosted.org/packages/33/6e/022e244d182be3d5718c3552cfefdba2783a9a4d1d11fe42fe66ec4bf701/picovoicedemo-2.1.5.tar.gz
+[2023-04-12 20:10:44] INFO root fetch - processPackages [tts-arranger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:10:44] INFO root fetch - processPackages [ChessAnalysisPipeline]: executing diffoscope
+[2023-04-12 20:10:44] INFO root fetch - processPackages [ChessAnalysisPipeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChessAnalysisPipeline-0.0.4.tar.gz tmp/ChessAnalysisPipeline-0.0.5.tar.gz --markdown 20230412/C/ChessAnalysisPipeline/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 20:10:44] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/04/5b/0216ca89484874dcf02d4c332a06c7144198017531bbf98b916cc20c6b7a/tts_arranger-0.0.9.tar.gz
+[2023-04-12 20:10:44] INFO root fetch - processPackages [picovoicedemo]: Downloading https://files.pythonhosted.org/packages/f8/e8/88a8d5a2b9e2b53f7a19b861cb002fc079f45354abba9006ec83b080b24d/picovoicedemo-2.2.0.tar.gz
+[2023-04-12 20:10:44] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-12 20:10:44] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.0.8.tar.gz tmp/tts_arranger-0.0.9.tar.gz --markdown 20230412/t/tts-arranger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:10:44] INFO root fetch - processPackages [picovoicedemo]: executing diffoscope
+[2023-04-12 20:10:44] INFO root fetch - processPackages [picovoicedemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picovoicedemo-2.1.5.tar.gz tmp/picovoicedemo-2.2.0.tar.gz --markdown 20230412/p/picovoicedemo/2.1.5-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:10:45] INFO root fetch - processPackages [google-cloud-spanner]: Start processing: orderbookzpy
+[2023-04-12 20:10:45] INFO root fetch - main [MainThread]: End processing [google-cloud-spanner]: success
+[2023-04-12 20:10:45] WARNING root fetch - processPackages [orderbookzpy]: Skipping, unable to determine old version
+[2023-04-12 20:10:45] INFO root fetch - processPackages [orderbookzpy]: Start processing: netsuite-python
+[2023-04-12 20:10:45] INFO root fetch - main [MainThread]: End processing [orderbookzpy] error
+[2023-04-12 20:10:45] INFO root fetch - processPackages [netsuite-python]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-04-12 20:10:45] INFO root fetch - processPackages [netsuite-python]: Downloading https://files.pythonhosted.org/packages/9d/9d/2af056b19afe5bc70295d1ab4644840e21ab04b208849fe2283e22f86ba2/netsuite_python-1.3.2.tar.gz
+[2023-04-12 20:10:45] INFO root fetch - processPackages [langchain]: Start processing: macrometa-target-collection
+[2023-04-12 20:10:45] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-04-12 20:10:45] INFO root fetch - processPackages [netsuite-python]: executing diffoscope
+[2023-04-12 20:10:45] INFO root fetch - processPackages [netsuite-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netsuite_python-1.3.1.tar.gz tmp/netsuite_python-1.3.2.tar.gz --markdown 20230412/n/netsuite-python/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-04-12 20:10:45] INFO root fetch - processPackages [macrometa-target-collection]: New version: [0.0.53] Old Version: [0.0.52]
+[2023-04-12 20:10:45] INFO root fetch - processPackages [picovoicedemo]: Start processing: DyaGram
+[2023-04-12 20:10:45] INFO root fetch - main [MainThread]: End processing [picovoicedemo]: success
+[2023-04-12 20:10:45] INFO root fetch - processPackages [macrometa-target-collection]: Downloading https://files.pythonhosted.org/packages/cd/7b/494ca00bf2664cc52e7cd83891a624fad55dd1298e48b60deb5ebd4a0ba7/macrometa-target-collection-0.0.53.tar.gz
+[2023-04-12 20:10:45] INFO root fetch - processPackages [DyaGram]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 20:10:46] INFO root fetch - processPackages [DyaGram]: executing diffoscope
+[2023-04-12 20:10:46] INFO root fetch - processPackages [DyaGram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DyaGram-0.0.98.tar.gz tmp/DyaGram-0.0.99.tar.gz --markdown 20230412/D/DyaGram/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 20:10:46] INFO root fetch - processPackages [macrometa-target-collection]: executing diffoscope
+[2023-04-12 20:10:46] INFO root fetch - processPackages [macrometa-target-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-collection-0.0.52.tar.gz tmp/macrometa-target-collection-0.0.53.tar.gz --markdown 20230412/m/macrometa-target-collection/0.0.52-0.0.53/diff.md --exclude *.pyd
+[2023-04-12 20:10:46] INFO root fetch - main [MainThread]: End processing [netsuite-python]: success
+[2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [ChessAnalysisPipeline]: success
+[2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [DyaGram]: success
+[2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [macrometa-target-collection]: success
+[2023-04-12 20:10:47] INFO root fetch - main [MainThread]: End processing [tts-arranger]: success
+[2023-04-12 20:10:47] INFO root fetch - main [MainThread]: Store serial: [17680394]
