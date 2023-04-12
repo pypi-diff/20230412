@@ -17235,3 +17235,135 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:46:47] INFO root fetch - main [MainThread]: End processing [arena-py]: success
 [2023-04-12 16:46:47] INFO root fetch - main [MainThread]: End processing [mikro]: success
 [2023-04-12 16:46:47] INFO root fetch - main [MainThread]: Store serial: [17677628]
+[2023-04-12 16:51:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677628]
+[2023-04-12 16:51:55] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-12 16:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywencai
+[2023-04-12 16:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: darwin-py
+[2023-04-12 16:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anylabeling
+[2023-04-12 16:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capellambse
+[2023-04-12 16:51:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elementMass
+[2023-04-12 16:51:55] INFO root fetch - processPackages [anylabeling]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 16:51:55] INFO root fetch - processPackages [pywencai]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-12 16:51:55] INFO root fetch - processPackages [elementMass]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-12 16:51:55] INFO root fetch - processPackages [darwin-py]: New version: [0.9.0] Old Version: [0.8.9]
+[2023-04-12 16:51:55] INFO root fetch - processPackages [capellambse]: New version: [0.5.9.dev5] Old Version: [0.5.9]
+[2023-04-12 16:51:55] INFO root fetch - processPackages [pywencai]: Downloading https://files.pythonhosted.org/packages/d9/5a/98e15c2c43690adf22a87d2572f9c8714c58ff16814308c6886708a8e362/pywencai-0.5.1.tar.gz
+[2023-04-12 16:51:55] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/42/74/d4df30d941a3e7b755630a4befa1d704008fcc5af702d2ea23730f530849/anylabeling-0.1.1.tar.gz
+[2023-04-12 16:51:55] INFO root fetch - processPackages [capellambse]: Downloading https://files.pythonhosted.org/packages/0a/bb/e7974d92c6a3d93dbf30730a6d9302f37f52093b4985246d97e22939147d/capellambse-0.5.9.tar.gz
+[2023-04-12 16:51:55] INFO root fetch - processPackages [darwin-py]: Downloading https://files.pythonhosted.org/packages/93/f6/a0986edeb7fdef1e834f8d1de3051e64d7a11b558e66dd6f541d41841c09/darwin_py-0.8.9.tar.gz
+[2023-04-12 16:51:55] INFO root fetch - processPackages [elementMass]: Downloading https://files.pythonhosted.org/packages/42/b3/251140c1f7343206f32992e28aea32f15f684372ec957def2107bb8127fb/elementMass-1.0.2.tar.gz
+[2023-04-12 16:51:56] INFO root fetch - processPackages [pywencai]: Downloading https://files.pythonhosted.org/packages/b9/dc/199dc31333c6a6e7d86f8438297fa90a3bbdd7dd9ebab2de8c4e8e604fad/pywencai-0.5.2.tar.gz
+[2023-04-12 16:51:56] INFO root fetch - processPackages [elementMass]: executing diffoscope
+[2023-04-12 16:51:56] INFO root fetch - processPackages [elementMass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elementMass-1.0.1.tar.gz tmp/elementMass-1.0.2.tar.gz --markdown 20230412/e/elementMass/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 16:51:56] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 16:51:56] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.1.0.tar.gz tmp/anylabeling-0.1.1.tar.gz --markdown 20230412/a/anylabeling/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 16:51:56] INFO root fetch - processPackages [pywencai]: executing diffoscope
+[2023-04-12 16:51:56] INFO root fetch - processPackages [pywencai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywencai-0.5.1.tar.gz tmp/pywencai-0.5.2.tar.gz --markdown 20230412/p/pywencai/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-12 16:51:56] INFO root fetch - processPackages [darwin-py]: Downloading https://files.pythonhosted.org/packages/c5/56/e34f4f67858e6b507fb799ab789e82144a84a51233dfaaea764b8c51ad5d/darwin_py-0.9.0.tar.gz
+[2023-04-12 16:51:56] INFO root fetch - processPackages [darwin-py]: executing diffoscope
+[2023-04-12 16:51:56] INFO root fetch - processPackages [darwin-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/darwin_py-0.8.9.tar.gz tmp/darwin_py-0.9.0.tar.gz --markdown 20230412/d/darwin-py/0.8.9-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 16:51:57] INFO root fetch - processPackages [pywencai]: Start processing: arkitekt
+[2023-04-12 16:51:57] INFO root fetch - main [MainThread]: End processing [pywencai]: success
+[2023-04-12 16:51:57] INFO root fetch - processPackages [arkitekt]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 16:51:57] INFO root fetch - processPackages [elementMass]: Start processing: zenutils
+[2023-04-12 16:51:57] INFO root fetch - main [MainThread]: End processing [elementMass]: success
+[2023-04-12 16:51:57] INFO root fetch - processPackages [zenutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 16:51:57] INFO root fetch - processPackages [zenutils]: executing diffoscope
+[2023-04-12 16:51:57] INFO root fetch - processPackages [zenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenutils-0.3.8.tar.gz tmp/zenutils-0.3.9.tar.gz --markdown 20230412/z/zenutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 16:51:57] INFO root fetch - processPackages [arkitekt]: executing diffoscope
+[2023-04-12 16:51:57] INFO root fetch - processPackages [arkitekt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkitekt-0.4.8.tar.gz tmp/arkitekt-0.4.9.tar.gz --markdown 20230412/a/arkitekt/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 16:51:58] INFO root fetch - processPackages [darwin-py]: Start processing: mediacatch-s2t
+[2023-04-12 16:51:58] INFO root fetch - main [MainThread]: End processing [darwin-py]: success
+[2023-04-12 16:51:58] INFO root fetch - processPackages [mediacatch-s2t]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 16:51:58] INFO root fetch - processPackages [mediacatch-s2t]: Downloading https://files.pythonhosted.org/packages/be/f0/f76d86363cbd8ea9b462d84c4acd2ae8c720b83adef99f5b159df16884a0/mediacatch-s2t-0.0.2.tar.gz
+[2023-04-12 16:51:58] INFO root fetch - processPackages [capellambse]: Downloading https://files.pythonhosted.org/packages/31/3c/3a68e2e4cc3165b37471f5302bc500647962d3db54edea8081d0ced76387/capellambse-0.5.9.dev5.tar.gz
+[2023-04-12 16:51:59] INFO root fetch - processPackages [mediacatch-s2t]: Downloading https://files.pythonhosted.org/packages/2f/ec/fa5a5d2c04952737e583cc78a52e8ba723ed24108a32461eb49480d70de1/mediacatch-s2t-0.0.4.tar.gz
+[2023-04-12 16:51:59] INFO root fetch - processPackages [zenutils]: Start processing: Datev-Splitter
+[2023-04-12 16:51:59] INFO root fetch - main [MainThread]: End processing [zenutils]: success
+[2023-04-12 16:51:59] INFO root fetch - processPackages [Datev-Splitter]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-12 16:51:59] INFO root fetch - processPackages [arkitekt]: Start processing: adapt.py
+[2023-04-12 16:51:59] INFO root fetch - main [MainThread]: End processing [arkitekt]: success
+[2023-04-12 16:51:59] WARNING root fetch - processPackages [adapt.py]: Skipping, unable to determine old version
+[2023-04-12 16:51:59] INFO root fetch - processPackages [adapt.py]: Start processing: pyngrok
+[2023-04-12 16:51:59] INFO root fetch - main [MainThread]: End processing [adapt.py] error
+[2023-04-12 16:51:59] INFO root fetch - processPackages [mediacatch-s2t]: executing diffoscope
+[2023-04-12 16:51:59] INFO root fetch - processPackages [mediacatch-s2t]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediacatch-s2t-0.0.2.tar.gz tmp/mediacatch-s2t-0.0.4.tar.gz --markdown 20230412/m/mediacatch-s2t/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 16:51:59] INFO root fetch - processPackages [pyngrok]: New version: [6.0.0] Old Version: [5.2.3]
+[2023-04-12 16:51:59] INFO root fetch - processPackages [Datev-Splitter]: Downloading https://files.pythonhosted.org/packages/b7/68/c557d518461ac7130cbb15e8abb9019749b72599e6ee5b1f8e2ec69ee397/Datev-Splitter-0.4.0.tar.gz
+[2023-04-12 16:51:59] INFO root fetch - processPackages [pyngrok]: Downloading https://files.pythonhosted.org/packages/3d/07/0e036da12dc2c72a3c475518f505cf7e78f076369c88cd891b1d18ab4a5a/pyngrok-6.0.0.tar.gz
+[2023-04-12 16:51:59] INFO root fetch - processPackages [Datev-Splitter]: Downloading https://files.pythonhosted.org/packages/c9/a5/69d6c1b9a9d94c9385e87cdf7f67354040a5e936b92668edb0e1f288664a/Datev-Splitter-0.5.0.tar.gz
+[2023-04-12 16:51:59] INFO root fetch - processPackages [pyngrok]: executing diffoscope
+[2023-04-12 16:51:59] INFO root fetch - processPackages [pyngrok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyngrok-5.2.3.tar.gz tmp/pyngrok-6.0.0.tar.gz --markdown 20230412/p/pyngrok/5.2.3-6.0.0/diff.md --exclude *.pyd
+[2023-04-12 16:51:59] INFO root fetch - processPackages [Datev-Splitter]: executing diffoscope
+[2023-04-12 16:51:59] INFO root fetch - processPackages [Datev-Splitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Datev-Splitter-0.4.0.tar.gz tmp/Datev-Splitter-0.5.0.tar.gz --markdown 20230412/D/Datev-Splitter/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 16:52:00] INFO root fetch - processPackages [mediacatch-s2t]: Start processing: dbm-database-service
+[2023-04-12 16:52:00] INFO root fetch - main [MainThread]: End processing [mediacatch-s2t]: success
+[2023-04-12 16:52:00] WARNING root fetch - processPackages [dbm-database-service]: Skipping, unable to determine old version
+[2023-04-12 16:52:00] INFO root fetch - processPackages [dbm-database-service]: Start processing: django-forestadmin
+[2023-04-12 16:52:00] INFO root fetch - main [MainThread]: End processing [dbm-database-service] error
+[2023-04-12 16:52:00] INFO root fetch - processPackages [django-forestadmin]: New version: [1.4.9] Old Version: [1.4.8]
+[2023-04-12 16:52:00] INFO root fetch - processPackages [capellambse]: executing diffoscope
+[2023-04-12 16:52:00] INFO root fetch - processPackages [capellambse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capellambse-0.5.9.tar.gz tmp/capellambse-0.5.9.dev5.tar.gz --markdown 20230412/c/capellambse/0.5.9-0.5.9.dev5/diff.md --exclude *.pyd
+[2023-04-12 16:52:00] INFO root fetch - processPackages [django-forestadmin]: executing diffoscope
+[2023-04-12 16:52:00] INFO root fetch - processPackages [django-forestadmin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-forestadmin-1.4.8.tar.gz tmp/django-forestadmin-1.4.9.tar.gz --markdown 20230412/d/django-forestadmin/1.4.8-1.4.9/diff.md --exclude *.pyd
+[2023-04-12 16:52:00] INFO root fetch - processPackages [Datev-Splitter]: Start processing: hardbrake
+[2023-04-12 16:52:00] INFO root fetch - main [MainThread]: End processing [Datev-Splitter]: success
+[2023-04-12 16:52:01] INFO root fetch - processPackages [hardbrake]: New version: [0.1.0] Old Version: [0.0.9]
+[2023-04-12 16:52:01] INFO root fetch - processPackages [anylabeling]: Start processing: kinms-fitter
+[2023-04-12 16:52:01] INFO root fetch - main [MainThread]: End processing [anylabeling]: success
+[2023-04-12 16:52:01] INFO root fetch - processPackages [kinms-fitter]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-04-12 16:52:01] INFO root fetch - processPackages [hardbrake]: Downloading https://files.pythonhosted.org/packages/03/dd/3a4c3d978e067d88861f837a7cf5230442b25afedf558f9e146649cbdd23/hardbrake-0.1.0.tar.gz
+[2023-04-12 16:52:01] INFO root fetch - processPackages [kinms-fitter]: Downloading https://files.pythonhosted.org/packages/f4/1d/b3b581a4c330c6c31ca46204585c027603e27dc1786b2266c5c9190a24a5/kinms_fitter-0.4.7.tar.gz
+[2023-04-12 16:52:01] INFO root fetch - processPackages [hardbrake]: executing diffoscope
+[2023-04-12 16:52:01] INFO root fetch - processPackages [hardbrake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hardbrake-0.0.9.tar.gz tmp/hardbrake-0.1.0.tar.gz --markdown 20230412/h/hardbrake/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 16:52:01] INFO root fetch - processPackages [kinms-fitter]: Downloading https://files.pythonhosted.org/packages/77/80/2a6d73c7650a72b2e4e2d7c7445e5528aa6b0bc0e8c841bbb8630179f5ac/kinms_fitter-0.4.8.tar.gz
+[2023-04-12 16:52:01] INFO root fetch - processPackages [kinms-fitter]: executing diffoscope
+[2023-04-12 16:52:01] INFO root fetch - processPackages [kinms-fitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kinms_fitter-0.4.7.tar.gz tmp/kinms_fitter-0.4.8.tar.gz --markdown 20230412/k/kinms-fitter/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-04-12 16:52:02] INFO root fetch - processPackages [hardbrake]: Start processing: mlserver-huggingface
+[2023-04-12 16:52:02] INFO root fetch - main [MainThread]: End processing [hardbrake]: success
+[2023-04-12 16:52:02] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:02] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-12 16:52:02] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc1.tar.gz tmp/mlserver-huggingface-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-huggingface/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:02] INFO root fetch - processPackages [kinms-fitter]: Start processing: mlserver-xgboost
+[2023-04-12 16:52:02] INFO root fetch - main [MainThread]: End processing [kinms-fitter]: success
+[2023-04-12 16:52:02] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:03] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-12 16:52:03] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc1.tar.gz tmp/mlserver-xgboost-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-xgboost/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:03] INFO root fetch - processPackages [django-forestadmin]: Start processing: macrometa-target-collection
+[2023-04-12 16:52:03] INFO root fetch - main [MainThread]: End processing [django-forestadmin]: success
+[2023-04-12 16:52:03] INFO root fetch - processPackages [macrometa-target-collection]: New version: [0.0.48] Old Version: [0.0.47]
+[2023-04-12 16:52:03] INFO root fetch - processPackages [macrometa-target-collection]: Downloading https://files.pythonhosted.org/packages/c5/a9/85b1698bfd0d440660dadf80998871d0babe6394f61aee3d7fe8850c243f/macrometa-target-collection-0.0.47.tar.gz
+[2023-04-12 16:52:03] INFO root fetch - processPackages [macrometa-target-collection]: Downloading https://files.pythonhosted.org/packages/00/ed/cb0a55ba91f4955cde25f2673743ce94d854472507ee29d6bc310cb705e0/macrometa-target-collection-0.0.48.tar.gz
+[2023-04-12 16:52:03] INFO root fetch - processPackages [macrometa-target-collection]: executing diffoscope
+[2023-04-12 16:52:03] INFO root fetch - processPackages [macrometa-target-collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-target-collection-0.0.47.tar.gz tmp/macrometa-target-collection-0.0.48.tar.gz --markdown 20230412/m/macrometa-target-collection/0.0.47-0.0.48/diff.md --exclude *.pyd
+[2023-04-12 16:52:03] INFO root fetch - processPackages [mlserver-huggingface]: Start processing: mlserver-sklearn
+[2023-04-12 16:52:03] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-12 16:52:03] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: mlserver-lightgbm
+[2023-04-12 16:52:04] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc1.tar.gz tmp/mlserver-sklearn-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-sklearn/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-12 16:52:04] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc1.tar.gz tmp/mlserver-lightgbm-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-lightgbm/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: mlserver-alibi-explain
+[2023-04-12 16:52:05] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: mlserver-alibi-detect
+[2023-04-12 16:52:05] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:05] INFO root fetch - processPackages [macrometa-target-collection]: Start processing: mlserver-mllib
+[2023-04-12 16:52:05] INFO root fetch - main [MainThread]: End processing [macrometa-target-collection]: success
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc1.tar.gz tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-explain/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc1.tar.gz tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-detect/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-12 16:52:05] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:52:06] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-12 16:52:06] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-12 16:52:06] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-12 16:52:08] INFO root fetch - main [MainThread]: End processing [pyngrok]: success
+[2023-04-12 16:52:12] INFO root fetch - main [MainThread]: End processing [capellambse]: success
+[2023-04-12 16:52:12] INFO root fetch - main [MainThread]: Store serial: [17677706]
