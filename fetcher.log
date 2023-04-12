@@ -6272,3 +6272,14 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 05:37:55] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:38:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:38:09] INFO root fetch - main [MainThread]: Store serial: [17671021]
+[2023-04-12 05:43:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671021]
+[2023-04-12 05:43:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-04-12 05:43:21] INFO root fetch - processPackages [PyPl8]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-12 05:43:21] INFO root fetch - processPackages [p-template-generator]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 05:43:21] INFO root fetch - processPackages [p-template-generator]: executing diffoscope
+[2023-04-12 05:43:21] INFO root fetch - processPackages [p-template-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-generator-0.1.8.tar.gz tmp/p-template-generator-0.1.9.tar.gz --markdown 20230412/p/p-template-generator/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 05:43:21] INFO root fetch - processPackages [PyPl8]: Downloading https://files.pythonhosted.org/packages/f9/fa/f92308d6307ae31b091ec8b59d46f924dd2a054f052cac09f8b9f9ad0fb6/PyPl8-1.0.7.tar.gz
+[2023-04-12 05:43:21] WARNING root fetch - processPackages [PyPl8]: Skipping package: exceeds size limit 12334433>=10485760
+[2023-04-12 05:43:21] INFO root fetch - main [MainThread]: error
+[2023-04-12 05:43:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:43:22] INFO root fetch - main [MainThread]: Store serial: [17671027]
