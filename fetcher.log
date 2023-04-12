@@ -5899,3 +5899,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 05:27:10] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:27:10] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:27:10] INFO root fetch - main [MainThread]: Store serial: [17670827]
+[2023-04-12 05:32:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670827]
+[2023-04-12 05:32:17] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 05:32:17] WARNING root fetch - processPackages [breathXplorer]: Skipping, unable to determine old version
+[2023-04-12 05:32:17] INFO root fetch - main [MainThread]: error
+[2023-04-12 05:32:17] INFO root fetch - processPackages [odoo-addon-sale-commission]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-12 05:32:17] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.2a0] Old Version: [0.1.1]
+[2023-04-12 05:32:17] INFO root fetch - processPackages [textfile]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 05:32:17] INFO root fetch - processPackages [FastCNN2]: New version: [1.23.412.1132] Old Version: [1.22.725.1512]
+[2023-04-12 05:32:17] INFO root fetch - processPackages [servey]: New version: [2.7.0] Old Version: [2.6.3]
+[2023-04-12 05:32:18] INFO root fetch - processPackages [odoo-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/c7/cf/259f5536de03074185cb4c15231ee70c9b65951e3cff80dd035d7eeb5048/odoo_addon_sale_commission-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-12 05:32:18] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/1d/5d/2646ca27b0dfe7ecd1d8be02142e24ee63cb9fc9038a17dc71a5520df3f4/FastCNN2-1.22.725.1512.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [textfile]: Downloading https://files.pythonhosted.org/packages/54/2b/1da56d9e87d730fd0470e9db4fe6b923a943468334ae00d263a6c7cdd373/textfile-0.1.4.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/a0/9f/fa54771d331677cf87f8283eee6186ab79b333215b4feeff388a78e96b59/servey-2.6.3.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/4e/a1/d81de48bba03214b5aed0912ae302a78799f874529c15ee0be12b85ad5ff/mango_pycore-0.1.2a0.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/a5/4c/9090924bf3e8b250febfc5a9735c5de89952fd29e15887132d91f2ca0e72/FastCNN2-1.23.412.1132.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 05:32:18] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.1.tar.gz tmp/mango_pycore-0.1.2a0.tar.gz --markdown 20230412/m/mango-pycore/0.1.1-0.1.2a0/diff.md --exclude *.pyd
+[2023-04-12 05:32:18] INFO root fetch - processPackages [textfile]: Downloading https://files.pythonhosted.org/packages/0b/96/5aa5ba5647a018cd44965f601101c3e0771122f3b2f07185411b64e41149/textfile-0.1.5.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/fb/6f/5c696cb96c5a790688866a8f5c640de97b4835a9f165b01a7eb5759b3f57/servey-2.7.0.tar.gz
+[2023-04-12 05:32:18] INFO root fetch - processPackages [FastCNN2]: executing diffoscope
+[2023-04-12 05:32:18] INFO root fetch - processPackages [FastCNN2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastCNN2-1.22.725.1512.tar.gz tmp/FastCNN2-1.23.412.1132.tar.gz --markdown 20230412/F/FastCNN2/1.22.725.1512-1.23.412.1132/diff.md --exclude *.pyd
+[2023-04-12 05:32:18] INFO root fetch - processPackages [odoo-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/cf/c9/3a36bd21ec186b2d7a1ab5fc95e6a414141300e7d90701249acba0e92687/odoo_addon_sale_commission-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-12 05:32:18] INFO root fetch - processPackages [textfile]: executing diffoscope
+[2023-04-12 05:32:18] INFO root fetch - processPackages [textfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textfile-0.1.4.tar.gz tmp/textfile-0.1.5.tar.gz --markdown 20230412/t/textfile/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 05:32:18] INFO root fetch - processPackages [servey]: executing diffoscope
+[2023-04-12 05:32:18] INFO root fetch - processPackages [servey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servey-2.6.3.tar.gz tmp/servey-2.7.0.tar.gz --markdown 20230412/s/servey/2.6.3-2.7.0/diff.md --exclude *.pyd
+[2023-04-12 05:32:18] INFO root fetch - processPackages [odoo-addon-sale-commission]: executing diffoscope
+[2023-04-12 05:32:18] INFO root fetch - processPackages [odoo-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_commission-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_sale_commission-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-sale-commission/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-12 05:32:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:19] WARNING root fetch - processPackages [example-package-ca-lazerdwarf]: Skipping, unable to determine old version
+[2023-04-12 05:32:19] INFO root fetch - main [MainThread]: error
+[2023-04-12 05:32:19] INFO root fetch - processPackages [lambda-invoke]: New version: [0.4] Old Version: [0.3]
+[2023-04-12 05:32:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:20] INFO root fetch - processPackages [lambda-invoke]: Downloading https://files.pythonhosted.org/packages/e2/ee/7424c35c2eeba1999ba38bfab14c8557b237a848a7ba204879bca118dc08/lambda-invoke-0.3.tar.gz
+[2023-04-12 05:32:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:20] INFO root fetch - processPackages [lambda-invoke]: Downloading https://files.pythonhosted.org/packages/56/61/fdc6887999e4d1f2d3851037630f74a2af5c87d90db76b69c93fde53eb3d/lambda-invoke-0.4.tar.gz
+[2023-04-12 05:32:20] INFO root fetch - processPackages [lambda-invoke]: executing diffoscope
+[2023-04-12 05:32:20] INFO root fetch - processPackages [lambda-invoke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambda-invoke-0.3.tar.gz tmp/lambda-invoke-0.4.tar.gz --markdown 20230412/l/lambda-invoke/0.3-0.4/diff.md --exclude *.pyd
+[2023-04-12 05:32:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:32:21] INFO root fetch - main [MainThread]: Store serial: [17670854]
