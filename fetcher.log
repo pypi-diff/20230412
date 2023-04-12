@@ -11786,3 +11786,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 12:21:36] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:21:36] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:21:36] INFO root fetch - main [MainThread]: Store serial: [17674539]
+[2023-04-12 12:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674539]
+[2023-04-12 12:26:44] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 12:26:44] INFO root fetch - processPackages [mage-ai]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-12 12:26:44] INFO root fetch - processPackages [gt-pdf-extraction]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2023-04-12 12:26:44] INFO root fetch - processPackages [PyroFork-dev]: New version: [2.1.5.dev202304121025] Old Version: [2.1.4.dev202304101525]
+[2023-04-12 12:26:44] INFO root fetch - processPackages [chaostoolkit-opentracing]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 12:26:44] INFO root fetch - processPackages [stewchef]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 12:26:44] INFO root fetch - processPackages [mage-ai]: executing diffoscope
+[2023-04-12 12:26:44] INFO root fetch - processPackages [mage-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mage-ai-0.8.8.tar.gz tmp/mage-ai-0.8.9.tar.gz --markdown 20230412/m/mage-ai/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-12 12:26:44] INFO root fetch - processPackages [gt-pdf-extraction]: Downloading https://files.pythonhosted.org/packages/64/d7/8858a97d0fbbdff6129fece63011830bf71acc81d6061d04d10af1b99536/gt-pdf-extraction-0.0.1.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [chaostoolkit-opentracing]: Downloading https://files.pythonhosted.org/packages/33/d6/c2b8144837ce6c4fd822c840743033ed717b680918a880846731de6dfb23/chaostoolkit-opentracing-0.9.0.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [stewchef]: Downloading https://files.pythonhosted.org/packages/17/bc/15163a9e4eb076fc8080157b31991b296641cf4e11c93de883c8799738f0/stewchef-0.1.3.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [PyroFork-dev]: Downloading https://files.pythonhosted.org/packages/47/8b/d86379aadd4cd9b48cac3b8bb1ba3328acacbb9f40f32fa491500c8b3850/PyroFork-dev-2.1.5.dev202304121025.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [stewchef]: executing diffoscope
+[2023-04-12 12:26:44] INFO root fetch - processPackages [stewchef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stewchef-0.1.2.tar.gz tmp/stewchef-0.1.3.tar.gz --markdown 20230412/s/stewchef/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 12:26:44] INFO root fetch - processPackages [PyroFork-dev]: executing diffoscope
+[2023-04-12 12:26:44] INFO root fetch - processPackages [PyroFork-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-dev-2.1.4.dev202304101525.tar.gz tmp/PyroFork-dev-2.1.5.dev202304121025.tar.gz --markdown 20230412/P/PyroFork-dev/2.1.4.dev202304101525-2.1.5.dev202304121025/diff.md --exclude *.pyd
+[2023-04-12 12:26:44] INFO root fetch - processPackages [chaostoolkit-opentracing]: Downloading https://files.pythonhosted.org/packages/48/77/0bb381edffd144195a4dcefbb9d1ba57f026bb5657990b70294c4c97e917/chaostoolkit-opentracing-0.9.1.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [gt-pdf-extraction]: Downloading https://files.pythonhosted.org/packages/43/45/c9c045d258d52acf4db8f897fef4643a8beb3761d95c5222767bba496f7c/gt-pdf-extraction-0.0.1.1.tar.gz
+[2023-04-12 12:26:44] INFO root fetch - processPackages [chaostoolkit-opentracing]: executing diffoscope
+[2023-04-12 12:26:44] INFO root fetch - processPackages [chaostoolkit-opentracing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaostoolkit-opentracing-0.9.0.tar.gz tmp/chaostoolkit-opentracing-0.9.1.tar.gz --markdown 20230412/c/chaostoolkit-opentracing/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 12:26:44] INFO root fetch - processPackages [gt-pdf-extraction]: executing diffoscope
+[2023-04-12 12:26:44] INFO root fetch - processPackages [gt-pdf-extraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gt-pdf-extraction-0.0.1.tar.gz tmp/gt-pdf-extraction-0.0.1.1.tar.gz --markdown 20230412/g/gt-pdf-extraction/0.0.1-0.0.1.1/diff.md --exclude *.pyd
+[2023-04-12 12:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:46] WARNING root fetch - processPackages [shopee-xr-test-pypi]: Skipping, unable to determine old version
+[2023-04-12 12:26:46] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:26:46] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 12:26:46] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/da/71/54b1272ee21ace6969501faa68b7c9819e88b4025ea07e78a9073d92243e/watchtower_browser_testing-0.2.2.tar.gz
+[2023-04-12 12:26:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:46] INFO root fetch - processPackages [atlasofsmoothspaces]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-12 12:26:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:46] INFO root fetch - processPackages [pydae]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 12:26:46] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 12:26:46] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.1.tar.gz tmp/watchtower_browser_testing-0.2.2.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 12:26:46] INFO root fetch - processPackages [pydae]: Downloading https://files.pythonhosted.org/packages/7d/df/18fbeeac68b8076a40737405fc9638efb381a7dae1ccdfa520fe3810b1cd/pydae-0.8.0.tar.gz
+[2023-04-12 12:26:46] INFO root fetch - processPackages [atlasofsmoothspaces]: Downloading https://files.pythonhosted.org/packages/a8/d1/41662dd00385221455fd965cef0b8e4210a3b5f333da54776f38ab035918/atlasofsmoothspaces-1.0.6.tar.gz
+[2023-04-12 12:26:46] INFO root fetch - processPackages [atlasofsmoothspaces]: executing diffoscope
+[2023-04-12 12:26:46] INFO root fetch - processPackages [atlasofsmoothspaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlasofsmoothspaces-1.0.5.tar.gz tmp/atlasofsmoothspaces-1.0.6.tar.gz --markdown 20230412/a/atlasofsmoothspaces/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-12 12:26:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:47] WARNING root fetch - processPackages [AlgoPlusCTPV6315]: Skipping, unable to determine old version
+[2023-04-12 12:26:47] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:26:47] WARNING root fetch - processPackages [AlgoPlusTORAStockV3x]: Skipping, unable to determine old version
+[2023-04-12 12:26:47] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:26:47] WARNING root fetch - processPackages [pydae]: Skipping package: exceeds size limit 76279170>=10485760
+[2023-04-12 12:26:47] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:26:47] INFO root fetch - processPackages [melodymaster]: New version: [0.0.2] Old Version: [0.0.0]
+[2023-04-12 12:26:47] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-12 12:26:48] INFO root fetch - processPackages [melodymaster]: Downloading https://files.pythonhosted.org/packages/c6/aa/f5287b1f8373eb6a919a09e6a9c0d7180b81a41e6ae88f735a90f998b868/melodymaster-0.0.0.tar.gz
+[2023-04-12 12:26:48] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/ad/ef/f2d3dcaa2d3e532259055f8fac080f26fec8435a8003b9d63ec043b0f178/nowcasting_datamodel-1.2.8.tar.gz
+[2023-04-12 12:26:48] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-12 12:26:48] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.2.7.tar.gz tmp/nowcasting_datamodel-1.2.8.tar.gz --markdown 20230412/n/nowcasting-datamodel/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-12 12:26:48] INFO root fetch - processPackages [melodymaster]: Downloading https://files.pythonhosted.org/packages/c3/0c/67f4b3c68717d366ce46c82d0a2b9b6a327e6627d22ad97f33b8449ea11e/melodymaster-0.0.2.tar.gz
+[2023-04-12 12:26:48] INFO root fetch - processPackages [melodymaster]: executing diffoscope
+[2023-04-12 12:26:48] INFO root fetch - processPackages [melodymaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melodymaster-0.0.0.tar.gz tmp/melodymaster-0.0.2.tar.gz --markdown 20230412/m/melodymaster/0.0.0-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 12:26:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:51] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:26:56] INFO root fetch - main [MainThread]: Store serial: [17674578]
