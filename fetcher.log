@@ -6635,3 +6635,49 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:24:59] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:25:00] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:25:00] INFO root fetch - main [MainThread]: Store serial: [17671219]
+[2023-04-12 06:30:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671219]
+[2023-04-12 06:30:07] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 06:30:08] INFO root fetch - processPackages [dvpOAuth]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-stock-request]: New version: [12.0.2.0.0.99.dev6] Old Version: [12.0.2.0.0.99.dev5]
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-change-management]: New version: [12.0.1.1.0.99.dev9] Old Version: [12.0.1.1.0.99.dev8]
+[2023-04-12 06:30:08] WARNING root fetch - processPackages [gpt-readme-reader]: Skipping, unable to determine old version
+[2023-04-12 06:30:08] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:30:08] INFO root fetch - processPackages [formant]: New version: [1.99.25] Old Version: [1.99.10]
+[2023-04-12 06:30:08] INFO root fetch - processPackages [slideflow]: New version: [2.0.1] Old Version: [2.0.0b1]
+[2023-04-12 06:30:08] INFO root fetch - processPackages [dvpOAuth]: Downloading https://files.pythonhosted.org/packages/7a/6c/856fd2df87862c6105a5bddd45b930823bb4beb2eb965c5264ae2126f566/dvpOAuth-0.0.8.tar.gz
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-stock-request]: Downloading https://files.pythonhosted.org/packages/a8/88/c85e21395686e86ae89e63df67e0baee0aef7cdf98d7f8b1f21f8bdf7a14/odoo12_addon_fieldservice_stock_request-12.0.2.0.0.99.dev5-py3-none-any.whl
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-change-management]: Downloading https://files.pythonhosted.org/packages/18/7a/0bd9f31f6b039b213e284126e33695e15f07e1d8e7bbc944e7070d27906f/odoo12_addon_fieldservice_change_management-12.0.1.1.0.99.dev8-py3-none-any.whl
+[2023-04-12 06:30:08] INFO root fetch - processPackages [formant]: Downloading https://files.pythonhosted.org/packages/b4/ae/48e0e0cc421f59b739a0933ff541c564d705ba0f03ab53b6ad242e88d6dd/formant-1.99.10.tar.gz
+[2023-04-12 06:30:08] INFO root fetch - processPackages [slideflow]: Downloading https://files.pythonhosted.org/packages/43/63/995d94539bfb895a1f01acc59be671449ede09cb28ff97eee2ae6658bbf2/slideflow-2.0.1-py3-none-any.whl
+[2023-04-12 06:30:08] INFO root fetch - processPackages [slideflow]: executing diffoscope
+[2023-04-12 06:30:08] INFO root fetch - processPackages [slideflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slideflow-2.0.0b1-py3-none-any.whl.zip tmp/slideflow-2.0.1-py3-none-any.whl.zip --markdown 20230412/s/slideflow/2.0.0b1-2.0.1/diff.md --exclude *.pyd
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-stock-request]: Downloading https://files.pythonhosted.org/packages/95/f7/cdfc83aec9a602c443d2d24638f3a5893ae2a536417e5072256b299da878/odoo12_addon_fieldservice_stock_request-12.0.2.0.0.99.dev6-py3-none-any.whl
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-stock-request]: executing diffoscope
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_fieldservice_stock_request-12.0.2.0.0.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_fieldservice_stock_request-12.0.2.0.0.99.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-fieldservice-stock-request/12.0.2.0.0.99.dev5-12.0.2.0.0.99.dev6/diff.md --exclude *.pyd
+[2023-04-12 06:30:08] INFO root fetch - processPackages [dvpOAuth]: Downloading https://files.pythonhosted.org/packages/4e/be/304ee8219413629af716be40d8b6b078f8ebab94ef7916ac8490b93bc2c4/dvpOAuth-0.0.9.tar.gz
+[2023-04-12 06:30:08] INFO root fetch - processPackages [formant]: Downloading https://files.pythonhosted.org/packages/0f/87/d41a560174ff1aede53afa1480b906376d1d5d3f7263147c18f90dda6c0f/formant-1.99.25.tar.gz
+[2023-04-12 06:30:08] INFO root fetch - processPackages [dvpOAuth]: executing diffoscope
+[2023-04-12 06:30:08] INFO root fetch - processPackages [dvpOAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvpOAuth-0.0.8.tar.gz tmp/dvpOAuth-0.0.9.tar.gz --markdown 20230412/d/dvpOAuth/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 06:30:08] INFO root fetch - processPackages [odoo12-addon-fieldservice-change-management]: Downloading https://files.pythonhosted.org/packages/e5/eb/86e86a4bbde1204442988842f3d585d4e3a1aeece815cc8d89aec949ea97/odoo12_addon_fieldservice_change_management-12.0.1.1.0.99.dev9-py3-none-any.whl
+[2023-04-12 06:30:08] INFO root fetch - processPackages [formant]: executing diffoscope
+[2023-04-12 06:30:08] INFO root fetch - processPackages [formant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/formant-1.99.10.tar.gz tmp/formant-1.99.25.tar.gz --markdown 20230412/f/formant/1.99.10-1.99.25/diff.md --exclude *.pyd
+[2023-04-12 06:30:09] INFO root fetch - processPackages [odoo12-addon-fieldservice-change-management]: executing diffoscope
+[2023-04-12 06:30:09] INFO root fetch - processPackages [odoo12-addon-fieldservice-change-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_fieldservice_change_management-12.0.1.1.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_fieldservice_change_management-12.0.1.1.0.99.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-fieldservice-change-management/12.0.1.1.0.99.dev8-12.0.1.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 06:30:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:09] INFO root fetch - processPackages [odoo-addon-fieldservice-project]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-04-12 06:30:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:09] WARNING root fetch - processPackages [data2vec]: Skipping, unable to determine old version
+[2023-04-12 06:30:09] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:30:09] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.2a1] Old Version: [0.1.2a0]
+[2023-04-12 06:30:10] INFO root fetch - processPackages [odoo-addon-fieldservice-project]: Downloading https://files.pythonhosted.org/packages/56/ec/faf771dd6dd6539a59cf1fdf93b06f530045590b7416d5def5d8acb7f8c2/odoo_addon_fieldservice_project-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-12 06:30:10] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 06:30:10] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.2a0.tar.gz tmp/mango_pycore-0.1.2a1.tar.gz --markdown 20230412/m/mango-pycore/0.1.2a0-0.1.2a1/diff.md --exclude *.pyd
+[2023-04-12 06:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:10] INFO root fetch - processPackages [odoo-addon-fieldservice-project]: Downloading https://files.pythonhosted.org/packages/84/52/bc63dc1138a583a620d856abcf4611daf994cb4074fc6c49785767ccae9c/odoo_addon_fieldservice_project-16.0.1.0.0.3-py3-none-any.whl
+[2023-04-12 06:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:10] INFO root fetch - processPackages [odoo-addon-fieldservice-project]: executing diffoscope
+[2023-04-12 06:30:10] INFO root fetch - processPackages [odoo-addon-fieldservice-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_project-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_project-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-fieldservice-project/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-04-12 06:30:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:30:13] INFO root fetch - main [MainThread]: Store serial: [17671244]
