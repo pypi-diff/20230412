@@ -20159,3 +20159,114 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:49:58] INFO root fetch - main [MainThread]: End processing [postleid]: success
 [2023-04-12 18:50:20] INFO root fetch - main [MainThread]: End processing [pensando-dss]: success
 [2023-04-12 18:50:20] INFO root fetch - main [MainThread]: Store serial: [17679440]
+[2023-04-12 18:55:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679440]
+[2023-04-12 18:55:27] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-12 18:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pensando-dss
+[2023-04-12 18:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postleid
+[2023-04-12 18:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dkist-processing-test
+[2023-04-12 18:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: morphqs
+[2023-04-12 18:55:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: slg-dev-ops
+[2023-04-12 18:55:27] INFO root fetch - processPackages [postleid]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-04-12 18:55:27] INFO root fetch - processPackages [morphqs]: New version: [0.1.23] Old Version: [0.1.22]
+[2023-04-12 18:55:27] INFO root fetch - processPackages [pensando-dss]: New version: [1.62.0b1] Old Version: [1.54.1]
+[2023-04-12 18:55:27] INFO root fetch - processPackages [dkist-processing-test]: New version: [1.0.9rc3] Old Version: [1.0.9rc2]
+[2023-04-12 18:55:27] INFO root fetch - processPackages [slg-dev-ops]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 18:55:27] INFO root fetch - processPackages [postleid]: executing diffoscope
+[2023-04-12 18:55:27] INFO root fetch - processPackages [postleid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postleid-0.6.4.tar.gz tmp/postleid-0.6.5.tar.gz --markdown 20230412/p/postleid/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-04-12 18:55:28] INFO root fetch - processPackages [pensando-dss]: executing diffoscope
+[2023-04-12 18:55:28] INFO root fetch - processPackages [pensando-dss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pensando_dss-1.54.1.tar.gz tmp/pensando_dss-1.62.0b1.tar.gz --markdown 20230412/p/pensando-dss/1.54.1-1.62.0b1/diff.md --exclude *.pyd
+[2023-04-12 18:55:28] INFO root fetch - processPackages [slg-dev-ops]: executing diffoscope
+[2023-04-12 18:55:28] INFO root fetch - processPackages [slg-dev-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slg-dev-ops-1.8.0.tar.gz tmp/slg-dev-ops-1.9.0.tar.gz --markdown 20230412/s/slg-dev-ops/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 18:55:28] INFO root fetch - processPackages [morphqs]: Downloading https://files.pythonhosted.org/packages/64/89/71046ade09f58658820ffa34710373472c57f0e031bf4303db4069a6ce4b/morphqs-0.1.23.tar.gz
+[2023-04-12 18:55:28] INFO root fetch - processPackages [dkist-processing-test]: executing diffoscope
+[2023-04-12 18:55:28] INFO root fetch - processPackages [dkist-processing-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-test-1.0.9rc2.tar.gz tmp/dkist-processing-test-1.0.9rc3.tar.gz --markdown 20230412/d/dkist-processing-test/1.0.9rc2-1.0.9rc3/diff.md --exclude *.pyd
+[2023-04-12 18:55:28] INFO root fetch - processPackages [morphqs]: executing diffoscope
+[2023-04-12 18:55:28] INFO root fetch - processPackages [morphqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphqs-0.1.22.tar.gz tmp/morphqs-0.1.23.tar.gz --markdown 20230412/m/morphqs/0.1.22-0.1.23/diff.md --exclude *.pyd
+[2023-04-12 18:55:29] INFO root fetch - processPackages [postleid]: Start processing: arraymap
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [postleid]: success
+[2023-04-12 18:55:29] INFO root fetch - processPackages [arraymap]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 18:55:29] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/03/7f/a5861a541ae601dd955266318fbfc8405869cea1ed851fffc47ed4c4481d/arraymap-0.1.0.tar.gz
+[2023-04-12 18:55:29] INFO root fetch - processPackages [dkist-processing-test]: Start processing: obeenya
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [dkist-processing-test]: success
+[2023-04-12 18:55:29] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 18:55:29] INFO root fetch - processPackages [obeenya]: Start processing: ansible
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 18:55:29] INFO root fetch - processPackages [ansible]: New version: [8.0.0a1] Old Version: [7.4.0]
+[2023-04-12 18:55:29] INFO root fetch - processPackages [slg-dev-ops]: Start processing: MLapp1
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [slg-dev-ops]: success
+[2023-04-12 18:55:29] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:55:29] INFO root fetch - processPackages [arraymap]: Downloading https://files.pythonhosted.org/packages/22/14/d359fe6fb6ed374a7b57a20c7ce49043d6418e6d8b711aceec7457741d50/arraymap-0.1.1.tar.gz
+[2023-04-12 18:55:29] INFO root fetch - processPackages [ansible]: Downloading https://files.pythonhosted.org/packages/45/4b/2087a0fe8265828df067e57d7d156426cdc8f7cd94ad3178c6510d81e2c0/ansible-7.4.0.tar.gz
+[2023-04-12 18:55:29] INFO root fetch - processPackages [morphqs]: Start processing: manuscriptmonitor
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [morphqs]: success
+[2023-04-12 18:55:29] INFO root fetch - processPackages [manuscriptmonitor]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 18:55:29] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:55:29] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:55:29] WARNING root fetch - processPackages [ansible]: Skipping package: exceeds size limit 37352820>=10485760
+[2023-04-12 18:55:29] INFO root fetch - processPackages [ansible]: Start processing: SuPyMode
+[2023-04-12 18:55:29] INFO root fetch - main [MainThread]: End processing [ansible] error
+[2023-04-12 18:55:29] INFO root fetch - processPackages [SuPyMode]: New version: [4.1.8] Old Version: [4.1.7]
+[2023-04-12 18:55:29] INFO root fetch - processPackages [arraymap]: executing diffoscope
+[2023-04-12 18:55:29] INFO root fetch - processPackages [arraymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arraymap-0.1.0.tar.gz tmp/arraymap-0.1.1.tar.gz --markdown 20230412/a/arraymap/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:55:29] INFO root fetch - processPackages [manuscriptmonitor]: Downloading https://files.pythonhosted.org/packages/2f/a5/32cd13ccbaca2da28461ae4bbca5e74753511c87d150e2a399f06c212dfb/ManuscriptMonitor-0.4.8.tar.gz
+[2023-04-12 18:55:29] INFO root fetch - processPackages [SuPyMode]: Downloading https://files.pythonhosted.org/packages/03/4d/eec8a5fd3d3d28cda0ee8a04beb9a485a0a4c05ca56ed71492125b6475f1/SuPyMode-4.1.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 18:55:30] INFO root fetch - processPackages [manuscriptmonitor]: Downloading https://files.pythonhosted.org/packages/9f/79/d966b683ac362d5ede60b175de2622380c69b71777839daff1903866b7cf/ManuscriptMonitor-0.4.9.tar.gz
+[2023-04-12 18:55:30] INFO root fetch - processPackages [SuPyMode]: Downloading https://files.pythonhosted.org/packages/46/5a/d3fca001f4757575afeeed2cf01b73fdbb12e27398cb4019165f762addb1/SuPyMode-4.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 18:55:30] INFO root fetch - processPackages [manuscriptmonitor]: executing diffoscope
+[2023-04-12 18:55:30] INFO root fetch - processPackages [manuscriptmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManuscriptMonitor-0.4.8.tar.gz tmp/ManuscriptMonitor-0.4.9.tar.gz --markdown 20230412/m/manuscriptmonitor/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 18:55:30] INFO root fetch - processPackages [SuPyMode]: executing diffoscope
+[2023-04-12 18:55:30] INFO root fetch - processPackages [SuPyMode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SuPyMode-4.1.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/SuPyMode-4.1.8-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/S/SuPyMode/4.1.7-4.1.8/diff.md --exclude *.pyd
+[2023-04-12 18:55:30] INFO root fetch - processPackages [arraymap]: Start processing: SIOTCommon
+[2023-04-12 18:55:30] INFO root fetch - main [MainThread]: End processing [arraymap]: success
+[2023-04-12 18:55:30] INFO root fetch - processPackages [SIOTCommon]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 18:55:30] INFO root fetch - processPackages [MLapp1]: Start processing: obeenya
+[2023-04-12 18:55:30] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:55:30] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 18:55:30] INFO root fetch - processPackages [obeenya]: Start processing: lti-consumer-xblock
+[2023-04-12 18:55:30] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 18:55:30] INFO root fetch - processPackages [lti-consumer-xblock]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-04-12 18:55:30] INFO root fetch - processPackages [SIOTCommon]: Downloading https://files.pythonhosted.org/packages/29/b5/db04d3ca9962dc77566d3edaa9e2e798a6ad070e07d03d0116154b298238/SIOTCommon-0.0.6.tar.gz
+[2023-04-12 18:55:31] INFO root fetch - processPackages [SIOTCommon]: Downloading https://files.pythonhosted.org/packages/91/03/cdf71e84419651c316b5bfc040b292d4e47c9af59ee8fdee8cb354389777/SIOTCommon-0.0.7.tar.gz
+[2023-04-12 18:55:31] INFO root fetch - processPackages [lti-consumer-xblock]: Downloading https://files.pythonhosted.org/packages/cc/9e/5b8e5d61c4dd22b9fce245fce77851d870be37c8ea76fca2a842b99c8b4e/lti-consumer-xblock-9.0.2.tar.gz
+[2023-04-12 18:55:31] INFO root fetch - processPackages [manuscriptmonitor]: Start processing: fate-scheduler
+[2023-04-12 18:55:31] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
+[2023-04-12 18:55:31] INFO root fetch - processPackages [SIOTCommon]: executing diffoscope
+[2023-04-12 18:55:31] INFO root fetch - processPackages [SIOTCommon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SIOTCommon-0.0.6.tar.gz tmp/SIOTCommon-0.0.7.tar.gz --markdown 20230412/S/SIOTCommon/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 18:55:31] INFO root fetch - processPackages [fate-scheduler]: New version: [0.1.0rc9] Old Version: [0.1.0rc8]
+[2023-04-12 18:55:31] INFO root fetch - processPackages [lti-consumer-xblock]: executing diffoscope
+[2023-04-12 18:55:31] INFO root fetch - processPackages [lti-consumer-xblock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lti-consumer-xblock-9.0.1.tar.gz tmp/lti-consumer-xblock-9.0.2.tar.gz --markdown 20230412/l/lti-consumer-xblock/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-04-12 18:55:31] INFO root fetch - processPackages [fate-scheduler]: Downloading https://files.pythonhosted.org/packages/83/7e/e2205542333b2b647b6632a22183ced3ae28a8aff77f6b58607d664bdd16/fate-scheduler-0.1.0rc8.tar.gz
+[2023-04-12 18:55:31] INFO root fetch - processPackages [SuPyMode]: Start processing: MLapp1
+[2023-04-12 18:55:31] INFO root fetch - main [MainThread]: End processing [SuPyMode]: success
+[2023-04-12 18:55:31] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:55:31] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:55:31] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:55:31] INFO root fetch - processPackages [fate-scheduler]: Downloading https://files.pythonhosted.org/packages/66/f5/0208f19828a75a5db2e0a85bfc574ea80310e447afe32b63796c06e3a008/fate_scheduler-0.1.0rc9.tar.gz
+[2023-04-12 18:55:32] INFO root fetch - processPackages [fate-scheduler]: executing diffoscope
+[2023-04-12 18:55:32] INFO root fetch - processPackages [fate-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fate-scheduler-0.1.0rc8.tar.gz tmp/fate_scheduler-0.1.0rc9.tar.gz --markdown 20230412/f/fate-scheduler/0.1.0rc8-0.1.0rc9/diff.md --exclude *.pyd
+[2023-04-12 18:55:32] INFO root fetch - processPackages [SIOTCommon]: Start processing: grai-source-dbt
+[2023-04-12 18:55:32] INFO root fetch - main [MainThread]: End processing [SIOTCommon]: success
+[2023-04-12 18:55:32] INFO root fetch - processPackages [grai-source-dbt]: New version: [0.2.6a0] Old Version: [0.2.5]
+[2023-04-12 18:55:32] INFO root fetch - processPackages [grai-source-dbt]: Downloading https://files.pythonhosted.org/packages/d3/ed/faa928ce7c2dc8185bdb7f060bd53a32ee5e99207cbc5f0fc8ec861a22e9/grai_source_dbt-0.2.5.tar.gz
+[2023-04-12 18:55:32] INFO root fetch - processPackages [MLapp1]: Start processing: astro-provider-databricks
+[2023-04-12 18:55:32] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:55:32] INFO root fetch - processPackages [astro-provider-databricks]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 18:55:32] INFO root fetch - processPackages [grai-source-dbt]: Downloading https://files.pythonhosted.org/packages/50/e8/7517ef985bbb4292365012a15de2eb41e01ca1cbdb25ee7d06fcb2ef9f68/grai_source_dbt-0.2.6a0.tar.gz
+[2023-04-12 18:55:33] INFO root fetch - processPackages [astro-provider-databricks]: Downloading https://files.pythonhosted.org/packages/8e/cc/43c5b3063a150db68f147d65b1edf3922880d3c2eb501daf53d6792b716f/astro_provider_databricks-0.1.0.tar.gz
+[2023-04-12 18:55:33] INFO root fetch - processPackages [grai-source-dbt]: executing diffoscope
+[2023-04-12 18:55:33] INFO root fetch - processPackages [grai-source-dbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grai_source_dbt-0.2.5.tar.gz tmp/grai_source_dbt-0.2.6a0.tar.gz --markdown 20230412/g/grai-source-dbt/0.2.5-0.2.6a0/diff.md --exclude *.pyd
+[2023-04-12 18:55:33] INFO root fetch - processPackages [fate-scheduler]: Start processing: pyatlan
+[2023-04-12 18:55:33] INFO root fetch - main [MainThread]: End processing [fate-scheduler]: success
+[2023-04-12 18:55:33] INFO root fetch - processPackages [pyatlan]: New version: [0.0.22] Old Version: [0.0.21]
+[2023-04-12 18:55:33] INFO root fetch - processPackages [astro-provider-databricks]: Downloading https://files.pythonhosted.org/packages/76/b1/02c8c38d4269b3d4aaa059578f06d6e5eb324dc4bc5cd1bf8cee68f72d4d/astro_provider_databricks-0.1.1.tar.gz
+[2023-04-12 18:55:33] INFO root fetch - main [MainThread]: End processing [lti-consumer-xblock]: success
+[2023-04-12 18:55:34] INFO root fetch - processPackages [astro-provider-databricks]: executing diffoscope
+[2023-04-12 18:55:34] INFO root fetch - processPackages [astro-provider-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro_provider_databricks-0.1.0.tar.gz tmp/astro_provider_databricks-0.1.1.tar.gz --markdown 20230412/a/astro-provider-databricks/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:55:34] INFO root fetch - processPackages [pyatlan]: Downloading https://files.pythonhosted.org/packages/5e/ad/c9e23afcc0ff6aef05c9e8a847e2c2881bf1516781a63bbac91b696f6c42/pyatlan-0.0.22.tar.gz
+[2023-04-12 18:55:34] INFO root fetch - main [MainThread]: End processing [grai-source-dbt]: success
+[2023-04-12 18:55:34] INFO root fetch - processPackages [pyatlan]: executing diffoscope
+[2023-04-12 18:55:34] INFO root fetch - processPackages [pyatlan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyatlan-0.0.21.tar.gz tmp/pyatlan-0.0.22.tar.gz --markdown 20230412/p/pyatlan/0.0.21-0.0.22/diff.md --exclude *.pyd
+[2023-04-12 18:55:35] INFO root fetch - main [MainThread]: End processing [astro-provider-databricks]: success
+[2023-04-12 18:55:35] INFO root fetch - main [MainThread]: End processing [pyatlan]: success
+[2023-04-12 18:55:48] INFO root fetch - main [MainThread]: End processing [pensando-dss]: success
+[2023-04-12 18:55:48] INFO root fetch - main [MainThread]: Store serial: [17679546]
