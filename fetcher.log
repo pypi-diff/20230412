@@ -8798,3 +8798,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:21:32] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:21:35] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:21:35] INFO root fetch - main [MainThread]: Store serial: [17672546]
+[2023-04-12 09:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672546]
+[2023-04-12 09:26:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 09:26:44] WARNING root fetch - processPackages [kogger]: Skipping, unable to determine old version
+[2023-04-12 09:26:44] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:26:44] INFO root fetch - processPackages [hitrustai-lab]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 09:26:44] INFO root fetch - processPackages [pontos]: New version: [23.4.2] Old Version: [23.4.1]
+[2023-04-12 09:26:44] INFO root fetch - processPackages [oimbot]: New version: [6.6.0] Old Version: [5.0.0]
+[2023-04-12 09:26:44] INFO root fetch - processPackages [zen-engine]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-12 09:26:44] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 09:26:44] INFO root fetch - processPackages [oimbot]: executing diffoscope
+[2023-04-12 09:26:44] INFO root fetch - processPackages [oimbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oimbot-5.0.0-py3-none-any.whl.zip tmp/oimbot-6.6.0-py3-none-any.whl.zip --markdown 20230412/o/oimbot/5.0.0-6.6.0/diff.md --exclude *.pyd
+[2023-04-12 09:26:44] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-12 09:26:44] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230412/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 09:26:44] INFO root fetch - processPackages [pontos]: Downloading https://files.pythonhosted.org/packages/62/06/88ea0c421a8335561c09df9552eb14018c1b128afbbb3a947789cf6462df/pontos-23.4.1.tar.gz
+[2023-04-12 09:26:44] INFO root fetch - processPackages [hitrustai-lab]: Downloading https://files.pythonhosted.org/packages/62/e0/caeef3836f6779aebd93956257125a60f56a3731f28455ee85d42e570115/hitrustai_lab-1.0.8.tar.gz
+[2023-04-12 09:26:44] INFO root fetch - processPackages [zen-engine]: Downloading https://files.pythonhosted.org/packages/0d/5d/baf1b35264327e37a2a987583aca9206db45cf2ad3afa10544eb439c0068/zen_engine-0.4.1.tar.gz
+[2023-04-12 09:26:44] INFO root fetch - processPackages [pontos]: Downloading https://files.pythonhosted.org/packages/d5/82/49488719458f3b87b23777a775f57ba85d4cdce012b502b28bc3582d539f/pontos-23.4.2.tar.gz
+[2023-04-12 09:26:44] INFO root fetch - processPackages [zen-engine]: Downloading https://files.pythonhosted.org/packages/0f/ec/fdd597684c3fe04a6baac540baa59735439654dc712a6d063e653ceaad87/zen_engine-0.4.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 09:26:44] INFO root fetch - processPackages [pontos]: executing diffoscope
+[2023-04-12 09:26:44] INFO root fetch - processPackages [pontos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pontos-23.4.1.tar.gz tmp/pontos-23.4.2.tar.gz --markdown 20230412/p/pontos/23.4.1-23.4.2/diff.md --exclude *.pyd
+[2023-04-12 09:26:44] INFO root fetch - processPackages [hitrustai-lab]: Downloading https://files.pythonhosted.org/packages/c6/a8/d005771def830398c114c064804050a67c4d5c9c77c6d9cdca0c2526ccd9/hitrustai_lab-1.0.9.tar.gz
+[2023-04-12 09:26:45] WARNING root fetch - processPackages [zen-engine]: Skipping package: exceeds size limit 14027238>=10485760
+[2023-04-12 09:26:45] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:26:45] INFO root fetch - processPackages [hitrustai-lab]: executing diffoscope
+[2023-04-12 09:26:45] INFO root fetch - processPackages [hitrustai-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitrustai_lab-1.0.8.tar.gz tmp/hitrustai_lab-1.0.9.tar.gz --markdown 20230412/h/hitrustai-lab/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 09:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:26:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:26:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:26:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:26:47] INFO root fetch - main [MainThread]: Store serial: [17672589]
