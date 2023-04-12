@@ -17099,3 +17099,139 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:41:16] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
 [2023-04-12 16:41:31] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2023-04-12 16:41:31] INFO root fetch - main [MainThread]: Store serial: [17677561]
+[2023-04-12 16:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677561]
+[2023-04-12 16:46:39] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-12 16:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: je-auto-control-dev
+[2023-04-12 16:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pmpm
+[2023-04-12 16:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: InCli
+[2023-04-12 16:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krkn-lib-kubernetes-draft
+[2023-04-12 16:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: serial-jobs
+[2023-04-12 16:46:39] INFO root fetch - processPackages [InCli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:46:39] INFO root fetch - processPackages [je-auto-control-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:46:39] WARNING root fetch - processPackages [pmpm]: Skipping, unable to determine old version
+[2023-04-12 16:46:39] INFO root fetch - processPackages [pmpm]: Start processing: titan-iris
+[2023-04-12 16:46:39] INFO root fetch - main [MainThread]: End processing [pmpm] error
+[2023-04-12 16:46:39] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 16:46:39] INFO root fetch - processPackages [serial-jobs]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 16:46:39] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 16:46:39] INFO root fetch - processPackages [InCli]: executing diffoscope
+[2023-04-12 16:46:39] INFO root fetch - processPackages [InCli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InCli-0.0.8.tar.gz tmp/InCli-0.0.9.tar.gz --markdown 20230412/I/InCli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:39] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: executing diffoscope
+[2023-04-12 16:46:39] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krkn_lib_kubernetes_draft-0.1.8.tar.gz tmp/krkn_lib_kubernetes_draft-0.1.9.tar.gz --markdown 20230412/k/krkn-lib-kubernetes-draft/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:39] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 16:46:39] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 16:46:39] INFO root fetch - processPackages [serial-jobs]: Downloading https://files.pythonhosted.org/packages/18/f7/7fa85b77cd4978b8998fddab0c2f18b5b7d7deffa184e87558bbef8e8b3d/serial-jobs-0.0.2.tar.gz
+[2023-04-12 16:46:39] INFO root fetch - processPackages [je-auto-control-dev]: executing diffoscope
+[2023-04-12 16:46:39] INFO root fetch - processPackages [je-auto-control-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_auto_control_dev-0.0.8.tar.gz tmp/je_auto_control_dev-0.0.9.tar.gz --markdown 20230412/j/je-auto-control-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:39] INFO root fetch - processPackages [serial-jobs]: Downloading https://files.pythonhosted.org/packages/e6/14/8505257c3fb38facc31fab9a058fea3dd4d5655df2bf29b7ecead1bda252/serial-jobs-0.0.3.tar.gz
+[2023-04-12 16:46:39] INFO root fetch - processPackages [serial-jobs]: executing diffoscope
+[2023-04-12 16:46:39] INFO root fetch - processPackages [serial-jobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serial-jobs-0.0.2.tar.gz tmp/serial-jobs-0.0.3.tar.gz --markdown 20230412/s/serial-jobs/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 16:46:40] INFO root fetch - processPackages [InCli]: Start processing: shashvault
+[2023-04-12 16:46:40] INFO root fetch - main [MainThread]: End processing [InCli]: success
+[2023-04-12 16:46:40] INFO root fetch - processPackages [titan-iris]: Start processing: aliyun-python-sdk-config
+[2023-04-12 16:46:40] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 16:46:40] INFO root fetch - processPackages [shashvault]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 16:46:40] INFO root fetch - processPackages [aliyun-python-sdk-config]: New version: [2.2.5] Old Version: [2.2.3]
+[2023-04-12 16:46:40] INFO root fetch - processPackages [krkn-lib-kubernetes-draft]: Start processing: gptdeploy
+[2023-04-12 16:46:40] INFO root fetch - main [MainThread]: End processing [krkn-lib-kubernetes-draft]: success
+[2023-04-12 16:46:40] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-12 16:46:40] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-12 16:46:40] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230412/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:40] INFO root fetch - processPackages [shashvault]: Downloading https://files.pythonhosted.org/packages/16/fa/2f493fc004095b4f1644886ec3f16559b9c11feab2f9e5669faf6333bf6d/shashvault-0.1.3-py3-none-any.whl
+[2023-04-12 16:46:40] INFO root fetch - processPackages [aliyun-python-sdk-config]: Downloading https://files.pythonhosted.org/packages/16/cf/dc0074185383e161f6aff94f3ec3b1e8f3d33a66f407ff1da1b8b1a90f82/aliyun-python-sdk-config-2.2.3.tar.gz
+[2023-04-12 16:46:40] INFO root fetch - processPackages [shashvault]: executing diffoscope
+[2023-04-12 16:46:40] INFO root fetch - processPackages [shashvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shashvault-0.1.2-py3-none-any.whl.zip tmp/shashvault-0.1.3-py3-none-any.whl.zip --markdown 20230412/s/shashvault/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 16:46:40] INFO root fetch - processPackages [aliyun-python-sdk-config]: Downloading https://files.pythonhosted.org/packages/c1/7e/ae7aca39de35abee4b80bb654322e920756f14c6539e87113c3da89edd1f/aliyun-python-sdk-config-2.2.5.tar.gz
+[2023-04-12 16:46:41] INFO root fetch - processPackages [aliyun-python-sdk-config]: executing diffoscope
+[2023-04-12 16:46:41] INFO root fetch - processPackages [aliyun-python-sdk-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-config-2.2.3.tar.gz tmp/aliyun-python-sdk-config-2.2.5.tar.gz --markdown 20230412/a/aliyun-python-sdk-config/2.2.3-2.2.5/diff.md --exclude *.pyd
+[2023-04-12 16:46:41] INFO root fetch - processPackages [serial-jobs]: Start processing: unknowncode
+[2023-04-12 16:46:41] INFO root fetch - main [MainThread]: End processing [serial-jobs]: success
+[2023-04-12 16:46:41] INFO root fetch - processPackages [unknowncode]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 16:46:41] INFO root fetch - processPackages [je-auto-control-dev]: Start processing: je-api-testka-dev
+[2023-04-12 16:46:41] INFO root fetch - main [MainThread]: End processing [je-auto-control-dev]: success
+[2023-04-12 16:46:41] INFO root fetch - processPackages [je-api-testka-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:46:41] INFO root fetch - processPackages [unknowncode]: Downloading https://files.pythonhosted.org/packages/8a/ab/b36d112cdcb8c84ca8cf0d088094184d0e1793f9920a830e3734cc79da49/unknowncode-0.2.5.tar.gz
+[2023-04-12 16:46:41] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/13/bd/b792d5c14daeeb3cc55dc2946bf16d0873af7ca6d7dd87055d02a693cc16/je_api_testka_dev-0.0.8.tar.gz
+[2023-04-12 16:46:41] INFO root fetch - processPackages [unknowncode]: executing diffoscope
+[2023-04-12 16:46:41] INFO root fetch - processPackages [unknowncode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unknowncode-0.2.4.tar.gz tmp/unknowncode-0.2.5.tar.gz --markdown 20230412/u/unknowncode/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 16:46:41] INFO root fetch - processPackages [shashvault]: Start processing: tiny-cli
+[2023-04-12 16:46:41] INFO root fetch - main [MainThread]: End processing [shashvault]: success
+[2023-04-12 16:46:42] INFO root fetch - processPackages [tiny-cli]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 16:46:42] INFO root fetch - processPackages [gptdeploy]: Start processing: je-web-runner-dev
+[2023-04-12 16:46:42] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-web-runner-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-api-testka-dev]: Downloading https://files.pythonhosted.org/packages/56/33/3fdf0251bbc6a8adb02966cc117dca9766627058cc5f140be419573d9256/je_api_testka_dev-0.0.9.tar.gz
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-web-runner-dev]: Downloading https://files.pythonhosted.org/packages/3d/5f/1255d66a56fb12701863ce7676f49de0a0fa1c8ebea7082713c306d9eae0/je_web_runner_dev-0.0.8.tar.gz
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-api-testka-dev]: executing diffoscope
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-api-testka-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_api_testka_dev-0.0.8.tar.gz tmp/je_api_testka_dev-0.0.9.tar.gz --markdown 20230412/j/je-api-testka-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:42] INFO root fetch - processPackages [tiny-cli]: executing diffoscope
+[2023-04-12 16:46:42] INFO root fetch - processPackages [tiny-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiny-cli-1.0.8.tar.gz tmp/tiny-cli-1.0.9.tar.gz --markdown 20230412/t/tiny-cli/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-web-runner-dev]: Downloading https://files.pythonhosted.org/packages/16/62/09336d5dd7335342ae9a4e41ecdee21e0dd2f4a478f392d102c0d367c810/je_web_runner_dev-0.0.9.tar.gz
+[2023-04-12 16:46:42] INFO root fetch - processPackages [unknowncode]: Start processing: sysnet-directory
+[2023-04-12 16:46:42] INFO root fetch - main [MainThread]: End processing [unknowncode]: success
+[2023-04-12 16:46:42] INFO root fetch - processPackages [sysnet-directory]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-12 16:46:42] INFO root fetch - processPackages [aliyun-python-sdk-config]: Start processing: je-load-density-dev
+[2023-04-12 16:46:42] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-config]: success
+[2023-04-12 16:46:42] INFO root fetch - processPackages [je-load-density-dev]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 16:46:42] INFO root fetch - processPackages [sysnet-directory]: Downloading https://files.pythonhosted.org/packages/0f/48/07f0c235d9d724ff08a64f8092536202759fb2acfeb9fe3b1b760dcb2877/sysnet-directory-1.1.5.tar.gz
+[2023-04-12 16:46:43] INFO root fetch - processPackages [sysnet-directory]: Downloading https://files.pythonhosted.org/packages/6f/2c/687c595c2039a94705b46145cf45d65ec43a2f88e50ff11973344053622c/sysnet-directory-1.1.6.tar.gz
+[2023-04-12 16:46:43] INFO root fetch - processPackages [je-web-runner-dev]: executing diffoscope
+[2023-04-12 16:46:43] INFO root fetch - processPackages [je-web-runner-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_web_runner_dev-0.0.8.tar.gz tmp/je_web_runner_dev-0.0.9.tar.gz --markdown 20230412/j/je-web-runner-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:43] INFO root fetch - processPackages [je-load-density-dev]: executing diffoscope
+[2023-04-12 16:46:43] INFO root fetch - processPackages [je-load-density-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/je_load_density_dev-0.0.8.tar.gz tmp/je_load_density_dev-0.0.9.tar.gz --markdown 20230412/j/je-load-density-dev/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:43] INFO root fetch - processPackages [je-api-testka-dev]: Start processing: uetl
+[2023-04-12 16:46:43] INFO root fetch - main [MainThread]: End processing [je-api-testka-dev]: success
+[2023-04-12 16:46:43] INFO root fetch - processPackages [sysnet-directory]: executing diffoscope
+[2023-04-12 16:46:43] INFO root fetch - processPackages [sysnet-directory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sysnet-directory-1.1.5.tar.gz tmp/sysnet-directory-1.1.6.tar.gz --markdown 20230412/s/sysnet-directory/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-12 16:46:43] INFO root fetch - processPackages [uetl]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 16:46:43] INFO root fetch - processPackages [tiny-cli]: Start processing: zenutils
+[2023-04-12 16:46:43] INFO root fetch - main [MainThread]: End processing [tiny-cli]: success
+[2023-04-12 16:46:43] INFO root fetch - processPackages [zenutils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 16:46:43] INFO root fetch - processPackages [zenutils]: Downloading https://files.pythonhosted.org/packages/8a/60/af65918a31ce83fceeeb73419006bfa97bb3409e979364613fa1859c7672/zenutils-0.3.8.tar.gz
+[2023-04-12 16:46:43] INFO root fetch - processPackages [uetl]: Downloading https://files.pythonhosted.org/packages/da/69/5a8e5245fccee9b20ba4d210e62fbcc2042eae1c4fb34976412a6718bea4/uetl-0.1.3.tar.gz
+[2023-04-12 16:46:43] INFO root fetch - processPackages [uetl]: executing diffoscope
+[2023-04-12 16:46:43] INFO root fetch - processPackages [uetl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uetl-0.1.2.tar.gz tmp/uetl-0.1.3.tar.gz --markdown 20230412/u/uetl/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 16:46:44] INFO root fetch - processPackages [zenutils]: Downloading https://files.pythonhosted.org/packages/72/a0/8c7d8643f68fe9b4cb07752d09be715095cd22670e480e8868f7126e7e9d/zenutils-0.3.9.tar.gz
+[2023-04-12 16:46:44] INFO root fetch - processPackages [zenutils]: executing diffoscope
+[2023-04-12 16:46:44] INFO root fetch - processPackages [zenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zenutils-0.3.8.tar.gz tmp/zenutils-0.3.9.tar.gz --markdown 20230412/z/zenutils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:44] INFO root fetch - processPackages [je-web-runner-dev]: Start processing: fipiran
+[2023-04-12 16:46:44] INFO root fetch - main [MainThread]: End processing [je-web-runner-dev]: success
+[2023-04-12 16:46:44] INFO root fetch - processPackages [fipiran]: New version: [0.9.0] Old Version: [0.8.1.dev0]
+[2023-04-12 16:46:44] INFO root fetch - processPackages [je-load-density-dev]: Start processing: pastell-admin
+[2023-04-12 16:46:44] INFO root fetch - main [MainThread]: End processing [je-load-density-dev]: success
+[2023-04-12 16:46:44] INFO root fetch - processPackages [pastell-admin]: New version: [0.1.16] Old Version: [0.1.15]
+[2023-04-12 16:46:44] INFO root fetch - processPackages [fipiran]: Downloading https://files.pythonhosted.org/packages/32/5c/f541aa4fbaf3a80f635e4012885ade2f850c46942caa544fc2788e94a42b/fipiran-0.8.1.dev0.tar.gz
+[2023-04-12 16:46:44] INFO root fetch - processPackages [pastell-admin]: Downloading https://files.pythonhosted.org/packages/e1/27/cd72d6933ea6878c7922be7a7889013a2e5f9e589082dd95eed97fd34db6/pastell-admin-0.1.15.tar.gz
+[2023-04-12 16:46:44] INFO root fetch - processPackages [sysnet-directory]: Start processing: elementMass
+[2023-04-12 16:46:44] INFO root fetch - main [MainThread]: End processing [sysnet-directory]: success
+[2023-04-12 16:46:44] INFO root fetch - processPackages [elementMass]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 16:46:44] INFO root fetch - processPackages [elementMass]: Downloading https://files.pythonhosted.org/packages/55/c1/b3a318ee78ef4e396812e5d1941eb455d4a4e27f45bff403ee0aa38335f7/elementMass-1.0.0.tar.gz
+[2023-04-12 16:46:44] INFO root fetch - processPackages [pastell-admin]: Downloading https://files.pythonhosted.org/packages/6e/74/bc25fec3eb90bb5ad7e8b25503c7d486c6cdfc7b84c35cfda4e680b2f928/pastell-admin-0.1.16.tar.gz
+[2023-04-12 16:46:45] INFO root fetch - processPackages [fipiran]: Downloading https://files.pythonhosted.org/packages/95/72/531bbe1908672d05170b2177622b940382f45aaf6e88cdb53bcb6e7c9256/fipiran-0.9.0.tar.gz
+[2023-04-12 16:46:45] INFO root fetch - processPackages [uetl]: Start processing: arena-py
+[2023-04-12 16:46:45] INFO root fetch - main [MainThread]: End processing [uetl]: success
+[2023-04-12 16:46:45] INFO root fetch - processPackages [pastell-admin]: executing diffoscope
+[2023-04-12 16:46:45] INFO root fetch - processPackages [pastell-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pastell-admin-0.1.15.tar.gz tmp/pastell-admin-0.1.16.tar.gz --markdown 20230412/p/pastell-admin/0.1.15-0.1.16/diff.md --exclude *.pyd
+[2023-04-12 16:46:45] INFO root fetch - processPackages [arena-py]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-12 16:46:45] INFO root fetch - processPackages [elementMass]: Downloading https://files.pythonhosted.org/packages/8b/ec/41e2dcb6eda8c87acb35b7e2edb2242eb4df8c389b0b85469a66f5a0892f/elementMass-1.0.1.tar.gz
+[2023-04-12 16:46:45] INFO root fetch - processPackages [arena-py]: Downloading https://files.pythonhosted.org/packages/84/e6/986a286b04d237b3a72eebc9cc0b1cb37b3f432f1591c66d2b265f5e7b6e/arena-py-0.2.1.tar.gz
+[2023-04-12 16:46:45] INFO root fetch - processPackages [elementMass]: executing diffoscope
+[2023-04-12 16:46:45] INFO root fetch - processPackages [elementMass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elementMass-1.0.0.tar.gz tmp/elementMass-1.0.1.tar.gz --markdown 20230412/e/elementMass/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 16:46:45] INFO root fetch - processPackages [fipiran]: executing diffoscope
+[2023-04-12 16:46:45] INFO root fetch - processPackages [fipiran]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fipiran-0.8.1.dev0.tar.gz tmp/fipiran-0.9.0.tar.gz --markdown 20230412/f/fipiran/0.8.1.dev0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 16:46:45] INFO root fetch - processPackages [arena-py]: Downloading https://files.pythonhosted.org/packages/4e/8b/cbc5bd1cdb5c6675e2fabc024baa0c5e68fd166f5db76e3b37f8091729ad/arena-py-0.3.0.tar.gz
+[2023-04-12 16:46:45] INFO root fetch - processPackages [zenutils]: Start processing: mikro
+[2023-04-12 16:46:45] INFO root fetch - main [MainThread]: End processing [zenutils]: success
+[2023-04-12 16:46:45] INFO root fetch - processPackages [arena-py]: executing diffoscope
+[2023-04-12 16:46:45] INFO root fetch - processPackages [arena-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arena-py-0.2.1.tar.gz tmp/arena-py-0.3.0.tar.gz --markdown 20230412/a/arena-py/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 16:46:46] INFO root fetch - processPackages [mikro]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 16:46:46] INFO root fetch - processPackages [mikro]: Downloading https://files.pythonhosted.org/packages/da/db/ba3f2a6a19c4fe4587c28d1c120e23982141fa95b4e06ebe64308502e82f/mikro-0.3.8.tar.gz
+[2023-04-12 16:46:46] INFO root fetch - processPackages [mikro]: Downloading https://files.pythonhosted.org/packages/26/a6/7ee733ac462341b8ca4423365288b9a6988a89d4d02f56e536dd8f8672a7/mikro-0.3.9.tar.gz
+[2023-04-12 16:46:46] INFO root fetch - main [MainThread]: End processing [fipiran]: success
+[2023-04-12 16:46:46] INFO root fetch - main [MainThread]: End processing [elementMass]: success
+[2023-04-12 16:46:46] INFO root fetch - main [MainThread]: End processing [pastell-admin]: success
+[2023-04-12 16:46:46] INFO root fetch - processPackages [mikro]: executing diffoscope
+[2023-04-12 16:46:46] INFO root fetch - processPackages [mikro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mikro-0.3.8.tar.gz tmp/mikro-0.3.9.tar.gz --markdown 20230412/m/mikro/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 16:46:47] INFO root fetch - main [MainThread]: End processing [arena-py]: success
+[2023-04-12 16:46:47] INFO root fetch - main [MainThread]: End processing [mikro]: success
+[2023-04-12 16:46:47] INFO root fetch - main [MainThread]: Store serial: [17677628]
