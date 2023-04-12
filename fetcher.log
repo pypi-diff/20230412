@@ -9725,3 +9725,119 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 10:21:12] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:21:12] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:21:12] INFO root fetch - main [MainThread]: Store serial: [17673201]
+[2023-04-12 10:26:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673201]
+[2023-04-12 10:26:20] INFO root fetch - main [MainThread]: Found 22 changed packages
+[2023-04-12 10:26:20] INFO root fetch - processPackages [odoo13-addon-stock-reserve]: New version: [13.0.1.0.1.dev9] Old Version: [13.0.1.0.1.dev8]
+[2023-04-12 10:26:20] INFO root fetch - processPackages [snitun]: New version: [0.9] Old Version: [0.8]
+[2023-04-12 10:26:20] WARNING root fetch - processPackages [synergy-dataset]: Skipping, unable to determine old version
+[2023-04-12 10:26:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:26:20] INFO root fetch - processPackages [hello2]: New version: [1.5.5] Old Version: [1.5.4]
+[2023-04-12 10:26:20] INFO root fetch - processPackages [dynamicprompts]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-12 10:26:20] WARNING root fetch - processPackages [shashvault]: Skipping, unable to determine old version
+[2023-04-12 10:26:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:26:20] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: New version: [14.0.1.4.3.dev8] Old Version: [14.0.1.4.3.dev7]
+[2023-04-12 10:26:20] INFO root fetch - processPackages [odoo13-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/a9/0a/9d68213937f944f2af055a5c12ad0b8b5545a001237130fd2cd4a0e1fc70/odoo13_addon_stock_reserve-13.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 10:26:20] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/b5/53/aad8dc78f7975d004d76b14d0e460058b785b029f923cf564032e67037dc/hello2-1.5.5.tar.gz
+[2023-04-12 10:26:20] INFO root fetch - processPackages [snitun]: Downloading https://files.pythonhosted.org/packages/1c/b3/7660aa5a0c140a50da7f8642bd0532724b1c744eb47288879159c0e895bc/snitun-0.8.tar.gz
+[2023-04-12 10:26:21] INFO root fetch - processPackages [dynamicprompts]: Downloading https://files.pythonhosted.org/packages/87/c2/5e3f25854cbb4d864594ad23ba6cb8e3fec7ea1f9019d6212fa5023079f5/dynamicprompts-0.7.0.tar.gz
+[2023-04-12 10:26:21] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-04-12 10:26:21] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.5.4.tar.gz tmp/hello2-1.5.5.tar.gz --markdown 20230412/h/hello2/1.5.4-1.5.5/diff.md --exclude *.pyd
+[2023-04-12 10:26:21] INFO root fetch - processPackages [odoo13-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/c2/3c/13e28e0348adf1e2a1e7d7812e286cd28ef19752c7f51e5a8f75543ff083/odoo13_addon_stock_reserve-13.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-12 10:26:21] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: executing diffoscope
+[2023-04-12 10:26:21] INFO root fetch - processPackages [odoo14-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev7-py3-none-any.whl.zip tmp/odoo14_addon_stock_cycle_count-14.0.1.4.3.dev8-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-cycle-count/14.0.1.4.3.dev7-14.0.1.4.3.dev8/diff.md --exclude *.pyd
+[2023-04-12 10:26:21] INFO root fetch - processPackages [dynamicprompts]: Downloading https://files.pythonhosted.org/packages/ae/0d/5bdf08e801cc2236121d773910b04001eff8837954547fe8990a32ba43cb/dynamicprompts-0.7.1.tar.gz
+[2023-04-12 10:26:21] INFO root fetch - processPackages [odoo13-addon-stock-reserve]: executing diffoscope
+[2023-04-12 10:26:21] INFO root fetch - processPackages [odoo13-addon-stock-reserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_reserve-13.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo13_addon_stock_reserve-13.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-stock-reserve/13.0.1.0.1.dev8-13.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-12 10:26:21] INFO root fetch - processPackages [snitun]: Downloading https://files.pythonhosted.org/packages/09/c3/24b6446a1d56396c202728182016e40fb80b4964b620a1463b8e1dadb5ac/snitun-0.9.tar.gz
+[2023-04-12 10:26:21] INFO root fetch - processPackages [dynamicprompts]: executing diffoscope
+[2023-04-12 10:26:21] INFO root fetch - processPackages [dynamicprompts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamicprompts-0.7.0.tar.gz tmp/dynamicprompts-0.7.1.tar.gz --markdown 20230412/d/dynamicprompts/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-12 10:26:21] INFO root fetch - processPackages [snitun]: executing diffoscope
+[2023-04-12 10:26:21] INFO root fetch - processPackages [snitun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snitun-0.8.tar.gz tmp/snitun-0.9.tar.gz --markdown 20230412/s/snitun/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-12 10:26:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:22] INFO root fetch - processPackages [odoo14-addon-stock-quant-manual-assign]: New version: [14.0.1.3.2.dev3] Old Version: [14.0.1.3.2.dev2]
+[2023-04-12 10:26:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:22] INFO root fetch - processPackages [odoo14-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/c6/b6/e9a997b82a605be93641c893f58638c1b08975702fdb979c2fe29b462a60/odoo14_addon_stock_quant_manual_assign-14.0.1.3.2.dev2-py3-none-any.whl
+[2023-04-12 10:26:22] INFO root fetch - processPackages [odoo-addon-stock-inventory]: New version: [15.0.1.0.0.6] Old Version: [15.0.1.0.0.5]
+[2023-04-12 10:26:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:22] INFO root fetch - processPackages [talisman-tools]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-04-12 10:26:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-reserve]: New version: [14.0.2.0.1.dev6] Old Version: [14.0.2.0.1.dev5]
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo-addon-stock-inventory]: Downloading https://files.pythonhosted.org/packages/8d/51/b6003909b7876363187a55a4e985fa67ec745b6eac8ebda700ab9d3e589a/odoo_addon_stock_inventory-15.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 10:26:23] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/0d/04/ade3eff026c9daa4fb9cf5784099c26cca18e88be1daa569a19d55d27713/talisman-tools-0.3.1.tar.gz
+[2023-04-12 10:26:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:23] INFO root fetch - processPackages [power-grid-model-io]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/f6/28/9fcb07d56ecce831e7eb577314b22fc3af9c5728331b73e0c68d2109cd01/odoo14_addon_stock_reserve-14.0.2.0.1.dev5-py3-none-any.whl
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-quant-manual-assign]: Downloading https://files.pythonhosted.org/packages/eb/4e/531757734cffd447c5086f82d6158e0b98fa119fe0d70079505f6f12372e/odoo14_addon_stock_quant_manual_assign-14.0.1.3.2.dev3-py3-none-any.whl
+[2023-04-12 10:26:23] INFO root fetch - processPackages [power-grid-model-io]: executing diffoscope
+[2023-04-12 10:26:23] INFO root fetch - processPackages [power-grid-model-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_grid_model_io-1.2.8-py3-none-any.whl.zip tmp/power_grid_model_io-1.2.9-py3-none-any.whl.zip --markdown 20230412/p/power-grid-model-io/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-quant-manual-assign]: executing diffoscope
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-quant-manual-assign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_quant_manual_assign-14.0.1.3.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_stock_quant_manual_assign-14.0.1.3.2.dev3-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-quant-manual-assign/14.0.1.3.2.dev2-14.0.1.3.2.dev3/diff.md --exclude *.pyd
+[2023-04-12 10:26:23] INFO root fetch - processPackages [talisman-tools]: Downloading https://files.pythonhosted.org/packages/4d/f6/6175f6ec8434cc4c19f2e3476aced087be8a0d02b0fe7445116466679682/talisman-tools-0.4.0.tar.gz
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo-addon-stock-inventory]: Downloading https://files.pythonhosted.org/packages/76/f7/64ec4cb7585e4013889e079b7c15508bce39f964a724ac87046b660004a3/odoo_addon_stock_inventory-15.0.1.0.0.6-py3-none-any.whl
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/d8/2f/dc581a15b163a736cf3d44f09c8d0ce833c8f767a43bac8864fbd85933aa/odoo14_addon_stock_reserve-14.0.2.0.1.dev6-py3-none-any.whl
+[2023-04-12 10:26:23] INFO root fetch - processPackages [talisman-tools]: executing diffoscope
+[2023-04-12 10:26:23] INFO root fetch - processPackages [talisman-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-tools-0.3.1.tar.gz tmp/talisman-tools-0.4.0.tar.gz --markdown 20230412/t/talisman-tools/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo-addon-stock-inventory]: executing diffoscope
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo-addon-stock-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_inventory-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_stock_inventory-15.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-stock-inventory/15.0.1.0.0.5-15.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-reserve]: executing diffoscope
+[2023-04-12 10:26:23] INFO root fetch - processPackages [odoo14-addon-stock-reserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_reserve-14.0.2.0.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_stock_reserve-14.0.2.0.1.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-reserve/14.0.2.0.1.dev5-14.0.2.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-12 10:26:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:24] INFO root fetch - processPackages [talisman-interfaces]: New version: [0.4.0] Old Version: [0.3.2]
+[2023-04-12 10:26:24] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/f6/f8/ec2fab68192f4bd5c25a4012959214930f25045a3d613db648f31d36d585/talisman-interfaces-0.3.2.tar.gz
+[2023-04-12 10:26:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:24] INFO root fetch - processPackages [dbt-schema-generator]: New version: [0.1.1a1] Old Version: [0.1.0a1]
+[2023-04-12 10:26:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:24] INFO root fetch - processPackages [time-util-wj]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 10:26:25] INFO root fetch - processPackages [dbt-schema-generator]: Downloading https://files.pythonhosted.org/packages/65/1b/ddb92aacbee7384bde0494c73103ff5bd2366347297253d5bc9e7af0167a/dbt_schema_generator-0.1.0a1.tar.gz
+[2023-04-12 10:26:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:25] INFO root fetch - processPackages [odoo-addon-stock-reserve]: New version: [15.0.1.0.2.5] Old Version: [15.0.1.0.2.4]
+[2023-04-12 10:26:25] INFO root fetch - processPackages [talisman-interfaces]: Downloading https://files.pythonhosted.org/packages/d1/99/1fb9634ad0419cec766a8cb818ed5fc85e24d5c4074be9c186273b69b28f/talisman-interfaces-0.4.0.tar.gz
+[2023-04-12 10:26:25] INFO root fetch - processPackages [time-util-wj]: Downloading https://files.pythonhosted.org/packages/c8/65/bba8e6db468e99b57cbf4028cf8c1eee6feaa580f9f11513ddc4c35016f1/time_util_wj-1.0.3.tar.gz
+[2023-04-12 10:26:25] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/fe/77/977bf857384fcf5d1fd31d34f1e5a1b47ba95bd0cd73ccd2990af71851b4/odoo_addon_stock_reserve-15.0.1.0.2.4-py3-none-any.whl
+[2023-04-12 10:26:25] INFO root fetch - processPackages [talisman-interfaces]: executing diffoscope
+[2023-04-12 10:26:25] INFO root fetch - processPackages [talisman-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-interfaces-0.3.2.tar.gz tmp/talisman-interfaces-0.4.0.tar.gz --markdown 20230412/t/talisman-interfaces/0.3.2-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 10:26:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:25] INFO root fetch - processPackages [dbt-schema-generator]: Downloading https://files.pythonhosted.org/packages/2f/d9/9aa872854b6b99474fa93eafa3096d3add6299a4a7366913389b82408cb6/dbt_schema_generator-0.1.1a1.tar.gz
+[2023-04-12 10:26:25] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 10:26:25] INFO root fetch - processPackages [time-util-wj]: executing diffoscope
+[2023-04-12 10:26:25] INFO root fetch - processPackages [time-util-wj]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_util_wj-1.0.2.tar.gz tmp/time_util_wj-1.0.3.tar.gz --markdown 20230412/t/time-util-wj/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 10:26:25] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-12 10:26:25] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230412/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 10:26:25] INFO root fetch - processPackages [dbt-schema-generator]: executing diffoscope
+[2023-04-12 10:26:25] INFO root fetch - processPackages [dbt-schema-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_schema_generator-0.1.0a1.tar.gz tmp/dbt_schema_generator-0.1.1a1.tar.gz --markdown 20230412/d/dbt-schema-generator/0.1.0a1-0.1.1a1/diff.md --exclude *.pyd
+[2023-04-12 10:26:25] INFO root fetch - processPackages [odoo-addon-stock-reserve]: Downloading https://files.pythonhosted.org/packages/5f/90/4548374137a4c8a3577dd704272684a0480ca87ae00a5dfa78fe1f094e92/odoo_addon_stock_reserve-15.0.1.0.2.5-py3-none-any.whl
+[2023-04-12 10:26:25] INFO root fetch - processPackages [odoo-addon-stock-reserve]: executing diffoscope
+[2023-04-12 10:26:25] INFO root fetch - processPackages [odoo-addon-stock-reserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_reserve-15.0.1.0.2.4-py3-none-any.whl.zip tmp/odoo_addon_stock_reserve-15.0.1.0.2.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-stock-reserve/15.0.1.0.2.4-15.0.1.0.2.5/diff.md --exclude *.pyd
+[2023-04-12 10:26:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:26] INFO root fetch - processPackages [odoo14-addon-stock-demand-estimate]: New version: [14.0.1.2.1.dev2] Old Version: [14.0.1.2.1.dev1]
+[2023-04-12 10:26:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:26] INFO root fetch - processPackages [inspector-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 10:26:26] INFO root fetch - processPackages [odoo14-addon-stock-demand-estimate]: Downloading https://files.pythonhosted.org/packages/02/90/3123aa712ff2b4b47c87d81652e1fc0aabfdf2ce498982689146ecd6d2f6/odoo14_addon_stock_demand_estimate-14.0.1.2.1.dev1-py3-none-any.whl
+[2023-04-12 10:26:26] INFO root fetch - processPackages [inspector-python]: executing diffoscope
+[2023-04-12 10:26:26] INFO root fetch - processPackages [inspector-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspector-python-0.1.8.tar.gz tmp/inspector-python-0.1.9.tar.gz --markdown 20230412/i/inspector-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 10:26:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:26] INFO root fetch - processPackages [odoo-addon-stock-demand-estimate]: New version: [16.0.1.1.0.4] Old Version: [16.0.1.1.0.3]
+[2023-04-12 10:26:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:26] INFO root fetch - processPackages [pyttsx4]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo-addon-stock-demand-estimate]: Downloading https://files.pythonhosted.org/packages/e2/84/3662b4d1888090c866a4910647590b0d207268dd7707fd466a34fbffe356/odoo_addon_stock_demand_estimate-16.0.1.1.0.3-py3-none-any.whl
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo14-addon-stock-demand-estimate]: Downloading https://files.pythonhosted.org/packages/35/e5/bef610db3bf7f8283b5f416a206aaaa11666e3794afa2388b0762c1ef239/odoo14_addon_stock_demand_estimate-14.0.1.2.1.dev2-py3-none-any.whl
+[2023-04-12 10:26:27] INFO root fetch - processPackages [pyttsx4]: Downloading https://files.pythonhosted.org/packages/8d/1b/4bb55d7b046f79de8599bd889a4d8c4cfc2a4395b49e728a2603ee53c039/pyttsx4-3.0.6-py3-none-any.whl
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo14-addon-stock-demand-estimate]: executing diffoscope
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo14-addon-stock-demand-estimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_demand_estimate-14.0.1.2.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_stock_demand_estimate-14.0.1.2.1.dev2-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-demand-estimate/14.0.1.2.1.dev1-14.0.1.2.1.dev2/diff.md --exclude *.pyd
+[2023-04-12 10:26:27] INFO root fetch - processPackages [pyttsx4]: executing diffoscope
+[2023-04-12 10:26:27] INFO root fetch - processPackages [pyttsx4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyttsx4-3.0.5-py3-none-any.whl.zip tmp/pyttsx4-3.0.6-py3-none-any.whl.zip --markdown 20230412/p/pyttsx4/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-04-12 10:26:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:27] INFO root fetch - processPackages [biobb-amber]: New version: [4.0.0] Old Version: [3.9.0]
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo-addon-stock-demand-estimate]: Downloading https://files.pythonhosted.org/packages/47/2d/0de55ab5bbc46c81bff6b4f90ca7eee87362f2640f50eb427c94bb39b2d9/odoo_addon_stock_demand_estimate-16.0.1.1.0.4-py3-none-any.whl
+[2023-04-12 10:26:27] INFO root fetch - processPackages [biobb-amber]: Downloading https://files.pythonhosted.org/packages/ed/18/d44fa81f0e1ea39a05699eaaa61b0af6c53d5b4aa9194231cabe4c134b8b/biobb_amber-3.9.0.tar.gz
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo-addon-stock-demand-estimate]: executing diffoscope
+[2023-04-12 10:26:27] INFO root fetch - processPackages [odoo-addon-stock-demand-estimate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_demand_estimate-16.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_stock_demand_estimate-16.0.1.1.0.4-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-stock-demand-estimate/16.0.1.1.0.3-16.0.1.1.0.4/diff.md --exclude *.pyd
+[2023-04-12 10:26:27] INFO root fetch - processPackages [biobb-amber]: Downloading https://files.pythonhosted.org/packages/f1/3d/1ecdf12f4be1e0c9ae3d6477ea56c56cc7ceaa3c156712e8142c8ed227eb/biobb_amber-4.0.0.tar.gz
+[2023-04-12 10:26:28] INFO root fetch - processPackages [biobb-amber]: executing diffoscope
+[2023-04-12 10:26:28] INFO root fetch - processPackages [biobb-amber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_amber-3.9.0.tar.gz tmp/biobb_amber-4.0.0.tar.gz --markdown 20230412/b/biobb-amber/3.9.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-12 10:26:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:26:30] INFO root fetch - main [MainThread]: Store serial: [17673272]
