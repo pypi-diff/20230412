@@ -12014,3 +12014,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-04-12 12:32:11] INFO root fetch - main [MainThread]: error
 [2023-04-12 12:32:11] INFO root fetch - main [MainThread]: Store serial: [17674637]
+[2023-04-12 12:36:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674637]
+[2023-04-12 12:36:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 12:36:47] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [cloud-toolkit-aws]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [metator]: New version: [1.2.8] Old Version: [1.2.7]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [pm4py]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [nowcasting-datamodel]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/0d/6f/4c1124969913db89b0b59af7a8fa569a8971be1527ae89c4e0cdf6240cb9/ms_salesforce_to_bigquery-0.0.1.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [metator]: Downloading https://files.pythonhosted.org/packages/7b/03/2a3eb369f5c7ad78f2290e94287ae447efa9c26a24982d675e6bb5e14b7f/metator-1.2.7.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [nowcasting-datamodel]: Downloading https://files.pythonhosted.org/packages/4a/12/0dd43080860d27d857023b287b5caf40b72673fc015e82be67aa92194b05/nowcasting_datamodel-1.2.9.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [pm4py]: Downloading https://files.pythonhosted.org/packages/74/e0/60c9162bd5d1425b8c3219bb3542fa368673dde228249f8a452de45b3695/pm4py-2.7.2.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [cloud-toolkit-aws]: Downloading https://files.pythonhosted.org/packages/3e/cb/ec3f51b27dc3fb01ab29115f3407602747d8f2272a332b5f04cee390ccf6/cloud_toolkit_aws-0.8.3.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [nowcasting-datamodel]: executing diffoscope
+[2023-04-12 12:36:47] INFO root fetch - processPackages [nowcasting-datamodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nowcasting_datamodel-1.2.8.tar.gz tmp/nowcasting_datamodel-1.2.9.tar.gz --markdown 20230412/n/nowcasting-datamodel/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 12:36:47] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/61/8e/486d96ec1144452dbc923d038c1e31a7ee95d8cc02198caa0b03960600c4/ms_salesforce_to_bigquery-0.0.2.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [metator]: Downloading https://files.pythonhosted.org/packages/21/d5/a462c66171622c0ac1c63f61588acb58237dd7aeba72563d9d2f47eaaf9e/metator-1.2.8.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [cloud-toolkit-aws]: executing diffoscope
+[2023-04-12 12:36:47] INFO root fetch - processPackages [cloud-toolkit-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud_toolkit_aws-0.8.2.tar.gz tmp/cloud_toolkit_aws-0.8.3.tar.gz --markdown 20230412/c/cloud-toolkit-aws/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-12 12:36:47] INFO root fetch - processPackages [pm4py]: Downloading https://files.pythonhosted.org/packages/85/73/ca654c443acda5d5bb059a77b94048d6fee95b485ac2a8f49d77a67c48a9/pm4py-2.7.3.tar.gz
+[2023-04-12 12:36:47] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: executing diffoscope
+[2023-04-12 12:36:47] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_salesforce_to_bigquery-0.0.1.tar.gz tmp/ms_salesforce_to_bigquery-0.0.2.tar.gz --markdown 20230412/m/ms-salesforce-to-bigquery/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 12:36:47] WARNING root fetch - processPackages [pm4py]: Skipping package: exceeds size limit 28629806>=10485760
+[2023-04-12 12:36:47] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:36:47] INFO root fetch - processPackages [metator]: executing diffoscope
+[2023-04-12 12:36:47] INFO root fetch - processPackages [metator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metator-1.2.7.tar.gz tmp/metator-1.2.8.tar.gz --markdown 20230412/m/metator/1.2.7-1.2.8/diff.md --exclude *.pyd
+[2023-04-12 12:36:47] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 12:36:47] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 12:36:47] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 12:36:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:48] INFO root fetch - processPackages [nlmod]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-12 12:36:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:49] INFO root fetch - processPackages [nlmod]: Downloading https://files.pythonhosted.org/packages/57/0f/e1643b186e59a7160ba9891fd2c6af0b59d97e2362365157f73046feb96f/nlmod-0.5.1.tar.gz
+[2023-04-12 12:36:49] INFO root fetch - processPackages [nlmod]: Downloading https://files.pythonhosted.org/packages/a6/b0/de8664e676aab8bf9e098818a6646d2808c922c9137642fab56d2341299a/nlmod-0.5.2.tar.gz
+[2023-04-12 12:36:50] INFO root fetch - processPackages [nlmod]: executing diffoscope
+[2023-04-12 12:36:50] INFO root fetch - processPackages [nlmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlmod-0.5.1.tar.gz tmp/nlmod-0.5.2.tar.gz --markdown 20230412/n/nlmod/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-12 12:36:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:36:52] INFO root fetch - main [MainThread]: Store serial: [17674664]
