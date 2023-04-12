@@ -17517,3 +17517,132 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:57:32] INFO root fetch - main [MainThread]: End processing [symbolicmode]: success
 [2023-04-12 16:57:42] INFO root fetch - main [MainThread]: End processing [moleculekit]: success
 [2023-04-12 16:57:42] INFO root fetch - main [MainThread]: Store serial: [17677820]
+[2023-04-12 17:02:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677820]
+[2023-04-12 17:02:50] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-12 17:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magicsoup
+[2023-04-12 17:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: squawk-cli
+[2023-04-12 17:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bitsandbytes
+[2023-04-12 17:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inels-mqtt-new
+[2023-04-12 17:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marpdown
+[2023-04-12 17:02:50] WARNING root fetch - processPackages [marpdown]: Skipping, unable to determine old version
+[2023-04-12 17:02:50] INFO root fetch - processPackages [marpdown]: Start processing: OpenGeode-core
+[2023-04-12 17:02:50] INFO root fetch - main [MainThread]: End processing [marpdown] error
+[2023-04-12 17:02:51] INFO root fetch - processPackages [magicsoup]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [bitsandbytes]: New version: [0.38.0.post2] Old Version: [0.38.0.post1]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [squawk-cli]: New version: [0.24.0] Old Version: [0.23.0]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [13.4.9]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [squawk-cli]: Downloading https://files.pythonhosted.org/packages/23/26/95eee38b7e462db80a92115bcb4343a85955974e875c3911e251929eebd4/squawk_cli-0.23.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+[2023-04-12 17:02:51] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 17:02:51] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 17:02:51] INFO root fetch - processPackages [bitsandbytes]: Downloading https://files.pythonhosted.org/packages/66/1f/c8ec64253fb9cbd8c160734bba66ebcf8c657436bc0158d6e98cd2bb7e35/bitsandbytes-0.38.0.post1.tar.gz
+[2023-04-12 17:02:51] WARNING root fetch - processPackages [bitsandbytes]: Skipping package: exceeds size limit 96835661>=10485760
+[2023-04-12 17:02:51] INFO root fetch - processPackages [bitsandbytes]: Start processing: cir4mics
+[2023-04-12 17:02:51] INFO root fetch - main [MainThread]: End processing [bitsandbytes] error
+[2023-04-12 17:02:51] INFO root fetch - processPackages [cir4mics]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 17:02:51] INFO root fetch - processPackages [magicsoup]: Downloading https://files.pythonhosted.org/packages/a7/73/bf073f8f249b4f84fc47948def3c0b8d92cc8e2ceb29d787e5f117aec95c/magicsoup-0.3.5.tar.gz
+[2023-04-12 17:02:51] INFO root fetch - processPackages [magicsoup]: executing diffoscope
+[2023-04-12 17:02:51] INFO root fetch - processPackages [magicsoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magicsoup-0.3.4.tar.gz tmp/magicsoup-0.3.5.tar.gz --markdown 20230412/m/magicsoup/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-12 17:02:51] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-12 17:02:51] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-13.4.9-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.10.4-cp39-cp39-win_amd64.whl.zip --markdown 20230412/O/OpenGeode-core/13.4.9-9.10.4/diff.md --exclude *.pyd
+[2023-04-12 17:02:51] INFO root fetch - processPackages [cir4mics]: Downloading https://files.pythonhosted.org/packages/48/ce/15495881025b452fcdec1225d8575fe5e5a8f6379e6789cd1ab9e7f23d6b/cir4mics-0.1.1.tar.gz
+[2023-04-12 17:02:52] INFO root fetch - processPackages [cir4mics]: Downloading https://files.pythonhosted.org/packages/58/37/d1e9a2c62f50baa0472a92f430771932a9dd38cbff4937e6885c887023f9/cir4mics-0.1.2.tar.gz
+[2023-04-12 17:02:52] INFO root fetch - processPackages [cir4mics]: executing diffoscope
+[2023-04-12 17:02:52] INFO root fetch - processPackages [cir4mics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cir4mics-0.1.1.tar.gz tmp/cir4mics-0.1.2.tar.gz --markdown 20230412/c/cir4mics/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 17:02:52] INFO root fetch - processPackages [squawk-cli]: Downloading https://files.pythonhosted.org/packages/10/db/2c49edce4848422289d9aebf06102daf8043a675fb90ecbb8ca40319831a/squawk_cli-0.24.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+[2023-04-12 17:02:52] INFO root fetch - processPackages [squawk-cli]: executing diffoscope
+[2023-04-12 17:02:52] INFO root fetch - processPackages [squawk-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squawk_cli-0.23.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl.zip tmp/squawk_cli-0.24.0-py3-none-manylinux_2_5_x86_64.manylinux1_x86_64.whl.zip --markdown 20230412/s/squawk-cli/0.23.0-0.24.0/diff.md --exclude *.pyd
+[2023-04-12 17:02:52] INFO root fetch - processPackages [inels-mqtt-new]: Start processing: pytest-goldie
+[2023-04-12 17:02:52] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-12 17:02:52] WARNING root fetch - processPackages [pytest-goldie]: Skipping, unable to determine old version
+[2023-04-12 17:02:52] INFO root fetch - processPackages [pytest-goldie]: Start processing: odoo-addon-l10n-es-aeat-mod303-oss
+[2023-04-12 17:02:52] INFO root fetch - main [MainThread]: End processing [pytest-goldie] error
+[2023-04-12 17:02:52] INFO root fetch - processPackages [magicsoup]: Start processing: salt-ssh
+[2023-04-12 17:02:52] INFO root fetch - main [MainThread]: End processing [magicsoup]: success
+[2023-04-12 17:02:52] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303-oss]: New version: [15.0.1.1.0] Old Version: [15.0.1.0.0.4]
+[2023-04-12 17:02:52] INFO root fetch - processPackages [salt-ssh]: New version: [9000] Old Version: [3005rc2]
+[2023-04-12 17:02:52] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303-oss]: Downloading https://files.pythonhosted.org/packages/a2/8e/e8c07e3e1cde68bd0202d181272ad6948a044e0d905842bf22f4b2323358/odoo_addon_l10n_es_aeat_mod303_oss-15.0.1.1.0-py3-none-any.whl
+[2023-04-12 17:02:52] INFO root fetch - processPackages [salt-ssh]: Downloading https://files.pythonhosted.org/packages/8a/64/fc4ebd9b84ace9a0f5c88c204c695009712d2b110abbea50f92abb06b469/salt-ssh-3005rc2.tar.gz
+[2023-04-12 17:02:52] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303-oss]: executing diffoscope
+[2023-04-12 17:02:52] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303-oss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod303_oss-15.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod303_oss-15.0.1.1.0-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-l10n-es-aeat-mod303-oss/15.0.1.0.0.4-15.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-12 17:02:53] WARNING root fetch - processPackages [salt-ssh]: Skipping package: exceeds size limit 17908857>=10485760
+[2023-04-12 17:02:53] INFO root fetch - processPackages [salt-ssh]: Start processing: titan-iris
+[2023-04-12 17:02:53] INFO root fetch - main [MainThread]: End processing [salt-ssh] error
+[2023-04-12 17:02:53] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 17:02:53] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 17:02:53] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 17:02:53] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod303-oss]: Start processing: fabrique-nodes-core
+[2023-04-12 17:02:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod303-oss]: success
+[2023-04-12 17:02:53] INFO root fetch - processPackages [fabrique-nodes-core]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-12 17:02:54] INFO root fetch - processPackages [fabrique-nodes-core]: Downloading https://files.pythonhosted.org/packages/59/21/5347bdae23e1f4486334f037f76d34b2023effebb750f85fb4e5d087fdc9/fabrique_nodes_core-0.9.7-py3-none-any.whl
+[2023-04-12 17:02:54] INFO root fetch - processPackages [cir4mics]: Start processing: watchtower-browser-testing
+[2023-04-12 17:02:54] INFO root fetch - main [MainThread]: End processing [cir4mics]: success
+[2023-04-12 17:02:54] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 17:02:54] INFO root fetch - processPackages [fabrique-nodes-core]: Downloading https://files.pythonhosted.org/packages/82/20/2f588d230e810ce50e4b1f27f47a5ff3114cba10e64659f1208874ac1396/fabrique_nodes_core-0.9.8-py3-none-any.whl
+[2023-04-12 17:02:54] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 17:02:54] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 17:02:54] INFO root fetch - processPackages [fabrique-nodes-core]: executing diffoscope
+[2023-04-12 17:02:54] INFO root fetch - processPackages [fabrique-nodes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrique_nodes_core-0.9.7-py3-none-any.whl.zip tmp/fabrique_nodes_core-0.9.8-py3-none-any.whl.zip --markdown 20230412/f/fabrique-nodes-core/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-12 17:02:55] INFO root fetch - processPackages [titan-iris]: Start processing: awattar
+[2023-04-12 17:02:55] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 17:02:55] INFO root fetch - processPackages [awattar]: New version: [0.2.0] Old Version: [0.1.6]
+[2023-04-12 17:02:55] INFO root fetch - processPackages [awattar]: Downloading https://files.pythonhosted.org/packages/b3/83/88d33435151e265d1bc5e1592685f94018e22027ff3d455b08d240b78537/awattar-0.1.6.tar.gz
+[2023-04-12 17:02:55] INFO root fetch - processPackages [awattar]: Downloading https://files.pythonhosted.org/packages/9f/06/ec8f1100d8addf7c9c7b688e7d05abdd47d297a386bb09e54c5f53c5c5f5/awattar-0.2.0.tar.gz
+[2023-04-12 17:02:55] INFO root fetch - processPackages [awattar]: executing diffoscope
+[2023-04-12 17:02:55] INFO root fetch - processPackages [awattar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awattar-0.1.6.tar.gz tmp/awattar-0.2.0.tar.gz --markdown 20230412/a/awattar/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 17:02:55] INFO root fetch - processPackages [fabrique-nodes-core]: Start processing: TTS
+[2023-04-12 17:02:55] INFO root fetch - main [MainThread]: End processing [fabrique-nodes-core]: success
+[2023-04-12 17:02:55] INFO root fetch - processPackages [TTS]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 17:02:55] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: e2xgradingtools
+[2023-04-12 17:02:55] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 17:02:55] WARNING root fetch - processPackages [e2xgradingtools]: Skipping, unable to determine old version
+[2023-04-12 17:02:55] INFO root fetch - processPackages [e2xgradingtools]: Start processing: fw-gear-cow-says
+[2023-04-12 17:02:55] INFO root fetch - main [MainThread]: End processing [e2xgradingtools] error
+[2023-04-12 17:02:55] WARNING root fetch - processPackages [fw-gear-cow-says]: Skipping, unable to determine old version
+[2023-04-12 17:02:55] INFO root fetch - processPackages [fw-gear-cow-says]: Start processing: graphomaly
+[2023-04-12 17:02:55] INFO root fetch - main [MainThread]: End processing [fw-gear-cow-says] error
+[2023-04-12 17:02:55] INFO root fetch - processPackages [graphomaly]: New version: [0.2.7] Old Version: [0.2.6]
+[2023-04-12 17:02:55] INFO root fetch - processPackages [TTS]: Downloading https://files.pythonhosted.org/packages/67/99/6c20d7d05ba1b790ecf630c966339575f1e1ba1de99180cfb6cd0cdef613/TTS-0.8.0.tar.gz
+[2023-04-12 17:02:56] INFO root fetch - processPackages [graphomaly]: Downloading https://files.pythonhosted.org/packages/ce/2e/2c33bca1f3751301ab7ad3c86b458cac5abf4e9b2c1f963ebf4df4ca7b5f/graphomaly-0.2.6.tar.gz
+[2023-04-12 17:02:56] INFO root fetch - processPackages [graphomaly]: Downloading https://files.pythonhosted.org/packages/96/49/03b64ef5a87d1bfcf1b5df1034b049d5c8cd6d2effa63e6935d09b38730e/graphomaly-0.2.7.tar.gz
+[2023-04-12 17:02:56] INFO root fetch - processPackages [graphomaly]: executing diffoscope
+[2023-04-12 17:02:56] INFO root fetch - processPackages [graphomaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphomaly-0.2.6.tar.gz tmp/graphomaly-0.2.7.tar.gz --markdown 20230412/g/graphomaly/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2023-04-12 17:02:56] INFO root fetch - processPackages [awattar]: Start processing: matscipy
+[2023-04-12 17:02:56] INFO root fetch - main [MainThread]: End processing [awattar]: success
+[2023-04-12 17:02:56] INFO root fetch - processPackages [matscipy]: New version: [0.8.0rc9] Old Version: [0.8.0rc8]
+[2023-04-12 17:02:56] INFO root fetch - processPackages [TTS]: Downloading https://files.pythonhosted.org/packages/e6/68/26dd07a1742aa1c80702fe0bf57fbe9379806b1dda277c705a37a46dd744/TTS-0.9.0.tar.gz
+[2023-04-12 17:02:56] INFO root fetch - processPackages [matscipy]: Downloading https://files.pythonhosted.org/packages/c3/0f/3d8df653c831e9f51dfcb6c8a94aa761a6b9748da8c3b35266fadd3bd6a5/matscipy-0.8.0.rc8.tar.gz
+[2023-04-12 17:02:57] WARNING root fetch - processPackages [matscipy]: Skipping package: exceeds size limit 12142537>=10485760
+[2023-04-12 17:02:57] INFO root fetch - processPackages [matscipy]: Start processing: synthesized
+[2023-04-12 17:02:57] INFO root fetch - main [MainThread]: End processing [matscipy] error
+[2023-04-12 17:02:57] INFO root fetch - processPackages [TTS]: executing diffoscope
+[2023-04-12 17:02:57] INFO root fetch - processPackages [TTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TTS-0.8.0.tar.gz tmp/TTS-0.9.0.tar.gz --markdown 20230412/T/TTS/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 17:02:57] INFO root fetch - processPackages [synthesized]: New version: [2.6rc1] Old Version: [2.5rc2]
+[2023-04-12 17:02:57] INFO root fetch - processPackages [synthesized]: Downloading https://files.pythonhosted.org/packages/cb/a3/c763c09d267af79a666630906b70379bc368a842250993734b086ed492a5/synthesized-2.5rc2-cp39-cp39-win_amd64.whl
+[2023-04-12 17:02:58] INFO root fetch - processPackages [graphomaly]: Start processing: jina-now
+[2023-04-12 17:02:58] INFO root fetch - main [MainThread]: End processing [graphomaly]: success
+[2023-04-12 17:02:58] INFO root fetch - processPackages [jina-now]: New version: [0.0.9.dev2] Old Version: [0.0.9]
+[2023-04-12 17:02:58] INFO root fetch - processPackages [jina-now]: Downloading https://files.pythonhosted.org/packages/a0/c1/8dab3c7cac6450f5dcc71e7437bc31197cbadb65f348356c767429777502/jina-now-0.0.9.tar.gz
+[2023-04-12 17:02:58] INFO root fetch - processPackages [synthesized]: Downloading https://files.pythonhosted.org/packages/da/c8/524b117ce26a029108888eec8a7a16f0204e5cf2957b4068741023a35bce/synthesized-2.6rc1-cp39-cp39-win_amd64.whl
+[2023-04-12 17:02:58] INFO root fetch - processPackages [jina-now]: Downloading https://files.pythonhosted.org/packages/82/20/038948e51195bd3de8c85ac694d6a59d712e94575701c6d9eb0c2eb58f7b/jina-now-0.0.9.dev2.tar.gz
+[2023-04-12 17:02:59] INFO root fetch - processPackages [jina-now]: executing diffoscope
+[2023-04-12 17:02:59] INFO root fetch - processPackages [jina-now]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-now-0.0.9.tar.gz tmp/jina-now-0.0.9.dev2.tar.gz --markdown 20230412/j/jina-now/0.0.9-0.0.9.dev2/diff.md --exclude *.pyd
+[2023-04-12 17:02:59] INFO root fetch - processPackages [synthesized]: executing diffoscope
+[2023-04-12 17:02:59] INFO root fetch - processPackages [synthesized]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthesized-2.5rc2-cp39-cp39-win_amd64.whl.zip tmp/synthesized-2.6rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230412/s/synthesized/2.5rc2-2.6rc1/diff.md --exclude *.pyd
+[2023-04-12 17:03:00] INFO root fetch - processPackages [TTS]: Start processing: tensorflow-text-nightly
+[2023-04-12 17:03:00] INFO root fetch - main [MainThread]: End processing [TTS]: success
+[2023-04-12 17:03:00] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.13.0.dev20230412] Old Version: [2.13.0.dev20230411]
+[2023-04-12 17:03:00] INFO root fetch - processPackages [jina-now]: Start processing: titan-iris
+[2023-04-12 17:03:00] INFO root fetch - main [MainThread]: End processing [jina-now]: success
+[2023-04-12 17:03:00] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 17:03:00] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 17:03:00] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 17:03:00] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/a9/11/5b283415249215f8a692ec2a7861732b69ee26b2e39325083f3bb40999f7/tensorflow_text_nightly-2.13.0.dev20230412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 17:03:00] INFO root fetch - main [MainThread]: End processing [synthesized]: success
+[2023-04-12 17:03:02] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-04-12 17:03:02] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.13.0.dev20230411-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.13.0.dev20230412-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/t/tensorflow-text-nightly/2.13.0.dev20230411-2.13.0.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 17:03:02] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 17:03:33] INFO root fetch - main [MainThread]: End processing [squawk-cli]: success
+[2023-04-12 17:03:49] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
+[2023-04-12 17:04:15] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-04-12 17:04:15] INFO root fetch - main [MainThread]: Store serial: [17677917]
