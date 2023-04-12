@@ -7828,3 +7828,82 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 08:27:07] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:27:07] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:27:07] INFO root fetch - main [MainThread]: Store serial: [17671863]
+[2023-04-12 08:32:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671863]
+[2023-04-12 08:32:15] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 08:32:15] INFO root fetch - processPackages [isyflask-cli]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 08:32:15] INFO root fetch - processPackages [tvault]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-12 08:32:15] INFO root fetch - processPackages [obsinfo]: New version: [0.111b1] Old Version: [0.111.0]
+[2023-04-12 08:32:15] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 08:32:15] WARNING root fetch - processPackages [tqsdk-sm]: Skipping, unable to determine old version
+[2023-04-12 08:32:15] INFO root fetch - main [MainThread]: error
+[2023-04-12 08:32:15] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 08:32:15] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 08:32:15] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 08:32:15] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/5a/03/6eccc85737655103a2c858110ef05afeada1f690ccdcfe88d58522281fc9/tvault-0.3.6-py3-none-any.whl
+[2023-04-12 08:32:15] INFO root fetch - processPackages [obsinfo]: Downloading https://files.pythonhosted.org/packages/a3/09/77475b56cb908d6fc44d3e469c5aea2308ba72bf162b106a2049e1397d3a/obsinfo-0.111.0.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [isyflask-cli]: Downloading https://files.pythonhosted.org/packages/6f/e0/4677f02a3d56675e952990a73b5998efbb4a6598a04671761f116a8dc29b/isyflask_cli-0.1.6.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [titan-iris]: Downloading https://files.pythonhosted.org/packages/44/d5/65facd9094b25df7ad98b3e18ba0615e010861081bf1b7fe7ca7cc35b0a7/titan-iris-0.3.9a1.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/fb/46/acddb3e9350a6c5ac53a8ac20884af1cb1d894941a2e4144db1037f66bcd/tvault-0.3.7-py3-none-any.whl
+[2023-04-12 08:32:15] INFO root fetch - processPackages [obsinfo]: Downloading https://files.pythonhosted.org/packages/8c/aa/a7e677a327337c0e97b9a19f13cda86ba7927a5bc39082422f380edd16be/obsinfo-0.111b1.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [isyflask-cli]: Downloading https://files.pythonhosted.org/packages/53/7d/2931ae5d3887a98589d6fdd61f525eb013a8696c26fe499881cc153aa396/isyflask_cli-0.1.7.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-12 08:32:15] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.6-py3-none-any.whl.zip tmp/tvault-0.3.7-py3-none-any.whl.zip --markdown 20230412/t/tvault/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-12 08:32:15] INFO root fetch - processPackages [titan-iris]: Downloading https://files.pythonhosted.org/packages/6e/81/2a91a9be26df9651b2fc3a6054ccc6fbe32f3a3f990f2ffe9f5b67799541/titan-iris-0.3.9a2.tar.gz
+[2023-04-12 08:32:15] INFO root fetch - processPackages [obsinfo]: executing diffoscope
+[2023-04-12 08:32:15] INFO root fetch - processPackages [obsinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obsinfo-0.111.0.tar.gz tmp/obsinfo-0.111b1.tar.gz --markdown 20230412/o/obsinfo/0.111.0-0.111b1/diff.md --exclude *.pyd
+[2023-04-12 08:32:15] INFO root fetch - processPackages [isyflask-cli]: executing diffoscope
+[2023-04-12 08:32:15] INFO root fetch - processPackages [isyflask-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isyflask_cli-0.1.6.tar.gz tmp/isyflask_cli-0.1.7.tar.gz --markdown 20230412/i/isyflask-cli/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 08:32:16] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 08:32:16] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 08:32:16] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:16] INFO root fetch - processPackages [nsface-python]: New version: [1.1.51] Old Version: [1.1.46]
+[2023-04-12 08:32:17] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-cpu-python]: New version: [1.1.57] Old Version: [1.1.51]
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-python]: Downloading https://files.pythonhosted.org/packages/9c/65/cd5f80b52c06a18af4961c156675ee1519d52ffa525b01f5c207a16f6b4b/nsface_python-1.1.46-py3-none-any.whl
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-cpu-python]: Downloading https://files.pythonhosted.org/packages/76/ba/d42d27f138c19b777abb5f0c32222c959ad17d5919e18212060613111978/nsface_cpu_python-1.1.57-py3-none-any.whl
+[2023-04-12 08:32:17] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:17] INFO root fetch - processPackages [obsinfo]: New version: [0.111b1] Old Version: [0.111.0]
+[2023-04-12 08:32:17] INFO root fetch - processPackages [obsinfo]: executing diffoscope
+[2023-04-12 08:32:17] INFO root fetch - processPackages [obsinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obsinfo-0.111.0.tar.gz tmp/obsinfo-0.111b1.tar.gz --markdown 20230412/o/obsinfo/0.111.0-0.111b1/diff.md --exclude *.pyd
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-cpu-python]: executing diffoscope
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-cpu-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_cpu_python-1.1.51-py3-none-any.whl.zip tmp/nsface_cpu_python-1.1.57-py3-none-any.whl.zip --markdown 20230412/n/nsface-cpu-python/1.1.51-1.1.57/diff.md --exclude *.pyd
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-python]: executing diffoscope
+[2023-04-12 08:32:17] INFO root fetch - processPackages [nsface-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_python-1.1.46-py3-none-any.whl.zip tmp/nsface_python-1.1.51-py3-none-any.whl.zip --markdown 20230412/n/nsface-python/1.1.46-1.1.51/diff.md --exclude *.pyd
+[2023-04-12 08:32:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:18] INFO root fetch - processPackages [quetz-client]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-12 08:32:18] INFO root fetch - processPackages [quetz-client]: Downloading https://files.pythonhosted.org/packages/18/03/c4fbfe5d709b1e5acbbbeea15ef1e3ee86f304d332a92a36af996c3b0d16/quetz_client-0.4.0.tar.gz
+[2023-04-12 08:32:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:18] INFO root fetch - processPackages [py-silhouette]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-12 08:32:18] INFO root fetch - processPackages [quetz-client]: Downloading https://files.pythonhosted.org/packages/4c/79/c826fb308818bf9ee36c1e0bcf1a7a4dc13dcf1289ed62cb937d85a406f0/quetz_client-0.5.0.tar.gz
+[2023-04-12 08:32:18] INFO root fetch - processPackages [py-silhouette]: Downloading https://files.pythonhosted.org/packages/06/1c/8735ce274233678f68430fc6fdc1ac48413548daba59e6d13f48564356bb/py_silhouette-0.4.2.tar.gz
+[2023-04-12 08:32:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:19] WARNING root fetch - processPackages [hcpdiff]: Skipping, unable to determine old version
+[2023-04-12 08:32:19] INFO root fetch - main [MainThread]: error
+[2023-04-12 08:32:19] INFO root fetch - processPackages [tvault]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-12 08:32:19] INFO root fetch - processPackages [quetz-client]: executing diffoscope
+[2023-04-12 08:32:19] INFO root fetch - processPackages [quetz-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quetz_client-0.4.0.tar.gz tmp/quetz_client-0.5.0.tar.gz --markdown 20230412/q/quetz-client/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 08:32:19] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-12 08:32:19] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.6-py3-none-any.whl.zip tmp/tvault-0.3.7-py3-none-any.whl.zip --markdown 20230412/t/tvault/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-12 08:32:19] INFO root fetch - processPackages [py-silhouette]: Downloading https://files.pythonhosted.org/packages/98/f4/7dbdc1b40eefdd1e4088871709c8fcf4c3d6b45847cd46808d10301733b4/py_silhouette-0.4.3.tar.gz
+[2023-04-12 08:32:19] INFO root fetch - processPackages [py-silhouette]: executing diffoscope
+[2023-04-12 08:32:19] INFO root fetch - processPackages [py-silhouette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_silhouette-0.4.2.tar.gz tmp/py_silhouette-0.4.3.tar.gz --markdown 20230412/p/py-silhouette/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-12 08:32:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:19] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 08:32:20] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 08:32:20] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 08:32:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:20] INFO root fetch - processPackages [cdot]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 08:32:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:20] INFO root fetch - processPackages [nsface-cpu-python]: New version: [1.1.57] Old Version: [1.1.51]
+[2023-04-12 08:32:20] INFO root fetch - processPackages [nsface-cpu-python]: executing diffoscope
+[2023-04-12 08:32:20] INFO root fetch - processPackages [nsface-cpu-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_cpu_python-1.1.51-py3-none-any.whl.zip tmp/nsface_cpu_python-1.1.57-py3-none-any.whl.zip --markdown 20230412/n/nsface-cpu-python/1.1.51-1.1.57/diff.md --exclude *.pyd
+[2023-04-12 08:32:20] INFO root fetch - processPackages [cdot]: Downloading https://files.pythonhosted.org/packages/be/ef/d1dd63a51af2549d654554fd9aee97436ad7cca17ccce573cd94a1114469/cdot-0.2.8.tar.gz
+[2023-04-12 08:32:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:20] INFO root fetch - processPackages [cdot]: Downloading https://files.pythonhosted.org/packages/db/ee/f890f3499ba1dd982d79757a7800fee7e82c526f3041e920b36e92033727/cdot-0.2.9.tar.gz
+[2023-04-12 08:32:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:21] INFO root fetch - processPackages [cdot]: executing diffoscope
+[2023-04-12 08:32:21] INFO root fetch - processPackages [cdot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdot-0.2.8.tar.gz tmp/cdot-0.2.9.tar.gz --markdown 20230412/c/cdot/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 08:32:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:32:22] INFO root fetch - main [MainThread]: Store serial: [17671921]
