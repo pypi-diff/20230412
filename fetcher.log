@@ -22011,3 +22011,83 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:47:59] INFO root fetch - main [MainThread]: End processing [unstructured]: success
 [2023-04-12 20:47:59] INFO root fetch - main [MainThread]: End processing [eth-abi-lite]: success
 [2023-04-12 20:47:59] INFO root fetch - main [MainThread]: Store serial: [17680688]
+[2023-04-12 20:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680688]
+[2023-04-12 20:53:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 20:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imagemangler
+[2023-04-12 20:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magnus
+[2023-04-12 20:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtiplayground
+[2023-04-12 20:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metaflow
+[2023-04-12 20:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-casdoor
+[2023-04-12 20:53:07] INFO root fetch - processPackages [imagemangler]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 20:53:07] INFO root fetch - processPackages [magnus]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 20:53:07] INFO root fetch - processPackages [fastapi-casdoor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 20:53:07] INFO root fetch - processPackages [dtiplayground]: New version: [0.5.7b9] Old Version: [0.5.7b8]
+[2023-04-12 20:53:07] INFO root fetch - processPackages [metaflow]: New version: [2.8.3] Old Version: [2.8.2]
+[2023-04-12 20:53:07] INFO root fetch - processPackages [dtiplayground]: executing diffoscope
+[2023-04-12 20:53:07] INFO root fetch - processPackages [dtiplayground]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtiplayground-0.5.7b8.tar.gz tmp/dtiplayground-0.5.7b9.tar.gz --markdown 20230412/d/dtiplayground/0.5.7b8-0.5.7b9/diff.md --exclude *.pyd
+[2023-04-12 20:53:07] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/75/7e/1b41d036d7425700254487571d5b0daa1960e13a6bc8c86d95f8a572dd38/fastapi_casdoor-0.1.0-py3.8.egg
+[2023-04-12 20:53:07] INFO root fetch - processPackages [magnus]: Downloading https://files.pythonhosted.org/packages/90/39/6e79fcb32eeb63890ea90c481570e93e3cc96f5428dd4de86e0421b4a87d/magnus-0.4.8.tar.gz
+[2023-04-12 20:53:07] INFO root fetch - processPackages [metaflow]: Downloading https://files.pythonhosted.org/packages/6f/1c/25aa65e35b9a93a896d20344f4bbebf1fc72068cf33d4aefeb999654caea/metaflow-2.8.2.tar.gz
+[2023-04-12 20:53:08] INFO root fetch - processPackages [imagemangler]: Downloading https://files.pythonhosted.org/packages/08/c2/eb7571250aa5653b877bcf411672ab2e48bf5379ef6c90c363b945afe955/imagemangler-0.1.5.tar.gz
+[2023-04-12 20:53:08] INFO root fetch - processPackages [fastapi-casdoor]: Downloading https://files.pythonhosted.org/packages/2c/b3/76f9a34de5b135ce9f29cccc667d28789979c712f13b4ef92221e13fc67d/fastapi_casdoor-0.1.1-py3.8.egg
+[2023-04-12 20:53:08] INFO root fetch - processPackages [metaflow]: Downloading https://files.pythonhosted.org/packages/03/85/b04e6ecd6d2e9e2f446002dbeac165f8f6c715423b17741b914aca1ef8f6/metaflow-2.8.3.tar.gz
+[2023-04-12 20:53:08] INFO root fetch - processPackages [imagemangler]: executing diffoscope
+[2023-04-12 20:53:08] INFO root fetch - processPackages [imagemangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagemangler-0.1.4.tar.gz tmp/imagemangler-0.1.5.tar.gz --markdown 20230412/i/imagemangler/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 20:53:08] INFO root fetch - processPackages [magnus]: Downloading https://files.pythonhosted.org/packages/44/a5/abfc74ee3d541331891e45d0986c3171ab5084231cebacc144a6afd310b0/magnus-0.4.9.tar.gz
+[2023-04-12 20:53:08] INFO root fetch - processPackages [fastapi-casdoor]: executing diffoscope
+[2023-04-12 20:53:08] INFO root fetch - processPackages [fastapi-casdoor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_casdoor-0.1.0-py3.8.egg tmp/fastapi_casdoor-0.1.1-py3.8.egg --markdown 20230412/f/fastapi-casdoor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 20:53:08] INFO root fetch - processPackages [metaflow]: executing diffoscope
+[2023-04-12 20:53:08] INFO root fetch - processPackages [metaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaflow-2.8.2.tar.gz tmp/metaflow-2.8.3.tar.gz --markdown 20230412/m/metaflow/2.8.2-2.8.3/diff.md --exclude *.pyd
+[2023-04-12 20:53:08] INFO root fetch - processPackages [magnus]: executing diffoscope
+[2023-04-12 20:53:08] INFO root fetch - processPackages [magnus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magnus-0.4.8.tar.gz tmp/magnus-0.4.9.tar.gz --markdown 20230412/m/magnus/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 20:53:09] INFO root fetch - processPackages [imagemangler]: Start processing: approx-cp
+[2023-04-12 20:53:09] INFO root fetch - main [MainThread]: End processing [imagemangler]: success
+[2023-04-12 20:53:09] INFO root fetch - processPackages [approx-cp]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 20:53:09] INFO root fetch - processPackages [fastapi-casdoor]: Start processing: django-oscar-pg-search
+[2023-04-12 20:53:09] INFO root fetch - main [MainThread]: End processing [fastapi-casdoor]: success
+[2023-04-12 20:53:09] INFO root fetch - processPackages [django-oscar-pg-search]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 20:53:09] INFO root fetch - processPackages [approx-cp]: Downloading https://files.pythonhosted.org/packages/8f/cb/5f040accd47aa94d92186da3c0bef8aee205dffe5d9761ae446e5268396a/approx-cp-0.0.1.tar.gz
+[2023-04-12 20:53:09] INFO root fetch - processPackages [django-oscar-pg-search]: Downloading https://files.pythonhosted.org/packages/09/9e/46eb5b00ecf3d1bedbe1a98dc7d034417b3ec77bfbc9108f5b7aeb816662/django-oscar-pg-search-0.9.1.tar.gz
+[2023-04-12 20:53:09] INFO root fetch - processPackages [magnus]: Start processing: pybrainlife
+[2023-04-12 20:53:09] INFO root fetch - main [MainThread]: End processing [magnus]: success
+[2023-04-12 20:53:09] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.92] Old Version: [1.0.91]
+[2023-04-12 20:53:09] INFO root fetch - processPackages [django-oscar-pg-search]: executing diffoscope
+[2023-04-12 20:53:09] INFO root fetch - processPackages [django-oscar-pg-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-oscar-pg-search-0.9.0.tar.gz tmp/django-oscar-pg-search-0.9.1.tar.gz --markdown 20230412/d/django-oscar-pg-search/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 20:53:09] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/5b/d7/0dd4a55260d5610840013d3ef96738fea40a3c0eb59c622098b6a18c8ab9/pybrainlife-1.0.92.tar.gz
+[2023-04-12 20:53:09] INFO root fetch - processPackages [approx-cp]: Downloading https://files.pythonhosted.org/packages/50/fe/0e880914ea77eba609899488db9b5755effca40b31ebfba327dd620d214e/approx-cp-0.0.2.tar.gz
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dtiplayground]: Start processing: dkist-spectral-lines
+[2023-04-12 20:53:10] INFO root fetch - main [MainThread]: End processing [dtiplayground]: success
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dkist-spectral-lines]: New version: [1.0.0rc5] Old Version: [1.0.0rc4]
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dkist-spectral-lines]: Downloading https://files.pythonhosted.org/packages/01/b3/c03c48ff78199b29e1699b0a492e6b48a84b8bd5ff11e2c130a1c74f25ac/dkist-spectral-lines-1.0.0rc4.tar.gz
+[2023-04-12 20:53:10] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 20:53:10] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.91.tar.gz tmp/pybrainlife-1.0.92.tar.gz --markdown 20230412/p/pybrainlife/1.0.91-1.0.92/diff.md --exclude *.pyd
+[2023-04-12 20:53:10] INFO root fetch - processPackages [approx-cp]: executing diffoscope
+[2023-04-12 20:53:10] INFO root fetch - processPackages [approx-cp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/approx-cp-0.0.1.tar.gz tmp/approx-cp-0.0.2.tar.gz --markdown 20230412/a/approx-cp/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dkist-spectral-lines]: Downloading https://files.pythonhosted.org/packages/c8/e1/52cfcbb92b5603c8109e33ba983f490ac351114af63ec5d4407ccbb28ae9/dkist-spectral-lines-1.0.0rc5.tar.gz
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dkist-spectral-lines]: executing diffoscope
+[2023-04-12 20:53:10] INFO root fetch - processPackages [dkist-spectral-lines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-spectral-lines-1.0.0rc4.tar.gz tmp/dkist-spectral-lines-1.0.0rc5.tar.gz --markdown 20230412/d/dkist-spectral-lines/1.0.0rc4-1.0.0rc5/diff.md --exclude *.pyd
+[2023-04-12 20:53:11] INFO root fetch - processPackages [approx-cp]: Start processing: protocol-verwerker
+[2023-04-12 20:53:11] INFO root fetch - main [MainThread]: End processing [approx-cp]: success
+[2023-04-12 20:53:11] INFO root fetch - processPackages [pybrainlife]: Start processing: OpenGeode-core
+[2023-04-12 20:53:11] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 20:53:11] INFO root fetch - processPackages [protocol-verwerker]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 20:53:11] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [13.4.9]
+[2023-04-12 20:53:11] INFO root fetch - processPackages [django-oscar-pg-search]: Start processing: astrohack
+[2023-04-12 20:53:11] INFO root fetch - main [MainThread]: End processing [django-oscar-pg-search]: success
+[2023-04-12 20:53:11] INFO root fetch - processPackages [astrohack]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-04-12 20:53:11] INFO root fetch - processPackages [protocol-verwerker]: Downloading https://files.pythonhosted.org/packages/05/8e/a1b10361a5e86fe97ef555ab81112e53a89e9af0219064cda2ea2b00a87f/protocol_verwerker-0.0.1-py3-none-any.whl
+[2023-04-12 20:53:11] INFO root fetch - processPackages [astrohack]: Downloading https://files.pythonhosted.org/packages/92/5a/a75c9a33a6187ebe7c58a041d9b8e9a6f20db80d61bbd38a49c57f25c8dc/astrohack-0.0.3.tar.gz
+[2023-04-12 20:53:11] INFO root fetch - main [MainThread]: End processing [metaflow]: success
+[2023-04-12 20:53:11] INFO root fetch - main [MainThread]: End processing [dkist-spectral-lines]: success
+[2023-04-12 20:53:11] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-12 20:53:11] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-13.4.9-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.10.4-cp39-cp39-win_amd64.whl.zip --markdown 20230412/O/OpenGeode-core/13.4.9-9.10.4/diff.md --exclude *.pyd
+[2023-04-12 20:53:11] INFO root fetch - processPackages [astrohack]: Downloading https://files.pythonhosted.org/packages/0d/35/e75644cae27ffc4107f6a454e6760aa4a7da1cb01e5e4ad0d06f25e58a79/astrohack-0.0.5.tar.gz
+[2023-04-12 20:53:12] INFO root fetch - processPackages [protocol-verwerker]: Downloading https://files.pythonhosted.org/packages/6e/18/e0321adcd5d2bcd75da18028db043c1995b732245b2aefc01a3bd79f1e48/protocol_verwerker-0.0.2.tar.gz
+[2023-04-12 20:53:12] INFO root fetch - processPackages [astrohack]: executing diffoscope
+[2023-04-12 20:53:12] INFO root fetch - processPackages [astrohack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrohack-0.0.3.tar.gz tmp/astrohack-0.0.5.tar.gz --markdown 20230412/a/astrohack/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 20:53:12] INFO root fetch - processPackages [protocol-verwerker]: executing diffoscope
+[2023-04-12 20:53:12] INFO root fetch - processPackages [protocol-verwerker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protocol_verwerker-0.0.1-py3-none-any.whl.zip tmp/protocol_verwerker-0.0.2.tar.gz --markdown 20230412/p/protocol-verwerker/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 20:53:13] INFO root fetch - main [MainThread]: End processing [protocol-verwerker]: success
+[2023-04-12 20:53:13] INFO root fetch - main [MainThread]: End processing [astrohack]: success
+[2023-04-12 20:54:08] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
+[2023-04-12 20:54:08] INFO root fetch - main [MainThread]: Store serial: [17680723]
