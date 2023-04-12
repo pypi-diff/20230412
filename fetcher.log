@@ -10158,3 +10158,112 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 10:42:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:44:20] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:44:20] INFO root fetch - main [MainThread]: Store serial: [17673490]
+[2023-04-12 10:49:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673490]
+[2023-04-12 10:49:29] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-12 10:49:29] INFO root fetch - processPackages [pure-safetensors]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 10:49:29] INFO root fetch - processPackages [shashvault]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 10:49:29] INFO root fetch - processPackages [FastCNN2]: New version: [1.23.412.1647] Old Version: [1.23.412.1137]
+[2023-04-12 10:49:29] INFO root fetch - processPackages [odoo14-addon-hotel-reservation]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev23]
+[2023-04-12 10:49:29] INFO root fetch - processPackages [xj-user]: New version: [1.2.99] Old Version: [1.2.98]
+[2023-04-12 10:49:29] INFO root fetch - processPackages [odoo14-addon-hotel-reservation]: Downloading https://files.pythonhosted.org/packages/cc/d4/eff9baf2f1b9210db1c51d9d4ae71f42d434fb7a725a04b50529e389f4e0/odoo14_addon_hotel_reservation-14.0.1.0.1.dev23-py3-none-any.whl
+[2023-04-12 10:49:29] INFO root fetch - processPackages [shashvault]: Downloading https://files.pythonhosted.org/packages/7c/4c/d93ab8efe0041d2d76b2bee42a0a2cfd92e5506808681f70d3bcf0841ddf/shashvault-0.0.1-py3-none-any.whl
+[2023-04-12 10:49:29] INFO root fetch - processPackages [pure-safetensors]: Downloading https://files.pythonhosted.org/packages/32/fd/f32b8de4deca937566606a162fadec1e6f6496740fe1653c31c1a329403c/pure_safetensors-0.3.1.tar.gz
+[2023-04-12 10:49:29] INFO root fetch - processPackages [pure-safetensors]: executing diffoscope
+[2023-04-12 10:49:29] INFO root fetch - processPackages [pure-safetensors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_safetensors-0.3.0.tar.gz tmp/pure_safetensors-0.3.1.tar.gz --markdown 20230412/p/pure-safetensors/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 10:49:30] INFO root fetch - processPackages [FastCNN2]: Downloading https://files.pythonhosted.org/packages/87/cb/821c7dfa48dc446f218d11461574add502e66f405374614b1339ae3882be/FastCNN2-1.23.412.1647.tar.gz
+[2023-04-12 10:49:30] INFO root fetch - processPackages [FastCNN2]: executing diffoscope
+[2023-04-12 10:49:30] INFO root fetch - processPackages [FastCNN2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FastCNN2-1.23.412.1137.tar.gz tmp/FastCNN2-1.23.412.1647.tar.gz --markdown 20230412/F/FastCNN2/1.23.412.1137-1.23.412.1647/diff.md --exclude *.pyd
+[2023-04-12 10:49:30] INFO root fetch - processPackages [xj-user]: executing diffoscope
+[2023-04-12 10:49:30] INFO root fetch - processPackages [xj-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_user-1.2.98.tar.gz tmp/xj_user-1.2.99.tar.gz --markdown 20230412/x/xj-user/1.2.98-1.2.99/diff.md --exclude *.pyd
+[2023-04-12 10:49:30] INFO root fetch - processPackages [odoo14-addon-hotel-reservation]: Downloading https://files.pythonhosted.org/packages/a9/60/bea9338598177942db0ee67b2c910aeeacd35cdb9605351a7c0575b008d2/odoo14_addon_hotel_reservation-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 10:49:30] INFO root fetch - processPackages [shashvault]: Downloading https://files.pythonhosted.org/packages/79/48/593a6afeca03fea6da1aecdf6891b9d97f7428bee1cf4f737c4b016dc1df/shashvault-0.0.2-py3-none-any.whl
+[2023-04-12 10:49:30] INFO root fetch - processPackages [shashvault]: executing diffoscope
+[2023-04-12 10:49:30] INFO root fetch - processPackages [shashvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shashvault-0.0.1-py3-none-any.whl.zip tmp/shashvault-0.0.2-py3-none-any.whl.zip --markdown 20230412/s/shashvault/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 10:49:30] INFO root fetch - processPackages [odoo14-addon-hotel-reservation]: executing diffoscope
+[2023-04-12 10:49:30] INFO root fetch - processPackages [odoo14-addon-hotel-reservation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hotel_reservation-14.0.1.0.1.dev23-py3-none-any.whl.zip tmp/odoo14_addon_hotel_reservation-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-hotel-reservation/14.0.1.0.1.dev23-14.0.1.0.1.dev8/diff.md --exclude *.pyd
+[2023-04-12 10:49:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:31] INFO root fetch - processPackages [taipy-config]: New version: [2.2.0] Old Version: [2.1.0]
+[2023-04-12 10:49:31] INFO root fetch - processPackages [taipy-config]: Downloading https://files.pythonhosted.org/packages/c6/55/9cdeb84ada0883c71d3b92d652dd053332cab3d9b6d7b02ca096fe22169c/taipy-config-2.1.0.tar.gz
+[2023-04-12 10:49:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:31] INFO root fetch - processPackages [orthanc-tools]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-12 10:49:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:31] INFO root fetch - processPackages [napari-bigfish]: New version: [0.2] Old Version: [0.1]
+[2023-04-12 10:49:31] INFO root fetch - processPackages [orthanc-tools]: Downloading https://files.pythonhosted.org/packages/7a/a7/3285e6b051ed8d6970fa84a9da3840e934367419a3502af3944c38a31687/orthanc_tools-0.8.3.tar.gz
+[2023-04-12 10:49:31] INFO root fetch - processPackages [taipy-config]: Downloading https://files.pythonhosted.org/packages/28/36/27bdb4f48c1c365756d804ec9264afdcb19c66dd54e9a9d734f7f9255042/taipy-config-2.2.0.tar.gz
+[2023-04-12 10:49:31] INFO root fetch - processPackages [taipy-config]: executing diffoscope
+[2023-04-12 10:49:31] INFO root fetch - processPackages [taipy-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taipy-config-2.1.0.tar.gz tmp/taipy-config-2.2.0.tar.gz --markdown 20230412/t/taipy-config/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 10:49:31] INFO root fetch - processPackages [napari-bigfish]: Downloading https://files.pythonhosted.org/packages/bc/8c/0ea3634c38d0a5453b4ecc86f44753c2b513f3fc4f6acbdf445e3c199b86/napari-bigfish-0.1.tar.gz
+[2023-04-12 10:49:31] INFO root fetch - processPackages [orthanc-tools]: Downloading https://files.pythonhosted.org/packages/89/56/302bbc4710e86a4833c3efcda9c14290aacbe67cc6c31fb400dd37e8ccc6/orthanc_tools-0.8.4.tar.gz
+[2023-04-12 10:49:31] INFO root fetch - processPackages [orthanc-tools]: executing diffoscope
+[2023-04-12 10:49:31] INFO root fetch - processPackages [orthanc-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orthanc_tools-0.8.3.tar.gz tmp/orthanc_tools-0.8.4.tar.gz --markdown 20230412/o/orthanc-tools/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-12 10:49:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:32] INFO root fetch - processPackages [napari-bigfish]: Downloading https://files.pythonhosted.org/packages/8f/e4/5718765233b2add052d8dc775530af98956d4738d3373aa8ea3a8f0ab94f/napari-bigfish-0.2.tar.gz
+[2023-04-12 10:49:32] INFO root fetch - processPackages [policyengine-api]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 10:49:32] INFO root fetch - processPackages [napari-bigfish]: executing diffoscope
+[2023-04-12 10:49:32] INFO root fetch - processPackages [napari-bigfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-bigfish-0.1.tar.gz tmp/napari-bigfish-0.2.tar.gz --markdown 20230412/n/napari-bigfish/0.1-0.2/diff.md --exclude *.pyd
+[2023-04-12 10:49:32] INFO root fetch - processPackages [policyengine-api]: Downloading https://files.pythonhosted.org/packages/0c/d0/02681c7f7cbcefdb2294a2e293a29bf45474bce2f7922aafdc942b7b95ca/policyengine-api-1.1.1.tar.gz
+[2023-04-12 10:49:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:32] INFO root fetch - processPackages [pdfreactor.plone]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 10:49:32] INFO root fetch - processPackages [pdfreactor.plone]: Downloading https://files.pythonhosted.org/packages/12/5f/817723d7b680a41e67eb2fc6b0f486e62c56aae06a3b742b816ac7a6cb57/pdfreactor.plone-1.0.2.tar.gz
+[2023-04-12 10:49:32] INFO root fetch - processPackages [policyengine-api]: Downloading https://files.pythonhosted.org/packages/78/c8/a3402bce6585a9e4875de2a227348f155dc64825dc0fbd1639e6a99fb5b2/policyengine-api-1.1.2.tar.gz
+[2023-04-12 10:49:32] INFO root fetch - processPackages [policyengine-api]: executing diffoscope
+[2023-04-12 10:49:32] INFO root fetch - processPackages [policyengine-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-api-1.1.1.tar.gz tmp/policyengine-api-1.1.2.tar.gz --markdown 20230412/p/policyengine-api/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 10:49:32] INFO root fetch - processPackages [pdfreactor.plone]: Downloading https://files.pythonhosted.org/packages/52/52/6364f34cbd7caba96172f6f6f4855ab66f7a17d70cb929b9d00336f03cda/pdfreactor.plone-1.0.3.tar.gz
+[2023-04-12 10:49:32] INFO root fetch - processPackages [pdfreactor.plone]: executing diffoscope
+[2023-04-12 10:49:32] INFO root fetch - processPackages [pdfreactor.plone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfreactor.plone-1.0.2.tar.gz tmp/pdfreactor.plone-1.0.3.tar.gz --markdown 20230412/p/pdfreactor.plone/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 10:49:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:33] INFO root fetch - processPackages [concrete-python]: New version: [1.0.0rc2] Old Version: [1.0.0rc1]
+[2023-04-12 10:49:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:33] WARNING root fetch - processPackages [hhfirstpkg]: Skipping, unable to determine old version
+[2023-04-12 10:49:33] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:49:33] INFO root fetch - processPackages [meshed]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-12 10:49:33] INFO root fetch - processPackages [concrete-python]: Downloading https://files.pythonhosted.org/packages/30/04/a8de360c8165ecc85f3d0469c4a2e8a535b3635387811ed943252e7ed319/concrete_python-1.0.0rc1-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-04-12 10:49:33] WARNING root fetch - processPackages [concrete-python]: Skipping package: exceeds size limit 61910240>=10485760
+[2023-04-12 10:49:33] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:49:33] INFO root fetch - processPackages [meshed]: Downloading https://files.pythonhosted.org/packages/ec/66/ec18e469de7a31199ec17594f774aa629498f1f4b963deea16117918bef2/meshed-0.1.98.tar.gz
+[2023-04-12 10:49:33] WARNING root fetch - processPackages [rwpp]: Skipping, unable to determine old version
+[2023-04-12 10:49:33] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:49:33] INFO root fetch - processPackages [claspy]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 10:49:33] INFO root fetch - processPackages [claspy]: Downloading https://files.pythonhosted.org/packages/ba/43/51dbefa84c60eedbc054b1ded52036075b4db8b8d2bd3233b836e252bd79/claspy-0.1.8.tar.gz
+[2023-04-12 10:49:33] INFO root fetch - processPackages [meshed]: Downloading https://files.pythonhosted.org/packages/52/c3/21e2c03ab6607bd25fb9f6efb994798b3e75db906daf491bf961ee733450/meshed-0.1.99.tar.gz
+[2023-04-12 10:49:33] INFO root fetch - processPackages [claspy]: executing diffoscope
+[2023-04-12 10:49:33] INFO root fetch - processPackages [claspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/claspy-0.1.7.tar.gz tmp/claspy-0.1.8.tar.gz --markdown 20230412/c/claspy/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 10:49:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:34] INFO root fetch - processPackages [pelican-search]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-12 10:49:34] INFO root fetch - processPackages [meshed]: executing diffoscope
+[2023-04-12 10:49:34] INFO root fetch - processPackages [meshed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshed-0.1.98.tar.gz tmp/meshed-0.1.99.tar.gz --markdown 20230412/m/meshed/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-12 10:49:34] INFO root fetch - processPackages [pelican-search]: Downloading https://files.pythonhosted.org/packages/3c/ef/86cc54014ea61b22b89487933f7e2336fc2e738413773b2f29c6b8fe39cb/pelican_search-1.0.2.tar.gz
+[2023-04-12 10:49:34] INFO root fetch - processPackages [pelican-search]: Downloading https://files.pythonhosted.org/packages/ac/44/5db6efe345d70a31cc79d7bd59cc10108c54550fefa1aa28f4a3c7113899/pelican_search-1.1.0.tar.gz
+[2023-04-12 10:49:34] INFO root fetch - processPackages [pelican-search]: executing diffoscope
+[2023-04-12 10:49:34] INFO root fetch - processPackages [pelican-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pelican_search-1.0.2.tar.gz tmp/pelican_search-1.1.0.tar.gz --markdown 20230412/p/pelican-search/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 10:49:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:34] INFO root fetch - processPackages [anubis-policy-api]: New version: [0.7.0.dev0] Old Version: [0.6.0]
+[2023-04-12 10:49:35] INFO root fetch - processPackages [anubis-policy-api]: Downloading https://files.pythonhosted.org/packages/30/3d/2610dc16287151e0884302178006caf9debc32a410644ed8c36e79510eab/anubis_policy_api-0.6.0-py3-none-any.whl
+[2023-04-12 10:49:35] INFO root fetch - processPackages [anubis-policy-api]: Downloading https://files.pythonhosted.org/packages/3b/1d/b4a739158146e8daee529e0bc683699411c40b48436990dbaf304c0bb7ef/anubis_policy_api-0.7.0.dev0-py3-none-any.whl
+[2023-04-12 10:49:35] INFO root fetch - processPackages [anubis-policy-api]: executing diffoscope
+[2023-04-12 10:49:35] INFO root fetch - processPackages [anubis-policy-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anubis_policy_api-0.6.0-py3-none-any.whl.zip tmp/anubis_policy_api-0.7.0.dev0-py3-none-any.whl.zip --markdown 20230412/a/anubis-policy-api/0.6.0-0.7.0.dev0/diff.md --exclude *.pyd
+[2023-04-12 10:49:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:35] INFO root fetch - processPackages [preprocessing-pgp]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 10:49:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:35] INFO root fetch - processPackages [md2pdf]: New version: [1.0.1] Old Version: [0.6]
+[2023-04-12 10:49:35] INFO root fetch - processPackages [preprocessing-pgp]: Downloading https://files.pythonhosted.org/packages/84/dc/8746be78e78e6a4bf7a8cd8cdf75c7cfb190b2dd082c1c1a619504e130d3/preprocessing-pgp-0.2.8.tar.gz
+[2023-04-12 10:49:35] WARNING root fetch - processPackages [preprocessing-pgp]: Skipping package: exceeds size limit 53984634>=10485760
+[2023-04-12 10:49:35] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:49:35] INFO root fetch - processPackages [stathub]: New version: [0.1.4.1] Old Version: [0.1.4]
+[2023-04-12 10:49:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:36] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.6] Old Version: [1.2.5.5]
+[2023-04-12 10:49:36] INFO root fetch - processPackages [md2pdf]: Downloading https://files.pythonhosted.org/packages/7b/df/0c298d86f49179a4343f9afa11c5c8a808ca11ab4b22785990fe90b8c351/md2pdf-0.6.tar.gz
+[2023-04-12 10:49:36] INFO root fetch - processPackages [stathub]: Downloading https://files.pythonhosted.org/packages/03/56/59e3d96a457c927d6b01bff53d341f1aaac0ad3795be01eedb2b4f58adab/stathub-0.1.4.1-py3-none-any.whl
+[2023-04-12 10:49:36] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-12 10:49:36] INFO root fetch - processPackages [stathub]: executing diffoscope
+[2023-04-12 10:49:36] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.5.tar.gz tmp/pcl_pangu-1.2.5.6.tar.gz --markdown 20230412/p/pcl-pangu/1.2.5.5-1.2.5.6/diff.md --exclude *.pyd
+[2023-04-12 10:49:36] INFO root fetch - processPackages [stathub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stathub-0.1.4-py3-none-any.whl.zip tmp/stathub-0.1.4.1-py3-none-any.whl.zip --markdown 20230412/s/stathub/0.1.4-0.1.4.1/diff.md --exclude *.pyd
+[2023-04-12 10:49:36] INFO root fetch - processPackages [md2pdf]: Downloading https://files.pythonhosted.org/packages/ac/10/bd0f3869b47894c46e2f45991ff907d184a9933e7d23219e453ab5ce3b8b/md2pdf-1.0.1.linux-x86_64.tar.gz
+[2023-04-12 10:49:36] INFO root fetch - processPackages [md2pdf]: executing diffoscope
+[2023-04-12 10:49:36] INFO root fetch - processPackages [md2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md2pdf-0.6.tar.gz tmp/md2pdf-1.0.1.linux-x86_64.tar.gz --markdown 20230412/m/md2pdf/0.6-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 10:49:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:38] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:49:38] INFO root fetch - main [MainThread]: Store serial: [17673556]
