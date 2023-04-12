@@ -11655,3 +11655,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 12:11:06] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:11:06] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:11:06] INFO root fetch - main [MainThread]: Store serial: [17674447]
+[2023-04-12 12:16:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674447]
+[2023-04-12 12:16:16] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 12:16:16] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 12:16:16] WARNING root fetch - processPackages [treeg]: Skipping, unable to determine old version
+[2023-04-12 12:16:16] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:16:16] INFO root fetch - processPackages [goated]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 12:16:16] INFO root fetch - processPackages [nashbanksync]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 12:16:16] INFO root fetch - processPackages [evidently]: New version: [0.3.0] Old Version: [0.2.8]
+[2023-04-12 12:16:16] INFO root fetch - processPackages [goated]: Downloading https://files.pythonhosted.org/packages/99/05/d6656eb9d5d11d2acfbed342f1f46d22f75d5adaca5b67cc889f59738538/goated-0.0.5.tar.gz
+[2023-04-12 12:16:16] INFO root fetch - processPackages [evidently]: Downloading https://files.pythonhosted.org/packages/a4/5e/1e617a9e1b22ec43c780918b704b3c0615e297d42c129211ffd5b38f5f0e/evidently-0.2.8.tar.gz
+[2023-04-12 12:16:16] INFO root fetch - processPackages [nashbanksync]: Downloading https://files.pythonhosted.org/packages/11/dd/544d153563799222c6a9e315f2a0b249bc604c9eade4f0d9d3b73a5e08a4/nashbanksync-0.1.8.tar.gz
+[2023-04-12 12:16:17] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 12:16:17] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 12:16:17] INFO root fetch - processPackages [goated]: Downloading https://files.pythonhosted.org/packages/08/40/5ba6b23ac2e2794aa2123581a59ee88b0753591091bbfdf396e9a53af44d/goated-0.0.6.tar.gz
+[2023-04-12 12:16:17] INFO root fetch - processPackages [goated]: executing diffoscope
+[2023-04-12 12:16:17] INFO root fetch - processPackages [goated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goated-0.0.5.tar.gz tmp/goated-0.0.6.tar.gz --markdown 20230412/g/goated/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 12:16:17] INFO root fetch - processPackages [nashbanksync]: Downloading https://files.pythonhosted.org/packages/7a/e4/423e5b98b3a230f3bafa2fd0b9ff5e30d35f36c5a97b49ceea1e91392102/nashbanksync-0.1.9.tar.gz
+[2023-04-12 12:16:17] INFO root fetch - processPackages [ddc]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 12:16:17] INFO root fetch - processPackages [nashbanksync]: executing diffoscope
+[2023-04-12 12:16:17] INFO root fetch - processPackages [nashbanksync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nashbanksync-0.1.8.tar.gz tmp/nashbanksync-0.1.9.tar.gz --markdown 20230412/n/nashbanksync/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 12:16:17] INFO root fetch - processPackages [ddc]: Downloading https://files.pythonhosted.org/packages/3b/7f/043004b4c616e2f5d425d53b10b4a7403d00eee84b40536640a640fc8e46/ddc-0.3.8.tar.gz
+[2023-04-12 12:16:17] INFO root fetch - processPackages [ddc]: Downloading https://files.pythonhosted.org/packages/64/5a/160efa0d32148dfff53f25d81816032621dded179147ebfd3b6f9b5ad80b/ddc-0.3.9.tar.gz
+[2023-04-12 12:16:18] INFO root fetch - processPackages [ddc]: executing diffoscope
+[2023-04-12 12:16:18] INFO root fetch - processPackages [ddc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddc-0.3.8.tar.gz tmp/ddc-0.3.9.tar.gz --markdown 20230412/d/ddc/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 12:16:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:18] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.9.0a1681291877] Old Version: [1.9.0a1681291828]
+[2023-04-12 12:16:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:18] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-12 12:16:18] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291828.tar.gz tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291877.tar.gz --markdown 20230412/l/lbrlabs-pulumi-scaleway/1.9.0a1681291828-1.9.0a1681291877/diff.md --exclude *.pyd
+[2023-04-12 12:16:18] INFO root fetch - processPackages [Zeraora]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-12 12:16:18] INFO root fetch - processPackages [Zeraora]: Downloading https://files.pythonhosted.org/packages/cf/e0/46c87cfb50aa8bae22531d3ab0fb104fb208259211d52b1491dc886a785c/Zeraora-0.1.1.tar.gz
+[2023-04-12 12:16:19] INFO root fetch - processPackages [Zeraora]: Downloading https://files.pythonhosted.org/packages/24/67/8d3bf0398b995c1d6ebcef1d68fb9cadb222eda10ffbd97e038c416f4744/Zeraora-0.2.0.tar.gz
+[2023-04-12 12:16:19] INFO root fetch - processPackages [Zeraora]: executing diffoscope
+[2023-04-12 12:16:19] INFO root fetch - processPackages [Zeraora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Zeraora-0.1.1.tar.gz tmp/Zeraora-0.2.0.tar.gz --markdown 20230412/Z/Zeraora/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 12:16:19] INFO root fetch - processPackages [evidently]: Downloading https://files.pythonhosted.org/packages/dc/84/797d9c1d97750b1b2016a04fd3ddc29525ac18a0ec01e4c0ef9ecb5a0831/evidently-0.3.0.tar.gz
+[2023-04-12 12:16:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:19] INFO root fetch - processPackages [django-dirtyfields]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-12 12:16:19] INFO root fetch - processPackages [evidently]: executing diffoscope
+[2023-04-12 12:16:19] INFO root fetch - processPackages [evidently]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evidently-0.2.8.tar.gz tmp/evidently-0.3.0.tar.gz --markdown 20230412/e/evidently/0.2.8-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 12:16:19] INFO root fetch - processPackages [django-dirtyfields]: Downloading https://files.pythonhosted.org/packages/fb/ca/d4bcf4fd0092cd085500d772b06b7e12ef0ba6d3893bf23207509ecffd25/django-dirtyfields-1.9.1.tar.gz
+[2023-04-12 12:16:19] INFO root fetch - processPackages [django-dirtyfields]: Downloading https://files.pythonhosted.org/packages/df/09/eade43b3572baf71e24561aac15621a4f44658d7c36eaac3bbb90eb07768/django-dirtyfields-1.9.2.tar.gz
+[2023-04-12 12:16:19] INFO root fetch - processPackages [django-dirtyfields]: executing diffoscope
+[2023-04-12 12:16:19] INFO root fetch - processPackages [django-dirtyfields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-dirtyfields-1.9.1.tar.gz tmp/django-dirtyfields-1.9.2.tar.gz --markdown 20230412/d/django-dirtyfields/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-12 12:16:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:20] INFO root fetch - processPackages [bittrade-binance-websocket]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 12:16:20] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/95/89/3903fdfb65a554c76b5e581b8ed3d8f3a9b2ed8d3560489acf785c0e3c86/bittrade_binance_websocket-0.1.6.tar.gz
+[2023-04-12 12:16:20] INFO root fetch - processPackages [bittrade-binance-websocket]: executing diffoscope
+[2023-04-12 12:16:20] INFO root fetch - processPackages [bittrade-binance-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_binance_websocket-0.1.5.tar.gz tmp/bittrade_binance_websocket-0.1.6.tar.gz --markdown 20230412/b/bittrade-binance-websocket/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 12:16:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:21] INFO root fetch - processPackages [pagexml-tools]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-12 12:16:21] INFO root fetch - processPackages [pagexml-tools]: Downloading https://files.pythonhosted.org/packages/92/15/ce0e8238e127e58de30bb199a0315f8f623177197d3028fe43bbcaecbec5/pagexml_tools-0.3.2.tar.gz
+[2023-04-12 12:16:21] INFO root fetch - processPackages [pagexml-tools]: Downloading https://files.pythonhosted.org/packages/51/a7/bdcf1dfa0203bced9d8f25bdd421e2a8fd773748ec20266a058d7c5eef66/pagexml_tools-0.3.3.tar.gz
+[2023-04-12 12:16:21] INFO root fetch - processPackages [pagexml-tools]: executing diffoscope
+[2023-04-12 12:16:21] INFO root fetch - processPackages [pagexml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pagexml_tools-0.3.2.tar.gz tmp/pagexml_tools-0.3.3.tar.gz --markdown 20230412/p/pagexml-tools/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-12 12:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:16:23] INFO root fetch - main [MainThread]: Store serial: [17674494]
