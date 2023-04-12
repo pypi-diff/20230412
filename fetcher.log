@@ -15280,3 +15280,140 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:12:17] INFO root fetch - main [MainThread]: End processing [Toolkit5G]: success
 [2023-04-12 15:13:01] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
 [2023-04-12 15:13:01] INFO root fetch - main [MainThread]: Store serial: [17676539]
+[2023-04-12 15:18:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676539]
+[2023-04-12 15:18:22] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spade-artifact
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-api-call
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-django
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spawndb
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansys-math-core
+[2023-04-12 15:18:22] INFO root fetch - processPackages [spade-artifact]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 15:18:22] INFO root fetch - processPackages [openai-api-call]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-12 15:18:22] INFO root fetch - processPackages [ansys-math-core]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 15:18:22] INFO root fetch - processPackages [spawndb]: New version: [0.1.18] Old Version: [0.1.17]
+[2023-04-12 15:18:22] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spade-artifact]: Downloading https://files.pythonhosted.org/packages/ee/3e/d60bcee55d97f3da112835d485fe94796b4fffada859a62badac363a5e4b/spade_artifact-0.1.1.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spawndb]: Downloading https://files.pythonhosted.org/packages/b1/2b/abe22a5c04ec80ff7b87baec3bff991adb982969c6b1bcc2970246dda31e/spawndb-0.1.17.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [ansys-math-core]: Downloading https://files.pythonhosted.org/packages/4f/c8/29b4b8df2a361b7f686d4b6f2e9f0929eb6386a881e876d62fbe4ea64278/ansys-math-core-0.1.0.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [openai-api-call]: Downloading https://files.pythonhosted.org/packages/a8/d4/15a17d0be72aa40c3b43e93f4daee862ee91b2980fb847dc350157db2da2/openai_api_call-0.3.5.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-12 15:18:23] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230412/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spade-artifact]: Downloading https://files.pythonhosted.org/packages/4b/ae/e486c29564c5ac156c676972c797fb3e7cfa7317d679c75d92e385ab0e29/spade_artifact-0.1.2.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spawndb]: Downloading https://files.pythonhosted.org/packages/89/32/5072deadcdcd5c139d9214f03f4d7a48e46fbd510c7532b425f85628e97b/spawndb-0.1.18.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [ansys-math-core]: Downloading https://files.pythonhosted.org/packages/b5/5c/47f0ccc9d8216ea0f0daef077a6fc68b7c751688f8432d11cc1266003b87/ansys-math-core-0.1.1.tar.gz
+[2023-04-12 15:18:23] INFO root fetch - processPackages [openai-api-call]: executing diffoscope
+[2023-04-12 15:18:23] INFO root fetch - processPackages [openai-api-call]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_api_call-0.3.4.tar.gz tmp/openai_api_call-0.3.5.tar.gz --markdown 20230412/o/openai-api-call/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spade-artifact]: executing diffoscope
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spade-artifact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spade_artifact-0.1.1.tar.gz tmp/spade_artifact-0.1.2.tar.gz --markdown 20230412/s/spade-artifact/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spawndb]: executing diffoscope
+[2023-04-12 15:18:23] INFO root fetch - processPackages [spawndb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spawndb-0.1.17.tar.gz tmp/spawndb-0.1.18.tar.gz --markdown 20230412/s/spawndb/0.1.17-0.1.18/diff.md --exclude *.pyd
+[2023-04-12 15:18:23] INFO root fetch - processPackages [ansys-math-core]: executing diffoscope
+[2023-04-12 15:18:23] INFO root fetch - processPackages [ansys-math-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansys-math-core-0.1.0.tar.gz tmp/ansys-math-core-0.1.1.tar.gz --markdown 20230412/a/ansys-math-core/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 15:18:24] INFO root fetch - processPackages [spawndb]: Start processing: pyfeyn2
+[2023-04-12 15:18:24] INFO root fetch - main [MainThread]: End processing [spawndb]: success
+[2023-04-12 15:18:24] INFO root fetch - processPackages [pyfeyn2]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-04-12 15:18:24] INFO root fetch - processPackages [openai-api-call]: Start processing: intelligraphs
+[2023-04-12 15:18:24] INFO root fetch - main [MainThread]: End processing [openai-api-call]: success
+[2023-04-12 15:18:24] WARNING root fetch - processPackages [intelligraphs]: Skipping, unable to determine old version
+[2023-04-12 15:18:24] INFO root fetch - processPackages [intelligraphs]: Start processing: dhali-py
+[2023-04-12 15:18:24] INFO root fetch - main [MainThread]: End processing [intelligraphs] error
+[2023-04-12 15:18:24] INFO root fetch - processPackages [dhali-py]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 15:18:24] INFO root fetch - processPackages [pyfeyn2]: Downloading https://files.pythonhosted.org/packages/0d/18/b400eaaab330a4eb963212e0204a1b1dcaa4f7fc838e2aa9f0bfc34e94e3/pyfeyn2-2.2.5.tar.gz
+[2023-04-12 15:18:24] INFO root fetch - processPackages [dhali-py]: Downloading https://files.pythonhosted.org/packages/e2/9d/525a5d79cd0e876652ecc3b800da19c69dbdcf7ef2f4992513a4958ba321/dhali-py-0.0.5.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [pyfeyn2]: executing diffoscope
+[2023-04-12 15:18:25] INFO root fetch - processPackages [pyfeyn2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfeyn2-2.2.4.tar.gz tmp/pyfeyn2-2.2.5.tar.gz --markdown 20230412/p/pyfeyn2/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-04-12 15:18:25] INFO root fetch - processPackages [dhali-py]: Downloading https://files.pythonhosted.org/packages/fa/c3/b4fb261d4dbbcf8f626e7839f8d5047a8471392cc04dfbfe1ed3496300e0/dhali-py-0.0.6.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [spade-artifact]: Start processing: msglink
+[2023-04-12 15:18:25] INFO root fetch - main [MainThread]: End processing [spade-artifact]: success
+[2023-04-12 15:18:25] INFO root fetch - processPackages [ansys-math-core]: Start processing: nbdev-apl
+[2023-04-12 15:18:25] INFO root fetch - main [MainThread]: End processing [ansys-math-core]: success
+[2023-04-12 15:18:25] INFO root fetch - processPackages [msglink]: New version: [1.5.7] Old Version: [1.5.6]
+[2023-04-12 15:18:25] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.709] Old Version: [0.0.708]
+[2023-04-12 15:18:25] INFO root fetch - processPackages [dhali-py]: executing diffoscope
+[2023-04-12 15:18:25] INFO root fetch - processPackages [dhali-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhali-py-0.0.5.tar.gz tmp/dhali-py-0.0.6.tar.gz --markdown 20230412/d/dhali-py/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 15:18:25] INFO root fetch - processPackages [nbdev-django]: Start processing: contxt-sdk
+[2023-04-12 15:18:25] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-04-12 15:18:25] INFO root fetch - processPackages [msglink]: Downloading https://files.pythonhosted.org/packages/2f/39/7eb5d1dbf79c0d26f44e12e0ddc060c8a5ffe6cdc85fc64620832d2337c1/msglink-1.5.6.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [contxt-sdk]: New version: [6.1.2] Old Version: [6.1.1]
+[2023-04-12 15:18:25] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/e4/4d/4c983176ca6081d512ae8164a129fb233d4477eec3c13d138df2e0830589/nbdev-apl-0.0.709.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [contxt-sdk]: Downloading https://files.pythonhosted.org/packages/37/21/eea1cbfde91843b98bbaac37ce158bfa112e1d762b216ee566e93d01bb06/contxt_sdk-6.1.2.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-12 15:18:25] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.708.tar.gz tmp/nbdev-apl-0.0.709.tar.gz --markdown 20230412/n/nbdev-apl/0.0.708-0.0.709/diff.md --exclude *.pyd
+[2023-04-12 15:18:25] INFO root fetch - processPackages [msglink]: Downloading https://files.pythonhosted.org/packages/db/d2/b3c2a45aac9bc0781b75ffbeb5e6ef0d4452753921a1647976b5e9933e97/msglink-1.5.7.tar.gz
+[2023-04-12 15:18:25] INFO root fetch - processPackages [contxt-sdk]: executing diffoscope
+[2023-04-12 15:18:25] INFO root fetch - processPackages [contxt-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contxt_sdk-6.1.1.tar.gz tmp/contxt_sdk-6.1.2.tar.gz --markdown 20230412/c/contxt-sdk/6.1.1-6.1.2/diff.md --exclude *.pyd
+[2023-04-12 15:18:25] INFO root fetch - processPackages [msglink]: executing diffoscope
+[2023-04-12 15:18:25] INFO root fetch - processPackages [msglink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msglink-1.5.6.tar.gz tmp/msglink-1.5.7.tar.gz --markdown 20230412/m/msglink/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2023-04-12 15:18:26] INFO root fetch - processPackages [pyfeyn2]: Start processing: extra-streamlit-tools
+[2023-04-12 15:18:26] INFO root fetch - main [MainThread]: End processing [pyfeyn2]: success
+[2023-04-12 15:18:26] INFO root fetch - processPackages [extra-streamlit-tools]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 15:18:26] INFO root fetch - processPackages [dhali-py]: Start processing: viktor
+[2023-04-12 15:18:26] INFO root fetch - main [MainThread]: End processing [dhali-py]: success
+[2023-04-12 15:18:26] INFO root fetch - processPackages [viktor]: New version: [14.0.0rc1] Old Version: [14.0.0]
+[2023-04-12 15:18:26] INFO root fetch - processPackages [extra-streamlit-tools]: Downloading https://files.pythonhosted.org/packages/69/f6/cda60e996729ce33a8efbe5bc4e57f2d7e87e956fdea7c08a2774fa6e72c/extra_streamlit_tools-0.1.0.tar.gz
+[2023-04-12 15:18:26] INFO root fetch - processPackages [viktor]: Downloading https://files.pythonhosted.org/packages/d6/92/254134c2fc518c0b0c1167be8147c29bc40e22dae7822c09b5d3e6ab92be/viktor-14.0.0-cp39-cp39-win_amd64.whl
+[2023-04-12 15:18:26] INFO root fetch - processPackages [nbdev-apl]: Start processing: cqepyutils
+[2023-04-12 15:18:26] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-04-12 15:18:26] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 15:18:26] INFO root fetch - processPackages [extra-streamlit-tools]: Downloading https://files.pythonhosted.org/packages/ee/31/02bf76291f850827cd83dca94b0e22eaa72598b5568900abcb974ab1dd4a/extra_streamlit_tools-0.2.0.tar.gz
+[2023-04-12 15:18:27] INFO root fetch - processPackages [contxt-sdk]: Start processing: osint-python-starter-service
+[2023-04-12 15:18:27] INFO root fetch - main [MainThread]: End processing [contxt-sdk]: success
+[2023-04-12 15:18:27] INFO root fetch - processPackages [osint-python-starter-service]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-04-12 15:18:27] INFO root fetch - processPackages [extra-streamlit-tools]: executing diffoscope
+[2023-04-12 15:18:27] INFO root fetch - processPackages [extra-streamlit-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extra_streamlit_tools-0.1.0.tar.gz tmp/extra_streamlit_tools-0.2.0.tar.gz --markdown 20230412/e/extra-streamlit-tools/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 15:18:27] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-12 15:18:27] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230412/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 15:18:27] INFO root fetch - processPackages [msglink]: Start processing: periflow-cli
+[2023-04-12 15:18:27] INFO root fetch - main [MainThread]: End processing [msglink]: success
+[2023-04-12 15:18:27] INFO root fetch - processPackages [periflow-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 15:18:27] INFO root fetch - processPackages [osint-python-starter-service]: Downloading https://files.pythonhosted.org/packages/27/7b/faabbf7ad21e8e4d27bd9d6bc98d4dfdfe140d96caa14021ce92d4440c76/osint-python-starter-service-2.0.4.tar.gz
+[2023-04-12 15:18:27] INFO root fetch - processPackages [osint-python-starter-service]: executing diffoscope
+[2023-04-12 15:18:27] INFO root fetch - processPackages [osint-python-starter-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osint-python-starter-service-2.0.3.tar.gz tmp/osint-python-starter-service-2.0.4.tar.gz --markdown 20230412/o/osint-python-starter-service/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-04-12 15:18:27] INFO root fetch - processPackages [periflow-cli]: executing diffoscope
+[2023-04-12 15:18:27] INFO root fetch - processPackages [periflow-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/periflow-cli-0.1.8.tar.gz tmp/periflow-cli-0.1.9.tar.gz --markdown 20230412/p/periflow-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 15:18:28] INFO root fetch - processPackages [extra-streamlit-tools]: Start processing: streamlit-cognito-token-access-authentication
+[2023-04-12 15:18:28] INFO root fetch - main [MainThread]: End processing [extra-streamlit-tools]: success
+[2023-04-12 15:18:28] INFO root fetch - processPackages [viktor]: Downloading https://files.pythonhosted.org/packages/ae/2c/63864b0fe533c9368ace89013bb8fe1e47219bd098d3caf49664fc29544f/viktor-14.0.0rc1-cp39-cp39-win_amd64.whl
+[2023-04-12 15:18:28] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-12 15:18:28] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Downloading https://files.pythonhosted.org/packages/0c/b2/f0601370184440fdd2bd992e2248618f220b7235bdaf53395a4f3d9af36c/streamlit_cognito_token_access_authentication-1.1.9-py3-none-any.whl
+[2023-04-12 15:18:28] INFO root fetch - processPackages [cqepyutils]: Start processing: nx5d
+[2023-04-12 15:18:28] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-12 15:18:28] WARNING root fetch - processPackages [nx5d]: Skipping, unable to determine old version
+[2023-04-12 15:18:28] INFO root fetch - processPackages [nx5d]: Start processing: dune-query-translator
+[2023-04-12 15:18:28] INFO root fetch - main [MainThread]: End processing [nx5d] error
+[2023-04-12 15:18:28] INFO root fetch - processPackages [dune-query-translator]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 15:18:28] INFO root fetch - processPackages [dune-query-translator]: executing diffoscope
+[2023-04-12 15:18:28] INFO root fetch - processPackages [dune-query-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_query_translator-0.1.0.tar.gz tmp/dune_query_translator-0.2.0.tar.gz --markdown 20230412/d/dune-query-translator/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 15:18:28] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: executing diffoscope
+[2023-04-12 15:18:28] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_cognito_token_access_authentication-1.1.8-py3-none-any.whl.zip tmp/streamlit_cognito_token_access_authentication-1.1.9-py3-none-any.whl.zip --markdown 20230412/s/streamlit-cognito-token-access-authentication/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-12 15:18:29] INFO root fetch - processPackages [osint-python-starter-service]: Start processing: tycho-api
+[2023-04-12 15:18:29] INFO root fetch - main [MainThread]: End processing [osint-python-starter-service]: success
+[2023-04-12 15:18:29] INFO root fetch - processPackages [periflow-cli]: Start processing: tofu
+[2023-04-12 15:18:29] INFO root fetch - main [MainThread]: End processing [periflow-cli]: success
+[2023-04-12 15:18:29] INFO root fetch - processPackages [tycho-api]: New version: [1.9a1.dev3] Old Version: [1.9a1.dev2]
+[2023-04-12 15:18:29] INFO root fetch - processPackages [tofu]: New version: [1.7.0] Old Version: [1.6.5]
+[2023-04-12 15:18:29] INFO root fetch - processPackages [tycho-api]: Downloading https://files.pythonhosted.org/packages/30/18/2d4be3e6d94ee0981e5af1e4d024016403e7e220fee37b52a4e750e6d405/tycho-api-1.9a1.dev2.tar.gz
+[2023-04-12 15:18:29] INFO root fetch - processPackages [tofu]: Downloading https://files.pythonhosted.org/packages/ad/cd/85ea8fe3ffba02e378a50aacff03620279eb689e03d204aed83e696e2a0d/tofu-1.6.5.tar.gz
+[2023-04-12 15:18:29] INFO root fetch - processPackages [dune-query-translator]: Start processing: pierskarsenbarg-pulumi-sdm
+[2023-04-12 15:18:29] INFO root fetch - main [MainThread]: End processing [dune-query-translator]: success
+[2023-04-12 15:18:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Start processing: hardbrake
+[2023-04-12 15:18:29] INFO root fetch - main [MainThread]: End processing [streamlit-cognito-token-access-authentication]: success
+[2023-04-12 15:18:29] WARNING root fetch - processPackages [pierskarsenbarg-pulumi-sdm]: Skipping, unable to determine old version
+[2023-04-12 15:18:29] INFO root fetch - main [MainThread]: End processing [pierskarsenbarg-pulumi-sdm] error
+[2023-04-12 15:18:29] INFO root fetch - processPackages [hardbrake]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-04-12 15:18:30] INFO root fetch - processPackages [tycho-api]: Downloading https://files.pythonhosted.org/packages/74/a4/b3c529c3b0436d698f0c26faa278d0fbb02bae0d515e4d6d827a53424e23/tycho-api-1.9a1.dev3.tar.gz
+[2023-04-12 15:18:30] INFO root fetch - processPackages [hardbrake]: Downloading https://files.pythonhosted.org/packages/b0/09/b2f367c23f04ea3977e6c11e14527b4b25afa058889c68563d73c836da3f/hardbrake-0.0.7.tar.gz
+[2023-04-12 15:18:30] INFO root fetch - processPackages [viktor]: executing diffoscope
+[2023-04-12 15:18:30] INFO root fetch - processPackages [viktor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viktor-14.0.0-cp39-cp39-win_amd64.whl.zip tmp/viktor-14.0.0rc1-cp39-cp39-win_amd64.whl.zip --markdown 20230412/v/viktor/14.0.0-14.0.0rc1/diff.md --exclude *.pyd
+[2023-04-12 15:18:30] INFO root fetch - processPackages [hardbrake]: executing diffoscope
+[2023-04-12 15:18:30] INFO root fetch - processPackages [hardbrake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hardbrake-0.0.5.tar.gz tmp/hardbrake-0.0.7.tar.gz --markdown 20230412/h/hardbrake/0.0.5-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 15:18:30] INFO root fetch - processPackages [tofu]: Downloading https://files.pythonhosted.org/packages/47/fb/82b1be64a7651d9fde4d408149ff4fb32d4dd2bfea641ee67d209e8c8e22/tofu-1.7.0.tar.gz
+[2023-04-12 15:18:30] INFO root fetch - processPackages [tycho-api]: executing diffoscope
+[2023-04-12 15:18:30] INFO root fetch - processPackages [tycho-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tycho-api-1.9a1.dev2.tar.gz tmp/tycho-api-1.9a1.dev3.tar.gz --markdown 20230412/t/tycho-api/1.9a1.dev2-1.9a1.dev3/diff.md --exclude *.pyd
+[2023-04-12 15:18:31] INFO root fetch - processPackages [tofu]: executing diffoscope
+[2023-04-12 15:18:31] INFO root fetch - processPackages [tofu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tofu-1.6.5.tar.gz tmp/tofu-1.7.0.tar.gz --markdown 20230412/t/tofu/1.6.5-1.7.0/diff.md --exclude *.pyd
+[2023-04-12 15:18:31] INFO root fetch - main [MainThread]: End processing [hardbrake]: success
+[2023-04-12 15:18:32] INFO root fetch - main [MainThread]: End processing [tycho-api]: success
+[2023-04-12 15:18:41] INFO root fetch - main [MainThread]: End processing [tofu]: success
+[2023-04-12 15:18:42] INFO root fetch - main [MainThread]: End processing [viktor]: success
+[2023-04-12 15:18:42] INFO root fetch - main [MainThread]: Store serial: [17676617]
