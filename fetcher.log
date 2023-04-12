@@ -6378,3 +6378,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 05:53:44] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:53:45] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:53:45] INFO root fetch - main [MainThread]: Store serial: [17671078]
+[2023-04-12 05:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671078]
+[2023-04-12 05:58:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 05:58:52] INFO root fetch - processPackages [odoo9-addon-crm-phonecall]: New version: [9.0.1.1.0.99.dev9] Old Version: [9.0.1.1.0.99.dev8]
+[2023-04-12 05:58:52] INFO root fetch - processPackages [analysisbykwok]: New version: [0.0.17] Old Version: [0.0.16]
+[2023-04-12 05:58:52] INFO root fetch - processPackages [cxlint]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-12 05:58:52] INFO root fetch - processPackages [odoo14-addon-account-credit-control]: New version: [14.0.1.3.2.dev5] Old Version: [14.0.1.3.2.dev4]
+[2023-04-12 05:58:52] INFO root fetch - processPackages [servey]: New version: [2.7.2] Old Version: [2.7.0]
+[2023-04-12 05:58:53] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/ac/2f/601ca71e41f912eecf00f5f38b8f34ed2abd76b6bf899065a5d13dce7907/servey-2.7.2.tar.gz
+[2023-04-12 05:58:53] INFO root fetch - processPackages [cxlint]: Downloading https://files.pythonhosted.org/packages/21/88/8d6d6a771ee314ff28ed480209905162afe150f61a8fa79ef0f8a890a91e/cxlint-1.0.4.tar.gz
+[2023-04-12 05:58:53] INFO root fetch - processPackages [odoo14-addon-account-credit-control]: Downloading https://files.pythonhosted.org/packages/b3/90/4ecf719fc5b6c223b5e77459cb3bdcbfddd621a800d1c75c0b73ba525419/odoo14_addon_account_credit_control-14.0.1.3.2.dev5-py3-none-any.whl
+[2023-04-12 05:58:53] INFO root fetch - processPackages [analysisbykwok]: Downloading https://files.pythonhosted.org/packages/37/c6/16335f5c8adf69d054617d7e9dcbd4e606fe228d1278da9190807fdd8ae5/analysisbykwok-0.0.17.tar.gz
+[2023-04-12 05:58:53] INFO root fetch - processPackages [odoo9-addon-crm-phonecall]: executing diffoscope
+[2023-04-12 05:58:53] INFO root fetch - processPackages [odoo9-addon-crm-phonecall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_crm_phonecall-9.0.1.1.0.99.dev8-py2-none-any.whl.zip tmp/odoo9_addon_crm_phonecall-9.0.1.1.0.99.dev9-py2-none-any.whl.zip --markdown 20230412/o/odoo9-addon-crm-phonecall/9.0.1.1.0.99.dev8-9.0.1.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 05:58:53] INFO root fetch - processPackages [cxlint]: executing diffoscope
+[2023-04-12 05:58:53] INFO root fetch - processPackages [cxlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxlint-1.0.3.tar.gz tmp/cxlint-1.0.4.tar.gz --markdown 20230412/c/cxlint/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-12 05:58:53] INFO root fetch - processPackages [odoo14-addon-account-credit-control]: executing diffoscope
+[2023-04-12 05:58:53] INFO root fetch - processPackages [odoo14-addon-account-credit-control]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_credit_control-14.0.1.3.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_credit_control-14.0.1.3.2.dev5-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-account-credit-control/14.0.1.3.2.dev4-14.0.1.3.2.dev5/diff.md --exclude *.pyd
+[2023-04-12 05:58:53] INFO root fetch - processPackages [servey]: executing diffoscope
+[2023-04-12 05:58:53] INFO root fetch - processPackages [servey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servey-2.7.0.tar.gz tmp/servey-2.7.2.tar.gz --markdown 20230412/s/servey/2.7.0-2.7.2/diff.md --exclude *.pyd
+[2023-04-12 05:58:53] INFO root fetch - processPackages [analysisbykwok]: executing diffoscope
+[2023-04-12 05:58:53] INFO root fetch - processPackages [analysisbykwok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/analysisbykwok-0.0.16.tar.gz tmp/analysisbykwok-0.0.17.tar.gz --markdown 20230412/a/analysisbykwok/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2023-04-12 05:58:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:54] INFO root fetch - processPackages [jira-select]: New version: [3.0.0a2] Old Version: [3.0.0a1]
+[2023-04-12 05:58:54] INFO root fetch - processPackages [jira-select]: Downloading https://files.pythonhosted.org/packages/3a/0e/4a68defb0a4793e0db07cc054f183773f58b249b7e8b1744637093599c33/jira-select-3.0.0a2.tar.gz
+[2023-04-12 05:58:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:54] INFO root fetch - processPackages [TSMasterAPI]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-04-12 05:58:54] INFO root fetch - processPackages [jira-select]: executing diffoscope
+[2023-04-12 05:58:54] INFO root fetch - processPackages [jira-select]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jira-select-3.0.0a1.tar.gz tmp/jira-select-3.0.0a2.tar.gz --markdown 20230412/j/jira-select/3.0.0a1-3.0.0a2/diff.md --exclude *.pyd
+[2023-04-12 05:58:54] INFO root fetch - processPackages [TSMasterAPI]: Downloading https://files.pythonhosted.org/packages/7d/1b/b3787f96cb55b6940e87b339713f13ee04f1f6b549493e114a592e72423d/TSMasterAPI-1.1.0.tar.gz
+[2023-04-12 05:58:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: New version: [12.0.1.6.0.99.dev9] Old Version: [12.0.1.6.0.99.dev8]
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/ba/18/49ef4cc4dc26caf8c59dded3b67833ece07327c70fd9ba90a1c102e291af/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev8-py3-none-any.whl
+[2023-04-12 05:58:55] INFO root fetch - processPackages [TSMasterAPI]: Downloading https://files.pythonhosted.org/packages/60/c7/515f628356b7e29fad42ccea18b10dd081fcb18cbd4c40b2a5b3fab21cbc/TSMasterAPI-1.2.0.tar.gz
+[2023-04-12 05:58:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo13-addon-crm-lead-code]: New version: [13.0.1.0.1.dev6] Old Version: [13.0.1.0.1.dev5]
+[2023-04-12 05:58:55] INFO root fetch - processPackages [TSMasterAPI]: executing diffoscope
+[2023-04-12 05:58:55] INFO root fetch - processPackages [TSMasterAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TSMasterAPI-1.1.0.tar.gz tmp/TSMasterAPI-1.2.0.tar.gz --markdown 20230412/T/TSMasterAPI/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/46/ea/ba57aac9ef264868e0b16d6c140e8b96f915bdb6087d2317999d1c98b65e/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev9-py3-none-any.whl
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo13-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/e6/0a/a6c91f74dd0973564086e50a149211870309b55c08ecda889cc586f895e0/odoo13_addon_crm_lead_code-13.0.1.0.1.dev5-py3-none-any.whl
+[2023-04-12 05:58:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo13-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/19/02/ee9d3f0ce04c6e8c5e0038d1b7cd7d73f37d5d9220b7bb84589e74020c61/odoo13_addon_crm_lead_code-13.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-12 05:58:55] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: New version: [16.0.1.0.1.1] Old Version: [16.0.1.0.1]
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo13-addon-crm-lead-code]: executing diffoscope
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo13-addon-crm-lead-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_crm_lead_code-13.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo13_addon_crm_lead_code-13.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-crm-lead-code/13.0.1.0.1.dev5-13.0.1.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/5a/38/4aaee6a5f9c9ccbb4b619e6f836bbc60d4ede1d42c4f1807d7441f1b343c/odoo_addon_crm_lead_code-16.0.1.0.1-py3-none-any.whl
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: executing diffoscope
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo12-addon-crm-phonecall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_crm_phonecall-12.0.1.6.0.99.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-crm-phonecall/12.0.1.6.0.99.dev8-12.0.1.6.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 05:58:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/38/88/6effe5d5086ed2291ebe7752c636d3df50788e3464a0c9b280f8d0c04191/odoo_addon_crm_lead_code-16.0.1.0.1.1-py3-none-any.whl
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: executing diffoscope
+[2023-04-12 05:58:56] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_crm_lead_code-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_crm_lead_code-16.0.1.0.1.1-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-crm-lead-code/16.0.1.0.1-16.0.1.0.1.1/diff.md --exclude *.pyd
+[2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:58:57] INFO root fetch - main [MainThread]: Store serial: [17671102]
