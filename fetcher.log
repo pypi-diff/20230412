@@ -12054,3 +12054,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 12:36:50] INFO root fetch - processPackages [nlmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlmod-0.5.1.tar.gz tmp/nlmod-0.5.2.tar.gz --markdown 20230412/n/nlmod/0.5.1-0.5.2/diff.md --exclude *.pyd
 [2023-04-12 12:36:52] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:36:52] INFO root fetch - main [MainThread]: Store serial: [17674664]
+[2023-04-12 12:39:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674664]
+[2023-04-12 12:39:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 12:39:27] INFO root fetch - processPackages [asmr-spider]: New version: [0.1.0a1] Old Version: [0.0.5]
+[2023-04-12 12:39:27] INFO root fetch - processPackages [gymnax]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 12:39:27] INFO root fetch - processPackages [dataplaybook]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 12:39:27] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 12:39:27] INFO root fetch - processPackages [nlmod]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-12 12:39:27] INFO root fetch - processPackages [nlmod]: executing diffoscope
+[2023-04-12 12:39:27] INFO root fetch - processPackages [nlmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlmod-0.5.1.tar.gz tmp/nlmod-0.5.2.tar.gz --markdown 20230412/n/nlmod/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-12 12:39:27] INFO root fetch - processPackages [regis]: executing diffoscope
+[2023-04-12 12:39:27] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.8.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20230412/r/regis/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 12:39:27] INFO root fetch - processPackages [gymnax]: Downloading https://files.pythonhosted.org/packages/87/e9/8f01f8e6364a006202a01595e8711d9ef8e93300b8cf71909accbc8d4961/gymnax-0.0.5.tar.gz
+[2023-04-12 12:39:27] INFO root fetch - processPackages [dataplaybook]: Downloading https://files.pythonhosted.org/packages/88/ba/815f4a51f893d73f757a50f949cca8907fd8d36729e80b0789b513d54f0a/dataplaybook-1.0.8.tar.gz
+[2023-04-12 12:39:28] INFO root fetch - processPackages [asmr-spider]: Downloading https://files.pythonhosted.org/packages/88/73/d776ba8108ae152c2321dbbb8348fa64c98b5a48ff5e0af80856ef989c86/asmr_spider-0.1.0a1.tar.gz
+[2023-04-12 12:39:28] INFO root fetch - processPackages [gymnax]: Downloading https://files.pythonhosted.org/packages/5b/20/adc16b77f35a7de053990b368073a23e9b86c727c9562af429fae045e160/gymnax-0.0.6.tar.gz
+[2023-04-12 12:39:28] INFO root fetch - processPackages [asmr-spider]: executing diffoscope
+[2023-04-12 12:39:28] INFO root fetch - processPackages [asmr-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asmr_spider-0.0.5.tar.gz tmp/asmr_spider-0.1.0a1.tar.gz --markdown 20230412/a/asmr-spider/0.0.5-0.1.0a1/diff.md --exclude *.pyd
+[2023-04-12 12:39:28] INFO root fetch - processPackages [dataplaybook]: Downloading https://files.pythonhosted.org/packages/f9/3d/9f8cf1f88880af8844d89c3356039be31b1240205a1b486c16744952f341/dataplaybook-1.0.9.tar.gz
+[2023-04-12 12:39:28] INFO root fetch - processPackages [gymnax]: executing diffoscope
+[2023-04-12 12:39:28] INFO root fetch - processPackages [gymnax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gymnax-0.0.5.tar.gz tmp/gymnax-0.0.6.tar.gz --markdown 20230412/g/gymnax/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 12:39:28] INFO root fetch - processPackages [dataplaybook]: executing diffoscope
+[2023-04-12 12:39:28] INFO root fetch - processPackages [dataplaybook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataplaybook-1.0.8.tar.gz tmp/dataplaybook-1.0.9.tar.gz --markdown 20230412/d/dataplaybook/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 12:39:29] INFO root fetch - main [MainThread]: [regis]success
+[2023-04-12 12:39:29] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.8] Old Version: [0.7.1]
+[2023-04-12 12:39:29] INFO root fetch - main [MainThread]: [asmr-spider]success
+[2023-04-12 12:39:29] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/3b/b9/f84766bd1f373bc5003225aa9169c66a68e2c0066e264bbdd5364c4405ab/nonebot-plugin-clock-0.8.tar.gz
+[2023-04-12 12:39:29] INFO root fetch - main [MainThread]: [dataplaybook]success
+[2023-04-12 12:39:29] INFO root fetch - processPackages [torchkeras]: New version: [3.8.2] Old Version: [3.8.1]
+[2023-04-12 12:39:29] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-12 12:39:29] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.7.1.tar.gz tmp/nonebot-plugin-clock-0.8.tar.gz --markdown 20230412/n/nonebot-plugin-clock/0.7.1-0.8/diff.md --exclude *.pyd
+[2023-04-12 12:39:29] INFO root fetch - processPackages [torchkeras]: Downloading https://files.pythonhosted.org/packages/a5/d3/2ec3178c7c8f13ff8b49ee54d67927ce766b42ab8a0e71380429f0224eb8/torchkeras-3.8.1.tar.gz
+[2023-04-12 12:39:29] INFO root fetch - main [MainThread]: [gymnax]success
+[2023-04-12 12:39:30] INFO root fetch - main [MainThread]: [nonebot-plugin-clock]success
+[2023-04-12 12:39:31] INFO root fetch - processPackages [torchkeras]: Downloading https://files.pythonhosted.org/packages/0c/5f/85d882345daa760ffde629f1e2bceeacc75018c44376f3dce783ffc147c8/torchkeras-3.8.2.tar.gz
+[2023-04-12 12:39:32] INFO root fetch - main [MainThread]: [nlmod]success
+[2023-04-12 12:39:33] INFO root fetch - processPackages [torchkeras]: executing diffoscope
+[2023-04-12 12:39:33] INFO root fetch - processPackages [torchkeras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchkeras-3.8.1.tar.gz tmp/torchkeras-3.8.2.tar.gz --markdown 20230412/t/torchkeras/3.8.1-3.8.2/diff.md --exclude *.pyd
+[2023-04-12 12:39:35] INFO root fetch - main [MainThread]: [torchkeras]success
+[2023-04-12 12:39:35] INFO root fetch - main [MainThread]: Store serial: [17674688]
