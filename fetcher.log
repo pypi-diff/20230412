@@ -5278,3 +5278,23 @@
 [2023-04-12 04:39:27] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:39:27] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:39:27] INFO root fetch - main [MainThread]: Store serial: [17670515]
+[2023-04-12 04:44:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670515]
+[2023-04-12 04:44:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-12 04:44:35] WARNING root fetch - processPackages [xs-transformers]: Skipping, unable to determine old version
+[2023-04-12 04:44:35] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:44:35] INFO root fetch - processPackages [jarvis-leaderboard]: New version: [2023.4.11] Old Version: [2023.4.10]
+[2023-04-12 04:44:35] INFO root fetch - processPackages [hydro-erosion]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-12 04:44:35] INFO root fetch - processPackages [pulumi-kubernetes]: New version: [3.9.0] Old Version: [3.8.3]
+[2023-04-12 04:44:35] INFO root fetch - processPackages [jarvis-leaderboard]: Downloading https://files.pythonhosted.org/packages/73/19/6b799524264a48349f0a4039d961f3bf0f09ce089dba01fb44f0e3810b0d/jarvis_leaderboard-2023.4.10.tar.gz
+[2023-04-12 04:44:35] INFO root fetch - processPackages [hydro-erosion]: Downloading https://files.pythonhosted.org/packages/b4/bf/cfbf72b1522231ffd671bd67f58a960cff3e73be68193a3286d3568bcc68/hydro_erosion-0.2.0.tar.gz
+[2023-04-12 04:44:35] INFO root fetch - processPackages [pulumi-kubernetes]: executing diffoscope
+[2023-04-12 04:44:35] INFO root fetch - processPackages [pulumi-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes-3.8.3.tar.gz tmp/pulumi_kubernetes-3.9.0.tar.gz --markdown 20230412/p/pulumi-kubernetes/3.8.3-3.9.0/diff.md --exclude *.pyd
+[2023-04-12 04:44:35] INFO root fetch - processPackages [hydro-erosion]: executing diffoscope
+[2023-04-12 04:44:35] INFO root fetch - processPackages [hydro-erosion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydro_erosion-0.1.4.tar.gz tmp/hydro_erosion-0.2.0.tar.gz --markdown 20230412/h/hydro-erosion/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 04:44:35] INFO root fetch - processPackages [jarvis-leaderboard]: Downloading https://files.pythonhosted.org/packages/42/c7/36625eb2e9bf886fcc3b89300b9791cf6e1c20f85ccff44f03af7d76e506/jarvis_leaderboard-2023.4.11.tar.gz
+[2023-04-12 04:44:35] INFO root fetch - processPackages [jarvis-leaderboard]: executing diffoscope
+[2023-04-12 04:44:35] INFO root fetch - processPackages [jarvis-leaderboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_leaderboard-2023.4.10.tar.gz tmp/jarvis_leaderboard-2023.4.11.tar.gz --markdown 20230412/j/jarvis-leaderboard/2023.4.10-2023.4.11/diff.md --exclude *.pyd
+[2023-04-12 04:44:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:44:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:44:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:44:39] INFO root fetch - main [MainThread]: Store serial: [17670527]
