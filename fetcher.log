@@ -17367,3 +17367,153 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:52:08] INFO root fetch - main [MainThread]: End processing [pyngrok]: success
 [2023-04-12 16:52:12] INFO root fetch - main [MainThread]: End processing [capellambse]: success
 [2023-04-12 16:52:12] INFO root fetch - main [MainThread]: Store serial: [17677706]
+[2023-04-12 16:57:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677706]
+[2023-04-12 16:57:22] INFO root fetch - main [MainThread]: Found 25 changed packages
+[2023-04-12 16:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlserver-mllib
+[2023-04-12 16:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlserver-mlflow
+[2023-04-12 16:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: watchtower-browser-testing
+[2023-04-12 16:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openapi-markdown
+[2023-04-12 16:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wonder-sdk
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:57:22] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 16:57:22] INFO root fetch - processPackages [openapi-markdown]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:57:22] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 16:57:22] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 16:57:22] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:57:22] INFO root fetch - processPackages [openapi-markdown]: Downloading https://files.pythonhosted.org/packages/2e/b1/ae1b5fde9bcd14ca48ce83dda1bf5b5ba6fbb8cd30e5c0e821ebf962fabd/openapi_markdown-0.1.0.tar.gz
+[2023-04-12 16:57:22] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/fd/ff/1cbde42a1f8eb66958fb582b07527f2c8074ef314a74e3ed4a549154ae64/wonder-sdk-0.1.7.tar.gz
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-12 16:57:22] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc1.tar.gz tmp/mlserver-mlflow-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mlflow/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:57:22] INFO root fetch - processPackages [openapi-markdown]: executing diffoscope
+[2023-04-12 16:57:22] INFO root fetch - processPackages [openapi-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_markdown-0.0.6.tar.gz tmp/openapi_markdown-0.1.0.tar.gz --markdown 20230412/o/openapi-markdown/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 16:57:22] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-12 16:57:22] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.6.tar.gz tmp/wonder-sdk-0.1.7.tar.gz --markdown 20230412/w/wonder-sdk/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 16:57:23] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: mlserver
+[2023-04-12 16:57:23] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 16:57:23] INFO root fetch - processPackages [mlserver-mllib]: Start processing: odoo13-addon-l10n-es-aeat-mod303-oss
+[2023-04-12 16:57:23] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-12 16:57:23] INFO root fetch - processPackages [mlserver]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:57:23] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: New version: [13.0.1.1.0] Old Version: [13.0.1.0.1.dev1]
+[2023-04-12 16:57:23] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-04-12 16:57:23] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.0rc1.tar.gz tmp/mlserver-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:57:23] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: Downloading https://files.pythonhosted.org/packages/eb/8e/66a109ff2504271d3e2c609a8694f2640bfd01b73d38dc0f647575eca3e2/odoo13_addon_l10n_es_aeat_mod303_oss-13.0.1.0.1.dev1-py3-none-any.whl
+[2023-04-12 16:57:23] INFO root fetch - processPackages [openapi-markdown]: Start processing: hardbrake
+[2023-04-12 16:57:23] INFO root fetch - main [MainThread]: End processing [openapi-markdown]: success
+[2023-04-12 16:57:23] INFO root fetch - processPackages [hardbrake]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 16:57:23] INFO root fetch - processPackages [wonder-sdk]: Start processing: wizata-dsapi
+[2023-04-12 16:57:23] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-12 16:57:23] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 16:57:23] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: casagui
+[2023-04-12 16:57:23] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-12 16:57:23] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: Downloading https://files.pythonhosted.org/packages/e4/8a/b76821a2eb2ec59a41db9265c5eed6f3527a52c3cb09d77ed63d1ceca748/odoo13_addon_l10n_es_aeat_mod303_oss-13.0.1.1.0-py3-none-any.whl
+[2023-04-12 16:57:24] INFO root fetch - processPackages [casagui]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 16:57:24] INFO root fetch - processPackages [hardbrake]: Downloading https://files.pythonhosted.org/packages/89/df/64813eb5449dccad967a146c8fb5d234a5930e1e6106cf87b0ebd8836b76/hardbrake-0.1.1.tar.gz
+[2023-04-12 16:57:24] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: executing diffoscope
+[2023-04-12 16:57:24] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_l10n_es_aeat_mod303_oss-13.0.1.0.1.dev1-py3-none-any.whl.zip tmp/odoo13_addon_l10n_es_aeat_mod303_oss-13.0.1.1.0-py3-none-any.whl.zip --markdown 20230412/o/odoo13-addon-l10n-es-aeat-mod303-oss/13.0.1.0.1.dev1-13.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-12 16:57:24] INFO root fetch - processPackages [hardbrake]: executing diffoscope
+[2023-04-12 16:57:24] INFO root fetch - processPackages [hardbrake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hardbrake-0.1.0.tar.gz tmp/hardbrake-0.1.1.tar.gz --markdown 20230412/h/hardbrake/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 16:57:24] INFO root fetch - processPackages [casagui]: Downloading https://files.pythonhosted.org/packages/be/67/8cb9d67463767f655d04d5be9fb57e503c09f183a9459c6960020c3400bc/casagui-0.2.8.tar.gz
+[2023-04-12 16:57:24] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-12 16:57:24] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.98.tar.gz tmp/wizata-dsapi-0.0.99.tar.gz --markdown 20230412/w/wizata-dsapi/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 16:57:24] INFO root fetch - processPackages [casagui]: Downloading https://files.pythonhosted.org/packages/a2/9e/15b31ee83f472098af253510817afbca0606055e7ffbf98042a116fb91f0/casagui-0.2.9.tar.gz
+[2023-04-12 16:57:25] INFO root fetch - processPackages [casagui]: executing diffoscope
+[2023-04-12 16:57:25] INFO root fetch - processPackages [casagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casagui-0.2.8.tar.gz tmp/casagui-0.2.9.tar.gz --markdown 20230412/c/casagui/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 16:57:25] INFO root fetch - processPackages [hardbrake]: Start processing: tarina
+[2023-04-12 16:57:25] INFO root fetch - main [MainThread]: End processing [hardbrake]: success
+[2023-04-12 16:57:25] INFO root fetch - processPackages [tarina]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 16:57:25] INFO root fetch - processPackages [odoo13-addon-l10n-es-aeat-mod303-oss]: Start processing: titan-iris
+[2023-04-12 16:57:25] INFO root fetch - main [MainThread]: End processing [odoo13-addon-l10n-es-aeat-mod303-oss]: success
+[2023-04-12 16:57:25] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 16:57:25] INFO root fetch - processPackages [wizata-dsapi]: Start processing: pikpak-cli
+[2023-04-12 16:57:25] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-12 16:57:25] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 16:57:25] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 16:57:25] WARNING root fetch - processPackages [pikpak-cli]: Skipping, unable to determine old version
+[2023-04-12 16:57:25] INFO root fetch - processPackages [pikpak-cli]: Start processing: rucio-consistency
+[2023-04-12 16:57:25] INFO root fetch - main [MainThread]: End processing [pikpak-cli] error
+[2023-04-12 16:57:25] INFO root fetch - processPackages [tarina]: Downloading https://files.pythonhosted.org/packages/0f/a7/85c40f3f5142ed4ff1970faa3c8d4589af6c07c96a305d89379623e6fe11/tarina-0.2.3.tar.gz
+[2023-04-12 16:57:25] INFO root fetch - processPackages [rucio-consistency]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 16:57:25] INFO root fetch - processPackages [tarina]: executing diffoscope
+[2023-04-12 16:57:25] INFO root fetch - processPackages [tarina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarina-0.2.2.tar.gz tmp/tarina-0.2.3.tar.gz --markdown 20230412/t/tarina/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 16:57:25] INFO root fetch - processPackages [rucio-consistency]: Downloading https://files.pythonhosted.org/packages/79/7c/3267b19c6e682a780f1a0b0723a8adbe087dd4e845c846f6f4dd7c0c97de/rucio-consistency-1.0.0.tar.gz
+[2023-04-12 16:57:25] INFO root fetch - processPackages [rucio-consistency]: Downloading https://files.pythonhosted.org/packages/be/e2/bf74a0f402006bf0925f772a66782246ca04b182957b05fa226684e1fcf4/rucio-consistency-1.0.1.tar.gz
+[2023-04-12 16:57:26] INFO root fetch - processPackages [rucio-consistency]: executing diffoscope
+[2023-04-12 16:57:26] INFO root fetch - processPackages [rucio-consistency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rucio-consistency-1.0.0.tar.gz tmp/rucio-consistency-1.0.1.tar.gz --markdown 20230412/r/rucio-consistency/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 16:57:26] INFO root fetch - processPackages [mlserver]: Start processing: pyams-utils
+[2023-04-12 16:57:26] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-04-12 16:57:26] INFO root fetch - processPackages [pyams-utils]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-12 16:57:26] INFO root fetch - processPackages [pyams-utils]: Downloading https://files.pythonhosted.org/packages/2f/b2/204a3414f7e5c3502d99402619add34f2f1702e1ca1784be08e5f7eac880/pyams_utils-1.9.1.tar.gz
+[2023-04-12 16:57:26] INFO root fetch - processPackages [titan-iris]: Start processing: splight-cli
+[2023-04-12 16:57:26] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 16:57:26] INFO root fetch - processPackages [splight-cli]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-04-12 16:57:26] INFO root fetch - processPackages [tarina]: Start processing: lupin-danquin
+[2023-04-12 16:57:26] INFO root fetch - main [MainThread]: End processing [tarina]: success
+[2023-04-12 16:57:27] INFO root fetch - processPackages [lupin-danquin]: New version: [0.0.1.dev9] Old Version: [0.0.1.dev8]
+[2023-04-12 16:57:27] INFO root fetch - processPackages [rucio-consistency]: Start processing: mkdocs-openapi-markdown-plugin
+[2023-04-12 16:57:27] INFO root fetch - main [MainThread]: End processing [rucio-consistency]: success
+[2023-04-12 16:57:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-12 16:57:27] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/db/70/c90bdd290c47906aa4aff9f71fbf36594ff838b8107e2f0bec6052f56589/lupin-danquin-0.0.1.dev9.tar.gz
+[2023-04-12 16:57:27] INFO root fetch - processPackages [splight-cli]: executing diffoscope
+[2023-04-12 16:57:27] INFO root fetch - processPackages [splight-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splight-cli-2.3.8.tar.gz tmp/splight-cli-2.3.9.tar.gz --markdown 20230412/s/splight-cli/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-04-12 16:57:27] INFO root fetch - processPackages [pyams-utils]: Downloading https://files.pythonhosted.org/packages/27/1d/a45b7970b2367f563f07b8edbde2383760dbdbd104763ae1f91ed363583b/pyams_utils-1.9.2.tar.gz
+[2023-04-12 16:57:27] INFO root fetch - processPackages [lupin-danquin]: executing diffoscope
+[2023-04-12 16:57:27] INFO root fetch - processPackages [lupin-danquin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-danquin-0.0.1.dev8.tar.gz tmp/lupin-danquin-0.0.1.dev9.tar.gz --markdown 20230412/l/lupin-danquin/0.0.1.dev8-0.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-12 16:57:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/ab/2f/2b7c62db2773b5436d7322d7dc7b570f82f8bf80ef3d44fd2816f9f7d884/mkdocs_openapi_markdown_plugin-0.1.0.tar.gz
+[2023-04-12 16:57:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: executing diffoscope
+[2023-04-12 16:57:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_openapi_markdown_plugin-0.0.4.tar.gz tmp/mkdocs_openapi_markdown_plugin-0.1.0.tar.gz --markdown 20230412/m/mkdocs-openapi-markdown-plugin/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 16:57:27] INFO root fetch - processPackages [pyams-utils]: executing diffoscope
+[2023-04-12 16:57:27] INFO root fetch - processPackages [pyams-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_utils-1.9.1.tar.gz tmp/pyams_utils-1.9.2.tar.gz --markdown 20230412/p/pyams-utils/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-12 16:57:28] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: Start processing: moleculekit
+[2023-04-12 16:57:28] INFO root fetch - main [MainThread]: End processing [mkdocs-openapi-markdown-plugin]: success
+[2023-04-12 16:57:28] INFO root fetch - processPackages [moleculekit]: New version: [1.6.4] Old Version: [1.6.1]
+[2023-04-12 16:57:28] INFO root fetch - processPackages [lupin-danquin]: Start processing: flow360
+[2023-04-12 16:57:28] INFO root fetch - main [MainThread]: End processing [lupin-danquin]: success
+[2023-04-12 16:57:28] INFO root fetch - processPackages [flow360]: New version: [0.2.0b1] Old Version: [0.1.8]
+[2023-04-12 16:57:28] INFO root fetch - processPackages [moleculekit]: Downloading https://files.pythonhosted.org/packages/c2/66/b802cbaa73639d3fb24d7aca0a21b932bd6b781103c3aa0662fd27dd64e0/moleculekit-1.6.1.tar.gz
+[2023-04-12 16:57:28] INFO root fetch - processPackages [flow360]: Downloading https://files.pythonhosted.org/packages/a8/eb/d773e54acfa98fd9a253401b4973e0e00a74c68156882eb67879a1d4e921/flow360-0.1.8.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [flow360]: Downloading https://files.pythonhosted.org/packages/cc/72/0a59a437b6ee5d8609f34fdc080e60495f3fa5cece72d5181d7d531b018c/flow360-0.2.0b1.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [flow360]: executing diffoscope
+[2023-04-12 16:57:29] INFO root fetch - processPackages [flow360]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flow360-0.1.8.tar.gz tmp/flow360-0.2.0b1.tar.gz --markdown 20230412/f/flow360/0.1.8-0.2.0b1/diff.md --exclude *.pyd
+[2023-04-12 16:57:29] INFO root fetch - processPackages [pyams-utils]: Start processing: protpy
+[2023-04-12 16:57:29] INFO root fetch - main [MainThread]: End processing [pyams-utils]: success
+[2023-04-12 16:57:29] INFO root fetch - processPackages [protpy]: New version: [1.1.10] Old Version: [1.0.8]
+[2023-04-12 16:57:29] INFO root fetch - processPackages [casagui]: Start processing: qtpy-frameless-window
+[2023-04-12 16:57:29] INFO root fetch - main [MainThread]: End processing [casagui]: success
+[2023-04-12 16:57:29] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 16:57:29] INFO root fetch - processPackages [protpy]: Downloading https://files.pythonhosted.org/packages/87/3e/a1944bc7c51d4a5a9577f8eac495a2756f3517308c3f6d20df41b355406b/protpy-1.0.8.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [protpy]: Downloading https://files.pythonhosted.org/packages/8d/69/5ed8cbaf053f42d783671794d9af52b75d9571d90e6d04d8396946836c54/protpy-1.1.10.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/63/90/626b3461037d5d5bcdd401f8d5afe1e374f8577a71b75c3b21e2c0cb6788/QtPy-Frameless-Window-0.0.8.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [splight-cli]: Start processing: mollview
+[2023-04-12 16:57:29] INFO root fetch - main [MainThread]: End processing [splight-cli]: success
+[2023-04-12 16:57:29] INFO root fetch - processPackages [moleculekit]: Downloading https://files.pythonhosted.org/packages/01/31/1debf4b7c89e0060dc1f7d19ab348e627b9183890a8e443c1ee54ee3bd6c/moleculekit-1.6.4.tar.gz
+[2023-04-12 16:57:29] INFO root fetch - processPackages [protpy]: executing diffoscope
+[2023-04-12 16:57:29] INFO root fetch - processPackages [protpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protpy-1.0.8.tar.gz tmp/protpy-1.1.10.tar.gz --markdown 20230412/p/protpy/1.0.8-1.1.10/diff.md --exclude *.pyd
+[2023-04-12 16:57:29] INFO root fetch - processPackages [mollview]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-04-12 16:57:29] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-12 16:57:29] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.7.tar.gz tmp/QtPy-Frameless-Window-0.0.8.tar.gz --markdown 20230412/q/qtpy-frameless-window/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 16:57:30] INFO root fetch - processPackages [mollview]: Downloading https://files.pythonhosted.org/packages/fd/32/473e4a2b730db1c8a6ce283267519665d8b6166e207bfd323c380f884300/mollview-0.1.0.tar.gz
+[2023-04-12 16:57:30] INFO root fetch - processPackages [mollview]: Downloading https://files.pythonhosted.org/packages/22/13/2aa54f8ad7ec6a3e5c6588a60bad98c5f6ab0324b577009a800a3207b374/mollview-1.0.0.tar.gz
+[2023-04-12 16:57:30] INFO root fetch - processPackages [mollview]: executing diffoscope
+[2023-04-12 16:57:30] INFO root fetch - processPackages [mollview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mollview-0.1.0.tar.gz tmp/mollview-1.0.0.tar.gz --markdown 20230412/m/mollview/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 16:57:30] INFO root fetch - processPackages [moleculekit]: executing diffoscope
+[2023-04-12 16:57:30] INFO root fetch - processPackages [moleculekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moleculekit-1.6.1.tar.gz tmp/moleculekit-1.6.4.tar.gz --markdown 20230412/m/moleculekit/1.6.1-1.6.4/diff.md --exclude *.pyd
+[2023-04-12 16:57:30] INFO root fetch - processPackages [flow360]: Start processing: yeagerai-agent
+[2023-04-12 16:57:30] INFO root fetch - main [MainThread]: End processing [flow360]: success
+[2023-04-12 16:57:30] INFO root fetch - processPackages [yeagerai-agent]: New version: [0.0.38] Old Version: [0.0.37]
+[2023-04-12 16:57:30] INFO root fetch - processPackages [yeagerai-agent]: executing diffoscope
+[2023-04-12 16:57:30] INFO root fetch - processPackages [yeagerai-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeagerai-agent-0.0.37.tar.gz tmp/yeagerai-agent-0.0.38.tar.gz --markdown 20230412/y/yeagerai-agent/0.0.37-0.0.38/diff.md --exclude *.pyd
+[2023-04-12 16:57:31] INFO root fetch - processPackages [qtpy-frameless-window]: Start processing: symbolicmode
+[2023-04-12 16:57:31] INFO root fetch - main [MainThread]: End processing [qtpy-frameless-window]: success
+[2023-04-12 16:57:31] INFO root fetch - processPackages [symbolicmode]: New version: [1.0] Old Version: [0.9.7]
+[2023-04-12 16:57:31] INFO root fetch - main [MainThread]: End processing [mollview]: success
+[2023-04-12 16:57:31] INFO root fetch - processPackages [symbolicmode]: Downloading https://files.pythonhosted.org/packages/0b/6f/e37cf1de5f1c83633b3287ebc2e4e6b8feca59d158b34e9c94b27a146f0c/symbolicmode-1.0.tar.gz
+[2023-04-12 16:57:31] INFO root fetch - processPackages [symbolicmode]: executing diffoscope
+[2023-04-12 16:57:31] INFO root fetch - processPackages [symbolicmode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbolicmode-0.9.7.tar.gz tmp/symbolicmode-1.0.tar.gz --markdown 20230412/s/symbolicmode/0.9.7-1.0/diff.md --exclude *.pyd
+[2023-04-12 16:57:31] INFO root fetch - main [MainThread]: End processing [yeagerai-agent]: success
+[2023-04-12 16:57:32] INFO root fetch - main [MainThread]: End processing [protpy]: success
+[2023-04-12 16:57:32] INFO root fetch - main [MainThread]: End processing [symbolicmode]: success
+[2023-04-12 16:57:42] INFO root fetch - main [MainThread]: End processing [moleculekit]: success
+[2023-04-12 16:57:42] INFO root fetch - main [MainThread]: Store serial: [17677820]
