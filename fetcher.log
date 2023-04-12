@@ -20648,3 +20648,158 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:21:08] ERROR root fetch - processPackages [datarobot-drum]: Timeout during execution of pkgdiff
 [2023-04-12 19:21:08] INFO root fetch - main [MainThread]: End processing [datarobot-drum] error
 [2023-04-12 19:21:08] INFO root fetch - main [MainThread]: Store serial: [17679751]
+[2023-04-12 19:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679751]
+[2023-04-12 19:26:16] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-04-12 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: obeenya
+[2023-04-12 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clara-ai
+[2023-04-12 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MLapp1
+[2023-04-12 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: delphi-utils
+[2023-04-12 19:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-gcp
+[2023-04-12 19:26:16] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 19:26:16] INFO root fetch - processPackages [obeenya]: Start processing: sapcloudconnectorpythonsocket
+[2023-04-12 19:26:16] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 19:26:16] INFO root fetch - processPackages [delphi-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 19:26:16] WARNING root fetch - processPackages [clara-ai]: Skipping, unable to determine old version
+[2023-04-12 19:26:16] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:26:16] INFO root fetch - processPackages [clara-ai]: Start processing: wds-client
+[2023-04-12 19:26:16] INFO root fetch - main [MainThread]: End processing [clara-ai] error
+[2023-04-12 19:26:16] INFO root fetch - processPackages [pulumi-gcp]: New version: [6.9.0a1643146354] Old Version: [6.9.0]
+[2023-04-12 19:26:16] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 19:26:16] INFO root fetch - processPackages [wds-client]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-12 19:26:16] INFO root fetch - processPackages [delphi-utils]: Downloading https://files.pythonhosted.org/packages/d2/3a/726e7f662e99887ec36c0e32f9f16a9e57eaf2442c9c7d6797b8284bb58b/delphi_utils-0.3.8.tar.gz
+[2023-04-12 19:26:16] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: Downloading https://files.pythonhosted.org/packages/c9/5e/14eda278d52da0c5eeb4d0d1d65540d43dad9308f2c71ec1b6881188a94b/sapcloudconnectorpythonsocket-0.1.2-py2.py3-none-any.whl
+[2023-04-12 19:26:16] INFO root fetch - processPackages [pulumi-gcp]: executing diffoscope
+[2023-04-12 19:26:16] INFO root fetch - processPackages [pulumi-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gcp-6.9.0.tar.gz tmp/pulumi_gcp-6.9.0a1643146354.tar.gz --markdown 20230412/p/pulumi-gcp/6.9.0-6.9.0a1643146354/diff.md --exclude *.pyd
+[2023-04-12 19:26:16] INFO root fetch - processPackages [wds-client]: executing diffoscope
+[2023-04-12 19:26:16] INFO root fetch - processPackages [wds-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wds-client-0.2.7.tar.gz tmp/wds-client-0.2.8.tar.gz --markdown 20230412/w/wds-client/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-12 19:26:17] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:26:17] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:17] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: executing diffoscope
+[2023-04-12 19:26:17] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapcloudconnectorpythonsocket-0.1.1-py2.py3-none-any.whl.zip tmp/sapcloudconnectorpythonsocket-0.1.2-py2.py3-none-any.whl.zip --markdown 20230412/s/sapcloudconnectorpythonsocket/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 19:26:18] INFO root fetch - processPackages [sapcloudconnectorpythonsocket]: Start processing: snaptrade-python-sdk
+[2023-04-12 19:26:18] INFO root fetch - main [MainThread]: End processing [sapcloudconnectorpythonsocket]: success
+[2023-04-12 19:26:18] INFO root fetch - processPackages [snaptrade-python-sdk]: New version: [9.0.0] Old Version: [8.4.0]
+[2023-04-12 19:26:18] INFO root fetch - processPackages [MLapp1]: Start processing: nlmod
+[2023-04-12 19:26:18] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:26:18] INFO root fetch - processPackages [nlmod]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-12 19:26:18] INFO root fetch - processPackages [wds-client]: Start processing: shinyswatch
+[2023-04-12 19:26:18] INFO root fetch - main [MainThread]: End processing [wds-client]: success
+[2023-04-12 19:26:18] WARNING root fetch - processPackages [shinyswatch]: Skipping, unable to determine old version
+[2023-04-12 19:26:18] INFO root fetch - processPackages [shinyswatch]: Start processing: MLapp1
+[2023-04-12 19:26:18] INFO root fetch - main [MainThread]: End processing [shinyswatch] error
+[2023-04-12 19:26:18] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:26:18] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:26:18] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:18] INFO root fetch - processPackages [nlmod]: Downloading https://files.pythonhosted.org/packages/9b/3d/431b83b360b28a99c79c51735ae28481c26319cb71fcb0802f514616729f/nlmod-0.5.3.tar.gz
+[2023-04-12 19:26:18] INFO root fetch - processPackages [snaptrade-python-sdk]: executing diffoscope
+[2023-04-12 19:26:18] INFO root fetch - processPackages [snaptrade-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snaptrade-python-sdk-8.4.0.tar.gz tmp/snaptrade-python-sdk-9.0.0.tar.gz --markdown 20230412/s/snaptrade-python-sdk/8.4.0-9.0.0/diff.md --exclude *.pyd
+[2023-04-12 19:26:18] INFO root fetch - processPackages [delphi-utils]: Downloading https://files.pythonhosted.org/packages/3f/d7/1b2a5ee96ea8453489d91233c7ea803f3cb5757f727c7cdf4a86f8f0a4e2/delphi_utils-0.3.9.tar.gz
+[2023-04-12 19:26:18] INFO root fetch - processPackages [nlmod]: executing diffoscope
+[2023-04-12 19:26:18] INFO root fetch - processPackages [nlmod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlmod-0.5.2.tar.gz tmp/nlmod-0.5.3.tar.gz --markdown 20230412/n/nlmod/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-12 19:26:19] INFO root fetch - processPackages [delphi-utils]: executing diffoscope
+[2023-04-12 19:26:19] INFO root fetch - processPackages [delphi-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delphi_utils-0.3.8.tar.gz tmp/delphi_utils-0.3.9.tar.gz --markdown 20230412/d/delphi-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:20] INFO root fetch - processPackages [MLapp1]: Start processing: arkdata
+[2023-04-12 19:26:20] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:26:20] INFO root fetch - processPackages [arkdata]: New version: [0.0.51] Old Version: [0.0.50]
+[2023-04-12 19:26:20] INFO root fetch - processPackages [nlmod]: Start processing: acryl-datahub
+[2023-04-12 19:26:20] INFO root fetch - main [MainThread]: End processing [nlmod]: success
+[2023-04-12 19:26:20] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-12 19:26:20] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-04-12 19:26:20] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230412/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-12 19:26:20] INFO root fetch - processPackages [arkdata]: Downloading https://files.pythonhosted.org/packages/11/2f/831c5e5f5e0b90ad9c21d1c1198f49a6f166b911e4e06e8551eaa622b5fb/arkdata-0.0.51.tar.gz
+[2023-04-12 19:26:20] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-04-12 19:26:20] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-0.0.50.tar.gz tmp/arkdata-0.0.51.tar.gz --markdown 20230412/a/arkdata/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2023-04-12 19:26:21] INFO root fetch - processPackages [delphi-utils]: Start processing: woodwork
+[2023-04-12 19:26:21] INFO root fetch - main [MainThread]: End processing [delphi-utils]: success
+[2023-04-12 19:26:21] INFO root fetch - processPackages [woodwork]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 19:26:21] INFO root fetch - processPackages [woodwork]: Downloading https://files.pythonhosted.org/packages/8b/e4/dda4761f9253d4ee5e8c267b3c7c7a99d9acf42c20b8327094c9f81703d2/woodwork-0.9.0.tar.gz
+[2023-04-12 19:26:22] INFO root fetch - processPackages [arkdata]: Start processing: acryl-datahub-airflow-plugin
+[2023-04-12 19:26:22] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-04-12 19:26:22] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-12 19:26:22] INFO root fetch - processPackages [woodwork]: Downloading https://files.pythonhosted.org/packages/63/b9/ce79c59e023429ebf715178fcc7440e3a109ed58d655ba35ee6a80b3c07c/woodwork-0.9.1.tar.gz
+[2023-04-12 19:26:22] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-04-12 19:26:22] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230412/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-12 19:26:22] INFO root fetch - processPackages [woodwork]: executing diffoscope
+[2023-04-12 19:26:22] INFO root fetch - processPackages [woodwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/woodwork-0.9.0.tar.gz tmp/woodwork-0.9.1.tar.gz --markdown 20230412/w/woodwork/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 19:26:23] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: Start processing: anatools
+[2023-04-12 19:26:23] INFO root fetch - main [MainThread]: End processing [acryl-datahub-airflow-plugin]: success
+[2023-04-12 19:26:23] INFO root fetch - processPackages [anatools]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-12 19:26:23] INFO root fetch - processPackages [anatools]: Downloading https://files.pythonhosted.org/packages/0b/00/afa26ecd770b7b5ac4e7fd29ff020e902b66ed877b9278d3379fc129c6a7/anatools-3.1.0.tar.gz
+[2023-04-12 19:26:23] INFO root fetch - processPackages [anatools]: Downloading https://files.pythonhosted.org/packages/d5/b7/8b507621819b4fb27b25b73676a3d448b274309aa910f24f8b1b3a4efdb3/anatools-3.1.1.tar.gz
+[2023-04-12 19:26:24] INFO root fetch - processPackages [anatools]: executing diffoscope
+[2023-04-12 19:26:24] INFO root fetch - processPackages [anatools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anatools-3.1.0.tar.gz tmp/anatools-3.1.1.tar.gz --markdown 20230412/a/anatools/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:26:24] INFO root fetch - processPackages [woodwork]: Start processing: demoparser2
+[2023-04-12 19:26:24] INFO root fetch - main [MainThread]: End processing [woodwork]: success
+[2023-04-12 19:26:24] INFO root fetch - processPackages [demoparser2]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 19:26:24] INFO root fetch - processPackages [snaptrade-python-sdk]: Start processing: jal
+[2023-04-12 19:26:24] INFO root fetch - main [MainThread]: End processing [snaptrade-python-sdk]: success
+[2023-04-12 19:26:24] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/20/00/38adfd9d93394c6ab44554e0cc569ecb96379dd63765f26224d062f8b6e6/demoparser2-0.0.1-cp39-none-win_amd64.whl
+[2023-04-12 19:26:24] INFO root fetch - processPackages [jal]: New version: [2023.4.4] Old Version: [2023.4.3]
+[2023-04-12 19:26:24] INFO root fetch - processPackages [jal]: Downloading https://files.pythonhosted.org/packages/af/32/8327ca071d40d6a9567dcb9a0f2970c5e6b39083961779370063e134884e/jal-2023.4.4.tar.gz
+[2023-04-12 19:26:25] INFO root fetch - processPackages [jal]: executing diffoscope
+[2023-04-12 19:26:25] INFO root fetch - processPackages [jal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jal-2023.4.3.tar.gz tmp/jal-2023.4.4.tar.gz --markdown 20230412/j/jal/2023.4.3-2023.4.4/diff.md --exclude *.pyd
+[2023-04-12 19:26:25] INFO root fetch - processPackages [demoparser2]: Downloading https://files.pythonhosted.org/packages/fe/d7/1e3f6efec6d40fc2c18b4ae7e75a1027cdd0534612d647425f3b01607bc5/demoparser2-0.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 19:26:25] INFO root fetch - processPackages [anatools]: Start processing: MLapp1
+[2023-04-12 19:26:25] INFO root fetch - main [MainThread]: End processing [anatools]: success
+[2023-04-12 19:26:25] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:26:25] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:26:25] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:25] INFO root fetch - processPackages [demoparser2]: executing diffoscope
+[2023-04-12 19:26:25] INFO root fetch - processPackages [demoparser2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demoparser2-0.0.1-cp39-none-win_amd64.whl.zip tmp/demoparser2-0.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/d/demoparser2/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 19:26:26] INFO root fetch - processPackages [MLapp1]: Start processing: pycqBot
+[2023-04-12 19:26:26] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:26:26] INFO root fetch - processPackages [pycqBot]: New version: [0.5.1.1] Old Version: [0.5.1]
+[2023-04-12 19:26:26] INFO root fetch - processPackages [acryl-datahub]: Start processing: breathXplorer
+[2023-04-12 19:26:26] INFO root fetch - main [MainThread]: End processing [acryl-datahub]: success
+[2023-04-12 19:26:26] WARNING root fetch - processPackages [breathXplorer]: Skipping, unable to determine old version
+[2023-04-12 19:26:26] INFO root fetch - processPackages [breathXplorer]: Start processing: crazy-thursday
+[2023-04-12 19:26:26] INFO root fetch - main [MainThread]: End processing [breathXplorer] error
+[2023-04-12 19:26:26] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-12 19:26:26] INFO root fetch - processPackages [pycqBot]: Downloading https://files.pythonhosted.org/packages/69/14/fedb77e45e520818b8a9bca1e498b97fed0fafa38d70f1b2fb861d4ff554/pycqBot-0.5.1.1.tar.gz
+[2023-04-12 19:26:27] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-12 19:26:27] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230412/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-12 19:26:27] INFO root fetch - processPackages [demoparser2]: Start processing: data-repo-client
+[2023-04-12 19:26:27] INFO root fetch - main [MainThread]: End processing [demoparser2]: success
+[2023-04-12 19:26:27] INFO root fetch - processPackages [data-repo-client]: New version: [1.64.0] Old Version: [1.470.0]
+[2023-04-12 19:26:27] INFO root fetch - processPackages [pycqBot]: executing diffoscope
+[2023-04-12 19:26:27] INFO root fetch - processPackages [pycqBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycqBot-0.5.1.tar.gz tmp/pycqBot-0.5.1.1.tar.gz --markdown 20230412/p/pycqBot/0.5.1-0.5.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:26:27] INFO root fetch - processPackages [data-repo-client]: Downloading https://files.pythonhosted.org/packages/78/9f/a2c3da966be61eb9a3dd7b05353bea1d154f4612355c0efe54bec1014ba4/data-repo-client-1.470.0.tar.gz
+[2023-04-12 19:26:27] INFO root fetch - processPackages [jal]: Start processing: MLapp1
+[2023-04-12 19:26:27] INFO root fetch - main [MainThread]: End processing [jal]: success
+[2023-04-12 19:26:27] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:26:27] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:26:27] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:27] INFO root fetch - processPackages [data-repo-client]: executing diffoscope
+[2023-04-12 19:26:27] INFO root fetch - processPackages [data-repo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-repo-client-1.470.0.tar.gz tmp/data-repo-client-1.64.0.tar.gz --markdown 20230412/d/data-repo-client/1.470.0-1.64.0/diff.md --exclude *.pyd
+[2023-04-12 19:26:28] INFO root fetch - processPackages [crazy-thursday]: Start processing: car-connector-framework
+[2023-04-12 19:26:28] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-04-12 19:26:28] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc269] Old Version: [3.0.2rc268]
+[2023-04-12 19:26:28] INFO root fetch - processPackages [pycqBot]: Start processing: zachmorr-test
+[2023-04-12 19:26:28] INFO root fetch - main [MainThread]: End processing [pycqBot]: success
+[2023-04-12 19:26:28] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/84/01/167c3b7aa3f9ea8a0f0fc27b2084a8f053d2e301d2a9abe5ea360f566f92/car-connector-framework-3.0.2rc269.tar.gz
+[2023-04-12 19:26:28] WARNING root fetch - processPackages [zachmorr-test]: Skipping, unable to determine old version
+[2023-04-12 19:26:28] INFO root fetch - processPackages [zachmorr-test]: Start processing: MLapp1
+[2023-04-12 19:26:28] INFO root fetch - main [MainThread]: End processing [zachmorr-test] error
+[2023-04-12 19:26:28] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:26:28] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-12 19:26:28] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc268.tar.gz tmp/car-connector-framework-3.0.2rc269.tar.gz --markdown 20230412/c/car-connector-framework/3.0.2rc268-3.0.2rc269/diff.md --exclude *.pyd
+[2023-04-12 19:26:28] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:26:28] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:26:29] INFO root fetch - processPackages [pulumi-gcp]: Start processing: homecloud
+[2023-04-12 19:26:29] INFO root fetch - main [MainThread]: End processing [pulumi-gcp]: success
+[2023-04-12 19:26:29] INFO root fetch - processPackages [homecloud]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 19:26:29] INFO root fetch - processPackages [car-connector-framework]: Start processing: car-connector-framework
+[2023-04-12 19:26:29] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-04-12 19:26:29] INFO root fetch - processPackages [homecloud]: Downloading https://files.pythonhosted.org/packages/69/01/6f18658f5bf27bdf266d98f953bbc75bc8bbd42007b9deb41ff7c10c7a7f/homecloud-0.3.1.tar.gz
+[2023-04-12 19:26:29] INFO root fetch - processPackages [car-connector-framework]: New version: [3.0.2rc270] Old Version: [3.0.2rc269]
+[2023-04-12 19:26:29] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:26:29] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:26:29] INFO root fetch - processPackages [homecloud]: executing diffoscope
+[2023-04-12 19:26:29] INFO root fetch - processPackages [homecloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homecloud-0.3.0.tar.gz tmp/homecloud-0.3.1.tar.gz --markdown 20230412/h/homecloud/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 19:26:29] INFO root fetch - processPackages [car-connector-framework]: Downloading https://files.pythonhosted.org/packages/99/c3/f7be4535c79ba8c1d69509830408acd73111882aad33acddb2dac9c9fe67/car-connector-framework-3.0.2rc270.tar.gz
+[2023-04-12 19:26:30] INFO root fetch - processPackages [car-connector-framework]: executing diffoscope
+[2023-04-12 19:26:30] INFO root fetch - processPackages [car-connector-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/car-connector-framework-3.0.2rc269.tar.gz tmp/car-connector-framework-3.0.2rc270.tar.gz --markdown 20230412/c/car-connector-framework/3.0.2rc269-3.0.2rc270/diff.md --exclude *.pyd
+[2023-04-12 19:26:30] INFO root fetch - main [MainThread]: End processing [data-repo-client]: success
+[2023-04-12 19:26:30] INFO root fetch - main [MainThread]: End processing [homecloud]: success
+[2023-04-12 19:26:31] INFO root fetch - main [MainThread]: End processing [car-connector-framework]: success
+[2023-04-12 19:26:31] INFO root fetch - main [MainThread]: Store serial: [17679847]
