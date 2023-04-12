@@ -7287,3 +7287,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:41:23] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:41:24] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:41:24] INFO root fetch - main [MainThread]: Store serial: [17671592]
+[2023-04-12 07:46:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671592]
+[2023-04-12 07:46:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 07:46:32] INFO root fetch - processPackages [pydicts]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 07:46:32] WARNING root fetch - processPackages [tlcGIS]: Skipping, unable to determine old version
+[2023-04-12 07:46:32] INFO root fetch - main [MainThread]: error
+[2023-04-12 07:46:32] INFO root fetch - processPackages [python-git-info]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-12 07:46:32] INFO root fetch - processPackages [kmspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:46:32] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.80]
+[2023-04-12 07:46:32] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-12 07:46:32] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/8f/fa/7a9e95eb400c7a7d24878f33e34fd744c44ff9cc741d263acf6917d8cf24/pydicts-0.1.0.tar.gz
+[2023-04-12 07:46:32] INFO root fetch - processPackages [kmspy]: executing diffoscope
+[2023-04-12 07:46:32] INFO root fetch - processPackages [kmspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmspy-0.0.8.tar.gz tmp/kmspy-0.0.9.tar.gz --markdown 20230412/k/kmspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:46:32] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-12 07:46:32] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.3.tar.gz tmp/gym-trading-env-0.1.4.tar.gz --markdown 20230412/g/gym-trading-env/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-12 07:46:32] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-12 07:46:32] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.80.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230412/r/realnet/0.0.80-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:46:32] INFO root fetch - processPackages [python-git-info]: Downloading https://files.pythonhosted.org/packages/93/4a/fae02b6b45911a0ffc6271925b445c171e74aa16f8f154e7d7300a03a102/python-git-info-0.8.2.tar.gz
+[2023-04-12 07:46:32] INFO root fetch - processPackages [pydicts]: Downloading https://files.pythonhosted.org/packages/da/85/012b5a4217148ab69a1c5c5d8dbfe01e83b9564fb5f8e3b9cfa1fa709edf/pydicts-0.2.0.tar.gz
+[2023-04-12 07:46:32] INFO root fetch - processPackages [pydicts]: executing diffoscope
+[2023-04-12 07:46:32] INFO root fetch - processPackages [pydicts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydicts-0.1.0.tar.gz tmp/pydicts-0.2.0.tar.gz --markdown 20230412/p/pydicts/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 07:46:32] INFO root fetch - processPackages [python-git-info]: Downloading https://files.pythonhosted.org/packages/68/b2/c8477b37d799ec0a16101e53cfd74db3f449e0041e604d5be11b823e01c9/python-git-info-0.8.3.tar.gz
+[2023-04-12 07:46:33] INFO root fetch - processPackages [python-git-info]: executing diffoscope
+[2023-04-12 07:46:33] INFO root fetch - processPackages [python-git-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-git-info-0.8.2.tar.gz tmp/python-git-info-0.8.3.tar.gz --markdown 20230412/p/python-git-info/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-12 07:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:33] INFO root fetch - processPackages [gym-trading-env]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 07:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:33] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/ee/52/92ec2344e3b63a3dd6bbf4210da006d4765b3dc982eca79f072994b59c45/gym-trading-env-0.1.5.tar.gz
+[2023-04-12 07:46:33] INFO root fetch - processPackages [fastapi-oracle]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-12 07:46:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:34] INFO root fetch - processPackages [gym-trading-env]: Downloading https://files.pythonhosted.org/packages/09/12/3daa03755435b476967410e98371278e05b89984bae0471c30a9c8e35790/gym-trading-env-0.1.6.tar.gz
+[2023-04-12 07:46:34] INFO root fetch - processPackages [fastapi-oracle]: Downloading https://files.pythonhosted.org/packages/3e/03/639ba836c90b7c444289ac8557cc48447f095458891900ee84e5bbbfcede/fastapi_oracle-0.6.0-py3-none-any.whl
+[2023-04-12 07:46:34] INFO root fetch - processPackages [gym-trading-env]: executing diffoscope
+[2023-04-12 07:46:34] INFO root fetch - processPackages [gym-trading-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gym-trading-env-0.1.5.tar.gz tmp/gym-trading-env-0.1.6.tar.gz --markdown 20230412/g/gym-trading-env/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 07:46:34] INFO root fetch - processPackages [fastapi-oracle]: executing diffoscope
+[2023-04-12 07:46:34] INFO root fetch - processPackages [fastapi-oracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_oracle-0.5.0-py3-none-any.whl.zip tmp/fastapi_oracle-0.6.0-py3-none-any.whl.zip --markdown 20230412/f/fastapi-oracle/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-12 07:46:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:46:35] INFO root fetch - main [MainThread]: Store serial: [17671620]
