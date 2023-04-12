@@ -9841,3 +9841,80 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 10:26:29] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:26:30] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:26:30] INFO root fetch - main [MainThread]: Store serial: [17673272]
+[2023-04-12 10:31:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673272]
+[2023-04-12 10:31:37] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 10:31:37] INFO root fetch - processPackages [inspector-django]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 10:31:37] INFO root fetch - processPackages [ccdt]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 10:31:37] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: New version: [14.0.1.0.3.dev6] Old Version: [14.0.1.0.3.dev5]
+[2023-04-12 10:31:37] INFO root fetch - processPackages [haruna]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 10:31:37] INFO root fetch - processPackages [returnn]: New version: [1.20230412.101550] Old Version: [1.20230411.4301]
+[2023-04-12 10:31:37] INFO root fetch - processPackages [inspector-django]: Downloading https://files.pythonhosted.org/packages/06/37/52744a6c1d2e1523e3f6890b8aa6e5034bb279fb948b6e0382b9c3bba9df/inspector-django-0.1.3.tar.gz
+[2023-04-12 10:31:37] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/bc/22/0a28fa5c57ff0b3eb3b3a4d963cedbcc69c52a2bb044fd4bb4ace3bffbd2/ccdt-1.0.8.tar.gz
+[2023-04-12 10:31:37] INFO root fetch - processPackages [haruna]: Downloading https://files.pythonhosted.org/packages/71/65/dfaa2777c75caeab20f97935790c9fc260c2cd788cbbf4b7f950c394051e/haruna-0.1.8-py3-none-any.whl
+[2023-04-12 10:31:37] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: Downloading https://files.pythonhosted.org/packages/c7/0d/4a6473547767a3b08983382dff7d5eb08fb779f4a1247b445e64ba075feb/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev6-py3-none-any.whl
+[2023-04-12 10:31:37] INFO root fetch - processPackages [inspector-django]: executing diffoscope
+[2023-04-12 10:31:37] INFO root fetch - processPackages [inspector-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inspector-django-0.1.2.tar.gz tmp/inspector-django-0.1.3.tar.gz --markdown 20230412/i/inspector-django/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 10:31:37] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/6a/52/72131a861238bf53d1b27efd462c9f38f4c10bd1a67dc0701456f3896d58/returnn-1.20230412.101550.tar.gz
+[2023-04-12 10:31:38] INFO root fetch - processPackages [haruna]: Downloading https://files.pythonhosted.org/packages/e6/47/39835bd6eac389798b514d813a8791d951d2d56a173bcddcdb812f7f6217/haruna-0.1.9-py3-none-any.whl
+[2023-04-12 10:31:38] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: executing diffoscope
+[2023-04-12 10:31:38] INFO root fetch - processPackages [odoo14-addon-stock-picking-mass-action]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev5-py3-none-any.whl.zip tmp/odoo14_addon_stock_picking_mass_action-14.0.1.0.3.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-picking-mass-action/14.0.1.0.3.dev5-14.0.1.0.3.dev6/diff.md --exclude *.pyd
+[2023-04-12 10:31:38] INFO root fetch - processPackages [haruna]: executing diffoscope
+[2023-04-12 10:31:38] INFO root fetch - processPackages [haruna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haruna-0.1.8-py3-none-any.whl.zip tmp/haruna-0.1.9-py3-none-any.whl.zip --markdown 20230412/h/haruna/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 10:31:38] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-12 10:31:38] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230411.4301.tar.gz tmp/returnn-1.20230412.101550.tar.gz --markdown 20230412/r/returnn/1.20230411.4301-1.20230412.101550/diff.md --exclude *.pyd
+[2023-04-12 10:31:38] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/58/b3/af9f8b97289b105e36d7da2ff8ab12040b05c31e18eb84b42bdc3c936d91/ccdt-1.0.9.tar.gz
+[2023-04-12 10:31:38] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2023-04-12 10:31:38] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-1.0.8.tar.gz tmp/ccdt-1.0.9.tar.gz --markdown 20230412/c/ccdt/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 10:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:39] INFO root fetch - processPackages [heifip]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-04-12 10:31:39] INFO root fetch - processPackages [heifip]: Downloading https://files.pythonhosted.org/packages/be/5e/d7f53747b4fd63f8fae5e29e9ecd1f8c378d5dab0f6ca5bedf04155dd4d3/heifip-1.0.0.tar.gz
+[2023-04-12 10:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:39] INFO root fetch - processPackages [databricks-connect]: New version: [9.1.34] Old Version: [9.1.33]
+[2023-04-12 10:31:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:39] INFO root fetch - processPackages [haruna]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 10:31:39] INFO root fetch - processPackages [databricks-connect]: Downloading https://files.pythonhosted.org/packages/97/c4/41ce62f3fa9fbdc94e1a786866c7dca4f3909b497e680d330ca799af7730/databricks-connect-9.1.33.tar.gz
+[2023-04-12 10:31:39] WARNING root fetch - processPackages [databricks-connect]: Skipping package: exceeds size limit 257064267>=10485760
+[2023-04-12 10:31:39] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:31:39] INFO root fetch - processPackages [haruna]: executing diffoscope
+[2023-04-12 10:31:39] INFO root fetch - processPackages [haruna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haruna-0.1.8-py3-none-any.whl.zip tmp/haruna-0.1.9-py3-none-any.whl.zip --markdown 20230412/h/haruna/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 10:31:39] INFO root fetch - processPackages [heifip]: Downloading https://files.pythonhosted.org/packages/b1/2d/09b4775a3da9cc26b82ea024cbe34371a9ab9b4fa2b9f5911a0f81824747/heifip-1.1.0.tar.gz
+[2023-04-12 10:31:39] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 10:31:39] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-12 10:31:39] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.8.tar.gz tmp/langchain_utils-0.3.9.tar.gz --markdown 20230412/l/langchain-utils/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 10:31:39] INFO root fetch - processPackages [heifip]: executing diffoscope
+[2023-04-12 10:31:39] INFO root fetch - processPackages [heifip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heifip-1.0.0.tar.gz tmp/heifip-1.1.0.tar.gz --markdown 20230412/h/heifip/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 10:31:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:40] INFO root fetch - processPackages [odoo14-addon-stock-picking-batch-extended]: New version: [14.0.1.0.2.dev2] Old Version: [14.0.1.0.2.dev1]
+[2023-04-12 10:31:40] INFO root fetch - processPackages [odoo14-addon-stock-picking-batch-extended]: Downloading https://files.pythonhosted.org/packages/48/26/6fd9eaeeccd3ac50fac7632c9f88e65670bdad1651cdf20779f2a359bfc7/odoo14_addon_stock_picking_batch_extended-14.0.1.0.2.dev1-py3-none-any.whl
+[2023-04-12 10:31:40] INFO root fetch - processPackages [odoo14-addon-stock-picking-batch-extended]: Downloading https://files.pythonhosted.org/packages/8c/a8/8877712ff3692ea2688f72bddc71eb45f0083314e5afc6c09539fc0270d3/odoo14_addon_stock_picking_batch_extended-14.0.1.0.2.dev2-py3-none-any.whl
+[2023-04-12 10:31:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:40] INFO root fetch - processPackages [pyxllib]: New version: [0.3.9] Old Version: [0.3.8.1]
+[2023-04-12 10:31:40] INFO root fetch - processPackages [hdn-research-environment]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-04-12 10:31:40] INFO root fetch - processPackages [odoo14-addon-stock-picking-batch-extended]: executing diffoscope
+[2023-04-12 10:31:40] INFO root fetch - processPackages [odoo14-addon-stock-picking-batch-extended]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_picking_batch_extended-14.0.1.0.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_stock_picking_batch_extended-14.0.1.0.2.dev2-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-stock-picking-batch-extended/14.0.1.0.2.dev1-14.0.1.0.2.dev2/diff.md --exclude *.pyd
+[2023-04-12 10:31:41] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/92/b3/63c0f112ecbc647b12359588e1a5e43868ba4542e1fdb6d0f037c3b00b1f/pyxllib-0.3.8.1.tar.gz
+[2023-04-12 10:31:41] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/34/58/e43478fc5efa5045f97561af17b249cb5e218a2d4eaa226b991da859e17e/hdn-research-environment-1.5.1.tar.gz
+[2023-04-12 10:31:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:41] INFO root fetch - processPackages [feffery-antd-components]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2023-04-12 10:31:41] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2023-04-12 10:31:41] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-1.5.0.tar.gz tmp/hdn-research-environment-1.5.1.tar.gz --markdown 20230412/h/hdn-research-environment/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-04-12 10:31:41] INFO root fetch - processPackages [feffery-antd-components]: executing diffoscope
+[2023-04-12 10:31:41] INFO root fetch - processPackages [feffery-antd-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_antd_components-0.2.0rc8.tar.gz tmp/feffery_antd_components-0.2.0rc9.tar.gz --markdown 20230412/f/feffery-antd-components/0.2.0rc8-0.2.0rc9/diff.md --exclude *.pyd
+[2023-04-12 10:31:41] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/13/39/f5a231f530fcc02e172ed8ed86feec98a3adf3989fabedaeb988e624cefa/pyxllib-0.3.9.tar.gz
+[2023-04-12 10:31:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:42] INFO root fetch - processPackages [precise-lite-runner]: New version: [0.4.2a1] Old Version: [0.4.1a2]
+[2023-04-12 10:31:42] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2023-04-12 10:31:42] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.8.1.tar.gz tmp/pyxllib-0.3.9.tar.gz --markdown 20230412/p/pyxllib/0.3.8.1-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 10:31:42] INFO root fetch - processPackages [precise-lite-runner]: executing diffoscope
+[2023-04-12 10:31:42] INFO root fetch - processPackages [precise-lite-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/precise_lite_runner-0.4.1a2-py3-none-any.whl.zip tmp/precise_lite_runner-0.4.2a1-py3-none-any.whl.zip --markdown 20230412/p/precise-lite-runner/0.4.1a2-0.4.2a1/diff.md --exclude *.pyd
+[2023-04-12 10:31:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:42] INFO root fetch - processPackages [metaseg]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-12 10:31:42] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-12 10:31:42] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.5.0.tar.gz tmp/metaseg-0.5.1.tar.gz --markdown 20230412/m/metaseg/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-12 10:31:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:31:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:32:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:32:08] INFO root fetch - main [MainThread]: Store serial: [17673331]
