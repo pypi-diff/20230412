@@ -10796,3 +10796,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 11:22:22] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:22:23] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:22:23] INFO root fetch - main [MainThread]: Store serial: [17673921]
+[2023-04-12 11:27:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673921]
+[2023-04-12 11:27:30] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 11:27:30] WARNING root fetch - processPackages [autoMMM]: Skipping, unable to determine old version
+[2023-04-12 11:27:30] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:27:30] INFO root fetch - processPackages [pheno-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 11:27:30] WARNING root fetch - processPackages [js-code]: Skipping, unable to determine old version
+[2023-04-12 11:27:30] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:27:30] INFO root fetch - processPackages [pychi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 11:27:30] INFO root fetch - processPackages [django-common-task-system]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-12 11:27:30] INFO root fetch - processPackages [i2a-chat-api-client]: New version: [1.2.5] Old Version: [1.2.3]
+[2023-04-12 11:27:30] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-12 11:27:31] INFO root fetch - processPackages [i2a-chat-api-client]: Downloading https://files.pythonhosted.org/packages/c3/e3/5d59615af74530b8479aad6b7b4b434e8a9d9bf7e32a3270d6358f2b9ac1/i2a_chat_api_client-1.2.5.tar.gz
+[2023-04-12 11:27:31] INFO root fetch - processPackages [finbourne-access-sdk]: Downloading https://files.pythonhosted.org/packages/22/58/ee379caa00eba72b01ce5884996e3957e85f9db086b5f74209b445963467/finbourne-access-sdk-0.0.616.tar.gz
+[2023-04-12 11:27:31] INFO root fetch - processPackages [django-common-task-system]: Downloading https://files.pythonhosted.org/packages/fc/51/dc8ca7fd61d88589e68952c274ff664343d6ac168010218aa84e7db618c5/django-common-task-system-1.1.6.tar.gz
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pheno-utils]: Downloading https://files.pythonhosted.org/packages/70/09/54224a61375a28b155b816b6b2598b5ebf2e8386c1bdc11b261d7e4646c6/pheno-utils-0.0.9.tar.gz
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pychi]: Downloading https://files.pythonhosted.org/packages/5b/4e/b7aa327f09f10a705f9a31e10988a875ae8673debf88c55a3d9f2083ede6/pychi-0.0.9.tar.gz
+[2023-04-12 11:27:31] INFO root fetch - processPackages [django-common-task-system]: executing diffoscope
+[2023-04-12 11:27:31] INFO root fetch - processPackages [django-common-task-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-common-task-system-1.1.5.tar.gz tmp/django-common-task-system-1.1.6.tar.gz --markdown 20230412/d/django-common-task-system/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-12 11:27:31] INFO root fetch - processPackages [i2a-chat-api-client]: executing diffoscope
+[2023-04-12 11:27:31] INFO root fetch - processPackages [i2a-chat-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2a_chat_api_client-1.2.3.tar.gz tmp/i2a_chat_api_client-1.2.5.tar.gz --markdown 20230412/i/i2a-chat-api-client/1.2.3-1.2.5/diff.md --exclude *.pyd
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pychi]: executing diffoscope
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pychi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychi-0.0.8.tar.gz tmp/pychi-0.0.9.tar.gz --markdown 20230412/p/pychi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pheno-utils]: executing diffoscope
+[2023-04-12 11:27:31] INFO root fetch - processPackages [pheno-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheno-utils-0.0.8.tar.gz tmp/pheno-utils-0.0.9.tar.gz --markdown 20230412/p/pheno-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 11:27:31] INFO root fetch - processPackages [finbourne-access-sdk]: Downloading https://files.pythonhosted.org/packages/f5/48/d40801e505892153d9eb9fea2de2f415455702ca8818dd23f14a3f88d813/finbourne-access-sdk-0.0.815.tar.gz
+[2023-04-12 11:27:32] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-12 11:27:32] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230412/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-12 11:27:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:32] INFO root fetch - processPackages [typedattr]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 11:27:32] INFO root fetch - processPackages [typedattr]: Downloading https://files.pythonhosted.org/packages/06/7d/ce03ec148e649acf35430f964511e586fb819cd4c7b5bb85d1fdd49db164/typedattr-0.1.8.tar.gz
+[2023-04-12 11:27:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:32] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419-py2]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 11:27:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:33] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419-py2]: Downloading https://files.pythonhosted.org/packages/1e/27/001581a0cabc2ccc13318cb91a45bcb7116cf07992cc2ae44460fe2b132a/alibabacloud_resourcedirectorymaster20220419_py2-1.0.0.tar.gz
+[2023-04-12 11:27:33] INFO root fetch - processPackages [typedattr]: Downloading https://files.pythonhosted.org/packages/97/72/e46a3a122f4712981bd954b904bb6a8b37bb4e792258d9ec7453ef3543ac/typedattr-0.1.9.tar.gz
+[2023-04-12 11:27:33] INFO root fetch - processPackages [typedattr]: executing diffoscope
+[2023-04-12 11:27:33] INFO root fetch - processPackages [typedattr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedattr-0.1.8.tar.gz tmp/typedattr-0.1.9.tar.gz --markdown 20230412/t/typedattr/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 11:27:33] INFO root fetch - processPackages [arcimboldo]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 11:27:33] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419-py2]: Downloading https://files.pythonhosted.org/packages/0e/18/ba0884abde59229b2d6a0e94c54dde6b43e2543f14ed815875b15877bf17/alibabacloud_resourcedirectorymaster20220419_py2-1.0.1.tar.gz
+[2023-04-12 11:27:33] INFO root fetch - processPackages [arcimboldo]: Downloading https://files.pythonhosted.org/packages/81/14/fb1cbb646a1532839fbadeed1637ada4c724ac36e0e5d77422ff4eb6ff1c/arcimboldo-1.0.8-py2.py3-none-any.whl
+[2023-04-12 11:27:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:33] INFO root fetch - processPackages [dstack]: New version: [0.7rc1] Old Version: [0.2rc1]
+[2023-04-12 11:27:33] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419-py2]: executing diffoscope
+[2023-04-12 11:27:33] INFO root fetch - processPackages [alibabacloud-resourcedirectorymaster20220419-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_resourcedirectorymaster20220419_py2-1.0.0.tar.gz tmp/alibabacloud_resourcedirectorymaster20220419_py2-1.0.1.tar.gz --markdown 20230412/a/alibabacloud-resourcedirectorymaster20220419-py2/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 11:27:33] INFO root fetch - processPackages [dstack]: executing diffoscope
+[2023-04-12 11:27:33] INFO root fetch - processPackages [dstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dstack-0.2rc1.tar.gz tmp/dstack-0.7rc1.tar.gz --markdown 20230412/d/dstack/0.2rc1-0.7rc1/diff.md --exclude *.pyd
+[2023-04-12 11:27:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:34] INFO root fetch - processPackages [gocardless-pro]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 11:27:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:34] INFO root fetch - processPackages [gocardless-pro]: Downloading https://files.pythonhosted.org/packages/7e/84/7b53e39fd3789556d17d5389e31f2dddde2b1a73f8d5c34f34173366a1b9/gocardless_pro-1.8.0.tar.gz
+[2023-04-12 11:27:34] INFO root fetch - processPackages [arcimboldo]: Downloading https://files.pythonhosted.org/packages/ab/30/03c814c5fb626efb75b883e5cae75cd95539e4ab2c59d8a3040660ca1f8e/arcimboldo-1.0.9-py2.py3-none-any.whl
+[2023-04-12 11:27:34] INFO root fetch - processPackages [gocardless-pro]: Downloading https://files.pythonhosted.org/packages/26/a3/05fe06a8fb94a48c4096747e7a6f99f4101fcf389ab99f6fe8156d4786fe/gocardless_pro-1.9.0.tar.gz
+[2023-04-12 11:27:34] INFO root fetch - processPackages [gocardless-pro]: executing diffoscope
+[2023-04-12 11:27:34] INFO root fetch - processPackages [gocardless-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gocardless_pro-1.8.0.tar.gz tmp/gocardless_pro-1.9.0.tar.gz --markdown 20230412/g/gocardless-pro/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 11:27:36] INFO root fetch - processPackages [arcimboldo]: executing diffoscope
+[2023-04-12 11:27:36] INFO root fetch - processPackages [arcimboldo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcimboldo-1.0.8-py2.py3-none-any.whl.zip tmp/arcimboldo-1.0.9-py2.py3-none-any.whl.zip --markdown 20230412/a/arcimboldo/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 11:27:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:27:42] INFO root fetch - main [MainThread]: Store serial: [17673960]
