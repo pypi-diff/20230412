@@ -4653,3 +4653,55 @@
 [2023-04-12 03:35:44] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:35:48] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:35:48] INFO root fetch - main [MainThread]: Store serial: [17670096]
+[2023-04-12 03:40:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670096]
+[2023-04-12 03:40:55] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 03:40:55] INFO root fetch - processPackages [anylabeling]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 03:40:55] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:40:55] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-04-12 03:40:55] INFO root fetch - processPackages [proactive]: New version: [8.4.11] Old Version: [8.4.10]
+[2023-04-12 03:40:55] INFO root fetch - processPackages [proactive]: Downloading https://files.pythonhosted.org/packages/36/67/8f2441cbc911f3a57a2168b0e419b0751450a04c18791e6ba642af1085d8/proactive-8.4.10.zip
+[2023-04-12 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-04-12 03:40:55] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230412/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:40:55] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-04-12 03:40:55] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230412/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-04-12 03:40:55] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 03:40:55] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 03:40:55] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/e7/e9/e9c4630c270bd49ff112723c939ed1c9955d076a533908304fc75df715c0/anylabeling-0.0.5.tar.gz
+[2023-04-12 03:40:56] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 03:40:56] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.0.4.tar.gz tmp/anylabeling-0.0.5.tar.gz --markdown 20230412/a/anylabeling/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 03:40:56] WARNING root fetch - processPackages [proactive]: Skipping package: exceeds size limit 18979361>=10485760
+[2023-04-12 03:40:56] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:40:56] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:40:56] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-04-12 03:40:56] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230412/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:40:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:56] WARNING root fetch - processPackages [shipyard-airbyte]: Skipping, unable to determine old version
+[2023-04-12 03:40:56] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:40:56] INFO root fetch - processPackages [pulumi-kubernetes]: New version: [3.9.0] Old Version: [3.8.3]
+[2023-04-12 03:40:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:56] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 03:40:57] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 03:40:57] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 03:40:57] INFO root fetch - processPackages [pulumi-kubernetes]: executing diffoscope
+[2023-04-12 03:40:57] INFO root fetch - processPackages [pulumi-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes-3.8.3.tar.gz tmp/pulumi_kubernetes-3.9.0.tar.gz --markdown 20230412/p/pulumi-kubernetes/3.8.3-3.9.0/diff.md --exclude *.pyd
+[2023-04-12 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:57] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.708] Old Version: [0.0.707]
+[2023-04-12 03:40:57] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/56/82/d0345cc61c4a0007056edc693ab97d730932690b6ce9bc2465606547356f/nbdev-apl-0.0.708.tar.gz
+[2023-04-12 03:40:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:57] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 03:40:57] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-04-12 03:40:57] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.707.tar.gz tmp/nbdev-apl-0.0.708.tar.gz --markdown 20230412/n/nbdev-apl/0.0.707-0.0.708/diff.md --exclude *.pyd
+[2023-04-12 03:40:57] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-12 03:40:57] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230412/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:40:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:58] INFO root fetch - processPackages [nvosscript]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-12 03:40:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:58] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/f6/b1/b04b2589708f12533ab99fbdae866e970facce099fc7262e0a4be63f12df/nvosscript-1.2.0.tar.gz
+[2023-04-12 03:40:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:58] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-12 03:40:58] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.1.9.tar.gz tmp/nvosscript-1.2.0.tar.gz --markdown 20230412/n/nvosscript/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 03:40:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:40:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:41:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:41:01] INFO root fetch - main [MainThread]: Store serial: [17670130]
