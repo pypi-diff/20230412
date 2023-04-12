@@ -13569,3 +13569,95 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:54:14] INFO root fetch - main [MainThread]: End processing [xpart]: success
 [2023-04-12 13:56:17] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
 [2023-04-12 13:56:17] INFO root fetch - main [MainThread]: Store serial: [17675513]
+[2023-04-12 14:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675513]
+[2023-04-12 14:01:38] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 14:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xfields
+[2023-04-12 14:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blip-vit-fork
+[2023-04-12 14:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: returnn
+[2023-04-12 14:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: packagefortesting
+[2023-04-12 14:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altinn3-test-lib
+[2023-04-12 14:01:38] WARNING root fetch - processPackages [packagefortesting]: Skipping, unable to determine old version
+[2023-04-12 14:01:38] INFO root fetch - processPackages [packagefortesting]: Start processing: pulsar-app
+[2023-04-12 14:01:38] INFO root fetch - main [MainThread]: End processing [packagefortesting] error
+[2023-04-12 14:01:38] INFO root fetch - processPackages [blip-vit-fork]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 14:01:38] INFO root fetch - processPackages [xfields]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-12 14:01:38] INFO root fetch - processPackages [altinn3-test-lib]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-04-12 14:01:38] INFO root fetch - processPackages [pulsar-app]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 14:01:38] INFO root fetch - processPackages [returnn]: New version: [1.20230412.135332] Old Version: [1.20230412.112825]
+[2023-04-12 14:01:38] INFO root fetch - processPackages [blip-vit-fork]: Downloading https://files.pythonhosted.org/packages/99/b5/9985d110891fd14724a8be966b8753ba80b2cc59201e506ac62094f607ae/blip-vit-fork-0.0.2.tar.gz
+[2023-04-12 14:01:38] INFO root fetch - processPackages [altinn3-test-lib]: Downloading https://files.pythonhosted.org/packages/b8/ae/50045afaffc90e53725d01b86d340e37d7f2079d203010d8148535292485/altinn3_test_lib-0.0.4.tar.gz
+[2023-04-12 14:01:38] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/7a/77/3a6abbee5bec0b9a1a9208d8bfbb48c1d3847a3623b736877d07f2a19f3c/xfields-0.9.3.tar.gz
+[2023-04-12 14:01:38] INFO root fetch - processPackages [pulsar-app]: executing diffoscope
+[2023-04-12 14:01:38] INFO root fetch - processPackages [pulsar-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-app-0.9.0.tar.gz tmp/pulsar-app-0.9.1.tar.gz --markdown 20230412/p/pulsar-app/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 14:01:38] INFO root fetch - processPackages [returnn]: Downloading https://files.pythonhosted.org/packages/ef/17/987321a62071e26e41950b176e64ca1cb6062d41d03e86811c6b88f9e615/returnn-1.20230412.135332.tar.gz
+[2023-04-12 14:01:39] INFO root fetch - processPackages [returnn]: executing diffoscope
+[2023-04-12 14:01:39] INFO root fetch - processPackages [returnn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/returnn-1.20230412.112825.tar.gz tmp/returnn-1.20230412.135332.tar.gz --markdown 20230412/r/returnn/1.20230412.112825-1.20230412.135332/diff.md --exclude *.pyd
+[2023-04-12 14:01:39] INFO root fetch - processPackages [blip-vit-fork]: Downloading https://files.pythonhosted.org/packages/ab/b9/d0281787e75b2d600966919c8884179ecb81e57e0f83632cf5c43f14f342/blip-vit-fork-0.0.3.tar.gz
+[2023-04-12 14:01:39] INFO root fetch - processPackages [altinn3-test-lib]: Downloading https://files.pythonhosted.org/packages/0d/5d/3c81dad93b50cfcd9755437706de543eccce332a0204dc6991834dbe510e/altinn3_test_lib-0.0.6.tar.gz
+[2023-04-12 14:01:39] INFO root fetch - processPackages [xfields]: Downloading https://files.pythonhosted.org/packages/8b/54/cac5d52db408c1d03b97e7d6c7f37530ed94cdc6cec242e76f900759b3a3/xfields-0.9.4.tar.gz
+[2023-04-12 14:01:39] INFO root fetch - processPackages [blip-vit-fork]: executing diffoscope
+[2023-04-12 14:01:39] INFO root fetch - processPackages [blip-vit-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blip-vit-fork-0.0.2.tar.gz tmp/blip-vit-fork-0.0.3.tar.gz --markdown 20230412/b/blip-vit-fork/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 14:01:39] INFO root fetch - processPackages [altinn3-test-lib]: executing diffoscope
+[2023-04-12 14:01:39] INFO root fetch - processPackages [altinn3-test-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altinn3_test_lib-0.0.4.tar.gz tmp/altinn3_test_lib-0.0.6.tar.gz --markdown 20230412/a/altinn3-test-lib/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 14:01:39] INFO root fetch - processPackages [xfields]: executing diffoscope
+[2023-04-12 14:01:39] INFO root fetch - processPackages [xfields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xfields-0.9.3.tar.gz tmp/xfields-0.9.4.tar.gz --markdown 20230412/x/xfields/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-12 14:01:40] INFO root fetch - processPackages [altinn3-test-lib]: Start processing: pulsar-galaxy-lib
+[2023-04-12 14:01:40] INFO root fetch - main [MainThread]: End processing [altinn3-test-lib]: success
+[2023-04-12 14:01:40] INFO root fetch - processPackages [blip-vit-fork]: Start processing: dhlab
+[2023-04-12 14:01:40] INFO root fetch - main [MainThread]: End processing [blip-vit-fork]: success
+[2023-04-12 14:01:40] INFO root fetch - processPackages [pulsar-galaxy-lib]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 14:01:40] INFO root fetch - processPackages [dhlab]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-04-12 14:01:40] INFO root fetch - processPackages [dhlab]: Downloading https://files.pythonhosted.org/packages/1a/87/0b669462358a0e147564ec25144267d568bb27f92ef9cdd16478eb650712/dhlab-2.9.4.tar.gz
+[2023-04-12 14:01:40] INFO root fetch - processPackages [pulsar-galaxy-lib]: executing diffoscope
+[2023-04-12 14:01:40] INFO root fetch - processPackages [pulsar-galaxy-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsar-galaxy-lib-0.9.0.tar.gz tmp/pulsar-galaxy-lib-0.9.1.tar.gz --markdown 20230412/p/pulsar-galaxy-lib/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 14:01:40] INFO root fetch - processPackages [xfields]: Start processing: torcheval-nightly
+[2023-04-12 14:01:40] INFO root fetch - main [MainThread]: End processing [xfields]: success
+[2023-04-12 14:01:40] INFO root fetch - processPackages [torcheval-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-12 14:01:40] INFO root fetch - processPackages [pulsar-app]: Start processing: openai-wrapper
+[2023-04-12 14:01:40] INFO root fetch - main [MainThread]: End processing [pulsar-app]: success
+[2023-04-12 14:01:40] INFO root fetch - processPackages [openai-wrapper]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 14:01:40] INFO root fetch - processPackages [dhlab]: Downloading https://files.pythonhosted.org/packages/96/12/682694afb8df183445e1f14f2c5736711a39be73e49d6a9c41a9610079a8/dhlab-2.9.5.tar.gz
+[2023-04-12 14:01:41] INFO root fetch - processPackages [openai-wrapper]: Downloading https://files.pythonhosted.org/packages/aa/be/92c714a982aa71de8deeca62e1ff1630e035132f8cb4ae59b4dc73b1cab4/openai_wrapper-0.5.8.tar.gz
+[2023-04-12 14:01:41] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/44/be/a283c44aa9eaf91ce683ac99ff1b1502b0cf7fa92f7870fd6d2bf0e67607/torcheval-nightly-2023.4.9.tar.gz
+[2023-04-12 14:01:41] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2023-04-12 14:01:41] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval-nightly-2023.4.8.tar.gz tmp/torcheval-nightly-2023.4.9.tar.gz --markdown 20230412/t/torcheval-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-12 14:01:41] INFO root fetch - processPackages [dhlab]: executing diffoscope
+[2023-04-12 14:01:41] INFO root fetch - processPackages [dhlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhlab-2.9.4.tar.gz tmp/dhlab-2.9.5.tar.gz --markdown 20230412/d/dhlab/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-04-12 14:01:41] INFO root fetch - processPackages [openai-wrapper]: Downloading https://files.pythonhosted.org/packages/6f/30/df5a52f6cb452f2ba4723e8527964eb7a031224c5a414f906ddcf24c04d6/openai_wrapper-0.5.9.tar.gz
+[2023-04-12 14:01:41] INFO root fetch - processPackages [openai-wrapper]: executing diffoscope
+[2023-04-12 14:01:41] INFO root fetch - processPackages [openai-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_wrapper-0.5.8.tar.gz tmp/openai_wrapper-0.5.9.tar.gz --markdown 20230412/o/openai-wrapper/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 14:01:42] INFO root fetch - processPackages [pulsar-galaxy-lib]: Start processing: finbourne-access-sdk
+[2023-04-12 14:01:42] INFO root fetch - main [MainThread]: End processing [pulsar-galaxy-lib]: success
+[2023-04-12 14:01:42] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-12 14:01:42] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-12 14:01:42] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230412/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-12 14:01:42] INFO root fetch - processPackages [openai-wrapper]: Start processing: watchtower-browser-testing
+[2023-04-12 14:01:42] INFO root fetch - main [MainThread]: End processing [openai-wrapper]: success
+[2023-04-12 14:01:42] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 14:01:42] INFO root fetch - processPackages [dhlab]: Start processing: kkpyutil
+[2023-04-12 14:01:42] INFO root fetch - main [MainThread]: End processing [dhlab]: success
+[2023-04-12 14:01:42] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/c3/83/e3aad5110e0f5b04bfa9cea5d87c7794869a375599b5f72b1dab94045f29/watchtower_browser_testing-0.2.3.tar.gz
+[2023-04-12 14:01:42] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-12 14:01:42] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 14:01:42] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.2.tar.gz tmp/watchtower_browser_testing-0.2.3.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 14:01:43] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-12 14:01:43] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230412/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-12 14:01:43] INFO root fetch - processPackages [returnn]: Start processing: tinybird-cli
+[2023-04-12 14:01:43] INFO root fetch - main [MainThread]: End processing [returnn]: success
+[2023-04-12 14:01:43] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-12 14:01:43] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-12 14:01:43] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230412/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-12 14:01:43] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: ImaginaryInfo
+[2023-04-12 14:01:43] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 14:01:43] WARNING root fetch - processPackages [ImaginaryInfo]: Skipping, unable to determine old version
+[2023-04-12 14:01:43] INFO root fetch - processPackages [ImaginaryInfo]: Start processing: kkpyutil
+[2023-04-12 14:01:43] INFO root fetch - main [MainThread]: End processing [ImaginaryInfo] error
+[2023-04-12 14:01:44] INFO root fetch - processPackages [kkpyutil]: New version: [0.99.1] Old Version: [0.99.0]
+[2023-04-12 14:01:44] INFO root fetch - processPackages [kkpyutil]: executing diffoscope
+[2023-04-12 14:01:44] INFO root fetch - processPackages [kkpyutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyutil-0.99.0.tar.gz tmp/kkpyutil-0.99.1.tar.gz --markdown 20230412/k/kkpyutil/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2023-04-12 14:01:44] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-12 14:01:44] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2023-04-12 14:01:44] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-12 14:01:45] INFO root fetch - main [MainThread]: End processing [kkpyutil]: success
+[2023-04-12 14:01:45] INFO root fetch - main [MainThread]: End processing [tinybird-cli]: success
+[2023-04-12 14:01:45] INFO root fetch - main [MainThread]: Store serial: [17675586]
