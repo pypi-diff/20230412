@@ -6738,3 +6738,52 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:40:35] INFO root fetch - main [MainThread]: Store serial: [17671271]
+[2023-04-12 06:45:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671271]
+[2023-04-12 06:45:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 06:45:42] INFO root fetch - processPackages [odoo-addon-hr-holidays-public]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.2]
+[2023-04-12 06:45:42] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 06:45:42] INFO root fetch - processPackages [rnt]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo14-addon-hr-holidays-public]: New version: [14.0.2.1.2.dev3] Old Version: [14.0.2.1.2.dev2]
+[2023-04-12 06:45:43] INFO root fetch - processPackages [hello2]: New version: [1.5.4] Old Version: [1.5.3]
+[2023-04-12 06:45:43] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-12 06:45:43] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230412/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo-addon-hr-holidays-public]: Downloading https://files.pythonhosted.org/packages/e7/ed/045226fdf3e07df9f324d9ce387cc21abaaad35101149d2f2bd60afb69a5/odoo_addon_hr_holidays_public-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-12 06:45:43] INFO root fetch - processPackages [rnt]: Downloading https://files.pythonhosted.org/packages/6f/f5/7890948c85057dba13aa074910f006307e3aa572d604027458c48dc0d6c9/rnt-0.1.6.tar.gz
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo14-addon-hr-holidays-public]: Downloading https://files.pythonhosted.org/packages/03/3b/64700594ae1a3350a9246b8037f54d5a344ed0c2ea0adcbbaa17b9e05815/odoo14_addon_hr_holidays_public-14.0.2.1.2.dev2-py3-none-any.whl
+[2023-04-12 06:45:43] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/db/69/370643b03e460bdf1306a4e259bd3f6fcd97056b092ec6ad3f243402d72a/hello2-1.5.4.tar.gz
+[2023-04-12 06:45:43] INFO root fetch - processPackages [rnt]: Downloading https://files.pythonhosted.org/packages/50/cd/64b4c046b319879d1834000b2dd3038ba4df44a9bafbc500b04149eb384f/rnt-0.1.7.tar.gz
+[2023-04-12 06:45:43] INFO root fetch - processPackages [rnt]: executing diffoscope
+[2023-04-12 06:45:43] INFO root fetch - processPackages [rnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnt-0.1.6.tar.gz tmp/rnt-0.1.7.tar.gz --markdown 20230412/r/rnt/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 06:45:43] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-04-12 06:45:43] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.5.3.tar.gz tmp/hello2-1.5.4.tar.gz --markdown 20230412/h/hello2/1.5.3-1.5.4/diff.md --exclude *.pyd
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo14-addon-hr-holidays-public]: Downloading https://files.pythonhosted.org/packages/36/ca/ab09981d9adabf5b51561b4af8c5b1bf1feccfc7b98d4fddfc3a4c0c9079/odoo14_addon_hr_holidays_public-14.0.2.1.2.dev3-py3-none-any.whl
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo-addon-hr-holidays-public]: Downloading https://files.pythonhosted.org/packages/c8/38/99617246f6e258b6d03d72643db4996f670ca92101966f64bd53372ea384/odoo_addon_hr_holidays_public-16.0.1.1.0-py3-none-any.whl
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo14-addon-hr-holidays-public]: executing diffoscope
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo14-addon-hr-holidays-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_hr_holidays_public-14.0.2.1.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_hr_holidays_public-14.0.2.1.2.dev3-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-hr-holidays-public/14.0.2.1.2.dev2-14.0.2.1.2.dev3/diff.md --exclude *.pyd
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo-addon-hr-holidays-public]: executing diffoscope
+[2023-04-12 06:45:43] INFO root fetch - processPackages [odoo-addon-hr-holidays-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_holidays_public-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_hr_holidays_public-16.0.1.1.0-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-hr-holidays-public/16.0.1.0.0.2-16.0.1.1.0/diff.md --exclude *.pyd
+[2023-04-12 06:45:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:44] INFO root fetch - processPackages [TransLiter]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-12 06:45:44] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/c7/98/455ed00330db4caa356c4751cb8c1d86ae499dc1dadb6053247deb1d07cb/TransLiter-0.2.0.tar.gz
+[2023-04-12 06:45:44] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-04-12 06:45:44] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.1.2.tar.gz tmp/TransLiter-0.2.0.tar.gz --markdown 20230412/T/TransLiter/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 06:45:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:45] INFO root fetch - processPackages [chalkpy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-12 06:45:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:45] INFO root fetch - processPackages [clipcrop]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 06:45:45] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-04-12 06:45:45] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-1.9.8.tar.gz tmp/chalkpy-1.9.9.tar.gz --markdown 20230412/c/chalkpy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-12 06:45:45] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-12 06:45:45] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-1.0.8.tar.gz tmp/clipcrop-1.0.9.tar.gz --markdown 20230412/c/clipcrop/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 06:45:45] INFO root fetch - processPackages [tvault]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-04-12 06:45:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:45] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/45/ae/a77d84f0e47a3f9624516f2b30bdaa709ed046b916245eb8e8b99a22dee6/tvault-0.3.3-py3-none-any.whl
+[2023-04-12 06:45:45] INFO root fetch - processPackages [tvault]: Downloading https://files.pythonhosted.org/packages/95/e6/3dd4dd0e8445006728be9a772e68e9c05c0bb58c958ba0cd8464dadd30f7/tvault-0.3.4-py3-none-any.whl
+[2023-04-12 06:45:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:45] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-12 06:45:45] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.3-py3-none-any.whl.zip tmp/tvault-0.3.4-py3-none-any.whl.zip --markdown 20230412/t/tvault/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-04-12 06:45:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:45:50] INFO root fetch - main [MainThread]: Store serial: [17671296]
