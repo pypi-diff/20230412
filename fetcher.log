@@ -8469,3 +8469,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:00:26] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:00:30] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:00:30] INFO root fetch - main [MainThread]: Store serial: [17672326]
+[2023-04-12 09:05:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672326]
+[2023-04-12 09:05:37] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-12 09:05:38] INFO root fetch - processPackages [ddd-interface]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 09:05:38] INFO root fetch - processPackages [explai]: New version: [0.6] Old Version: [0.5]
+[2023-04-12 09:05:38] INFO root fetch - processPackages [pyprojectx]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: Downloading https://files.pythonhosted.org/packages/44/e1/9d0a8e1dc6340a7ba95c668623a4654494aa624fa5ad9f7f08314a155bdf/py3curl-1.1.2.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: Downloading https://files.pythonhosted.org/packages/44/e1/9d0a8e1dc6340a7ba95c668623a4654494aa624fa5ad9f7f08314a155bdf/py3curl-1.1.2.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [explai]: Downloading https://files.pythonhosted.org/packages/87/97/5855415ad0cc6759e3ded7d80a980fc76201ee29214a816acf0fd7f97bd0/explai-0.6.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [ddd-interface]: executing diffoscope
+[2023-04-12 09:05:38] INFO root fetch - processPackages [ddd-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddd-interface-0.0.8.tar.gz tmp/ddd-interface-0.0.9.tar.gz --markdown 20230412/d/ddd-interface/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 09:05:38] INFO root fetch - processPackages [pyprojectx]: Downloading https://files.pythonhosted.org/packages/f5/59/a7e0bb6126516b787518eddecb7fe6c9e1aa616bb07706a507cc8d505c05/pyprojectx-1.0.0b2.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: Downloading https://files.pythonhosted.org/packages/ca/69/616eba9a0a21c2e7c1685a24c700def38e37f14cf5eff9fe007495eecc3c/py3curl-1.1.3.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: Downloading https://files.pythonhosted.org/packages/ca/69/616eba9a0a21c2e7c1685a24c700def38e37f14cf5eff9fe007495eecc3c/py3curl-1.1.3.tar.gz
+[2023-04-12 09:05:38] INFO root fetch - processPackages [explai]: executing diffoscope
+[2023-04-12 09:05:38] INFO root fetch - processPackages [explai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/explai-0.5.tar.gz tmp/explai-0.6.tar.gz --markdown 20230412/e/explai/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-12 09:05:38] INFO root fetch - processPackages [pyprojectx]: executing diffoscope
+[2023-04-12 09:05:38] INFO root fetch - processPackages [pyprojectx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprojectx-1.0.0b1.tar.gz tmp/pyprojectx-1.0.0b2.tar.gz --markdown 20230412/p/pyprojectx/1.0.0b1-1.0.0b2/diff.md --exclude *.pyd
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: executing diffoscope
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3curl-1.1.2.tar.gz tmp/py3curl-1.1.3.tar.gz --markdown 20230412/p/py3curl/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: executing diffoscope
+[2023-04-12 09:05:38] INFO root fetch - processPackages [py3curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3curl-1.1.2.tar.gz tmp/py3curl-1.1.3.tar.gz --markdown 20230412/p/py3curl/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:39] INFO root fetch - processPackages [trex-analytic]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 09:05:39] WARNING root fetch - processPackages [pycoare]: Skipping, unable to determine old version
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:39] INFO root fetch - processPackages [bittrade-binance-websocket]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 09:05:39] INFO root fetch - processPackages [odoo12-addon-purchase-request]: New version: [12.0.5.3.1.99.dev8] Old Version: [12.0.5.3.1.99.dev7]
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:39] INFO root fetch - processPackages [alibabacloud-linkcard20210520-py2]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-12 09:05:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:39] INFO root fetch - processPackages [trex-analytic]: Downloading https://files.pythonhosted.org/packages/b7/1b/2f0ade818b3986b3568f6bd09634d4c2907461f6523e47bab252a9afc04e/trex-analytic-0.1.2.tar.gz
+[2023-04-12 09:05:39] INFO root fetch - processPackages [dissect.shellitem]: New version: [3.5.dev1] Old Version: [3.4.dev2]
+[2023-04-12 09:05:40] INFO root fetch - processPackages [alibabacloud-linkcard20210520-py2]: Downloading https://files.pythonhosted.org/packages/4b/99/cf0f4aa08b7327682eb75b9938af1b6cb938c351eb58fcd6cfbda560ef39/alibabacloud_linkcard20210520_py2-1.0.7.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [odoo12-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/e8/d9/abd7242c7e6a2a6028581dd577cabb7eb48eb9682f10b368f5fe84dfd8d9/odoo12_addon_purchase_request-12.0.5.3.1.99.dev8-py3-none-any.whl
+[2023-04-12 09:05:40] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/04/a9/fda9486ccfc0122a21429df631dac9deca78936207f5b76927f9ae696dd7/bittrade_binance_websocket-0.1.5.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [dissect.shellitem]: Downloading https://files.pythonhosted.org/packages/4b/4c/7311e36a395d43a9868406682896d6dea0b8ac106151b123bd0148429f50/dissect.shellitem-3.4.dev2.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [trex-analytic]: Downloading https://files.pythonhosted.org/packages/4c/ef/6f992833d10fff5cd556c147d3ab69d5f3d1504b9360ebc53c4adf381863/trex-analytic-0.1.3.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [alibabacloud-linkcard20210520-py2]: Downloading https://files.pythonhosted.org/packages/9f/83/81b893247280eb48a49ce1f0e67d0b1c8ff75221827649f6edbbe52d4741/alibabacloud_linkcard20210520_py2-1.0.8.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [bittrade-binance-websocket]: executing diffoscope
+[2023-04-12 09:05:40] INFO root fetch - processPackages [bittrade-binance-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_binance_websocket-0.1.4.tar.gz tmp/bittrade_binance_websocket-0.1.5.tar.gz --markdown 20230412/b/bittrade-binance-websocket/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 09:05:40] INFO root fetch - processPackages [dissect.shellitem]: Downloading https://files.pythonhosted.org/packages/40/da/294e9da3e91e9b07e87f2c76d7dc37754a1b16a8a5b68aef61afaa9fad21/dissect.shellitem-3.5.dev1.tar.gz
+[2023-04-12 09:05:40] INFO root fetch - processPackages [trex-analytic]: executing diffoscope
+[2023-04-12 09:05:40] INFO root fetch - processPackages [trex-analytic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trex-analytic-0.1.2.tar.gz tmp/trex-analytic-0.1.3.tar.gz --markdown 20230412/t/trex-analytic/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 09:05:40] INFO root fetch - processPackages [odoo12-addon-purchase-request]: executing diffoscope
+[2023-04-12 09:05:40] INFO root fetch - processPackages [odoo12-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_purchase_request-12.0.5.3.1.99.dev8-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-purchase-request/12.0.5.3.1.99.dev7-12.0.5.3.1.99.dev8/diff.md --exclude *.pyd
+[2023-04-12 09:05:40] INFO root fetch - processPackages [alibabacloud-linkcard20210520-py2]: executing diffoscope
+[2023-04-12 09:05:40] INFO root fetch - processPackages [alibabacloud-linkcard20210520-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_linkcard20210520_py2-1.0.7.tar.gz tmp/alibabacloud_linkcard20210520_py2-1.0.8.tar.gz --markdown 20230412/a/alibabacloud-linkcard20210520-py2/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-12 09:05:40] INFO root fetch - processPackages [dissect.shellitem]: executing diffoscope
+[2023-04-12 09:05:40] INFO root fetch - processPackages [dissect.shellitem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dissect.shellitem-3.4.dev2.tar.gz tmp/dissect.shellitem-3.5.dev1.tar.gz --markdown 20230412/d/dissect.shellitem/3.4.dev2-3.5.dev1/diff.md --exclude *.pyd
+[2023-04-12 09:05:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:41] INFO root fetch - processPackages [power-grid-model-io]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 09:05:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:41] INFO root fetch - processPackages [shellviz]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 09:05:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:41] INFO root fetch - processPackages [dissect.target]: New version: [3.9.dev8] Old Version: [3.9.dev7]
+[2023-04-12 09:05:41] INFO root fetch - processPackages [power-grid-model-io]: Downloading https://files.pythonhosted.org/packages/f5/2d/38fd53c680170b530df74688c518af350dadfc964ac23a736dd88ee324db/power_grid_model_io-1.2.8-py3-none-any.whl
+[2023-04-12 09:05:41] INFO root fetch - processPackages [shellviz]: Downloading https://files.pythonhosted.org/packages/ba/1c/cdee7f1c4a69f526fab48f80b6948453b0c40f460784ac332d5f3f7f7fdd/shellviz-0.1.7.tar.gz
+[2023-04-12 09:05:41] INFO root fetch - processPackages [dissect.target]: Downloading https://files.pythonhosted.org/packages/de/3e/71f6190db1c4633603b19d5e868a7f3b613c93721aabe469c633d180e309/dissect.target-3.9.dev7.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [shellviz]: executing diffoscope
+[2023-04-12 09:05:42] INFO root fetch - processPackages [shellviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellviz-0.1.6.tar.gz tmp/shellviz-0.1.7.tar.gz --markdown 20230412/s/shellviz/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 09:05:42] WARNING root fetch - processPackages [dissect.target]: Skipping package: exceeds size limit 63555387>=10485760
+[2023-04-12 09:05:42] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:05:42] INFO root fetch - processPackages [power-grid-model-io]: Downloading https://files.pythonhosted.org/packages/4c/cc/8eb9ed701ded84401013d806307a8c2d457f6815447f949a74b8907b664e/power_grid_model_io-1.2.9-py3-none-any.whl
+[2023-04-12 09:05:42] INFO root fetch - processPackages [trex-apis]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 09:05:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:42] INFO root fetch - processPackages [alibabacloud-linkcard20210520]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-04-12 09:05:42] INFO root fetch - processPackages [power-grid-model-io]: executing diffoscope
+[2023-04-12 09:05:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:42] INFO root fetch - processPackages [power-grid-model-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_grid_model_io-1.2.8-py3-none-any.whl.zip tmp/power_grid_model_io-1.2.9-py3-none-any.whl.zip --markdown 20230412/p/power-grid-model-io/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 09:05:42] INFO root fetch - processPackages [trex-apis]: Downloading https://files.pythonhosted.org/packages/7d/4e/8bfff71817e7ea58b9bc244e47dd985af3d35651eb209088f7273ef97fe1/trex-apis-0.2.8.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [fides]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-12 09:05:42] INFO root fetch - processPackages [alibabacloud-linkcard20210520]: Downloading https://files.pythonhosted.org/packages/df/00/bc74348eae3011b0e19b147da4c62c7a321ac48553726026e82a7677ab27/alibabacloud_linkcard20210520-1.0.7.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [trex-apis]: Downloading https://files.pythonhosted.org/packages/64/bb/7a72bb2dae3cad63f8d25a1ae89ae37ce3a775ef3e0e028da70cb08e9737/trex-apis-0.2.9.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [fides]: Downloading https://files.pythonhosted.org/packages/de/f5/8d185936e7f7f6fbf34d90e93cacc5a255d64bcee96eaca8e611c7063602/fides-0.7.5.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [alibabacloud-linkcard20210520]: Downloading https://files.pythonhosted.org/packages/23/07/f08479d81af4688240a62f0380fdd561812e3ec806d2e44688f1ee6803f0/alibabacloud_linkcard20210520-1.0.8.tar.gz
+[2023-04-12 09:05:42] INFO root fetch - processPackages [trex-apis]: executing diffoscope
+[2023-04-12 09:05:42] INFO root fetch - processPackages [trex-apis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trex-apis-0.2.8.tar.gz tmp/trex-apis-0.2.9.tar.gz --markdown 20230412/t/trex-apis/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 09:05:42] INFO root fetch - processPackages [fides]: Downloading https://files.pythonhosted.org/packages/00/6a/e69442c6ff5a2cd8a1c5398c7c7ea2e658dbe9f056edab644d7f3625333f/fides-0.7.6.tar.gz
+[2023-04-12 09:05:43] INFO root fetch - processPackages [alibabacloud-linkcard20210520]: executing diffoscope
+[2023-04-12 09:05:43] INFO root fetch - processPackages [alibabacloud-linkcard20210520]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_linkcard20210520-1.0.7.tar.gz tmp/alibabacloud_linkcard20210520-1.0.8.tar.gz --markdown 20230412/a/alibabacloud-linkcard20210520/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-04-12 09:05:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:43] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304120630] Old Version: [1.0.1.dev202304120506]
+[2023-04-12 09:05:43] INFO root fetch - processPackages [fides]: executing diffoscope
+[2023-04-12 09:05:43] INFO root fetch - processPackages [fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fides-0.7.5.tar.gz tmp/fides-0.7.6.tar.gz --markdown 20230412/f/fides/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-12 09:05:43] INFO root fetch - processPackages [cellmap]: Downloading https://files.pythonhosted.org/packages/04/24/4ae5cd334e27e5a41cbf1e4e5daa229d00ef13606b29c8c5f1487a138224/cellmap-1.0.1.dev202304120630-py3-none-any.whl
+[2023-04-12 09:05:43] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-12 09:05:43] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304120506-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304120630-py3-none-any.whl.zip --markdown 20230412/c/cellmap/1.0.1.dev202304120506-1.0.1.dev202304120630/diff.md --exclude *.pyd
+[2023-04-12 09:05:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:43] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-12 09:05:43] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: executing diffoscope
+[2023-04-12 09:05:43] INFO root fetch - processPackages [pepperize.cdk-terraform-state-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-terraform-state-backend-0.1.98.tar.gz tmp/pepperize.cdk-terraform-state-backend-0.1.99.tar.gz --markdown 20230412/p/pepperize.cdk-terraform-state-backend/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-12 09:05:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:05:45] INFO root fetch - main [MainThread]: Store serial: [17672379]
