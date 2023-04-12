@@ -14931,3 +14931,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 14:55:12] INFO root fetch - main [MainThread]: End processing [fklearn]: success
 [2023-04-12 14:55:12] INFO root fetch - main [MainThread]: End processing [usdm]: success
 [2023-04-12 14:55:12] INFO root fetch - main [MainThread]: Store serial: [17676297]
+[2023-04-12 15:00:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676297]
+[2023-04-12 15:00:20] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 15:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imagemangler
+[2023-04-12 15:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: steampunk-spotter
+[2023-04-12 15:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codecov
+[2023-04-12 15:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bagbag
+[2023-04-12 15:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kiba-core
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kiba-core]: New version: [0.5.2.dev2] Old Version: [0.5.2.dev1]
+[2023-04-12 15:00:20] WARNING root fetch - processPackages [imagemangler]: Skipping, unable to determine old version
+[2023-04-12 15:00:20] WARNING root fetch - processPackages [codecov]: Skipping, unable to determine old version
+[2023-04-12 15:00:20] INFO root fetch - processPackages [imagemangler]: Start processing: kraken-std
+[2023-04-12 15:00:20] INFO root fetch - main [MainThread]: End processing [imagemangler] error
+[2023-04-12 15:00:20] INFO root fetch - processPackages [codecov]: Start processing: cdktf
+[2023-04-12 15:00:20] INFO root fetch - main [MainThread]: End processing [codecov] error
+[2023-04-12 15:00:20] INFO root fetch - processPackages [steampunk-spotter]: New version: [1.2.5rc1] Old Version: [1.2.5a1]
+[2023-04-12 15:00:20] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kraken-std]: New version: [0.8.4] Old Version: [0.8.3]
+[2023-04-12 15:00:20] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kiba-core]: Downloading https://files.pythonhosted.org/packages/3c/42/1bd70b32c3867833e813fa54a11709f9d5025218fc6c54b3c799b840cb0b/kiba_core-0.5.2.dev1-py3-none-any.whl
+[2023-04-12 15:00:20] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-12 15:00:20] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230412/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 15:00:20] INFO root fetch - processPackages [steampunk-spotter]: Downloading https://files.pythonhosted.org/packages/65/47/4784eb8b4dc9aae23b344f222c053e5efed5ddcc6c535633548dbd7665fe/steampunk_spotter-1.2.5rc1-py3-none-any.whl
+[2023-04-12 15:00:20] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-12 15:00:20] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230412/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kraken-std]: Downloading https://files.pythonhosted.org/packages/2b/ed/3d02ae74665bbbfe28a030fe08f9afd969623481954fb048792e57ff3a98/kraken_std-0.8.3.tar.gz
+[2023-04-12 15:00:20] INFO root fetch - processPackages [steampunk-spotter]: executing diffoscope
+[2023-04-12 15:00:20] INFO root fetch - processPackages [steampunk-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steampunk_spotter-1.2.5a1-py3-none-any.whl.zip tmp/steampunk_spotter-1.2.5rc1-py3-none-any.whl.zip --markdown 20230412/s/steampunk-spotter/1.2.5a1-1.2.5rc1/diff.md --exclude *.pyd
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kiba-core]: Downloading https://files.pythonhosted.org/packages/a4/7f/76a642206cf0b74a7922ccc52b8d63d8db0cdd0d989bdebd0b4460f9a581/kiba_core-0.5.2.dev2-py3-none-any.whl
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kiba-core]: executing diffoscope
+[2023-04-12 15:00:20] INFO root fetch - processPackages [kiba-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiba_core-0.5.2.dev1-py3-none-any.whl.zip tmp/kiba_core-0.5.2.dev2-py3-none-any.whl.zip --markdown 20230412/k/kiba-core/0.5.2.dev1-0.5.2.dev2/diff.md --exclude *.pyd
+[2023-04-12 15:00:21] INFO root fetch - processPackages [kraken-std]: Downloading https://files.pythonhosted.org/packages/50/93/c54392e1279d0ea1c494b0b42678bc58155f5f950925eba0845da8c3b1fb/kraken_std-0.8.4.tar.gz
+[2023-04-12 15:00:21] INFO root fetch - processPackages [kraken-std]: executing diffoscope
+[2023-04-12 15:00:21] INFO root fetch - processPackages [kraken-std]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kraken_std-0.8.3.tar.gz tmp/kraken_std-0.8.4.tar.gz --markdown 20230412/k/kraken-std/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2023-04-12 15:00:21] INFO root fetch - processPackages [bagbag]: Start processing: codecov
+[2023-04-12 15:00:21] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2023-04-12 15:00:21] WARNING root fetch - processPackages [codecov]: Skipping, unable to determine old version
+[2023-04-12 15:00:21] INFO root fetch - processPackages [codecov]: Start processing: siso
+[2023-04-12 15:00:21] INFO root fetch - main [MainThread]: End processing [codecov] error
+[2023-04-12 15:00:21] INFO root fetch - processPackages [siso]: New version: [4.1.0] Old Version: [3.1.0]
+[2023-04-12 15:00:21] INFO root fetch - processPackages [steampunk-spotter]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-04-12 15:00:21] INFO root fetch - main [MainThread]: End processing [steampunk-spotter]: success
+[2023-04-12 15:00:22] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-12 15:00:22] INFO root fetch - processPackages [kiba-core]: Start processing: microllama
+[2023-04-12 15:00:22] INFO root fetch - main [MainThread]: End processing [kiba-core]: success
+[2023-04-12 15:00:22] INFO root fetch - processPackages [microllama]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-12 15:00:22] INFO root fetch - processPackages [siso]: Downloading https://files.pythonhosted.org/packages/93/0b/551566bc825bc5f5d26da396cd75ee4fa38aafe187540aa00a22148e1def/SISO-3.1.0.tar.gz
+[2023-04-12 15:00:22] INFO root fetch - processPackages [microllama]: Downloading https://files.pythonhosted.org/packages/95/9d/c331fd480fe38e45d4f0c4dc2248e66d3b6280523660dc6f31359c1a034a/microllama-0.4.6.tar.gz
+[2023-04-12 15:00:22] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-04-12 15:00:22] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.4.8-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.4.9-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230412/f/fbgemm-gpu-nightly-cpu/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-12 15:00:22] INFO root fetch - processPackages [siso]: Downloading https://files.pythonhosted.org/packages/6b/d7/11350b7af5ab0e0f90a093181f0dfbf54c690b01dc4ccf9a3d0d78c9e55b/siso-4.1.0.tar.gz
+[2023-04-12 15:00:22] INFO root fetch - processPackages [siso]: executing diffoscope
+[2023-04-12 15:00:22] INFO root fetch - processPackages [siso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SISO-3.1.0.tar.gz tmp/siso-4.1.0.tar.gz --markdown 20230412/s/siso/3.1.0-4.1.0/diff.md --exclude *.pyd
+[2023-04-12 15:00:22] INFO root fetch - main [MainThread]: End processing [kraken-std]: success
+[2023-04-12 15:00:22] INFO root fetch - processPackages [microllama]: Downloading https://files.pythonhosted.org/packages/60/27/5d6adc90d21509fe719009ca712beab4fe611d6ab6043f26360b6c3f3730/microllama-0.4.7.tar.gz
+[2023-04-12 15:00:22] INFO root fetch - processPackages [microllama]: executing diffoscope
+[2023-04-12 15:00:22] INFO root fetch - processPackages [microllama]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microllama-0.4.6.tar.gz tmp/microllama-0.4.7.tar.gz --markdown 20230412/m/microllama/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-12 15:00:23] INFO root fetch - main [MainThread]: End processing [siso]: success
+[2023-04-12 15:00:23] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-04-12 15:00:23] INFO root fetch - main [MainThread]: End processing [microllama]: success
+[2023-04-12 15:00:24] INFO root fetch - main [MainThread]: End processing [cdktf]: success
+[2023-04-12 15:00:24] INFO root fetch - main [MainThread]: Store serial: [17676337]
