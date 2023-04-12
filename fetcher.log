@@ -12255,3 +12255,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 12:46:37] INFO root fetch - processPackages [mqt.ddsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqt.ddsim-1.17.1.tar.gz tmp/mqt.ddsim-1.17.2-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/m/mqt.ddsim/1.17.1-1.17.2/diff.md --exclude *.pyd
 [2023-04-12 12:46:39] INFO root fetch - main [MainThread]: End processing [mqt.ddsim]: success
 [2023-04-12 12:46:39] INFO root fetch - main [MainThread]: Store serial: [17674776]
+[2023-04-12 12:51:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674776]
+[2023-04-12 12:51:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ht-pricing-module
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyPhasesML
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colorsmaster
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mewpy
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: macrometa-source-bigquery
+[2023-04-12 12:51:46] INFO root fetch - processPackages [ht-pricing-module]: New version: [0.1.36] Old Version: [0.1.35]
+[2023-04-12 12:51:46] WARNING root fetch - processPackages [colorsmaster]: Skipping, unable to determine old version
+[2023-04-12 12:51:46] INFO root fetch - processPackages [colorsmaster]: Start processing: font-CLI
+[2023-04-12 12:51:46] INFO root fetch - main [MainThread]: End processing [colorsmaster] error
+[2023-04-12 12:51:46] INFO root fetch - processPackages [macrometa-source-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 12:51:46] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.3] Old Version: [0.4.2]
+[2023-04-12 12:51:46] INFO root fetch - processPackages [mewpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 12:51:46] INFO root fetch - processPackages [font-CLI]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-12 12:51:46] INFO root fetch - processPackages [macrometa-source-bigquery]: executing diffoscope
+[2023-04-12 12:51:46] INFO root fetch - processPackages [macrometa-source-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrometa-source-bigquery-0.0.8.tar.gz tmp/macrometa-source-bigquery-0.0.9.tar.gz --markdown 20230412/m/macrometa-source-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 12:51:47] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/9b/69/318e189c687803c33cf9ec1f93c15d64561207f6a30b3abe9eb064584d11/pyPhasesML-0.4.3.tar.gz
+[2023-04-12 12:51:47] INFO root fetch - processPackages [ht-pricing-module]: Downloading https://files.pythonhosted.org/packages/e1/20/281421d7308d91129d6bc5bb7d38a1d2f36cf79a919ad25dd85d501a5938/ht_pricing_module-0.1.36.tar.gz
+[2023-04-12 12:51:47] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-12 12:51:47] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.2.tar.gz tmp/pyPhasesML-0.4.3.tar.gz --markdown 20230412/p/pyPhasesML/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2023-04-12 12:51:47] INFO root fetch - processPackages [ht-pricing-module]: executing diffoscope
+[2023-04-12 12:51:47] INFO root fetch - processPackages [ht-pricing-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ht_pricing_module-0.1.35.tar.gz tmp/ht_pricing_module-0.1.36.tar.gz --markdown 20230412/h/ht-pricing-module/0.1.35-0.1.36/diff.md --exclude *.pyd
+[2023-04-12 12:51:47] INFO root fetch - processPackages [font-CLI]: Downloading https://files.pythonhosted.org/packages/d7/35/a9121fb0f325f8fba2efa79db4d6fdea11fa845cb1d8ae54b91a8fdcc39c/font-CLI-0.9.6.tar.gz
+[2023-04-12 12:51:47] INFO root fetch - processPackages [mewpy]: executing diffoscope
+[2023-04-12 12:51:47] INFO root fetch - processPackages [mewpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mewpy-0.1.8.tar.gz tmp/mewpy-0.1.9.tar.gz --markdown 20230412/m/mewpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 12:51:47] INFO root fetch - processPackages [font-CLI]: Downloading https://files.pythonhosted.org/packages/03/60/3233e5dcaf50247e1043e32912ce222397a64e275a39366fc98f3daf07e6/font-CLI-0.9.7.tar.gz
+[2023-04-12 12:51:47] INFO root fetch - processPackages [font-CLI]: executing diffoscope
+[2023-04-12 12:51:47] INFO root fetch - processPackages [font-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/font-CLI-0.9.6.tar.gz tmp/font-CLI-0.9.7.tar.gz --markdown 20230412/f/font-CLI/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-12 12:51:48] INFO root fetch - processPackages [pyPhasesML]: Start processing: gmltools
+[2023-04-12 12:51:48] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-12 12:51:48] INFO root fetch - processPackages [gmltools]: New version: [0.0.43] Old Version: [0.0.42]
+[2023-04-12 12:51:48] INFO root fetch - processPackages [macrometa-source-bigquery]: Start processing: inels-mqtt-new
+[2023-04-12 12:51:48] INFO root fetch - main [MainThread]: End processing [macrometa-source-bigquery]: success
+[2023-04-12 12:51:48] INFO root fetch - processPackages [gmltools]: Downloading https://files.pythonhosted.org/packages/df/20/ff5baeaa928bfb9b06e6072197b26e2c927f9dd4773b4902d84c43b70ee3/gmltools-0.0.43.tar.gz
+[2023-04-12 12:51:48] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 12:51:48] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 12:51:48] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 12:51:48] INFO root fetch - processPackages [gmltools]: executing diffoscope
+[2023-04-12 12:51:48] INFO root fetch - processPackages [gmltools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmltools-0.0.42.tar.gz tmp/gmltools-0.0.43.tar.gz --markdown 20230412/g/gmltools/0.0.42-0.0.43/diff.md --exclude *.pyd
+[2023-04-12 12:51:48] INFO root fetch - processPackages [ht-pricing-module]: Start processing: mongogettersetter
+[2023-04-12 12:51:48] INFO root fetch - main [MainThread]: End processing [ht-pricing-module]: success
+[2023-04-12 12:51:48] INFO root fetch - processPackages [mongogettersetter]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 12:51:49] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/64/f9/1d07928aa9bfc5592d7c6ec1e795dba332d69d78ccfb930fbf778629db50/mongogettersetter-1.2.8.tar.gz
+[2023-04-12 12:51:49] INFO root fetch - processPackages [font-CLI]: Start processing: opsramp-analytics-utils
+[2023-04-12 12:51:49] INFO root fetch - main [MainThread]: End processing [font-CLI]: success
+[2023-04-12 12:51:49] INFO root fetch - processPackages [opsramp-analytics-utils]: New version: [3.3.0] Old Version: [3.2.9]
+[2023-04-12 12:51:49] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/ec/d7/bb95f49a8e25168a0e1caaadbb1fc50f490b00d48dbedfa15a26f8efdb41/mongogettersetter-1.2.9.tar.gz
+[2023-04-12 12:51:49] INFO root fetch - processPackages [opsramp-analytics-utils]: Downloading https://files.pythonhosted.org/packages/98/75/1b56ebef4ae5cc2eea0b58d33c115d28715aa7b78c22b0ca36cbf600ac4d/opsramp-analytics-utils-3.3.0.tar.gz
+[2023-04-12 12:51:49] INFO root fetch - processPackages [mongogettersetter]: executing diffoscope
+[2023-04-12 12:51:49] INFO root fetch - processPackages [mongogettersetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongogettersetter-1.2.8.tar.gz tmp/mongogettersetter-1.2.9.tar.gz --markdown 20230412/m/mongogettersetter/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 12:51:49] INFO root fetch - processPackages [opsramp-analytics-utils]: executing diffoscope
+[2023-04-12 12:51:49] INFO root fetch - processPackages [opsramp-analytics-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsramp-analytics-utils-3.2.9.tar.gz tmp/opsramp-analytics-utils-3.3.0.tar.gz --markdown 20230412/o/opsramp-analytics-utils/3.2.9-3.3.0/diff.md --exclude *.pyd
+[2023-04-12 12:51:50] INFO root fetch - processPackages [inels-mqtt-new]: Start processing: KLogLib
+[2023-04-12 12:51:50] INFO root fetch - main [MainThread]: End processing [inels-mqtt-new]: success
+[2023-04-12 12:51:50] WARNING root fetch - processPackages [KLogLib]: Skipping, unable to determine old version
+[2023-04-12 12:51:50] INFO root fetch - processPackages [KLogLib]: Start processing: drift-cli
+[2023-04-12 12:51:50] INFO root fetch - main [MainThread]: End processing [KLogLib] error
+[2023-04-12 12:51:50] INFO root fetch - processPackages [drift-cli]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-12 12:51:50] INFO root fetch - processPackages [gmltools]: Start processing: codefast
+[2023-04-12 12:51:50] INFO root fetch - main [MainThread]: End processing [gmltools]: success
+[2023-04-12 12:51:50] INFO root fetch - processPackages [codefast]: New version: [23.4.8.2] Old Version: [23.4.7.8]
+[2023-04-12 12:51:50] INFO root fetch - processPackages [codefast]: executing diffoscope
+[2023-04-12 12:51:50] INFO root fetch - processPackages [codefast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefast-23.4.7.8.tar.gz tmp/codefast-23.4.8.2.tar.gz --markdown 20230412/c/codefast/23.4.7.8-23.4.8.2/diff.md --exclude *.pyd
+[2023-04-12 12:51:50] INFO root fetch - processPackages [drift-cli]: Downloading https://files.pythonhosted.org/packages/24/9b/02eb4a988469f5fc7cd786a58e0da3f3aed144749780f90c6e4f5bc6ae86/drift_cli-0.5.0-py3-none-any.whl
+[2023-04-12 12:51:50] INFO root fetch - processPackages [drift-cli]: Downloading https://files.pythonhosted.org/packages/bb/6b/45ab7e7349d7d95c6fcfd5464137365d022909ae8765dea89b30f76c455b/drift_cli-0.6.0-py3-none-any.whl
+[2023-04-12 12:51:50] INFO root fetch - processPackages [mongogettersetter]: Start processing: efel
+[2023-04-12 12:51:50] INFO root fetch - main [MainThread]: End processing [mongogettersetter]: success
+[2023-04-12 12:51:50] INFO root fetch - processPackages [drift-cli]: executing diffoscope
+[2023-04-12 12:51:50] INFO root fetch - processPackages [drift-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drift_cli-0.5.0-py3-none-any.whl.zip tmp/drift_cli-0.6.0-py3-none-any.whl.zip --markdown 20230412/d/drift-cli/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-12 12:51:50] INFO root fetch - processPackages [efel]: New version: [4.1.86] Old Version: [4.1.84]
+[2023-04-12 12:51:51] INFO root fetch - processPackages [efel]: Downloading https://files.pythonhosted.org/packages/45/35/7f42d14c06a91d20ad9ca6912d0f27d608f700cdc70cc86dffad2df9fa48/efel-4.1.84.tar.gz
+[2023-04-12 12:51:51] INFO root fetch - processPackages [efel]: Downloading https://files.pythonhosted.org/packages/d1/66/a20626ebc006b368dd0833d15c6b70f95c6b6e85ece8b2d23d4ba4394745/efel-4.1.86-cp311-cp311-macosx_10_9_x86_64.whl
+[2023-04-12 12:51:51] INFO root fetch - processPackages [codefast]: Start processing: mongogettersetter
+[2023-04-12 12:51:51] INFO root fetch - main [MainThread]: End processing [codefast]: success
+[2023-04-12 12:51:51] INFO root fetch - processPackages [mongogettersetter]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-12 12:51:51] INFO root fetch - processPackages [efel]: executing diffoscope
+[2023-04-12 12:51:51] INFO root fetch - processPackages [efel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efel-4.1.84.tar.gz tmp/efel-4.1.86-cp311-cp311-macosx_10_9_x86_64.whl.zip --markdown 20230412/e/efel/4.1.84-4.1.86/diff.md --exclude *.pyd
+[2023-04-12 12:51:51] INFO root fetch - main [MainThread]: End processing [opsramp-analytics-utils]: success
+[2023-04-12 12:51:51] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/e8/b0/f4a7a012b7fede676a94538a0a085d21177e4a5d7f25bb9dc827580875a0/mongogettersetter-1.3.0.tar.gz
+[2023-04-12 12:51:51] INFO root fetch - main [MainThread]: End processing [drift-cli]: success
+[2023-04-12 12:51:51] INFO root fetch - processPackages [mongogettersetter]: executing diffoscope
+[2023-04-12 12:51:51] INFO root fetch - processPackages [mongogettersetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongogettersetter-1.2.9.tar.gz tmp/mongogettersetter-1.3.0.tar.gz --markdown 20230412/m/mongogettersetter/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-12 12:51:52] INFO root fetch - main [MainThread]: End processing [mongogettersetter]: success
+[2023-04-12 12:51:54] INFO root fetch - main [MainThread]: End processing [efel]: success
+[2023-04-12 12:52:00] INFO root fetch - main [MainThread]: End processing [mewpy]: success
+[2023-04-12 12:52:00] INFO root fetch - main [MainThread]: Store serial: [17674829]
