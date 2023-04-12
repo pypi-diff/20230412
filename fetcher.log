@@ -11209,3 +11209,70 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 11:43:48] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:43:48] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:43:48] INFO root fetch - main [MainThread]: Store serial: [17674172]
+[2023-04-12 11:48:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674172]
+[2023-04-12 11:48:56] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 11:48:56] WARNING root fetch - processPackages [localizedpydantic]: Skipping, unable to determine old version
+[2023-04-12 11:48:56] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:48:56] INFO root fetch - processPackages [rasa-sdk]: New version: [3.5.1] Old Version: [3.5.0b1]
+[2023-04-12 11:48:56] INFO root fetch - processPackages [lupin-danquin]: New version: [0.0.1.dev5] Old Version: [0.0.1.dev4]
+[2023-04-12 11:48:56] WARNING root fetch - processPackages [thunno2]: Skipping, unable to determine old version
+[2023-04-12 11:48:56] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:48:56] INFO root fetch - processPackages [croniter]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-12 11:48:56] INFO root fetch - processPackages [origen-ai-ecl]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 11:48:56] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2023-04-12 11:48:56] INFO root fetch - processPackages [rasa-sdk]: Downloading https://files.pythonhosted.org/packages/49/c0/6935622bb886f90caea0daad4d1843a465dfc23803aa68a2d5900e1d3cee/rasa_sdk-3.5.0b1.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/bc/75/71b7d4b9b364570f8a307bcfd79c89941e929ea803dcf5d0e355725f5316/croniter-1.3.7.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [origen-ai-ecl]: Downloading https://files.pythonhosted.org/packages/a9/82/bde0b27202862315aa568e53660214955e0c827b42a73bdc2a3bea7d8a8f/origen_ai_ecl-0.1.2.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: Downloading https://files.pythonhosted.org/packages/1e/c5/c9d06411705676891afc273dd27c31a1d014617f9138f5cb61d707e7675c/odoo_addon_pos_default_partner-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 11:48:56] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/bb/fa/a65c47e8a881ceebc065bb87682c28cf20650c9d1fefae75c7d33b8f1691/lupin-danquin-0.0.1.dev5.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [rasa-sdk]: Downloading https://files.pythonhosted.org/packages/0d/15/4d41ee19660231f46515ead10f65dbd35564ee434975ff91aed967f2a199/rasa_sdk-3.5.1.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/16/f3/aa1201a8ec1a9d6eddf13de28f38c21700338b1d0663d0ebaabd5df34f7a/croniter-1.3.8.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [origen-ai-ecl]: Downloading https://files.pythonhosted.org/packages/5d/25/41f01c5c697a164c92ee340593596279a47ff082cde1cbed5b511a6437f8/origen_ai_ecl-0.1.3.tar.gz
+[2023-04-12 11:48:56] INFO root fetch - processPackages [lupin-danquin]: executing diffoscope
+[2023-04-12 11:48:56] INFO root fetch - processPackages [lupin-danquin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-danquin-0.0.1.dev4.tar.gz tmp/lupin-danquin-0.0.1.dev5.tar.gz --markdown 20230412/l/lupin-danquin/0.0.1.dev4-0.0.1.dev5/diff.md --exclude *.pyd
+[2023-04-12 11:48:56] INFO root fetch - processPackages [croniter]: executing diffoscope
+[2023-04-12 11:48:56] INFO root fetch - processPackages [croniter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croniter-1.3.7.tar.gz tmp/croniter-1.3.8.tar.gz --markdown 20230412/c/croniter/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-12 11:48:56] INFO root fetch - processPackages [rasa-sdk]: executing diffoscope
+[2023-04-12 11:48:56] INFO root fetch - processPackages [rasa-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rasa_sdk-3.5.0b1.tar.gz tmp/rasa_sdk-3.5.1.tar.gz --markdown 20230412/r/rasa-sdk/3.5.0b1-3.5.1/diff.md --exclude *.pyd
+[2023-04-12 11:48:56] INFO root fetch - processPackages [origen-ai-ecl]: executing diffoscope
+[2023-04-12 11:48:56] INFO root fetch - processPackages [origen-ai-ecl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origen_ai_ecl-0.1.2.tar.gz tmp/origen_ai_ecl-0.1.3.tar.gz --markdown 20230412/o/origen-ai-ecl/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 11:48:57] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: Downloading https://files.pythonhosted.org/packages/f4/07/0437da454422dd1cbe9b974b45e549a9148da3e4873fcdfe8f6d488a9b7c/odoo_addon_pos_default_partner-16.0.1.0.0.6-py3-none-any.whl
+[2023-04-12 11:48:57] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: executing diffoscope
+[2023-04-12 11:48:57] INFO root fetch - processPackages [odoo-addon-pos-default-partner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_default_partner-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_pos_default_partner-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-pos-default-partner/16.0.1.0.0.5-16.0.1.0.0.6/diff.md --exclude *.pyd
+[2023-04-12 11:48:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:57] INFO root fetch - processPackages [origen-ai-ecl]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 11:48:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.9.0a1681291700] Old Version: [1.8.0a1681243058]
+[2023-04-12 11:48:58] INFO root fetch - processPackages [origen-ai-ecl]: executing diffoscope
+[2023-04-12 11:48:58] INFO root fetch - processPackages [origen-ai-ecl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origen_ai_ecl-0.1.2.tar.gz tmp/origen_ai_ecl-0.1.3.tar.gz --markdown 20230412/o/origen-ai-ecl/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 11:48:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:58] INFO root fetch - processPackages [origen-ai-ecl]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 11:48:58] INFO root fetch - processPackages [bagbag]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-12 11:48:58] INFO root fetch - processPackages [origen-ai-ecl]: executing diffoscope
+[2023-04-12 11:48:58] INFO root fetch - processPackages [origen-ai-ecl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origen_ai_ecl-0.1.2.tar.gz tmp/origen_ai_ecl-0.1.3.tar.gz --markdown 20230412/o/origen-ai-ecl/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/85/15/b2383d009f6a41557b637603cf8a1fefb2acf6c4f534810536242e5cedc6/lbrlabs_pulumi_scaleway-1.9.0a1681291700.tar.gz
+[2023-04-12 11:48:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lupin-danquin]: New version: [0.0.1.dev6] Old Version: [0.0.1.dev5]
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.8.0a1681243058.tar.gz tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291700.tar.gz --markdown 20230412/l/lbrlabs-pulumi-scaleway/1.8.0a1681243058-1.9.0a1681291700/diff.md --exclude *.pyd
+[2023-04-12 11:48:58] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2023-04-12 11:48:58] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.9.5.tar.gz tmp/bagbag-0.9.6.tar.gz --markdown 20230412/b/bagbag/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lupin-danquin]: Downloading https://files.pythonhosted.org/packages/39/12/6123c84d7bc563901b369c69546881f7074d72ee4b32e12db0a756b6e781/lupin-danquin-0.0.1.dev6.tar.gz
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lupin-danquin]: executing diffoscope
+[2023-04-12 11:48:58] INFO root fetch - processPackages [lupin-danquin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lupin-danquin-0.0.1.dev5.tar.gz tmp/lupin-danquin-0.0.1.dev6.tar.gz --markdown 20230412/l/lupin-danquin/0.0.1.dev5-0.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-12 11:48:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:59] INFO root fetch - processPackages [mewpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 11:48:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:48:59] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: New version: [1.9.0a1681291775] Old Version: [1.9.0a1681291700]
+[2023-04-12 11:49:00] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: Downloading https://files.pythonhosted.org/packages/d6/a2/f79770c6cf96fbfef66475e92d97f1b3fff0e7e87f41928b8e9103445d1c/lbrlabs_pulumi_scaleway-1.9.0a1681291775.tar.gz
+[2023-04-12 11:49:00] INFO root fetch - processPackages [mewpy]: executing diffoscope
+[2023-04-12 11:49:00] INFO root fetch - processPackages [mewpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mewpy-0.1.8.tar.gz tmp/mewpy-0.1.9.tar.gz --markdown 20230412/m/mewpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 11:49:00] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: executing diffoscope
+[2023-04-12 11:49:00] INFO root fetch - processPackages [lbrlabs-pulumi-scaleway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291700.tar.gz tmp/lbrlabs_pulumi_scaleway-1.9.0a1681291775.tar.gz --markdown 20230412/l/lbrlabs-pulumi-scaleway/1.9.0a1681291700-1.9.0a1681291775/diff.md --exclude *.pyd
+[2023-04-12 11:49:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:49:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:49:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:49:03] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:49:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:49:11] INFO root fetch - main [MainThread]: Store serial: [17674213]
