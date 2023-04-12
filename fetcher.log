@@ -7136,3 +7136,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:25:31] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:25:46] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:25:46] INFO root fetch - main [MainThread]: Store serial: [17671512]
+[2023-04-12 07:30:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671512]
+[2023-04-12 07:30:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 07:30:53] INFO root fetch - processPackages [dnadb]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 07:30:53] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.80]
+[2023-04-12 07:30:53] INFO root fetch - processPackages [ler]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 07:30:53] INFO root fetch - processPackages [aaz-dev]: New version: [1.1.0] Old Version: [1.0.2]
+[2023-04-12 07:30:53] INFO root fetch - processPackages [seislib]: New version: [0.6.9] Old Version: [0.6.8]
+[2023-04-12 07:30:53] INFO root fetch - processPackages [realnet]: Downloading https://files.pythonhosted.org/packages/62/94/a3da3296fb363253cf6a80e5a48dcceae79af4a0399fbb680cd9493f7ee5/realnet-0.0.80.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/a0/fc/ccbf015af0abe1c6268d7dfe880db1171b5afd279f772a24077c96254f2f/dnadb-0.2.3.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [ler]: Downloading https://files.pythonhosted.org/packages/e6/34/ca47b9ec49a3b626a7ed083278b002b50e88b4f0a48eddc444cc5cd84b13/ler-0.1.0.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [aaz-dev]: Downloading https://files.pythonhosted.org/packages/54/52/e9afe3d30f8b65c259ec7462b95c6d578c899492f52db541673348e2cf1e/aaz-dev-1.0.2.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [seislib]: Downloading https://files.pythonhosted.org/packages/fa/db/7cd5468132f947ba6fbc576ac83465af1395fdf81126672172a2e8a884f6/seislib-0.6.8.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-04-12 07:30:54] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.2.2.tar.gz tmp/dnadb-0.2.3.tar.gz --markdown 20230412/d/dnadb/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 07:30:54] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-12 07:30:54] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.80.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230412/r/realnet/0.0.80-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:30:54] INFO root fetch - processPackages [ler]: Downloading https://files.pythonhosted.org/packages/ed/07/991751fcce37facde80c59bd2a7709aa53c6badf1d5484e8186586c84538/ler-0.1.1.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [ler]: executing diffoscope
+[2023-04-12 07:30:54] INFO root fetch - processPackages [ler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ler-0.1.0.tar.gz tmp/ler-0.1.1.tar.gz --markdown 20230412/l/ler/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 07:30:54] INFO root fetch - processPackages [seislib]: Downloading https://files.pythonhosted.org/packages/6e/89/88649e946b7aaa8994cb16d24ac91ff50b3c51bf3ee343461e805667cfa6/seislib-0.6.9.tar.gz
+[2023-04-12 07:30:54] INFO root fetch - processPackages [aaz-dev]: Downloading https://files.pythonhosted.org/packages/7e/a7/1db4e296f134cf331d6a8535c5702f86a9de424ad4d2c3eb2954a80a2122/aaz-dev-1.1.0.tar.gz
+[2023-04-12 07:30:55] INFO root fetch - processPackages [seislib]: executing diffoscope
+[2023-04-12 07:30:55] INFO root fetch - processPackages [seislib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seislib-0.6.8.tar.gz tmp/seislib-0.6.9.tar.gz --markdown 20230412/s/seislib/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2023-04-12 07:30:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:55] INFO root fetch - processPackages [pynkdv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:30:55] INFO root fetch - processPackages [pynkdv]: executing diffoscope
+[2023-04-12 07:30:55] INFO root fetch - processPackages [pynkdv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynkdv-0.0.8.tar.gz tmp/pynkdv-0.0.9.tar.gz --markdown 20230412/p/pynkdv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:30:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:55] INFO root fetch - processPackages [aaz-dev]: executing diffoscope
+[2023-04-12 07:30:55] INFO root fetch - processPackages [aaz-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aaz-dev-1.0.2.tar.gz tmp/aaz-dev-1.1.0.tar.gz --markdown 20230412/a/aaz-dev/1.0.2-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 07:30:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:30:58] INFO root fetch - main [MainThread]: Store serial: [17671534]
