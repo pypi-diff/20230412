@@ -13032,3 +13032,120 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:18:36] INFO root fetch - main [MainThread]: End processing [Toolkit5G]: success
 [2023-04-12 13:19:17] INFO root fetch - main [MainThread]: End processing [datapane]: success
 [2023-04-12 13:19:17] INFO root fetch - main [MainThread]: Store serial: [17675150]
+[2023-04-12 13:24:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675150]
+[2023-04-12 13:24:24] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-12 13:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: supex
+[2023-04-12 13:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MLapp1
+[2023-04-12 13:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyranker
+[2023-04-12 13:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clipcrop
+[2023-04-12 13:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchtnt-nightly
+[2023-04-12 13:24:24] INFO root fetch - processPackages [clipcrop]: New version: [2.2] Old Version: [2.1]
+[2023-04-12 13:24:24] INFO root fetch - processPackages [MLapp1]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 13:24:24] INFO root fetch - processPackages [supex]: New version: [2023.4.12] Old Version: [2023.2.9]
+[2023-04-12 13:24:24] WARNING root fetch - processPackages [pyranker]: Skipping, unable to determine old version
+[2023-04-12 13:24:24] INFO root fetch - processPackages [pyranker]: Start processing: astro-hh
+[2023-04-12 13:24:24] INFO root fetch - main [MainThread]: End processing [pyranker] error
+[2023-04-12 13:24:24] INFO root fetch - processPackages [supex]: executing diffoscope
+[2023-04-12 13:24:24] INFO root fetch - processPackages [supex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supex-2023.2.9.tar.gz tmp/supex-2023.4.12.tar.gz --markdown 20230412/s/supex/2023.2.9-2023.4.12/diff.md --exclude *.pyd
+[2023-04-12 13:24:24] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-12 13:24:24] WARNING root fetch - processPackages [astro-hh]: Skipping, unable to determine old version
+[2023-04-12 13:24:24] INFO root fetch - processPackages [astro-hh]: Start processing: scDenorm
+[2023-04-12 13:24:24] INFO root fetch - main [MainThread]: End processing [astro-hh] error
+[2023-04-12 13:24:24] INFO root fetch - processPackages [scDenorm]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 13:24:24] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/06/39/a50ba41c80dc0505969b1a02b14f33ced305e6ed376271a582a26982ca81/clipcrop-2.1.tar.gz
+[2023-04-12 13:24:24] INFO root fetch - processPackages [MLapp1]: Downloading https://files.pythonhosted.org/packages/1a/bc/1db68caf3f5e82c5c57fd0f72e2af27d9f48dadf97603378899fc1480e1f/MLapp1-0.0.4.tar.gz
+[2023-04-12 13:24:24] INFO root fetch - processPackages [scDenorm]: Downloading https://files.pythonhosted.org/packages/dd/42/940c6b70026a442ca3f54598d9bb83956b0a96bf34397892cc049cf6e20c/scDenorm-0.0.7.tar.gz
+[2023-04-12 13:24:24] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-04-12 13:24:24] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.4.8.tar.gz tmp/torchtnt-nightly-2023.4.9.tar.gz --markdown 20230412/t/torchtnt-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-12 13:24:24] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 13:24:24] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.3.tar.gz tmp/MLapp1-0.0.4.tar.gz --markdown 20230412/M/MLapp1/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:24:24] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/53/23/95c8f93bd998076994db5839c414258a5e577204da191681134e54189582/clipcrop-2.2.tar.gz
+[2023-04-12 13:24:25] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-12 13:24:25] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-2.1.tar.gz tmp/clipcrop-2.2.tar.gz --markdown 20230412/c/clipcrop/2.1-2.2/diff.md --exclude *.pyd
+[2023-04-12 13:24:25] INFO root fetch - processPackages [scDenorm]: Downloading https://files.pythonhosted.org/packages/4f/da/ac1ab68868ceda6f483a2ca6f659f8991f541e7405f8990d87bf8262ef41/scDenorm-0.0.8.tar.gz
+[2023-04-12 13:24:25] INFO root fetch - processPackages [scDenorm]: executing diffoscope
+[2023-04-12 13:24:25] INFO root fetch - processPackages [scDenorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scDenorm-0.0.7.tar.gz tmp/scDenorm-0.0.8.tar.gz --markdown 20230412/s/scDenorm/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 13:24:26] INFO root fetch - processPackages [supex]: Start processing: pip-licenses
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [supex]: success
+[2023-04-12 13:24:26] INFO root fetch - processPackages [MLapp1]: Start processing: jilei
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 13:24:26] INFO root fetch - processPackages [pip-licenses]: New version: [4.2.0rc3] Old Version: [4.2.0rc2]
+[2023-04-12 13:24:26] WARNING root fetch - processPackages [jilei]: Skipping, unable to determine old version
+[2023-04-12 13:24:26] INFO root fetch - processPackages [jilei]: Start processing: risingwave
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [jilei] error
+[2023-04-12 13:24:26] INFO root fetch - processPackages [risingwave]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 13:24:26] INFO root fetch - processPackages [pip-licenses]: executing diffoscope
+[2023-04-12 13:24:26] INFO root fetch - processPackages [pip-licenses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-licenses-4.2.0rc2.tar.gz tmp/pip-licenses-4.2.0rc3.tar.gz --markdown 20230412/p/pip-licenses/4.2.0rc2-4.2.0rc3/diff.md --exclude *.pyd
+[2023-04-12 13:24:26] INFO root fetch - processPackages [clipcrop]: Start processing: concrete-python
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [clipcrop]: success
+[2023-04-12 13:24:26] INFO root fetch - processPackages [concrete-python]: New version: [1.0.0rc2] Old Version: [1.0.0]
+[2023-04-12 13:24:26] INFO root fetch - processPackages [risingwave]: Downloading https://files.pythonhosted.org/packages/39/15/357f2eeb8525e5a7f9aad9916ef144c277340624f100b58bd0cee5662870/risingwave-0.0.4.tar.gz
+[2023-04-12 13:24:26] INFO root fetch - processPackages [torchtnt-nightly]: Start processing: datajudge
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-04-12 13:24:26] INFO root fetch - processPackages [datajudge]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-04-12 13:24:26] INFO root fetch - processPackages [concrete-python]: Downloading https://files.pythonhosted.org/packages/a0/aa/bc80b03bdd0cc29bcbe30ffe5ce017fa1a9cf454ab9b14fa28bba5e72d4f/concrete_python-1.0.0-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-04-12 13:24:26] WARNING root fetch - processPackages [concrete-python]: Skipping package: exceeds size limit 61908187>=10485760
+[2023-04-12 13:24:26] INFO root fetch - processPackages [concrete-python]: Start processing: OmniBridge
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [concrete-python] error
+[2023-04-12 13:24:26] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 13:24:26] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-12 13:24:26] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230412/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 13:24:26] INFO root fetch - processPackages [datajudge]: Downloading https://files.pythonhosted.org/packages/f2/30/c0e2e6f5567db2b9b03a9c6cfde412e642172e0302e836b77d3ff8965769/datajudge-1.5.0.tar.gz
+[2023-04-12 13:24:26] INFO root fetch - processPackages [risingwave]: Downloading https://files.pythonhosted.org/packages/05/f8/854af83a4dc20055210763e55308bb01b68672bca4e7bc5a8e0154b54edd/risingwave-0.0.5.tar.gz
+[2023-04-12 13:24:26] INFO root fetch - processPackages [scDenorm]: Start processing: hello2
+[2023-04-12 13:24:26] INFO root fetch - main [MainThread]: End processing [scDenorm]: success
+[2023-04-12 13:24:26] INFO root fetch - processPackages [risingwave]: executing diffoscope
+[2023-04-12 13:24:26] INFO root fetch - processPackages [risingwave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risingwave-0.0.4.tar.gz tmp/risingwave-0.0.5.tar.gz --markdown 20230412/r/risingwave/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 13:24:26] INFO root fetch - processPackages [hello2]: New version: [1.5.6] Old Version: [1.5.5]
+[2023-04-12 13:24:26] INFO root fetch - processPackages [datajudge]: Downloading https://files.pythonhosted.org/packages/71/a4/29852c8b3b48acaafc69696e04e412b052b3c792814ee1198c715dd3b7be/datajudge-1.6.0.tar.gz
+[2023-04-12 13:24:26] INFO root fetch - processPackages [hello2]: Downloading https://files.pythonhosted.org/packages/21/13/2bdbdd1f114d5be3e95a94afb69a828ed011cc9da5eee68d3032c2104512/hello2-1.5.6.tar.gz
+[2023-04-12 13:24:26] INFO root fetch - processPackages [hello2]: executing diffoscope
+[2023-04-12 13:24:26] INFO root fetch - processPackages [hello2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hello2-1.5.5.tar.gz tmp/hello2-1.5.6.tar.gz --markdown 20230412/h/hello2/1.5.5-1.5.6/diff.md --exclude *.pyd
+[2023-04-12 13:24:26] INFO root fetch - processPackages [datajudge]: executing diffoscope
+[2023-04-12 13:24:26] INFO root fetch - processPackages [datajudge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datajudge-1.5.0.tar.gz tmp/datajudge-1.6.0.tar.gz --markdown 20230412/d/datajudge/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-04-12 13:24:27] INFO root fetch - processPackages [risingwave]: Start processing: clipcrop
+[2023-04-12 13:24:27] INFO root fetch - main [MainThread]: End processing [risingwave]: success
+[2023-04-12 13:24:27] INFO root fetch - processPackages [clipcrop]: New version: [2.2] Old Version: [2.1]
+[2023-04-12 13:24:27] INFO root fetch - processPackages [OmniBridge]: Start processing: sampledb
+[2023-04-12 13:24:27] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-12 13:24:27] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-12 13:24:27] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-2.1.tar.gz tmp/clipcrop-2.2.tar.gz --markdown 20230412/c/clipcrop/2.1-2.2/diff.md --exclude *.pyd
+[2023-04-12 13:24:27] INFO root fetch - processPackages [pip-licenses]: Start processing: astro-hh
+[2023-04-12 13:24:27] INFO root fetch - main [MainThread]: End processing [pip-licenses]: success
+[2023-04-12 13:24:27] INFO root fetch - processPackages [sampledb]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-04-12 13:24:27] INFO root fetch - processPackages [astro-hh]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 13:24:28] INFO root fetch - processPackages [sampledb]: Downloading https://files.pythonhosted.org/packages/c3/d3/ba4fbe1e93c5973353b06ea95a683e0fb95c7bf660c322c9d5c4818f1b82/sampledb-0.8.1.tar.gz
+[2023-04-12 13:24:28] INFO root fetch - processPackages [astro-hh]: Downloading https://files.pythonhosted.org/packages/d7/b2/028d4ec0e5a545949c78e50571ae16a1d173cd5265e310dff441f5cc0b0f/astro_hh-0.0.3.tar.gz
+[2023-04-12 13:24:28] INFO root fetch - processPackages [astro-hh]: Downloading https://files.pythonhosted.org/packages/ab/7b/eaa01b198873ef788660b092f1bcecb6de70302aa6dd227602c56936bbfc/astro_hh-0.0.4.tar.gz
+[2023-04-12 13:24:28] INFO root fetch - processPackages [astro-hh]: executing diffoscope
+[2023-04-12 13:24:28] INFO root fetch - processPackages [astro-hh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astro_hh-0.0.3.tar.gz tmp/astro_hh-0.0.4.tar.gz --markdown 20230412/a/astro-hh/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:24:28] INFO root fetch - processPackages [datajudge]: Start processing: datareservoirio
+[2023-04-12 13:24:28] INFO root fetch - main [MainThread]: End processing [datajudge]: success
+[2023-04-12 13:24:28] INFO root fetch - processPackages [datareservoirio]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-12 13:24:28] INFO root fetch - processPackages [hello2]: Start processing: qdrant-txtai
+[2023-04-12 13:24:28] INFO root fetch - main [MainThread]: End processing [hello2]: success
+[2023-04-12 13:24:28] INFO root fetch - processPackages [sampledb]: Downloading https://files.pythonhosted.org/packages/c4/34/df88919267ed7af4854ffeeaf3d3aa4fb500a4fdab9dbdde957dcd24a019/sampledb-0.9.0.tar.gz
+[2023-04-12 13:24:28] INFO root fetch - processPackages [datareservoirio]: Downloading https://files.pythonhosted.org/packages/c4/10/8819372e9d504951c92770ad52b3eb53b08ea312fa74a580420b90be65a0/datareservoirio-0.9.7-py3-none-any.whl
+[2023-04-12 13:24:28] INFO root fetch - processPackages [qdrant-txtai]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 13:24:28] INFO root fetch - processPackages [clipcrop]: Start processing: jilei
+[2023-04-12 13:24:28] INFO root fetch - main [MainThread]: End processing [clipcrop]: success
+[2023-04-12 13:24:28] INFO root fetch - processPackages [jilei]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 13:24:29] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/e5/32/e97807af6d798cb331d4783d8ce502e9fcfa9f4d4da4baa2bb182a3d5528/jilei-0.0.1-py3-none-any.whl
+[2023-04-12 13:24:29] INFO root fetch - processPackages [qdrant-txtai]: Downloading https://files.pythonhosted.org/packages/76/a5/020f64d85e8344534bcf4b5de4503dc12131c039e0b88db7457aa7b90937/qdrant_txtai-1.0.0.tar.gz
+[2023-04-12 13:24:29] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/84/31/c6b72789de66856b7d5922f015b1123e0cf8a1b96359e978657a6ce8e528/jilei-0.0.2-py3-none-any.whl
+[2023-04-12 13:24:29] INFO root fetch - processPackages [sampledb]: executing diffoscope
+[2023-04-12 13:24:29] INFO root fetch - processPackages [sampledb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampledb-0.8.1.tar.gz tmp/sampledb-0.9.0.tar.gz --markdown 20230412/s/sampledb/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 13:24:29] INFO root fetch - main [MainThread]: End processing [astro-hh]: success
+[2023-04-12 13:24:29] INFO root fetch - processPackages [datareservoirio]: Downloading https://files.pythonhosted.org/packages/2e/42/24c3d90de624f9ac84d221f31604d69a317022b864738a238689db39ec8f/datareservoirio-0.9.8-py3-none-any.whl
+[2023-04-12 13:24:29] INFO root fetch - processPackages [qdrant-txtai]: Downloading https://files.pythonhosted.org/packages/99/92/34e846eb8c29943cb98dffb665bfbf2ce9d09b144e3d4c62f47fe03a69ba/qdrant_txtai-1.0.1.tar.gz
+[2023-04-12 13:24:29] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-04-12 13:24:29] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.1-py3-none-any.whl.zip tmp/jilei-0.0.2-py3-none-any.whl.zip --markdown 20230412/j/jilei/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 13:24:29] INFO root fetch - processPackages [qdrant-txtai]: executing diffoscope
+[2023-04-12 13:24:29] INFO root fetch - processPackages [qdrant-txtai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdrant_txtai-1.0.0.tar.gz tmp/qdrant_txtai-1.0.1.tar.gz --markdown 20230412/q/qdrant-txtai/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 13:24:29] INFO root fetch - processPackages [datareservoirio]: executing diffoscope
+[2023-04-12 13:24:29] INFO root fetch - processPackages [datareservoirio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datareservoirio-0.9.7-py3-none-any.whl.zip tmp/datareservoirio-0.9.8-py3-none-any.whl.zip --markdown 20230412/d/datareservoirio/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-12 13:24:30] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-04-12 13:24:30] INFO root fetch - main [MainThread]: End processing [qdrant-txtai]: success
+[2023-04-12 13:24:30] INFO root fetch - main [MainThread]: End processing [datareservoirio]: success
+[2023-04-12 13:24:37] INFO root fetch - main [MainThread]: End processing [sampledb]: success
+[2023-04-12 13:24:37] INFO root fetch - main [MainThread]: Store serial: [17675226]
