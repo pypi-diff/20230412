@@ -4897,3 +4897,49 @@
 [2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:01:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:01:57] INFO root fetch - main [MainThread]: Store serial: [17670256]
+[2023-04-12 04:07:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670256]
+[2023-04-12 04:07:04] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 04:07:04] INFO root fetch - processPackages [libdyson-neon]: New version: [0.9.0] Old Version: [0.10.2]
+[2023-04-12 04:07:04] WARNING root fetch - processPackages [cxlint]: Skipping, unable to determine old version
+[2023-04-12 04:07:04] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:07:04] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 04:07:04] INFO root fetch - processPackages [pbit]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 04:07:04] INFO root fetch - processPackages [vega]: New version: [4.0.0] Old Version: [3.6.0]
+[2023-04-12 04:07:04] INFO root fetch - processPackages [mecord-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 04:07:04] INFO root fetch - processPackages [mecord-cli]: executing diffoscope
+[2023-04-12 04:07:04] INFO root fetch - processPackages [mecord-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecord-cli-0.1.8.tar.gz tmp/mecord-cli-0.1.9.tar.gz --markdown 20230412/m/mecord-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 04:07:04] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 04:07:04] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 04:07:04] INFO root fetch - processPackages [libdyson-neon]: Downloading https://files.pythonhosted.org/packages/8f/e5/bf8dc53481b06b347be0c8ff68e88fc9e7adfe81dee5a28c85f77dec0389/libdyson-neon-0.10.2.tar.gz
+[2023-04-12 04:07:04] INFO root fetch - processPackages [vega]: Downloading https://files.pythonhosted.org/packages/d2/f9/8150e6e712be7c4da501b2733573bb34d45ca43897702488c90e66b9cf4e/vega-3.6.0.tar.gz
+[2023-04-12 04:07:04] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/9f/bc/9dbbbf6c2f773d415eea617500c3371f01c12327b6c727ecbd82ae6a8e1d/pbit-0.2.3.tar.gz
+[2023-04-12 04:07:05] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 04:07:05] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.2.tar.gz tmp/pbit-0.2.3.tar.gz --markdown 20230412/p/pbit/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 04:07:05] INFO root fetch - processPackages [libdyson-neon]: executing diffoscope
+[2023-04-12 04:07:05] INFO root fetch - processPackages [libdyson-neon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libdyson-neon-0.10.2.tar.gz tmp/libdyson-neon-0.9.0.tar.gz --markdown 20230412/l/libdyson-neon/0.10.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 04:07:05] INFO root fetch - processPackages [vega]: Downloading https://files.pythonhosted.org/packages/90/34/8550efd068beefba73d2a8ec73db3c35c0573da943442ac7fdde1ce16dc1/vega-4.0.0.tar.gz
+[2023-04-12 04:07:05] INFO root fetch - processPackages [vega]: executing diffoscope
+[2023-04-12 04:07:05] INFO root fetch - processPackages [vega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vega-3.6.0.tar.gz tmp/vega-4.0.0.tar.gz --markdown 20230412/v/vega/3.6.0-4.0.0/diff.md --exclude *.pyd
+[2023-04-12 04:07:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:06] INFO root fetch - processPackages [nvosscript]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-04-12 04:07:06] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/9d/de/ce24a99b14bd7c6602662ff4c6cf59278372f9eb091c2096c127a1082dec/nvosscript-1.2.2.tar.gz
+[2023-04-12 04:07:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:06] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-12 04:07:06] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.2.1.tar.gz tmp/nvosscript-1.2.2.tar.gz --markdown 20230412/n/nvosscript/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-04-12 04:07:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:06] INFO root fetch - processPackages [aifactory]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-04-12 04:07:06] WARNING root fetch - processPackages [jianghui]: Skipping, unable to determine old version
+[2023-04-12 04:07:06] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:07:06] INFO root fetch - processPackages [aifactory]: executing diffoscope
+[2023-04-12 04:07:06] INFO root fetch - processPackages [aifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifactory-1.6.8.tar.gz tmp/aifactory-1.6.9.tar.gz --markdown 20230412/a/aifactory/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-04-12 04:07:06] INFO root fetch - processPackages [NEMO-allauth]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-04-12 04:07:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:06] INFO root fetch - processPackages [NEMO-allauth]: Downloading https://files.pythonhosted.org/packages/dd/07/a4ad310a5fa81a4b2647101a10dd539875181bee24137b1526de0fb26181/NEMO_allauth-1.8.1-py3-none-any.whl
+[2023-04-12 04:07:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:07:07] INFO root fetch - processPackages [NEMO-allauth]: Downloading https://files.pythonhosted.org/packages/8d/67/dcb75dccc97a0d4c9f15030fc1ad088b0acc390a5209e6c52f44cde69188/NEMO_allauth-1.9.0-py3-none-any.whl
+[2023-04-12 04:07:07] INFO root fetch - processPackages [NEMO-allauth]: executing diffoscope
+[2023-04-12 04:07:07] INFO root fetch - processPackages [NEMO-allauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_allauth-1.8.1-py3-none-any.whl.zip tmp/NEMO_allauth-1.9.0-py3-none-any.whl.zip --markdown 20230412/N/NEMO-allauth/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 04:07:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:08:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:08:11] INFO root fetch - main [MainThread]: Store serial: [17670303]
