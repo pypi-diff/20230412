@@ -5398,3 +5398,21 @@
 [2023-04-12 04:55:02] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:55:06] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:55:06] INFO root fetch - main [MainThread]: Store serial: [17670579]
+[2023-04-12 05:00:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670579]
+[2023-04-12 05:00:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-12 05:00:14] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 05:00:14] WARNING root fetch - processPackages [tidy3d-lambda]: Skipping, unable to determine old version
+[2023-04-12 05:00:14] INFO root fetch - main [MainThread]: error
+[2023-04-12 05:00:14] INFO root fetch - processPackages [yhgit]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-04-12 05:00:14] INFO root fetch - processPackages [upbge-stubs]: New version: [0.3.1.27.dev4673804329] Old Version: [0.3.1.27.dev4663064718]
+[2023-04-12 05:00:15] INFO root fetch - processPackages [yhgit]: executing diffoscope
+[2023-04-12 05:00:15] INFO root fetch - processPackages [yhgit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yhgit-2.8.8.tar.gz tmp/yhgit-2.8.9.tar.gz --markdown 20230412/y/yhgit/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-04-12 05:00:15] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 05:00:15] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 05:00:15] INFO root fetch - processPackages [upbge-stubs]: Downloading https://files.pythonhosted.org/packages/df/f0/a582162eb338edd3051f2656e09af9ed98a6dfbe5eb68af19d842a941331/upbge-stubs-0.3.1.27.dev4673804329.tar.gz
+[2023-04-12 05:00:15] INFO root fetch - processPackages [upbge-stubs]: executing diffoscope
+[2023-04-12 05:00:15] INFO root fetch - processPackages [upbge-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upbge-stubs-0.3.1.27.dev4663064718.tar.gz tmp/upbge-stubs-0.3.1.27.dev4673804329.tar.gz --markdown 20230412/u/upbge-stubs/0.3.1.27.dev4663064718-0.3.1.27.dev4673804329/diff.md --exclude *.pyd
+[2023-04-12 05:00:16] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:00:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:00:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:00:20] INFO root fetch - main [MainThread]: Store serial: [17670591]
