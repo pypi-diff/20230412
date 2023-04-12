@@ -6575,3 +6575,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:14:36] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:14:36] INFO root fetch - main [MainThread]: Store serial: [17671167]
+[2023-04-12 06:19:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671167]
+[2023-04-12 06:19:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 06:19:43] INFO root fetch - processPackages [servey]: New version: [2.7.3] Old Version: [2.7.2]
+[2023-04-12 06:19:43] INFO root fetch - processPackages [odoo14-addon-product-template-multi-link]: New version: [14.0.1.2.1.dev5] Old Version: [14.0.1.2.1.dev4]
+[2023-04-12 06:19:43] INFO root fetch - processPackages [pandas-gbq-magic]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 06:19:43] INFO root fetch - processPackages [pypose]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-12 06:19:43] INFO root fetch - processPackages [opendal]: New version: [0.31.0] Old Version: [0.30.5]
+[2023-04-12 06:19:43] INFO root fetch - processPackages [pandas-gbq-magic]: Downloading https://files.pythonhosted.org/packages/09/92/1354b224a73794aad0d3083ef70bf8672873765f779ad7bb0a1087d94fa1/pandas_gbq_magic-1.1.1.tar.gz
+[2023-04-12 06:19:43] INFO root fetch - processPackages [servey]: Downloading https://files.pythonhosted.org/packages/36/3a/92c5ac6a497f8a5c352d73a679a1bbbf85775fca3695a2f769605332489c/servey-2.7.3.tar.gz
+[2023-04-12 06:19:43] INFO root fetch - processPackages [odoo14-addon-product-template-multi-link]: Downloading https://files.pythonhosted.org/packages/fa/0a/9c5ca17ac168d92bef71c64e7c7e7eeba67074ee109163a93e7156f8b438/odoo14_addon_product_template_multi_link-14.0.1.2.1.dev4-py3-none-any.whl
+[2023-04-12 06:19:43] INFO root fetch - processPackages [opendal]: Downloading https://files.pythonhosted.org/packages/64/8e/ec7e8b847ff9e4fc3917d8df8f188bf9c73ac77f673a5e6979bdddb6fd84/opendal-0.30.5.tar.gz
+[2023-04-12 06:19:43] INFO root fetch - processPackages [pypose]: Downloading https://files.pythonhosted.org/packages/c4/e2/c06ed59d1fea588ca62c50dac4951585795c67451100bb4a245de506db03/pypose-0.4.1.tar.gz
+[2023-04-12 06:19:43] INFO root fetch - processPackages [servey]: executing diffoscope
+[2023-04-12 06:19:43] INFO root fetch - processPackages [servey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servey-2.7.2.tar.gz tmp/servey-2.7.3.tar.gz --markdown 20230412/s/servey/2.7.2-2.7.3/diff.md --exclude *.pyd
+[2023-04-12 06:19:43] INFO root fetch - processPackages [pandas-gbq-magic]: Downloading https://files.pythonhosted.org/packages/22/ab/9268d0f5c3d80478809d8593b7d988507531b6269a331fc4c1e1e95beb6c/pandas_gbq_magic-1.1.2.tar.gz
+[2023-04-12 06:19:44] INFO root fetch - processPackages [pandas-gbq-magic]: executing diffoscope
+[2023-04-12 06:19:44] INFO root fetch - processPackages [pandas-gbq-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas_gbq_magic-1.1.1.tar.gz tmp/pandas_gbq_magic-1.1.2.tar.gz --markdown 20230412/p/pandas-gbq-magic/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 06:19:44] INFO root fetch - processPackages [opendal]: Downloading https://files.pythonhosted.org/packages/6d/c6/bac52862bccc1c9fa8a1e7bd34502e0027eb33fb3dd2a8a7a847f0811588/opendal-0.31.0.tar.gz
+[2023-04-12 06:19:44] INFO root fetch - processPackages [odoo14-addon-product-template-multi-link]: Downloading https://files.pythonhosted.org/packages/ff/46/f3a0f4d42a0072eb68bf7c2803e79a00658eb69ee4d5c50e6268525235ab/odoo14_addon_product_template_multi_link-14.0.1.2.1.dev5-py3-none-any.whl
+[2023-04-12 06:19:44] INFO root fetch - processPackages [pypose]: Downloading https://files.pythonhosted.org/packages/29/72/9501764acfa63e3b057fb6e3b7aed2d961801cd656c1359a35b374c5512b/pypose-0.4.2.tar.gz
+[2023-04-12 06:19:44] INFO root fetch - processPackages [opendal]: executing diffoscope
+[2023-04-12 06:19:44] INFO root fetch - processPackages [opendal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opendal-0.30.5.tar.gz tmp/opendal-0.31.0.tar.gz --markdown 20230412/o/opendal/0.30.5-0.31.0/diff.md --exclude *.pyd
+[2023-04-12 06:19:44] INFO root fetch - processPackages [pypose]: executing diffoscope
+[2023-04-12 06:19:44] INFO root fetch - processPackages [pypose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypose-0.4.1.tar.gz tmp/pypose-0.4.2.tar.gz --markdown 20230412/p/pypose/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-04-12 06:19:44] INFO root fetch - processPackages [odoo14-addon-product-template-multi-link]: executing diffoscope
+[2023-04-12 06:19:44] INFO root fetch - processPackages [odoo14-addon-product-template-multi-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_template_multi_link-14.0.1.2.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_product_template_multi_link-14.0.1.2.1.dev5-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-product-template-multi-link/14.0.1.2.1.dev4-14.0.1.2.1.dev5/diff.md --exclude *.pyd
+[2023-04-12 06:19:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:45] INFO root fetch - processPackages [runpod]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-12 06:19:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:45] INFO root fetch - processPackages [runpod]: Downloading https://files.pythonhosted.org/packages/e6/6e/1a1ded98d74c9c3c5179d0621df4d8d4c1747a0758838867b7672962cf3c/runpod-0.9.1.tar.gz
+[2023-04-12 06:19:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:45] INFO root fetch - processPackages [runpod]: Downloading https://files.pythonhosted.org/packages/69/61/4cf813b7790dca755aaa5d1aa675f851b9aaa7020d61283e901ed9ba9d77/runpod-0.9.2.tar.gz
+[2023-04-12 06:19:46] INFO root fetch - processPackages [runpod]: executing diffoscope
+[2023-04-12 06:19:46] INFO root fetch - processPackages [runpod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runpod-0.9.1.tar.gz tmp/runpod-0.9.2.tar.gz --markdown 20230412/r/runpod/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-12 06:19:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:19:50] INFO root fetch - main [MainThread]: Store serial: [17671200]
