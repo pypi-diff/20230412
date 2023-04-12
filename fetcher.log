@@ -5353,3 +5353,48 @@
 [2023-04-12 04:49:50] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:49:51] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:49:51] INFO root fetch - main [MainThread]: Store serial: [17670555]
+[2023-04-12 04:54:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670555]
+[2023-04-12 04:54:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 04:54:58] INFO root fetch - processPackages [odoo-addon-account-product-fiscal-classification]: New version: [16.0.1.0.2.3] Old Version: [16.0.1.0.2.2]
+[2023-04-12 04:54:58] INFO root fetch - processPackages [cxlint]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-12 04:54:58] INFO root fetch - processPackages [spyrograph]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-04-12 04:54:58] INFO root fetch - processPackages [PyPl8]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-12 04:54:58] INFO root fetch - processPackages [goodpoints]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 04:54:58] INFO root fetch - processPackages [PyPl8]: Downloading https://files.pythonhosted.org/packages/aa/35/ec846887ba9d9cd8277cee56cae47b18402139acb9bf2d049b151d8bf30a/PyPl8-1.0.6.tar.gz
+[2023-04-12 04:54:58] INFO root fetch - processPackages [odoo-addon-account-product-fiscal-classification]: Downloading https://files.pythonhosted.org/packages/b1/e8/f2549950f4d0177f57ad7f4471e5994895042784f9c37a7b5d4cd8a8dcbb/odoo_addon_account_product_fiscal_classification-16.0.1.0.2.2-py3-none-any.whl
+[2023-04-12 04:54:58] INFO root fetch - processPackages [goodpoints]: Downloading https://files.pythonhosted.org/packages/eb/d0/7b1e15e6a0a8d3b42aad934357abfdd5bcdc33778a8b873dbbe9e70f7861/goodpoints-0.2.1.tar.gz
+[2023-04-12 04:54:58] INFO root fetch - processPackages [cxlint]: Downloading https://files.pythonhosted.org/packages/d0/20/e9955daa2c0100ecdc0e17d3294615cc61537f004c16a6a07455b53e68e7/cxlint-1.0.1.tar.gz
+[2023-04-12 04:54:58] WARNING root fetch - processPackages [PyPl8]: Skipping package: exceeds size limit 12334429>=10485760
+[2023-04-12 04:54:58] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:54:59] INFO root fetch - processPackages [yhgit]: New version: [2.8.9] Old Version: [2.8.8]
+[2023-04-12 04:54:59] INFO root fetch - processPackages [spyrograph]: executing diffoscope
+[2023-04-12 04:54:59] INFO root fetch - processPackages [spyrograph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyrograph-0.8.0.tar.gz tmp/spyrograph-0.9.0.tar.gz --markdown 20230412/s/spyrograph/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 04:54:59] INFO root fetch - processPackages [cxlint]: Downloading https://files.pythonhosted.org/packages/52/bb/7570215110da30d26c45ae5f7c343cb663b0c1c2a17e409eaa4dc23230d5/cxlint-1.0.2.tar.gz
+[2023-04-12 04:54:59] INFO root fetch - processPackages [odoo-addon-account-product-fiscal-classification]: Downloading https://files.pythonhosted.org/packages/4e/ec/029917df75aa5014995c883b6f746f5c375098171e779fef1e8c5950f842/odoo_addon_account_product_fiscal_classification-16.0.1.0.2.3-py3-none-any.whl
+[2023-04-12 04:54:59] INFO root fetch - processPackages [goodpoints]: Downloading https://files.pythonhosted.org/packages/1f/77/289ebe15b978173a5fd01e6f6ab303fe90be726cb7f53ae4dc7ef2c32fe2/goodpoints-0.2.2.tar.gz
+[2023-04-12 04:54:59] INFO root fetch - processPackages [yhgit]: Downloading https://files.pythonhosted.org/packages/88/cb/0f3ddf6ae8dab671c60bb34a8bb54d170c98b027e5e2c02c7f2f7fc1b029/yhgit-2.8.8.tar.gz
+[2023-04-12 04:54:59] INFO root fetch - processPackages [cxlint]: executing diffoscope
+[2023-04-12 04:54:59] INFO root fetch - processPackages [cxlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxlint-1.0.1.tar.gz tmp/cxlint-1.0.2.tar.gz --markdown 20230412/c/cxlint/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 04:54:59] INFO root fetch - processPackages [goodpoints]: executing diffoscope
+[2023-04-12 04:54:59] INFO root fetch - processPackages [goodpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goodpoints-0.2.1.tar.gz tmp/goodpoints-0.2.2.tar.gz --markdown 20230412/g/goodpoints/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 04:54:59] INFO root fetch - processPackages [odoo-addon-account-product-fiscal-classification]: executing diffoscope
+[2023-04-12 04:54:59] INFO root fetch - processPackages [odoo-addon-account-product-fiscal-classification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_product_fiscal_classification-16.0.1.0.2.2-py3-none-any.whl.zip tmp/odoo_addon_account_product_fiscal_classification-16.0.1.0.2.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-account-product-fiscal-classification/16.0.1.0.2.2-16.0.1.0.2.3/diff.md --exclude *.pyd
+[2023-04-12 04:54:59] INFO root fetch - processPackages [yhgit]: Downloading https://files.pythonhosted.org/packages/9b/4c/622c7f97c4016733aa332b1905166550712656398b26debe9ba29b14d84d/yhgit-2.8.9.tar.gz
+[2023-04-12 04:54:59] INFO root fetch - processPackages [yhgit]: executing diffoscope
+[2023-04-12 04:54:59] INFO root fetch - processPackages [yhgit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yhgit-2.8.8.tar.gz tmp/yhgit-2.8.9.tar.gz --markdown 20230412/y/yhgit/2.8.8-2.8.9/diff.md --exclude *.pyd
+[2023-04-12 04:55:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:00] INFO root fetch - processPackages [cxlint]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-12 04:55:00] INFO root fetch - processPackages [cxlint]: executing diffoscope
+[2023-04-12 04:55:00] INFO root fetch - processPackages [cxlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxlint-1.0.1.tar.gz tmp/cxlint-1.0.2.tar.gz --markdown 20230412/c/cxlint/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 04:55:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:00] INFO root fetch - processPackages [xs-transformers]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 04:55:00] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:00] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/23/33/2d6a181c8fd3dc2bcf6c295ed0e65ddffcb9d5d6b3fd70c22624d4f7cc13/xs_transformers-1.0.0.tar.gz
+[2023-04-12 04:55:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:01] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/43/d9/60d9b2623e08efc9ac8669b4132e264f9f7933105393a8508577c700e9ab/xs_transformers-1.0.1.tar.gz
+[2023-04-12 04:55:01] INFO root fetch - processPackages [xs-transformers]: executing diffoscope
+[2023-04-12 04:55:01] INFO root fetch - processPackages [xs-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xs_transformers-1.0.0.tar.gz tmp/xs_transformers-1.0.1.tar.gz --markdown 20230412/x/xs-transformers/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 04:55:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:55:06] INFO root fetch - main [MainThread]: Store serial: [17670579]
