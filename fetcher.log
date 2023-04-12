@@ -13487,3 +13487,85 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:48:49] INFO root fetch - main [MainThread]: End processing [lama-cleaner-custom]: success
 [2023-04-12 13:48:59] INFO root fetch - main [MainThread]: End processing [cg]: success
 [2023-04-12 13:48:59] INFO root fetch - main [MainThread]: Store serial: [17675479]
+[2023-04-12 13:54:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675479]
+[2023-04-12 13:54:07] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 13:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: strmprivacy-api-definitions
+[2023-04-12 13:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyPhasesML
+[2023-04-12 13:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vegafusion
+[2023-04-12 13:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vegafusion-jupyter
+[2023-04-12 13:54:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NetbiosSpoof
+[2023-04-12 13:54:07] INFO root fetch - processPackages [pyPhasesML]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-12 13:54:07] INFO root fetch - processPackages [vegafusion-jupyter]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-04-12 13:54:07] INFO root fetch - processPackages [strmprivacy-api-definitions]: New version: [2.9.0] Old Version: [2.81.0]
+[2023-04-12 13:54:07] INFO root fetch - processPackages [vegafusion]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-04-12 13:54:07] INFO root fetch - processPackages [NetbiosSpoof]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 13:54:07] INFO root fetch - processPackages [strmprivacy-api-definitions]: Downloading https://files.pythonhosted.org/packages/49/af/0c26c8d51924d560a632cf9ada34f434a1af1d5581fb6026f8d18ddce6d3/strmprivacy-api-definitions-2.81.0.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [vegafusion-jupyter]: Downloading https://files.pythonhosted.org/packages/8a/b0/12314f3c6d47734f216d3fc1b2ab50853af53c05c6ee42a64e0b91634d35/vegafusion-jupyter-1.1.3.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [pyPhasesML]: Downloading https://files.pythonhosted.org/packages/c0/df/15e3e181deebe8a3b331ae0b2f3260a57545a8b0237d87ff2852687df6bf/pyPhasesML-0.4.4.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [vegafusion]: Downloading https://files.pythonhosted.org/packages/c4/f5/e23907156d43b9191b772a2590c4e36737e72ce67cd64f0e16954352b198/vegafusion-1.1.3.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [NetbiosSpoof]: Downloading https://files.pythonhosted.org/packages/e5/99/105cad41e630f744cd5d4d45b2184b08e805d6ec58434f82a3d68d2bae9c/NetbiosSpoof-1.1.2.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [pyPhasesML]: executing diffoscope
+[2023-04-12 13:54:07] INFO root fetch - processPackages [pyPhasesML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPhasesML-0.4.3.tar.gz tmp/pyPhasesML-0.4.4.tar.gz --markdown 20230412/p/pyPhasesML/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-12 13:54:07] INFO root fetch - processPackages [NetbiosSpoof]: executing diffoscope
+[2023-04-12 13:54:07] INFO root fetch - processPackages [NetbiosSpoof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NetbiosSpoof-1.1.1.tar.gz tmp/NetbiosSpoof-1.1.2.tar.gz --markdown 20230412/N/NetbiosSpoof/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 13:54:07] INFO root fetch - processPackages [vegafusion]: Downloading https://files.pythonhosted.org/packages/2f/92/34cebfecb47a84b8e688c7b93908e645632097128047b4a8b39176c00e89/vegafusion-1.2.0.tar.gz
+[2023-04-12 13:54:07] INFO root fetch - processPackages [strmprivacy-api-definitions]: Downloading https://files.pythonhosted.org/packages/89/ad/908915ed1c7af94dfe78a95110dc03d81532c4e526c5d82f30d952314754/strmprivacy-api-definitions-2.9.0.tar.gz
+[2023-04-12 13:54:08] INFO root fetch - processPackages [vegafusion]: executing diffoscope
+[2023-04-12 13:54:08] INFO root fetch - processPackages [vegafusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-1.1.3.tar.gz tmp/vegafusion-1.2.0.tar.gz --markdown 20230412/v/vegafusion/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 13:54:08] INFO root fetch - processPackages [vegafusion-jupyter]: Downloading https://files.pythonhosted.org/packages/49/a2/c9a84c104eff82bff442aeb096a14194528a5e4f84cdd33bc637d23a7ca7/vegafusion-jupyter-1.2.0.tar.gz
+[2023-04-12 13:54:08] INFO root fetch - processPackages [strmprivacy-api-definitions]: executing diffoscope
+[2023-04-12 13:54:08] INFO root fetch - processPackages [strmprivacy-api-definitions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strmprivacy-api-definitions-2.81.0.tar.gz tmp/strmprivacy-api-definitions-2.9.0.tar.gz --markdown 20230412/s/strmprivacy-api-definitions/2.81.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-12 13:54:08] INFO root fetch - processPackages [NetbiosSpoof]: Start processing: xtrack
+[2023-04-12 13:54:08] INFO root fetch - main [MainThread]: End processing [NetbiosSpoof]: success
+[2023-04-12 13:54:08] INFO root fetch - processPackages [xtrack]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 13:54:09] INFO root fetch - processPackages [vegafusion]: Start processing: ccbuilder
+[2023-04-12 13:54:09] INFO root fetch - main [MainThread]: End processing [vegafusion]: success
+[2023-04-12 13:54:09] INFO root fetch - processPackages [ccbuilder]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 13:54:09] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/8a/c3/e19b3d04ca1e27256466963f0323b5925c96b787f5066e5229a7c6b8db3a/xtrack-0.9.4.tar.gz
+[2023-04-12 13:54:09] INFO root fetch - processPackages [ccbuilder]: Downloading https://files.pythonhosted.org/packages/21/3f/48cd48db125c15d0b7f1680809064241c3dc69e5f25fd2ae6be87f089033/ccbuilder-0.0.8.tar.gz
+[2023-04-12 13:54:09] INFO root fetch - processPackages [vegafusion-jupyter]: executing diffoscope
+[2023-04-12 13:54:09] INFO root fetch - processPackages [vegafusion-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-jupyter-1.1.3.tar.gz tmp/vegafusion-jupyter-1.2.0.tar.gz --markdown 20230412/v/vegafusion-jupyter/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 13:54:09] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/46/38/dad135658362d6eec72747f7f0ae41cf43b0d0fb26e948ac142a49dfcec8/xtrack-0.9.5.tar.gz
+[2023-04-12 13:54:09] INFO root fetch - processPackages [ccbuilder]: Downloading https://files.pythonhosted.org/packages/57/5b/64165e27bf26e7c41a3b34a1df5452b612640a231465641c8898e6e0ab0c/ccbuilder-0.0.9.tar.gz
+[2023-04-12 13:54:09] INFO root fetch - processPackages [strmprivacy-api-definitions]: Start processing: pyranker
+[2023-04-12 13:54:09] INFO root fetch - main [MainThread]: End processing [strmprivacy-api-definitions]: success
+[2023-04-12 13:54:09] INFO root fetch - processPackages [pyranker]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 13:54:09] INFO root fetch - processPackages [pyPhasesML]: Start processing: gptdeploy
+[2023-04-12 13:54:09] INFO root fetch - main [MainThread]: End processing [pyPhasesML]: success
+[2023-04-12 13:54:10] INFO root fetch - processPackages [gptdeploy]: New version: [0.18.9] Old Version: [0.18.8]
+[2023-04-12 13:54:10] INFO root fetch - processPackages [pyranker]: Downloading https://files.pythonhosted.org/packages/81/e9/7c77b1ff02d8dff1e0fdd44389024aae0fdd570d4b5b6b9493d56388bdb4/pyranker-0.1.1-py3-none-any.whl
+[2023-04-12 13:54:10] INFO root fetch - processPackages [ccbuilder]: executing diffoscope
+[2023-04-12 13:54:10] INFO root fetch - processPackages [ccbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccbuilder-0.0.8.tar.gz tmp/ccbuilder-0.0.9.tar.gz --markdown 20230412/c/ccbuilder/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 13:54:10] INFO root fetch - processPackages [xtrack]: executing diffoscope
+[2023-04-12 13:54:10] INFO root fetch - processPackages [xtrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrack-0.9.4.tar.gz tmp/xtrack-0.9.5.tar.gz --markdown 20230412/x/xtrack/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 13:54:10] INFO root fetch - processPackages [gptdeploy]: executing diffoscope
+[2023-04-12 13:54:10] INFO root fetch - processPackages [gptdeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gptdeploy-0.18.8.tar.gz tmp/gptdeploy-0.18.9.tar.gz --markdown 20230412/g/gptdeploy/0.18.8-0.18.9/diff.md --exclude *.pyd
+[2023-04-12 13:54:10] INFO root fetch - processPackages [pyranker]: Downloading https://files.pythonhosted.org/packages/4c/67/131e9f1668a780913b564562ec45c0029029c10d7de205e639d9df22920f/pyranker-0.1.2-py3-none-any.whl
+[2023-04-12 13:54:10] INFO root fetch - processPackages [pyranker]: executing diffoscope
+[2023-04-12 13:54:10] INFO root fetch - processPackages [pyranker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyranker-0.1.1-py3-none-any.whl.zip tmp/pyranker-0.1.2-py3-none-any.whl.zip --markdown 20230412/p/pyranker/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 13:54:11] INFO root fetch - processPackages [ccbuilder]: Start processing: xpart
+[2023-04-12 13:54:11] INFO root fetch - main [MainThread]: End processing [ccbuilder]: success
+[2023-04-12 13:54:11] INFO root fetch - processPackages [xpart]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-04-12 13:54:11] INFO root fetch - processPackages [gptdeploy]: Start processing: wonder-sdk
+[2023-04-12 13:54:11] INFO root fetch - main [MainThread]: End processing [gptdeploy]: success
+[2023-04-12 13:54:11] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 13:54:11] INFO root fetch - processPackages [xpart]: Downloading https://files.pythonhosted.org/packages/45/9a/44a870df04c746957f83128255e7ec5a7809a178bbe6842295dbfa76475d/xpart-0.9.2.tar.gz
+[2023-04-12 13:54:11] INFO root fetch - processPackages [pyranker]: Start processing: structio
+[2023-04-12 13:54:11] INFO root fetch - main [MainThread]: End processing [pyranker]: success
+[2023-04-12 13:54:11] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/25/fa/2a23a7c1411f868f929933685b17f5d4c875770b0fa02cdda096fd7d38fe/wonder-sdk-0.1.2.tar.gz
+[2023-04-12 13:54:11] INFO root fetch - main [MainThread]: End processing [xtrack]: success
+[2023-04-12 13:54:11] INFO root fetch - processPackages [structio]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-12 13:54:12] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-12 13:54:12] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.1.tar.gz tmp/wonder-sdk-0.1.2.tar.gz --markdown 20230412/w/wonder-sdk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 13:54:12] INFO root fetch - processPackages [structio]: Downloading https://files.pythonhosted.org/packages/8a/c6/b56b93e8c171dbfb618e2790ecfe242c39178109f964d3353d41c480040d/structio-1.1.2.tar.gz
+[2023-04-12 13:54:12] INFO root fetch - processPackages [xpart]: Downloading https://files.pythonhosted.org/packages/f6/d0/566ee9ad0e3d6ac9b9558d25816734b3fce476c9907cc04cd501da1072a3/xpart-0.9.3.tar.gz
+[2023-04-12 13:54:12] INFO root fetch - processPackages [structio]: Downloading https://files.pythonhosted.org/packages/1a/9b/ba8b42bfac8fe0ab5a6532b2aecb1c14d2d39ee52bf7f0a7e4f25b2520ed/structio-1.1.3.tar.gz
+[2023-04-12 13:54:12] INFO root fetch - processPackages [structio]: executing diffoscope
+[2023-04-12 13:54:12] INFO root fetch - processPackages [structio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structio-1.1.2.tar.gz tmp/structio-1.1.3.tar.gz --markdown 20230412/s/structio/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-12 13:54:12] INFO root fetch - processPackages [xpart]: executing diffoscope
+[2023-04-12 13:54:12] INFO root fetch - processPackages [xpart]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpart-0.9.2.tar.gz tmp/xpart-0.9.3.tar.gz --markdown 20230412/x/xpart/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-04-12 13:54:12] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-12 13:54:14] INFO root fetch - main [MainThread]: End processing [structio]: success
+[2023-04-12 13:54:14] INFO root fetch - main [MainThread]: End processing [xpart]: success
+[2023-04-12 13:56:17] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
+[2023-04-12 13:56:17] INFO root fetch - main [MainThread]: Store serial: [17675513]
