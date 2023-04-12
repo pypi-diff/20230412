@@ -13903,3 +13903,114 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 14:12:17] INFO root fetch - main [MainThread]: End processing [slackflylog]: success
 [2023-04-12 14:12:19] INFO root fetch - main [MainThread]: End processing [gwpy]: success
 [2023-04-12 14:12:19] INFO root fetch - main [MainThread]: Store serial: [17675672]
+[2023-04-12 14:17:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675672]
+[2023-04-12 14:17:27] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 14:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-openapi-markdown-plugin
+[2023-04-12 14:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scikit-network
+[2023-04-12 14:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-l10n-br-base
+[2023-04-12 14:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asreview
+[2023-04-12 14:17:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sentry-cli
+[2023-04-12 14:17:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: New version: [14.0.3.1.1.dev4] Old Version: [14.0.3.1.1.dev3]
+[2023-04-12 14:17:27] INFO root fetch - processPackages [sentry-cli]: New version: [2.17.2] Old Version: [2.17.1]
+[2023-04-12 14:17:27] INFO root fetch - processPackages [asreview]: New version: [1.2] Old Version: [1.1rc0]
+[2023-04-12 14:17:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 14:17:27] INFO root fetch - processPackages [scikit-network]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-04-12 14:17:27] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/d9/a0/2190f101e750bee66f459fb9fa1305db7575399ae76ade1c13b635b9125a/odoo14_addon_l10n_br_base-14.0.3.1.1.dev3-py3-none-any.whl
+[2023-04-12 14:17:27] INFO root fetch - processPackages [asreview]: Downloading https://files.pythonhosted.org/packages/dd/fd/5326b76935a27b32a9229b445f82109dad29fb5c26c734334e12b9360faf/asreview-1.1rc0.tar.gz
+[2023-04-12 14:17:27] INFO root fetch - processPackages [scikit-network]: Downloading https://files.pythonhosted.org/packages/5d/b0/dcd55751ca1e2c9f74924fedf64f771185b02d5c4a35b9f651e51e680f49/scikit-network-0.8.2.tar.gz
+[2023-04-12 14:17:27] INFO root fetch - processPackages [sentry-cli]: Downloading https://files.pythonhosted.org/packages/71/a7/724320e51777bcf680d8d1adc3d93946a6560ac2f3b274590b49c7217dbb/sentry_cli-2.17.2.tar.gz
+[2023-04-12 14:17:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: Downloading https://files.pythonhosted.org/packages/34/a3/498fb2411484c0141d6bad292c3c49a1e7cce84f40dccf6579771a0637d7/mkdocs_openapi_markdown_plugin-0.0.4.tar.gz
+[2023-04-12 14:17:27] INFO root fetch - processPackages [sentry-cli]: executing diffoscope
+[2023-04-12 14:17:27] INFO root fetch - processPackages [sentry-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentry_cli-2.17.1.tar.gz tmp/sentry_cli-2.17.2.tar.gz --markdown 20230412/s/sentry-cli/2.17.1-2.17.2/diff.md --exclude *.pyd
+[2023-04-12 14:17:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: executing diffoscope
+[2023-04-12 14:17:27] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_openapi_markdown_plugin-0.0.3.tar.gz tmp/mkdocs_openapi_markdown_plugin-0.0.4.tar.gz --markdown 20230412/m/mkdocs-openapi-markdown-plugin/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 14:17:28] INFO root fetch - processPackages [scikit-network]: Downloading https://files.pythonhosted.org/packages/2b/08/70e9180dada035f1f63c058f7e9b1bb9b4cadb943f716ca079c8fff9ab0e/scikit-network-0.9.0.tar.gz
+[2023-04-12 14:17:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Downloading https://files.pythonhosted.org/packages/60/f7/97c38fea0b57562bb571ffa7543a48833175ecc143129eb56508efd227fc/odoo14_addon_l10n_br_base-14.0.3.1.1.dev4-py3-none-any.whl
+[2023-04-12 14:17:28] INFO root fetch - processPackages [asreview]: Downloading https://files.pythonhosted.org/packages/c5/25/1f06e4790eb60abd42e32817fcbbfe896ff66585925068b10260f12e399c/asreview-1.2.tar.gz
+[2023-04-12 14:17:28] INFO root fetch - processPackages [asreview]: executing diffoscope
+[2023-04-12 14:17:28] INFO root fetch - processPackages [asreview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asreview-1.1rc0.tar.gz tmp/asreview-1.2.tar.gz --markdown 20230412/a/asreview/1.1rc0-1.2/diff.md --exclude *.pyd
+[2023-04-12 14:17:28] INFO root fetch - processPackages [scikit-network]: executing diffoscope
+[2023-04-12 14:17:28] INFO root fetch - processPackages [scikit-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-network-0.8.2.tar.gz tmp/scikit-network-0.9.0.tar.gz --markdown 20230412/s/scikit-network/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 14:17:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: executing diffoscope
+[2023-04-12 14:17:28] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_base-14.0.3.1.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_base-14.0.3.1.1.dev4-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-l10n-br-base/14.0.3.1.1.dev3-14.0.3.1.1.dev4/diff.md --exclude *.pyd
+[2023-04-12 14:17:29] INFO root fetch - processPackages [mkdocs-openapi-markdown-plugin]: Start processing: streamlit-cognito-token-access-authentication
+[2023-04-12 14:17:29] INFO root fetch - main [MainThread]: End processing [mkdocs-openapi-markdown-plugin]: success
+[2023-04-12 14:17:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-04-12 14:17:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Downloading https://files.pythonhosted.org/packages/23/6f/69dace6ae34bfc3d56db324a2707a26da099cfad231d83b796040427d07c/streamlit_cognito_token_access_authentication-1.1.5-py3-none-any.whl
+[2023-04-12 14:17:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Downloading https://files.pythonhosted.org/packages/4c/29/db1119f3ef9fb218c9f8f3136a52fb9b801abbba98cee9ac8e037e69d135/streamlit_cognito_token_access_authentication-1.1.6-py3-none-any.whl
+[2023-04-12 14:17:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: executing diffoscope
+[2023-04-12 14:17:29] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_cognito_token_access_authentication-1.1.5-py3-none-any.whl.zip tmp/streamlit_cognito_token_access_authentication-1.1.6-py3-none-any.whl.zip --markdown 20230412/s/streamlit-cognito-token-access-authentication/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-04-12 14:17:30] INFO root fetch - processPackages [sentry-cli]: Start processing: pandablocks
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [sentry-cli]: success
+[2023-04-12 14:17:30] INFO root fetch - processPackages [pandablocks]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-12 14:17:30] INFO root fetch - processPackages [pandablocks]: Downloading https://files.pythonhosted.org/packages/da/82/f212b1f9001e4fc415dbbbd280d66fd7e9287b8b01e8128f700c351a218f/pandablocks-0.4.0.tar.gz
+[2023-04-12 14:17:30] INFO root fetch - processPackages [scikit-network]: Start processing: odoo14-addon-l10n-ar-ledger
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [scikit-network]: success
+[2023-04-12 14:17:30] WARNING root fetch - processPackages [odoo14-addon-l10n-ar-ledger]: Skipping, unable to determine old version
+[2023-04-12 14:17:30] INFO root fetch - processPackages [odoo14-addon-l10n-ar-ledger]: Start processing: neetbox
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-ar-ledger] error
+[2023-04-12 14:17:30] INFO root fetch - processPackages [neetbox]: New version: [0.1.505] Old Version: [0.1.504]
+[2023-04-12 14:17:30] INFO root fetch - processPackages [pandablocks]: Downloading https://files.pythonhosted.org/packages/f7/1e/675765f4e544ea335f50c1074aa0a4734e3995c173deee2efe3c96f971f6/pandablocks-0.5.0.tar.gz
+[2023-04-12 14:17:30] INFO root fetch - processPackages [neetbox]: Downloading https://files.pythonhosted.org/packages/68/ce/005fef3267d0a3f44c760a4e7afe8e7aa24af5737e67b4d6fab1e9504010/neetbox-0.1.505.tar.gz
+[2023-04-12 14:17:30] INFO root fetch - processPackages [pandablocks]: executing diffoscope
+[2023-04-12 14:17:30] INFO root fetch - processPackages [pandablocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandablocks-0.4.0.tar.gz tmp/pandablocks-0.5.0.tar.gz --markdown 20230412/p/pandablocks/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 14:17:30] INFO root fetch - processPackages [odoo14-addon-l10n-br-base]: Start processing: MagpiEM
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-base]: success
+[2023-04-12 14:17:30] INFO root fetch - processPackages [MagpiEM]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 14:17:30] INFO root fetch - processPackages [asreview]: Start processing: MagpiEM
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [asreview]: success
+[2023-04-12 14:17:30] INFO root fetch - processPackages [MagpiEM]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-04-12 14:17:30] INFO root fetch - processPackages [neetbox]: executing diffoscope
+[2023-04-12 14:17:30] INFO root fetch - processPackages [neetbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neetbox-0.1.504.tar.gz tmp/neetbox-0.1.505.tar.gz --markdown 20230412/n/neetbox/0.1.504-0.1.505/diff.md --exclude *.pyd
+[2023-04-12 14:17:30] INFO root fetch - processPackages [MagpiEM]: Downloading https://files.pythonhosted.org/packages/45/35/d250bf6573e69555149afd85c64472c98900c85485f9ba46f5ac9f0b779a/MagpiEM-0.2.8-py3.10.egg
+[2023-04-12 14:17:30] INFO root fetch - processPackages [MagpiEM]: Downloading https://files.pythonhosted.org/packages/45/35/d250bf6573e69555149afd85c64472c98900c85485f9ba46f5ac9f0b779a/MagpiEM-0.2.8-py3.10.egg
+[2023-04-12 14:17:30] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Start processing: risset
+[2023-04-12 14:17:30] INFO root fetch - main [MainThread]: End processing [streamlit-cognito-token-access-authentication]: success
+[2023-04-12 14:17:30] INFO root fetch - processPackages [risset]: New version: [2.3.0] Old Version: [2.2.2]
+[2023-04-12 14:17:31] INFO root fetch - processPackages [risset]: Downloading https://files.pythonhosted.org/packages/7a/77/ba22d77d8a473876249b59bef4d249a08bcedbb23b59e568bd1944b9b22d/risset-2.3.0.tar.gz
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: Downloading https://files.pythonhosted.org/packages/51/5a/bf1b8ac14d82777897da1426f318247eff70192c32ddfa661461d68749b1/MagpiEM-0.2.9-py3.10.egg
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: Downloading https://files.pythonhosted.org/packages/51/5a/bf1b8ac14d82777897da1426f318247eff70192c32ddfa661461d68749b1/MagpiEM-0.2.9-py3.10.egg
+[2023-04-12 14:17:31] INFO root fetch - processPackages [risset]: executing diffoscope
+[2023-04-12 14:17:31] INFO root fetch - processPackages [risset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risset-2.2.2.tar.gz tmp/risset-2.3.0.tar.gz --markdown 20230412/r/risset/2.2.2-2.3.0/diff.md --exclude *.pyd
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: executing diffoscope
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MagpiEM-0.2.8-py3.10.egg tmp/MagpiEM-0.2.9-py3.10.egg --markdown 20230412/M/MagpiEM/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: executing diffoscope
+[2023-04-12 14:17:31] INFO root fetch - processPackages [MagpiEM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MagpiEM-0.2.8-py3.10.egg tmp/MagpiEM-0.2.9-py3.10.egg --markdown 20230412/M/MagpiEM/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 14:17:32] INFO root fetch - processPackages [risset]: Start processing: jilei
+[2023-04-12 14:17:32] INFO root fetch - main [MainThread]: End processing [risset]: success
+[2023-04-12 14:17:32] INFO root fetch - processPackages [pandablocks]: Start processing: scipp
+[2023-04-12 14:17:32] INFO root fetch - main [MainThread]: End processing [pandablocks]: success
+[2023-04-12 14:17:32] INFO root fetch - processPackages [jilei]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 14:17:32] INFO root fetch - processPackages [scipp]: New version: [23.3.2] Old Version: [23.3.1]
+[2023-04-12 14:17:32] INFO root fetch - processPackages [MagpiEM]: Start processing: coiled
+[2023-04-12 14:17:32] INFO root fetch - main [MainThread]: End processing [MagpiEM]: success
+[2023-04-12 14:17:32] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 14:17:32] INFO root fetch - processPackages [neetbox]: Start processing: eptlsoot
+[2023-04-12 14:17:32] INFO root fetch - main [MainThread]: End processing [neetbox]: success
+[2023-04-12 14:17:32] INFO root fetch - processPackages [MagpiEM]: Start processing: pandapower
+[2023-04-12 14:17:32] INFO root fetch - main [MainThread]: End processing [MagpiEM]: success
+[2023-04-12 14:17:32] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/a6/9d/cf8d05b036c0559b1abfbaed59cd6e163414e5a3e6381f61f8f5fc8446ff/jilei-0.0.5-py3-none-any.whl
+[2023-04-12 14:17:32] INFO root fetch - processPackages [scipp]: Downloading https://files.pythonhosted.org/packages/58/8f/4376ad0a5ca92bf157c1380bb0b9553cf1e4e8225ba2306559777db6c974/scipp-23.3.1.tar.gz
+[2023-04-12 14:17:32] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 14:17:32] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 14:17:32] INFO root fetch - processPackages [pandapower]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-04-12 14:17:32] INFO root fetch - processPackages [eptlsoot]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 14:17:32] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-04-12 14:17:32] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.4-py3-none-any.whl.zip tmp/jilei-0.0.5-py3-none-any.whl.zip --markdown 20230412/j/jilei/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 14:17:32] INFO root fetch - processPackages [scipp]: Downloading https://files.pythonhosted.org/packages/c1/d4/948bc773a79863a8f8f4de1ba2a643f87ff6830ba96c40da0e7be231cdeb/scipp-23.3.2.tar.gz
+[2023-04-12 14:17:32] INFO root fetch - processPackages [eptlsoot]: Downloading https://files.pythonhosted.org/packages/2d/ee/dde7c7cb69ffdfe209cc1a9f710945cdc893ca82e3fcdd2483024e949443/eptlsoot-0.0.4-cp39-cp39-win_amd64.whl
+[2023-04-12 14:17:32] INFO root fetch - processPackages [pandapower]: Downloading https://files.pythonhosted.org/packages/ea/89/f9acbe055cc07a18c99f7be74063ae2f239404f6c606b26364a0acd43e12/pandapower-2.8.0.zip
+[2023-04-12 14:17:33] INFO root fetch - processPackages [scipp]: executing diffoscope
+[2023-04-12 14:17:33] INFO root fetch - processPackages [scipp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scipp-23.3.1.tar.gz tmp/scipp-23.3.2.tar.gz --markdown 20230412/s/scipp/23.3.1-23.3.2/diff.md --exclude *.pyd
+[2023-04-12 14:17:33] INFO root fetch - processPackages [eptlsoot]: Downloading https://files.pythonhosted.org/packages/7b/a2/bc52a3d5b94781bd2cec885c83d623249a38d8b579799c044d3d92a93af0/eptlsoot-0.0.5-cp39-cp39-win_amd64.whl
+[2023-04-12 14:17:33] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-04-12 14:17:33] INFO root fetch - processPackages [eptlsoot]: executing diffoscope
+[2023-04-12 14:17:33] INFO root fetch - processPackages [eptlsoot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eptlsoot-0.0.4-cp39-cp39-win_amd64.whl.zip tmp/eptlsoot-0.0.5-cp39-cp39-win_amd64.whl.zip --markdown 20230412/e/eptlsoot/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 14:17:33] INFO root fetch - processPackages [pandapower]: Downloading https://files.pythonhosted.org/packages/24/99/a23ed1e6bbe9dff0482f2f13542c9a4fdfe6277d8f5351adc7767ab2f336/pandapower-2.9.0.zip
+[2023-04-12 14:17:34] INFO root fetch - processPackages [pandapower]: executing diffoscope
+[2023-04-12 14:17:34] INFO root fetch - processPackages [pandapower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandapower-2.8.0.zip tmp/pandapower-2.9.0.zip --markdown 20230412/p/pandapower/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-04-12 14:17:34] INFO root fetch - main [MainThread]: End processing [scipp]: success
+[2023-04-12 14:17:34] INFO root fetch - main [MainThread]: End processing [eptlsoot]: success
+[2023-04-12 14:17:35] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-12 14:17:44] INFO root fetch - main [MainThread]: End processing [pandapower]: success
+[2023-04-12 14:17:44] INFO root fetch - main [MainThread]: Store serial: [17675770]
