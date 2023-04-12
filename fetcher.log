@@ -11715,3 +11715,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 12:16:23] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:16:23] INFO root fetch - main [MainThread]: success
 [2023-04-12 12:16:23] INFO root fetch - main [MainThread]: Store serial: [17674494]
+[2023-04-12 12:21:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674494]
+[2023-04-12 12:21:31] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-04-12 12:21:31] INFO root fetch - processPackages [stewchef]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 12:21:31] INFO root fetch - processPackages [gy-multiprocessing]: New version: [0.2.4.2] Old Version: [0.2.4.1]
+[2023-04-12 12:21:31] INFO root fetch - processPackages [sphinx-autosummary-accessors]: New version: [2023.4.0] Old Version: [2022.4.0]
+[2023-04-12 12:21:31] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 12:21:31] INFO root fetch - processPackages [aimmo]: New version: [v0.1.1-alpha.post.dev9] Old Version: [v0.1.1-alpha.post.dev8]
+[2023-04-12 12:21:31] INFO root fetch - processPackages [stewchef]: Downloading https://files.pythonhosted.org/packages/47/3a/09554e326707ae3a0d5cda6244efa72823ba90ec8ff3df1af0463551dbdb/stewchef-0.1.2.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [gy-multiprocessing]: Downloading https://files.pythonhosted.org/packages/a5/d7/3c3c694361db15c083196532996b51dc0e05072790438659fe590f59ebad/gy_multiprocessing-0.2.4.2.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [sphinx-autosummary-accessors]: Downloading https://files.pythonhosted.org/packages/56/46/1bca68d509654112f8d3f1ef9a3aad71227c0a4525b5d27d3c2bc87c5c4f/sphinx-autosummary-accessors-2022.4.0.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/00/c2/6168e8fecd49aec0013a05dff3470d3c3e2c9f6a33cc96c33f99053178b5/watchtower_browser_testing-0.2.1.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [aimmo]: Downloading https://files.pythonhosted.org/packages/ae/20/64f46e6e224facaa0a512efc2d1dddb4eb0b7c62c45d7cd7ad7c33874d10/aimmo-v0.1.1-alpha.post.dev8.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 12:21:31] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.0.tar.gz tmp/watchtower_browser_testing-0.2.1.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 12:21:31] INFO root fetch - processPackages [gy-multiprocessing]: executing diffoscope
+[2023-04-12 12:21:31] INFO root fetch - processPackages [gy-multiprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy_multiprocessing-0.2.4.1.tar.gz tmp/gy_multiprocessing-0.2.4.2.tar.gz --markdown 20230412/g/gy-multiprocessing/0.2.4.1-0.2.4.2/diff.md --exclude *.pyd
+[2023-04-12 12:21:31] INFO root fetch - processPackages [stewchef]: executing diffoscope
+[2023-04-12 12:21:31] INFO root fetch - processPackages [stewchef]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stewchef-0.1.1.tar.gz tmp/stewchef-0.1.2.tar.gz --markdown 20230412/s/stewchef/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 12:21:31] INFO root fetch - processPackages [sphinx-autosummary-accessors]: Downloading https://files.pythonhosted.org/packages/75/b9/f37b5d3850d535707545d02165a2f34afdb8d51bb54f56d49a0a89a9f499/sphinx-autosummary-accessors-2023.4.0.tar.gz
+[2023-04-12 12:21:31] INFO root fetch - processPackages [aimmo]: Downloading https://files.pythonhosted.org/packages/80/23/14dc12f78e542484cb6d32a416afedf1ee4ea53b87476f141cf6231e7355/aimmo-v0.1.1-alpha.post.dev9.tar.gz
+[2023-04-12 12:21:32] INFO root fetch - processPackages [sphinx-autosummary-accessors]: executing diffoscope
+[2023-04-12 12:21:32] INFO root fetch - processPackages [sphinx-autosummary-accessors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-autosummary-accessors-2022.4.0.tar.gz tmp/sphinx-autosummary-accessors-2023.4.0.tar.gz --markdown 20230412/s/sphinx-autosummary-accessors/2022.4.0-2023.4.0/diff.md --exclude *.pyd
+[2023-04-12 12:21:32] INFO root fetch - processPackages [aimmo]: executing diffoscope
+[2023-04-12 12:21:32] INFO root fetch - processPackages [aimmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aimmo-v0.1.1-alpha.post.dev8.tar.gz tmp/aimmo-v0.1.1-alpha.post.dev9.tar.gz --markdown 20230412/a/aimmo/v0.1.1-alpha.post.dev8-v0.1.1-alpha.post.dev9/diff.md --exclude *.pyd
+[2023-04-12 12:21:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:32] INFO root fetch - processPackages [kuksa-client]: New version: [0.4.0a1] Old Version: [0.3.1]
+[2023-04-12 12:21:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:32] WARNING root fetch - processPackages [llama-inference]: Skipping, unable to determine old version
+[2023-04-12 12:21:32] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:21:32] INFO root fetch - processPackages [customized-table]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 12:21:32] INFO root fetch - processPackages [universal-date-parser]: New version: [0.0.2.1] Old Version: [0.0.2]
+[2023-04-12 12:21:32] INFO root fetch - processPackages [customized-table]: executing diffoscope
+[2023-04-12 12:21:32] INFO root fetch - processPackages [customized-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customized_table-0.1.8.tar.gz tmp/customized_table-0.1.9.tar.gz --markdown 20230412/c/customized-table/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 12:21:33] INFO root fetch - processPackages [kuksa-client]: Downloading https://files.pythonhosted.org/packages/0d/1e/2c3dc326d2bf211ac4baf81958d5156f35435f4d8fd18455b29d2d918d73/kuksa_client-0.3.1.tar.gz
+[2023-04-12 12:21:33] INFO root fetch - processPackages [universal-date-parser]: Downloading https://files.pythonhosted.org/packages/75/67/cba420c0de74272fe65a26723a50aa44b1db31407d9b986fa538c137c13d/universal_date_parser-0.0.2.tar.gz
+[2023-04-12 12:21:33] INFO root fetch - processPackages [kuksa-client]: Downloading https://files.pythonhosted.org/packages/b1/7e/1a9ebdddf961fdbbbdbc5270d7238f041d218b75ef06aae6087eb7a3178d/kuksa_client-0.4.0a1.tar.gz
+[2023-04-12 12:21:33] INFO root fetch - processPackages [universal-date-parser]: Downloading https://files.pythonhosted.org/packages/f8/ac/d1ee26b8a47a127416a6273a16282babfce5258d0c1b1ba975650aa0d38e/universal_date_parser-0.0.2.1.tar.gz
+[2023-04-12 12:21:33] INFO root fetch - processPackages [kuksa-client]: executing diffoscope
+[2023-04-12 12:21:33] INFO root fetch - processPackages [kuksa-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuksa_client-0.3.1.tar.gz tmp/kuksa_client-0.4.0a1.tar.gz --markdown 20230412/k/kuksa-client/0.3.1-0.4.0a1/diff.md --exclude *.pyd
+[2023-04-12 12:21:33] INFO root fetch - processPackages [universal-date-parser]: executing diffoscope
+[2023-04-12 12:21:33] INFO root fetch - processPackages [universal-date-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/universal_date_parser-0.0.2.tar.gz tmp/universal_date_parser-0.0.2.1.tar.gz --markdown 20230412/u/universal-date-parser/0.0.2-0.0.2.1/diff.md --exclude *.pyd
+[2023-04-12 12:21:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:33] INFO root fetch - processPackages [inels-mqtt-new]: New version: [0.2.9a2] Old Version: [0.2.9a1]
+[2023-04-12 12:21:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:33] INFO root fetch - processPackages [honeycomb-opentelemetry]: New version: [0.2.0b0] Old Version: [0.1.2b0]
+[2023-04-12 12:21:33] INFO root fetch - processPackages [inels-mqtt-new]: executing diffoscope
+[2023-04-12 12:21:33] INFO root fetch - processPackages [inels-mqtt-new]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inels-mqtt-new-0.2.9a1.tar.gz tmp/inels-mqtt-new-0.2.9a2.tar.gz --markdown 20230412/i/inels-mqtt-new/0.2.9a1-0.2.9a2/diff.md --exclude *.pyd
+[2023-04-12 12:21:33] INFO root fetch - processPackages [honeycomb-opentelemetry]: Downloading https://files.pythonhosted.org/packages/4e/7b/3f6a4858e01b2a4c831b2e1afbacc105d1c34b1421bef6687e624a5cfdf5/honeycomb_opentelemetry-0.1.2b0.tar.gz
+[2023-04-12 12:21:34] INFO root fetch - processPackages [honeycomb-opentelemetry]: Downloading https://files.pythonhosted.org/packages/12/23/88a5543e63fa341b70faefb7f2821fa80256202131887daeb72880978622/honeycomb_opentelemetry-0.2.0b0.tar.gz
+[2023-04-12 12:21:34] INFO root fetch - processPackages [honeycomb-opentelemetry]: executing diffoscope
+[2023-04-12 12:21:34] INFO root fetch - processPackages [honeycomb-opentelemetry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeycomb_opentelemetry-0.1.2b0.tar.gz tmp/honeycomb_opentelemetry-0.2.0b0.tar.gz --markdown 20230412/h/honeycomb-opentelemetry/0.1.2b0-0.2.0b0/diff.md --exclude *.pyd
+[2023-04-12 12:21:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:34] INFO root fetch - processPackages [risset]: New version: [2.2.2] Old Version: [2.2.1]
+[2023-04-12 12:21:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:34] ERROR root fetch - processPackages [shopee-xr-test-pypi-2]: Unable to get metadata: No such project 'shopee-xr-test-pypi-2'
+[2023-04-12 12:21:34] INFO root fetch - main [MainThread]: error
+[2023-04-12 12:21:34] INFO root fetch - processPackages [risset]: Downloading https://files.pythonhosted.org/packages/30/da/0ffc71b132745f599fc25db444af454d0f01a8ac4abb407f7815ed1c945f/risset-2.2.2.tar.gz
+[2023-04-12 12:21:34] INFO root fetch - processPackages [risset]: executing diffoscope
+[2023-04-12 12:21:34] INFO root fetch - processPackages [risset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/risset-2.2.1.tar.gz tmp/risset-2.2.2.tar.gz --markdown 20230412/r/risset/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2023-04-12 12:21:34] INFO root fetch - processPackages [nonebot-plugin-clock]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-04-12 12:21:34] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/61/57/f66e520b64fc2bfd8eba7d6ccdce86207a64b4dcd46fcdedd189bfd22fa0/nonebot-plugin-clock-0.7.1.tar.gz
+[2023-04-12 12:21:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:35] INFO root fetch - processPackages [nonebot-plugin-clock]: Downloading https://files.pythonhosted.org/packages/05/cb/9d34aca22492efd7266549d73ab83464c6fe637b159c4c29223c71e98d7f/nonebot-plugin-clock-0.7.2.tar.gz
+[2023-04-12 12:21:35] INFO root fetch - processPackages [nonebot-plugin-clock]: executing diffoscope
+[2023-04-12 12:21:35] INFO root fetch - processPackages [nonebot-plugin-clock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-clock-0.7.1.tar.gz tmp/nonebot-plugin-clock-0.7.2.tar.gz --markdown 20230412/n/nonebot-plugin-clock/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-04-12 12:21:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 12:21:36] INFO root fetch - main [MainThread]: Store serial: [17674539]
