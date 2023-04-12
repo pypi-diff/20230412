@@ -4943,3 +4943,30 @@
 [2023-04-12 04:07:08] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:08:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:08:11] INFO root fetch - main [MainThread]: Store serial: [17670303]
+[2023-04-12 04:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670303]
+[2023-04-12 04:13:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 04:13:19] INFO root fetch - processPackages [plhtools]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-12 04:13:19] WARNING root fetch - processPackages [napari-hdf5-netcdf-viewer]: Skipping, unable to determine old version
+[2023-04-12 04:13:19] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:13:19] INFO root fetch - processPackages [qabot]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 04:13:19] INFO root fetch - processPackages [contourplots]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 04:13:19] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.1.62] Old Version: [0.1.61]
+[2023-04-12 04:13:20] WARNING root fetch - processPackages [kinde-python-sdk]: Skipping, unable to determine old version
+[2023-04-12 04:13:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 04:13:20] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/33/34/9e8d6605c2cddb0b583e9b132c1634986b2ba6dd115b89ae9a55784e6ad8/nonebot_plugin_blive_danmaku-0.1.62.tar.gz
+[2023-04-12 04:13:20] INFO root fetch - processPackages [contourplots]: Downloading https://files.pythonhosted.org/packages/c2/77/52561be5a594b574e5d16b55393ce1ea115b1cfb5798cc260d654bbda82f/contourplots-0.1.0.tar.gz
+[2023-04-12 04:13:20] INFO root fetch - processPackages [qabot]: Downloading https://files.pythonhosted.org/packages/0b/bc/ef5e35f0efc977fe4d551a5ecb70842bd7db3cfced8719bfa2724c027653/qabot-0.3.1.tar.gz
+[2023-04-12 04:13:20] INFO root fetch - processPackages [plhtools]: executing diffoscope
+[2023-04-12 04:13:20] INFO root fetch - processPackages [plhtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plhtools-1.1.8.tar.gz tmp/plhtools-1.1.9.tar.gz --markdown 20230412/p/plhtools/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-12 04:13:20] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-12 04:13:20] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.1.61.tar.gz tmp/nonebot_plugin_blive_danmaku-0.1.62.tar.gz --markdown 20230412/n/nonebot-plugin-blive-danmaku/0.1.61-0.1.62/diff.md --exclude *.pyd
+[2023-04-12 04:13:20] INFO root fetch - processPackages [qabot]: executing diffoscope
+[2023-04-12 04:13:20] INFO root fetch - processPackages [qabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qabot-0.3.0.tar.gz tmp/qabot-0.3.1.tar.gz --markdown 20230412/q/qabot/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:13:20] INFO root fetch - processPackages [contourplots]: Downloading https://files.pythonhosted.org/packages/4b/2d/665319dfe57ffab82d2a7013553e36c9781e54f5f4ee0bf6788e2b9b48d8/contourplots-0.2.0.tar.gz
+[2023-04-12 04:13:20] INFO root fetch - processPackages [contourplots]: executing diffoscope
+[2023-04-12 04:13:20] INFO root fetch - processPackages [contourplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contourplots-0.1.0.tar.gz tmp/contourplots-0.2.0.tar.gz --markdown 20230412/c/contourplots/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:13:21] INFO root fetch - main [MainThread]: Store serial: [17670332]
