@@ -2817,3 +2817,60 @@
 [2023-04-12 02:46:43] INFO root fetch - main [MainThread]: success
 [2023-04-12 02:46:43] INFO root fetch - main [MainThread]: success
 [2023-04-12 02:46:43] INFO root fetch - main [MainThread]: Store serial: [17668734]
+[2023-04-12 02:51:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17668734]
+[2023-04-12 02:51:51] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 02:51:51] INFO root fetch - processPackages [stdlibby-py]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 02:51:51] INFO root fetch - processPackages [django-outbox-menu]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bellows]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-04-12 02:51:51] INFO root fetch - processPackages [amplify]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 02:51:51] INFO root fetch - processPackages [stdlibby-py]: Downloading https://files.pythonhosted.org/packages/52/fc/b97bd27c13e0c73a236ca3dcee905adec36e37cdce714c1b5ff4eabdbcf4/stdlibby_py-0.5.9.tar.gz
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230412/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bellows]: Downloading https://files.pythonhosted.org/packages/76/8a/92bc389564609e89b14df7a0f249406d90cdf45036e4dc8239a9f5a37036/bellows-0.6.0.tar.gz
+[2023-04-12 02:51:51] INFO root fetch - processPackages [amplify]: Downloading https://files.pythonhosted.org/packages/a0/df/6dcab0da7ecce5acccb63638c58cbd0414f51c41f06bb2e4305711e50a75/amplify-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 02:51:51] INFO root fetch - processPackages [django-outbox-menu]: Downloading https://files.pythonhosted.org/packages/a4/b5/e927ce22b10a0beef1e06c269bf6eadb92529b619a81ebd58c9491256c5a/django-outbox-menu-1.0.8.tar.gz
+[2023-04-12 02:51:51] INFO root fetch - processPackages [stdlibby-py]: executing diffoscope
+[2023-04-12 02:51:51] INFO root fetch - processPackages [stdlibby-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdlibby_py-0.5.8.tar.gz tmp/stdlibby_py-0.5.9.tar.gz --markdown 20230412/s/stdlibby-py/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 02:51:51] INFO root fetch - processPackages [bellows]: Downloading https://files.pythonhosted.org/packages/2a/f1/22e8f99e4ecdb6677c6965caa375e9f67608b5ec3f506a96a4b70ccc367e/bellows-0.7.0.tar.gz
+[2023-04-12 02:51:52] INFO root fetch - processPackages [bellows]: executing diffoscope
+[2023-04-12 02:51:52] INFO root fetch - processPackages [bellows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellows-0.6.0.tar.gz tmp/bellows-0.7.0.tar.gz --markdown 20230412/b/bellows/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 02:51:52] INFO root fetch - processPackages [django-outbox-menu]: Downloading https://files.pythonhosted.org/packages/12/74/17de0051024c6e36a45ad52e58d199e38092cc14004026d9ecb4d963cfd5/django-outbox-menu-1.0.9.tar.gz
+[2023-04-12 02:51:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:52] INFO root fetch - processPackages [relic-engine]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-12 02:51:52] INFO root fetch - processPackages [relic-engine]: Downloading https://files.pythonhosted.org/packages/e8/51/963079bfacd03e4e9b19bf4b58e17fab4a123b7b00340045d26d1eccb2a1/relic_engine-0.2.5.tar.gz
+[2023-04-12 02:51:52] INFO root fetch - processPackages [django-outbox-menu]: executing diffoscope
+[2023-04-12 02:51:52] INFO root fetch - processPackages [django-outbox-menu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-outbox-menu-1.0.8.tar.gz tmp/django-outbox-menu-1.0.9.tar.gz --markdown 20230412/d/django-outbox-menu/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 02:51:52] INFO root fetch - processPackages [relic-engine]: Downloading https://files.pythonhosted.org/packages/35/cd/2a2931d28b4118f68dda0861f3fef110489f0090485e29e82c271b188490/relic_engine-0.2.6.tar.gz
+[2023-04-12 02:51:52] INFO root fetch - processPackages [relic-engine]: executing diffoscope
+[2023-04-12 02:51:52] INFO root fetch - processPackages [relic-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/relic_engine-0.2.5.tar.gz tmp/relic_engine-0.2.6.tar.gz --markdown 20230412/r/relic-engine/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-12 02:51:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:53] INFO root fetch - processPackages [tts-arranger]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 02:51:53] INFO root fetch - processPackages [tts-arranger]: Downloading https://files.pythonhosted.org/packages/85/89/1222b377defdb01782a362e7e3bf64fa62a7ce5f16b67293a045f3a81d52/tts_arranger-0.0.8.tar.gz
+[2023-04-12 02:51:53] INFO root fetch - processPackages [tts-arranger]: executing diffoscope
+[2023-04-12 02:51:53] INFO root fetch - processPackages [tts-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tts_arranger-0.0.7.tar.gz tmp/tts_arranger-0.0.8.tar.gz --markdown 20230412/t/tts-arranger/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 02:51:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:53] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-12 02:51:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:54] WARNING root fetch - processPackages [libdnf5]: Skipping, unable to determine old version
+[2023-04-12 02:51:54] INFO root fetch - main [MainThread]: error
+[2023-04-12 02:51:54] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-04-12 02:51:54] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230412/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-12 02:51:54] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-12 02:51:54] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: executing diffoscope
+[2023-04-12 02:51:54] INFO root fetch - processPackages [cdk-emrserverless-with-delta-lake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_emrserverless_with_delta_lake-2.0.98.tar.gz tmp/cdk_emrserverless_with_delta_lake-2.0.99.tar.gz --markdown 20230412/c/cdk-emrserverless-with-delta-lake/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-12 02:51:55] INFO root fetch - processPackages [amplify]: Downloading https://files.pythonhosted.org/packages/b5/77/ec43d552310fe8e70efe29311bc43c02b4350302cd72641aa3444dde3c22/amplify-0.9.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 02:51:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:55] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.82]
+[2023-04-12 02:51:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:51:55] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/c6/38/6449a5adc2714dc8e6bede9dc23bec5b95045757ee27528f90a289555259/kfsdutils-0.0.82.tar.gz
+[2023-04-12 02:51:55] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-12 02:51:55] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.82.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230412/k/kfsdutils/0.0.82-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 02:51:56] INFO root fetch - processPackages [amplify]: executing diffoscope
+[2023-04-12 02:51:56] INFO root fetch - processPackages [amplify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amplify-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/amplify-0.9.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/a/amplify/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 02:51:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:52:03] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:52:12] INFO root fetch - main [MainThread]: success
+[2023-04-12 02:54:56] ERROR root fetch - processPackages [amplify]: Timeout during execution of pkgdiff
+[2023-04-12 02:54:56] INFO root fetch - main [MainThread]: error
+[2023-04-12 02:54:56] INFO root fetch - main [MainThread]: Store serial: [17668783]
