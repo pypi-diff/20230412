@@ -22339,3 +22339,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:10:00] INFO root fetch - processPackages [vodex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodex-1.0.8.tar.gz tmp/vodex-1.0.9.tar.gz --markdown 20230412/v/vodex/1.0.8-1.0.9/diff.md --exclude *.pyd
 [2023-04-12 21:10:04] INFO root fetch - main [MainThread]: End processing [vodex]: success
 [2023-04-12 21:10:04] INFO root fetch - main [MainThread]: Store serial: [17680880]
+[2023-04-12 21:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680880]
+[2023-04-12 21:15:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 21:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audalign
+[2023-04-12 21:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prettyqt
+[2023-04-12 21:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polywrap-manifest
+[2023-04-12 21:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-policy
+[2023-04-12 21:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: viso-sdk-python
+[2023-04-12 21:15:12] INFO root fetch - processPackages [pulumi-policy]: New version: [1.6.0a1681325772] Old Version: [1.5.0a1665075566]
+[2023-04-12 21:15:12] INFO root fetch - processPackages [viso-sdk-python]: New version: [0.0.4.dev0] Old Version: [0.0.3]
+[2023-04-12 21:15:12] INFO root fetch - processPackages [audalign]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-12 21:15:12] INFO root fetch - processPackages [polywrap-manifest]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-12 21:15:12] INFO root fetch - processPackages [prettyqt]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-04-12 21:15:12] INFO root fetch - processPackages [pulumi-policy]: Downloading https://files.pythonhosted.org/packages/70/88/876d39314d70fe3d315c8b92cb8e80240330e7b685eb91bea4c0262ecd65/pulumi_policy-1.5.0a1665075566-py2.py3-none-any.whl
+[2023-04-12 21:15:12] INFO root fetch - processPackages [audalign]: Downloading https://files.pythonhosted.org/packages/c3/01/4ecbe7cde46ef04483c72954a399edcc13c463f862ed09c676d4745913ca/audalign-1.2.2.tar.gz
+[2023-04-12 21:15:12] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/1f/98/ff250dff5e4ac6bbb1f77ac8dd66a0f5da4c67838f40d69a06690abf43c1/prettyqt-1.4.2.tar.gz
+[2023-04-12 21:15:12] INFO root fetch - processPackages [viso-sdk-python]: Downloading https://files.pythonhosted.org/packages/1d/4f/12c604a239a8b515ab8506d3352fb27e0d738e61da0b7d2e85e0a6bc3b0f/viso-sdk-python-0.0.4.dev0.tar.gz
+[2023-04-12 21:15:12] INFO root fetch - processPackages [polywrap-manifest]: executing diffoscope
+[2023-04-12 21:15:12] INFO root fetch - processPackages [polywrap-manifest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_manifest-0.1.0a7.tar.gz tmp/polywrap_manifest-0.1.0a8.tar.gz --markdown 20230412/p/polywrap-manifest/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-12 21:15:13] INFO root fetch - processPackages [pulumi-policy]: Downloading https://files.pythonhosted.org/packages/44/00/12ea1f73afedc83a283f2f9bc008022598cb902584dc32f960f45bc818a4/pulumi_policy-1.6.0a1681325772-py2.py3-none-any.whl
+[2023-04-12 21:15:13] INFO root fetch - processPackages [audalign]: Downloading https://files.pythonhosted.org/packages/70/a1/97f238a3dc7eebab376ead6a8ae96a43886b5d19d1cdac01b7f50fcf45da/audalign-1.2.3.tar.gz
+[2023-04-12 21:15:13] INFO root fetch - processPackages [viso-sdk-python]: executing diffoscope
+[2023-04-12 21:15:13] INFO root fetch - processPackages [viso-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viso_sdk_python-0.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/viso-sdk-python-0.0.4.dev0.tar.gz --markdown 20230412/v/viso-sdk-python/0.0.3-0.0.4.dev0/diff.md --exclude *.pyd
+[2023-04-12 21:15:13] INFO root fetch - processPackages [audalign]: executing diffoscope
+[2023-04-12 21:15:13] INFO root fetch - processPackages [audalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audalign-1.2.2.tar.gz tmp/audalign-1.2.3.tar.gz --markdown 20230412/a/audalign/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-12 21:15:13] INFO root fetch - processPackages [pulumi-policy]: executing diffoscope
+[2023-04-12 21:15:13] INFO root fetch - processPackages [pulumi-policy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_policy-1.5.0a1665075566-py2.py3-none-any.whl.zip tmp/pulumi_policy-1.6.0a1681325772-py2.py3-none-any.whl.zip --markdown 20230412/p/pulumi-policy/1.5.0a1665075566-1.6.0a1681325772/diff.md --exclude *.pyd
+[2023-04-12 21:15:13] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-12 21:15:13] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.4.1.tar.gz tmp/prettyqt-1.4.2.tar.gz --markdown 20230412/p/prettyqt/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-04-12 21:15:14] INFO root fetch - processPackages [polywrap-manifest]: Start processing: polywrap-core
+[2023-04-12 21:15:14] INFO root fetch - main [MainThread]: End processing [polywrap-manifest]: success
+[2023-04-12 21:15:14] INFO root fetch - processPackages [polywrap-core]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-04-12 21:15:14] INFO root fetch - processPackages [polywrap-core]: executing diffoscope
+[2023-04-12 21:15:14] INFO root fetch - processPackages [polywrap-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_core-0.1.0a7.tar.gz tmp/polywrap_core-0.1.0a8.tar.gz --markdown 20230412/p/polywrap-core/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-04-12 21:15:14] INFO root fetch - processPackages [pulumi-policy]: Start processing: maisaedu-utilities-prefect
+[2023-04-12 21:15:14] INFO root fetch - main [MainThread]: End processing [pulumi-policy]: success
+[2023-04-12 21:15:14] INFO root fetch - processPackages [maisaedu-utilities-prefect]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 21:15:14] INFO root fetch - processPackages [maisaedu-utilities-prefect]: Downloading https://files.pythonhosted.org/packages/27/aa/a84fbe50d4cd0665bd3f2b32671a030342ad0e5347c62cd84baa19cb1e64/maisaedu-utilities-prefect-1.0.8.tar.gz
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-utilities-prefect]: Downloading https://files.pythonhosted.org/packages/95/7c/dbd9fa092dadcd28e2e350cd4738749237ca8191a62152c690a10b487d1a/maisaedu-utilities-prefect-1.0.9.tar.gz
+[2023-04-12 21:15:15] INFO root fetch - processPackages [audalign]: Start processing: maisaedu-poormans-dms
+[2023-04-12 21:15:15] INFO root fetch - main [MainThread]: End processing [audalign]: success
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-poormans-dms]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 21:15:15] INFO root fetch - processPackages [polywrap-core]: Start processing: pybrainlife
+[2023-04-12 21:15:15] INFO root fetch - main [MainThread]: End processing [polywrap-core]: success
+[2023-04-12 21:15:15] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.94] Old Version: [1.0.93]
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-poormans-dms]: Downloading https://files.pythonhosted.org/packages/51/c8/520652d19cdb586cb001f3e2fd10b49475ec1fcf77f5ebf25ee483d4f069/maisaedu-poormans-dms-1.0.8.tar.gz
+[2023-04-12 21:15:15] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/f1/44/d1e9b1b5e8948d90e21a8a41dc956c25418d3e9cce2a7fbb41f2ea3b3534/pybrainlife-1.0.93.tar.gz
+[2023-04-12 21:15:15] INFO root fetch - processPackages [viso-sdk-python]: Start processing: simple-hierarchical-transformer
+[2023-04-12 21:15:15] INFO root fetch - main [MainThread]: End processing [viso-sdk-python]: success
+[2023-04-12 21:15:15] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 21:15:15] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-12 21:15:15] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230412/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-poormans-dms]: Downloading https://files.pythonhosted.org/packages/7b/dc/9a6d6cd7622f50c7981e2b4362ed76ba8142b4b75f73867b9b409d609cf0/maisaedu-poormans-dms-1.0.9.tar.gz
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-utilities-prefect]: executing diffoscope
+[2023-04-12 21:15:15] INFO root fetch - processPackages [maisaedu-utilities-prefect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-utilities-prefect-1.0.8.tar.gz tmp/maisaedu-utilities-prefect-1.0.9.tar.gz --markdown 20230412/m/maisaedu-utilities-prefect/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:15:16] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/3c/a3/df87111e14661773bc5401fbf02bcd4a8bda41b655a6735e0604cbe88d78/pybrainlife-1.0.94.tar.gz
+[2023-04-12 21:15:16] INFO root fetch - processPackages [maisaedu-poormans-dms]: executing diffoscope
+[2023-04-12 21:15:16] INFO root fetch - processPackages [maisaedu-poormans-dms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maisaedu-poormans-dms-1.0.8.tar.gz tmp/maisaedu-poormans-dms-1.0.9.tar.gz --markdown 20230412/m/maisaedu-poormans-dms/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:15:16] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 21:15:16] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.93.tar.gz tmp/pybrainlife-1.0.94.tar.gz --markdown 20230412/p/pybrainlife/1.0.93-1.0.94/diff.md --exclude *.pyd
+[2023-04-12 21:15:16] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-12 21:15:17] INFO root fetch - main [MainThread]: End processing [maisaedu-utilities-prefect]: success
+[2023-04-12 21:15:17] INFO root fetch - main [MainThread]: End processing [maisaedu-poormans-dms]: success
+[2023-04-12 21:15:17] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 21:15:21] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-12 21:15:21] INFO root fetch - main [MainThread]: Store serial: [17680909]
