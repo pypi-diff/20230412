@@ -4970,3 +4970,67 @@
 [2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:13:21] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:13:21] INFO root fetch - main [MainThread]: Store serial: [17670332]
+[2023-04-12 04:18:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670332]
+[2023-04-12 04:18:28] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 04:18:29] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: New version: [0.1.63] Old Version: [0.1.62]
+[2023-04-12 04:18:29] INFO root fetch - processPackages [pbit]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 04:18:29] INFO root fetch - processPackages [superstore]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 04:18:29] INFO root fetch - processPackages [contourplots]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 04:18:29] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-12 04:18:29] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/3f/f5/c59a2fb029946cdd9bec346651ae4fe4b9c596feb19cde68cb1a3894ed31/pbit-0.2.4.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [superstore]: Downloading https://files.pythonhosted.org/packages/9b/72/48603d1a83ebdc3eb634b0a0342e44ba5c85c33600a6c340c35784a95a32/superstore-0.1.1.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: Downloading https://files.pythonhosted.org/packages/69/c3/5d10d935cc1f1bd3ac1dfb8c1720b11c15297ea54a1c031ef00fb0af1980/nonebot_plugin_blive_danmaku-0.1.63.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [contourplots]: Downloading https://files.pythonhosted.org/packages/d0/9e/0f0984fcd4aeee755ecc5ca4b88b90440fad1117bf4a80062025ef11f998/contourplots-0.2.1.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-12 04:18:29] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230412/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-12 04:18:29] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: executing diffoscope
+[2023-04-12 04:18:29] INFO root fetch - processPackages [nonebot-plugin-blive-danmaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_blive_danmaku-0.1.62.tar.gz tmp/nonebot_plugin_blive_danmaku-0.1.63.tar.gz --markdown 20230412/n/nonebot-plugin-blive-danmaku/0.1.62-0.1.63/diff.md --exclude *.pyd
+[2023-04-12 04:18:29] INFO root fetch - processPackages [contourplots]: executing diffoscope
+[2023-04-12 04:18:29] INFO root fetch - processPackages [contourplots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contourplots-0.2.0.tar.gz tmp/contourplots-0.2.1.tar.gz --markdown 20230412/c/contourplots/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 04:18:29] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/de/b2/804afe0fb98b8738d9dd6722208518b1abe02406291f6f9d46763861a4d5/pbit-0.2.5.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [superstore]: Downloading https://files.pythonhosted.org/packages/76/75/02f4c22f5f4c4c9499bb71a7ee17ba6e66425dae9019a5be8e20f645187f/superstore-0.1.2.tar.gz
+[2023-04-12 04:18:29] INFO root fetch - processPackages [superstore]: executing diffoscope
+[2023-04-12 04:18:29] INFO root fetch - processPackages [superstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superstore-0.1.1.tar.gz tmp/superstore-0.1.2.tar.gz --markdown 20230412/s/superstore/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 04:18:29] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 04:18:29] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.4.tar.gz tmp/pbit-0.2.5.tar.gz --markdown 20230412/p/pbit/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 04:18:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:30] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-12 04:18:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:30] INFO root fetch - processPackages [torchfunction]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 04:18:30] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-12 04:18:30] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.8.tar.gz tmp/so_vits_svc_fork-3.1.9.tar.gz --markdown 20230412/s/so-vits-svc-fork/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-12 04:18:30] INFO root fetch - processPackages [torchfunction]: executing diffoscope
+[2023-04-12 04:18:30] INFO root fetch - processPackages [torchfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchfunction-0.0.8-py3-none-any.whl.zip tmp/torchfunction-0.0.9-py3-none-any.whl.zip --markdown 20230412/t/torchfunction/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 04:18:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:31] INFO root fetch - processPackages [ogr-tiller]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 04:18:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:31] INFO root fetch - processPackages [satdigitalinvoice]: New version: [2.2.0] Old Version: [2.1.5]
+[2023-04-12 04:18:31] INFO root fetch - processPackages [ogr-tiller]: executing diffoscope
+[2023-04-12 04:18:31] INFO root fetch - processPackages [ogr-tiller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ogr_tiller-0.0.8.tar.gz tmp/ogr_tiller-0.0.9.tar.gz --markdown 20230412/o/ogr-tiller/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 04:18:31] INFO root fetch - processPackages [satdigitalinvoice]: Downloading https://files.pythonhosted.org/packages/5c/ef/705b5dd9a096b174daf5c007f3944031a4863833c27eea867cdbe0ff3cb4/satdigitalinvoice-2.2.0.tar.gz
+[2023-04-12 04:18:31] INFO root fetch - processPackages [satdigitalinvoice]: executing diffoscope
+[2023-04-12 04:18:31] INFO root fetch - processPackages [satdigitalinvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satdigitalinvoice-2.1.5.tar.gz tmp/satdigitalinvoice-2.2.0.tar.gz --markdown 20230412/s/satdigitalinvoice/2.1.5-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 04:18:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:31] INFO root fetch - processPackages [replit-bot]: New version: [4.2.4] Old Version: [4.2.3]
+[2023-04-12 04:18:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:32] INFO root fetch - processPackages [bigbucks-port]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 04:18:32] INFO root fetch - processPackages [replit-bot]: Downloading https://files.pythonhosted.org/packages/a3/6f/7b9b6dc3ec739fd431adacb5ae416d50fb2d326705a109f0dce9529a48c8/replit-bot-4.2.4.tar.gz
+[2023-04-12 04:18:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:32] INFO root fetch - processPackages [torchfunction]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 04:18:32] INFO root fetch - processPackages [bigbucks-port]: Downloading https://files.pythonhosted.org/packages/4a/fe/592216b36a0c345590204bafd0f55b994473ca96a6982132cfaae3e6e313/bigbucks_port-0.1.1.tar.gz
+[2023-04-12 04:18:32] INFO root fetch - processPackages [torchfunction]: executing diffoscope
+[2023-04-12 04:18:32] INFO root fetch - processPackages [torchfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchfunction-0.0.8-py3-none-any.whl.zip tmp/torchfunction-0.0.9-py3-none-any.whl.zip --markdown 20230412/t/torchfunction/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 04:18:32] INFO root fetch - processPackages [replit-bot]: executing diffoscope
+[2023-04-12 04:18:32] INFO root fetch - processPackages [replit-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit-bot-4.2.3.tar.gz tmp/replit-bot-4.2.4.tar.gz --markdown 20230412/r/replit-bot/4.2.3-4.2.4/diff.md --exclude *.pyd
+[2023-04-12 04:18:32] INFO root fetch - processPackages [bigbucks-port]: executing diffoscope
+[2023-04-12 04:18:32] INFO root fetch - processPackages [bigbucks-port]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigbucks_port-0.1.0.tar.gz tmp/bigbucks_port-0.1.1.tar.gz --markdown 20230412/b/bigbucks-port/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 04:18:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:32] INFO root fetch - processPackages [pbit]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-04-12 04:18:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:32] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 04:18:32] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.4.tar.gz tmp/pbit-0.2.5.tar.gz --markdown 20230412/p/pbit/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-04-12 04:18:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:18:34] INFO root fetch - main [MainThread]: Store serial: [17670368]
