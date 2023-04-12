@@ -6928,3 +6928,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:56:14] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:56:37] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:56:37] INFO root fetch - main [MainThread]: Store serial: [17671382]
+[2023-04-12 07:01:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671382]
+[2023-04-12 07:01:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-12 07:01:45] INFO root fetch - processPackages [ndl-ocr-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:01:45] INFO root fetch - processPackages [fovus]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 07:01:45] INFO root fetch - processPackages [clipcrop]: New version: [2.0] Old Version: [1.0.9]
+[2023-04-12 07:01:45] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.79]
+[2023-04-12 07:01:45] INFO root fetch - processPackages [rapid-pe]: New version: [0.0.7.dev20230412] Old Version: [0.0.7.dev20230411]
+[2023-04-12 07:01:45] INFO root fetch - processPackages [realnet]: Downloading https://files.pythonhosted.org/packages/b0/26/ff1c1db1ba6cd1b7dd336a67cd1adf0be45706f7b1db63dfb6147c711491/realnet-0.0.79.tar.gz
+[2023-04-12 07:01:45] INFO root fetch - processPackages [clipcrop]: Downloading https://files.pythonhosted.org/packages/00/5a/c755861db65a471ea6375a483c64d4fccd2096522d654971ba98eebd1e80/clipcrop-2.0.tar.gz
+[2023-04-12 07:01:45] INFO root fetch - processPackages [ndl-ocr-tools]: Downloading https://files.pythonhosted.org/packages/79/de/74bb9c8156f83aa135305aecf968aee97b072f80ac1de59a24a0bdacb72d/ndl_ocr_tools-0.0.8.tar.gz
+[2023-04-12 07:01:45] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/ff/e6/e98744608de2fc09e7a8e0651d023248980dfe73ba44d916b70b1ebe26a8/fovus-0.1.0-py3-none-any.whl
+[2023-04-12 07:01:45] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/63/c1/b1364d31e94bff99006e28342d00978c2ba007c261bfe24ba381d7776f16/rapid_pe-0.0.7.dev20230412.tar.gz
+[2023-04-12 07:01:45] INFO root fetch - processPackages [clipcrop]: executing diffoscope
+[2023-04-12 07:01:45] INFO root fetch - processPackages [clipcrop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipcrop-1.0.9.tar.gz tmp/clipcrop-2.0.tar.gz --markdown 20230412/c/clipcrop/1.0.9-2.0/diff.md --exclude *.pyd
+[2023-04-12 07:01:45] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-04-12 07:01:45] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.0.7.dev20230411.tar.gz tmp/rapid_pe-0.0.7.dev20230412.tar.gz --markdown 20230412/r/rapid-pe/0.0.7.dev20230411-0.0.7.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 07:01:45] INFO root fetch - processPackages [realnet]: Downloading https://files.pythonhosted.org/packages/70/58/8d52f15db95e8a768d60ec971af094f9497b1f887803a14861570135d5dc/realnet-0.0.9.tar.gz
+[2023-04-12 07:01:46] INFO root fetch - processPackages [fovus]: Downloading https://files.pythonhosted.org/packages/17/7a/342cdfc0419f98d4185163e37ded53ba3102191fbaec647dad9cfcc13f03/fovus-0.1.1-py3-none-any.whl
+[2023-04-12 07:01:46] INFO root fetch - processPackages [fovus]: executing diffoscope
+[2023-04-12 07:01:46] INFO root fetch - processPackages [fovus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fovus-0.1.0-py3-none-any.whl.zip tmp/fovus-0.1.1-py3-none-any.whl.zip --markdown 20230412/f/fovus/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 07:01:46] INFO root fetch - processPackages [ndl-ocr-tools]: Downloading https://files.pythonhosted.org/packages/99/3b/5f6786270f75527c8d930db20a40e5720927e2409d7ea80dc5fa0f8403d6/ndl_ocr_tools-0.0.9.tar.gz
+[2023-04-12 07:01:46] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-12 07:01:46] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.79.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230412/r/realnet/0.0.79-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:01:46] INFO root fetch - processPackages [ndl-ocr-tools]: executing diffoscope
+[2023-04-12 07:01:46] INFO root fetch - processPackages [ndl-ocr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ndl_ocr_tools-0.0.8.tar.gz tmp/ndl_ocr_tools-0.0.9.tar.gz --markdown 20230412/n/ndl-ocr-tools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:01:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:01:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:01:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:01:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:01:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:01:48] INFO root fetch - main [MainThread]: Store serial: [17671396]
