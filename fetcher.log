@@ -8111,3 +8111,47 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 08:49:33] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:49:39] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:49:39] INFO root fetch - main [MainThread]: Store serial: [17672064]
+[2023-04-12 08:54:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672064]
+[2023-04-12 08:54:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 08:54:46] INFO root fetch - processPackages [stathub]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 08:54:46] INFO root fetch - processPackages [depair]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 08:54:46] INFO root fetch - processPackages [ml-starter]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 08:54:46] INFO root fetch - processPackages [thefittest]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 08:54:46] INFO root fetch - processPackages [pacer-builder]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-04-12 08:54:47] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-04-12 08:54:47] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.8.tar.gz tmp/ml-starter-0.0.9.tar.gz --markdown 20230412/m/ml-starter/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 08:54:47] INFO root fetch - processPackages [thefittest]: Downloading https://files.pythonhosted.org/packages/93/60/3c64ce2e4821f7354f9a3c398be1f99aaf33ccd26fad382b9303f233cfb5/thefittest-0.1.8.tar.gz
+[2023-04-12 08:54:47] INFO root fetch - processPackages [pacer-builder]: Downloading https://files.pythonhosted.org/packages/60/fa/1bb408c594e7747db451861b7370d0b4c0daeb5a29fe166e4cde47518d26/pacer_builder-0.3.0.tar.gz
+[2023-04-12 08:54:47] INFO root fetch - processPackages [depair]: Downloading https://files.pythonhosted.org/packages/9e/89/72c94273b2ab74c4b0c937e174430be829676d30c436316d77a06cd615c9/depair-0.0.1.tar.gz
+[2023-04-12 08:54:47] INFO root fetch - processPackages [stathub]: Downloading https://files.pythonhosted.org/packages/ec/82/5ac5f0adb39e7dde757d1629597f9d37ec729a4c7a1e4203ec6d742b61fb/stathub-0.1.3-py3-none-any.whl
+[2023-04-12 08:54:47] INFO root fetch - processPackages [stathub]: executing diffoscope
+[2023-04-12 08:54:47] INFO root fetch - processPackages [stathub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stathub-0.1.2-py3-none-any.whl.zip tmp/stathub-0.1.3-py3-none-any.whl.zip --markdown 20230412/s/stathub/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 08:54:47] INFO root fetch - processPackages [depair]: Downloading https://files.pythonhosted.org/packages/a3/d1/739451198d2e21581fc5b38b810f61f42c0043dcc52597e381bf8e140ae2/depair-0.0.2.tar.gz
+[2023-04-12 08:54:47] INFO root fetch - processPackages [pacer-builder]: Downloading https://files.pythonhosted.org/packages/54/2d/7573a7d8770515a69907cd5215c207950666cb3fb2cf61be8ce01d1f88ed/pacer_builder-0.3.1.tar.gz
+[2023-04-12 08:54:47] INFO root fetch - processPackages [depair]: executing diffoscope
+[2023-04-12 08:54:47] INFO root fetch - processPackages [depair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/depair-0.0.1.tar.gz tmp/depair-0.0.2.tar.gz --markdown 20230412/d/depair/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 08:54:47] INFO root fetch - processPackages [pacer-builder]: executing diffoscope
+[2023-04-12 08:54:47] INFO root fetch - processPackages [pacer-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pacer_builder-0.3.0.tar.gz tmp/pacer_builder-0.3.1.tar.gz --markdown 20230412/p/pacer-builder/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 08:54:47] INFO root fetch - processPackages [thefittest]: Downloading https://files.pythonhosted.org/packages/71/37/a73212b818fec1a569da8c77c5c19b5978bac4743fd10ba8a161616aaeb9/thefittest-0.1.9.tar.gz
+[2023-04-12 08:54:48] INFO root fetch - processPackages [thefittest]: executing diffoscope
+[2023-04-12 08:54:48] INFO root fetch - processPackages [thefittest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thefittest-0.1.8.tar.gz tmp/thefittest-0.1.9.tar.gz --markdown 20230412/t/thefittest/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 08:54:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:48] INFO root fetch - processPackages [plone.staticresources]: New version: [2.1.0] Old Version: [2.0.9]
+[2023-04-12 08:54:48] INFO root fetch - processPackages [plone.staticresources]: Downloading https://files.pythonhosted.org/packages/0d/6b/605b20243f4723d9adf1a2a24adf05605104ebb654ec77e84e2af005caeb/plone.staticresources-2.0.9.tar.gz
+[2023-04-12 08:54:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:48] INFO root fetch - processPackages [secsgem]: New version: [0.2.0a3] Old Version: [0.2.0a2]
+[2023-04-12 08:54:48] WARNING root fetch - processPackages [plone.staticresources]: Skipping package: exceeds size limit 10629856>=10485760
+[2023-04-12 08:54:48] INFO root fetch - main [MainThread]: error
+[2023-04-12 08:54:48] INFO root fetch - processPackages [djangoldp-needle]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 08:54:48] INFO root fetch - processPackages [secsgem]: Downloading https://files.pythonhosted.org/packages/36/ac/f42f328effddb880f7b89ab1fcad9f54bc55bdf5163fb748ea2b453e8bd2/secsgem-0.2.0a2.tar.gz
+[2023-04-12 08:54:49] INFO root fetch - processPackages [djangoldp-needle]: executing diffoscope
+[2023-04-12 08:54:49] INFO root fetch - processPackages [djangoldp-needle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangoldp_needle-0.1.8.tar.gz tmp/djangoldp_needle-0.1.9.tar.gz --markdown 20230412/d/djangoldp-needle/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 08:54:49] INFO root fetch - processPackages [secsgem]: Downloading https://files.pythonhosted.org/packages/fd/6b/a40708358fbb1d6f64743e6245f6d38ce46aab7ee5e6c0c404f86a1fc4fb/secsgem-0.2.0a3.tar.gz
+[2023-04-12 08:54:49] INFO root fetch - processPackages [secsgem]: executing diffoscope
+[2023-04-12 08:54:49] INFO root fetch - processPackages [secsgem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secsgem-0.2.0a2.tar.gz tmp/secsgem-0.2.0a3.tar.gz --markdown 20230412/s/secsgem/0.2.0a2-0.2.0a3/diff.md --exclude *.pyd
+[2023-04-12 08:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:54:54] INFO root fetch - main [MainThread]: Store serial: [17672136]
