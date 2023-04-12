@@ -22472,3 +22472,64 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:20:35] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
 [2023-04-12 21:20:37] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-04-12 21:20:37] INFO root fetch - main [MainThread]: Store serial: [17680956]
+[2023-04-12 21:25:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680956]
+[2023-04-12 21:25:45] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 21:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polywrap-wasm
+[2023-04-12 21:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dank-mids
+[2023-04-12 21:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superpowered-sdk
+[2023-04-12 21:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smspdudecoder
+[2023-04-12 21:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nanolayer
+[2023-04-12 21:25:45] INFO root fetch - processPackages [smspdudecoder]: New version: [2.1.0] Old Version: [2.0.3]
+[2023-04-12 21:25:45] INFO root fetch - processPackages [dank-mids]: New version: [4.20.9] Old Version: [4.20.8]
+[2023-04-12 21:25:45] INFO root fetch - processPackages [polywrap-wasm]: New version: [0.1.0a7] Old Version: [0.1.0a6]
+[2023-04-12 21:25:45] INFO root fetch - processPackages [superpowered-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 21:25:45] INFO root fetch - processPackages [nanolayer]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 21:25:45] INFO root fetch - processPackages [superpowered-sdk]: executing diffoscope
+[2023-04-12 21:25:45] INFO root fetch - processPackages [superpowered-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superpowered-sdk-0.0.8.tar.gz tmp/superpowered-sdk-0.0.9.tar.gz --markdown 20230412/s/superpowered-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:25:45] INFO root fetch - processPackages [nanolayer]: executing diffoscope
+[2023-04-12 21:25:45] INFO root fetch - processPackages [nanolayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nanolayer-0.4.8-py3-none-any.whl.zip tmp/nanolayer-0.4.9-py3-none-any.whl.zip --markdown 20230412/n/nanolayer/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 21:25:45] INFO root fetch - processPackages [smspdudecoder]: Downloading https://files.pythonhosted.org/packages/cd/c2/d4ff96fcf2dc0eff27a12d6259b03a5b3106903f9017534e703dcbfcadf1/smspdudecoder-2.0.3.tar.gz
+[2023-04-12 21:25:45] INFO root fetch - processPackages [dank-mids]: Downloading https://files.pythonhosted.org/packages/dd/d9/a90cdebb46db5a35fe035f493b14d48e210491b568f4927af7919ab2fdbd/dank_mids-4.20.8.tar.gz
+[2023-04-12 21:25:45] INFO root fetch - processPackages [polywrap-wasm]: executing diffoscope
+[2023-04-12 21:25:45] INFO root fetch - processPackages [polywrap-wasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_wasm-0.1.0a6.tar.gz tmp/polywrap_wasm-0.1.0a7.tar.gz --markdown 20230412/p/polywrap-wasm/0.1.0a6-0.1.0a7/diff.md --exclude *.pyd
+[2023-04-12 21:25:45] INFO root fetch - processPackages [smspdudecoder]: Downloading https://files.pythonhosted.org/packages/be/1f/971c81440d83c28b9c26134cca587ff448ccddaee36444b013aa5895d110/smspdudecoder-2.1.0.tar.gz
+[2023-04-12 21:25:45] INFO root fetch - processPackages [dank-mids]: Downloading https://files.pythonhosted.org/packages/e9/d0/a0c6c8d2d154a0250f47b30968e60098b0d44d3b35571e97a925b9b3984f/dank_mids-4.20.9.tar.gz
+[2023-04-12 21:25:45] INFO root fetch - processPackages [dank-mids]: executing diffoscope
+[2023-04-12 21:25:45] INFO root fetch - processPackages [dank-mids]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dank_mids-4.20.8.tar.gz tmp/dank_mids-4.20.9.tar.gz --markdown 20230412/d/dank-mids/4.20.8-4.20.9/diff.md --exclude *.pyd
+[2023-04-12 21:25:45] INFO root fetch - processPackages [smspdudecoder]: executing diffoscope
+[2023-04-12 21:25:45] INFO root fetch - processPackages [smspdudecoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smspdudecoder-2.0.3.tar.gz tmp/smspdudecoder-2.1.0.tar.gz --markdown 20230412/s/smspdudecoder/2.0.3-2.1.0/diff.md --exclude *.pyd
+[2023-04-12 21:25:46] INFO root fetch - processPackages [superpowered-sdk]: Start processing: mediaify
+[2023-04-12 21:25:46] INFO root fetch - main [MainThread]: End processing [superpowered-sdk]: success
+[2023-04-12 21:25:46] INFO root fetch - processPackages [mediaify]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-04-12 21:25:46] INFO root fetch - processPackages [nanolayer]: Start processing: strictpy
+[2023-04-12 21:25:46] INFO root fetch - main [MainThread]: End processing [nanolayer]: success
+[2023-04-12 21:25:46] WARNING root fetch - processPackages [strictpy]: Skipping, unable to determine old version
+[2023-04-12 21:25:46] INFO root fetch - processPackages [strictpy]: Start processing: dvc
+[2023-04-12 21:25:46] INFO root fetch - main [MainThread]: End processing [strictpy] error
+[2023-04-12 21:25:46] INFO root fetch - processPackages [dvc]: New version: [2.9.5] Old Version: [2.9.4]
+[2023-04-12 21:25:46] INFO root fetch - processPackages [mediaify]: Downloading https://files.pythonhosted.org/packages/13/c7/4a40a36689c916f21217ee6ee8aa16b6ff0c56dd459366ececfd90fe99ff/mediaify-1.2.0.tar.gz
+[2023-04-12 21:25:46] INFO root fetch - processPackages [mediaify]: executing diffoscope
+[2023-04-12 21:25:46] INFO root fetch - processPackages [mediaify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediaify-1.1.1.tar.gz tmp/mediaify-1.2.0.tar.gz --markdown 20230412/m/mediaify/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 21:25:47] INFO root fetch - processPackages [dank-mids]: Start processing: pybrainlife
+[2023-04-12 21:25:47] INFO root fetch - main [MainThread]: End processing [dank-mids]: success
+[2023-04-12 21:25:47] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.95] Old Version: [1.0.94]
+[2023-04-12 21:25:47] INFO root fetch - processPackages [polywrap-wasm]: Start processing: xia-user
+[2023-04-12 21:25:47] INFO root fetch - main [MainThread]: End processing [polywrap-wasm]: success
+[2023-04-12 21:25:47] INFO root fetch - processPackages [dvc]: Downloading https://files.pythonhosted.org/packages/25/dd/dcd527ab77f9227220d051e2e27a76a29aecdf262212e46a79a383308090/dvc-2.9.4.tar.gz
+[2023-04-12 21:25:47] INFO root fetch - main [MainThread]: End processing [smspdudecoder]: success
+[2023-04-12 21:25:47] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/fd/f2/c7f22dc9342150b4506cf22d531dac88b82b2db015e01ee2806bb0f2c455/pybrainlife-1.0.95.tar.gz
+[2023-04-12 21:25:47] INFO root fetch - processPackages [xia-user]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 21:25:47] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 21:25:47] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.94.tar.gz tmp/pybrainlife-1.0.95.tar.gz --markdown 20230412/p/pybrainlife/1.0.94-1.0.95/diff.md --exclude *.pyd
+[2023-04-12 21:25:47] INFO root fetch - processPackages [xia-user]: Downloading https://files.pythonhosted.org/packages/a9/95/ad9396049b5ef12db8c1bdf17f2d99db7b747818ffb6846c8e4dd3f69b6f/xia_user-0.1.8-cp39-none-win_amd64.whl
+[2023-04-12 21:25:47] INFO root fetch - processPackages [dvc]: Downloading https://files.pythonhosted.org/packages/e9/46/33ac44445fd6974fe6b52f01ab4794c5b5dda927cfb520ac64382e629905/dvc-2.9.5.tar.gz
+[2023-04-12 21:25:47] INFO root fetch - main [MainThread]: End processing [mediaify]: success
+[2023-04-12 21:25:48] INFO root fetch - processPackages [dvc]: executing diffoscope
+[2023-04-12 21:25:48] INFO root fetch - processPackages [dvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-2.9.4.tar.gz tmp/dvc-2.9.5.tar.gz --markdown 20230412/d/dvc/2.9.4-2.9.5/diff.md --exclude *.pyd
+[2023-04-12 21:25:48] INFO root fetch - processPackages [xia-user]: Downloading https://files.pythonhosted.org/packages/cb/5c/0ce1704a0b9091679ff36c5e64e86be3aff60524a47e7c66389d9bd7aa35/xia_user-0.1.9-cp39-none-win_amd64.whl
+[2023-04-12 21:25:48] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 21:25:48] INFO root fetch - processPackages [xia-user]: executing diffoscope
+[2023-04-12 21:25:48] INFO root fetch - processPackages [xia-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_user-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_user-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230412/x/xia-user/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 21:25:49] INFO root fetch - main [MainThread]: End processing [xia-user]: success
+[2023-04-12 21:25:53] INFO root fetch - main [MainThread]: End processing [dvc]: success
+[2023-04-12 21:25:53] INFO root fetch - main [MainThread]: Store serial: [17680984]
