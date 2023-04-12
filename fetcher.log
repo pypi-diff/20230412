@@ -4603,3 +4603,53 @@
 [2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:30:32] INFO root fetch - main [MainThread]: Store serial: [17670067]
+[2023-04-12 03:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670067]
+[2023-04-12 03:35:40] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 03:35:40] INFO root fetch - processPackages [alt-pytest-asyncio]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-12 03:35:40] WARNING root fetch - processPackages [auto-vicuna-plugins]: Skipping, unable to determine old version
+[2023-04-12 03:35:40] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:35:40] INFO root fetch - processPackages [torchfunction]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230412/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230412/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-04-12 03:35:40] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230412/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:35:40] INFO root fetch - processPackages [alt-pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/66/94/09943f3fe5993a53ebeab8035bc5f2c650243d318d7aa10ebb11cb839c3d/alt_pytest_asyncio-0.6.0.tar.gz
+[2023-04-12 03:35:40] INFO root fetch - processPackages [torchfunction]: Downloading https://files.pythonhosted.org/packages/b5/b3/3f3e4b50c929f618b0ed1fd98da2b8acf67142302d1dcec5c60e3bf8856d/torchfunction-0.0.8-py3-none-any.whl
+[2023-04-12 03:35:41] INFO root fetch - processPackages [alt-pytest-asyncio]: Downloading https://files.pythonhosted.org/packages/64/ab/bb62115a63363ca06b371a86cc98637be6b86a9c53e1d5ad4d5c79c54a7f/alt_pytest_asyncio-0.7.0.tar.gz
+[2023-04-12 03:35:41] INFO root fetch - processPackages [alt-pytest-asyncio]: executing diffoscope
+[2023-04-12 03:35:41] INFO root fetch - processPackages [alt-pytest-asyncio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alt_pytest_asyncio-0.6.0.tar.gz tmp/alt_pytest_asyncio-0.7.0.tar.gz --markdown 20230412/a/alt-pytest-asyncio/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 03:35:41] INFO root fetch - processPackages [torchfunction]: Downloading https://files.pythonhosted.org/packages/3f/d4/5051f6556eff0a10ac54966db5c2fa22655608084db6a66f2c8267031c10/torchfunction-0.0.9-py3-none-any.whl
+[2023-04-12 03:35:41] INFO root fetch - processPackages [torchfunction]: executing diffoscope
+[2023-04-12 03:35:41] INFO root fetch - processPackages [torchfunction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchfunction-0.0.8-py3-none-any.whl.zip tmp/torchfunction-0.0.9-py3-none-any.whl.zip --markdown 20230412/t/torchfunction/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:35:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:41] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:35:41] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-04-12 03:35:41] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230412/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:35:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:42] INFO root fetch - processPackages [onediff]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-12 03:35:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:42] INFO root fetch - processPackages [neon-skill-user-settings]: New version: [0.4.2a2] Old Version: [0.4.2a1]
+[2023-04-12 03:35:42] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/f6/24/813f7f266207d854fd999df7cb45e8feb4297bde4a06f6604d344dae6935/onediff-0.7.0-py3-none-any.whl
+[2023-04-12 03:35:42] INFO root fetch - processPackages [neon-skill-user-settings]: Downloading https://files.pythonhosted.org/packages/81/c7/d99bf7e32c2cf306160c7f7c362733255841adefe632d3ba95b80a05da65/neon_skill_user_settings-0.4.2a2-py3-none-any.whl
+[2023-04-12 03:35:42] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/b5/b9/374ebf1306993c83fd9b2b7bc584983456da7a4dda0cd79e923e85476450/onediff-0.8.0-py3-none-any.whl
+[2023-04-12 03:35:42] INFO root fetch - processPackages [neon-skill-user-settings]: executing diffoscope
+[2023-04-12 03:35:42] INFO root fetch - processPackages [neon-skill-user-settings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_user_settings-0.4.2a1-py3-none-any.whl.zip tmp/neon_skill_user_settings-0.4.2a2-py3-none-any.whl.zip --markdown 20230412/n/neon-skill-user-settings/0.4.2a1-0.4.2a2/diff.md --exclude *.pyd
+[2023-04-12 03:35:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:42] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:42] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2023-04-12 03:35:42] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-0.7.0-py3-none-any.whl.zip tmp/onediff-0.8.0-py3-none-any.whl.zip --markdown 20230412/o/onediff/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-12 03:35:42] INFO root fetch - processPackages [eric-chen-forward]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 03:35:42] INFO root fetch - processPackages [eric-chen-forward]: Downloading https://files.pythonhosted.org/packages/8f/0f/ef2c98761d144f747512e6989f7926ed39f0877abe3c3f3fb3c1fe19ae84/eric_chen_forward-0.0.5.tar.gz
+[2023-04-12 03:35:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:43] INFO root fetch - processPackages [eric-chen-forward]: Downloading https://files.pythonhosted.org/packages/62/42/e2f8aa5f6db79f5ec79837702236594ecc75be579ab5cfa63384f03d44cd/eric_chen_forward-0.0.6.tar.gz
+[2023-04-12 03:35:43] INFO root fetch - processPackages [eric-chen-forward]: executing diffoscope
+[2023-04-12 03:35:43] INFO root fetch - processPackages [eric-chen-forward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eric_chen_forward-0.0.5.tar.gz tmp/eric_chen_forward-0.0.6.tar.gz --markdown 20230412/e/eric-chen-forward/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 03:35:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:35:48] INFO root fetch - main [MainThread]: Store serial: [17670096]
