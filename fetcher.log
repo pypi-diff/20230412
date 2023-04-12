@@ -20270,3 +20270,75 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:55:35] INFO root fetch - main [MainThread]: End processing [pyatlan]: success
 [2023-04-12 18:55:48] INFO root fetch - main [MainThread]: End processing [pensando-dss]: success
 [2023-04-12 18:55:48] INFO root fetch - main [MainThread]: Store serial: [17679546]
+[2023-04-12 19:00:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679546]
+[2023-04-12 19:00:56] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyams-security-views
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MLapp1
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-utils
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: web3-checksumm
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyjamas-rfglab
+[2023-04-12 19:00:56] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:00:56] INFO root fetch - processPackages [pyjamas-rfglab]: New version: [2023.4.0] Old Version: [2023.3.1]
+[2023-04-12 19:00:56] WARNING root fetch - processPackages [web3-checksumm]: Skipping, unable to determine old version
+[2023-04-12 19:00:56] INFO root fetch - processPackages [web3-checksumm]: Start processing: mozlib
+[2023-04-12 19:00:56] INFO root fetch - main [MainThread]: End processing [web3-checksumm] error
+[2023-04-12 19:00:56] INFO root fetch - processPackages [pyams-security-views]: New version: [1.8.5] Old Version: [1.8.4]
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ovos-utils]: New version: [0.0.9a1] Old Version: [0.0.9]
+[2023-04-12 19:00:56] WARNING root fetch - processPackages [mozlib]: Skipping, unable to determine old version
+[2023-04-12 19:00:56] INFO root fetch - processPackages [mozlib]: Start processing: obeenya
+[2023-04-12 19:00:56] INFO root fetch - main [MainThread]: End processing [mozlib] error
+[2023-04-12 19:00:56] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 19:00:56] INFO root fetch - processPackages [obeenya]: Start processing: rgear
+[2023-04-12 19:00:56] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 19:00:56] INFO root fetch - processPackages [rgear]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 19:00:56] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:00:56] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ovos-utils]: executing diffoscope
+[2023-04-12 19:00:56] INFO root fetch - processPackages [ovos-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_utils-0.0.9.tar.gz tmp/ovos_utils-0.0.9a1.tar.gz --markdown 20230412/o/ovos-utils/0.0.9-0.0.9a1/diff.md --exclude *.pyd
+[2023-04-12 19:00:56] INFO root fetch - processPackages [pyams-security-views]: Downloading https://files.pythonhosted.org/packages/8f/00/36e9a008d80006245f7fed711528511575a6f72eeb087424875993980a5f/pyams_security_views-1.8.4.tar.gz
+[2023-04-12 19:00:56] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/1e/6f/827c40ae81c237c0d84bb40a274973f62f45c88781641d1a4ba380c764fe/pyjamas_rfglab-2023.3.1-py3-none-any.whl
+[2023-04-12 19:00:57] INFO root fetch - processPackages [rgear]: Downloading https://files.pythonhosted.org/packages/03/d0/b89cda84031c6b8df939421b226771d66e0dfef57e9ea544a34e88a6854f/rgear-0.1.0.tar.gz
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyams-security-views]: Downloading https://files.pythonhosted.org/packages/89/14/7b2bd854b89b01ba39106ffb0f45bdd68b7621ea799534bab1aa1d140466/pyams_security_views-1.8.5.tar.gz
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyjamas-rfglab]: Downloading https://files.pythonhosted.org/packages/79/56/0c5df4c6af68e68bcf4d5f89d70c66dec453b58357f2478b5900ad8cfca9/pyjamas_rfglab-2023.4.0-py3-none-any.whl
+[2023-04-12 19:00:57] INFO root fetch - processPackages [rgear]: Downloading https://files.pythonhosted.org/packages/0c/52/4479dd6d05b0b3923d40cc68917df9fdbc2bd1d3783695db4e612fc4eb20/rgear-0.2.0.tar.gz
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyams-security-views]: executing diffoscope
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyams-security-views]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyams_security_views-1.8.4.tar.gz tmp/pyams_security_views-1.8.5.tar.gz --markdown 20230412/p/pyams-security-views/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyjamas-rfglab]: executing diffoscope
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyjamas-rfglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjamas_rfglab-2023.3.1-py3-none-any.whl.zip tmp/pyjamas_rfglab-2023.4.0-py3-none-any.whl.zip --markdown 20230412/p/pyjamas-rfglab/2023.3.1-2023.4.0/diff.md --exclude *.pyd
+[2023-04-12 19:00:57] INFO root fetch - processPackages [rgear]: executing diffoscope
+[2023-04-12 19:00:57] INFO root fetch - processPackages [rgear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rgear-0.1.0.tar.gz tmp/rgear-0.2.0.tar.gz --markdown 20230412/r/rgear/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:00:57] INFO root fetch - processPackages [MLapp1]: Start processing: pyobfadvance
+[2023-04-12 19:00:57] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:00:57] INFO root fetch - processPackages [pyobfadvance]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 19:00:58] INFO root fetch - processPackages [pyobfadvance]: Downloading https://files.pythonhosted.org/packages/11/33/5272ca5c9db0c245f2758c4adea541302ddf6da9e0e3cba2650d156cb8d5/pyobfadvance-1.0.0.tar.gz
+[2023-04-12 19:00:58] INFO root fetch - processPackages [ovos-utils]: Start processing: mlflow-watsonml
+[2023-04-12 19:00:58] INFO root fetch - main [MainThread]: End processing [ovos-utils]: success
+[2023-04-12 19:00:58] INFO root fetch - processPackages [mlflow-watsonml]: New version: [0.3.2] Old Version: [0.2.3]
+[2023-04-12 19:00:58] INFO root fetch - processPackages [mlflow-watsonml]: Downloading https://files.pythonhosted.org/packages/fa/4d/050005471baef054a1eee214f505fd4ae1329f71eccc050890ea4d2b36f3/mlflow-watsonml-0.2.3.tar.gz
+[2023-04-12 19:00:58] INFO root fetch - processPackages [pyobfadvance]: Downloading https://files.pythonhosted.org/packages/59/6f/5d029fe1f267d67afc678567d44050d16d6a511e6ec3edf8aa9c27d9a4fd/pyobfadvance-1.0.1.tar.gz
+[2023-04-12 19:00:58] INFO root fetch - processPackages [rgear]: Start processing: prettyqt
+[2023-04-12 19:00:58] INFO root fetch - main [MainThread]: End processing [rgear]: success
+[2023-04-12 19:00:58] INFO root fetch - processPackages [prettyqt]: New version: [1.4.1] Old Version: [1.3.0]
+[2023-04-12 19:00:58] INFO root fetch - processPackages [pyams-security-views]: Start processing: odoo14-addon-l10n-br-product-contract
+[2023-04-12 19:00:58] INFO root fetch - processPackages [pyobfadvance]: executing diffoscope
+[2023-04-12 19:00:58] INFO root fetch - main [MainThread]: End processing [pyams-security-views]: success
+[2023-04-12 19:00:58] INFO root fetch - processPackages [pyobfadvance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobfadvance-1.0.0.tar.gz tmp/pyobfadvance-1.0.1.tar.gz --markdown 20230412/p/pyobfadvance/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 19:00:58] WARNING root fetch - processPackages [odoo14-addon-l10n-br-product-contract]: Skipping, unable to determine old version
+[2023-04-12 19:00:58] INFO root fetch - processPackages [odoo14-addon-l10n-br-product-contract]: Start processing: dragonfly-energy
+[2023-04-12 19:00:58] INFO root fetch - processPackages [mlflow-watsonml]: Downloading https://files.pythonhosted.org/packages/10/c4/e9cbc1159581b8052e0479754afa3eef1fa27a09f6bf6d4bbb7651d4b565/mlflow-watsonml-0.3.2.tar.gz
+[2023-04-12 19:00:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-product-contract] error
+[2023-04-12 19:00:58] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/a8/22/8ed85ffdb3b66066e35424bf8452c0b839c38d059d9941fc5c8b151052d6/prettyqt-1.3.0.tar.gz
+[2023-04-12 19:00:58] INFO root fetch - processPackages [mlflow-watsonml]: executing diffoscope
+[2023-04-12 19:00:58] INFO root fetch - processPackages [mlflow-watsonml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow-watsonml-0.2.3.tar.gz tmp/mlflow-watsonml-0.3.2.tar.gz --markdown 20230412/m/mlflow-watsonml/0.2.3-0.3.2/diff.md --exclude *.pyd
+[2023-04-12 19:00:58] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-12 19:00:59] INFO root fetch - main [MainThread]: End processing [pyjamas-rfglab]: success
+[2023-04-12 19:00:59] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2023-04-12 19:00:59] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20230412/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-12 19:00:59] INFO root fetch - processPackages [prettyqt]: Downloading https://files.pythonhosted.org/packages/f3/ee/bf70e7012bc7c513075ac8e3addd2934388a78e446e6eb8b07b36088fb78/prettyqt-1.4.1.tar.gz
+[2023-04-12 19:00:59] INFO root fetch - main [MainThread]: End processing [pyobfadvance]: success
+[2023-04-12 19:00:59] INFO root fetch - main [MainThread]: End processing [mlflow-watsonml]: success
+[2023-04-12 19:01:00] INFO root fetch - processPackages [prettyqt]: executing diffoscope
+[2023-04-12 19:01:00] INFO root fetch - processPackages [prettyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyqt-1.3.0.tar.gz tmp/prettyqt-1.4.1.tar.gz --markdown 20230412/p/prettyqt/1.3.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-12 19:01:00] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2023-04-12 19:01:08] INFO root fetch - main [MainThread]: End processing [prettyqt]: success
+[2023-04-12 19:01:08] INFO root fetch - main [MainThread]: Store serial: [17679598]
