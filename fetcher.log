@@ -14992,3 +14992,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:00:23] INFO root fetch - main [MainThread]: End processing [microllama]: success
 [2023-04-12 15:00:24] INFO root fetch - main [MainThread]: End processing [cdktf]: success
 [2023-04-12 15:00:24] INFO root fetch - main [MainThread]: Store serial: [17676337]
+[2023-04-12 15:05:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676337]
+[2023-04-12 15:05:31] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: property-lister
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nucliadb-contributor-assets
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythonSCHED
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: codecov
+[2023-04-12 15:05:31] WARNING root fetch - processPackages [codecov]: Skipping, unable to determine old version
+[2023-04-12 15:05:31] INFO root fetch - processPackages [codecov]: Start processing: ImaginaryInfo
+[2023-04-12 15:05:31] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post701] Old Version: [0.0.1]
+[2023-04-12 15:05:31] INFO root fetch - main [MainThread]: End processing [codecov] error
+[2023-04-12 15:05:31] WARNING root fetch - processPackages [property-lister]: Skipping, unable to determine old version
+[2023-04-12 15:05:31] INFO root fetch - processPackages [property-lister]: Start processing: nso-oc
+[2023-04-12 15:05:31] INFO root fetch - main [MainThread]: End processing [property-lister] error
+[2023-04-12 15:05:31] INFO root fetch - processPackages [pythonSCHED]: New version: [1.9.0] Old Version: [1.8.2]
+[2023-04-12 15:05:31] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:05:31] INFO root fetch - processPackages [nso-oc]: New version: [2.43.0] Old Version: [2.42.0]
+[2023-04-12 15:05:31] INFO root fetch - processPackages [ImaginaryInfo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 15:05:32] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-04-12 15:05:32] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230412/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/bd/80/a298c826c69e1bb82b496f8e9244423ae8951ebfc2b6958c4b18451dfb66/nucliadb_contributor_assets-0.0.1-py3-none-any.whl
+[2023-04-12 15:05:32] INFO root fetch - processPackages [pythonSCHED]: Downloading https://files.pythonhosted.org/packages/25/b6/6a87eda00b67735d0c12cf1b2e794b4c6e6771e790f960a0c510101c0f34/pythonSCHED-1.8.2.tar.gz
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/55/74/bc1db2b33aefa02c1ce4cd226bbfa4bc1f6b2d5b8489ece551d926caeab9/nso-oc-2.42.0.tar.gz
+[2023-04-12 15:05:32] INFO root fetch - processPackages [ImaginaryInfo]: Downloading https://files.pythonhosted.org/packages/0f/56/d9c6d7982c3766c8639bc9515a2f155976325e7f5b11eda51f791c9cf9c4/ImaginaryInfo-0.0.1.tar.gz
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/54/26/f693d40cb9d7355be2633289eee521520324959bd5e7a97c41190d27e2bf/nucliadb_contributor_assets-1.0.0.post701-py3-none-any.whl
+[2023-04-12 15:05:32] INFO root fetch - processPackages [ImaginaryInfo]: Downloading https://files.pythonhosted.org/packages/dd/85/bad27783b6ce4055de3fadc68ae479bd71406a7a2c4a1af107bb7209783e/ImaginaryInfo-0.0.2.tar.gz
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nso-oc]: Downloading https://files.pythonhosted.org/packages/66/7c/d308baf90ad739539df02a01a3a42f15925241f4248f5f15d9aef9cd7fc1/nso-oc-2.43.0.tar.gz
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-0.0.1-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post701-py3-none-any.whl.zip --markdown 20230412/n/nucliadb-contributor-assets/0.0.1-1.0.0.post701/diff.md --exclude *.pyd
+[2023-04-12 15:05:32] INFO root fetch - processPackages [ImaginaryInfo]: executing diffoscope
+[2023-04-12 15:05:32] INFO root fetch - processPackages [ImaginaryInfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImaginaryInfo-0.0.1.tar.gz tmp/ImaginaryInfo-0.0.2.tar.gz --markdown 20230412/I/ImaginaryInfo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nso-oc]: executing diffoscope
+[2023-04-12 15:05:32] INFO root fetch - processPackages [nso-oc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nso-oc-2.42.0.tar.gz tmp/nso-oc-2.43.0.tar.gz --markdown 20230412/n/nso-oc/2.42.0-2.43.0/diff.md --exclude *.pyd
+[2023-04-12 15:05:33] INFO root fetch - processPackages [pythonSCHED]: Downloading https://files.pythonhosted.org/packages/00/05/0b00038420bf1e143dff877685143274d4c6702818a3077b6c706e5878b0/pythonSCHED-1.9.0.tar.gz
+[2023-04-12 15:05:33] INFO root fetch - processPackages [nucliadb-contributor-assets]: Start processing: pychi
+[2023-04-12 15:05:33] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-04-12 15:05:33] INFO root fetch - processPackages [pychi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 15:05:33] INFO root fetch - processPackages [ImaginaryInfo]: Start processing: ango
+[2023-04-12 15:05:33] INFO root fetch - main [MainThread]: End processing [ImaginaryInfo]: success
+[2023-04-12 15:05:33] INFO root fetch - processPackages [ango]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 15:05:34] INFO root fetch - processPackages [pychi]: executing diffoscope
+[2023-04-12 15:05:34] INFO root fetch - processPackages [pychi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychi-0.0.8.tar.gz tmp/pychi-0.0.9.tar.gz --markdown 20230412/p/pychi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:05:34] INFO root fetch - processPackages [ango]: Downloading https://files.pythonhosted.org/packages/26/d3/32b24000feb7fea379fa5510dee2d1ccb5267db061faee45983f7dc1e797/ango-0.1.8-py3-none-any.whl
+[2023-04-12 15:05:34] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Start processing: saagieapi
+[2023-04-12 15:05:34] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-04-12 15:05:34] INFO root fetch - processPackages [pythonSCHED]: executing diffoscope
+[2023-04-12 15:05:34] INFO root fetch - processPackages [pythonSCHED]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonSCHED-1.8.2.tar.gz tmp/pythonSCHED-1.9.0.tar.gz --markdown 20230412/p/pythonSCHED/1.8.2-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 15:05:34] INFO root fetch - processPackages [saagieapi]: New version: [2.4.0] Old Version: [2.3.0]
+[2023-04-12 15:05:34] INFO root fetch - processPackages [nso-oc]: Start processing: ImtiazGermain
+[2023-04-12 15:05:34] INFO root fetch - main [MainThread]: End processing [nso-oc]: success
+[2023-04-12 15:05:34] INFO root fetch - processPackages [ImtiazGermain]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 15:05:34] INFO root fetch - processPackages [ango]: Downloading https://files.pythonhosted.org/packages/43/ab/2ca380fec6d2e9fd916d711785012d2df94fb7379d7a6c6b0f7b1c1c7f73/ango-0.1.9-py3-none-any.whl
+[2023-04-12 15:05:34] INFO root fetch - processPackages [saagieapi]: Downloading https://files.pythonhosted.org/packages/83/e2/4828242f25103cae5efc3b77536dd15ab6315d9debf9f81ec62038a72c00/saagieapi-2.3.0.tar.gz
+[2023-04-12 15:05:34] INFO root fetch - processPackages [ImtiazGermain]: Downloading https://files.pythonhosted.org/packages/52/6a/33d417683c137497b5368df651a216806042fda9456a13220d9547c45e24/ImtiazGermain-0.1.1-py3-none-any.whl
+[2023-04-12 15:05:35] INFO root fetch - processPackages [saagieapi]: Downloading https://files.pythonhosted.org/packages/5f/18/9c8072d1153cec27fc5b087be3f116b5c7c223f44ea7cae57b89a41bca16/saagieapi-2.4.0.tar.gz
+[2023-04-12 15:05:35] INFO root fetch - processPackages [ango]: executing diffoscope
+[2023-04-12 15:05:35] INFO root fetch - processPackages [ango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ango-0.1.8-py3-none-any.whl.zip tmp/ango-0.1.9-py3-none-any.whl.zip --markdown 20230412/a/ango/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 15:05:35] INFO root fetch - processPackages [ImtiazGermain]: Downloading https://files.pythonhosted.org/packages/0c/56/ebdeadecb2ebba80eaf50dad91d3abcde40e541bb1712c0d014f4f72970b/ImtiazGermain-0.1.2.tar.gz
+[2023-04-12 15:05:35] INFO root fetch - processPackages [saagieapi]: executing diffoscope
+[2023-04-12 15:05:35] INFO root fetch - processPackages [saagieapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saagieapi-2.3.0.tar.gz tmp/saagieapi-2.4.0.tar.gz --markdown 20230412/s/saagieapi/2.3.0-2.4.0/diff.md --exclude *.pyd
+[2023-04-12 15:05:35] INFO root fetch - processPackages [ImtiazGermain]: executing diffoscope
+[2023-04-12 15:05:35] INFO root fetch - processPackages [ImtiazGermain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ImtiazGermain-0.1.1-py3-none-any.whl.zip tmp/ImtiazGermain-0.1.2.tar.gz --markdown 20230412/I/ImtiazGermain/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 15:05:35] INFO root fetch - processPackages [pychi]: Start processing: dataroid
+[2023-04-12 15:05:35] INFO root fetch - main [MainThread]: End processing [pychi]: success
+[2023-04-12 15:05:35] WARNING root fetch - processPackages [dataroid]: Skipping, unable to determine old version
+[2023-04-12 15:05:35] INFO root fetch - processPackages [dataroid]: Start processing: nbdev-stdlib
+[2023-04-12 15:05:35] INFO root fetch - main [MainThread]: End processing [dataroid] error
+[2023-04-12 15:05:35] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 15:05:36] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-12 15:05:36] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230412/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 15:05:36] INFO root fetch - processPackages [ango]: Start processing: hmd-cli-repo
+[2023-04-12 15:05:36] INFO root fetch - main [MainThread]: End processing [ango]: success
+[2023-04-12 15:05:36] INFO root fetch - processPackages [hmd-cli-repo]: New version: [0.2.95] Old Version: [0.2.94]
+[2023-04-12 15:05:36] INFO root fetch - processPackages [hmd-cli-repo]: Downloading https://files.pythonhosted.org/packages/f7/a6/b699d24482cd3f09957997d06950ee23605330c16be9094e7e331c61cd2f/hmd_cli_repo-0.2.94-py3-none-any.whl
+[2023-04-12 15:05:36] INFO root fetch - processPackages [ImtiazGermain]: Start processing: imagemangler
+[2023-04-12 15:05:36] INFO root fetch - main [MainThread]: End processing [ImtiazGermain]: success
+[2023-04-12 15:05:36] INFO root fetch - processPackages [imagemangler]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 15:05:36] INFO root fetch - processPackages [saagieapi]: Start processing: origen-ai-ecl
+[2023-04-12 15:05:36] INFO root fetch - main [MainThread]: End processing [saagieapi]: success
+[2023-04-12 15:05:36] INFO root fetch - processPackages [origen-ai-ecl]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 15:05:36] INFO root fetch - processPackages [imagemangler]: Downloading https://files.pythonhosted.org/packages/70/12/4c5c1160cb098f194a190d437dfb771a3585c40c93427eb020aac60e4033/imagemangler-0.1.0.tar.gz
+[2023-04-12 15:05:37] INFO root fetch - processPackages [hmd-cli-repo]: Downloading https://files.pythonhosted.org/packages/fc/a9/fdc57d5479e61078c6fe6fbf0c664f791045d1734d52e5aa01d21ce8cea3/hmd_cli_repo-0.2.95-py3-none-any.whl
+[2023-04-12 15:05:37] INFO root fetch - processPackages [origen-ai-ecl]: Downloading https://files.pythonhosted.org/packages/ac/9e/798f3fbcbbd9eadee6ba8debeb3af0ce31c98e9a700e40e4f8d3c916ebac/origen_ai_ecl-0.1.5.tar.gz
+[2023-04-12 15:05:37] INFO root fetch - processPackages [hmd-cli-repo]: executing diffoscope
+[2023-04-12 15:05:37] INFO root fetch - processPackages [hmd-cli-repo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmd_cli_repo-0.2.94-py3-none-any.whl.zip tmp/hmd_cli_repo-0.2.95-py3-none-any.whl.zip --markdown 20230412/h/hmd-cli-repo/0.2.94-0.2.95/diff.md --exclude *.pyd
+[2023-04-12 15:05:37] INFO root fetch - processPackages [imagemangler]: Downloading https://files.pythonhosted.org/packages/90/8c/6e9bd3cc1b61be064b2c23f96d5eef1e25975303c0a1567f0c4f64a01441/imagemangler-0.1.1.tar.gz
+[2023-04-12 15:05:37] INFO root fetch - processPackages [origen-ai-ecl]: executing diffoscope
+[2023-04-12 15:05:37] INFO root fetch - processPackages [origen-ai-ecl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origen_ai_ecl-0.1.4.tar.gz tmp/origen_ai_ecl-0.1.5.tar.gz --markdown 20230412/o/origen-ai-ecl/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 15:05:37] INFO root fetch - processPackages [imagemangler]: executing diffoscope
+[2023-04-12 15:05:37] INFO root fetch - processPackages [imagemangler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imagemangler-0.1.0.tar.gz tmp/imagemangler-0.1.1.tar.gz --markdown 20230412/i/imagemangler/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 15:05:38] INFO root fetch - processPackages [imagemangler]: Start processing: OpenGeode-core
+[2023-04-12 15:05:38] INFO root fetch - main [MainThread]: End processing [imagemangler]: success
+[2023-04-12 15:05:38] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [13.4.9]
+[2023-04-12 15:05:39] INFO root fetch - processPackages [OpenGeode-core]: executing diffoscope
+[2023-04-12 15:05:39] INFO root fetch - processPackages [OpenGeode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenGeode_core-13.4.9-cp39-cp39-win_amd64.whl.zip tmp/OpenGeode_core-9.10.4-cp39-cp39-win_amd64.whl.zip --markdown 20230412/O/OpenGeode-core/13.4.9-9.10.4/diff.md --exclude *.pyd
+[2023-04-12 15:05:39] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-04-12 15:05:39] INFO root fetch - main [MainThread]: End processing [hmd-cli-repo]: success
+[2023-04-12 15:05:44] INFO root fetch - main [MainThread]: End processing [origen-ai-ecl]: success
+[2023-04-12 15:05:46] INFO root fetch - main [MainThread]: End processing [pythonSCHED]: success
+[2023-04-12 15:06:36] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
+[2023-04-12 15:06:36] INFO root fetch - main [MainThread]: Store serial: [17676403]
