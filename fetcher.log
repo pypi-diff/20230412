@@ -7649,3 +7649,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 08:16:22] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:16:26] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:16:26] INFO root fetch - main [MainThread]: Store serial: [17671803]
+[2023-04-12 08:21:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671803]
+[2023-04-12 08:21:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 08:21:34] INFO root fetch - processPackages [prevert]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-04-12 08:21:34] INFO root fetch - processPackages [cchenutils]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 08:21:34] INFO root fetch - processPackages [eodhd]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 08:21:34] INFO root fetch - processPackages [xs-transformers]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-12 08:21:34] INFO root fetch - processPackages [chatgpt-proxy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 08:21:34] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/0c/03/3b6beaf4d18db9191561d093333c159fbae4d3c0e9438a9c433ad286dd1f/cchenutils-0.6.0-py3-none-any.whl
+[2023-04-12 08:21:34] INFO root fetch - processPackages [chatgpt-proxy]: Downloading https://files.pythonhosted.org/packages/97/e2/1d09f95cee3a0c91d77ee5592ffb9039c222d7dcff0629a50689906d3d62/chatgpt-proxy-0.0.1.tar.gz
+[2023-04-12 08:21:34] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/30/c0/8fed9cc42fe557cdea0e4488fedef47613e030ffe8a260ba40cd9978b126/xs_transformers-1.0.7-py3-none-any.whl
+[2023-04-12 08:21:34] INFO root fetch - processPackages [prevert]: Downloading https://files.pythonhosted.org/packages/5c/8d/df2373be62b8a18870464559e69a7baeb5f8533e3729dd2616a745ea5404/prevert-1.0.2.tar.gz
+[2023-04-12 08:21:34] INFO root fetch - processPackages [prevert]: executing diffoscope
+[2023-04-12 08:21:34] INFO root fetch - processPackages [prevert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prevert-1.0.1.tar.gz tmp/prevert-1.0.2.tar.gz --markdown 20230412/p/prevert/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 08:21:34] INFO root fetch - processPackages [eodhd]: executing diffoscope
+[2023-04-12 08:21:34] INFO root fetch - processPackages [eodhd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eodhd-1.0.8.tar.gz tmp/eodhd-1.0.9.tar.gz --markdown 20230412/e/eodhd/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 08:21:34] INFO root fetch - processPackages [cchenutils]: Downloading https://files.pythonhosted.org/packages/17/47/84643883f1b5c7dd3bd059e8b12875eb4dd0c5d6933dcc275a31de3fe104/cchenutils-0.6.1-py3-none-any.whl
+[2023-04-12 08:21:35] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 08:21:35] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.6.0-py3-none-any.whl.zip tmp/cchenutils-0.6.1-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 08:21:35] INFO root fetch - processPackages [chatgpt-proxy]: Downloading https://files.pythonhosted.org/packages/3a/fb/dae06a066e90d132e85ff68180deb00eca77430f911838d8c41975e5324d/chatgpt-proxy-0.0.2.tar.gz
+[2023-04-12 08:21:35] INFO root fetch - processPackages [chatgpt-proxy]: executing diffoscope
+[2023-04-12 08:21:35] INFO root fetch - processPackages [chatgpt-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-proxy-0.0.1.tar.gz tmp/chatgpt-proxy-0.0.2.tar.gz --markdown 20230412/c/chatgpt-proxy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 08:21:35] INFO root fetch - processPackages [xs-transformers]: executing diffoscope
+[2023-04-12 08:21:35] INFO root fetch - processPackages [xs-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xs_transformers-1.0.6-py3-none-any.whl.zip tmp/xs_transformers-1.0.7-py3-none-any.whl.zip --markdown 20230412/x/xs-transformers/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-12 08:21:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:35] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-12 08:21:35] INFO root fetch - processPackages [rcmpy]: New version: [1.0.0] Old Version: [0.3.0]
+[2023-04-12 08:21:36] INFO root fetch - processPackages [rcmpy]: Downloading https://files.pythonhosted.org/packages/70/7a/ff54e590beccaef9f2313c401a54c990fbc76dbcb99a8d928882a5e73987/rcmpy-1.0.0.tar.gz
+[2023-04-12 08:21:36] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: executing diffoscope
+[2023-04-12 08:21:36] INFO root fetch - processPackages [acryl-datahub-airflow-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-airflow-plugin-0.9.6rc0.tar.gz tmp/acryl-datahub-airflow-plugin-0.9.6rc1.tar.gz --markdown 20230412/a/acryl-datahub-airflow-plugin/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-12 08:21:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:36] INFO root fetch - processPackages [acryl-datahub]: New version: [0.9.6rc1] Old Version: [0.9.6rc0]
+[2023-04-12 08:21:36] INFO root fetch - processPackages [rcmpy]: executing diffoscope
+[2023-04-12 08:21:36] INFO root fetch - processPackages [rcmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcmpy-0.3.0.tar.gz tmp/rcmpy-1.0.0.tar.gz --markdown 20230412/r/rcmpy/0.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 08:21:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:36] INFO root fetch - processPackages [gchar]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 08:21:36] INFO root fetch - processPackages [gchar]: Downloading https://files.pythonhosted.org/packages/ae/5a/903194432211916623ed97c008cbb442bafb2e8733c7da5619bc1a235b20/gchar-0.0.8.tar.gz
+[2023-04-12 08:21:37] INFO root fetch - processPackages [gchar]: executing diffoscope
+[2023-04-12 08:21:37] INFO root fetch - processPackages [gchar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gchar-0.0.7.tar.gz tmp/gchar-0.0.8.tar.gz --markdown 20230412/g/gchar/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 08:21:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:37] INFO root fetch - processPackages [cchenutils]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 08:21:37] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 08:21:37] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.6.0-py3-none-any.whl.zip tmp/cchenutils-0.6.1-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 08:21:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:37] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230412] Old Version: [20230411]
+[2023-04-12 08:21:37] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/6e/09/5e49efa50455754891b225dd2c5486d66af846893b4c76184b7d498c1a5b/fake-bpy-module-latest-20230412.tar.gz
+[2023-04-12 08:21:38] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-04-12 08:21:38] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230411.tar.gz tmp/fake-bpy-module-latest-20230412.tar.gz --markdown 20230412/f/fake-bpy-module-latest/20230411-20230412/diff.md --exclude *.pyd
+[2023-04-12 08:21:38] INFO root fetch - processPackages [acryl-datahub]: executing diffoscope
+[2023-04-12 08:21:38] INFO root fetch - processPackages [acryl-datahub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acryl-datahub-0.9.6rc0.tar.gz tmp/acryl-datahub-0.9.6rc1.tar.gz --markdown 20230412/a/acryl-datahub/0.9.6rc0-0.9.6rc1/diff.md --exclude *.pyd
+[2023-04-12 08:21:38] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:39] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:21:52] INFO root fetch - main [MainThread]: Store serial: [17671835]
