@@ -21177,3 +21177,112 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:48:26] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-microsoft-azure]: success
 [2023-04-12 19:48:50] INFO root fetch - main [MainThread]: End processing [apache-airflow-providers-google]: success
 [2023-04-12 19:48:50] INFO root fetch - main [MainThread]: Store serial: [17680175]
+[2023-04-12 19:53:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680175]
+[2023-04-12 19:53:58] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 19:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domolibrary
+[2023-04-12 19:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naplib
+[2023-04-12 19:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traker
+[2023-04-12 19:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pvporcupine
+[2023-04-12 19:53:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thoughtful
+[2023-04-12 19:53:59] INFO root fetch - processPackages [traker]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [pvporcupine]: New version: [2.2.0] Old Version: [2.1.4]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [thoughtful]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [domolibrary]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [naplib]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [pvporcupine]: Downloading https://files.pythonhosted.org/packages/77/68/382175e159b8c69341c604ac68b1877f96ab8a939e5770f6a6357140fc11/pvporcupine-2.1.4.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [traker]: Downloading https://files.pythonhosted.org/packages/23/da/c5c107e8ce5232b7b1092a1bc4dbd9937e207b9be5809ddb02b2f89d9303/traker-0.1.1.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [domolibrary]: Downloading https://files.pythonhosted.org/packages/f2/d1/1446d2e5f60184c89e6d8cdb0372f365a24f1cb4e6ef95ba250b9bdd19c6/domolibrary-0.0.8.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [thoughtful]: Downloading https://files.pythonhosted.org/packages/b4/3a/dc1ea7280d6507344e719cf62e902739b2fb5f0a468ad0b59d3b1c4d9483/thoughtful-1.8.0.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [naplib]: Downloading https://files.pythonhosted.org/packages/9e/a1/9bfb2f1e6fdc1736cbe4419e77eec2637b6f68dc878c1c75f6add4a98835/naplib-0.4.1.tar.gz
+[2023-04-12 19:53:59] WARNING root fetch - processPackages [naplib]: Skipping package: exceeds size limit 83204616>=10485760
+[2023-04-12 19:53:59] INFO root fetch - processPackages [naplib]: Start processing: RecruitPlotEasy
+[2023-04-12 19:53:59] INFO root fetch - main [MainThread]: End processing [naplib] error
+[2023-04-12 19:53:59] INFO root fetch - processPackages [RecruitPlotEasy]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-04-12 19:53:59] INFO root fetch - processPackages [traker]: Downloading https://files.pythonhosted.org/packages/dc/c0/b39ce3c76f9872bbc634eb6d7eeef4476ea01abe7ed90b84dda7c567e853/traker-0.1.2.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [domolibrary]: Downloading https://files.pythonhosted.org/packages/57/da/9c19240f31a1a4a8a6303a3d95cc9bae4caa82372a5530aae505d52318ca/domolibrary-0.0.9.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [RecruitPlotEasy]: Downloading https://files.pythonhosted.org/packages/9e/0d/9c3ab2e0df0573f4d7bb52adf5d46585fd7e12d5743579ef7078082786e9/RecruitPlotEasy-3.1.1.tar.gz
+[2023-04-12 19:53:59] INFO root fetch - processPackages [RecruitPlotEasy]: executing diffoscope
+[2023-04-12 19:53:59] INFO root fetch - processPackages [RecruitPlotEasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RecruitPlotEasy-3.1.0.tar.gz tmp/RecruitPlotEasy-3.1.1.tar.gz --markdown 20230412/R/RecruitPlotEasy/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:53:59] INFO root fetch - processPackages [thoughtful]: Downloading https://files.pythonhosted.org/packages/d6/dc/1fc8220320bd5c0187b45f8b667c5509990736dbc1baaf1856b3b6c8b29b/thoughtful-1.9.0.tar.gz
+[2023-04-12 19:54:00] INFO root fetch - processPackages [traker]: executing diffoscope
+[2023-04-12 19:54:00] INFO root fetch - processPackages [traker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traker-0.1.1.tar.gz tmp/traker-0.1.2.tar.gz --markdown 20230412/t/traker/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 19:54:00] INFO root fetch - processPackages [domolibrary]: executing diffoscope
+[2023-04-12 19:54:00] INFO root fetch - processPackages [domolibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domolibrary-0.0.8.tar.gz tmp/domolibrary-0.0.9.tar.gz --markdown 20230412/d/domolibrary/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:54:00] INFO root fetch - processPackages [thoughtful]: executing diffoscope
+[2023-04-12 19:54:00] INFO root fetch - processPackages [thoughtful]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thoughtful-1.8.0.tar.gz tmp/thoughtful-1.9.0.tar.gz --markdown 20230412/t/thoughtful/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:54:00] INFO root fetch - processPackages [pvporcupine]: Downloading https://files.pythonhosted.org/packages/4d/76/07ede20da99f681c8a98be9e941d9de8682ee5d2c0b55c700e6a526ab5dd/pvporcupine-2.2.0.tar.gz
+[2023-04-12 19:54:00] INFO root fetch - processPackages [pvporcupine]: executing diffoscope
+[2023-04-12 19:54:00] INFO root fetch - processPackages [pvporcupine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvporcupine-2.1.4.tar.gz tmp/pvporcupine-2.2.0.tar.gz --markdown 20230412/p/pvporcupine/2.1.4-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:54:01] INFO root fetch - processPackages [RecruitPlotEasy]: Start processing: pvporcupinedemo
+[2023-04-12 19:54:01] INFO root fetch - main [MainThread]: End processing [RecruitPlotEasy]: success
+[2023-04-12 19:54:01] INFO root fetch - processPackages [pvporcupinedemo]: New version: [2.2.0] Old Version: [2.1.6]
+[2023-04-12 19:54:01] INFO root fetch - processPackages [traker]: Start processing: fast-jl
+[2023-04-12 19:54:01] INFO root fetch - main [MainThread]: End processing [traker]: success
+[2023-04-12 19:54:01] INFO root fetch - processPackages [fast-jl]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 19:54:01] INFO root fetch - processPackages [thoughtful]: Start processing: katalytic-files
+[2023-04-12 19:54:01] INFO root fetch - main [MainThread]: End processing [thoughtful]: success
+[2023-04-12 19:54:01] INFO root fetch - processPackages [pvporcupinedemo]: Downloading https://files.pythonhosted.org/packages/06/1b/812d6a64f1bad76dd48b3682cc226cf2ed992e4f3d8cea9fade9e87b518f/pvporcupinedemo-2.1.6.tar.gz
+[2023-04-12 19:54:01] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-04-12 19:54:01] INFO root fetch - processPackages [fast-jl]: Downloading https://files.pythonhosted.org/packages/e1/a4/c07cfcae65cc9f46420935343f89c8d63383e889c76e27a5a780aff217de/fast_jl-0.1.2.tar.gz
+[2023-04-12 19:54:01] INFO root fetch - processPackages [katalytic-files]: Downloading https://files.pythonhosted.org/packages/3a/32/5872b8a6ae1e1533df5ecd7fd17748e6a9c2644e12d553f9f67340af65cf/katalytic-files-0.3.8.tar.gz
+[2023-04-12 19:54:01] INFO root fetch - processPackages [pvporcupinedemo]: Downloading https://files.pythonhosted.org/packages/64/b9/306b9d5b11323eb49fa6bee086fb34316eeb0c2e88d05197ba97c1dc8727/pvporcupinedemo-2.2.0.tar.gz
+[2023-04-12 19:54:01] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-12 19:54:01] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.7.tar.gz tmp/katalytic-files-0.3.8.tar.gz --markdown 20230412/k/katalytic-files/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-04-12 19:54:01] INFO root fetch - processPackages [pvporcupinedemo]: executing diffoscope
+[2023-04-12 19:54:01] INFO root fetch - processPackages [pvporcupinedemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvporcupinedemo-2.1.6.tar.gz tmp/pvporcupinedemo-2.2.0.tar.gz --markdown 20230412/p/pvporcupinedemo/2.1.6-2.2.0/diff.md --exclude *.pyd
+[2023-04-12 19:54:01] INFO root fetch - processPackages [fast-jl]: Downloading https://files.pythonhosted.org/packages/b3/89/c3251ac89c2d79dbb5bbc64817d6d9349feddfbc4f2d78147f823f9881bc/fast_jl-0.1.3.tar.gz
+[2023-04-12 19:54:01] INFO root fetch - processPackages [fast-jl]: executing diffoscope
+[2023-04-12 19:54:01] INFO root fetch - processPackages [fast-jl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_jl-0.1.2.tar.gz tmp/fast_jl-0.1.3.tar.gz --markdown 20230412/f/fast-jl/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 19:54:02] INFO root fetch - processPackages [domolibrary]: Start processing: audioace
+[2023-04-12 19:54:02] INFO root fetch - main [MainThread]: End processing [domolibrary]: success
+[2023-04-12 19:54:02] INFO root fetch - processPackages [audioace]: New version: [0.0.4] Old Version: [0.0.0]
+[2023-04-12 19:54:02] INFO root fetch - processPackages [audioace]: Downloading https://files.pythonhosted.org/packages/12/4e/5acdc2cae67f07481370446b56fe71c1e4e5b976da66cfc768ff0a6333cf/audioace-0.0.0.tar.gz
+[2023-04-12 19:54:02] INFO root fetch - processPackages [audioace]: Downloading https://files.pythonhosted.org/packages/56/38/de20282a0af6f71550970354f5b2fe59d525332f99a0dd824d891921c282/audioace-0.0.4.tar.gz
+[2023-04-12 19:54:02] INFO root fetch - processPackages [katalytic-files]: Start processing: autoplot
+[2023-04-12 19:54:02] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-12 19:54:02] INFO root fetch - processPackages [autoplot]: New version: [0.4.1] Old Version: [0.3.9]
+[2023-04-12 19:54:02] INFO root fetch - processPackages [audioace]: executing diffoscope
+[2023-04-12 19:54:02] INFO root fetch - processPackages [audioace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audioace-0.0.0.tar.gz tmp/audioace-0.0.4.tar.gz --markdown 20230412/a/audioace/0.0.0-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 19:54:02] INFO root fetch - processPackages [fast-jl]: Start processing: pullkin
+[2023-04-12 19:54:02] INFO root fetch - main [MainThread]: End processing [fast-jl]: success
+[2023-04-12 19:54:02] INFO root fetch - processPackages [pullkin]: New version: [0.9.0] Old Version: [0.8.5]
+[2023-04-12 19:54:02] INFO root fetch - processPackages [pvporcupinedemo]: Start processing: web3-checksumm
+[2023-04-12 19:54:02] INFO root fetch - main [MainThread]: End processing [pvporcupinedemo]: success
+[2023-04-12 19:54:02] WARNING root fetch - processPackages [web3-checksumm]: Skipping, unable to determine old version
+[2023-04-12 19:54:02] INFO root fetch - processPackages [web3-checksumm]: Start processing: qudi-hira-analysis
+[2023-04-12 19:54:02] INFO root fetch - main [MainThread]: End processing [web3-checksumm] error
+[2023-04-12 19:54:02] INFO root fetch - processPackages [autoplot]: Downloading https://files.pythonhosted.org/packages/5d/35/4d6e6229c0e88d2ed2bb0d68ccde461134e2f2c09a1302ed60a90b945527/autoplot-0.3.9.tar.gz
+[2023-04-12 19:54:02] INFO root fetch - processPackages [qudi-hira-analysis]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-04-12 19:54:03] INFO root fetch - processPackages [pullkin]: Downloading https://files.pythonhosted.org/packages/16/00/d0a9ba866551dd7cfac8422abcdb180428069773fffb844b94bb4981554d/pullkin-0.8.5.tar.gz
+[2023-04-12 19:54:03] INFO root fetch - processPackages [qudi-hira-analysis]: Downloading https://files.pythonhosted.org/packages/e0/f9/2e26bf6c346daa52ba6996facd29137a3e2c140c1731d470b9d306396d79/qudi_hira_analysis-1.3.5.tar.gz
+[2023-04-12 19:54:03] INFO root fetch - processPackages [autoplot]: Downloading https://files.pythonhosted.org/packages/cf/19/00d650c96f2d81adc667fac11fea9acaf8f47604924edaf15e55f39d5ea9/autoplot-0.4.1.tar.gz
+[2023-04-12 19:54:03] INFO root fetch - processPackages [qudi-hira-analysis]: executing diffoscope
+[2023-04-12 19:54:03] INFO root fetch - processPackages [qudi-hira-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qudi_hira_analysis-1.3.4.tar.gz tmp/qudi_hira_analysis-1.3.5.tar.gz --markdown 20230412/q/qudi-hira-analysis/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-04-12 19:54:03] INFO root fetch - processPackages [autoplot]: executing diffoscope
+[2023-04-12 19:54:03] INFO root fetch - processPackages [autoplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoplot-0.3.9.tar.gz tmp/autoplot-0.4.1.tar.gz --markdown 20230412/a/autoplot/0.3.9-0.4.1/diff.md --exclude *.pyd
+[2023-04-12 19:54:03] INFO root fetch - processPackages [pullkin]: Downloading https://files.pythonhosted.org/packages/08/1f/8d97bc28a631ef285130ab86768c21a4a25c84e3efe04552609149bf3e61/pullkin-0.9.0.tar.gz
+[2023-04-12 19:54:03] INFO root fetch - processPackages [pullkin]: executing diffoscope
+[2023-04-12 19:54:03] INFO root fetch - processPackages [pullkin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pullkin-0.8.5.tar.gz tmp/pullkin-0.9.0.tar.gz --markdown 20230412/p/pullkin/0.8.5-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:54:03] INFO root fetch - processPackages [audioace]: Start processing: azureml-automl-dnn-vision
+[2023-04-12 19:54:03] INFO root fetch - main [MainThread]: End processing [audioace]: success
+[2023-04-12 19:54:03] INFO root fetch - processPackages [azureml-automl-dnn-vision]: New version: [1.50.0] Old Version: [1.49.1.post1]
+[2023-04-12 19:54:03] INFO root fetch - processPackages [azureml-automl-dnn-vision]: Downloading https://files.pythonhosted.org/packages/07/ce/28650414dee03ac84b9307e2a9a4d429d32de42d529f77caf651bf57a5a1/azureml_automl_dnn_vision-1.49.1.post1-py3-none-any.whl
+[2023-04-12 19:54:04] INFO root fetch - processPackages [azureml-automl-dnn-vision]: executing diffoscope
+[2023-04-12 19:54:04] INFO root fetch - processPackages [azureml-automl-dnn-vision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_automl_dnn_vision-1.49.1.post1-py3-none-any.whl.zip tmp/azureml_automl_dnn_vision-1.50.0-py3-none-any.whl.zip --markdown 20230412/a/azureml-automl-dnn-vision/1.49.1.post1-1.50.0/diff.md --exclude *.pyd
+[2023-04-12 19:54:04] INFO root fetch - processPackages [autoplot]: Start processing: azureml-automl-runtime
+[2023-04-12 19:54:04] INFO root fetch - main [MainThread]: End processing [autoplot]: success
+[2023-04-12 19:54:04] INFO root fetch - processPackages [azureml-automl-runtime]: New version: [1.9.0.post3] Old Version: [1.9.0.post2]
+[2023-04-12 19:54:04] INFO root fetch - processPackages [qudi-hira-analysis]: Start processing: wizata-dsapi
+[2023-04-12 19:54:04] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
+[2023-04-12 19:54:04] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.1] Old Version: [0.0.99]
+[2023-04-12 19:54:04] INFO root fetch - processPackages [azureml-automl-runtime]: executing diffoscope
+[2023-04-12 19:54:04] INFO root fetch - processPackages [azureml-automl-runtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_automl_runtime-1.9.0.post2-py3-none-any.whl.zip tmp/azureml_automl_runtime-1.9.0.post3-py3-none-any.whl.zip --markdown 20230412/a/azureml-automl-runtime/1.9.0.post2-1.9.0.post3/diff.md --exclude *.pyd
+[2023-04-12 19:54:04] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/57/4a/142e2eb9e9d74e90d84262f8afe260fe016dbc71e88c9efc3da1ec8db63b/wizata-dsapi-0.1.1.tar.gz
+[2023-04-12 19:54:04] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-12 19:54:04] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.0.99.tar.gz tmp/wizata-dsapi-0.1.1.tar.gz --markdown 20230412/w/wizata-dsapi/0.0.99-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:54:05] INFO root fetch - main [MainThread]: End processing [pullkin]: success
+[2023-04-12 19:54:05] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-12 19:54:06] INFO root fetch - main [MainThread]: End processing [azureml-automl-dnn-vision]: success
+[2023-04-12 19:54:07] INFO root fetch - main [MainThread]: End processing [azureml-automl-runtime]: success
+[2023-04-12 19:54:15] INFO root fetch - main [MainThread]: End processing [pvporcupine]: success
+[2023-04-12 19:54:15] INFO root fetch - main [MainThread]: Store serial: [17680226]
