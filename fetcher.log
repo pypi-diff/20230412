@@ -21945,3 +21945,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:42:42] INFO root fetch - main [MainThread]: End processing [hoppr]: success
 [2023-04-12 20:42:46] INFO root fetch - main [MainThread]: End processing [streamlink]: success
 [2023-04-12 20:42:46] INFO root fetch - main [MainThread]: Store serial: [17680641]
+[2023-04-12 20:47:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680641]
+[2023-04-12 20:47:55] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 20:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cqepyutils
+[2023-04-12 20:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: elasticcsv
+[2023-04-12 20:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: katalytic-files
+[2023-04-12 20:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eth-abi-lite
+[2023-04-12 20:47:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybrainlife
+[2023-04-12 20:47:55] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.91] Old Version: [1.0.9]
+[2023-04-12 20:47:55] INFO root fetch - processPackages [katalytic-files]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 20:47:55] INFO root fetch - processPackages [eth-abi-lite]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-12 20:47:55] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 20:47:55] INFO root fetch - processPackages [elasticcsv]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 20:47:55] INFO root fetch - processPackages [katalytic-files]: executing diffoscope
+[2023-04-12 20:47:55] INFO root fetch - processPackages [katalytic-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/katalytic-files-0.3.8.tar.gz tmp/katalytic-files-0.3.9.tar.gz --markdown 20230412/k/katalytic-files/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 20:47:55] INFO root fetch - processPackages [pybrainlife]: Downloading https://files.pythonhosted.org/packages/8c/00/324a98dba7dce3fcd02d9ede70c957a27733fc860f69e528effb08ee6036/pybrainlife-1.0.91.tar.gz
+[2023-04-12 20:47:55] INFO root fetch - processPackages [elasticcsv]: Downloading https://files.pythonhosted.org/packages/e1/70/2a0f3c5efb2c66c09a27514bca9115a0b508697389816fa7fb90d8a88b2f/elasticcsv-0.2.2.tar.gz
+[2023-04-12 20:47:55] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 20:47:55] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.9.tar.gz tmp/pybrainlife-1.0.91.tar.gz --markdown 20230412/p/pybrainlife/1.0.9-1.0.91/diff.md --exclude *.pyd
+[2023-04-12 20:47:55] INFO root fetch - processPackages [eth-abi-lite]: Downloading https://files.pythonhosted.org/packages/aa/50/cc55803212241bb4768c15b08547632c43d1afcb82ce2daa7b0eed3fefc4/eth_abi_lite-3.2.0.tar.gz
+[2023-04-12 20:47:55] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-12 20:47:55] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230412/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 20:47:55] INFO root fetch - processPackages [eth-abi-lite]: executing diffoscope
+[2023-04-12 20:47:55] INFO root fetch - processPackages [eth-abi-lite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth_abi_lite-3.1.0.tar.gz tmp/eth_abi_lite-3.2.0.tar.gz --markdown 20230412/e/eth-abi-lite/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:47:55] INFO root fetch - processPackages [elasticcsv]: Downloading https://files.pythonhosted.org/packages/1a/9a/74b8dd0714497d6067ac74ed3f5528bf9d4b1b67db6b35d5d347ee664643/elasticcsv-0.2.3.tar.gz
+[2023-04-12 20:47:55] INFO root fetch - processPackages [elasticcsv]: executing diffoscope
+[2023-04-12 20:47:55] INFO root fetch - processPackages [elasticcsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elasticcsv-0.2.2.tar.gz tmp/elasticcsv-0.2.3.tar.gz --markdown 20230412/e/elasticcsv/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 20:47:56] INFO root fetch - processPackages [katalytic-files]: Start processing: bandcamp-name-your-price-dl
+[2023-04-12 20:47:56] INFO root fetch - main [MainThread]: End processing [katalytic-files]: success
+[2023-04-12 20:47:56] INFO root fetch - processPackages [bandcamp-name-your-price-dl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:47:56] INFO root fetch - processPackages [pybrainlife]: Start processing: board-game-recommender
+[2023-04-12 20:47:56] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 20:47:56] INFO root fetch - processPackages [board-game-recommender]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-12 20:47:56] INFO root fetch - processPackages [bandcamp-name-your-price-dl]: Downloading https://files.pythonhosted.org/packages/e2/28/1012c73d120e654575717c8541177aee45a27daa624f23bbe74613101954/bandcamp_name_your_price_dl-0.0.8.tar.gz
+[2023-04-12 20:47:56] INFO root fetch - processPackages [cqepyutils]: Start processing: FakeInfo
+[2023-04-12 20:47:56] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-12 20:47:56] WARNING root fetch - processPackages [FakeInfo]: Skipping, unable to determine old version
+[2023-04-12 20:47:56] INFO root fetch - processPackages [FakeInfo]: Start processing: unstructured
+[2023-04-12 20:47:56] INFO root fetch - main [MainThread]: End processing [FakeInfo] error
+[2023-04-12 20:47:56] INFO root fetch - processPackages [unstructured]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 20:47:56] INFO root fetch - processPackages [board-game-recommender]: Downloading https://files.pythonhosted.org/packages/87/f9/72dcac5ef506620b3ab981e7719a0e53f3f59310617fb72ba686d9c1e5f8/board-game-recommender-3.1.0.tar.gz
+[2023-04-12 20:47:56] INFO root fetch - processPackages [bandcamp-name-your-price-dl]: Downloading https://files.pythonhosted.org/packages/82/d4/75bcf7a846d02e8c5793c12b05e56bbd22851340413b5859f74f5b859c8c/bandcamp_name_your_price_dl-0.0.9.tar.gz
+[2023-04-12 20:47:56] INFO root fetch - processPackages [unstructured]: Downloading https://files.pythonhosted.org/packages/80/1e/c1dc7e7eb16c3abdc2cdf3d92e131f605f078f8897553eb4f4c7f3bda1e8/unstructured-0.5.8.tar.gz
+[2023-04-12 20:47:56] INFO root fetch - processPackages [bandcamp-name-your-price-dl]: executing diffoscope
+[2023-04-12 20:47:56] INFO root fetch - processPackages [bandcamp-name-your-price-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bandcamp_name_your_price_dl-0.0.8.tar.gz tmp/bandcamp_name_your_price_dl-0.0.9.tar.gz --markdown 20230412/b/bandcamp-name-your-price-dl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:47:57] INFO root fetch - processPackages [elasticcsv]: Start processing: py3dchartkukukaki
+[2023-04-12 20:47:57] INFO root fetch - main [MainThread]: End processing [elasticcsv]: success
+[2023-04-12 20:47:57] WARNING root fetch - processPackages [py3dchartkukukaki]: Skipping, unable to determine old version
+[2023-04-12 20:47:57] INFO root fetch - processPackages [py3dchartkukukaki]: Start processing: oekofen-api
+[2023-04-12 20:47:57] INFO root fetch - main [MainThread]: End processing [py3dchartkukukaki] error
+[2023-04-12 20:47:57] INFO root fetch - processPackages [oekofen-api]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 20:47:57] INFO root fetch - processPackages [board-game-recommender]: Downloading https://files.pythonhosted.org/packages/84/0b/5680ad37b3d293faa6c8adf8d2d1cda64e471de4d7feaa2926760a3182d4/board-game-recommender-3.2.0.tar.gz
+[2023-04-12 20:47:57] INFO root fetch - processPackages [board-game-recommender]: executing diffoscope
+[2023-04-12 20:47:57] INFO root fetch - processPackages [board-game-recommender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/board-game-recommender-3.1.0.tar.gz tmp/board-game-recommender-3.2.0.tar.gz --markdown 20230412/b/board-game-recommender/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:47:57] INFO root fetch - processPackages [oekofen-api]: Downloading https://files.pythonhosted.org/packages/c4/af/b4a02ced63cabe8236db0aeafaf3057eab32a0a590d89b1d5af233c7472a/oekofen_api-0.0.6.tar.gz
+[2023-04-12 20:47:57] INFO root fetch - processPackages [unstructured]: Downloading https://files.pythonhosted.org/packages/2e/a2/a1b2b015b26878bf078c04a52ab000df4bfd5bd7efaefcc8ae2f00143aeb/unstructured-0.5.9.tar.gz
+[2023-04-12 20:47:57] INFO root fetch - processPackages [unstructured]: executing diffoscope
+[2023-04-12 20:47:57] INFO root fetch - processPackages [unstructured]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unstructured-0.5.8.tar.gz tmp/unstructured-0.5.9.tar.gz --markdown 20230412/u/unstructured/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 20:47:57] INFO root fetch - processPackages [oekofen-api]: Downloading https://files.pythonhosted.org/packages/c5/95/618aa576d2bcaa43827fd11f2f3f98ced47a68b20ad124078e4321a4985a/oekofen_api-0.0.7.tar.gz
+[2023-04-12 20:47:58] INFO root fetch - main [MainThread]: End processing [bandcamp-name-your-price-dl]: success
+[2023-04-12 20:47:58] INFO root fetch - processPackages [oekofen-api]: executing diffoscope
+[2023-04-12 20:47:58] INFO root fetch - processPackages [oekofen-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oekofen_api-0.0.6.tar.gz tmp/oekofen_api-0.0.7.tar.gz --markdown 20230412/o/oekofen-api/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 20:47:58] INFO root fetch - main [MainThread]: End processing [board-game-recommender]: success
+[2023-04-12 20:47:59] INFO root fetch - main [MainThread]: End processing [oekofen-api]: success
+[2023-04-12 20:47:59] INFO root fetch - main [MainThread]: End processing [unstructured]: success
+[2023-04-12 20:47:59] INFO root fetch - main [MainThread]: End processing [eth-abi-lite]: success
+[2023-04-12 20:47:59] INFO root fetch - main [MainThread]: Store serial: [17680688]
