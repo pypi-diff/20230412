@@ -6867,3 +6867,64 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:51:03] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:51:04] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:51:04] INFO root fetch - main [MainThread]: Store serial: [17671335]
+[2023-04-12 06:56:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671335]
+[2023-04-12 06:56:11] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 06:56:11] INFO root fetch - processPackages [snemail]: New version: [1.1.15] Old Version: [1.1.14]
+[2023-04-12 06:56:11] INFO root fetch - processPackages [vcap-utils]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-12 06:56:11] WARNING root fetch - processPackages [TransLiter]: Skipping, unable to determine old version
+[2023-04-12 06:56:11] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:56:11] INFO root fetch - processPackages [vcap]: New version: [0.3.7] Old Version: [0.3.6]
+[2023-04-12 06:56:11] INFO root fetch - processPackages [Diofant]: New version: [0.9.0b1] Old Version: [0.9.0a4]
+[2023-04-12 06:56:11] INFO root fetch - processPackages [openfabric-pysdk]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-12 06:56:11] INFO root fetch - processPackages [vcap]: Downloading https://files.pythonhosted.org/packages/b4/f7/dc2ab118d3ae30d4145f095b06150bb34f67078f6c97888e720411ac16bc/vcap-0.3.6.tar.gz
+[2023-04-12 06:56:11] INFO root fetch - processPackages [Diofant]: Downloading https://files.pythonhosted.org/packages/fb/5a/9ee9b5599f2c4c75cbcf44e9d72c917e62f9ae61ea3df9227bc6c661b5ca/Diofant-0.9.0a4.tar.gz
+[2023-04-12 06:56:11] INFO root fetch - processPackages [snemail]: Downloading https://files.pythonhosted.org/packages/3a/a5/88eafebd170e18f2b7db780b6de68e07d2dd57f1dd8e1cb695e2f0c05c7c/snemail-1.1.15.tar.gz
+[2023-04-12 06:56:11] INFO root fetch - processPackages [vcap-utils]: Downloading https://files.pythonhosted.org/packages/0e/b8/6762f5994535955bf7c797f5cf92292a135fd2dda194a1a87aef064f4eec/vcap-utils-0.3.6.tar.gz
+[2023-04-12 06:56:11] INFO root fetch - processPackages [openfabric-pysdk]: Downloading https://files.pythonhosted.org/packages/09/06/bab210da3ebcba685c478ba18906931844e8817f2a8f139be2df8fec4462/openfabric_pysdk-0.2.3.tar.gz
+[2023-04-12 06:56:11] INFO root fetch - processPackages [snemail]: executing diffoscope
+[2023-04-12 06:56:11] INFO root fetch - processPackages [snemail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snemail-1.1.14.tar.gz tmp/snemail-1.1.15.tar.gz --markdown 20230412/s/snemail/1.1.14-1.1.15/diff.md --exclude *.pyd
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap]: Downloading https://files.pythonhosted.org/packages/78/7b/7b46afd5557564afb3152881bc86d6cc590ecd78ff7c7ea816a55679514f/vcap-0.3.7.tar.gz
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap-utils]: Downloading https://files.pythonhosted.org/packages/24/7c/4d9eff04ba6c44f0856f89f1f01b0b9eb04a5f6982d2149754a2115ee64e/vcap-utils-0.3.7.tar.gz
+[2023-04-12 06:56:12] INFO root fetch - processPackages [openfabric-pysdk]: Downloading https://files.pythonhosted.org/packages/93/fc/fd0a3a0e6f36b7f029fde477aa83c1a8db26da5202229ea26f4b01eccfc2/openfabric_pysdk-0.2.4.tar.gz
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap]: executing diffoscope
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcap-0.3.6.tar.gz tmp/vcap-0.3.7.tar.gz --markdown 20230412/v/vcap/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap-utils]: executing diffoscope
+[2023-04-12 06:56:12] INFO root fetch - processPackages [vcap-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcap-utils-0.3.6.tar.gz tmp/vcap-utils-0.3.7.tar.gz --markdown 20230412/v/vcap-utils/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2023-04-12 06:56:12] INFO root fetch - processPackages [openfabric-pysdk]: executing diffoscope
+[2023-04-12 06:56:12] INFO root fetch - processPackages [openfabric-pysdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openfabric_pysdk-0.2.3.tar.gz tmp/openfabric_pysdk-0.2.4.tar.gz --markdown 20230412/o/openfabric-pysdk/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-12 06:56:12] INFO root fetch - processPackages [Diofant]: Downloading https://files.pythonhosted.org/packages/80/e9/3db8c1fc228969297a15c0623ea4eb1c803b70a13b0422de05cb3e3cf36d/Diofant-0.9.0b1.tar.gz
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:13] WARNING root fetch - processPackages [aTemUsON]: Skipping, unable to determine old version
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:56:13] INFO root fetch - processPackages [bingbong]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:13] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/7b/ae/37d360ff3cd1f64356456f6002b0fcdd076c6e3674203f7dc70fab0bcebd/bingbong-0.1.1.tar.gz
+[2023-04-12 06:56:13] WARNING root fetch - processPackages [hcpdiff]: Skipping, unable to determine old version
+[2023-04-12 06:56:13] INFO root fetch - processPackages [outerbounds]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:56:13] INFO root fetch - processPackages [django-gbasedbtdb]: New version: [1.7.0] Old Version: [1.10.1]
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:13] WARNING root fetch - processPackages [g36-ahu-faults]: Skipping, unable to determine old version
+[2023-04-12 06:56:13] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:56:13] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-12 06:56:13] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.1.tar.gz tmp/bingbong-0.1.1.tar.gz --markdown 20230412/b/bingbong/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 06:56:13] INFO root fetch - processPackages [django-gbasedbtdb]: Downloading https://files.pythonhosted.org/packages/65/c1/658eb3747f13ca3f930b20cfa37b34398d4ccbcbbe89c51c2087f06890cf/django_gbasedbtdb-1.10.1.tar.gz
+[2023-04-12 06:56:13] INFO root fetch - processPackages [dojo-truant]: New version: [2023.4.7.3] Old Version: [2023.4.7.2]
+[2023-04-12 06:56:13] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/db/c3/414322f3ea100053ac3662e6bb112f6d3bc83f54c5c0996e89fef5c3d384/outerbounds-0.3.8-py3-none-any.whl
+[2023-04-12 06:56:13] INFO root fetch - processPackages [dojo-truant]: executing diffoscope
+[2023-04-12 06:56:13] INFO root fetch - processPackages [dojo-truant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dojo_truant-2023.4.7.2.tar.gz tmp/dojo_truant-2023.4.7.3.tar.gz --markdown 20230412/d/dojo-truant/2023.4.7.2-2023.4.7.3/diff.md --exclude *.pyd
+[2023-04-12 06:56:13] INFO root fetch - processPackages [django-gbasedbtdb]: Downloading https://files.pythonhosted.org/packages/54/52/1b846d35e46d4d0c4dc88295216143aa30df98e581fb5e4c9a2347b4c7c6/django_gbasedbtdb-1.7.0.tar.gz
+[2023-04-12 06:56:13] INFO root fetch - processPackages [django-gbasedbtdb]: executing diffoscope
+[2023-04-12 06:56:13] INFO root fetch - processPackages [django-gbasedbtdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gbasedbtdb-1.10.1.tar.gz tmp/django_gbasedbtdb-1.7.0.tar.gz --markdown 20230412/d/django-gbasedbtdb/1.10.1-1.7.0/diff.md --exclude *.pyd
+[2023-04-12 06:56:13] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/eb/c8/c87d25484be12f66ee78314f7ebd89ca4200a29e85c757b1d2e469e06c52/outerbounds-0.3.9-py3-none-any.whl
+[2023-04-12 06:56:13] INFO root fetch - processPackages [outerbounds]: executing diffoscope
+[2023-04-12 06:56:13] INFO root fetch - processPackages [outerbounds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outerbounds-0.3.8-py3-none-any.whl.zip tmp/outerbounds-0.3.9-py3-none-any.whl.zip --markdown 20230412/o/outerbounds/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 06:56:13] INFO root fetch - processPackages [Diofant]: executing diffoscope
+[2023-04-12 06:56:13] INFO root fetch - processPackages [Diofant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Diofant-0.9.0a4.tar.gz tmp/Diofant-0.9.0b1.tar.gz --markdown 20230412/D/Diofant/0.9.0a4-0.9.0b1/diff.md --exclude *.pyd
+[2023-04-12 06:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:14] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:56:37] INFO root fetch - main [MainThread]: Store serial: [17671382]
