@@ -19983,3 +19983,104 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:37:23] INFO root fetch - main [MainThread]: End processing [teenstudy]: success
 [2023-04-12 18:38:37] INFO root fetch - main [MainThread]: End processing [fittrackee]: success
 [2023-04-12 18:38:37] INFO root fetch - main [MainThread]: Store serial: [17679329]
+[2023-04-12 18:43:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679329]
+[2023-04-12 18:43:47] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 18:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Triumvirate
+[2023-04-12 18:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basal-and-bark
+[2023-04-12 18:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MLapp1
+[2023-04-12 18:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tables-io
+[2023-04-12 18:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tansy
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tables-io]: New version: [0.8.0] Old Version: [0.7.9]
+[2023-04-12 18:43:47] INFO root fetch - processPackages [basal-and-bark]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tansy]: New version: [0.7.0] Old Version: [0.6.1]
+[2023-04-12 18:43:47] INFO root fetch - processPackages [Triumvirate]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 18:43:47] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tables-io]: Downloading https://files.pythonhosted.org/packages/3c/9c/cf6f54894e8e75b447e2c18fb97ab988feb545cdaea1a6d6eb3fbd918f91/tables_io-0.7.9.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/4d/ee/0fdc9a3b3d73f8585cb2e015312e99f06331f689d7829002bc75d6bd0453/basal_and_bark-0.0.2.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [Triumvirate]: Downloading https://files.pythonhosted.org/packages/fb/3e/1f4f15f8ea383acb2c8ec51a96d8fbcdc8ca83676924845005826e4a3c09/Triumvirate-0.1.1.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tansy]: Downloading https://files.pythonhosted.org/packages/07/a6/04f04ea45e7e4d0b4e26b07d306e7ddd8c047c94e1ee6ce979529a4eb84d/tansy-0.7.0.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:43:47] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tables-io]: Downloading https://files.pythonhosted.org/packages/e3/a3/9fab6ef44a3a1983aad5c7623adbfdeba10487e76337bc82978bf5342c21/tables_io-0.8.0.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tansy]: executing diffoscope
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tansy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tansy-0.6.1.tar.gz tmp/tansy-0.7.0.tar.gz --markdown 20230412/t/tansy/0.6.1-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 18:43:47] INFO root fetch - processPackages [basal-and-bark]: Downloading https://files.pythonhosted.org/packages/c2/ad/d600790fb1bf55a5f360723523da6bcb9c75e7f5b33c6bf3bb6730e9af90/basal_and_bark-0.0.3.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [Triumvirate]: Downloading https://files.pythonhosted.org/packages/14/1a/4aa99d89b58c512195a4a05c64208c796e023f28af7c9f926f459eddda8e/Triumvirate-0.1.2.tar.gz
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tables-io]: executing diffoscope
+[2023-04-12 18:43:47] INFO root fetch - processPackages [tables-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tables_io-0.7.9.tar.gz tmp/tables_io-0.8.0.tar.gz --markdown 20230412/t/tables-io/0.7.9-0.8.0/diff.md --exclude *.pyd
+[2023-04-12 18:43:48] INFO root fetch - processPackages [basal-and-bark]: executing diffoscope
+[2023-04-12 18:43:48] INFO root fetch - processPackages [basal-and-bark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basal_and_bark-0.0.2.tar.gz tmp/basal_and_bark-0.0.3.tar.gz --markdown 20230412/b/basal-and-bark/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 18:43:48] INFO root fetch - processPackages [Triumvirate]: executing diffoscope
+[2023-04-12 18:43:48] INFO root fetch - processPackages [Triumvirate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Triumvirate-0.1.1.tar.gz tmp/Triumvirate-0.1.2.tar.gz --markdown 20230412/T/Triumvirate/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 18:43:48] INFO root fetch - processPackages [tansy]: Start processing: pytls13
+[2023-04-12 18:43:48] INFO root fetch - main [MainThread]: End processing [tansy]: success
+[2023-04-12 18:43:48] WARNING root fetch - processPackages [pytls13]: Skipping, unable to determine old version
+[2023-04-12 18:43:48] INFO root fetch - processPackages [pytls13]: Start processing: MLapp1
+[2023-04-12 18:43:48] INFO root fetch - main [MainThread]: End processing [pytls13] error
+[2023-04-12 18:43:48] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:43:48] INFO root fetch - processPackages [MLapp1]: Start processing: data-collect
+[2023-04-12 18:43:48] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:43:48] INFO root fetch - processPackages [data-collect]: New version: [0.8.3] Old Version: [0.8.2]
+[2023-04-12 18:43:48] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:43:48] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:43:49] INFO root fetch - processPackages [data-collect]: Downloading https://files.pythonhosted.org/packages/5b/a5/bf25e1da4f80bfcef56b664772f9ca2df6a217c8e441fdff6a305c8462f1/data_collect-0.8.3.tar.gz
+[2023-04-12 18:43:49] INFO root fetch - processPackages [basal-and-bark]: Start processing: wcferry
+[2023-04-12 18:43:49] INFO root fetch - main [MainThread]: End processing [basal-and-bark]: success
+[2023-04-12 18:43:49] INFO root fetch - processPackages [wcferry]: New version: [3.7.0.30.23] Old Version: [3.7.0.30.22]
+[2023-04-12 18:43:49] INFO root fetch - processPackages [tables-io]: Start processing: pyalpa
+[2023-04-12 18:43:49] INFO root fetch - main [MainThread]: End processing [tables-io]: success
+[2023-04-12 18:43:49] INFO root fetch - processPackages [pyalpa]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-04-12 18:43:49] INFO root fetch - processPackages [data-collect]: executing diffoscope
+[2023-04-12 18:43:49] INFO root fetch - processPackages [data-collect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_collect-0.8.2.tar.gz tmp/data_collect-0.8.3.tar.gz --markdown 20230412/d/data-collect/0.8.2-0.8.3/diff.md --exclude *.pyd
+[2023-04-12 18:43:49] INFO root fetch - processPackages [wcferry]: Downloading https://files.pythonhosted.org/packages/70/f5/86ae6de4d53d56fa59031b77e108d8f390e822f6157c11db6080cc0a6b99/wcferry-3.7.0.30.23.tar.gz
+[2023-04-12 18:43:49] INFO root fetch - processPackages [pyalpa]: Downloading https://files.pythonhosted.org/packages/45/95/437012aa1bb70b8a5078c0aa8fa1cda30ba186a03615852c963a8246ff8c/pyalpa-0.7.0.tar.gz
+[2023-04-12 18:43:49] INFO root fetch - processPackages [wcferry]: executing diffoscope
+[2023-04-12 18:43:49] INFO root fetch - processPackages [wcferry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wcferry-3.7.0.30.22.tar.gz tmp/wcferry-3.7.0.30.23.tar.gz --markdown 20230412/w/wcferry/3.7.0.30.22-3.7.0.30.23/diff.md --exclude *.pyd
+[2023-04-12 18:43:49] INFO root fetch - processPackages [pyalpa]: executing diffoscope
+[2023-04-12 18:43:49] INFO root fetch - processPackages [pyalpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyalpa-0.6.0.tar.gz tmp/pyalpa-0.7.0.tar.gz --markdown 20230412/p/pyalpa/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 18:43:50] INFO root fetch - processPackages [MLapp1]: Start processing: fastsim
+[2023-04-12 18:43:50] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:43:50] INFO root fetch - processPackages [fastsim]: New version: [2.0.11] Old Version: [2.0.10]
+[2023-04-12 18:43:50] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/c9/e5/c7e11844572eef87929331432987e5901cd98549583bada2a72d596c1ab3/fastsim-2.0.10.tar.gz
+[2023-04-12 18:43:50] INFO root fetch - processPackages [Triumvirate]: Start processing: PyGeodesy
+[2023-04-12 18:43:50] INFO root fetch - main [MainThread]: End processing [Triumvirate]: success
+[2023-04-12 18:43:50] INFO root fetch - processPackages [PyGeodesy]: New version: [23.4.6] Old Version: [23.4.5]
+[2023-04-12 18:43:50] INFO root fetch - processPackages [data-collect]: Start processing: dkist-processing-common
+[2023-04-12 18:43:50] INFO root fetch - main [MainThread]: End processing [data-collect]: success
+[2023-04-12 18:43:50] INFO root fetch - processPackages [PyGeodesy]: executing diffoscope
+[2023-04-12 18:43:50] INFO root fetch - processPackages [PyGeodesy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGeodesy-23.4.5.zip tmp/PyGeodesy-23.4.6.zip --markdown 20230412/P/PyGeodesy/23.4.5-23.4.6/diff.md --exclude *.pyd
+[2023-04-12 18:43:50] INFO root fetch - processPackages [dkist-processing-common]: New version: [2.4.0rc2] Old Version: [2.4.0rc1]
+[2023-04-12 18:43:50] INFO root fetch - processPackages [fastsim]: Downloading https://files.pythonhosted.org/packages/49/46/52af53ff652c0ed27dc9fd976f62c64d254329d17d862590691679e9aa0d/fastsim-2.0.11.tar.gz
+[2023-04-12 18:43:50] INFO root fetch - processPackages [dkist-processing-common]: executing diffoscope
+[2023-04-12 18:43:50] INFO root fetch - processPackages [dkist-processing-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-common-2.4.0rc1.tar.gz tmp/dkist-processing-common-2.4.0rc2.tar.gz --markdown 20230412/d/dkist-processing-common/2.4.0rc1-2.4.0rc2/diff.md --exclude *.pyd
+[2023-04-12 18:43:51] INFO root fetch - processPackages [pyalpa]: Start processing: netbox-secrets
+[2023-04-12 18:43:51] INFO root fetch - main [MainThread]: End processing [pyalpa]: success
+[2023-04-12 18:43:51] INFO root fetch - processPackages [netbox-secrets]: New version: [1.7.6] Old Version: [1.7.5]
+[2023-04-12 18:43:51] INFO root fetch - processPackages [netbox-secrets]: Downloading https://files.pythonhosted.org/packages/44/e0/01ce3cdfa52654916358745811b295797e078f81371c9c7770ca85045a88/netbox-secrets-1.7.5.tar.gz
+[2023-04-12 18:43:51] INFO root fetch - processPackages [fastsim]: executing diffoscope
+[2023-04-12 18:43:51] INFO root fetch - processPackages [fastsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsim-2.0.10.tar.gz tmp/fastsim-2.0.11.tar.gz --markdown 20230412/f/fastsim/2.0.10-2.0.11/diff.md --exclude *.pyd
+[2023-04-12 18:43:51] INFO root fetch - processPackages [netbox-secrets]: Downloading https://files.pythonhosted.org/packages/46/60/a694de21beedffce80f9cab7514e026874b5d5b32cf1540fd20b8fcef5a2/netbox-secrets-1.7.6.tar.gz
+[2023-04-12 18:43:52] INFO root fetch - processPackages [netbox-secrets]: executing diffoscope
+[2023-04-12 18:43:52] INFO root fetch - processPackages [netbox-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-secrets-1.7.5.tar.gz tmp/netbox-secrets-1.7.6.tar.gz --markdown 20230412/n/netbox-secrets/1.7.5-1.7.6/diff.md --exclude *.pyd
+[2023-04-12 18:43:52] INFO root fetch - processPackages [wcferry]: Start processing: geneve
+[2023-04-12 18:43:52] INFO root fetch - main [MainThread]: End processing [wcferry]: success
+[2023-04-12 18:43:52] INFO root fetch - processPackages [geneve]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-12 18:43:52] INFO root fetch - processPackages [geneve]: Downloading https://files.pythonhosted.org/packages/bc/58/bf35f0976b5b3af98e87d50fd72ccca5fd2af2d9c437a7bae5d6bbe13c7c/geneve-0.1.1.tar.gz
+[2023-04-12 18:43:52] INFO root fetch - processPackages [dkist-processing-common]: Start processing: delaunay-watershed-3d
+[2023-04-12 18:43:52] INFO root fetch - main [MainThread]: End processing [dkist-processing-common]: success
+[2023-04-12 18:43:52] INFO root fetch - processPackages [delaunay-watershed-3d]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 18:43:52] INFO root fetch - processPackages [geneve]: Downloading https://files.pythonhosted.org/packages/be/5e/b5f3c210258e9f9be6cb7e74a9f0df866e02221ff62a2ac7435ec383dd27/geneve-0.2.0.tar.gz
+[2023-04-12 18:43:52] INFO root fetch - processPackages [geneve]: executing diffoscope
+[2023-04-12 18:43:52] INFO root fetch - processPackages [geneve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geneve-0.1.1.tar.gz tmp/geneve-0.2.0.tar.gz --markdown 20230412/g/geneve/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 18:43:52] INFO root fetch - processPackages [delaunay-watershed-3d]: Downloading https://files.pythonhosted.org/packages/3e/a0/d362a744a1d419b85039677b3444e81d7153ee91bf73f96d492d62b17b0b/delaunay_watershed_3d-0.2.1.tar.gz
+[2023-04-12 18:43:52] INFO root fetch - processPackages [delaunay-watershed-3d]: executing diffoscope
+[2023-04-12 18:43:52] INFO root fetch - processPackages [delaunay-watershed-3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/delaunay_watershed_3d-0.2.0.tar.gz tmp/delaunay_watershed_3d-0.2.1.tar.gz --markdown 20230412/d/delaunay-watershed-3d/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 18:43:53] INFO root fetch - processPackages [netbox-secrets]: Start processing: obeenya
+[2023-04-12 18:43:53] INFO root fetch - main [MainThread]: End processing [netbox-secrets]: success
+[2023-04-12 18:43:53] WARNING root fetch - processPackages [obeenya]: Skipping, unable to determine old version
+[2023-04-12 18:43:53] INFO root fetch - main [MainThread]: End processing [obeenya] error
+[2023-04-12 18:43:53] INFO root fetch - main [MainThread]: End processing [geneve]: success
+[2023-04-12 18:43:54] INFO root fetch - main [MainThread]: End processing [delaunay-watershed-3d]: success
+[2023-04-12 18:43:55] INFO root fetch - main [MainThread]: End processing [fastsim]: success
+[2023-04-12 18:44:43] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
+[2023-04-12 18:44:43] INFO root fetch - main [MainThread]: Store serial: [17679404]
