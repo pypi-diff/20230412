@@ -4851,3 +4851,49 @@
 [2023-04-12 03:56:40] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:56:41] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:56:41] INFO root fetch - main [MainThread]: Store serial: [17670229]
+[2023-04-12 04:01:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670229]
+[2023-04-12 04:01:52] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 04:01:52] INFO root fetch - processPackages [anylabeling]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 04:01:52] INFO root fetch - processPackages [turbo-docs]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-04-12 04:01:52] INFO root fetch - processPackages [zuspec-fe-parser]: New version: [0.0.1.4673734881] Old Version: [0.0.1.4669131484]
+[2023-04-12 04:01:52] INFO root fetch - processPackages [gama-cli]: New version: [1.7.4] Old Version: [1.7.3]
+[2023-04-12 04:01:52] INFO root fetch - processPackages [deepchem]: New version: [2.7.2.dev20230412020314] Old Version: [2.7.2.dev20230411091951]
+[2023-04-12 04:01:52] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/af/6c/e1672953654b515c7ac581496bba8d784cfd0a540286d4672f5dfced715f/anylabeling-0.0.9.tar.gz
+[2023-04-12 04:01:52] INFO root fetch - processPackages [gama-cli]: Downloading https://files.pythonhosted.org/packages/50/5e/232d97760ac55b9ce59df255815a0f6b62c795f22b36ee87661def4024c2/gama_cli-1.7.4.tar.gz
+[2023-04-12 04:01:52] INFO root fetch - processPackages [zuspec-fe-parser]: Downloading https://files.pythonhosted.org/packages/a1/4a/67ce4daf6265932e37c07d3cd9ec2e4dd63ec52a6990dc83e794a0c6b5cc/zuspec_fe_parser-0.0.1.4673734881-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 04:01:52] INFO root fetch - processPackages [deepchem]: Downloading https://files.pythonhosted.org/packages/8b/ea/16ba971a268dd4554ec6515165a7434011f3b5a4914c42860c4b704df603/deepchem-2.7.2.dev20230412020314.tar.gz
+[2023-04-12 04:01:52] INFO root fetch - processPackages [turbo-docs]: Downloading https://files.pythonhosted.org/packages/c4/5b/702a1ec4d89bb4cd80b6dbb118630e4b20d480add50ec360bd2c43f2eb2d/turbo_docs-0.6.0.tar.gz
+[2023-04-12 04:01:52] INFO root fetch - processPackages [gama-cli]: executing diffoscope
+[2023-04-12 04:01:52] INFO root fetch - processPackages [gama-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gama_cli-1.7.3.tar.gz tmp/gama_cli-1.7.4.tar.gz --markdown 20230412/g/gama-cli/1.7.3-1.7.4/diff.md --exclude *.pyd
+[2023-04-12 04:01:52] INFO root fetch - processPackages [zuspec-fe-parser]: executing diffoscope
+[2023-04-12 04:01:52] INFO root fetch - processPackages [zuspec-fe-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_fe_parser-0.0.1.4669131484-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_fe_parser-0.0.1.4673734881-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/z/zuspec-fe-parser/0.0.1.4669131484-0.0.1.4673734881/diff.md --exclude *.pyd
+[2023-04-12 04:01:53] INFO root fetch - processPackages [deepchem]: executing diffoscope
+[2023-04-12 04:01:53] INFO root fetch - processPackages [deepchem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepchem-2.7.2.dev20230411091951.tar.gz tmp/deepchem-2.7.2.dev20230412020314.tar.gz --markdown 20230412/d/deepchem/2.7.2.dev20230411091951-2.7.2.dev20230412020314/diff.md --exclude *.pyd
+[2023-04-12 04:01:53] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 04:01:53] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.0.8.tar.gz tmp/anylabeling-0.0.9.tar.gz --markdown 20230412/a/anylabeling/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 04:01:53] INFO root fetch - processPackages [turbo-docs]: executing diffoscope
+[2023-04-12 04:01:53] INFO root fetch - processPackages [turbo-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turbo_docs-0.5.0.tar.gz tmp/turbo_docs-0.6.0.tar.gz --markdown 20230412/t/turbo-docs/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-04-12 04:01:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:54] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 04:01:54] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 04:01:54] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 04:01:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:54] INFO root fetch - processPackages [pbit]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 04:01:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:54] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 04:01:55] INFO root fetch - processPackages [pbit]: Downloading https://files.pythonhosted.org/packages/c3/d6/fe3e5765ee827085e1add23d4493fe369e95b00a11b6074d2d053e919cc3/pbit-0.2.2.tar.gz
+[2023-04-12 04:01:55] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 04:01:55] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 04:01:55] INFO root fetch - processPackages [pbit]: executing diffoscope
+[2023-04-12 04:01:55] INFO root fetch - processPackages [pbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbit-0.2.1.tar.gz tmp/pbit-0.2.2.tar.gz --markdown 20230412/p/pbit/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: Downloading https://files.pythonhosted.org/packages/5f/62/def1682b668a5cb79d94b2b6275c4375255a0f88e614aaf08c1974d30c99/simple-hierarchical-transformer-0.0.8.tar.gz
+[2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-12 04:01:56] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.7.tar.gz tmp/simple-hierarchical-transformer-0.0.8.tar.gz --markdown 20230412/s/simple-hierarchical-transformer/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 04:01:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:01:57] INFO root fetch - main [MainThread]: Store serial: [17670256]
