@@ -14710,3 +14710,123 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 14:44:40] INFO root fetch - main [MainThread]: End processing [hsml]: success
 [2023-04-12 14:44:41] INFO root fetch - main [MainThread]: End processing [pochas-geoutils]: success
 [2023-04-12 14:44:41] INFO root fetch - main [MainThread]: Store serial: [17676151]
+[2023-04-12 14:49:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676151]
+[2023-04-12 14:49:48] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qcompute-qapp
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: substrafl
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-docs
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ShellcodeTester
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: morphcp
+[2023-04-12 14:49:48] WARNING root fetch - processPackages [qcompute-qapp]: Skipping, unable to determine old version
+[2023-04-12 14:49:48] INFO root fetch - processPackages [qcompute-qapp]: Start processing: ddcci-plasmoid-backend
+[2023-04-12 14:49:48] INFO root fetch - main [MainThread]: End processing [qcompute-qapp] error
+[2023-04-12 14:49:48] INFO root fetch - processPackages [morphcp]: New version: [0.0.9] Old Version: [0.0.6]
+[2023-04-12 14:49:48] WARNING root fetch - processPackages [dj-docs]: Skipping, unable to determine old version
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 14:49:48] INFO root fetch - processPackages [dj-docs]: Start processing: streamlit-cognito-token-access-authentication
+[2023-04-12 14:49:48] INFO root fetch - main [MainThread]: End processing [dj-docs] error
+[2023-04-12 14:49:48] INFO root fetch - processPackages [substrafl]: New version: [0.35.1rc1] Old Version: [0.35.1]
+[2023-04-12 14:49:48] INFO root fetch - processPackages [ddcci-plasmoid-backend]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-12 14:49:48] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-12 14:49:49] INFO root fetch - processPackages [substrafl]: Downloading https://files.pythonhosted.org/packages/88/f0/9d03090591c69cae983b318fed91c52763869b4be9d0b919a8a48206903d/substrafl-0.35.1.tar.gz
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/57/90/a5cbb460400c7f72d5d4d84a1e8b4538c65962250ad279e15686ab1fcfd4/ShellcodeTester-0.2.1.tar.gz
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ddcci-plasmoid-backend]: Downloading https://files.pythonhosted.org/packages/98/e9/d5f0ba593eb0540bd1637258d672993f78c14151f65bf885dd2781c3b3cc/ddcci_plasmoid_backend-0.1.4.tar.gz
+[2023-04-12 14:49:49] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Downloading https://files.pythonhosted.org/packages/8f/bc/acbf05ce705d123cbeddb715d6fd9c99fcb2045375cb5f83d7b8fdf855c2/streamlit_cognito_token_access_authentication-1.1.8-py3-none-any.whl
+[2023-04-12 14:49:49] INFO root fetch - processPackages [morphcp]: executing diffoscope
+[2023-04-12 14:49:49] INFO root fetch - processPackages [morphcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morphcp-0.0.6.tar.gz tmp/morphcp-0.0.9.tar.gz --markdown 20230412/m/morphcp/0.0.6-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ddcci-plasmoid-backend]: executing diffoscope
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ddcci-plasmoid-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddcci_plasmoid_backend-0.1.3.tar.gz tmp/ddcci_plasmoid_backend-0.1.4.tar.gz --markdown 20230412/d/ddcci-plasmoid-backend/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/23/74/fe9b79a41ffd5f561790cff1257645921e3d9205bb9bb5a48830d1e9de2f/ShellcodeTester-0.2.2.tar.gz
+[2023-04-12 14:49:49] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: executing diffoscope
+[2023-04-12 14:49:49] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_cognito_token_access_authentication-1.1.7-py3-none-any.whl.zip tmp/streamlit_cognito_token_access_authentication-1.1.8-py3-none-any.whl.zip --markdown 20230412/s/streamlit-cognito-token-access-authentication/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-12 14:49:49] INFO root fetch - processPackages [substrafl]: executing diffoscope
+[2023-04-12 14:49:49] INFO root fetch - processPackages [substrafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/substrafl-0.35.1.tar.gz tmp/substrafl-0.35.1rc1.tar.gz --markdown 20230412/s/substrafl/0.35.1-0.35.1rc1/diff.md --exclude *.pyd
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-12 14:49:49] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.1.tar.gz tmp/ShellcodeTester-0.2.2.tar.gz --markdown 20230412/S/ShellcodeTester/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 14:49:50] INFO root fetch - processPackages [streamlit-cognito-token-access-authentication]: Start processing: ramodels
+[2023-04-12 14:49:50] INFO root fetch - main [MainThread]: End processing [streamlit-cognito-token-access-authentication]: success
+[2023-04-12 14:49:50] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2023-04-12 14:49:50] INFO root fetch - processPackages [ddcci-plasmoid-backend]: Start processing: OpenMEASURE
+[2023-04-12 14:49:50] INFO root fetch - main [MainThread]: End processing [ddcci-plasmoid-backend]: success
+[2023-04-12 14:49:50] INFO root fetch - processPackages [morphcp]: Start processing: UtilsRL
+[2023-04-12 14:49:50] INFO root fetch - main [MainThread]: End processing [morphcp]: success
+[2023-04-12 14:49:50] INFO root fetch - processPackages [OpenMEASURE]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 14:49:50] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2023-04-12 14:49:50] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20230412/r/ramodels/9.7.2-9.7.3/diff.md --exclude *.pyd
+[2023-04-12 14:49:50] INFO root fetch - processPackages [UtilsRL]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-04-12 14:49:50] INFO root fetch - processPackages [ShellcodeTester]: Start processing: jina
+[2023-04-12 14:49:50] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-12 14:49:50] INFO root fetch - processPackages [substrafl]: Start processing: pycart
+[2023-04-12 14:49:50] INFO root fetch - main [MainThread]: End processing [substrafl]: success
+[2023-04-12 14:49:50] INFO root fetch - processPackages [OpenMEASURE]: Downloading https://files.pythonhosted.org/packages/99/c2/e55e4c36f729b68f2864428c2942a5724cd3a7d3dd944f22540464128b80/OpenMEASURE-0.1.8.tar.gz
+[2023-04-12 14:49:51] INFO root fetch - processPackages [UtilsRL]: Downloading https://files.pythonhosted.org/packages/8a/d4/d4602b17e977f7a175dfbacbf7c30375592752beb39575dd4f610ea27d92/UtilsRL-0.5.7.tar.gz
+[2023-04-12 14:49:51] INFO root fetch - processPackages [pycart]: New version: [0.1.20] Old Version: [0.1.19]
+[2023-04-12 14:49:51] INFO root fetch - processPackages [UtilsRL]: executing diffoscope
+[2023-04-12 14:49:51] INFO root fetch - processPackages [UtilsRL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UtilsRL-0.5.6.tar.gz tmp/UtilsRL-0.5.7.tar.gz --markdown 20230412/U/UtilsRL/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-04-12 14:49:51] INFO root fetch - processPackages [OpenMEASURE]: Downloading https://files.pythonhosted.org/packages/51/e2/37e3198b416b6ca8ef357a456aa1408874f660e7f037eb90ac1037937a03/OpenMEASURE-0.1.9.tar.gz
+[2023-04-12 14:49:51] INFO root fetch - processPackages [pycart]: Downloading https://files.pythonhosted.org/packages/07/9b/1e0cb5a3d41ce18733c449530f43bc48dbc69952b95b544c6ca021214d26/pycart-0.1.19.tar.gz
+[2023-04-12 14:49:51] WARNING root fetch - processPackages [pycart]: Skipping package: exceeds size limit 33007009>=10485760
+[2023-04-12 14:49:51] INFO root fetch - processPackages [pycart]: Start processing: getswish
+[2023-04-12 14:49:51] INFO root fetch - main [MainThread]: End processing [pycart] error
+[2023-04-12 14:49:51] INFO root fetch - processPackages [getswish]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-12 14:49:51] INFO root fetch - processPackages [OpenMEASURE]: executing diffoscope
+[2023-04-12 14:49:51] INFO root fetch - processPackages [OpenMEASURE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenMEASURE-0.1.8.tar.gz tmp/OpenMEASURE-0.1.9.tar.gz --markdown 20230412/O/OpenMEASURE/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 14:49:51] INFO root fetch - processPackages [getswish]: Downloading https://files.pythonhosted.org/packages/f8/87/d660b4e578671a1176cd1d85e1faf16aab7efb03a896923d171785aa6b26/getswish-0.1.2.tar.gz
+[2023-04-12 14:49:51] INFO root fetch - processPackages [getswish]: Downloading https://files.pythonhosted.org/packages/e9/c3/75fe125a79f2ed93a5443cb521af6fd720ceb3daf68cab620395dc5433cb/getswish-0.2.0.tar.gz
+[2023-04-12 14:49:51] INFO root fetch - processPackages [ramodels]: Start processing: sssom
+[2023-04-12 14:49:51] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2023-04-12 14:49:51] INFO root fetch - processPackages [sssom]: New version: [0.3.9] Old Version: [0.3.8.dev0]
+[2023-04-12 14:49:52] INFO root fetch - processPackages [jina]: New version: [3.9.3.dev9] Old Version: [3.9.3.dev8]
+[2023-04-12 14:49:52] INFO root fetch - processPackages [getswish]: executing diffoscope
+[2023-04-12 14:49:52] INFO root fetch - processPackages [getswish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getswish-0.1.2.tar.gz tmp/getswish-0.2.0.tar.gz --markdown 20230412/g/getswish/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 14:49:52] INFO root fetch - processPackages [jina]: executing diffoscope
+[2023-04-12 14:49:52] INFO root fetch - processPackages [jina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jina-3.9.3.dev8.tar.gz tmp/jina-3.9.3.dev9.tar.gz --markdown 20230412/j/jina/3.9.3.dev8-3.9.3.dev9/diff.md --exclude *.pyd
+[2023-04-12 14:49:52] INFO root fetch - processPackages [sssom]: Downloading https://files.pythonhosted.org/packages/fb/68/76e9ee21114a0826710c8716908a5548e11a334caeca846a34ca6f680f8e/sssom-0.3.8.dev0.tar.gz
+[2023-04-12 14:49:52] INFO root fetch - processPackages [UtilsRL]: Start processing: hopsworks
+[2023-04-12 14:49:52] INFO root fetch - main [MainThread]: End processing [UtilsRL]: success
+[2023-04-12 14:49:52] INFO root fetch - processPackages [OpenMEASURE]: Start processing: raytools
+[2023-04-12 14:49:52] INFO root fetch - main [MainThread]: End processing [OpenMEASURE]: success
+[2023-04-12 14:49:52] INFO root fetch - processPackages [hopsworks]: New version: [3.2.0rc0] Old Version: [3.1.1rc2]
+[2023-04-12 14:49:52] INFO root fetch - processPackages [raytools]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 14:49:52] INFO root fetch - processPackages [hopsworks]: Downloading https://files.pythonhosted.org/packages/8a/0f/c55ef8cc54610160a87e225c505fb5b0b4882a9add431bab553cdd4690c1/hopsworks-3.1.1rc2.tar.gz
+[2023-04-12 14:49:52] INFO root fetch - processPackages [sssom]: Downloading https://files.pythonhosted.org/packages/84/31/7dc51a85fbd7f7e60e1db58b033cf3b40b15106d5b17432f262f77358673/sssom-0.3.9.tar.gz
+[2023-04-12 14:49:52] INFO root fetch - processPackages [raytools]: Downloading https://files.pythonhosted.org/packages/b9/0f/02978c0a822745317f3437c03583263ff20c6692bf3b33f023e27e0dacdc/raytools-0.1.0.tar.gz
+[2023-04-12 14:49:53] INFO root fetch - processPackages [hopsworks]: Downloading https://files.pythonhosted.org/packages/39/33/fe011ee1c7bacbf5f99b0578e584911f55dd672c24431f583f23e9a14c53/hopsworks-3.2.0rc0.tar.gz
+[2023-04-12 14:49:53] INFO root fetch - processPackages [getswish]: Start processing: shub-workflow
+[2023-04-12 14:49:53] INFO root fetch - main [MainThread]: End processing [getswish]: success
+[2023-04-12 14:49:53] INFO root fetch - processPackages [shub-workflow]: New version: [1.9.7.4] Old Version: [1.9.7.3]
+[2023-04-12 14:49:53] INFO root fetch - processPackages [raytools]: Downloading https://files.pythonhosted.org/packages/6d/2b/a0df80bc8f8b3fd8e9e2be9fbdab4f301e710557270b07fb1fb102ad297c/raytools-0.1.1.tar.gz
+[2023-04-12 14:49:53] INFO root fetch - processPackages [hopsworks]: executing diffoscope
+[2023-04-12 14:49:53] INFO root fetch - processPackages [hopsworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hopsworks-3.1.1rc2.tar.gz tmp/hopsworks-3.2.0rc0.tar.gz --markdown 20230412/h/hopsworks/3.1.1rc2-3.2.0rc0/diff.md --exclude *.pyd
+[2023-04-12 14:49:53] INFO root fetch - processPackages [shub-workflow]: executing diffoscope
+[2023-04-12 14:49:53] INFO root fetch - processPackages [shub-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shub-workflow-1.9.7.3.tar.gz tmp/shub-workflow-1.9.7.4.tar.gz --markdown 20230412/s/shub-workflow/1.9.7.3-1.9.7.4/diff.md --exclude *.pyd
+[2023-04-12 14:49:53] INFO root fetch - processPackages [sssom]: executing diffoscope
+[2023-04-12 14:49:53] INFO root fetch - processPackages [sssom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sssom-0.3.8.dev0.tar.gz tmp/sssom-0.3.9.tar.gz --markdown 20230412/s/sssom/0.3.8.dev0-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 14:49:53] INFO root fetch - processPackages [raytools]: executing diffoscope
+[2023-04-12 14:49:53] INFO root fetch - processPackages [raytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raytools-0.1.0.tar.gz tmp/raytools-0.1.1.tar.gz --markdown 20230412/r/raytools/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 14:49:54] INFO root fetch - processPackages [jina]: Start processing: scrapyrt-with-params
+[2023-04-12 14:49:54] INFO root fetch - main [MainThread]: End processing [jina]: success
+[2023-04-12 14:49:54] INFO root fetch - processPackages [scrapyrt-with-params]: New version: [0.13.1] Old Version: [0.11.0]
+[2023-04-12 14:49:54] INFO root fetch - processPackages [scrapyrt-with-params]: executing diffoscope
+[2023-04-12 14:49:54] INFO root fetch - processPackages [scrapyrt-with-params]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapyrt-with-params-0.11.0.tar.gz tmp/scrapyrt-with-params-0.13.1.tar.gz --markdown 20230412/s/scrapyrt-with-params/0.11.0-0.13.1/diff.md --exclude *.pyd
+[2023-04-12 14:49:54] INFO root fetch - processPackages [sssom]: Start processing: OpenMEASURE
+[2023-04-12 14:49:54] INFO root fetch - main [MainThread]: End processing [sssom]: success
+[2023-04-12 14:49:54] INFO root fetch - processPackages [shub-workflow]: Start processing: pykrack
+[2023-04-12 14:49:54] INFO root fetch - main [MainThread]: End processing [shub-workflow]: success
+[2023-04-12 14:49:54] INFO root fetch - processPackages [OpenMEASURE]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 14:49:54] INFO root fetch - processPackages [hopsworks]: Start processing: kognic-io
+[2023-04-12 14:49:54] INFO root fetch - main [MainThread]: End processing [hopsworks]: success
+[2023-04-12 14:49:54] WARNING root fetch - processPackages [pykrack]: Skipping, unable to determine old version
+[2023-04-12 14:49:54] INFO root fetch - main [MainThread]: End processing [pykrack] error
+[2023-04-12 14:49:54] INFO root fetch - processPackages [OpenMEASURE]: executing diffoscope
+[2023-04-12 14:49:54] INFO root fetch - processPackages [OpenMEASURE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenMEASURE-0.1.8.tar.gz tmp/OpenMEASURE-0.1.9.tar.gz --markdown 20230412/O/OpenMEASURE/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 14:49:54] INFO root fetch - processPackages [kognic-io]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-04-12 14:49:54] INFO root fetch - processPackages [kognic-io]: Downloading https://files.pythonhosted.org/packages/43/c5/f1f664ac91126c3857b1cc3af07f822cfb918a026dcb9b06e4dc0fc6e742/kognic-io-1.1.8.tar.gz
+[2023-04-12 14:49:55] INFO root fetch - processPackages [kognic-io]: Downloading https://files.pythonhosted.org/packages/e1/5a/5a91756d782bd7137cc30c69c02754e8f395827e626b7c08c08a90ffa933/kognic-io-1.1.9.tar.gz
+[2023-04-12 14:49:55] INFO root fetch - main [MainThread]: End processing [raytools]: success
+[2023-04-12 14:49:55] INFO root fetch - processPackages [kognic-io]: executing diffoscope
+[2023-04-12 14:49:55] INFO root fetch - processPackages [kognic-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kognic-io-1.1.8.tar.gz tmp/kognic-io-1.1.9.tar.gz --markdown 20230412/k/kognic-io/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-04-12 14:49:55] INFO root fetch - main [MainThread]: End processing [scrapyrt-with-params]: success
+[2023-04-12 14:49:56] INFO root fetch - main [MainThread]: End processing [OpenMEASURE]: success
+[2023-04-12 14:49:56] INFO root fetch - main [MainThread]: End processing [kognic-io]: success
+[2023-04-12 14:49:56] INFO root fetch - main [MainThread]: Store serial: [17676247]
