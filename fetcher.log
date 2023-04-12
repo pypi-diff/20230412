@@ -9050,3 +9050,148 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid
 [2023-04-12 09:42:52] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:43:15] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:43:15] INFO root fetch - main [MainThread]: Store serial: [17672815]
+[2023-04-12 09:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672815]
+[2023-04-12 09:48:23] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-12 09:48:23] INFO root fetch - processPackages [dcqc]: New version: [1.3.0] Old Version: [1.2.0]
+[2023-04-12 09:48:23] WARNING root fetch - processPackages [lama-cleaner-custom]: Skipping, unable to determine old version
+[2023-04-12 09:48:23] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:48:23] INFO root fetch - processPackages [spacy]: New version: [4.0.0.dev0] Old Version: [3.5.2]
+[2023-04-12 09:48:23] INFO root fetch - processPackages [armonik]: New version: [3.8.1.dev261] Old Version: [3.8.0]
+[2023-04-12 09:48:23] INFO root fetch - processPackages [sapx]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-04-12 09:48:23] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.13.0.dev20230412] Old Version: [2.13.0.dev20230411]
+[2023-04-12 09:48:23] INFO root fetch - processPackages [spacy]: Downloading https://files.pythonhosted.org/packages/7f/17/46f037b3d49844e4cd529f8d24e3873d52befeab1533899f183290b8b6d1/spacy-3.5.2.tar.gz
+[2023-04-12 09:48:23] INFO root fetch - processPackages [dcqc]: Downloading https://files.pythonhosted.org/packages/80/4f/cd07350abd2b172e0d4b55ef44cb53ccae3318dffcb1df5b62fd9cc001e8/dcqc-1.2.0.tar.gz
+[2023-04-12 09:48:23] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/ae/3e/8b4966c1b123504b392bc8f3a1b73de6f818e033263829c546f075403b7f/sapx-0.1.6.tar.gz
+[2023-04-12 09:48:23] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/28/bc/3f264a6ce2f243a38dc9a1952383fa5e97b4a3d34c62960a124bf569ea02/armonik-3.8.1.dev261.tar.gz
+[2023-04-12 09:48:23] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/50/c6/fede4ab847078a0f465b1dc84a0206eff7ec38d14a9eea6265043500dd2b/tf_nightly_macos-2.13.0.dev20230411-cp39-cp39-macosx_12_0_arm64.whl
+[2023-04-12 09:48:24] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 186180097>=10485760
+[2023-04-12 09:48:24] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:48:24] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-04-12 09:48:24] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.0.tar.gz tmp/armonik-3.8.1.dev261.tar.gz --markdown 20230412/a/armonik/3.8.0-3.8.1.dev261/diff.md --exclude *.pyd
+[2023-04-12 09:48:24] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: New version: [16.0.1.0.1.1] Old Version: [16.0.1.0.1]
+[2023-04-12 09:48:24] INFO root fetch - processPackages [dcqc]: Downloading https://files.pythonhosted.org/packages/32/1a/5807059aac9f8abf885bec1aac8b1032a44b35d1a6b2ffdd53a590551cce/dcqc-1.3.0.tar.gz
+[2023-04-12 09:48:24] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/76/0d/ae63deca1d7bda307c239af068e85ef3d668f39ddf00a4758ab4f160a3ee/sapx-0.1.7.tar.gz
+[2023-04-12 09:48:24] INFO root fetch - processPackages [spacy]: Downloading https://files.pythonhosted.org/packages/2e/c5/212a64c021970e13c86b980311f16e60b688c16ab02f7a93b2c9c4e56bab/spacy-4.0.0.dev0.tar.gz
+[2023-04-12 09:48:24] INFO root fetch - processPackages [sapx]: executing diffoscope
+[2023-04-12 09:48:24] INFO root fetch - processPackages [sapx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapx-0.1.6.tar.gz tmp/sapx-0.1.7.tar.gz --markdown 20230412/s/sapx/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-04-12 09:48:24] INFO root fetch - processPackages [dcqc]: executing diffoscope
+[2023-04-12 09:48:24] INFO root fetch - processPackages [dcqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcqc-1.2.0.tar.gz tmp/dcqc-1.3.0.tar.gz --markdown 20230412/d/dcqc/1.2.0-1.3.0/diff.md --exclude *.pyd
+[2023-04-12 09:48:24] INFO root fetch - processPackages [spacy]: executing diffoscope
+[2023-04-12 09:48:24] INFO root fetch - processPackages [spacy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacy-3.5.2.tar.gz tmp/spacy-4.0.0.dev0.tar.gz --markdown 20230412/s/spacy/3.5.2-4.0.0.dev0/diff.md --exclude *.pyd
+[2023-04-12 09:48:24] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: Downloading https://files.pythonhosted.org/packages/fb/73/275d2bee2ab3f0c306cc2d77adb1fe16633e43dfb6e834e3833310c5bd3e/odoo_addon_base_external_dbsource_mssql-16.0.1.0.1.1-py3-none-any.whl
+[2023-04-12 09:48:24] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: executing diffoscope
+[2023-04-12 09:48:24] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mssql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_external_dbsource_mssql-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_base_external_dbsource_mssql-16.0.1.0.1.1-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-base-external-dbsource-mssql/16.0.1.0.1-16.0.1.0.1.1/diff.md --exclude *.pyd
+[2023-04-12 09:48:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:25] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: New version: [16.0.1.0.1.3] Old Version: [16.0.1.0.1.2]
+[2023-04-12 09:48:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:25] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-04-12 09:48:25] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: Downloading https://files.pythonhosted.org/packages/2a/ce/93a2260bfcd99965e3ff04e67226514540dce34af9d2a41c68738a0f7e1a/odoo_addon_base_external_dbsource-16.0.1.0.1.3-py3-none-any.whl
+[2023-04-12 09:48:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addons-oca-server-backend]: New version: [16.0.20230411.0] Old Version: [16.0.20230406.0]
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: executing diffoscope
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-base-external-dbsource/16.0.1.0.1.2-16.0.1.0.1.3/diff.md --exclude *.pyd
+[2023-04-12 09:48:26] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-04-12 09:48:26] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230412/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addons-oca-server-backend]: Downloading https://files.pythonhosted.org/packages/0c/c5/b0339ddf065d70e661aadccc89858e50d7df29dfc498efb4a83b663dc570/odoo_addons_oca_server_backend-16.0.20230406.0-py3-none-any.whl
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addons-oca-server-backend]: Downloading https://files.pythonhosted.org/packages/be/ce/ad9fe7e6ea12c9afb04808c9ae4baa7e7d974b0aa0a1177ecc69d17480cb/odoo_addons_oca_server_backend-16.0.20230411.0-py3-none-any.whl
+[2023-04-12 09:48:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:26] INFO root fetch - processPackages [renku]: New version: [2.4.0rc2] Old Version: [2.4.0rc1]
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addons-oca-server-backend]: executing diffoscope
+[2023-04-12 09:48:26] INFO root fetch - processPackages [odoo-addons-oca-server-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_server_backend-16.0.20230406.0-py3-none-any.whl.zip tmp/odoo_addons_oca_server_backend-16.0.20230411.0-py3-none-any.whl.zip --markdown 20230412/o/odoo-addons-oca-server-backend/16.0.20230406.0-16.0.20230411.0/diff.md --exclude *.pyd
+[2023-04-12 09:48:26] INFO root fetch - processPackages [renku]: Downloading https://files.pythonhosted.org/packages/dc/f6/c3b22d50e9b701221dcceff4916981df728e7bf17844bcb9f0b1d4673837/renku-2.4.0rc2.tar.gz
+[2023-04-12 09:48:27] INFO root fetch - processPackages [renku]: executing diffoscope
+[2023-04-12 09:48:27] INFO root fetch - processPackages [renku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renku-2.4.0rc1.tar.gz tmp/renku-2.4.0rc2.tar.gz --markdown 20230412/r/renku/2.4.0rc1-2.4.0rc2/diff.md --exclude *.pyd
+[2023-04-12 09:48:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:27] INFO root fetch - processPackages [jenkins-job-builder]: New version: [5.0.0] Old Version: [4.3.0]
+[2023-04-12 09:48:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:27] INFO root fetch - processPackages [jenkins-job-builder]: Downloading https://files.pythonhosted.org/packages/bc/e4/fccd5e2d0b8826bc465ea98dab5196bb2f7268619efaa58a04e5527e8739/jenkins-job-builder-4.3.0.tar.gz
+[2023-04-12 09:48:27] INFO root fetch - processPackages [renku-lock]: New version: [2.4.0rc2] Old Version: [2.3.2]
+[2023-04-12 09:48:27] INFO root fetch - processPackages [renku-lock]: Downloading https://files.pythonhosted.org/packages/91/bf/173254a7bbf3f7278b58f8502d6a5b501ac2844d34f5dce292169ad392d7/renku_lock-2.3.2-py3-none-any.whl
+[2023-04-12 09:48:28] INFO root fetch - processPackages [jenkins-job-builder]: Downloading https://files.pythonhosted.org/packages/87/14/cd11e5b18fefe10a91fe40eff569fb3cb3db1537fad10594ca8574447bdf/jenkins-job-builder-5.0.0.tar.gz
+[2023-04-12 09:48:28] INFO root fetch - processPackages [renku-lock]: Downloading https://files.pythonhosted.org/packages/97/15/3d2f0991d86bdef7c6998cb3b006d85061f856f989322a42eef652ce5047/renku_lock-2.4.0rc2-py3-none-any.whl
+[2023-04-12 09:48:28] INFO root fetch - processPackages [jenkins-job-builder]: executing diffoscope
+[2023-04-12 09:48:28] INFO root fetch - processPackages [jenkins-job-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenkins-job-builder-4.3.0.tar.gz tmp/jenkins-job-builder-5.0.0.tar.gz --markdown 20230412/j/jenkins-job-builder/4.3.0-5.0.0/diff.md --exclude *.pyd
+[2023-04-12 09:48:28] INFO root fetch - processPackages [renku-lock]: executing diffoscope
+[2023-04-12 09:48:28] INFO root fetch - processPackages [renku-lock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renku_lock-2.3.2-py3-none-any.whl.zip tmp/renku_lock-2.4.0rc2-py3-none-any.whl.zip --markdown 20230412/r/renku-lock/2.3.2-2.4.0rc2/diff.md --exclude *.pyd
+[2023-04-12 09:48:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:29] INFO root fetch - processPackages [ipywebgl]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-12 09:48:29] INFO root fetch - processPackages [ipywebgl]: Downloading https://files.pythonhosted.org/packages/c4/a1/9e6bb177b4d4b3d8af1958c03125d4f4e26101ee56f97462fa00cd2e30f2/ipywebgl-0.2.0.tar.gz
+[2023-04-12 09:48:29] INFO root fetch - processPackages [ipywebgl]: executing diffoscope
+[2023-04-12 09:48:29] INFO root fetch - processPackages [ipywebgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipywebgl-0.1.2.tar.gz tmp/ipywebgl-0.2.0.tar.gz --markdown 20230412/i/ipywebgl/0.1.2-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 09:48:33] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:33] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.13.0.dev20230412] Old Version: [2.13.0.dev20230411]
+[2023-04-12 09:48:33] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/6c/00/422252634396714aad4f2305bfa7064cf3d7c013f4fc98e04aa95a26b007/tf_nightly_cpu-2.13.0.dev20230412-cp39-cp39-win_amd64.whl
+[2023-04-12 09:48:34] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2023-04-12 09:48:34] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.13.0.dev20230411-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.13.0.dev20230412-cp39-cp39-win_amd64.whl.zip --markdown 20230412/t/tf-nightly-cpu/2.13.0.dev20230411-2.13.0.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 09:48:34] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:34] INFO root fetch - processPackages [deepdriver]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-04-12 09:48:34] INFO root fetch - processPackages [deepdriver]: executing diffoscope
+[2023-04-12 09:48:34] INFO root fetch - processPackages [deepdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepdriver-0.9.4.tar.gz tmp/deepdriver-0.9.5.tar.gz --markdown 20230412/d/deepdriver/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-04-12 09:48:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:35] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 09:48:35] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 09:48:35] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 09:48:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:35] INFO root fetch - processPackages [getsmarter-api-clients]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-04-12 09:48:35] INFO root fetch - processPackages [getsmarter-api-clients]: Downloading https://files.pythonhosted.org/packages/77/85/e4f7007a8d2ad02eda73f7fc81adc902fa80e2a25aa6c75909c163e80c7c/getsmarter-api-clients-0.4.0.tar.gz
+[2023-04-12 09:48:36] INFO root fetch - processPackages [getsmarter-api-clients]: Downloading https://files.pythonhosted.org/packages/a2/c4/2c137f31f1730648dd2e5a5786721cf87c38da4d1b1a3295ed1f53ab9b88/getsmarter-api-clients-0.5.0.tar.gz
+[2023-04-12 09:48:36] INFO root fetch - processPackages [getsmarter-api-clients]: executing diffoscope
+[2023-04-12 09:48:36] INFO root fetch - processPackages [getsmarter-api-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getsmarter-api-clients-0.4.0.tar.gz tmp/getsmarter-api-clients-0.5.0.tar.gz --markdown 20230412/g/getsmarter-api-clients/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 09:48:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:38] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:48:39] ERROR root fetch - processPackages [renku]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-04-12 09:48:39] INFO root fetch - main [MainThread]: error
+[2023-04-12 09:48:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:49:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 09:49:28] INFO root fetch - main [MainThread]: Store serial: [17672901]
