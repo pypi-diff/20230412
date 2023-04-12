@@ -5090,3 +5090,93 @@
 [2023-04-12 04:23:46] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:23:46] INFO root fetch - main [MainThread]: success
 [2023-04-12 04:23:46] INFO root fetch - main [MainThread]: Store serial: [17670399]
+[2023-04-12 04:28:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670399]
+[2023-04-12 04:28:53] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 04:28:53] INFO root fetch - processPackages [toga-web]: New version: [0.3.1] Old Version: [0.3.0.dev39]
+[2023-04-12 04:28:53] INFO root fetch - processPackages [toga-core]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:53] INFO root fetch - processPackages [toga-demo]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:53] INFO root fetch - processPackages [toga-winforms]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:53] INFO root fetch - processPackages [toga-android]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-web]: Downloading https://files.pythonhosted.org/packages/3b/e1/dba154a489e6861a8f5131e906a1d4e3ee671ed12fdbd891b4bf642c2d12/toga-web-0.3.0.dev39.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-android]: Downloading https://files.pythonhosted.org/packages/e0/88/69b286faff7b2ed8ba2965395a0fb9de456dbb28992c340cdb4a12b5ccb9/toga-android-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-demo]: Downloading https://files.pythonhosted.org/packages/45/6d/d8ee49fbf7c61f88e3c8e5a5dd0798474f6f1300223414b6dab1afa14873/toga-demo-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-winforms]: Downloading https://files.pythonhosted.org/packages/23/b3/7ad4f3c48d416b0f8a740a942b905a97da237f0bb32e6989dfa24fc19e7d/toga-winforms-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-core]: Downloading https://files.pythonhosted.org/packages/e6/95/4a24cb338bd10e0bf1bd0e634900f6332f6127dd0b620e641d03e9fa87a2/toga-core-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-core]: Downloading https://files.pythonhosted.org/packages/ad/17/621d3d0f2cf948de6611bf2a1d495b2052352a1bf38a331dc55ca76a5b26/toga-core-0.3.1.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-android]: Downloading https://files.pythonhosted.org/packages/dd/4a/4d9a2c78d535de4892ff614ca33aca724fc19ec8849ac363e6b402f17475/toga-android-0.3.1.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-winforms]: Downloading https://files.pythonhosted.org/packages/bd/e9/84d43f074d697bc62abef38f9ce4a44bbad1c8bd70b03b7ea8fc12568dfe/toga-winforms-0.3.1.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-demo]: Downloading https://files.pythonhosted.org/packages/5c/0f/42fedaa28afd1f7d1e91d52bf643fc814a5e065881b4ba6247a96282e69a/toga-demo-0.3.1.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-web]: Downloading https://files.pythonhosted.org/packages/67/16/bd5580f89b5145059d06dc26973f5ca29a789ae25b04bf774b379efc2ee3/toga-web-0.3.1.tar.gz
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-core]: executing diffoscope
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-core-0.3.0.dev9.tar.gz tmp/toga-core-0.3.1.tar.gz --markdown 20230412/t/toga-core/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-android]: executing diffoscope
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-android]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-android-0.3.0.dev9.tar.gz tmp/toga-android-0.3.1.tar.gz --markdown 20230412/t/toga-android/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-web]: executing diffoscope
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-web-0.3.0.dev39.tar.gz tmp/toga-web-0.3.1.tar.gz --markdown 20230412/t/toga-web/0.3.0.dev39-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-winforms]: executing diffoscope
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-winforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-winforms-0.3.0.dev9.tar.gz tmp/toga-winforms-0.3.1.tar.gz --markdown 20230412/t/toga-winforms/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-demo]: executing diffoscope
+[2023-04-12 04:28:54] INFO root fetch - processPackages [toga-demo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-demo-0.3.0.dev9.tar.gz tmp/toga-demo-0.3.1.tar.gz --markdown 20230412/t/toga-demo/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:55] INFO root fetch - processPackages [toga]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:55] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-cocoa]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-gtk]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga]: Downloading https://files.pythonhosted.org/packages/c0/6b/a3ef1111bf1b841df9430c985a2c939ad491316c96af2369fc0863c3d859/toga-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-dummy]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-cocoa]: Downloading https://files.pythonhosted.org/packages/ec/5a/2251c5f0ae37519e737ba1fe76bb7d53638dbb0d31ebfcae94cac876b793/toga-cocoa-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-gtk]: Downloading https://files.pythonhosted.org/packages/30/8b/f7bdde445197ba70df4e6a025a63d4981f11f10d91e539005b8f431e2d6e/toga-gtk-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-dummy]: Downloading https://files.pythonhosted.org/packages/e8/ef/14a041db3ea581202f9404e40625c729a3eac882a729c8657f540db1ea15/toga-dummy-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-iOS]: New version: [0.3.1] Old Version: [0.3.0.dev9]
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-cocoa]: Downloading https://files.pythonhosted.org/packages/f0/4d/eedf99c64492b72bd3d56d41dc334c473057360f33a9b8b398de42520b9d/toga-cocoa-0.3.1.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-gtk]: Downloading https://files.pythonhosted.org/packages/78/1f/cd1b92ae7d6302e34a52949bd6b5cc6c83dbd36d64cf15a5d10c782eaa6d/toga-gtk-0.3.1.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga]: Downloading https://files.pythonhosted.org/packages/25/14/7dd6b19a437458dad62729f875f065dbdf5d8de510095d1cba5efc9b1c0a/toga-0.3.1.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-iOS]: Downloading https://files.pythonhosted.org/packages/59/b8/08adfa09a1c23d00128e90d36411e45f0db19081ee14a5ff88f89ababf2e/toga-iOS-0.3.0.dev9.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-dummy]: Downloading https://files.pythonhosted.org/packages/ff/98/9418cbaa390a0389e5c1be7bcf3882def06c48953f1be1c7d32a421184fa/toga-dummy-0.3.1.tar.gz
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-cocoa]: executing diffoscope
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-cocoa-0.3.0.dev9.tar.gz tmp/toga-cocoa-0.3.1.tar.gz --markdown 20230412/t/toga-cocoa/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-gtk]: executing diffoscope
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-gtk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-gtk-0.3.0.dev9.tar.gz tmp/toga-gtk-0.3.1.tar.gz --markdown 20230412/t/toga-gtk/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga]: executing diffoscope
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-0.3.0.dev9.tar.gz tmp/toga-0.3.1.tar.gz --markdown 20230412/t/toga/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-dummy]: executing diffoscope
+[2023-04-12 04:28:56] INFO root fetch - processPackages [toga-dummy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-dummy-0.3.0.dev9.tar.gz tmp/toga-dummy-0.3.1.tar.gz --markdown 20230412/t/toga-dummy/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:57] INFO root fetch - processPackages [toga-iOS]: Downloading https://files.pythonhosted.org/packages/42/4f/1119c05d0e0d8eb77a50e4bc0d45c4d04c77813f5a9619b3d229304dbf5d/toga-iOS-0.3.1.tar.gz
+[2023-04-12 04:28:57] INFO root fetch - processPackages [toga-iOS]: executing diffoscope
+[2023-04-12 04:28:57] INFO root fetch - processPackages [toga-iOS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toga-iOS-0.3.0.dev9.tar.gz tmp/toga-iOS-0.3.1.tar.gz --markdown 20230412/t/toga-iOS/0.3.0.dev9-0.3.1/diff.md --exclude *.pyd
+[2023-04-12 04:28:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:57] INFO root fetch - processPackages [napari-hdf5-netcdf-viewer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 04:28:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-12 04:28:58] INFO root fetch - processPackages [napari-hdf5-netcdf-viewer]: Downloading https://files.pythonhosted.org/packages/62/33/fc367a8e0aa5da4a50367fd262fcdbbb8ab83af382d376f2d33c25f64e34/napari-hdf5-netcdf-viewer-0.0.1.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: Downloading https://files.pythonhosted.org/packages/88/62/be243bef47668412b343f785b92a57ef514a884fe2c32f5524d5308f5621/qabot-0.3.2.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - processPackages [typst]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-04-12 04:28:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:58] INFO root fetch - processPackages [sliderule]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-04-12 04:28:58] INFO root fetch - processPackages [typst]: Downloading https://files.pythonhosted.org/packages/f1/72/57329fb9f26235bda0eb09fcb3e921810debc1c3cd305c57cc24ee4999c2/typst-0.1.4.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - processPackages [napari-hdf5-netcdf-viewer]: Downloading https://files.pythonhosted.org/packages/f6/11/0998c15012ae767c993abd84257c63dd011dc702353032f2c5797c157117/napari-hdf5-netcdf-viewer-0.0.2.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - processPackages [sliderule]: Downloading https://files.pythonhosted.org/packages/14/47/7e98af7d379b7ee05d0237afe8337a93900e4e03add6280d974274aa7a6d/sliderule-3.0.3.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: Downloading https://files.pythonhosted.org/packages/1b/8e/a91a011d36926a0a582f7ee719626d98bb8532cd88d236fe2193359ea6b5/qabot-0.3.3.tar.gz
+[2023-04-12 04:28:58] INFO root fetch - processPackages [napari-hdf5-netcdf-viewer]: executing diffoscope
+[2023-04-12 04:28:58] INFO root fetch - processPackages [napari-hdf5-netcdf-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-hdf5-netcdf-viewer-0.0.1.tar.gz tmp/napari-hdf5-netcdf-viewer-0.0.2.tar.gz --markdown 20230412/n/napari-hdf5-netcdf-viewer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 04:28:58] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:58] INFO root fetch - processPackages [sliderule]: executing diffoscope
+[2023-04-12 04:28:58] INFO root fetch - processPackages [sliderule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sliderule-3.0.2.tar.gz tmp/sliderule-3.0.3.tar.gz --markdown 20230412/s/sliderule/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: executing diffoscope
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qabot-0.3.2.tar.gz tmp/qabot-0.3.3.tar.gz --markdown 20230412/q/qabot/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: executing diffoscope
+[2023-04-12 04:28:58] INFO root fetch - processPackages [qabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qabot-0.3.2.tar.gz tmp/qabot-0.3.3.tar.gz --markdown 20230412/q/qabot/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-12 04:28:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:28:59] INFO root fetch - processPackages [typst]: Downloading https://files.pythonhosted.org/packages/72/7d/b9d00af9b9d198df336b9d776a57356c9505336c18b115afa4d265fb7c47/typst-0.2.0.tar.gz
+[2023-04-12 04:28:59] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:29:00] INFO root fetch - processPackages [typst]: executing diffoscope
+[2023-04-12 04:29:00] INFO root fetch - processPackages [typst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typst-0.1.4.tar.gz tmp/typst-0.2.0.tar.gz --markdown 20230412/t/typst/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 04:29:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 04:29:02] INFO root fetch - main [MainThread]: Store serial: [17670453]
