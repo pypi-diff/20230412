@@ -7061,3 +7061,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:15:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:15:09] INFO root fetch - main [MainThread]: Store serial: [17671471]
+[2023-04-12 07:20:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671471]
+[2023-04-12 07:20:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: New version: [14.0.3.2.1.dev3] Old Version: [14.0.3.2.1.dev2]
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa]: New version: [14.0.2.0.2.dev1] Old Version: [14.0.2.0.1.dev1]
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fiscalcode]: New version: [14.0.1.0.3.dev3] Old Version: [14.0.1.0.3.dev2]
+[2023-04-12 07:20:17] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.3a0] Old Version: [0.1.2a2]
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-assets-management]: New version: [14.0.1.0.5.dev9] Old Version: [14.0.1.0.5.dev6]
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/c0/d5/18a419a7a27b5ad1856e64a4b0fdf1dd703bd8f2ae4272b3ffe2330cbc9e/odoo14_addon_l10n_it_fatturapa-14.0.2.0.1.dev1-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/60/e2/715b014c370738433202a0ed0c7f2aa8ed2534c563fa3f24e72bba30f191/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev2-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fiscalcode]: Downloading https://files.pythonhosted.org/packages/4e/2b/e1a3fc6c26a84382a3a815fbd181c220443e307ffe573af8b702b574ef46/odoo14_addon_l10n_it_fiscalcode-14.0.1.0.3.dev2-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-assets-management]: Downloading https://files.pythonhosted.org/packages/2b/da/0b614bffcf6caafa3ed500ded20f55d65f96b4b22c4f9e0d7eb7db2a6458/odoo14_addon_assets_management-14.0.1.0.5.dev9-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/a6/6e/49ee48fdc8d74be51313b3fd1abf997f5b2cce0661192934596d19e43fae/mango_pycore-0.1.3a0.tar.gz
+[2023-04-12 07:20:17] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 07:20:17] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.2a2.tar.gz tmp/mango_pycore-0.1.3a0.tar.gz --markdown 20230412/m/mango-pycore/0.1.2a2-0.1.3a0/diff.md --exclude *.pyd
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-assets-management]: executing diffoscope
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-assets-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_assets_management-14.0.1.0.5.dev6-py3-none-any.whl.zip tmp/odoo14_addon_assets_management-14.0.1.0.5.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-assets-management/14.0.1.0.5.dev6-14.0.1.0.5.dev9/diff.md --exclude *.pyd
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fiscalcode]: Downloading https://files.pythonhosted.org/packages/1b/1a/7287bc7d543a801d07dba07b84f3d2d9036e8ba010aedc7a232b735722e1/odoo14_addon_l10n_it_fiscalcode-14.0.1.0.3.dev3-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/3b/fd/670e2462b95b378040f65e3117a7a61661f664807b02dca67faa9423c985/odoo14_addon_l10n_it_fatturapa-14.0.2.0.2.dev1-py3-none-any.whl
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fiscalcode]: executing diffoscope
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fiscalcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_fiscalcode-14.0.1.0.3.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_fiscalcode-14.0.1.0.3.dev3-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-l10n-it-fiscalcode/14.0.1.0.3.dev2-14.0.1.0.3.dev3/diff.md --exclude *.pyd
+[2023-04-12 07:20:17] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/0f/27/66707ca1002e15603fe384f9af822f3325dd0c796d3be47f59ed9ef46853/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev3-py3-none-any.whl
+[2023-04-12 07:20:18] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa]: executing diffoscope
+[2023-04-12 07:20:18] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_fatturapa-14.0.2.0.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_fatturapa-14.0.2.0.2.dev1-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-l10n-it-fatturapa/14.0.2.0.1.dev1-14.0.2.0.2.dev1/diff.md --exclude *.pyd
+[2023-04-12 07:20:18] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2023-04-12 07:20:18] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev3-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-l10n-it-fatturapa-out/14.0.3.2.1.dev2-14.0.3.2.1.dev3/diff.md --exclude *.pyd
+[2023-04-12 07:20:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:18] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [3.1.9] Old Version: [3.1.8]
+[2023-04-12 07:20:18] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2023-04-12 07:20:18] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-3.1.8.tar.gz tmp/so_vits_svc_fork-3.1.9.tar.gz --markdown 20230412/s/so-vits-svc-fork/3.1.8-3.1.9/diff.md --exclude *.pyd
+[2023-04-12 07:20:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:19] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-12 07:20:19] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-12 07:20:19] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.5.tar.gz tmp/langchain_utils-0.3.6.tar.gz --markdown 20230412/l/langchain-utils/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-12 07:20:19] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:21] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:20:21] INFO root fetch - main [MainThread]: Store serial: [17671488]
