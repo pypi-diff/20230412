@@ -4519,3 +4519,87 @@
 [2023-04-12 03:25:17] ERROR root fetch - processPackages [bioregistry]: Timeout during execution of pkgdiff
 [2023-04-12 03:25:17] INFO root fetch - main [MainThread]: error
 [2023-04-12 03:25:17] INFO root fetch - main [MainThread]: Store serial: [17669717]
+[2023-04-12 03:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17669717]
+[2023-04-12 03:30:25] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 03:30:25] WARNING root fetch - processPackages [psgnuitka]: Skipping, unable to determine old version
+[2023-04-12 03:30:25] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:30:25] INFO root fetch - processPackages [django-snowflake]: New version: [4.2b1] Old Version: [4.2a1]
+[2023-04-12 03:30:25] WARNING root fetch - processPackages [piingpoong]: Skipping, unable to determine old version
+[2023-04-12 03:30:25] INFO root fetch - processPackages [zha-quirks]: New version: [0.0.97] Old Version: [0.0.96]
+[2023-04-12 03:30:25] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:30:25] INFO root fetch - processPackages [DubSplitter]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-12 03:30:25] INFO root fetch - processPackages [litalib]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 03:30:25] INFO root fetch - processPackages [printnanny-api-client]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-04-12 03:30:25] INFO root fetch - processPackages [printnanny-api-client]: executing diffoscope
+[2023-04-12 03:30:25] INFO root fetch - processPackages [printnanny-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printnanny-api-client-0.99.8.tar.gz tmp/printnanny-api-client-0.99.9.tar.gz --markdown 20230412/p/printnanny-api-client/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-04-12 03:30:25] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/29/7a/be39fe34f8aea763f4ab1fa3fcddb75e84f384dad178112cf5602fedb25b/django-snowflake-4.2a1.tar.gz
+[2023-04-12 03:30:25] INFO root fetch - processPackages [litalib]: Downloading https://files.pythonhosted.org/packages/2c/15/14296b825b09fc5315462f4fdfcc6b62530c15426c157b073cd6d850b7a4/litalib-0.0.2-py3-none-any.whl
+[2023-04-12 03:30:25] INFO root fetch - processPackages [zha-quirks]: Downloading https://files.pythonhosted.org/packages/34/5b/89659de54d84947e91d29de4d8a96c5d416905641c80e14059c27dc1b61e/zha-quirks-0.0.97.tar.gz
+[2023-04-12 03:30:25] INFO root fetch - processPackages [DubSplitter]: Downloading https://files.pythonhosted.org/packages/ce/ab/f25c659626ba92c6f4b3471f764054af4e7ccf0264dc878c5a73dbb51a2d/DubSplitter-0.3.0.tar.gz
+[2023-04-12 03:30:25] INFO root fetch - processPackages [django-snowflake]: Downloading https://files.pythonhosted.org/packages/6f/ad/1f315004d8039f04d6e2ae4d2450d9aefaa95a9ed532d7ce0527630028d0/django-snowflake-4.2b1.tar.gz
+[2023-04-12 03:30:26] INFO root fetch - processPackages [zha-quirks]: executing diffoscope
+[2023-04-12 03:30:26] INFO root fetch - processPackages [zha-quirks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zha-quirks-0.0.96.tar.gz tmp/zha-quirks-0.0.97.tar.gz --markdown 20230412/z/zha-quirks/0.0.96-0.0.97/diff.md --exclude *.pyd
+[2023-04-12 03:30:26] INFO root fetch - processPackages [DubSplitter]: executing diffoscope
+[2023-04-12 03:30:26] INFO root fetch - processPackages [DubSplitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DubSplitter-0.2.1.tar.gz tmp/DubSplitter-0.3.0.tar.gz --markdown 20230412/D/DubSplitter/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 03:30:26] INFO root fetch - processPackages [litalib]: Downloading https://files.pythonhosted.org/packages/26/8b/6d4e9cfed83fafd38996c5f308753b10c42fbcec8037e46c09a0eca47c55/litalib-0.0.4.tar.gz
+[2023-04-12 03:30:26] INFO root fetch - processPackages [django-snowflake]: executing diffoscope
+[2023-04-12 03:30:26] INFO root fetch - processPackages [django-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-snowflake-4.2a1.tar.gz tmp/django-snowflake-4.2b1.tar.gz --markdown 20230412/d/django-snowflake/4.2a1-4.2b1/diff.md --exclude *.pyd
+[2023-04-12 03:30:26] INFO root fetch - processPackages [litalib]: executing diffoscope
+[2023-04-12 03:30:26] INFO root fetch - processPackages [litalib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litalib-0.0.2-py3-none-any.whl.zip tmp/litalib-0.0.4.tar.gz --markdown 20230412/l/litalib/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 03:30:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:27] INFO root fetch - processPackages [neon-skill-device-controls]: New version: [0.2.1a0] Old Version: [0.2.0]
+[2023-04-12 03:30:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:27] INFO root fetch - processPackages [pyGenieScript]: New version: [0.0.0b9] Old Version: [0.0.0b8]
+[2023-04-12 03:30:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:27] INFO root fetch - processPackages [xj-role]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 03:30:27] INFO root fetch - processPackages [neon-skill-device-controls]: Downloading https://files.pythonhosted.org/packages/93/b7/9e4886087386b5850ab035a34bda9896ee44c90610f3600d6e3b88024553/neon_skill_device_controls-0.2.0-py3-none-any.whl
+[2023-04-12 03:30:27] INFO root fetch - processPackages [pyGenieScript]: Downloading https://files.pythonhosted.org/packages/55/49/aef024b119b9dd24aa39e6baab931cd009b04219ba4e4ffc7470c2f55245/pyGenieScript-0.0.0b8.tar.gz
+[2023-04-12 03:30:27] INFO root fetch - processPackages [pyGenieScript]: Downloading https://files.pythonhosted.org/packages/6b/b0/1568d27fd88cc29d7968fa41d785c41453002dd7478fe6a59811e610be88/pyGenieScript-0.0.0b9.tar.gz
+[2023-04-12 03:30:27] INFO root fetch - processPackages [neon-skill-device-controls]: Downloading https://files.pythonhosted.org/packages/d1/c3/ff10104f28772a0eb4c08afb7d5a300c52903e08484f0165b0319a585ec5/neon_skill_device_controls-0.2.1a0-py3-none-any.whl
+[2023-04-12 03:30:27] INFO root fetch - processPackages [xj-role]: executing diffoscope
+[2023-04-12 03:30:27] INFO root fetch - processPackages [xj-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_role-1.0.8.tar.gz tmp/xj_role-1.0.9.tar.gz --markdown 20230412/x/xj-role/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:30:27] INFO root fetch - processPackages [pyGenieScript]: executing diffoscope
+[2023-04-12 03:30:27] INFO root fetch - processPackages [pyGenieScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGenieScript-0.0.0b8.tar.gz tmp/pyGenieScript-0.0.0b9.tar.gz --markdown 20230412/p/pyGenieScript/0.0.0b8-0.0.0b9/diff.md --exclude *.pyd
+[2023-04-12 03:30:27] INFO root fetch - processPackages [neon-skill-device-controls]: executing diffoscope
+[2023-04-12 03:30:27] INFO root fetch - processPackages [neon-skill-device-controls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_device_controls-0.2.0-py3-none-any.whl.zip tmp/neon_skill_device_controls-0.2.1a0-py3-none-any.whl.zip --markdown 20230412/n/neon-skill-device-controls/0.2.0-0.2.1a0/diff.md --exclude *.pyd
+[2023-04-12 03:30:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:28] INFO root fetch - processPackages [bingbong]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-12 03:30:28] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:28] INFO root fetch - processPackages [bingbong]: New version: [0.1] Old Version: [0.0.1]
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/b0/7e/6514c7635265afa730e2f1d385e376abee1b76e52cf054ddd80e89129fd5/bingbong-0.0.1.tar.gz
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/b0/7e/6514c7635265afa730e2f1d385e376abee1b76e52cf054ddd80e89129fd5/bingbong-0.0.1.tar.gz
+[2023-04-12 03:30:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:29] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 03:30:29] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-04-12 03:30:29] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230412/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/30/e8/21cbc295c6aa075640fc1cdf6bbde0a47a57fb20c46f10ef46044e306f57/bingbong-0.1.tar.gz
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: Downloading https://files.pythonhosted.org/packages/30/e8/21cbc295c6aa075640fc1cdf6bbde0a47a57fb20c46f10ef46044e306f57/bingbong-0.1.tar.gz
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.0.1.tar.gz tmp/bingbong-0.1.tar.gz --markdown 20230412/b/bingbong/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: executing diffoscope
+[2023-04-12 03:30:29] INFO root fetch - processPackages [bingbong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bingbong-0.0.1.tar.gz tmp/bingbong-0.1.tar.gz --markdown 20230412/b/bingbong/0.0.1-0.1/diff.md --exclude *.pyd
+[2023-04-12 03:30:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:30] INFO root fetch - processPackages [cdk-lambda-layer-zip]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-04-12 03:30:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:30] INFO root fetch - processPackages [anylabeling]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 03:30:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:30] INFO root fetch - processPackages [slangpy]: New version: [0.2.0] Old Version: [0.1.2]
+[2023-04-12 03:30:30] INFO root fetch - processPackages [cdk-lambda-layer-zip]: executing diffoscope
+[2023-04-12 03:30:30] INFO root fetch - processPackages [cdk-lambda-layer-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-zip-2.0.98.tar.gz tmp/cdk-lambda-layer-zip-2.0.99.tar.gz --markdown 20230412/c/cdk-lambda-layer-zip/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-04-12 03:30:30] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/fb/56/3770e1dd99162216453f64651290c7b1e63e011b140b66f0bc361eb812b4/anylabeling-0.0.4.tar.gz
+[2023-04-12 03:30:30] INFO root fetch - processPackages [slangpy]: Downloading https://files.pythonhosted.org/packages/ae/e7/5c8d6b69f86712d54f323ad925d168e67e32feab36b559996a293d908fba/slangpy-0.1.2.tar.gz
+[2023-04-12 03:30:30] WARNING root fetch - processPackages [slangpy]: Skipping package: exceeds size limit 12084004>=10485760
+[2023-04-12 03:30:30] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:30:30] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 03:30:30] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.0.3.tar.gz tmp/anylabeling-0.0.4.tar.gz --markdown 20230412/a/anylabeling/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 03:30:30] INFO root fetch - processPackages [tcod-ecs]: New version: [1.0.0] Old Version: [0.2.0]
+[2023-04-12 03:30:31] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/f8/04/f4f64259afaddad20ebbc772435ddcd49adacbbafc08482c0583d646a232/tcod-ecs-0.2.0.tar.gz
+[2023-04-12 03:30:31] INFO root fetch - processPackages [tcod-ecs]: Downloading https://files.pythonhosted.org/packages/d6/11/c2474f3479beb50b57bae3c4cf6232e8893df190971d47dedb58a7951743/tcod-ecs-1.0.0.tar.gz
+[2023-04-12 03:30:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:31] INFO root fetch - processPackages [tcod-ecs]: executing diffoscope
+[2023-04-12 03:30:31] INFO root fetch - processPackages [tcod-ecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcod-ecs-0.2.0.tar.gz tmp/tcod-ecs-1.0.0.tar.gz --markdown 20230412/t/tcod-ecs/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:32] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:30:32] INFO root fetch - main [MainThread]: Store serial: [17670067]
