@@ -22269,3 +22269,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:04:46] INFO root fetch - main [MainThread]: End processing [protocol-verwerker]: success
 [2023-04-12 21:04:46] INFO root fetch - main [MainThread]: End processing [earthengine-api]: success
 [2023-04-12 21:04:46] INFO root fetch - main [MainThread]: Store serial: [17680842]
+[2023-04-12 21:09:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680842]
+[2023-04-12 21:09:53] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 21:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polywrap-msgpack
+[2023-04-12 21:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SyntaxMorph
+[2023-04-12 21:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proxlist
+[2023-04-12 21:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: srsgui
+[2023-04-12 21:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aadetools
+[2023-04-12 21:09:53] INFO root fetch - processPackages [aadetools]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 21:09:53] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-12 21:09:53] INFO root fetch - processPackages [srsgui]: New version: [0.2.9] Old Version: [0.2.11]
+[2023-04-12 21:09:53] INFO root fetch - processPackages [SyntaxMorph]: New version: [0.6] Old Version: [0.5]
+[2023-04-12 21:09:54] INFO root fetch - processPackages [proxlist]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-04-12 21:09:54] INFO root fetch - processPackages [aadetools]: executing diffoscope
+[2023-04-12 21:09:54] INFO root fetch - processPackages [aadetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aadetools-0.0.2.tar.gz tmp/aadetools-0.0.3.tar.gz --markdown 20230412/a/aadetools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 21:09:54] INFO root fetch - processPackages [SyntaxMorph]: Downloading https://files.pythonhosted.org/packages/29/46/a87da9bd2d12fbee991fb3fb5f455bd99960aa39b7c71cc8445efdbfc80d/SyntaxMorph-0.5.tar.gz
+[2023-04-12 21:09:54] INFO root fetch - processPackages [srsgui]: Downloading https://files.pythonhosted.org/packages/c0/7f/676058b4ac371b11c1eb0ae42a2075d8562042bbb068a90bdef6e4495bf6/srsgui-0.2.11.tar.gz
+[2023-04-12 21:09:54] INFO root fetch - processPackages [proxlist]: Downloading https://files.pythonhosted.org/packages/d3/15/73d81aca237954e6e076524f5a9f209b34ea0be8c12bd339efaa11723de8/proxlist-0.5.0.tar.gz
+[2023-04-12 21:09:54] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-12 21:09:54] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230412/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-12 21:09:54] INFO root fetch - processPackages [srsgui]: executing diffoscope
+[2023-04-12 21:09:54] INFO root fetch - processPackages [srsgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srsgui-0.2.11.tar.gz tmp/srsgui-0.2.9.tar.gz --markdown 20230412/s/srsgui/0.2.11-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 21:09:54] INFO root fetch - processPackages [SyntaxMorph]: Downloading https://files.pythonhosted.org/packages/ff/60/f1ccb0978d53dde5f186876688a1514114ac9261c3d037e6561a65312ca0/SyntaxMorph-0.6.tar.gz
+[2023-04-12 21:09:54] INFO root fetch - processPackages [proxlist]: Downloading https://files.pythonhosted.org/packages/fc/47/c27364558663d8f768f356a40bea629ad3a081b0086ee3c4bdd8596ff04a/proxlist-0.5.1.tar.gz
+[2023-04-12 21:09:54] INFO root fetch - processPackages [SyntaxMorph]: executing diffoscope
+[2023-04-12 21:09:54] INFO root fetch - processPackages [SyntaxMorph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SyntaxMorph-0.5.tar.gz tmp/SyntaxMorph-0.6.tar.gz --markdown 20230412/S/SyntaxMorph/0.5-0.6/diff.md --exclude *.pyd
+[2023-04-12 21:09:54] INFO root fetch - processPackages [proxlist]: executing diffoscope
+[2023-04-12 21:09:54] INFO root fetch - processPackages [proxlist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxlist-0.5.0.tar.gz tmp/proxlist-0.5.1.tar.gz --markdown 20230412/p/proxlist/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-04-12 21:09:55] INFO root fetch - processPackages [aadetools]: Start processing: pybrainlife
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [aadetools]: success
+[2023-04-12 21:09:55] INFO root fetch - processPackages [pybrainlife]: New version: [1.0.92] Old Version: [1.0.91]
+[2023-04-12 21:09:55] INFO root fetch - processPackages [pybrainlife]: executing diffoscope
+[2023-04-12 21:09:55] INFO root fetch - processPackages [pybrainlife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybrainlife-1.0.91.tar.gz tmp/pybrainlife-1.0.92.tar.gz --markdown 20230412/p/pybrainlife/1.0.91-1.0.92/diff.md --exclude *.pyd
+[2023-04-12 21:09:55] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: woke
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-12 21:09:55] INFO root fetch - processPackages [woke]: New version: [3.2.0] Old Version: [3.1.0]
+[2023-04-12 21:09:55] INFO root fetch - processPackages [woke]: Downloading https://files.pythonhosted.org/packages/cd/3a/0099c993caaa75f71146bba42db1841dbc755cd95226d8bf9f6b3fe467bd/woke-3.1.0.tar.gz
+[2023-04-12 21:09:55] INFO root fetch - processPackages [SyntaxMorph]: Start processing: probability-calculator
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [SyntaxMorph]: success
+[2023-04-12 21:09:55] INFO root fetch - processPackages [proxlist]: Start processing: vodex
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [proxlist]: success
+[2023-04-12 21:09:55] WARNING root fetch - processPackages [probability-calculator]: Skipping, unable to determine old version
+[2023-04-12 21:09:55] INFO root fetch - processPackages [probability-calculator]: Start processing: fringes-gui
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [probability-calculator] error
+[2023-04-12 21:09:55] WARNING root fetch - processPackages [fringes-gui]: Skipping, unable to determine old version
+[2023-04-12 21:09:55] INFO root fetch - processPackages [fringes-gui]: Start processing: iamlogic-idm
+[2023-04-12 21:09:55] INFO root fetch - main [MainThread]: End processing [fringes-gui] error
+[2023-04-12 21:09:55] INFO root fetch - processPackages [vodex]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 21:09:56] INFO root fetch - processPackages [iamlogic-idm]: New version: [1.1] Old Version: [1.0]
+[2023-04-12 21:09:56] INFO root fetch - processPackages [vodex]: Downloading https://files.pythonhosted.org/packages/d9/95/a20800c4624984ef5ac6f658d9665a85f83feeea53ce9c96f07a5f972032/vodex-1.0.8.tar.gz
+[2023-04-12 21:09:56] INFO root fetch - processPackages [pybrainlife]: Start processing: tupa123
+[2023-04-12 21:09:56] INFO root fetch - main [MainThread]: End processing [pybrainlife]: success
+[2023-04-12 21:09:56] INFO root fetch - processPackages [iamlogic-idm]: Downloading https://files.pythonhosted.org/packages/4e/fb/5a4806e23f5a563bcaba9889beb9852874b5fe8e73e05ec986baed2f33e9/iamlogic_idm-1.0.tar.gz
+[2023-04-12 21:09:56] INFO root fetch - processPackages [tupa123]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 21:09:56] INFO root fetch - processPackages [woke]: Downloading https://files.pythonhosted.org/packages/38/70/30dbddafaae599f2476e5be76d3e0c06d73851a6dad55e4fa9c4b13f12ae/woke-3.2.0.tar.gz
+[2023-04-12 21:09:56] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-04-12 21:09:56] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.2.8.tar.gz tmp/tupa123-1.2.9.tar.gz --markdown 20230412/t/tupa123/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 21:09:56] INFO root fetch - processPackages [iamlogic-idm]: Downloading https://files.pythonhosted.org/packages/20/1d/b2d876cc89540ef52737604703ab666937303318b131776b85e64282937f/iamlogic_idm-1.1.tar.gz
+[2023-04-12 21:09:56] INFO root fetch - processPackages [woke]: executing diffoscope
+[2023-04-12 21:09:56] INFO root fetch - processPackages [woke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/woke-3.1.0.tar.gz tmp/woke-3.2.0.tar.gz --markdown 20230412/w/woke/3.1.0-3.2.0/diff.md --exclude *.pyd
+[2023-04-12 21:09:56] INFO root fetch - processPackages [iamlogic-idm]: executing diffoscope
+[2023-04-12 21:09:56] INFO root fetch - processPackages [iamlogic-idm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlogic_idm-1.0.tar.gz tmp/iamlogic_idm-1.1.tar.gz --markdown 20230412/i/iamlogic-idm/1.0-1.1/diff.md --exclude *.pyd
+[2023-04-12 21:09:57] INFO root fetch - main [MainThread]: End processing [srsgui]: success
+[2023-04-12 21:09:57] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-04-12 21:09:57] INFO root fetch - main [MainThread]: End processing [iamlogic-idm]: success
+[2023-04-12 21:09:57] INFO root fetch - processPackages [vodex]: Downloading https://files.pythonhosted.org/packages/c2/93/a66e9555b3b0d2f5af21c70f003cc110ab8260821e0d03c33bd4a687dfbc/vodex-1.0.9.tar.gz
+[2023-04-12 21:09:59] INFO root fetch - main [MainThread]: End processing [woke]: success
+[2023-04-12 21:10:00] INFO root fetch - processPackages [vodex]: executing diffoscope
+[2023-04-12 21:10:00] INFO root fetch - processPackages [vodex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vodex-1.0.8.tar.gz tmp/vodex-1.0.9.tar.gz --markdown 20230412/v/vodex/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 21:10:04] INFO root fetch - main [MainThread]: End processing [vodex]: success
+[2023-04-12 21:10:04] INFO root fetch - main [MainThread]: Store serial: [17680880]
