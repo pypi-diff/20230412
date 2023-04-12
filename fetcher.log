@@ -18927,3 +18927,152 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 17:55:51] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
 [2023-04-12 17:55:52] INFO root fetch - main [MainThread]: End processing [toolkit5G]: success
 [2023-04-12 17:55:52] INFO root fetch - main [MainThread]: Store serial: [17678709]
+[2023-04-12 18:00:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17678709]
+[2023-04-12 18:01:01] INFO root fetch - main [MainThread]: Found 27 changed packages
+[2023-04-12 18:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toolkit5G
+[2023-04-12 18:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crimpy
+[2023-04-12 18:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robotmk
+[2023-04-12 18:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clipped
+[2023-04-12 18:01:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycryptography
+[2023-04-12 18:01:01] INFO root fetch - processPackages [toolkit5G]: New version: [1.4] Old Version: [1.3]
+[2023-04-12 18:01:01] INFO root fetch - processPackages [pycryptography]: New version: [3.0.0] Old Version: [1.0.0]
+[2023-04-12 18:01:01] INFO root fetch - processPackages [crimpy]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 18:01:01] INFO root fetch - processPackages [clipped]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 18:01:01] INFO root fetch - processPackages [robotmk]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-04-12 18:01:01] INFO root fetch - processPackages [pycryptography]: Downloading https://files.pythonhosted.org/packages/4a/f4/43978429a1a3c277d246cbbb713349ac9d4df0330db690b0f94af797a1ba/pycryptography-1.0.0.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [crimpy]: Downloading https://files.pythonhosted.org/packages/1f/f2/7fad0b1c1ba23c39efd607909b6c27e609a7cd3bf962f1e514b07c3bc68b/crimpy-0.0.2.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/d3/2d/8fc567c9f573d7a612813ae6fb29973daf7c40d7c66e5cebc59fd8e9a130/clipped-0.0.4.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [toolkit5G]: Downloading https://files.pythonhosted.org/packages/43/0b/ec7b6b375bf53e8f43807e9db44e17658796b2d1cddf10fb927f913ba116/toolkit5G-1.4.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [robotmk]: Downloading https://files.pythonhosted.org/packages/74/47/aadbdc22329282a2cbae0b887dee1ae59e4b7f9764d06ddda8019f8a9d59/robotmk-0.0.46.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [clipped]: Downloading https://files.pythonhosted.org/packages/a5/8c/2dd0da46091d5d493f4488170033e219d152e9d45a057ba84959f24fba27/clipped-0.0.5.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [pycryptography]: Downloading https://files.pythonhosted.org/packages/b7/46/aa749c33b5a5064a5d2c94bee8d6d9d1fa908dc3b50d3308e24af50d03df/pycryptography-3.0.0.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [crimpy]: Downloading https://files.pythonhosted.org/packages/bc/2e/4476457e4cbf6f9e117c8f057a4e76d04672899eb96a8222bbc4777f3be6/crimpy-0.0.4.tar.gz
+[2023-04-12 18:01:01] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-12 18:01:01] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.45.tar.gz tmp/robotmk-0.0.46.tar.gz --markdown 20230412/r/robotmk/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-04-12 18:01:01] INFO root fetch - processPackages [clipped]: executing diffoscope
+[2023-04-12 18:01:01] INFO root fetch - processPackages [clipped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipped-0.0.4.tar.gz tmp/clipped-0.0.5.tar.gz --markdown 20230412/c/clipped/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 18:01:01] INFO root fetch - processPackages [pycryptography]: executing diffoscope
+[2023-04-12 18:01:01] INFO root fetch - processPackages [pycryptography]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptography-1.0.0.tar.gz tmp/pycryptography-3.0.0.tar.gz --markdown 20230412/p/pycryptography/1.0.0-3.0.0/diff.md --exclude *.pyd
+[2023-04-12 18:01:01] INFO root fetch - processPackages [crimpy]: executing diffoscope
+[2023-04-12 18:01:01] INFO root fetch - processPackages [crimpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crimpy-0.0.2.tar.gz tmp/crimpy-0.0.4.tar.gz --markdown 20230412/c/crimpy/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 18:01:02] INFO root fetch - processPackages [toolkit5G]: executing diffoscope
+[2023-04-12 18:01:02] INFO root fetch - processPackages [toolkit5G]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolkit5G-1.3.tar.gz tmp/toolkit5G-1.4.tar.gz --markdown 20230412/t/toolkit5G/1.3-1.4/diff.md --exclude *.pyd
+[2023-04-12 18:01:02] INFO root fetch - processPackages [crimpy]: Start processing: zxkane.cdk-construct-simple-nat
+[2023-04-12 18:01:02] INFO root fetch - main [MainThread]: End processing [crimpy]: success
+[2023-04-12 18:01:02] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-04-12 18:01:02] INFO root fetch - processPackages [pycryptography]: Start processing: lbt-dragonfly
+[2023-04-12 18:01:02] INFO root fetch - main [MainThread]: End processing [pycryptography]: success
+[2023-04-12 18:01:03] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-04-12 18:01:03] INFO root fetch - processPackages [clipped]: Start processing: MLapp1
+[2023-04-12 18:01:03] INFO root fetch - main [MainThread]: End processing [clipped]: success
+[2023-04-12 18:01:03] INFO root fetch - processPackages [MLapp1]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 18:01:03] INFO root fetch - processPackages [robotmk]: Start processing: control-lab-ly
+[2023-04-12 18:01:03] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-12 18:01:03] INFO root fetch - processPackages [control-lab-ly]: New version: [1.0.0b0] Old Version: [1.0.0a0]
+[2023-04-12 18:01:03] INFO root fetch - processPackages [MLapp1]: Downloading https://files.pythonhosted.org/packages/37/78/83816e20dd089721995b98e2cb21345bdd90cb1265793e0be56d995ad5aa/MLapp1-0.0.6.tar.gz
+[2023-04-12 18:01:03] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: executing diffoscope
+[2023-04-12 18:01:03] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxkane.cdk-construct-simple-nat-0.2.98.tar.gz tmp/zxkane.cdk-construct-simple-nat-0.2.99.tar.gz --markdown 20230412/z/zxkane.cdk-construct-simple-nat/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-04-12 18:01:03] INFO root fetch - processPackages [control-lab-ly]: Downloading https://files.pythonhosted.org/packages/25/7b/a14e349286495c7519294aa2d6bdb48abf66b21dfbfe03196a8d1dca3ecf/control-lab-ly-1.0.0b0.tar.gz
+[2023-04-12 18:01:03] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2023-04-12 18:01:03] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20230412/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-04-12 18:01:03] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 18:01:03] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.5.tar.gz tmp/MLapp1-0.0.6.tar.gz --markdown 20230412/M/MLapp1/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 18:01:03] INFO root fetch - processPackages [control-lab-ly]: executing diffoscope
+[2023-04-12 18:01:03] INFO root fetch - processPackages [control-lab-ly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/control-lab-ly-1.0.0a0.tar.gz tmp/control-lab-ly-1.0.0b0.tar.gz --markdown 20230412/c/control-lab-ly/1.0.0a0-1.0.0b0/diff.md --exclude *.pyd
+[2023-04-12 18:01:04] INFO root fetch - processPackages [lbt-dragonfly]: Start processing: VisualQC
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2023-04-12 18:01:04] INFO root fetch - processPackages [zxkane.cdk-construct-simple-nat]: Start processing: db-medley
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [zxkane.cdk-construct-simple-nat]: success
+[2023-04-12 18:01:04] INFO root fetch - processPackages [VisualQC]: New version: [0.6.6] Old Version: [0.6.5]
+[2023-04-12 18:01:04] WARNING root fetch - processPackages [db-medley]: Skipping, unable to determine old version
+[2023-04-12 18:01:04] INFO root fetch - processPackages [db-medley]: Start processing: deep-proto
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [db-medley] error
+[2023-04-12 18:01:04] INFO root fetch - processPackages [deep-proto]: New version: [0.9.dev0] Old Version: [0.8.dev0]
+[2023-04-12 18:01:04] INFO root fetch - processPackages [MLapp1]: Start processing: mtehis
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 18:01:04] INFO root fetch - processPackages [VisualQC]: Downloading https://files.pythonhosted.org/packages/f8/3d/b42a2d1880a0d4ba2e4f2b652d35bd256d00c5cac2941ecb786005ac0509/visualqc-0.6.5.tar.gz
+[2023-04-12 18:01:04] WARNING root fetch - processPackages [mtehis]: Skipping, unable to determine old version
+[2023-04-12 18:01:04] INFO root fetch - processPackages [mtehis]: Start processing: foldedleastsquares
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [mtehis] error
+[2023-04-12 18:01:04] INFO root fetch - processPackages [foldedleastsquares]: New version: [1.0.39] Old Version: [1.0.38]
+[2023-04-12 18:01:04] WARNING root fetch - processPackages [VisualQC]: Skipping package: exceeds size limit 12782182>=10485760
+[2023-04-12 18:01:04] INFO root fetch - processPackages [VisualQC]: Start processing: wds-client
+[2023-04-12 18:01:04] INFO root fetch - main [MainThread]: End processing [VisualQC] error
+[2023-04-12 18:01:04] INFO root fetch - processPackages [wds-client]: New version: [0.2.8] Old Version: [0.2.7]
+[2023-04-12 18:01:04] INFO root fetch - processPackages [foldedleastsquares]: Downloading https://files.pythonhosted.org/packages/37/86/ee9be9548d1fabf5bf9acf042c58310a7164b716484553cc0999b365e409/foldedleastsquares-1.0.39.tar.gz
+[2023-04-12 18:01:04] INFO root fetch - processPackages [deep-proto]: executing diffoscope
+[2023-04-12 18:01:04] INFO root fetch - processPackages [deep-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_proto-0.8.dev0.tar.gz tmp/deep_proto-0.9.dev0.tar.gz --markdown 20230412/d/deep-proto/0.8.dev0-0.9.dev0/diff.md --exclude *.pyd
+[2023-04-12 18:01:05] INFO root fetch - processPackages [wds-client]: executing diffoscope
+[2023-04-12 18:01:05] INFO root fetch - processPackages [wds-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wds-client-0.2.7.tar.gz tmp/wds-client-0.2.8.tar.gz --markdown 20230412/w/wds-client/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2023-04-12 18:01:05] INFO root fetch - processPackages [control-lab-ly]: Start processing: django-sso-bridge
+[2023-04-12 18:01:05] INFO root fetch - main [MainThread]: End processing [control-lab-ly]: success
+[2023-04-12 18:01:05] WARNING root fetch - processPackages [django-sso-bridge]: Skipping, unable to determine old version
+[2023-04-12 18:01:05] INFO root fetch - processPackages [django-sso-bridge]: Start processing: tegracli
+[2023-04-12 18:01:05] INFO root fetch - main [MainThread]: End processing [django-sso-bridge] error
+[2023-04-12 18:01:05] INFO root fetch - processPackages [tegracli]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 18:01:05] INFO root fetch - processPackages [foldedleastsquares]: executing diffoscope
+[2023-04-12 18:01:05] INFO root fetch - processPackages [foldedleastsquares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foldedleastsquares-1.0.38.tar.gz tmp/foldedleastsquares-1.0.39.tar.gz --markdown 20230412/f/foldedleastsquares/1.0.38-1.0.39/diff.md --exclude *.pyd
+[2023-04-12 18:01:05] INFO root fetch - processPackages [tegracli]: Downloading https://files.pythonhosted.org/packages/a5/3d/e75fb0089c8311fff37089b51c15e14e47bd6161c23101cf218637f6471d/tegracli-0.2.1.tar.gz
+[2023-04-12 18:01:05] INFO root fetch - processPackages [tegracli]: executing diffoscope
+[2023-04-12 18:01:05] INFO root fetch - processPackages [tegracli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tegracli-0.2.0.tar.gz tmp/tegracli-0.2.1.tar.gz --markdown 20230412/t/tegracli/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 18:01:05] INFO root fetch - processPackages [deep-proto]: Start processing: KLogLib
+[2023-04-12 18:01:05] INFO root fetch - main [MainThread]: End processing [deep-proto]: success
+[2023-04-12 18:01:05] INFO root fetch - processPackages [KLogLib]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-04-12 18:01:06] INFO root fetch - processPackages [KLogLib]: Downloading https://files.pythonhosted.org/packages/f4/68/40f2dc2b75534939c873f582139c6c519fdaad9776a1ecf97baf3193f158/KLogLib-0.0.14.tar.gz
+[2023-04-12 18:01:06] INFO root fetch - processPackages [wds-client]: Start processing: MyCaesarCipher
+[2023-04-12 18:01:06] INFO root fetch - main [MainThread]: End processing [wds-client]: success
+[2023-04-12 18:01:06] INFO root fetch - processPackages [KLogLib]: Downloading https://files.pythonhosted.org/packages/cc/e8/d1cee83021103b3a16e3c30d72c0613556cfa5e125faf9dd07038b6e82b2/KLogLib-0.0.15.tar.gz
+[2023-04-12 18:01:06] INFO root fetch - processPackages [MyCaesarCipher]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-12 18:01:06] INFO root fetch - processPackages [KLogLib]: executing diffoscope
+[2023-04-12 18:01:06] INFO root fetch - processPackages [KLogLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KLogLib-0.0.14.tar.gz tmp/KLogLib-0.0.15.tar.gz --markdown 20230412/K/KLogLib/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-04-12 18:01:06] INFO root fetch - processPackages [MyCaesarCipher]: Downloading https://files.pythonhosted.org/packages/c4/7f/9831d3f902ee28aed5975fce259b48d1eb4a6d3c0015d5396225bb1a11e7/MyCaesarCipher-0.3.0.tar.gz
+[2023-04-12 18:01:06] INFO root fetch - processPackages [tegracli]: Start processing: croniter
+[2023-04-12 18:01:06] INFO root fetch - main [MainThread]: End processing [tegracli]: success
+[2023-04-12 18:01:06] INFO root fetch - processPackages [croniter]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-12 18:01:06] INFO root fetch - processPackages [MyCaesarCipher]: Downloading https://files.pythonhosted.org/packages/c9/af/631e86014856670ca4e9545a1515503b2217383013b5198d24fc5f2637d4/MyCaesarCipher-0.4.0.tar.gz
+[2023-04-12 18:01:06] INFO root fetch - processPackages [croniter]: executing diffoscope
+[2023-04-12 18:01:06] INFO root fetch - processPackages [croniter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croniter-1.3.7.tar.gz tmp/croniter-1.3.8.tar.gz --markdown 20230412/c/croniter/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-12 18:01:06] INFO root fetch - processPackages [MyCaesarCipher]: executing diffoscope
+[2023-04-12 18:01:06] INFO root fetch - processPackages [MyCaesarCipher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyCaesarCipher-0.3.0.tar.gz tmp/MyCaesarCipher-0.4.0.tar.gz --markdown 20230412/M/MyCaesarCipher/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 18:01:07] INFO root fetch - processPackages [foldedleastsquares]: Start processing: matej-libs
+[2023-04-12 18:01:07] INFO root fetch - main [MainThread]: End processing [foldedleastsquares]: success
+[2023-04-12 18:01:07] INFO root fetch - processPackages [matej-libs]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-12 18:01:07] INFO root fetch - processPackages [matej-libs]: Downloading https://files.pythonhosted.org/packages/a1/60/8864e2f79eb138b641cf42b9d1e896da948a7c72b56db12e9f6c120f62a3/matej-libs-0.1.tar.gz
+[2023-04-12 18:01:07] INFO root fetch - processPackages [KLogLib]: Start processing: deep-proto
+[2023-04-12 18:01:07] INFO root fetch - main [MainThread]: End processing [KLogLib]: success
+[2023-04-12 18:01:07] INFO root fetch - processPackages [deep-proto]: New version: [0.9.dev0] Old Version: [0.8.dev0]
+[2023-04-12 18:01:07] INFO root fetch - processPackages [deep-proto]: executing diffoscope
+[2023-04-12 18:01:07] INFO root fetch - processPackages [deep-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_proto-0.8.dev0.tar.gz tmp/deep_proto-0.9.dev0.tar.gz --markdown 20230412/d/deep-proto/0.8.dev0-0.9.dev0/diff.md --exclude *.pyd
+[2023-04-12 18:01:07] INFO root fetch - processPackages [matej-libs]: Downloading https://files.pythonhosted.org/packages/36/e6/0fac34601940f81c360092dfc828ed5a46fb5827d36e88dbb08471701f34/matej-libs-0.1.1.tar.gz
+[2023-04-12 18:01:07] INFO root fetch - processPackages [croniter]: Start processing: sarus-data-spec-public
+[2023-04-12 18:01:07] INFO root fetch - main [MainThread]: End processing [croniter]: success
+[2023-04-12 18:01:07] INFO root fetch - processPackages [sarus-data-spec-public]: New version: [3.0.0.dev2] Old Version: [3.0.0.dev1]
+[2023-04-12 18:01:07] INFO root fetch - processPackages [matej-libs]: executing diffoscope
+[2023-04-12 18:01:07] INFO root fetch - processPackages [matej-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matej-libs-0.1.tar.gz tmp/matej-libs-0.1.1.tar.gz --markdown 20230412/m/matej-libs/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:01:07] INFO root fetch - processPackages [MyCaesarCipher]: Start processing: nonebot-plugin-arkrecord
+[2023-04-12 18:01:07] INFO root fetch - main [MainThread]: End processing [MyCaesarCipher]: success
+[2023-04-12 18:01:07] INFO root fetch - processPackages [nonebot-plugin-arkrecord]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-04-12 18:01:08] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/e7/5a/843151fdfff43706e2be015f6835d86a1496e0886b24d50bf941cbafb620/sarus_data_spec_public-3.0.0.dev1.tar.gz
+[2023-04-12 18:01:08] INFO root fetch - processPackages [nonebot-plugin-arkrecord]: Downloading https://files.pythonhosted.org/packages/04/e5/d376b50858dd73dc34822226315de530b26459d3160492f2e6e4977bacac/nonebot_plugin_arkrecord-1.7.0.tar.gz
+[2023-04-12 18:01:08] WARNING root fetch - processPackages [nonebot-plugin-arkrecord]: Skipping package: exceeds size limit 26887877>=10485760
+[2023-04-12 18:01:08] INFO root fetch - processPackages [nonebot-plugin-arkrecord]: Start processing: f5manager
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arkrecord] error
+[2023-04-12 18:01:08] WARNING root fetch - processPackages [f5manager]: Skipping, unable to determine old version
+[2023-04-12 18:01:08] INFO root fetch - processPackages [f5manager]: Start processing: pycryptographier
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [f5manager] error
+[2023-04-12 18:01:08] ERROR root fetch - processPackages [pycryptographier]: Unable to get metadata: No such project 'pycryptographier'
+[2023-04-12 18:01:08] INFO root fetch - processPackages [pycryptographier]: Start processing: manuscriptmonitor
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [pycryptographier] error
+[2023-04-12 18:01:08] INFO root fetch - processPackages [manuscriptmonitor]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [deep-proto]: success
+[2023-04-12 18:01:08] INFO root fetch - processPackages [manuscriptmonitor]: Downloading https://files.pythonhosted.org/packages/ea/72/8f4be91e758f03384092eb1447ccaa8f3467daed9f6e952d8eeafa4572db/ManuscriptMonitor-0.4.6.tar.gz
+[2023-04-12 18:01:08] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/04/6f/e7a0f9d503d5eae86c1211088b8f44f0fb9820a0a9cef1887cf4f072f9f1/sarus_data_spec_public-3.0.0.dev2.tar.gz
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [toolkit5G]: success
+[2023-04-12 18:01:08] INFO root fetch - main [MainThread]: End processing [matej-libs]: success
+[2023-04-12 18:01:08] INFO root fetch - processPackages [sarus-data-spec-public]: executing diffoscope
+[2023-04-12 18:01:08] INFO root fetch - processPackages [sarus-data-spec-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarus_data_spec_public-3.0.0.dev1.tar.gz tmp/sarus_data_spec_public-3.0.0.dev2.tar.gz --markdown 20230412/s/sarus-data-spec-public/3.0.0.dev1-3.0.0.dev2/diff.md --exclude *.pyd
+[2023-04-12 18:01:08] INFO root fetch - processPackages [manuscriptmonitor]: executing diffoscope
+[2023-04-12 18:01:08] INFO root fetch - processPackages [manuscriptmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManuscriptMonitor-0.4.5.tar.gz tmp/ManuscriptMonitor-0.4.6.tar.gz --markdown 20230412/m/manuscriptmonitor/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-12 18:01:10] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
+[2023-04-12 18:01:15] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
+[2023-04-12 18:01:15] INFO root fetch - main [MainThread]: Store serial: [17678802]
