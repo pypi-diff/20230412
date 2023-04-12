@@ -7705,3 +7705,126 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 08:21:44] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:21:52] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:21:52] INFO root fetch - main [MainThread]: Store serial: [17671835]
+[2023-04-12 08:26:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671835]
+[2023-04-12 08:27:03] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 08:27:04] INFO root fetch - processPackages [realnet]: New version: [0.0.9] Old Version: [0.0.82]
+[2023-04-12 08:27:04] INFO root fetch - processPackages [cellmap]: New version: [1.0.1.dev202304120506] Old Version: [1.0.1.dev202304110129]
+[2023-04-12 08:27:04] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: New version: [15.0.20230411.0] Old Version: [15.0.20230320.0]
+[2023-04-12 08:27:04] INFO root fetch - processPackages [nb-cli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-12 08:27:04] INFO root fetch - processPackages [hkkang-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 08:27:04] INFO root fetch - processPackages [cellmap]: executing diffoscope
+[2023-04-12 08:27:04] INFO root fetch - processPackages [cellmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmap-1.0.1.dev202304110129-py3-none-any.whl.zip tmp/cellmap-1.0.1.dev202304120506-py3-none-any.whl.zip --markdown 20230412/c/cellmap/1.0.1.dev202304110129-1.0.1.dev202304120506/diff.md --exclude *.pyd
+[2023-04-12 08:27:04] INFO root fetch - processPackages [realnet]: Downloading https://files.pythonhosted.org/packages/fd/90/bceca811a6bff24f515ced44eb4a3bb324d8e976136edcf34b970bc28e76/realnet-0.0.82.tar.gz
+[2023-04-12 08:27:04] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Downloading https://files.pythonhosted.org/packages/21/9f/a5921f421867b1a05229e1673f007e80b3889adc057aac434ecf4a581bba/odoo_addons_oca_operating_unit-15.0.20230320.0-py3-none-any.whl
+[2023-04-12 08:27:04] INFO root fetch - processPackages [nb-cli]: Downloading https://files.pythonhosted.org/packages/a0/2a/41de7860e9b5638e8b7a2f14256a4aea4e536742349a84f4f6ab2efdb52c/nb-cli-1.1.1.tar.gz
+[2023-04-12 08:27:04] INFO root fetch - processPackages [hkkang-utils]: executing diffoscope
+[2023-04-12 08:27:04] INFO root fetch - processPackages [hkkang-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hkkang_utils-0.1.8.tar.gz tmp/hkkang_utils-0.1.9.tar.gz --markdown 20230412/h/hkkang-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 08:27:04] INFO root fetch - processPackages [nb-cli]: executing diffoscope
+[2023-04-12 08:27:04] INFO root fetch - processPackages [nb-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nb-cli-1.1.0.tar.gz tmp/nb-cli-1.1.1.tar.gz --markdown 20230412/n/nb-cli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-12 08:27:04] INFO root fetch - processPackages [realnet]: executing diffoscope
+[2023-04-12 08:27:04] INFO root fetch - processPackages [realnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realnet-0.0.82.tar.gz tmp/realnet-0.0.9.tar.gz --markdown 20230412/r/realnet/0.0.82-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 08:27:04] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: Downloading https://files.pythonhosted.org/packages/21/ed/4d22f6d8a1104f7fff1ab59b2897185725ad867b6cc8997955235c85c0a6/odoo_addons_oca_operating_unit-15.0.20230411.0-py3-none-any.whl
+[2023-04-12 08:27:04] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: executing diffoscope
+[2023-04-12 08:27:04] INFO root fetch - processPackages [odoo-addons-oca-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_operating_unit-15.0.20230320.0-py3-none-any.whl.zip tmp/odoo_addons_oca_operating_unit-15.0.20230411.0-py3-none-any.whl.zip --markdown 20230412/o/odoo-addons-oca-operating-unit/15.0.20230320.0-15.0.20230411.0/diff.md --exclude *.pyd
+[2023-04-12 08:27:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:05] INFO root fetch - processPackages [icetcore]: New version: [6.2.9] Old Version: [6.2.8]
+[2023-04-12 08:27:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:05] INFO root fetch - processPackages [cchenutils]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 08:27:05] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 08:27:05] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.6.0-py3-none-any.whl.zip tmp/cchenutils-0.6.1-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 08:27:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:05] INFO root fetch - processPackages [nextcloudtalkbot]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 08:27:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:05] INFO root fetch - processPackages [icetcore]: executing diffoscope
+[2023-04-12 08:27:05] INFO root fetch - processPackages [icetcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icetcore-6.2.8-py3-none-any.whl.zip tmp/icetcore-6.2.9.tar.gz --markdown 20230412/i/icetcore/6.2.8-6.2.9/diff.md --exclude *.pyd
+[2023-04-12 08:27:05] INFO root fetch - processPackages [chatgpt-proxy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 08:27:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:05] INFO root fetch - processPackages [tvault]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-04-12 08:27:05] INFO root fetch - processPackages [nextcloudtalkbot]: executing diffoscope
+[2023-04-12 08:27:05] INFO root fetch - processPackages [nextcloudtalkbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nextcloudtalkbot-0.0.8.tar.gz tmp/nextcloudtalkbot-0.0.9.tar.gz --markdown 20230412/n/nextcloudtalkbot/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 08:27:05] INFO root fetch - processPackages [chatgpt-proxy]: executing diffoscope
+[2023-04-12 08:27:05] INFO root fetch - processPackages [chatgpt-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-proxy-0.0.1.tar.gz tmp/chatgpt-proxy-0.0.2.tar.gz --markdown 20230412/c/chatgpt-proxy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 08:27:05] INFO root fetch - processPackages [tvault]: executing diffoscope
+[2023-04-12 08:27:05] INFO root fetch - processPackages [tvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tvault-0.3.4-py3-none-any.whl.zip tmp/tvault-0.3.5-py3-none-any.whl.zip --markdown 20230412/t/tvault/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-04-12 08:27:06] ERROR root fetch - processPackages [icetcore]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 138, in feeder
+    raise subprocess.CalledProcessError(
+subprocess.CalledProcessError: Command '['zipinfo {}']' returned non-zero exit status 9.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf9 in position 73: invalid start byte
+
+[2023-04-12 08:27:06] INFO root fetch - main [MainThread]: error
+[2023-04-12 08:27:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:27:07] INFO root fetch - main [MainThread]: Store serial: [17671863]
