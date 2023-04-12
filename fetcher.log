@@ -18530,3 +18530,107 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 17:39:54] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
 [2023-04-12 17:39:54] INFO root fetch - main [MainThread]: End processing [tartube]: success
 [2023-04-12 17:39:54] INFO root fetch - main [MainThread]: Store serial: [17678402]
+[2023-04-12 17:44:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17678402]
+[2023-04-12 17:45:04] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-04-12 17:45:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyprocessors-afp_entities
+[2023-04-12 17:45:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: upyrc
+[2023-04-12 17:45:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytorch-lightning
+[2023-04-12 17:45:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightning
+[2023-04-12 17:45:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lightning-app
+[2023-04-12 17:45:04] WARNING root fetch - processPackages [upyrc]: Skipping, unable to determine old version
+[2023-04-12 17:45:04] INFO root fetch - processPackages [upyrc]: Start processing: cir4mics
+[2023-04-12 17:45:04] INFO root fetch - main [MainThread]: End processing [upyrc] error
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pyprocessors-afp_entities]: New version: [0.5.98] Old Version: [0.5.92]
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning-app]: New version: [2.0.1.post0] Old Version: [2.0.1]
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning]: New version: [2022.9.8] Old Version: [2022.9.22]
+[2023-04-12 17:45:04] INFO root fetch - processPackages [cir4mics]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pytorch-lightning]: New version: [2.0.1.post0] Old Version: [2.0.1]
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning-app]: executing diffoscope
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-app-2.0.1.tar.gz tmp/lightning-app-2.0.1.post0.tar.gz --markdown 20230412/l/lightning-app/2.0.1-2.0.1.post0/diff.md --exclude *.pyd
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pytorch-lightning]: executing diffoscope
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pytorch-lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch-lightning-2.0.1.tar.gz tmp/pytorch-lightning-2.0.1.post0.tar.gz --markdown 20230412/p/pytorch-lightning/2.0.1-2.0.1.post0/diff.md --exclude *.pyd
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning]: executing diffoscope
+[2023-04-12 17:45:04] INFO root fetch - processPackages [lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-2022.9.22.tar.gz tmp/lightning-2022.9.8.tar.gz --markdown 20230412/l/lightning/2022.9.22-2022.9.8/diff.md --exclude *.pyd
+[2023-04-12 17:45:04] INFO root fetch - processPackages [cir4mics]: Downloading https://files.pythonhosted.org/packages/90/9f/f7dcabd73745eb9ad8171eaf3c32bf76a1f99b62533bd7854921cb374e63/cir4mics-0.1.3.tar.gz
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pyprocessors-afp_entities]: executing diffoscope
+[2023-04-12 17:45:04] INFO root fetch - processPackages [pyprocessors-afp_entities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprocessors-afp_entities-0.5.92.tar.gz tmp/pyprocessors-afp_entities-0.5.98.tar.gz --markdown 20230412/p/pyprocessors-afp_entities/0.5.92-0.5.98/diff.md --exclude *.pyd
+[2023-04-12 17:45:05] INFO root fetch - processPackages [cir4mics]: executing diffoscope
+[2023-04-12 17:45:05] INFO root fetch - processPackages [cir4mics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cir4mics-0.1.2.tar.gz tmp/cir4mics-0.1.3.tar.gz --markdown 20230412/c/cir4mics/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 17:45:07] INFO root fetch - processPackages [pyprocessors-afp_entities]: Start processing: lightning-fabric
+[2023-04-12 17:45:07] INFO root fetch - main [MainThread]: End processing [pyprocessors-afp_entities]: success
+[2023-04-12 17:45:07] INFO root fetch - processPackages [lightning-fabric]: New version: [2.0.1.post0] Old Version: [2.0.1]
+[2023-04-12 17:45:07] INFO root fetch - processPackages [lightning-fabric]: executing diffoscope
+[2023-04-12 17:45:07] INFO root fetch - processPackages [lightning-fabric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning-fabric-2.0.1.tar.gz tmp/lightning-fabric-2.0.1.post0.tar.gz --markdown 20230412/l/lightning-fabric/2.0.1-2.0.1.post0/diff.md --exclude *.pyd
+[2023-04-12 17:45:07] INFO root fetch - processPackages [lightning-app]: Start processing: toolchain.pants.plugin
+[2023-04-12 17:45:07] INFO root fetch - main [MainThread]: End processing [lightning-app]: success
+[2023-04-12 17:45:07] INFO root fetch - processPackages [toolchain.pants.plugin]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 17:45:08] INFO root fetch - processPackages [cir4mics]: Start processing: kevin-toolbox
+[2023-04-12 17:45:08] INFO root fetch - main [MainThread]: End processing [cir4mics]: success
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 17:45:08] INFO root fetch - processPackages [toolchain.pants.plugin]: Downloading https://files.pythonhosted.org/packages/32/cc/87bd3cd075107deca92b677222401e4fa43ce51e7b0bdbe8f85313b72f2b/toolchain.pants.plugin-0.9.0.tar.gz
+[2023-04-12 17:45:08] INFO root fetch - processPackages [pytorch-lightning]: Start processing: market2
+[2023-04-12 17:45:08] INFO root fetch - main [MainThread]: End processing [pytorch-lightning]: success
+[2023-04-12 17:45:08] WARNING root fetch - processPackages [market2]: Skipping, unable to determine old version
+[2023-04-12 17:45:08] INFO root fetch - processPackages [market2]: Start processing: kevin-toolbox-dev
+[2023-04-12 17:45:08] INFO root fetch - main [MainThread]: End processing [market2] error
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox-dev]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox]: Downloading https://files.pythonhosted.org/packages/bf/b6/3bd5934bff2baadd05d2c3704a35665d9bdb29dd5e854652dcc6c02b9c84/kevin-toolbox-1.0.3.tar.gz
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox]: executing diffoscope
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-1.0.2.tar.gz tmp/kevin-toolbox-1.0.3.tar.gz --markdown 20230412/k/kevin-toolbox/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox-dev]: Downloading https://files.pythonhosted.org/packages/f4/c9/8631c0cbfaef510c4be7c4b1ed42b3ed14cf8c9dcbe90ee01c24e772d7ce/kevin-toolbox-dev-1.0.3.tar.gz
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox-dev]: executing diffoscope
+[2023-04-12 17:45:08] INFO root fetch - processPackages [kevin-toolbox-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kevin-toolbox-dev-1.0.2.tar.gz tmp/kevin-toolbox-dev-1.0.3.tar.gz --markdown 20230412/k/kevin-toolbox-dev/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-04-12 17:45:08] INFO root fetch - processPackages [toolchain.pants.plugin]: Downloading https://files.pythonhosted.org/packages/57/ee/7cd69ec366e531fa2b5c58419f102330806f04eadff7ea47a09c2b9bbdf1/toolchain.pants.plugin-0.9.1.tar.gz
+[2023-04-12 17:45:09] INFO root fetch - processPackages [lightning]: Start processing: django-sso-bridge
+[2023-04-12 17:45:09] INFO root fetch - main [MainThread]: End processing [lightning]: success
+[2023-04-12 17:45:09] WARNING root fetch - processPackages [django-sso-bridge]: Skipping, unable to determine old version
+[2023-04-12 17:45:09] INFO root fetch - processPackages [django-sso-bridge]: Start processing: casers
+[2023-04-12 17:45:09] INFO root fetch - main [MainThread]: End processing [django-sso-bridge] error
+[2023-04-12 17:45:09] INFO root fetch - processPackages [casers]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-12 17:45:09] INFO root fetch - processPackages [toolchain.pants.plugin]: executing diffoscope
+[2023-04-12 17:45:09] INFO root fetch - processPackages [toolchain.pants.plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toolchain.pants.plugin-0.9.0.tar.gz tmp/toolchain.pants.plugin-0.9.1.tar.gz --markdown 20230412/t/toolchain.pants.plugin/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 17:45:09] INFO root fetch - processPackages [casers]: Downloading https://files.pythonhosted.org/packages/23/30/59aba2a87773c4aed9fb5cfbe2af400b24f90d158e982701889ad83e8dde/casers-0.3.0.tar.gz
+[2023-04-12 17:45:09] INFO root fetch - processPackages [casers]: executing diffoscope
+[2023-04-12 17:45:09] INFO root fetch - processPackages [casers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casers-0.2.0.tar.gz tmp/casers-0.3.0.tar.gz --markdown 20230412/c/casers/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 17:45:10] INFO root fetch - processPackages [toolchain.pants.plugin]: Start processing: DataFStyler
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [toolchain.pants.plugin]: success
+[2023-04-12 17:45:10] WARNING root fetch - processPackages [DataFStyler]: Skipping, unable to determine old version
+[2023-04-12 17:45:10] INFO root fetch - processPackages [DataFStyler]: Start processing: OmniBridge
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [DataFStyler] error
+[2023-04-12 17:45:10] INFO root fetch - processPackages [OmniBridge]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 17:45:10] INFO root fetch - processPackages [kevin-toolbox]: Start processing: biobb-flexdyn
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [kevin-toolbox]: success
+[2023-04-12 17:45:10] INFO root fetch - processPackages [biobb-flexdyn]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-04-12 17:45:10] INFO root fetch - processPackages [OmniBridge]: executing diffoscope
+[2023-04-12 17:45:10] INFO root fetch - processPackages [OmniBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OmniBridge-0.1.8.tar.gz tmp/OmniBridge-0.1.9.tar.gz --markdown 20230412/O/OmniBridge/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 17:45:10] INFO root fetch - processPackages [casers]: Start processing: KLogLib
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [casers]: success
+[2023-04-12 17:45:10] INFO root fetch - processPackages [KLogLib]: New version: [0.0.7] Old Version: [0.0.3]
+[2023-04-12 17:45:10] INFO root fetch - processPackages [biobb-flexdyn]: Downloading https://files.pythonhosted.org/packages/6b/0c/5c39fc86a9bc55e78bb45fc61992c04e12bcedcd4c491cd74d00354ce352/biobb_flexdyn-4.0.0.tar.gz
+[2023-04-12 17:45:10] INFO root fetch - processPackages [lightning-fabric]: Start processing: kfsdutils
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [lightning-fabric]: success
+[2023-04-12 17:45:10] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.86]
+[2023-04-12 17:45:10] INFO root fetch - processPackages [kevin-toolbox-dev]: Start processing: srsgui
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [kevin-toolbox-dev]: success
+[2023-04-12 17:45:10] INFO root fetch - processPackages [srsgui]: New version: [0.2.9] Old Version: [0.2.10]
+[2023-04-12 17:45:10] ERROR root fetch - processPackages [KLogLib]: Unable to fetch info: No such project/version 'KLogLib' 0.0.3
+[2023-04-12 17:45:10] INFO root fetch - processPackages [KLogLib]: Start processing: manuscriptmonitor
+[2023-04-12 17:45:10] INFO root fetch - main [MainThread]: End processing [KLogLib] error
+[2023-04-12 17:45:10] INFO root fetch - processPackages [manuscriptmonitor]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-12 17:45:10] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-12 17:45:10] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.86.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230412/k/kfsdutils/0.0.86-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 17:45:10] INFO root fetch - processPackages [biobb-flexdyn]: Downloading https://files.pythonhosted.org/packages/ea/02/0faf4addb48ce218c232d174ab2303e1f9ecb90a44d69bd7bf2ee6a57e80/biobb_flexdyn-4.0.1.tar.gz
+[2023-04-12 17:45:10] INFO root fetch - processPackages [srsgui]: Downloading https://files.pythonhosted.org/packages/e8/7e/6a33f83c7ba9dc7f57e387b2a059116947ad1c6d4089d5145e9c7db5f26a/srsgui-0.2.10.tar.gz
+[2023-04-12 17:45:10] INFO root fetch - processPackages [manuscriptmonitor]: Downloading https://files.pythonhosted.org/packages/cc/de/e0c16fcfe7aef14da7afc5f045e6a2d7f05e2314ba8a74fea802cc58877d/ManuscriptMonitor-0.4.4.tar.gz
+[2023-04-12 17:45:11] INFO root fetch - processPackages [biobb-flexdyn]: executing diffoscope
+[2023-04-12 17:45:11] INFO root fetch - processPackages [biobb-flexdyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobb_flexdyn-4.0.0.tar.gz tmp/biobb_flexdyn-4.0.1.tar.gz --markdown 20230412/b/biobb-flexdyn/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-04-12 17:45:11] INFO root fetch - processPackages [manuscriptmonitor]: executing diffoscope
+[2023-04-12 17:45:11] INFO root fetch - processPackages [manuscriptmonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ManuscriptMonitor-0.4.3.tar.gz tmp/ManuscriptMonitor-0.4.4.tar.gz --markdown 20230412/m/manuscriptmonitor/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-12 17:45:11] INFO root fetch - processPackages [srsgui]: executing diffoscope
+[2023-04-12 17:45:11] INFO root fetch - processPackages [srsgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srsgui-0.2.10.tar.gz tmp/srsgui-0.2.9.tar.gz --markdown 20230412/s/srsgui/0.2.10-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 17:45:11] INFO root fetch - main [MainThread]: End processing [OmniBridge]: success
+[2023-04-12 17:45:11] INFO root fetch - main [MainThread]: End processing [kfsdutils]: success
+[2023-04-12 17:45:12] INFO root fetch - main [MainThread]: End processing [biobb-flexdyn]: success
+[2023-04-12 17:45:12] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
+[2023-04-12 17:45:12] INFO root fetch - main [MainThread]: End processing [srsgui]: success
+[2023-04-12 17:45:12] INFO root fetch - main [MainThread]: Store serial: [17678548]
