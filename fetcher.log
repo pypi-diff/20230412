@@ -13293,3 +13293,59 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:35:02] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.7.tar.gz tmp/lacuscore-1.4.8.tar.gz --markdown 20230412/l/lacuscore/1.4.7-1.4.8/diff.md --exclude *.pyd
 [2023-04-12 13:35:03] INFO root fetch - main [MainThread]: End processing [lacuscore]: success
 [2023-04-12 13:35:03] INFO root fetch - main [MainThread]: Store serial: [17675299]
+[2023-04-12 13:40:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675299]
+[2023-04-12 13:40:10] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-04-12 13:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyre-check-nightly
+[2023-04-12 13:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speechly-api
+[2023-04-12 13:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: circt
+[2023-04-12 13:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: casers
+[2023-04-12 13:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: replicate
+[2023-04-12 13:40:10] INFO root fetch - processPackages [casers]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 13:40:10] INFO root fetch - processPackages [speechly-api]: New version: [0.8.9] Old Version: [0.8.8]
+[2023-04-12 13:40:10] INFO root fetch - processPackages [circt]: New version: [1.38.0] Old Version: [1.37.0]
+[2023-04-12 13:40:10] INFO root fetch - processPackages [replicate]: New version: [0.8.0] Old Version: [0.7.0]
+[2023-04-12 13:40:10] INFO root fetch - processPackages [pyre-check-nightly]: New version: [0.0.101681297829] Old Version: [0.0.101681211430]
+[2023-04-12 13:40:11] INFO root fetch - processPackages [circt]: Downloading https://files.pythonhosted.org/packages/b8/4c/3e117ae19c226de4e7cde25dd8b45321c85bd78e21f2b3892b01d29c909b/circt-1.37.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 13:40:11] INFO root fetch - processPackages [speechly-api]: Downloading https://files.pythonhosted.org/packages/31/16/e3a9e9f255af34c11f02ec419b8658ee05f0b2612d001af4b8f03e069c39/speechly_api-0.8.8.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [casers]: Downloading https://files.pythonhosted.org/packages/bc/10/96cd74c10fbf9c684b737eeb15cf002b8572665400c200ab9781deb92885/casers-0.1.0.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [replicate]: Downloading https://files.pythonhosted.org/packages/a1/f3/d9f93843802ad969dbe2e20083cc77b2d39447ce0f5eefea406eaf650d4d/replicate-0.7.0.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [pyre-check-nightly]: Downloading https://files.pythonhosted.org/packages/58/ce/059206b81bd7f21af8c3c9e7ad2716c397d54c2f7cddee222ee7ffd52e85/pyre-check-nightly-0.0.101681211430.tar.gz
+[2023-04-12 13:40:11] WARNING root fetch - processPackages [pyre-check-nightly]: Skipping package: exceeds size limit 23003472>=10485760
+[2023-04-12 13:40:11] INFO root fetch - processPackages [pyre-check-nightly]: Start processing: lbsnstructure
+[2023-04-12 13:40:11] INFO root fetch - main [MainThread]: End processing [pyre-check-nightly] error
+[2023-04-12 13:40:11] INFO root fetch - processPackages [lbsnstructure]: New version: [1.0.0] Old Version: [0.5.1]
+[2023-04-12 13:40:11] INFO root fetch - processPackages [replicate]: Downloading https://files.pythonhosted.org/packages/7c/9b/2ebb328e039462b26eeda7d77a4b9231b67a0c04a496514d6e5c242e6310/replicate-0.8.0.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [casers]: Downloading https://files.pythonhosted.org/packages/76/57/3d14019b64a048ef6b2364024e770a9b8dcbc86341efa6c98bec8fd4f49a/casers-0.2.0.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [speechly-api]: Downloading https://files.pythonhosted.org/packages/0d/db/672252b774f3b889691e3efb55c475201fdc0c5c5d17403ae03057a97ff8/speechly_api-0.8.9.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [lbsnstructure]: Downloading https://files.pythonhosted.org/packages/3b/13/eb8b1f5102caf7c0c3bb1a2784d7b2f47f27857bb7ee9ebc00fd7482d5d3/lbsnstructure-0.5.1.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [replicate]: executing diffoscope
+[2023-04-12 13:40:11] INFO root fetch - processPackages [replicate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replicate-0.7.0.tar.gz tmp/replicate-0.8.0.tar.gz --markdown 20230412/r/replicate/0.7.0-0.8.0/diff.md --exclude *.pyd
+[2023-04-12 13:40:11] INFO root fetch - processPackages [speechly-api]: executing diffoscope
+[2023-04-12 13:40:11] INFO root fetch - processPackages [speechly-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechly_api-0.8.8.tar.gz tmp/speechly_api-0.8.9.tar.gz --markdown 20230412/s/speechly-api/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2023-04-12 13:40:11] INFO root fetch - processPackages [casers]: executing diffoscope
+[2023-04-12 13:40:11] INFO root fetch - processPackages [casers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casers-0.1.0.tar.gz tmp/casers-0.2.0.tar.gz --markdown 20230412/c/casers/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 13:40:11] INFO root fetch - processPackages [lbsnstructure]: Downloading https://files.pythonhosted.org/packages/ba/ee/cdb67f3a7abe98ae77dee11ff20cc785636e71cf64756e848649e743a61a/lbsnstructure-1.0.0.tar.gz
+[2023-04-12 13:40:11] INFO root fetch - processPackages [lbsnstructure]: executing diffoscope
+[2023-04-12 13:40:11] INFO root fetch - processPackages [lbsnstructure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbsnstructure-0.5.1.tar.gz tmp/lbsnstructure-1.0.0.tar.gz --markdown 20230412/l/lbsnstructure/0.5.1-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 13:40:12] INFO root fetch - processPackages [circt]: Downloading https://files.pythonhosted.org/packages/c7/be/673c089df752e057e7b7be7515d5ae96a99ebbe5f1da489b539b9639f6be/circt-1.38.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 13:40:12] INFO root fetch - processPackages [replicate]: Start processing: wonder-sdk
+[2023-04-12 13:40:12] INFO root fetch - main [MainThread]: End processing [replicate]: success
+[2023-04-12 13:40:12] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 13:40:12] INFO root fetch - processPackages [casers]: Start processing: odoo-addon-account-payment-order
+[2023-04-12 13:40:12] INFO root fetch - main [MainThread]: End processing [casers]: success
+[2023-04-12 13:40:12] INFO root fetch - processPackages [odoo-addon-account-payment-order]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.5]
+[2023-04-12 13:40:12] INFO root fetch - main [MainThread]: End processing [speechly-api]: success
+[2023-04-12 13:40:12] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/cf/ac/abe22991c8c5df209ced4e3c93385c830982c0fc624051d2b904418292e1/wonder-sdk-0.1.0.tar.gz
+[2023-04-12 13:40:13] INFO root fetch - processPackages [odoo-addon-account-payment-order]: Downloading https://files.pythonhosted.org/packages/1d/13/e41295bc60d1e2c7d296eeedc441483f04b7d13a2aaae4c7e13605a8e2bb/odoo_addon_account_payment_order-16.0.1.0.1-py3-none-any.whl
+[2023-04-12 13:40:13] INFO root fetch - main [MainThread]: End processing [lbsnstructure]: success
+[2023-04-12 13:40:13] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/bd/8a/aaf7acd4941b9e0e8931ad8df3c26c0f82c26ca60fef63e85c4f7c286d87/wonder-sdk-0.1.1.tar.gz
+[2023-04-12 13:40:13] INFO root fetch - processPackages [circt]: executing diffoscope
+[2023-04-12 13:40:13] INFO root fetch - processPackages [circt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circt-1.37.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/circt-1.38.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/c/circt/1.37.0-1.38.0/diff.md --exclude *.pyd
+[2023-04-12 13:40:13] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-12 13:40:13] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.0.tar.gz tmp/wonder-sdk-0.1.1.tar.gz --markdown 20230412/w/wonder-sdk/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 13:40:13] INFO root fetch - processPackages [odoo-addon-account-payment-order]: executing diffoscope
+[2023-04-12 13:40:13] INFO root fetch - processPackages [odoo-addon-account-payment-order]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_order-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_payment_order-16.0.1.0.1-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-account-payment-order/16.0.1.0.0.5-16.0.1.0.1/diff.md --exclude *.pyd
+[2023-04-12 13:40:14] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-12 13:40:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-order]: success
+[2023-04-12 13:43:11] INFO root fetch - main [MainThread]: End processing [circt]: success
+[2023-04-12 13:43:11] INFO root fetch - main [MainThread]: Store serial: [17675399]
