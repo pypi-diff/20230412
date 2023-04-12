@@ -6681,3 +6681,26 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:30:11] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:30:13] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:30:13] INFO root fetch - main [MainThread]: Store serial: [17671244]
+[2023-04-12 06:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671244]
+[2023-04-12 06:35:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-12 06:35:21] INFO root fetch - processPackages [peakrdl-systemrdl]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-04-12 06:35:21] INFO root fetch - processPackages [rime-sdk]: New version: [2.0.0rc6] Old Version: [2.0.0rc5]
+[2023-04-12 06:35:21] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.2a2] Old Version: [0.1.2a1]
+[2023-04-12 06:35:21] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: New version: [12.0.1.9.1.99.dev9] Old Version: [12.0.1.9.1.99.dev7]
+[2023-04-12 06:35:21] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: executing diffoscope
+[2023-04-12 06:35:21] INFO root fetch - processPackages [odoo12-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_helpdesk_mgmt-12.0.1.9.1.99.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-helpdesk-mgmt/12.0.1.9.1.99.dev7-12.0.1.9.1.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 06:35:21] INFO root fetch - processPackages [peakrdl-systemrdl]: Downloading https://files.pythonhosted.org/packages/f4/aa/cd67ce71f39952fcfc17c6a28a8b4cc1979f6d9e4c0095687a7f9923df97/peakrdl-systemrdl-0.2.0.tar.gz
+[2023-04-12 06:35:21] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/11/7e/e18a0b95ad5a226c67c271562bc32ad17a18d3bbfec9d13113fb4d34599c/mango_pycore-0.1.2a2.tar.gz
+[2023-04-12 06:35:21] INFO root fetch - processPackages [rime-sdk]: Downloading https://files.pythonhosted.org/packages/11/94/f2a44991e1b896d2683f0f1ce32a5e21c38187cd5024438f250a0c9d3cf5/rime_sdk-2.0.0rc6.tar.gz
+[2023-04-12 06:35:21] INFO root fetch - processPackages [peakrdl-systemrdl]: Downloading https://files.pythonhosted.org/packages/f1/73/bbd37e67f54a5b41ced47133f70f68e5d3aacdbd9a5747be230f4e5f5284/peakrdl-systemrdl-0.3.0.tar.gz
+[2023-04-12 06:35:21] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 06:35:21] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.2a1.tar.gz tmp/mango_pycore-0.1.2a2.tar.gz --markdown 20230412/m/mango-pycore/0.1.2a1-0.1.2a2/diff.md --exclude *.pyd
+[2023-04-12 06:35:21] INFO root fetch - processPackages [rime-sdk]: executing diffoscope
+[2023-04-12 06:35:21] INFO root fetch - processPackages [rime-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rime_sdk-2.0.0rc5.tar.gz tmp/rime_sdk-2.0.0rc6.tar.gz --markdown 20230412/r/rime-sdk/2.0.0rc5-2.0.0rc6/diff.md --exclude *.pyd
+[2023-04-12 06:35:22] INFO root fetch - processPackages [peakrdl-systemrdl]: executing diffoscope
+[2023-04-12 06:35:22] INFO root fetch - processPackages [peakrdl-systemrdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakrdl-systemrdl-0.2.0.tar.gz tmp/peakrdl-systemrdl-0.3.0.tar.gz --markdown 20230412/p/peakrdl-systemrdl/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 06:35:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:35:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:35:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:35:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:35:26] INFO root fetch - main [MainThread]: Store serial: [17671254]
