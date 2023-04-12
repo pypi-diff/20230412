@@ -4798,3 +4798,56 @@
 [2023-04-12 03:51:24] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:51:27] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:51:27] INFO root fetch - main [MainThread]: Store serial: [17670188]
+[2023-04-12 03:56:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670188]
+[2023-04-12 03:56:34] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-04-12 03:56:34] INFO root fetch - processPackages [xj-common]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 03:56:34] INFO root fetch - processPackages [PyPl8]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-12 03:56:34] INFO root fetch - processPackages [zuspec-be-sw]: New version: [0.0.1.4673737118] Old Version: [0.0.1.4461693769]
+[2023-04-12 03:56:34] WARNING root fetch - processPackages [hh-package]: Skipping, unable to determine old version
+[2023-04-12 03:56:34] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:56:34] INFO root fetch - processPackages [mecord-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 03:56:34] WARNING root fetch - processPackages [dbt-dameng]: Skipping, unable to determine old version
+[2023-04-12 03:56:34] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:56:34] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 03:56:34] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 03:56:34] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 03:56:34] INFO root fetch - processPackages [PyPl8]: Downloading https://files.pythonhosted.org/packages/88/ad/5fb515aafb580f352c1c1aeff6ca523c9e5ef09bdaf50323082c63353ccf/PyPl8-1.0.5.tar.gz
+[2023-04-12 03:56:35] INFO root fetch - processPackages [zuspec-be-sw]: Downloading https://files.pythonhosted.org/packages/36/be/1002b7ed67be8af079939607e76184bd46b712433cbcc140350b06c4635a/zuspec_be_sw-0.0.1.4461693769-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 03:56:35] INFO root fetch - processPackages [xj-common]: executing diffoscope
+[2023-04-12 03:56:35] INFO root fetch - processPackages [xj-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_common-1.0.8.tar.gz tmp/xj_common-1.0.9.tar.gz --markdown 20230412/x/xj-common/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:56:35] INFO root fetch - processPackages [mecord-cli]: Downloading https://files.pythonhosted.org/packages/99/07/defecf133b4a0c137e7272f092b0a7e4b36005e5d2e5b2e4f22949323973/mecord-cli-0.1.8.tar.gz
+[2023-04-12 03:56:35] INFO root fetch - processPackages [mecord-cli]: Downloading https://files.pythonhosted.org/packages/2b/9f/dbf00e6cfb2e166744734b7095dec6d81a7ee7213a1ef56c5c29e85783a1/mecord-cli-0.1.9.tar.gz
+[2023-04-12 03:56:35] INFO root fetch - processPackages [zuspec-be-sw]: Downloading https://files.pythonhosted.org/packages/e5/27/b110954a3a11990e837a8773c0f0abba67aeb40343e7ee586b50fb77512e/zuspec_be_sw-0.0.1.4673737118-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 03:56:35] WARNING root fetch - processPackages [PyPl8]: Skipping package: exceeds size limit 12334479>=10485760
+[2023-04-12 03:56:35] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:56:35] INFO root fetch - processPackages [anylabeling]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-04-12 03:56:35] INFO root fetch - processPackages [mecord-cli]: executing diffoscope
+[2023-04-12 03:56:35] INFO root fetch - processPackages [mecord-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecord-cli-0.1.8.tar.gz tmp/mecord-cli-0.1.9.tar.gz --markdown 20230412/m/mecord-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 03:56:35] INFO root fetch - processPackages [zuspec-be-sw]: executing diffoscope
+[2023-04-12 03:56:35] INFO root fetch - processPackages [zuspec-be-sw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zuspec_be_sw-0.0.1.4461693769-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/zuspec_be_sw-0.0.1.4673737118-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230412/z/zuspec-be-sw/0.0.1.4461693769-0.0.1.4673737118/diff.md --exclude *.pyd
+[2023-04-12 03:56:35] INFO root fetch - processPackages [anylabeling]: Downloading https://files.pythonhosted.org/packages/cd/68/6186666440fe1143fa9dfc7e4fbb5bfc7960f7b09631ceed19998042e11c/anylabeling-0.0.8.tar.gz
+[2023-04-12 03:56:35] INFO root fetch - processPackages [anylabeling]: executing diffoscope
+[2023-04-12 03:56:35] INFO root fetch - processPackages [anylabeling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylabeling-0.0.6.tar.gz tmp/anylabeling-0.0.8.tar.gz --markdown 20230412/a/anylabeling/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 03:56:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:36] INFO root fetch - processPackages [blender-stubs]: New version: [3.2.0.27.dev4673483520] Old Version: [3.2.0.27.dev4662753604]
+[2023-04-12 03:56:36] INFO root fetch - processPackages [blender-stubs]: Downloading https://files.pythonhosted.org/packages/d4/54/d2c48992c7742a0458e33728b51988450868c0e46e78147118c82e1acdc8/blender-stubs-3.2.0.27.dev4662753604.tar.gz
+[2023-04-12 03:56:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:36] INFO root fetch - processPackages [zillion]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-04-12 03:56:36] INFO root fetch - processPackages [blender-stubs]: Downloading https://files.pythonhosted.org/packages/21/03/90a1ad7b756962f9069dcfcb11c208af1d4297f0f84801efb2338e7ce500/blender-stubs-3.2.0.27.dev4673483520.tar.gz
+[2023-04-12 03:56:36] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:36] INFO root fetch - processPackages [dynamofl]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 03:56:36] INFO root fetch - processPackages [zillion]: Downloading https://files.pythonhosted.org/packages/d5/50/156f520f01a5db885fe4f617fd0f2593063997e53329b4531b928e28e154/zillion-0.9.6.tar.gz
+[2023-04-12 03:56:36] INFO root fetch - processPackages [blender-stubs]: executing diffoscope
+[2023-04-12 03:56:36] INFO root fetch - processPackages [blender-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blender-stubs-3.2.0.27.dev4662753604.tar.gz tmp/blender-stubs-3.2.0.27.dev4673483520.tar.gz --markdown 20230412/b/blender-stubs/3.2.0.27.dev4662753604-3.2.0.27.dev4673483520/diff.md --exclude *.pyd
+[2023-04-12 03:56:36] INFO root fetch - processPackages [dynamofl]: Downloading https://files.pythonhosted.org/packages/7e/ad/6e19c038fe0e22ad1720eedc257a7a09882b133db0176e203c7f9277a5ac/dynamofl-0.0.8.tar.gz
+[2023-04-12 03:56:36] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-12 03:56:36] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.5.tar.gz tmp/zillion-0.9.6.tar.gz --markdown 20230412/z/zillion/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-04-12 03:56:37] INFO root fetch - processPackages [dynamofl]: Downloading https://files.pythonhosted.org/packages/9e/ef/82e5063a7e7f71da0e7241bdaf20b86fbe864aa2d01701701c5899f3a5e8/dynamofl-0.0.9.tar.gz
+[2023-04-12 03:56:37] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:37] INFO root fetch - processPackages [dynamofl]: executing diffoscope
+[2023-04-12 03:56:37] INFO root fetch - processPackages [dynamofl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynamofl-0.0.8.tar.gz tmp/dynamofl-0.0.9.tar.gz --markdown 20230412/d/dynamofl/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:56:38] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:38] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:40] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:41] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:56:41] INFO root fetch - main [MainThread]: Store serial: [17670229]
