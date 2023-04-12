@@ -10628,3 +10628,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 11:11:42] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:11:51] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:11:51] INFO root fetch - main [MainThread]: Store serial: [17673804]
+[2023-04-12 11:16:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673804]
+[2023-04-12 11:16:59] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-04-12 11:16:59] INFO root fetch - processPackages [odoo-addon-operating-unit]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.6]
+[2023-04-12 11:16:59] WARNING root fetch - processPackages [odoo-addon-stock-storage-category-capacity-name]: Skipping, unable to determine old version
+[2023-04-12 11:16:59] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:16:59] INFO root fetch - processPackages [cdktf]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-04-12 11:16:59] INFO root fetch - processPackages [aalam-common]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 11:16:59] INFO root fetch - processPackages [PyLanguageEasy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 11:16:59] INFO root fetch - processPackages [tf-nightly]: New version: [2.13.0.dev20230412] Old Version: [2.13.0.dev20230411]
+[2023-04-12 11:16:59] INFO root fetch - processPackages [odoo-addon-operating-unit]: Downloading https://files.pythonhosted.org/packages/25/5a/71f9a159f809e8f7ba4a4da94de67dc3035bb90e82f039880cf6a8fdda33/odoo_addon_operating_unit-15.0.1.0.6-py3-none-any.whl
+[2023-04-12 11:16:59] INFO root fetch - processPackages [cdktf]: Downloading https://files.pythonhosted.org/packages/87/b3/c146d54086d890741cc9d05c63504e1386b268ef8cbc52d9aa78c1080aa3/cdktf-0.9.3.tar.gz
+[2023-04-12 11:16:59] INFO root fetch - processPackages [aalam-common]: Downloading https://files.pythonhosted.org/packages/16/ee/8281aa25e49a7b41c1d8409d1da0a6ef9411eb412161a13752286cbe757a/aalam-common-0.1.8.tar.gz
+[2023-04-12 11:16:59] INFO root fetch - processPackages [PyLanguageEasy]: Downloading https://files.pythonhosted.org/packages/dd/0e/ccfcf8c413d9b7b48f9c74b43708b712aa629e0cf4c47bb17b38549539b4/PyLanguageEasy-1.0.0.tar.gz
+[2023-04-12 11:17:00] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/d1/d7/88a96a5a03ce32d05e7f0f45625252b113a670eaa6dafea9362a1ec60e33/tf_nightly-2.13.0.dev20230412-cp39-cp39-win_amd64.whl
+[2023-04-12 11:17:00] INFO root fetch - processPackages [odoo-addon-operating-unit]: Downloading https://files.pythonhosted.org/packages/5b/23/a7dacc20295d2ff10a98199633a6fb34a6c92e031e577a7a300faf1f4662/odoo_addon_operating_unit-16.0.1.0.0.2-py3-none-any.whl
+[2023-04-12 11:17:00] INFO root fetch - processPackages [cdktf]: Downloading https://files.pythonhosted.org/packages/80/8d/cbc9ef418f046a8c17f614889aba72b6e668540a2966498bef6f1dbb3a10/cdktf-0.9.4.tar.gz
+[2023-04-12 11:17:00] INFO root fetch - processPackages [PyLanguageEasy]: Downloading https://files.pythonhosted.org/packages/75/63/b5155fe197e78b8d7b49d7bf63338d5afb986c8bcb208e8fcd73a7313365/PyLanguageEasy-1.0.1.tar.gz
+[2023-04-12 11:17:00] INFO root fetch - processPackages [aalam-common]: Downloading https://files.pythonhosted.org/packages/4a/1b/4643ceb92ad9052d40ca33c98621f00956b046d0f395991401c764b57319/aalam-common-0.1.9.tar.gz
+[2023-04-12 11:17:00] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-04-12 11:17:00] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.13.0.dev20230411-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.13.0.dev20230412-cp39-cp39-win_amd64.whl.zip --markdown 20230412/t/tf-nightly/2.13.0.dev20230411-2.13.0.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 11:17:00] INFO root fetch - processPackages [odoo-addon-operating-unit]: executing diffoscope
+[2023-04-12 11:17:00] INFO root fetch - processPackages [odoo-addon-operating-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_operating_unit-15.0.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_operating_unit-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-operating-unit/15.0.1.0.6-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-04-12 11:17:00] INFO root fetch - processPackages [aalam-common]: executing diffoscope
+[2023-04-12 11:17:00] INFO root fetch - processPackages [aalam-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aalam-common-0.1.8.tar.gz tmp/aalam-common-0.1.9.tar.gz --markdown 20230412/a/aalam-common/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 11:17:00] INFO root fetch - processPackages [PyLanguageEasy]: executing diffoscope
+[2023-04-12 11:17:00] INFO root fetch - processPackages [PyLanguageEasy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyLanguageEasy-1.0.0.tar.gz tmp/PyLanguageEasy-1.0.1.tar.gz --markdown 20230412/P/PyLanguageEasy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 11:17:00] INFO root fetch - processPackages [cdktf]: executing diffoscope
+[2023-04-12 11:17:00] INFO root fetch - processPackages [cdktf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-0.9.3.tar.gz tmp/cdktf-0.9.4.tar.gz --markdown 20230412/c/cdktf/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-04-12 11:17:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:01] INFO root fetch - processPackages [invenio-theme]: New version: [2.1.2] Old Version: [2.1.1]
+[2023-04-12 11:17:01] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:02] INFO root fetch - processPackages [bothpy-ctp]: New version: [6.6.7.4] Old Version: [6.6.7.3]
+[2023-04-12 11:17:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:02] INFO root fetch - processPackages [starlite]: New version: [2.0.0a2] Old Version: [2.0.0a1]
+[2023-04-12 11:17:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:02] INFO root fetch - processPackages [st-config]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 11:17:02] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:02] INFO root fetch - processPackages [invenio-theme]: Downloading https://files.pythonhosted.org/packages/fa/f2/2993ad95aa0d53feeeb0ab23ed45a4359486e40fa003484dab6cdcae5121/invenio-theme-2.1.1.tar.gz
+[2023-04-12 11:17:02] INFO root fetch - processPackages [antchain-twc]: New version: [1.8.9] Old Version: [1.8.8]
+[2023-04-12 11:17:02] INFO root fetch - processPackages [bothpy-ctp]: Downloading https://files.pythonhosted.org/packages/55/d6/8ac5e11fb0c40147bcab93b37f0aad163882f3a3227b7787825cdb318fa9/bothpy_ctp-6.6.7.3-cp310-cp310-win_amd64.whl
+[2023-04-12 11:17:02] INFO root fetch - processPackages [starlite]: Downloading https://files.pythonhosted.org/packages/44/4e/ca45ad4d9ca7cc1fe1ef4b895da684ad409208c69bbbedcbc4730ac06f47/starlite-2.0.0a1.tar.gz
+[2023-04-12 11:17:02] INFO root fetch - processPackages [st-config]: Downloading https://files.pythonhosted.org/packages/90/c3/96d5bccc08c00b1b23daf044cf34c6fb03fe03e0f50c1b43c066378b5c56/st_config-0.0.4.tar.gz
+[2023-04-12 11:17:02] INFO root fetch - processPackages [antchain-twc]: Downloading https://files.pythonhosted.org/packages/85/c0/967630d109bde8bebdb11f8e8a8ea604d2dbf3f1837963be854f95af5c79/antchain_twc-1.8.8.tar.gz
+[2023-04-12 11:17:02] WARNING root fetch - processPackages [bothpy-ctp]: Skipping package: exceeds size limit 13290908>=10485760
+[2023-04-12 11:17:02] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:17:02] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: New version: [12.0.1.0.3] Old Version: [12.0.1.0.2]
+[2023-04-12 11:17:02] INFO root fetch - processPackages [st-config]: executing diffoscope
+[2023-04-12 11:17:02] INFO root fetch - processPackages [st-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_config-0.0.3.tar.gz tmp/st_config-0.0.4.tar.gz --markdown 20230412/s/st-config/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 11:17:02] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: Downloading https://files.pythonhosted.org/packages/e5/ce/358d25414769cef75f8854a509319eb4b6506bd9b818c70e5213eb42ef25/odoo12_addon_product_intercompany_account-12.0.1.0.2-py3-none-any.whl
+[2023-04-12 11:17:02] INFO root fetch - processPackages [starlite]: Downloading https://files.pythonhosted.org/packages/db/01/eae30b612e372f77d4db66f6ba8bc578968ab10ab0e8e198c91bc687c18d/starlite-2.0.0a2.tar.gz
+[2023-04-12 11:17:02] INFO root fetch - processPackages [antchain-twc]: Downloading https://files.pythonhosted.org/packages/be/7d/c706ac71802457b87a49a83609510e11978f747b3b4bb06fdf4de952c80a/antchain_twc-1.8.9.tar.gz
+[2023-04-12 11:17:02] INFO root fetch - processPackages [starlite]: executing diffoscope
+[2023-04-12 11:17:02] INFO root fetch - processPackages [starlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starlite-2.0.0a1.tar.gz tmp/starlite-2.0.0a2.tar.gz --markdown 20230412/s/starlite/2.0.0a1-2.0.0a2/diff.md --exclude *.pyd
+[2023-04-12 11:17:03] INFO root fetch - processPackages [antchain-twc]: executing diffoscope
+[2023-04-12 11:17:03] INFO root fetch - processPackages [antchain-twc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_twc-1.8.8.tar.gz tmp/antchain_twc-1.8.9.tar.gz --markdown 20230412/a/antchain-twc/1.8.8-1.8.9/diff.md --exclude *.pyd
+[2023-04-12 11:17:03] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: Downloading https://files.pythonhosted.org/packages/da/9c/b1c3d4b756a6c85bfd3dbb00db5e8c67040d15c2b7104a7ab20c6defab46/odoo12_addon_product_intercompany_account-12.0.1.0.3-py3-none-any.whl
+[2023-04-12 11:17:03] INFO root fetch - processPackages [invenio-theme]: Downloading https://files.pythonhosted.org/packages/90/13/cbece93df595e1f01f1f3f147b8dcaa3067299417ff53bae93e1d5a24dce/invenio-theme-2.1.2.tar.gz
+[2023-04-12 11:17:03] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: executing diffoscope
+[2023-04-12 11:17:03] INFO root fetch - processPackages [odoo12-addon-product-intercompany-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_product_intercompany_account-12.0.1.0.2-py3-none-any.whl.zip tmp/odoo12_addon_product_intercompany_account-12.0.1.0.3-py3-none-any.whl.zip --markdown 20230412/o/odoo12-addon-product-intercompany-account/12.0.1.0.2-12.0.1.0.3/diff.md --exclude *.pyd
+[2023-04-12 11:17:03] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:03] INFO root fetch - processPackages [metaseg]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-04-12 11:17:03] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/1b/cd/0dd61520b3fe1e258724f0f71ad7147c0739cf5c2759e2394050a77d62af/metaseg-0.5.2.tar.gz
+[2023-04-12 11:17:04] INFO root fetch - processPackages [invenio-theme]: executing diffoscope
+[2023-04-12 11:17:04] INFO root fetch - processPackages [invenio-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invenio-theme-2.1.1.tar.gz tmp/invenio-theme-2.1.2.tar.gz --markdown 20230412/i/invenio-theme/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2023-04-12 11:17:04] INFO root fetch - processPackages [metaseg]: Downloading https://files.pythonhosted.org/packages/c2/c6/5af3d0888873be52997b911e89cc589c73d83c3d2b2681b55f5d50b27c61/metaseg-0.5.3.tar.gz
+[2023-04-12 11:17:04] INFO root fetch - processPackages [metaseg]: executing diffoscope
+[2023-04-12 11:17:04] INFO root fetch - processPackages [metaseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metaseg-0.5.2.tar.gz tmp/metaseg-0.5.3.tar.gz --markdown 20230412/m/metaseg/0.5.2-0.5.3/diff.md --exclude *.pyd
+[2023-04-12 11:17:04] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:04] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-04-12 11:17:04] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-04-12 11:17:04] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230412/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-04-12 11:17:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:05] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.13.0.dev20230411] Old Version: [2.13.0.dev20230409]
+[2023-04-12 11:17:05] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/c8/20/8abcf8df8b888ccf02c7ab810e1ac6366279baad5b3f672a1a5252f02a63/tf_nightly_cpu_aws-2.13.0.dev20230409-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-04-12 11:17:05] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 246619058>=10485760
+[2023-04-12 11:17:05] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:17:05] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-12 11:17:05] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/3f/94/2884f28573563d35cf6f8b1eb65c766a53a1bd77d8d1357f89e01fa83ed7/pcl_pangu-1.2.5.9.tar.gz
+[2023-04-12 11:17:06] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-12 11:17:06] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230412/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-12 11:17:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:06] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-12 11:17:06] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-12 11:17:06] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230412/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-12 11:17:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:17:09] INFO root fetch - main [MainThread]: Store serial: [17673867]
