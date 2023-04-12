@@ -22637,3 +22637,92 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 21:31:10] INFO root fetch - main [MainThread]: End processing [gpush]: success
 [2023-04-12 21:31:13] INFO root fetch - main [MainThread]: End processing [pyvalhalla]: success
 [2023-04-12 21:31:13] INFO root fetch - main [MainThread]: Store serial: [17681059]
+[2023-04-12 21:36:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17681059]
+[2023-04-12 21:36:22] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: energyplus-launch
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multi-date-picker
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssb-sgis
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MotorDeCalidad
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aadetools
+[2023-04-12 21:36:22] INFO root fetch - processPackages [ssb-sgis]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 21:36:22] INFO root fetch - processPackages [energyplus-launch]: New version: [3.6.0] Old Version: [3.5.8]
+[2023-04-12 21:36:22] WARNING root fetch - processPackages [multi-date-picker]: Skipping, unable to determine old version
+[2023-04-12 21:36:22] INFO root fetch - processPackages [multi-date-picker]: Start processing: pytheus
+[2023-04-12 21:36:22] INFO root fetch - main [MainThread]: End processing [multi-date-picker] error
+[2023-04-12 21:36:22] INFO root fetch - processPackages [aadetools]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 21:36:22] INFO root fetch - processPackages [MotorDeCalidad]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-04-12 21:36:22] INFO root fetch - processPackages [pytheus]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 21:36:23] INFO root fetch - processPackages [aadetools]: Downloading https://files.pythonhosted.org/packages/9f/a7/f857848537d838bdc1d7270495affe9d63b7a8a49ebb6d98d8de0835ff53/aadetools-0.0.4-py3-none-any.whl
+[2023-04-12 21:36:23] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/66/da/113174136fe513ad4fdcef5ba9522258c127ccfe0645e591b0fc5710b363/pytheus-0.0.6.tar.gz
+[2023-04-12 21:36:23] INFO root fetch - processPackages [ssb-sgis]: Downloading https://files.pythonhosted.org/packages/7f/53/e93fce1fc1246c173fdb675ef428376d8b8b6a2380a5a9de0ba484d5b166/ssb_sgis-0.1.5.tar.gz
+[2023-04-12 21:36:23] INFO root fetch - processPackages [energyplus-launch]: Downloading https://files.pythonhosted.org/packages/32/e2/1879dadf7032d972aadca870c9d565b3d576bd54274539d0608acd3fde03/energyplus_launch-3.6.0.tar.gz
+[2023-04-12 21:36:23] INFO root fetch - processPackages [pytheus]: executing diffoscope
+[2023-04-12 21:36:23] INFO root fetch - processPackages [pytheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheus-0.0.5.tar.gz tmp/pytheus-0.0.6.tar.gz --markdown 20230412/p/pytheus/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 21:36:23] INFO root fetch - processPackages [ssb-sgis]: executing diffoscope
+[2023-04-12 21:36:23] INFO root fetch - processPackages [ssb-sgis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssb_sgis-0.1.4.tar.gz tmp/ssb_sgis-0.1.5.tar.gz --markdown 20230412/s/ssb-sgis/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 21:36:23] INFO root fetch - processPackages [energyplus-launch]: executing diffoscope
+[2023-04-12 21:36:23] INFO root fetch - processPackages [energyplus-launch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energyplus_launch-3.5.8.tar.gz tmp/energyplus_launch-3.6.0.tar.gz --markdown 20230412/e/energyplus-launch/3.5.8-3.6.0/diff.md --exclude *.pyd
+[2023-04-12 21:36:23] INFO root fetch - processPackages [aadetools]: Downloading https://files.pythonhosted.org/packages/f8/09/25c91c5b0c4ad7b7ca916a2137867473459f58f320a4335463150f7f91e3/aadetools-0.0.5.tar.gz
+[2023-04-12 21:36:23] INFO root fetch - processPackages [aadetools]: executing diffoscope
+[2023-04-12 21:36:23] INFO root fetch - processPackages [aadetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aadetools-0.0.4-py3-none-any.whl.zip tmp/aadetools-0.0.5.tar.gz --markdown 20230412/a/aadetools/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 21:36:23] INFO root fetch - processPackages [MotorDeCalidad]: executing diffoscope
+[2023-04-12 21:36:23] INFO root fetch - processPackages [MotorDeCalidad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MotorDeCalidad-1.9.8.tar.gz tmp/MotorDeCalidad-1.9.9.tar.gz --markdown 20230412/M/MotorDeCalidad/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-04-12 21:36:24] INFO root fetch - processPackages [MotorDeCalidad]: Start processing: ipynbcompress
+[2023-04-12 21:36:24] INFO root fetch - main [MainThread]: End processing [MotorDeCalidad]: success
+[2023-04-12 21:36:24] INFO root fetch - processPackages [ipynbcompress]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-04-12 21:36:24] INFO root fetch - processPackages [aadetools]: Start processing: bodo-platform-utils
+[2023-04-12 21:36:24] INFO root fetch - main [MainThread]: End processing [aadetools]: success
+[2023-04-12 21:36:24] INFO root fetch - processPackages [bodo-platform-utils]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 21:36:24] INFO root fetch - processPackages [energyplus-launch]: Start processing: xia-login-flask
+[2023-04-12 21:36:24] INFO root fetch - main [MainThread]: End processing [energyplus-launch]: success
+[2023-04-12 21:36:24] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 21:36:24] INFO root fetch - processPackages [pytheus]: Start processing: polywrap-msgpack
+[2023-04-12 21:36:24] INFO root fetch - main [MainThread]: End processing [pytheus]: success
+[2023-04-12 21:36:24] INFO root fetch - processPackages [ipynbcompress]: Downloading https://files.pythonhosted.org/packages/e5/6d/4cdad057adfbf75c30703f64c40a84fbb5883198bddc2697f8c50eae3be1/ipynbcompress-0.3.0.tar.gz
+[2023-04-12 21:36:24] INFO root fetch - processPackages [polywrap-msgpack]: New version: [0.1.0a9] Old Version: [0.1.0a8]
+[2023-04-12 21:36:24] INFO root fetch - processPackages [ssb-sgis]: Start processing: watchtower-browser-testing
+[2023-04-12 21:36:24] INFO root fetch - main [MainThread]: End processing [ssb-sgis]: success
+[2023-04-12 21:36:24] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 21:36:24] INFO root fetch - processPackages [polywrap-msgpack]: executing diffoscope
+[2023-04-12 21:36:24] INFO root fetch - processPackages [polywrap-msgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polywrap_msgpack-0.1.0a8.tar.gz tmp/polywrap_msgpack-0.1.0a9.tar.gz --markdown 20230412/p/polywrap-msgpack/0.1.0a8-0.1.0a9/diff.md --exclude *.pyd
+[2023-04-12 21:36:24] INFO root fetch - processPackages [bodo-platform-utils]: Downloading https://files.pythonhosted.org/packages/be/7d/7b8cd26623a20e28bb64386d297cdd2fe134b1d81a6e127921197bc7079f/bodo_platform_utils-0.0.6.tar.gz
+[2023-04-12 21:36:24] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 21:36:24] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 21:36:25] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-04-12 21:36:25] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230412/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 21:36:25] INFO root fetch - processPackages [bodo-platform-utils]: Downloading https://files.pythonhosted.org/packages/3d/1c/7f3efcb3c9ae8cb5dc5e7cc9981b8c1c2afeab31604153d80cd5e6adf415/bodo_platform_utils-0.0.7.tar.gz
+[2023-04-12 21:36:25] INFO root fetch - processPackages [bodo-platform-utils]: executing diffoscope
+[2023-04-12 21:36:25] INFO root fetch - processPackages [bodo-platform-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodo_platform_utils-0.0.6.tar.gz tmp/bodo_platform_utils-0.0.7.tar.gz --markdown 20230412/b/bodo-platform-utils/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 21:36:25] INFO root fetch - processPackages [ipynbcompress]: Downloading https://files.pythonhosted.org/packages/b4/6a/75df36459e181f17f566f157ecebc320293e9fb3f9233f258e942ae3783f/ipynbcompress-0.4.0.tar.gz
+[2023-04-12 21:36:25] INFO root fetch - processPackages [polywrap-msgpack]: Start processing: datasaku
+[2023-04-12 21:36:25] INFO root fetch - main [MainThread]: End processing [polywrap-msgpack]: success
+[2023-04-12 21:36:25] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: cluster-colors
+[2023-04-12 21:36:25] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 21:36:25] INFO root fetch - processPackages [cluster-colors]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 21:36:25] INFO root fetch - processPackages [datasaku]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 21:36:25] INFO root fetch - processPackages [ipynbcompress]: executing diffoscope
+[2023-04-12 21:36:25] INFO root fetch - processPackages [ipynbcompress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipynbcompress-0.3.0.tar.gz tmp/ipynbcompress-0.4.0.tar.gz --markdown 20230412/i/ipynbcompress/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-04-12 21:36:26] INFO root fetch - processPackages [cluster-colors]: Downloading https://files.pythonhosted.org/packages/46/fe/2e6953ec0189f4219de06abfc2f741c6a576f5f6e44c5737ae8d4ebbbf10/cluster_colors-0.9.1.tar.gz
+[2023-04-12 21:36:26] INFO root fetch - processPackages [datasaku]: Downloading https://files.pythonhosted.org/packages/31/8b/2ae7783e0482ab40c7eefb1cee61890e8392666c72fe6520f9d7bc759377/datasaku-0.0.3.tar.gz
+[2023-04-12 21:36:26] INFO root fetch - processPackages [cluster-colors]: executing diffoscope
+[2023-04-12 21:36:26] INFO root fetch - processPackages [cluster-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_colors-0.9.0.tar.gz tmp/cluster_colors-0.9.1.tar.gz --markdown 20230412/c/cluster-colors/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 21:36:26] INFO root fetch - processPackages [xia-login-flask]: Start processing: lcbuilder
+[2023-04-12 21:36:26] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-04-12 21:36:26] INFO root fetch - processPackages [lcbuilder]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 21:36:26] INFO root fetch - processPackages [bodo-platform-utils]: Start processing: qudi-hira-analysis
+[2023-04-12 21:36:26] INFO root fetch - main [MainThread]: End processing [bodo-platform-utils]: success
+[2023-04-12 21:36:26] INFO root fetch - processPackages [qudi-hira-analysis]: New version: [1.4.0] Old Version: [1.3.5]
+[2023-04-12 21:36:26] INFO root fetch - processPackages [datasaku]: Downloading https://files.pythonhosted.org/packages/73/50/c2744ed369b95f8abefeca0277a83648e1671379568524e55b7312f20551/datasaku-0.0.4.tar.gz
+[2023-04-12 21:36:26] INFO root fetch - processPackages [datasaku]: executing diffoscope
+[2023-04-12 21:36:26] INFO root fetch - processPackages [datasaku]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasaku-0.0.3.tar.gz tmp/datasaku-0.0.4.tar.gz --markdown 20230412/d/datasaku/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 21:36:26] INFO root fetch - processPackages [qudi-hira-analysis]: Downloading https://files.pythonhosted.org/packages/9d/d5/7deb3ce1b910a0604f7c3ef4fa96240f1dfacda0d73b73a28752396e5cd8/qudi_hira_analysis-1.4.0.tar.gz
+[2023-04-12 21:36:26] INFO root fetch - processPackages [lcbuilder]: executing diffoscope
+[2023-04-12 21:36:26] INFO root fetch - processPackages [lcbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcbuilder-0.9.8.tar.gz tmp/lcbuilder-0.9.9.tar.gz --markdown 20230412/l/lcbuilder/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 21:36:26] INFO root fetch - processPackages [qudi-hira-analysis]: executing diffoscope
+[2023-04-12 21:36:26] INFO root fetch - processPackages [qudi-hira-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qudi_hira_analysis-1.3.5.tar.gz tmp/qudi_hira_analysis-1.4.0.tar.gz --markdown 20230412/q/qudi-hira-analysis/1.3.5-1.4.0/diff.md --exclude *.pyd
+[2023-04-12 21:36:27] INFO root fetch - main [MainThread]: End processing [cluster-colors]: success
+[2023-04-12 21:36:27] INFO root fetch - main [MainThread]: End processing [datasaku]: success
+[2023-04-12 21:36:27] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
+[2023-04-12 21:36:27] INFO root fetch - main [MainThread]: End processing [ipynbcompress]: success
+[2023-04-12 21:36:29] INFO root fetch - main [MainThread]: End processing [qudi-hira-analysis]: success
+[2023-04-12 21:36:29] INFO root fetch - main [MainThread]: Store serial: [17681107]
