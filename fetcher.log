@@ -19076,3 +19076,130 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 18:01:10] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
 [2023-04-12 18:01:15] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
 [2023-04-12 18:01:15] INFO root fetch - main [MainThread]: Store serial: [17678802]
+[2023-04-12 18:06:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17678802]
+[2023-04-12 18:06:22] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-12 18:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-sso-bridge
+[2023-04-12 18:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pyomic
+[2023-04-12 18:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frozenclass
+[2023-04-12 18:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretix-plugin-attendance-certificate
+[2023-04-12 18:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cryptographylib
+[2023-04-12 18:06:22] INFO root fetch - processPackages [django-sso-bridge]: New version: [0.1] Old Version: [0.0.3]
+[2023-04-12 18:06:22] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 18:06:22] INFO root fetch - processPackages [frozenclass]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 18:06:22] INFO root fetch - processPackages [Pyomic]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-04-12 18:06:22] WARNING root fetch - processPackages [cryptographylib]: Skipping, unable to determine old version
+[2023-04-12 18:06:22] INFO root fetch - processPackages [cryptographylib]: Start processing: croniter
+[2023-04-12 18:06:22] INFO root fetch - main [MainThread]: End processing [cryptographylib] error
+[2023-04-12 18:06:22] INFO root fetch - processPackages [croniter]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-04-12 18:06:22] INFO root fetch - processPackages [django-sso-bridge]: Downloading https://files.pythonhosted.org/packages/3e/2c/90064344ade2bfa84eea704342908d941bfe1f83f0762a53d534e75dac3e/django_sso_bridge-0.0.3-py3.11.egg
+[2023-04-12 18:06:22] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/12/0c/78499f6b69bed354bb3304081b089f670516bfb4c0635f01607c4eade7b6/pretix_plugin_attendance_certificate-0.1.0.tar.gz
+[2023-04-12 18:06:22] INFO root fetch - processPackages [Pyomic]: Downloading https://files.pythonhosted.org/packages/6c/5e/9897bb57a64b5c5149e87d38d10f02a730036b65da14a4a8b4dfa7178c2b/Pyomic-1.2.6-py3-none-any.whl
+[2023-04-12 18:06:22] INFO root fetch - processPackages [croniter]: executing diffoscope
+[2023-04-12 18:06:22] INFO root fetch - processPackages [croniter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croniter-1.3.7.tar.gz tmp/croniter-1.3.8.tar.gz --markdown 20230412/c/croniter/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-04-12 18:06:22] INFO root fetch - processPackages [frozenclass]: Downloading https://files.pythonhosted.org/packages/e8/6d/e483c41dfc6f680379d1331beca015311e8a2b8498e44c8109e27677de37/frozenclass-0.0.8.tar.gz
+[2023-04-12 18:06:23] WARNING root fetch - processPackages [Pyomic]: Skipping package: exceeds size limit 15954285>=10485760
+[2023-04-12 18:06:23] INFO root fetch - processPackages [Pyomic]: Start processing: notification-service-nightly
+[2023-04-12 18:06:23] INFO root fetch - main [MainThread]: End processing [Pyomic] error
+[2023-04-12 18:06:23] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-12 18:06:23] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Downloading https://files.pythonhosted.org/packages/ff/65/fa0a674d52aada457b71d5d2f97912fea6d83868971ed6689439283dcca2/pretix_plugin_attendance_certificate-0.1.1.tar.gz
+[2023-04-12 18:06:23] INFO root fetch - processPackages [django-sso-bridge]: Downloading https://files.pythonhosted.org/packages/17/1f/bf58afb91bef9ad9f9a3743c2eb4276a687381a01277487a60a4c59b0f1c/django_sso_bridge-0.1.linux-x86_64.tar.gz
+[2023-04-12 18:06:23] INFO root fetch - processPackages [frozenclass]: Downloading https://files.pythonhosted.org/packages/17/0e/e28f93ef2f2a0045ea3d9a3936e347c9444d7d4a8f11c864728ca722acd2/frozenclass-0.0.9.tar.gz
+[2023-04-12 18:06:23] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-04-12 18:06:23] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.4.8.tar.gz tmp/notification_service_nightly-2023.4.9.tar.gz --markdown 20230412/n/notification-service-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-12 18:06:23] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: executing diffoscope
+[2023-04-12 18:06:23] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix_plugin_attendance_certificate-0.1.0.tar.gz tmp/pretix_plugin_attendance_certificate-0.1.1.tar.gz --markdown 20230412/p/pretix-plugin-attendance-certificate/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:06:23] INFO root fetch - processPackages [django-sso-bridge]: executing diffoscope
+[2023-04-12 18:06:23] INFO root fetch - processPackages [django-sso-bridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_sso_bridge-0.0.3-py3.11.egg tmp/django_sso_bridge-0.1.linux-x86_64.tar.gz --markdown 20230412/d/django-sso-bridge/0.0.3-0.1/diff.md --exclude *.pyd
+[2023-04-12 18:06:23] INFO root fetch - processPackages [frozenclass]: executing diffoscope
+[2023-04-12 18:06:23] INFO root fetch - processPackages [frozenclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frozenclass-0.0.8.tar.gz tmp/frozenclass-0.0.9.tar.gz --markdown 20230412/f/frozenclass/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 18:06:24] INFO root fetch - processPackages [croniter]: Start processing: ai-flow-nightly
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [croniter]: success
+[2023-04-12 18:06:24] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.4.9] Old Version: [2023.4.8]
+[2023-04-12 18:06:24] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-04-12 18:06:24] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.4.8.tar.gz tmp/ai_flow_nightly-2023.4.9.tar.gz --markdown 20230412/a/ai-flow-nightly/2023.4.8-2023.4.9/diff.md --exclude *.pyd
+[2023-04-12 18:06:24] INFO root fetch - processPackages [django-sso-bridge]: Start processing: lbt-honeybee
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [django-sso-bridge]: success
+[2023-04-12 18:06:24] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.7.99] Old Version: [0.7.98]
+[2023-04-12 18:06:24] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Start processing: cryptolibs
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
+[2023-04-12 18:06:24] WARNING root fetch - processPackages [cryptolibs]: Skipping, unable to determine old version
+[2023-04-12 18:06:24] INFO root fetch - processPackages [cryptolibs]: Start processing: mongogettersetter
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [cryptolibs] error
+[2023-04-12 18:06:24] INFO root fetch - processPackages [frozenclass]: Start processing: libgpiod
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [frozenclass]: success
+[2023-04-12 18:06:24] INFO root fetch - processPackages [mongogettersetter]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-04-12 18:06:24] WARNING root fetch - processPackages [libgpiod]: Skipping, unable to determine old version
+[2023-04-12 18:06:24] INFO root fetch - processPackages [libgpiod]: Start processing: pretix-plugin-attendance-certificate
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [libgpiod] error
+[2023-04-12 18:06:24] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 18:06:24] INFO root fetch - processPackages [notification-service-nightly]: Start processing: deep-proto
+[2023-04-12 18:06:24] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-04-12 18:06:24] INFO root fetch - processPackages [deep-proto]: New version: [0.9.dev0] Old Version: [0.8.dev0]
+[2023-04-12 18:06:24] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: executing diffoscope
+[2023-04-12 18:06:24] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretix_plugin_attendance_certificate-0.1.0.tar.gz tmp/pretix_plugin_attendance_certificate-0.1.1.tar.gz --markdown 20230412/p/pretix-plugin-attendance-certificate/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 18:06:24] INFO root fetch - processPackages [deep-proto]: executing diffoscope
+[2023-04-12 18:06:24] INFO root fetch - processPackages [deep-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_proto-0.8.dev0.tar.gz tmp/deep_proto-0.9.dev0.tar.gz --markdown 20230412/d/deep-proto/0.8.dev0-0.9.dev0/diff.md --exclude *.pyd
+[2023-04-12 18:06:24] INFO root fetch - processPackages [mongogettersetter]: Downloading https://files.pythonhosted.org/packages/cb/40/829adbbf705aa8677f297cda658ae6fdca7fce65147ad2269bd69d822d67/mongogettersetter-1.3.3.tar.gz
+[2023-04-12 18:06:24] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2023-04-12 18:06:24] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.7.98.tar.gz tmp/lbt-honeybee-0.7.99.tar.gz --markdown 20230412/l/lbt-honeybee/0.7.98-0.7.99/diff.md --exclude *.pyd
+[2023-04-12 18:06:24] INFO root fetch - processPackages [mongogettersetter]: executing diffoscope
+[2023-04-12 18:06:24] INFO root fetch - processPackages [mongogettersetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongogettersetter-1.3.2.tar.gz tmp/mongogettersetter-1.3.3.tar.gz --markdown 20230412/m/mongogettersetter/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-04-12 18:06:25] INFO root fetch - processPackages [pretix-plugin-attendance-certificate]: Start processing: logic2-automation
+[2023-04-12 18:06:25] INFO root fetch - main [MainThread]: End processing [pretix-plugin-attendance-certificate]: success
+[2023-04-12 18:06:25] INFO root fetch - processPackages [logic2-automation]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-12 18:06:25] INFO root fetch - processPackages [deep-proto]: Start processing: cg
+[2023-04-12 18:06:25] INFO root fetch - main [MainThread]: End processing [deep-proto]: success
+[2023-04-12 18:06:25] INFO root fetch - processPackages [logic2-automation]: Downloading https://files.pythonhosted.org/packages/03/50/3684d90db11727906a14e4328a73f8e784b1c1c2d7c9f5f10934373c3924/logic2_automation-1.0.5.tar.gz
+[2023-04-12 18:06:25] INFO root fetch - processPackages [cg]: New version: [27.2.8] Old Version: [27.2.7]
+[2023-04-12 18:06:25] INFO root fetch - processPackages [mongogettersetter]: Start processing: pepperize.cdk-vpc
+[2023-04-12 18:06:25] INFO root fetch - main [MainThread]: End processing [mongogettersetter]: success
+[2023-04-12 18:06:26] INFO root fetch - processPackages [pepperize.cdk-vpc]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 18:06:26] INFO root fetch - processPackages [cg]: Downloading https://files.pythonhosted.org/packages/91/a3/aa20381be3b036fd9308d0de4c97de15ab49d9c133cc2b9d54c675a8fb6b/cg-27.2.8.tar.gz
+[2023-04-12 18:06:26] INFO root fetch - processPackages [lbt-honeybee]: Start processing: crimestat3000
+[2023-04-12 18:06:26] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2023-04-12 18:06:26] INFO root fetch - processPackages [logic2-automation]: Downloading https://files.pythonhosted.org/packages/3c/80/af125bd84c0b3bdc5f5cb228aea98016ab019cb0b1d44c10ae2988359f1d/logic2_automation-1.0.6.tar.gz
+[2023-04-12 18:06:26] INFO root fetch - processPackages [pepperize.cdk-vpc]: executing diffoscope
+[2023-04-12 18:06:26] INFO root fetch - processPackages [pepperize.cdk-vpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperize.cdk-vpc-0.0.98.tar.gz tmp/pepperize.cdk-vpc-0.0.99.tar.gz --markdown 20230412/p/pepperize.cdk-vpc/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 18:06:26] INFO root fetch - processPackages [crimestat3000]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 18:06:26] INFO root fetch - processPackages [logic2-automation]: executing diffoscope
+[2023-04-12 18:06:26] INFO root fetch - processPackages [logic2-automation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logic2_automation-1.0.5.tar.gz tmp/logic2_automation-1.0.6.tar.gz --markdown 20230412/l/logic2-automation/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-12 18:06:26] INFO root fetch - processPackages [crimestat3000]: Downloading https://files.pythonhosted.org/packages/57/aa/7eba4620ff918c75c6b4eac8b0c55f9b905126b744aaa2d24a74f67ba9b7/crimestat3000-0.1.9.tar.gz
+[2023-04-12 18:06:26] INFO root fetch - processPackages [crimestat3000]: executing diffoscope
+[2023-04-12 18:06:26] INFO root fetch - processPackages [crimestat3000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crimestat3000-0.1.8.tar.gz tmp/crimestat3000-0.1.9.tar.gz --markdown 20230412/c/crimestat3000/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 18:06:26] INFO root fetch - processPackages [cg]: executing diffoscope
+[2023-04-12 18:06:26] INFO root fetch - processPackages [cg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cg-27.2.7.tar.gz tmp/cg-27.2.8.tar.gz --markdown 20230412/c/cg/27.2.7-27.2.8/diff.md --exclude *.pyd
+[2023-04-12 18:06:27] INFO root fetch - processPackages [ai-flow-nightly]: Start processing: KLogLib
+[2023-04-12 18:06:27] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-04-12 18:06:27] INFO root fetch - processPackages [KLogLib]: New version: [0.0.15] Old Version: [0.0.14]
+[2023-04-12 18:06:27] INFO root fetch - processPackages [KLogLib]: executing diffoscope
+[2023-04-12 18:06:27] INFO root fetch - processPackages [KLogLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KLogLib-0.0.14.tar.gz tmp/KLogLib-0.0.15.tar.gz --markdown 20230412/K/KLogLib/0.0.14-0.0.15/diff.md --exclude *.pyd
+[2023-04-12 18:06:27] INFO root fetch - processPackages [logic2-automation]: Start processing: robotmk
+[2023-04-12 18:06:27] INFO root fetch - main [MainThread]: End processing [logic2-automation]: success
+[2023-04-12 18:06:27] INFO root fetch - processPackages [robotmk]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-04-12 18:06:27] INFO root fetch - processPackages [robotmk]: executing diffoscope
+[2023-04-12 18:06:27] INFO root fetch - processPackages [robotmk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotmk-0.0.45.tar.gz tmp/robotmk-0.0.46.tar.gz --markdown 20230412/r/robotmk/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-04-12 18:06:27] INFO root fetch - processPackages [pepperize.cdk-vpc]: Start processing: WaveLinkCord
+[2023-04-12 18:06:27] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-vpc]: success
+[2023-04-12 18:06:27] INFO root fetch - processPackages [crimestat3000]: Start processing: pywencai
+[2023-04-12 18:06:27] INFO root fetch - main [MainThread]: End processing [crimestat3000]: success
+[2023-04-12 18:06:27] INFO root fetch - processPackages [pywencai]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-04-12 18:06:27] INFO root fetch - processPackages [WaveLinkCord]: New version: [2.2.1] Old Version: [2.0.4]
+[2023-04-12 18:06:27] INFO root fetch - processPackages [pywencai]: executing diffoscope
+[2023-04-12 18:06:27] INFO root fetch - processPackages [pywencai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywencai-0.5.1.tar.gz tmp/pywencai-0.5.2.tar.gz --markdown 20230412/p/pywencai/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-04-12 18:06:27] INFO root fetch - processPackages [WaveLinkCord]: Downloading https://files.pythonhosted.org/packages/de/14/718b821f57bee358561757eadbcc4b0bc54e6b9c30c457be203cf40f8dd0/WaveLinkCord-2.0.4.tar.gz
+[2023-04-12 18:06:28] INFO root fetch - processPackages [KLogLib]: Start processing: gt4sd
+[2023-04-12 18:06:28] INFO root fetch - main [MainThread]: End processing [KLogLib]: success
+[2023-04-12 18:06:28] INFO root fetch - processPackages [WaveLinkCord]: Downloading https://files.pythonhosted.org/packages/1d/27/2346a093fa58597c24919325b22b3cbfc92493ab465215fbc021d13c5d6a/WaveLinkCord-2.2.1.tar.gz
+[2023-04-12 18:06:28] INFO root fetch - processPackages [gt4sd]: New version: [1.2.0] Old Version: [1.1.9]
+[2023-04-12 18:06:28] INFO root fetch - processPackages [WaveLinkCord]: executing diffoscope
+[2023-04-12 18:06:28] INFO root fetch - processPackages [WaveLinkCord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WaveLinkCord-2.0.4.tar.gz tmp/WaveLinkCord-2.2.1.tar.gz --markdown 20230412/W/WaveLinkCord/2.0.4-2.2.1/diff.md --exclude *.pyd
+[2023-04-12 18:06:28] INFO root fetch - processPackages [gt4sd]: Downloading https://files.pythonhosted.org/packages/f5/2f/acfc5c17f68b71eff55acfebd9c5334e140ed55742671e6234931add9f4f/gt4sd-1.1.9.tar.gz
+[2023-04-12 18:06:28] INFO root fetch - main [MainThread]: End processing [pywencai]: success
+[2023-04-12 18:06:28] INFO root fetch - main [MainThread]: End processing [robotmk]: success
+[2023-04-12 18:06:28] INFO root fetch - processPackages [gt4sd]: Downloading https://files.pythonhosted.org/packages/1c/66/30f21a0b2c4550e2783c1abbbf33300561a56f934bf6ddc93a4e44b967c8/gt4sd-1.2.0.tar.gz
+[2023-04-12 18:06:29] INFO root fetch - processPackages [gt4sd]: executing diffoscope
+[2023-04-12 18:06:29] INFO root fetch - processPackages [gt4sd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gt4sd-1.1.9.tar.gz tmp/gt4sd-1.2.0.tar.gz --markdown 20230412/g/gt4sd/1.1.9-1.2.0/diff.md --exclude *.pyd
+[2023-04-12 18:06:29] INFO root fetch - main [MainThread]: End processing [WaveLinkCord]: success
+[2023-04-12 18:06:32] INFO root fetch - main [MainThread]: End processing [gt4sd]: success
+[2023-04-12 18:06:37] INFO root fetch - main [MainThread]: End processing [cg]: success
+[2023-04-12 18:06:37] INFO root fetch - main [MainThread]: Store serial: [17678882]
