@@ -18125,3 +18125,128 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 17:23:51] INFO root fetch - main [MainThread]: End processing [manuscriptmonitor]: success
 [2023-04-12 17:23:52] INFO root fetch - main [MainThread]: End processing [awattar]: success
 [2023-04-12 17:23:52] INFO root fetch - main [MainThread]: Store serial: [17678172]
+[2023-04-12 17:28:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17678172]
+[2023-04-12 17:29:00] INFO root fetch - main [MainThread]: Found 21 changed packages
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unified-planning
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: titan-iris
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: great-expectations-experimental
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: watchtower-browser-testing
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ifd-python
+[2023-04-12 17:29:00] INFO root fetch - processPackages [unified-planning]: New version: [0.5.0.93.dev1] Old Version: [0.5.0.7.dev1]
+[2023-04-12 17:29:00] INFO root fetch - processPackages [great-expectations-experimental]: New version: [0.1.20230412028] Old Version: [0.1.20230412022]
+[2023-04-12 17:29:00] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 17:29:00] INFO root fetch - processPackages [ifd-python]: New version: [6.0] Old Version: [5.0]
+[2023-04-12 17:29:00] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 17:29:01] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 17:29:01] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 17:29:01] INFO root fetch - processPackages [great-expectations-experimental]: Downloading https://files.pythonhosted.org/packages/28/b0/15ea16f07b53ca10fe53420becbffaaeb6856149f0754013add0ce2bf388/great_expectations_experimental-0.1.20230412028.tar.gz
+[2023-04-12 17:29:01] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/20/4c/7d274ab70a0383f70ac5db162caace18017623ba520e373a77d5a2299615/ifd_python-5.0.tar.gz
+[2023-04-12 17:29:01] INFO root fetch - processPackages [unified-planning]: Downloading https://files.pythonhosted.org/packages/ed/bf/612e76ee2bfaa2f76cf8b8cc8ec0bee709f3a467bda42105e8ab0c55a7e9/unified_planning-0.5.0.7.dev1.tar.gz
+[2023-04-12 17:29:01] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 17:29:01] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 17:29:01] INFO root fetch - processPackages [great-expectations-experimental]: executing diffoscope
+[2023-04-12 17:29:01] INFO root fetch - processPackages [great-expectations-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/great_expectations_experimental-0.1.20230412022.tar.gz tmp/great_expectations_experimental-0.1.20230412028.tar.gz --markdown 20230412/g/great-expectations-experimental/0.1.20230412022-0.1.20230412028/diff.md --exclude *.pyd
+[2023-04-12 17:29:01] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/7c/8d/ec53bad07ac45462154b771631efdced0d4aabf5e66ee00644b977081342/ifd_python-6.0.tar.gz
+[2023-04-12 17:29:01] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-04-12 17:29:01] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-5.0.tar.gz tmp/ifd_python-6.0.tar.gz --markdown 20230412/i/ifd-python/5.0-6.0/diff.md --exclude *.pyd
+[2023-04-12 17:29:01] INFO root fetch - processPackages [unified-planning]: Downloading https://files.pythonhosted.org/packages/09/d2/9bd726f755ba02199119e216a044292029e40a47aeef35eb680e6d8ef57a/unified_planning-0.5.0.93.dev1.tar.gz
+[2023-04-12 17:29:01] INFO root fetch - processPackages [unified-planning]: executing diffoscope
+[2023-04-12 17:29:01] INFO root fetch - processPackages [unified-planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unified_planning-0.5.0.7.dev1.tar.gz tmp/unified_planning-0.5.0.93.dev1.tar.gz --markdown 20230412/u/unified-planning/0.5.0.7.dev1-0.5.0.93.dev1/diff.md --exclude *.pyd
+[2023-04-12 17:29:02] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: hmd-cli-repo
+[2023-04-12 17:29:02] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 17:29:02] INFO root fetch - processPackages [hmd-cli-repo]: New version: [0.2.95] Old Version: [0.2.94]
+[2023-04-12 17:29:02] INFO root fetch - processPackages [hmd-cli-repo]: executing diffoscope
+[2023-04-12 17:29:02] INFO root fetch - processPackages [hmd-cli-repo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmd_cli_repo-0.2.94-py3-none-any.whl.zip tmp/hmd_cli_repo-0.2.95-py3-none-any.whl.zip --markdown 20230412/h/hmd-cli-repo/0.2.94-0.2.95/diff.md --exclude *.pyd
+[2023-04-12 17:29:02] INFO root fetch - processPackages [titan-iris]: Start processing: simple-ai-server
+[2023-04-12 17:29:02] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 17:29:02] INFO root fetch - processPackages [simple-ai-server]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-04-12 17:29:02] INFO root fetch - processPackages [ifd-python]: Start processing: linktools
+[2023-04-12 17:29:02] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-04-12 17:29:02] INFO root fetch - processPackages [linktools]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-04-12 17:29:02] INFO root fetch - processPackages [great-expectations-experimental]: Start processing: certora-cli-alpha-master
+[2023-04-12 17:29:02] INFO root fetch - main [MainThread]: End processing [great-expectations-experimental]: success
+[2023-04-12 17:29:02] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.15.29.941542] Old Version: [20230412.14.31.929454]
+[2023-04-12 17:29:02] INFO root fetch - processPackages [simple-ai-server]: Downloading https://files.pythonhosted.org/packages/5a/45/bf7270bf1918241b53368764ae9b3eabe10efd2542a4bac8903378f70a76/simple_ai_server-0.1.9.tar.gz
+[2023-04-12 17:29:03] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ac/cf/b070a5b7f50635e67a6862366c606d77efe7e6548889594f75b4b225ecab/certora-cli-alpha-master-20230412.14.31.929454.tar.gz
+[2023-04-12 17:29:03] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/57/1c/722df52b9e34ce7b003fd4b59d54af071bbbbf378ab7e59fd565b21ae1cf/linktools-0.7.8.tar.gz
+[2023-04-12 17:29:03] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28057900>=10485760
+[2023-04-12 17:29:03] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: hmd-cli-bender
+[2023-04-12 17:29:03] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-12 17:29:03] INFO root fetch - processPackages [hmd-cli-bender]: New version: [0.1.19] Old Version: [0.1.18]
+[2023-04-12 17:29:03] INFO root fetch - processPackages [simple-ai-server]: Downloading https://files.pythonhosted.org/packages/25/6e/a17e97839beece7bc98158d0a7bdc63291055c9e776e8b2c67192302649d/simple_ai_server-0.2.0.tar.gz
+[2023-04-12 17:29:03] INFO root fetch - processPackages [hmd-cli-bender]: Downloading https://files.pythonhosted.org/packages/49/99/64643176bac461c6ec990e93e61a012c11e1ee2b20ce598152080c638e64/hmd_cli_bender-0.1.18-py3-none-any.whl
+[2023-04-12 17:29:03] INFO root fetch - processPackages [simple-ai-server]: executing diffoscope
+[2023-04-12 17:29:03] INFO root fetch - processPackages [simple-ai-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_ai_server-0.1.9.tar.gz tmp/simple_ai_server-0.2.0.tar.gz --markdown 20230412/s/simple-ai-server/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 17:29:03] INFO root fetch - processPackages [hmd-cli-bender]: Downloading https://files.pythonhosted.org/packages/0e/18/dc5e9bf4697513ec1ee71c94f76b1d7fa4f58808e8965a3467be256919ab/hmd_cli_bender-0.1.19-py3-none-any.whl
+[2023-04-12 17:29:03] INFO root fetch - processPackages [hmd-cli-bender]: executing diffoscope
+[2023-04-12 17:29:03] INFO root fetch - processPackages [hmd-cli-bender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmd_cli_bender-0.1.18-py3-none-any.whl.zip tmp/hmd_cli_bender-0.1.19-py3-none-any.whl.zip --markdown 20230412/h/hmd-cli-bender/0.1.18-0.1.19/diff.md --exclude *.pyd
+[2023-04-12 17:29:03] INFO root fetch - processPackages [linktools]: Downloading https://files.pythonhosted.org/packages/96/b7/683cc32d55c92f93797e775d4512e034d0522cfb4e7436660973a5677326/linktools-0.7.9.tar.gz
+[2023-04-12 17:29:03] INFO root fetch - processPackages [linktools]: executing diffoscope
+[2023-04-12 17:29:03] INFO root fetch - processPackages [linktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktools-0.7.8.tar.gz tmp/linktools-0.7.9.tar.gz --markdown 20230412/l/linktools/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-04-12 17:29:04] INFO root fetch - processPackages [hmd-cli-repo]: Start processing: TheSilent
+[2023-04-12 17:29:04] INFO root fetch - main [MainThread]: End processing [hmd-cli-repo]: success
+[2023-04-12 17:29:04] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 17:29:04] INFO root fetch - processPackages [unified-planning]: Start processing: simple-hierarchical-transformer
+[2023-04-12 17:29:04] INFO root fetch - main [MainThread]: End processing [unified-planning]: success
+[2023-04-12 17:29:04] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 17:29:04] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-12 17:29:04] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230412/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 17:29:04] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-12 17:29:04] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230412/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 17:29:04] INFO root fetch - processPackages [simple-ai-server]: Start processing: pySMART
+[2023-04-12 17:29:04] INFO root fetch - main [MainThread]: End processing [simple-ai-server]: success
+[2023-04-12 17:29:04] INFO root fetch - processPackages [hmd-cli-bender]: Start processing: gr4vy
+[2023-04-12 17:29:04] INFO root fetch - main [MainThread]: End processing [hmd-cli-bender]: success
+[2023-04-12 17:29:04] INFO root fetch - processPackages [pySMART]: New version: [1.2.4.dev16] Old Version: [1.2.3]
+[2023-04-12 17:29:04] INFO root fetch - processPackages [gr4vy]: New version: [0.2.0] Old Version: [0.10.0]
+[2023-04-12 17:29:04] INFO root fetch - processPackages [gr4vy]: Downloading https://files.pythonhosted.org/packages/5e/6d/a9809b1cd3ec5fb670f2fe374ce1ee013914d560efb2957ecbb562c1a578/gr4vy-0.10.0.tar.gz
+[2023-04-12 17:29:05] INFO root fetch - processPackages [pySMART]: Downloading https://files.pythonhosted.org/packages/e9/f9/93f6fa6cd6035caf2cfb46358ebc5e639824690e00289f10c457fe692de7/pySMART-1.2.3.tar.gz
+[2023-04-12 17:29:05] INFO root fetch - processPackages [gr4vy]: Downloading https://files.pythonhosted.org/packages/77/b7/c1dfb37b58d13c2c260327ef7977a271dde2958f8fceea7c8a2f982c6a2f/gr4vy-0.2.0.tar.gz
+[2023-04-12 17:29:05] INFO root fetch - processPackages [pySMART]: Downloading https://files.pythonhosted.org/packages/85/56/8b03c62004be0192445007cc15236ff78156000a5659dc24934bc1b1825a/pySMART-1.2.4.dev16.tar.gz
+[2023-04-12 17:29:05] INFO root fetch - processPackages [pySMART]: executing diffoscope
+[2023-04-12 17:29:05] INFO root fetch - processPackages [pySMART]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySMART-1.2.3.tar.gz tmp/pySMART-1.2.4.dev16.tar.gz --markdown 20230412/p/pySMART/1.2.3-1.2.4.dev16/diff.md --exclude *.pyd
+[2023-04-12 17:29:05] INFO root fetch - processPackages [gr4vy]: executing diffoscope
+[2023-04-12 17:29:05] INFO root fetch - processPackages [gr4vy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gr4vy-0.10.0.tar.gz tmp/gr4vy-0.2.0.tar.gz --markdown 20230412/g/gr4vy/0.10.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 17:29:05] INFO root fetch - processPackages [simple-hierarchical-transformer]: Start processing: python-dxf
+[2023-04-12 17:29:05] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-12 17:29:05] INFO root fetch - processPackages [python-dxf]: New version: [9.0.1] Old Version: [8.0.2]
+[2023-04-12 17:29:05] INFO root fetch - processPackages [linktools]: Start processing: labelf-api
+[2023-04-12 17:29:05] INFO root fetch - main [MainThread]: End processing [linktools]: success
+[2023-04-12 17:29:05] WARNING root fetch - processPackages [labelf-api]: Skipping, unable to determine old version
+[2023-04-12 17:29:05] INFO root fetch - processPackages [labelf-api]: Start processing: neuronsphere
+[2023-04-12 17:29:05] INFO root fetch - main [MainThread]: End processing [labelf-api] error
+[2023-04-12 17:29:05] INFO root fetch - processPackages [neuronsphere]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 17:29:05] INFO root fetch - processPackages [neuronsphere]: executing diffoscope
+[2023-04-12 17:29:05] INFO root fetch - processPackages [neuronsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuronsphere-1.0.8-py3-none-any.whl.zip tmp/neuronsphere-1.0.9-py3-none-any.whl.zip --markdown 20230412/n/neuronsphere/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 17:29:05] INFO root fetch - processPackages [python-dxf]: Downloading https://files.pythonhosted.org/packages/84/9e/8cea3d29758097da2e4e8015501562bc8b5f32ea96000e4ab8e91190a438/python-dxf-8.0.2.tar.gz
+[2023-04-12 17:29:06] INFO root fetch - processPackages [TheSilent]: Start processing: autoadd-bindir
+[2023-04-12 17:29:06] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-12 17:29:06] INFO root fetch - processPackages [autoadd-bindir]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-04-12 17:29:06] INFO root fetch - processPackages [python-dxf]: Downloading https://files.pythonhosted.org/packages/5f/25/50a1840da6057dbe3bab8051a23a69d678ab152639acc0752ffcff6b1d0a/python-dxf-9.0.1.tar.gz
+[2023-04-12 17:29:06] INFO root fetch - processPackages [python-dxf]: executing diffoscope
+[2023-04-12 17:29:06] INFO root fetch - processPackages [python-dxf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-dxf-8.0.2.tar.gz tmp/python-dxf-9.0.1.tar.gz --markdown 20230412/p/python-dxf/8.0.2-9.0.1/diff.md --exclude *.pyd
+[2023-04-12 17:29:06] INFO root fetch - processPackages [neuronsphere]: Start processing: rustplus
+[2023-04-12 17:29:06] INFO root fetch - main [MainThread]: End processing [neuronsphere]: success
+[2023-04-12 17:29:06] INFO root fetch - processPackages [autoadd-bindir]: Downloading https://files.pythonhosted.org/packages/45/d8/644f6cd39a86b2767819db804ef6eb8bea86d95b44ac816c5c44ac432a2e/autoadd_bindir-1.0.4.tar.gz
+[2023-04-12 17:29:06] INFO root fetch - processPackages [rustplus]: New version: [5.5.8] Old Version: [5.5.7]
+[2023-04-12 17:29:07] INFO root fetch - processPackages [rustplus]: Downloading https://files.pythonhosted.org/packages/2a/66/7b78b7c99b8985244b46c524c528aa5dfded77c646b4eb2ae13a7f0f2e8e/rustplus-5.5.7.tar.gz
+[2023-04-12 17:29:07] INFO root fetch - processPackages [autoadd-bindir]: Downloading https://files.pythonhosted.org/packages/4d/da/09cfca24a1a59054290bd94893cf3fd1c00071d888a201ba1fa45ddecb7c/autoadd_bindir-1.0.5.tar.gz
+[2023-04-12 17:29:07] INFO root fetch - processPackages [autoadd-bindir]: executing diffoscope
+[2023-04-12 17:29:07] INFO root fetch - processPackages [autoadd-bindir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoadd_bindir-1.0.4.tar.gz tmp/autoadd_bindir-1.0.5.tar.gz --markdown 20230412/a/autoadd-bindir/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-04-12 17:29:07] INFO root fetch - processPackages [python-dxf]: Start processing: poshare
+[2023-04-12 17:29:07] INFO root fetch - main [MainThread]: End processing [python-dxf]: success
+[2023-04-12 17:29:07] WARNING root fetch - processPackages [poshare]: Skipping, unable to determine old version
+[2023-04-12 17:29:07] INFO root fetch - processPackages [poshare]: Start processing: titan-iris
+[2023-04-12 17:29:07] INFO root fetch - main [MainThread]: End processing [poshare] error
+[2023-04-12 17:29:07] INFO root fetch - processPackages [rustplus]: Downloading https://files.pythonhosted.org/packages/3b/eb/7fc3e2187f26ed5629f1b43ccbc98ea993baa713060fa0d13808c62cb991/rustplus-5.5.8.tar.gz
+[2023-04-12 17:29:07] INFO root fetch - processPackages [titan-iris]: New version: [0.3.9a2] Old Version: [0.3.9a1]
+[2023-04-12 17:29:07] INFO root fetch - processPackages [rustplus]: executing diffoscope
+[2023-04-12 17:29:07] INFO root fetch - processPackages [rustplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustplus-5.5.7.tar.gz tmp/rustplus-5.5.8.tar.gz --markdown 20230412/r/rustplus/5.5.7-5.5.8/diff.md --exclude *.pyd
+[2023-04-12 17:29:07] INFO root fetch - processPackages [titan-iris]: executing diffoscope
+[2023-04-12 17:29:07] INFO root fetch - processPackages [titan-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titan-iris-0.3.9a1.tar.gz tmp/titan-iris-0.3.9a2.tar.gz --markdown 20230412/t/titan-iris/0.3.9a1-0.3.9a2/diff.md --exclude *.pyd
+[2023-04-12 17:29:08] INFO root fetch - main [MainThread]: End processing [autoadd-bindir]: success
+[2023-04-12 17:29:08] INFO root fetch - main [MainThread]: End processing [titan-iris]: success
+[2023-04-12 17:29:09] INFO root fetch - main [MainThread]: End processing [rustplus]: success
+[2023-04-12 17:29:09] INFO root fetch - main [MainThread]: End processing [gr4vy]: success
+[2023-04-12 17:29:14] INFO root fetch - main [MainThread]: End processing [pySMART]: success
+[2023-04-12 17:29:14] INFO root fetch - main [MainThread]: Store serial: [17678240]
