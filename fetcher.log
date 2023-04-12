@@ -7560,3 +7560,61 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 08:05:30] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:05:42] INFO root fetch - main [MainThread]: success
 [2023-04-12 08:05:42] INFO root fetch - main [MainThread]: Store serial: [17671763]
+[2023-04-12 08:10:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671763]
+[2023-04-12 08:10:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-04-12 08:10:50] INFO root fetch - processPackages [eeisp]: New version: [0.5.0] Old Version: [0.4.1]
+[2023-04-12 08:10:50] INFO root fetch - processPackages [myelectricaldatapy]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-12 08:10:50] INFO root fetch - processPackages [fir-api-cli]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-12 08:10:50] INFO root fetch - processPackages [nsface-cpu-python]: New version: [1.1.55] Old Version: [1.1.51]
+[2023-04-12 08:10:50] INFO root fetch - processPackages [etna]: New version: [2.0.0] Old Version: [1.9.0]
+[2023-04-12 08:10:51] INFO root fetch - processPackages [eeisp]: Downloading https://files.pythonhosted.org/packages/e2/de/32869c65c3b97d78391f662bf4e8e9be05c06ed96ea4ead444ba733e13d4/eeisp-0.4.1-py3-none-any.whl
+[2023-04-12 08:10:51] INFO root fetch - processPackages [nsface-cpu-python]: Downloading https://files.pythonhosted.org/packages/40/0c/604f2b4bf227eea6a2400272eaeb6454e571b5e6e7d7c7856d6b70b54224/nsface_cpu_python-1.1.55-py3-none-any.whl
+[2023-04-12 08:10:51] INFO root fetch - processPackages [etna]: Downloading https://files.pythonhosted.org/packages/f0/e6/aa6f17c5e3ccba3e6058fb19b3cce4bd894b56b4aebbf88445cd1d99555d/etna-1.9.0.tar.gz
+[2023-04-12 08:10:51] INFO root fetch - processPackages [fir-api-cli]: Downloading https://files.pythonhosted.org/packages/0c/4a/3d9499741d0cda20604b0b12d6f862be153deae7520c5659a811de9f4aae/fir-api-cli-0.4.3.tar.gz
+[2023-04-12 08:10:51] INFO root fetch - processPackages [myelectricaldatapy]: Downloading https://files.pythonhosted.org/packages/52/0a/497893cb730d2e5a1d43a73b53e834e4410435ab3b1f87230b2ba6462667/myelectricaldatapy-1.9.5.tar.gz
+[2023-04-12 08:10:51] INFO root fetch - processPackages [nsface-cpu-python]: executing diffoscope
+[2023-04-12 08:10:51] INFO root fetch - processPackages [nsface-cpu-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_cpu_python-1.1.51-py3-none-any.whl.zip tmp/nsface_cpu_python-1.1.55-py3-none-any.whl.zip --markdown 20230412/n/nsface-cpu-python/1.1.51-1.1.55/diff.md --exclude *.pyd
+[2023-04-12 08:10:51] INFO root fetch - processPackages [eeisp]: Downloading https://files.pythonhosted.org/packages/3b/e3/c31759115a7c6d0bba728bdf5ff15f55de4247fc0bdc5fb99ef58905b9f1/eeisp-0.5.0-py3-none-any.whl
+[2023-04-12 08:10:51] INFO root fetch - processPackages [fir-api-cli]: Downloading https://files.pythonhosted.org/packages/56/22/e69db0c83dfac0409efa2bae05bdc4e5e052b43171659fef722013308536/fir-api-cli-0.4.4.tar.gz
+[2023-04-12 08:10:51] INFO root fetch - processPackages [myelectricaldatapy]: executing diffoscope
+[2023-04-12 08:10:51] INFO root fetch - processPackages [myelectricaldatapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myelectricaldatapy-1.9.4.tar.gz tmp/myelectricaldatapy-1.9.5.tar.gz --markdown 20230412/m/myelectricaldatapy/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-12 08:10:51] INFO root fetch - processPackages [etna]: Downloading https://files.pythonhosted.org/packages/51/87/a5e531bcbf1365a48130598fcaa8ec11057b5950a22ec801ce2b0fe6d72f/etna-2.0.0.tar.gz
+[2023-04-12 08:10:51] INFO root fetch - processPackages [eeisp]: executing diffoscope
+[2023-04-12 08:10:51] INFO root fetch - processPackages [eeisp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eeisp-0.4.1-py3-none-any.whl.zip tmp/eeisp-0.5.0-py3-none-any.whl.zip --markdown 20230412/e/eeisp/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2023-04-12 08:10:51] INFO root fetch - processPackages [fir-api-cli]: executing diffoscope
+[2023-04-12 08:10:51] INFO root fetch - processPackages [fir-api-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fir-api-cli-0.4.3.tar.gz tmp/fir-api-cli-0.4.4.tar.gz --markdown 20230412/f/fir-api-cli/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-12 08:10:51] INFO root fetch - processPackages [etna]: executing diffoscope
+[2023-04-12 08:10:51] INFO root fetch - processPackages [etna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etna-1.9.0.tar.gz tmp/etna-2.0.0.tar.gz --markdown 20230412/e/etna/1.9.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-12 08:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:52] INFO root fetch - processPackages [nsface-python]: New version: [1.1.55] Old Version: [1.1.51]
+[2023-04-12 08:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:52] INFO root fetch - processPackages [xs-transformers]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-12 08:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:52] INFO root fetch - processPackages [netpyne]: New version: [1.0.4.1] Old Version: [1.0.4]
+[2023-04-12 08:10:52] INFO root fetch - processPackages [nsface-python]: Downloading https://files.pythonhosted.org/packages/55/43/57220a4dfbc9e1af9fa1ccf7a3ab4bfb7b1c0167f03f1c34f88746a458cf/nsface_python-1.1.55-py3-none-any.whl
+[2023-04-12 08:10:52] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/01/94/ba01016965e81e01e795a8861d112cc2e14779950056d0f8ad310e153fbd/xs_transformers-1.0.5-py3-none-any.whl
+[2023-04-12 08:10:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:52] INFO root fetch - processPackages [fastapi-oracle]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 08:10:52] INFO root fetch - processPackages [netpyne]: Downloading https://files.pythonhosted.org/packages/01/8a/21cb08e49b7acda3a9284a4809231886e0d0204cd64c485f3f284b26ab9e/netpyne-1.0.4-py2.py3-none-any.whl
+[2023-04-12 08:10:53] INFO root fetch - processPackages [nsface-python]: executing diffoscope
+[2023-04-12 08:10:53] INFO root fetch - processPackages [nsface-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nsface_python-1.1.51-py3-none-any.whl.zip tmp/nsface_python-1.1.55-py3-none-any.whl.zip --markdown 20230412/n/nsface-python/1.1.51-1.1.55/diff.md --exclude *.pyd
+[2023-04-12 08:10:53] INFO root fetch - processPackages [fastapi-oracle]: Downloading https://files.pythonhosted.org/packages/84/b2/a10cf1ebd35c6d87509182519526724db4edd5e9f09164674cc47d5be2da/fastapi_oracle-0.6.1-py3-none-any.whl
+[2023-04-12 08:10:53] INFO root fetch - processPackages [netpyne]: Downloading https://files.pythonhosted.org/packages/94/4e/505738f7922f3e306920eb097e22dbe0ce04d66fbf55afed898ecdb13a3b/netpyne-1.0.4.1-py2.py3-none-any.whl
+[2023-04-12 08:10:53] INFO root fetch - processPackages [fastapi-oracle]: executing diffoscope
+[2023-04-12 08:10:53] INFO root fetch - processPackages [fastapi-oracle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_oracle-0.6.0-py3-none-any.whl.zip tmp/fastapi_oracle-0.6.1-py3-none-any.whl.zip --markdown 20230412/f/fastapi-oracle/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 08:10:53] INFO root fetch - processPackages [netpyne]: executing diffoscope
+[2023-04-12 08:10:53] INFO root fetch - processPackages [netpyne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netpyne-1.0.4-py2.py3-none-any.whl.zip tmp/netpyne-1.0.4.1-py2.py3-none-any.whl.zip --markdown 20230412/n/netpyne/1.0.4-1.0.4.1/diff.md --exclude *.pyd
+[2023-04-12 08:10:53] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/b0/09/b41bccfaf0b99dfb8df28b7abde850d1e38deadbea90baa5be6b2ab1217e/xs_transformers-1.0.6-py3-none-any.whl
+[2023-04-12 08:10:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:53] INFO root fetch - processPackages [xs-transformers]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-04-12 08:10:53] INFO root fetch - processPackages [xs-transformers]: Downloading https://files.pythonhosted.org/packages/b0/09/b41bccfaf0b99dfb8df28b7abde850d1e38deadbea90baa5be6b2ab1217e/xs_transformers-1.0.6-py3-none-any.whl
+[2023-04-12 08:10:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:10:54] INFO root fetch - processPackages [xs-transformers]: executing diffoscope
+[2023-04-12 08:10:54] INFO root fetch - processPackages [xs-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xs_transformers-1.0.5-py3-none-any.whl.zip tmp/xs_transformers-1.0.6-py3-none-any.whl.zip --markdown 20230412/x/xs-transformers/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-12 08:10:54] INFO root fetch - processPackages [xs-transformers]: executing diffoscope
+[2023-04-12 08:10:54] INFO root fetch - processPackages [xs-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xs_transformers-1.0.5-py3-none-any.whl.zip tmp/xs_transformers-1.0.6-py3-none-any.whl.zip --markdown 20230412/x/xs-transformers/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-04-12 08:10:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:11:12] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:11:12] INFO root fetch - main [MainThread]: success
+[2023-04-12 08:11:12] INFO root fetch - main [MainThread]: Store serial: [17671789]
