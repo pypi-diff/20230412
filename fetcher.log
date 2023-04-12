@@ -10267,3 +10267,80 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 10:49:37] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:49:38] INFO root fetch - main [MainThread]: success
 [2023-04-12 10:49:38] INFO root fetch - main [MainThread]: Store serial: [17673556]
+[2023-04-12 10:54:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673556]
+[2023-04-12 10:54:46] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 10:54:46] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.7] Old Version: [1.2.5.6]
+[2023-04-12 10:54:46] INFO root fetch - processPackages [viso-sdk-python]: New version: [0.0.4.dev0] Old Version: [0.0.3]
+[2023-04-12 10:54:46] INFO root fetch - processPackages [isar]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-04-12 10:54:46] INFO root fetch - processPackages [openapi-markdown]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 10:54:46] WARNING root fetch - processPackages [code-helper]: Skipping, unable to determine old version
+[2023-04-12 10:54:46] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:54:46] INFO root fetch - processPackages [mercury]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-04-12 10:54:46] INFO root fetch - processPackages [openapi-markdown]: Downloading https://files.pythonhosted.org/packages/0c/ab/ef093df7549f3a9f6abc2ac2087ac53291f1a01cd95760ff88cb995e4c1c/openapi_markdown-0.0.3.tar.gz
+[2023-04-12 10:54:46] INFO root fetch - processPackages [isar]: Downloading https://files.pythonhosted.org/packages/24/9e/a40ae5538b353dd0f94cbf122f8b47de58d34ffca0b2e4633c259740b079/isar-1.9.1.tar.gz
+[2023-04-12 10:54:46] INFO root fetch - processPackages [pcl-pangu]: Downloading https://files.pythonhosted.org/packages/f3/f3/03d98c642de2bdaa27c8fc89d0a94a24f7d14c923ce04a49560b5b603b90/pcl_pangu-1.2.5.7.tar.gz
+[2023-04-12 10:54:46] INFO root fetch - processPackages [viso-sdk-python]: Downloading https://files.pythonhosted.org/packages/e5/d5/5ba75734d530a04b9b6ae4ff67137f6bc97c6275ad80f917310e0cdc5fef/viso_sdk_python-0.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-04-12 10:54:47] INFO root fetch - processPackages [mercury]: Downloading https://files.pythonhosted.org/packages/31/c2/8f6984b48577d458a0038f08683a34eb16851b3d17a8ee29a2771d62f76a/mercury-2.2.0.tar.gz
+[2023-04-12 10:54:47] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-12 10:54:47] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.6.tar.gz tmp/pcl_pangu-1.2.5.7.tar.gz --markdown 20230412/p/pcl-pangu/1.2.5.6-1.2.5.7/diff.md --exclude *.pyd
+[2023-04-12 10:54:47] INFO root fetch - processPackages [openapi-markdown]: Downloading https://files.pythonhosted.org/packages/32/73/25e1b7e89eebc841e11cbb9cff70e397a6f1dc648cd948adb579c40d54d2/openapi_markdown-0.0.4.tar.gz
+[2023-04-12 10:54:47] INFO root fetch - processPackages [viso-sdk-python]: Downloading https://files.pythonhosted.org/packages/72/68/f02766602a17ee33ee4d0bbe2c6cf7706cf0e0f64c6c0867f050c8854e14/viso_sdk_python-0.0.4.dev0-py3-none-any.whl
+[2023-04-12 10:54:47] INFO root fetch - processPackages [openapi-markdown]: executing diffoscope
+[2023-04-12 10:54:47] INFO root fetch - processPackages [openapi-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi_markdown-0.0.3.tar.gz tmp/openapi_markdown-0.0.4.tar.gz --markdown 20230412/o/openapi-markdown/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 10:54:47] INFO root fetch - processPackages [viso-sdk-python]: executing diffoscope
+[2023-04-12 10:54:47] INFO root fetch - processPackages [viso-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viso_sdk_python-0.0.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/viso_sdk_python-0.0.4.dev0-py3-none-any.whl.zip --markdown 20230412/v/viso-sdk-python/0.0.3-0.0.4.dev0/diff.md --exclude *.pyd
+[2023-04-12 10:54:47] INFO root fetch - processPackages [mercury]: Downloading https://files.pythonhosted.org/packages/0d/a3/baff8c0afc7f11051fe9ca6bec3ada62bc0f5eaed723a442def6c8aff530/mercury-2.2.1.tar.gz
+[2023-04-12 10:54:47] INFO root fetch - processPackages [mercury]: executing diffoscope
+[2023-04-12 10:54:47] INFO root fetch - processPackages [mercury]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercury-2.2.0.tar.gz tmp/mercury-2.2.1.tar.gz --markdown 20230412/m/mercury/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-04-12 10:54:47] INFO root fetch - processPackages [isar]: Downloading https://files.pythonhosted.org/packages/0c/bd/c87b8c89cd96667a2dc47e515d33dc70dc401f8319ab1c440d614490ed4d/isar-1.9.2.tar.gz
+[2023-04-12 10:54:48] INFO root fetch - processPackages [isar]: executing diffoscope
+[2023-04-12 10:54:48] INFO root fetch - processPackages [isar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isar-1.9.1.tar.gz tmp/isar-1.9.2.tar.gz --markdown 20230412/i/isar/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-04-12 10:54:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:48] WARNING root fetch - processPackages [hhzoss]: Skipping, unable to determine old version
+[2023-04-12 10:54:48] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:54:48] INFO root fetch - processPackages [ibm-watson-machine-learning]: New version: [1.0.99] Old Version: [1.0.96]
+[2023-04-12 10:54:48] INFO root fetch - processPackages [ibm-watson-machine-learning]: Downloading https://files.pythonhosted.org/packages/58/40/a775ffda5d16f4fbab37ee9184852d0b9f96e7d7b19db541f8a51082509e/ibm_watson_machine_learning-1.0.96.tar.gz
+[2023-04-12 10:54:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:48] INFO root fetch - processPackages [dxsp]: New version: [1.0.0b1] Old Version: [0.0.9]
+[2023-04-12 10:54:48] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/78/5e/95c95e69592bb80608178eb9a21de6ffe4a562ced4448d5a3dad57da959d/dxsp-1.0.0b1.tar.gz
+[2023-04-12 10:54:48] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-04-12 10:54:48] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-0.0.9.tar.gz tmp/dxsp-1.0.0b1.tar.gz --markdown 20230412/d/dxsp/0.0.9-1.0.0b1/diff.md --exclude *.pyd
+[2023-04-12 10:54:49] INFO root fetch - processPackages [ibm-watson-machine-learning]: Downloading https://files.pythonhosted.org/packages/48/45/3f32e9a705a7e6bf8b19591a86cc7099b54ca88fcf8660798dff04d4e6c2/ibm_watson_machine_learning-1.0.99.tar.gz
+[2023-04-12 10:54:49] INFO root fetch - processPackages [ibm-watson-machine-learning]: executing diffoscope
+[2023-04-12 10:54:49] INFO root fetch - processPackages [ibm-watson-machine-learning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibm_watson_machine_learning-1.0.96.tar.gz tmp/ibm_watson_machine_learning-1.0.99.tar.gz --markdown 20230412/i/ibm-watson-machine-learning/1.0.96-1.0.99/diff.md --exclude *.pyd
+[2023-04-12 10:54:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:49] INFO root fetch - processPackages [jenkins-job-builder]: New version: [5.0.1] Old Version: [5.0.0]
+[2023-04-12 10:54:49] INFO root fetch - processPackages [jenkins-job-builder]: Downloading https://files.pythonhosted.org/packages/6b/8b/2bc2c363d69fad50196e7bb6b8462ba2230f4c949f283cd5fbb16a5252cb/jenkins-job-builder-5.0.1.tar.gz
+[2023-04-12 10:54:49] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:49] INFO root fetch - processPackages [jenkins-job-builder]: executing diffoscope
+[2023-04-12 10:54:49] INFO root fetch - processPackages [jenkins-job-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenkins-job-builder-5.0.0.tar.gz tmp/jenkins-job-builder-5.0.1.tar.gz --markdown 20230412/j/jenkins-job-builder/5.0.0-5.0.1/diff.md --exclude *.pyd
+[2023-04-12 10:54:49] INFO root fetch - processPackages [worf]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 10:54:49] INFO root fetch - processPackages [worf]: Downloading https://files.pythonhosted.org/packages/b8/54/a441309d4540978b2fb5a4a1428c3ef2eb55195ad7f06fb2411f070ef876/worf-0.5.8.tar.gz
+[2023-04-12 10:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:50] INFO root fetch - processPackages [LibRecommender]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-04-12 10:54:50] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:50] WARNING root fetch - processPackages [example-pkg-hh]: Skipping, unable to determine old version
+[2023-04-12 10:54:50] INFO root fetch - main [MainThread]: error
+[2023-04-12 10:54:50] INFO root fetch - processPackages [shashvault]: New version: [0.0.4] Old Version: [0.0.2]
+[2023-04-12 10:54:50] INFO root fetch - processPackages [LibRecommender]: Downloading https://files.pythonhosted.org/packages/2d/af/ecca555aeede520d5897d5100dd94f19552493762105364a21957dcce456/LibRecommender-1.1.0.tar.gz
+[2023-04-12 10:54:50] INFO root fetch - processPackages [LibRecommender]: Downloading https://files.pythonhosted.org/packages/b6/1f/49b51ac476c241cb41272fcfd440ffab1e0d68ebb0f30ae091b3b5e7213b/LibRecommender-1.1.1.tar.gz
+[2023-04-12 10:54:50] INFO root fetch - processPackages [shashvault]: Downloading https://files.pythonhosted.org/packages/e5/a6/9ee214af3af8709f8b948d1dd64003398bf9adc691b3720aeb7ae3157317/shashvault-0.0.4-py3-none-any.whl
+[2023-04-12 10:54:50] INFO root fetch - processPackages [LibRecommender]: executing diffoscope
+[2023-04-12 10:54:50] INFO root fetch - processPackages [LibRecommender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LibRecommender-1.1.0.tar.gz tmp/LibRecommender-1.1.1.tar.gz --markdown 20230412/L/LibRecommender/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-04-12 10:54:50] INFO root fetch - processPackages [shashvault]: executing diffoscope
+[2023-04-12 10:54:50] INFO root fetch - processPackages [shashvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shashvault-0.0.2-py3-none-any.whl.zip tmp/shashvault-0.0.4-py3-none-any.whl.zip --markdown 20230412/s/shashvault/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 10:54:50] INFO root fetch - processPackages [worf]: Downloading https://files.pythonhosted.org/packages/48/84/5d1e660651441e19af86ec8d6cff53c8326fb151017c9cd2e9d622ef951c/worf-0.5.9.tar.gz
+[2023-04-12 10:54:50] INFO root fetch - processPackages [worf]: executing diffoscope
+[2023-04-12 10:54:50] INFO root fetch - processPackages [worf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worf-0.5.8.tar.gz tmp/worf-0.5.9.tar.gz --markdown 20230412/w/worf/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 10:54:51] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:51] INFO root fetch - processPackages [hotsos]: New version: [1.1.13.post9] Old Version: [1.1.13.post8]
+[2023-04-12 10:54:51] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/75/2f/826f5fd0c6bf525ed3cd7199c9efaa8a431240d6c366d68fe3a9f8c34737/hotsos-1.1.13.post8.tar.gz
+[2023-04-12 10:54:52] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/95/52/1124faffb6267189a377decdf47aa64828b350f49f8edf82c0b048673160/hotsos-1.1.13.post9.tar.gz
+[2023-04-12 10:54:52] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-04-12 10:54:52] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.13.post8.tar.gz tmp/hotsos-1.1.13.post9.tar.gz --markdown 20230412/h/hotsos/1.1.13.post8-1.1.13.post9/diff.md --exclude *.pyd
+[2023-04-12 10:54:52] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:53] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:54] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:54:57] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:55:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:55:48] INFO root fetch - main [MainThread]: Store serial: [17673619]
