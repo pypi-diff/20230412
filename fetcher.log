@@ -14355,3 +14355,139 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 14:28:16] INFO root fetch - main [MainThread]: End processing [scrapyrt-with-params]: success
 [2023-04-12 14:28:49] INFO root fetch - main [MainThread]: End processing [bitmovin-api-sdk]: success
 [2023-04-12 14:28:49] INFO root fetch - main [MainThread]: Store serial: [17675942]
+[2023-04-12 14:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675942]
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: Found 28 changed packages
+[2023-04-12 14:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noldor
+[2023-04-12 14:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyQEdark
+[2023-04-12 14:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chaigpt
+[2023-04-12 14:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-sa-views
+[2023-04-12 14:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: db-loader
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [pg-sa-views]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - processPackages [pg-sa-views]: Start processing: rsacore
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [pg-sa-views] error
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [pyQEdark]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - processPackages [pyQEdark]: Start processing: odoo14-addon-l10n-br-nfe
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [chaigpt]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [pyQEdark] error
+[2023-04-12 14:33:57] INFO root fetch - processPackages [chaigpt]: Start processing: td-connect
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [chaigpt] error
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [noldor]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - processPackages [noldor]: Start processing: hcai-nova-server-nightly
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [rsacore]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [db-loader]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [noldor] error
+[2023-04-12 14:33:57] INFO root fetch - processPackages [rsacore]: Start processing: cybrid-api-organization-python
+[2023-04-12 14:33:57] INFO root fetch - processPackages [db-loader]: Start processing: cybrid-api-id-python
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [rsacore] error
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [db-loader] error
+[2023-04-12 14:33:57] WARNING root fetch - processPackages [td-connect]: Skipping, unable to determine old version
+[2023-04-12 14:33:57] INFO root fetch - processPackages [td-connect]: Start processing: cybrid-api-bank-python
+[2023-04-12 14:33:57] INFO root fetch - main [MainThread]: End processing [td-connect] error
+[2023-04-12 14:33:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.7.1.4] Old Version: [14.0.7.1.3]
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 14:33:57] INFO root fetch - processPackages [hcai-nova-server-nightly]: New version: [0.1.3.dev202304121233] Old Version: [0.1.3.dev202304050905]
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230412/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230412/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-04-12 14:33:57] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230412/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 14:33:57] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/93/47/527570a5cba20a021e4eec9efc6d4990b398d03dbe66c287e7990eb608dc/hcai-nova-server-nightly-0.1.3.dev202304050905.tar.gz
+[2023-04-12 14:33:57] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/40/b3/12367fe6b00724f085aa076657a6243e71faa1ecd288286a2c6c5baffc53/odoo14_addon_l10n_br_nfe-14.0.7.1.4-py3-none-any.whl
+[2023-04-12 14:33:58] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2023-04-12 14:33:58] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.7.1.3-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.7.1.4-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-l10n-br-nfe/14.0.7.1.3-14.0.7.1.4/diff.md --exclude *.pyd
+[2023-04-12 14:33:58] INFO root fetch - processPackages [hcai-nova-server-nightly]: Downloading https://files.pythonhosted.org/packages/bd/59/dc97f016ee857d9a42e55ff6fdb393b1032c8f8304909ee35e043c1e36c0/hcai-nova-server-nightly-0.1.3.dev202304121233.tar.gz
+[2023-04-12 14:33:58] INFO root fetch - processPackages [hcai-nova-server-nightly]: executing diffoscope
+[2023-04-12 14:33:58] INFO root fetch - processPackages [hcai-nova-server-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcai-nova-server-nightly-0.1.3.dev202304050905.tar.gz tmp/hcai-nova-server-nightly-0.1.3.dev202304121233.tar.gz --markdown 20230412/h/hcai-nova-server-nightly/0.1.3.dev202304050905-0.1.3.dev202304121233/diff.md --exclude *.pyd
+[2023-04-12 14:33:59] INFO root fetch - processPackages [hcai-nova-server-nightly]: Start processing: tupa123
+[2023-04-12 14:33:59] INFO root fetch - main [MainThread]: End processing [hcai-nova-server-nightly]: success
+[2023-04-12 14:33:59] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Start processing: frascii
+[2023-04-12 14:33:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
+[2023-04-12 14:33:59] INFO root fetch - processPackages [tupa123]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 14:33:59] INFO root fetch - processPackages [frascii]: New version: [2.4] Old Version: [2.3]
+[2023-04-12 14:33:59] INFO root fetch - processPackages [tupa123]: executing diffoscope
+[2023-04-12 14:33:59] INFO root fetch - processPackages [tupa123]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tupa123-1.2.8.tar.gz tmp/tupa123-1.2.9.tar.gz --markdown 20230412/t/tupa123/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 14:33:59] INFO root fetch - processPackages [frascii]: Downloading https://files.pythonhosted.org/packages/8e/6e/159f98f8ca6d99910c72bd0bfbd277eec19982d6c921511d574dc1be213d/frascii-2.4.tar.gz
+[2023-04-12 14:33:59] INFO root fetch - processPackages [frascii]: executing diffoscope
+[2023-04-12 14:33:59] INFO root fetch - processPackages [frascii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frascii-2.3.tar.gz tmp/frascii-2.4.tar.gz --markdown 20230412/f/frascii/2.3-2.4/diff.md --exclude *.pyd
+[2023-04-12 14:34:00] INFO root fetch - processPackages [cybrid-api-id-python]: Start processing: bycon
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-04-12 14:34:00] INFO root fetch - processPackages [cybrid-api-bank-python]: Start processing: armonik
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-04-12 14:34:00] INFO root fetch - processPackages [bycon]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 14:34:00] INFO root fetch - processPackages [armonik]: New version: [3.8.1.dev264] Old Version: [3.8.1.dev261]
+[2023-04-12 14:34:00] INFO root fetch - processPackages [cybrid-api-organization-python]: Start processing: kaiterra-async-client
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-04-12 14:34:00] INFO root fetch - processPackages [kaiterra-async-client]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-04-12 14:34:00] INFO root fetch - processPackages [armonik]: Downloading https://files.pythonhosted.org/packages/b8/64/3a9b011d8791cc304492e9244583df81a408bde7b4334c7ac6e89f0207bb/armonik-3.8.1.dev264.tar.gz
+[2023-04-12 14:34:00] INFO root fetch - processPackages [tupa123]: Start processing: test-package-lenin
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [tupa123]: success
+[2023-04-12 14:34:00] WARNING root fetch - processPackages [test-package-lenin]: Skipping, unable to determine old version
+[2023-04-12 14:34:00] INFO root fetch - processPackages [test-package-lenin]: Start processing: yyxx-game-pkg
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [test-package-lenin] error
+[2023-04-12 14:34:00] INFO root fetch - processPackages [yyxx-game-pkg]: New version: [2023.4.7.1] Old Version: [2023.4.4.1]
+[2023-04-12 14:34:00] INFO root fetch - processPackages [kaiterra-async-client]: Downloading https://files.pythonhosted.org/packages/31/77/7e40b6aa258e58fda81d61b767e8859c2825b015032926feeea277013409/kaiterra-async-client-1.1.0.tar.gz
+[2023-04-12 14:34:00] INFO root fetch - processPackages [armonik]: executing diffoscope
+[2023-04-12 14:34:00] INFO root fetch - processPackages [armonik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/armonik-3.8.1.dev261.tar.gz tmp/armonik-3.8.1.dev264.tar.gz --markdown 20230412/a/armonik/3.8.1.dev261-3.8.1.dev264/diff.md --exclude *.pyd
+[2023-04-12 14:34:00] INFO root fetch - processPackages [frascii]: Start processing: plons
+[2023-04-12 14:34:00] INFO root fetch - main [MainThread]: End processing [frascii]: success
+[2023-04-12 14:34:00] INFO root fetch - processPackages [kaiterra-async-client]: executing diffoscope
+[2023-04-12 14:34:00] INFO root fetch - processPackages [kaiterra-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaiterra-async-client-1.0.1.tar.gz tmp/kaiterra-async-client-1.1.0.tar.gz --markdown 20230412/k/kaiterra-async-client/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:01] INFO root fetch - processPackages [plons]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-12 14:34:01] INFO root fetch - processPackages [yyxx-game-pkg]: executing diffoscope
+[2023-04-12 14:34:01] INFO root fetch - processPackages [yyxx-game-pkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yyxx_game_pkg-2023.4.4.1.tar.gz tmp/yyxx_game_pkg-2023.4.7.1.tar.gz --markdown 20230412/y/yyxx-game-pkg/2023.4.4.1-2023.4.7.1/diff.md --exclude *.pyd
+[2023-04-12 14:34:01] INFO root fetch - processPackages [bycon]: executing diffoscope
+[2023-04-12 14:34:01] INFO root fetch - processPackages [bycon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bycon-1.0.8.tar.gz tmp/bycon-1.0.9.tar.gz --markdown 20230412/b/bycon/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 14:34:01] INFO root fetch - processPackages [plons]: Downloading https://files.pythonhosted.org/packages/30/18/9fa4facd77cd285da76c59161da4c09de645c67ef0b39ee43f39c72830b3/plons-0.0.7.tar.gz
+[2023-04-12 14:34:01] INFO root fetch - processPackages [plons]: Downloading https://files.pythonhosted.org/packages/5e/ff/706a3bb177727926a19cd56a488bb4da7a58ab3ec59dafa484c70d33462c/plons-0.0.9.tar.gz
+[2023-04-12 14:34:01] INFO root fetch - processPackages [plons]: executing diffoscope
+[2023-04-12 14:34:01] INFO root fetch - processPackages [plons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plons-0.0.7.tar.gz tmp/plons-0.0.9.tar.gz --markdown 20230412/p/plons/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 14:34:02] INFO root fetch - processPackages [kaiterra-async-client]: Start processing: gardener-cicd-base
+[2023-04-12 14:34:02] INFO root fetch - main [MainThread]: End processing [kaiterra-async-client]: success
+[2023-04-12 14:34:02] INFO root fetch - processPackages [gardener-cicd-base]: New version: [1.2031.0] Old Version: [1.2030.0]
+[2023-04-12 14:34:02] INFO root fetch - processPackages [gardener-cicd-base]: executing diffoscope
+[2023-04-12 14:34:02] INFO root fetch - processPackages [gardener-cicd-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-base-1.2030.0.tar.gz tmp/gardener-cicd-base-1.2031.0.tar.gz --markdown 20230412/g/gardener-cicd-base/1.2030.0-1.2031.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:02] INFO root fetch - processPackages [armonik]: Start processing: gardener-cicd-cli
+[2023-04-12 14:34:02] INFO root fetch - main [MainThread]: End processing [armonik]: success
+[2023-04-12 14:34:02] INFO root fetch - processPackages [gardener-cicd-cli]: New version: [1.2032.0] Old Version: [1.2031.0]
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-cli]: Downloading https://files.pythonhosted.org/packages/84/2b/3bf7c19e82bd2e36c28c447fb8e8cabb92d3bf36a29f23f40cf80baa8f1a/gardener-cicd-cli-1.2032.0.tar.gz
+[2023-04-12 14:34:03] INFO root fetch - processPackages [yyxx-game-pkg]: Start processing: gardener-cicd-dso
+[2023-04-12 14:34:03] INFO root fetch - main [MainThread]: End processing [yyxx-game-pkg]: success
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-dso]: New version: [1.2031.0] Old Version: [1.2030.0]
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-dso]: executing diffoscope
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-dso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-dso-1.2030.0.tar.gz tmp/gardener-cicd-dso-1.2031.0.tar.gz --markdown 20230412/g/gardener-cicd-dso/1.2030.0-1.2031.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-cli]: executing diffoscope
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-cli-1.2031.0.tar.gz tmp/gardener-cicd-cli-1.2032.0.tar.gz --markdown 20230412/g/gardener-cicd-cli/1.2031.0-1.2032.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:03] INFO root fetch - processPackages [plons]: Start processing: gardener-cicd-libs
+[2023-04-12 14:34:03] INFO root fetch - main [MainThread]: End processing [plons]: success
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-libs]: New version: [1.2031.0] Old Version: [1.2030.0]
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-base]: Start processing: gardener-cicd-whd
+[2023-04-12 14:34:03] INFO root fetch - main [MainThread]: End processing [gardener-cicd-base]: success
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-whd]: New version: [1.2031.0] Old Version: [1.2030.0]
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-whd]: executing diffoscope
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-whd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-whd-1.2030.0.tar.gz tmp/gardener-cicd-whd-1.2031.0.tar.gz --markdown 20230412/g/gardener-cicd-whd/1.2030.0-1.2031.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-libs]: executing diffoscope
+[2023-04-12 14:34:03] INFO root fetch - processPackages [gardener-cicd-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-cicd-libs-1.2030.0.tar.gz tmp/gardener-cicd-libs-1.2031.0.tar.gz --markdown 20230412/g/gardener-cicd-libs/1.2030.0-1.2031.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:04] INFO root fetch - processPackages [gardener-cicd-dso]: Start processing: fmdt-python
+[2023-04-12 14:34:04] INFO root fetch - main [MainThread]: End processing [gardener-cicd-dso]: success
+[2023-04-12 14:34:04] INFO root fetch - processPackages [fmdt-python]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 14:34:04] INFO root fetch - processPackages [fmdt-python]: executing diffoscope
+[2023-04-12 14:34:04] INFO root fetch - processPackages [fmdt-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmdt_python-0.0.8.tar.gz tmp/fmdt_python-0.0.9.tar.gz --markdown 20230412/f/fmdt-python/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 14:34:04] INFO root fetch - processPackages [gardener-cicd-whd]: Start processing: gardener-oci
+[2023-04-12 14:34:04] INFO root fetch - main [MainThread]: End processing [gardener-cicd-whd]: success
+[2023-04-12 14:34:04] INFO root fetch - processPackages [gardener-oci]: New version: [1.999.0] Old Version: [1.998.0]
+[2023-04-12 14:34:04] INFO root fetch - processPackages [gardener-oci]: executing diffoscope
+[2023-04-12 14:34:04] INFO root fetch - processPackages [gardener-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gardener-oci-1.998.0.tar.gz tmp/gardener-oci-1.999.0.tar.gz --markdown 20230412/g/gardener-oci/1.998.0-1.999.0/diff.md --exclude *.pyd
+[2023-04-12 14:34:05] INFO root fetch - processPackages [gardener-cicd-cli]: Start processing: load-atoms
+[2023-04-12 14:34:05] INFO root fetch - main [MainThread]: End processing [gardener-cicd-cli]: success
+[2023-04-12 14:34:05] INFO root fetch - processPackages [load-atoms]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 14:34:05] INFO root fetch - processPackages [load-atoms]: executing diffoscope
+[2023-04-12 14:34:05] INFO root fetch - processPackages [load-atoms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/load-atoms-0.0.4.tar.gz tmp/load-atoms-0.0.5.tar.gz --markdown 20230412/l/load-atoms/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 14:34:05] INFO root fetch - main [MainThread]: End processing [fmdt-python]: success
+[2023-04-12 14:34:06] INFO root fetch - main [MainThread]: End processing [gardener-oci]: success
+[2023-04-12 14:34:06] INFO root fetch - main [MainThread]: End processing [gardener-cicd-libs]: success
+[2023-04-12 14:34:06] INFO root fetch - main [MainThread]: End processing [load-atoms]: success
+[2023-04-12 14:34:07] INFO root fetch - main [MainThread]: End processing [bycon]: success
+[2023-04-12 14:34:07] INFO root fetch - main [MainThread]: Store serial: [17676032]
