@@ -21752,3 +21752,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:21:20] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-04-12 20:21:46] INFO root fetch - main [MainThread]: End processing [DBRetina]: success
 [2023-04-12 20:21:46] INFO root fetch - main [MainThread]: Store serial: [17680514]
+[2023-04-12 20:26:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680514]
+[2023-04-12 20:27:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-04-12 20:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wizata-dsapi
+[2023-04-12 20:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdmetrics
+[2023-04-12 20:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hoppr-security-commons
+[2023-04-12 20:27:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hmd-lib-robot-shared
+[2023-04-12 20:27:01] WARNING root fetch - processPackages [hmd-lib-robot-shared]: Skipping, unable to determine old version
+[2023-04-12 20:27:01] INFO root fetch - main [MainThread]: End processing [hmd-lib-robot-shared] error
+[2023-04-12 20:27:01] INFO root fetch - processPackages [sdmetrics]: New version: [0.9.3.dev0] Old Version: [0.9.3]
+[2023-04-12 20:27:01] INFO root fetch - processPackages [hoppr-security-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:27:01] INFO root fetch - processPackages [wizata-dsapi]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 20:27:01] INFO root fetch - processPackages [sdmetrics]: Downloading https://files.pythonhosted.org/packages/9c/1a/ec971ec0aaed34adeeed6ffd2bd51a5d71c20e21d996c367e1889ca8bd21/sdmetrics-0.9.3.tar.gz
+[2023-04-12 20:27:02] INFO root fetch - processPackages [wizata-dsapi]: Downloading https://files.pythonhosted.org/packages/0a/66/9832e928a6bcfd7c2406d053cfdd7919c4522a7895a3201dc852945d43ce/wizata-dsapi-0.1.2.tar.gz
+[2023-04-12 20:27:02] INFO root fetch - processPackages [hoppr-security-commons]: executing diffoscope
+[2023-04-12 20:27:02] INFO root fetch - processPackages [hoppr-security-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoppr_security_commons-0.0.8.tar.gz tmp/hoppr_security_commons-0.0.9.tar.gz --markdown 20230412/h/hoppr-security-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:27:02] INFO root fetch - processPackages [wizata-dsapi]: executing diffoscope
+[2023-04-12 20:27:02] INFO root fetch - processPackages [wizata-dsapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wizata-dsapi-0.1.1.tar.gz tmp/wizata-dsapi-0.1.2.tar.gz --markdown 20230412/w/wizata-dsapi/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 20:27:02] INFO root fetch - processPackages [sdmetrics]: executing diffoscope
+[2023-04-12 20:27:02] INFO root fetch - processPackages [sdmetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdmetrics-0.9.3.tar.gz tmp/sdmetrics-0.9.3.dev0.tar.gz --markdown 20230412/s/sdmetrics/0.9.3-0.9.3.dev0/diff.md --exclude *.pyd
+[2023-04-12 20:27:03] INFO root fetch - main [MainThread]: End processing [hoppr-security-commons]: success
+[2023-04-12 20:27:03] INFO root fetch - main [MainThread]: End processing [wizata-dsapi]: success
+[2023-04-12 20:27:04] INFO root fetch - main [MainThread]: End processing [sdmetrics]: success
+[2023-04-12 20:27:04] INFO root fetch - main [MainThread]: Store serial: [17680531]
