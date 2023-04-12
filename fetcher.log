@@ -2983,3 +2983,41 @@
 [2023-04-12 03:05:22] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:05:37] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:05:37] INFO root fetch - main [MainThread]: Store serial: [17668870]
+[2023-04-12 03:10:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17668870]
+[2023-04-12 03:10:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 03:10:44] INFO root fetch - processPackages [CheckmarxPythonSDK]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-04-12 03:10:44] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-04-12 03:10:44] WARNING root fetch - processPackages [bible-alignments]: Skipping, unable to determine old version
+[2023-04-12 03:10:44] INFO root fetch - processPackages [kmspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 03:10:44] INFO root fetch - processPackages [badsecrets]: New version: [0.1.303] Old Version: [0.1.300]
+[2023-04-12 03:10:44] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:10:44] INFO root fetch - processPackages [printnanny-api-client]: New version: [0.99.9] Old Version: [0.99.8]
+[2023-04-12 03:10:44] INFO root fetch - processPackages [CheckmarxPythonSDK]: Downloading https://files.pythonhosted.org/packages/27/cd/2de4bc8eed4eb6352e9db238e6beb6d2aa4c715145e4541295d60dc34c0c/CheckmarxPythonSDK-0.7.0.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [kmspy]: Downloading https://files.pythonhosted.org/packages/35/30/06494360bc32c26a641e5b4ce3e8db55b0966873eefbbffd3afdf21a1192/kmspy-0.0.8.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/80/a8/8e5ce11213e01df0c6d1880d7e11b606e55310521d4713aa419652a8b190/printnanny-api-client-0.99.8.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [badsecrets]: Downloading https://files.pythonhosted.org/packages/7b/2e/0f6740c588e861b9a77a3c78a10301a803e31f1d41e15ba6d7df44a8960b/badsecrets-0.1.303.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-04-12 03:10:44] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.8.tar.gz tmp/cdk-sops-secrets-1.2.9.tar.gz --markdown 20230412/c/cdk-sops-secrets/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-04-12 03:10:44] INFO root fetch - processPackages [CheckmarxPythonSDK]: Downloading https://files.pythonhosted.org/packages/5c/04/96d4a08316d0094f4f8f8a303d8b508e07420d957d7d117bcb027fb372a5/CheckmarxPythonSDK-0.7.1.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [kmspy]: Downloading https://files.pythonhosted.org/packages/40/62/01a0b53ad530dd2ddc92c46ced631af0a3f78bd6905e8ecf3fa967354a47/kmspy-0.0.9.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [kmspy]: executing diffoscope
+[2023-04-12 03:10:44] INFO root fetch - processPackages [kmspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmspy-0.0.8.tar.gz tmp/kmspy-0.0.9.tar.gz --markdown 20230412/k/kmspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:10:44] INFO root fetch - processPackages [badsecrets]: executing diffoscope
+[2023-04-12 03:10:44] INFO root fetch - processPackages [badsecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badsecrets-0.1.300.tar.gz tmp/badsecrets-0.1.303.tar.gz --markdown 20230412/b/badsecrets/0.1.300-0.1.303/diff.md --exclude *.pyd
+[2023-04-12 03:10:44] INFO root fetch - processPackages [printnanny-api-client]: Downloading https://files.pythonhosted.org/packages/dc/09/9471b93d2f7870a699fe979e08df9b17bcd4a570221b2b7fc3f585cbe647/printnanny-api-client-0.99.9.tar.gz
+[2023-04-12 03:10:44] INFO root fetch - processPackages [CheckmarxPythonSDK]: executing diffoscope
+[2023-04-12 03:10:44] INFO root fetch - processPackages [CheckmarxPythonSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CheckmarxPythonSDK-0.7.0.tar.gz tmp/CheckmarxPythonSDK-0.7.1.tar.gz --markdown 20230412/C/CheckmarxPythonSDK/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-04-12 03:10:45] INFO root fetch - processPackages [printnanny-api-client]: executing diffoscope
+[2023-04-12 03:10:45] INFO root fetch - processPackages [printnanny-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/printnanny-api-client-0.99.8.tar.gz tmp/printnanny-api-client-0.99.9.tar.gz --markdown 20230412/p/printnanny-api-client/0.99.8-0.99.9/diff.md --exclude *.pyd
+[2023-04-12 03:10:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:46] INFO root fetch - processPackages [neon-speech]: New version: [3.2.2a0] Old Version: [3.2.1a1]
+[2023-04-12 03:10:46] INFO root fetch - processPackages [neon-speech]: Downloading https://files.pythonhosted.org/packages/fc/c5/4e77faf2171287d00b9428c421e98129f12d2c25e9b68cf14dc5d712db25/neon_speech-3.2.1a1-py3-none-any.whl
+[2023-04-12 03:10:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:46] INFO root fetch - processPackages [neon-speech]: Downloading https://files.pythonhosted.org/packages/a8/23/e8ea6338e86283e0563b169dfff8a253e9e1bea0601cca4b48582469ffa7/neon_speech-3.2.2a0-py3-none-any.whl
+[2023-04-12 03:10:46] INFO root fetch - processPackages [neon-speech]: executing diffoscope
+[2023-04-12 03:10:46] INFO root fetch - processPackages [neon-speech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_speech-3.2.1a1-py3-none-any.whl.zip tmp/neon_speech-3.2.2a0-py3-none-any.whl.zip --markdown 20230412/n/neon-speech/3.2.1a1-3.2.2a0/diff.md --exclude *.pyd
+[2023-04-12 03:10:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:51] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:10:51] INFO root fetch - main [MainThread]: Store serial: [17668892]
