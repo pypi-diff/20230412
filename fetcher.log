@@ -7100,3 +7100,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 07:20:20] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:20:21] INFO root fetch - main [MainThread]: success
 [2023-04-12 07:20:21] INFO root fetch - main [MainThread]: Store serial: [17671488]
+[2023-04-12 07:25:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671488]
+[2023-04-12 07:25:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-04-12 07:25:28] INFO root fetch - processPackages [c8connector]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:25:28] INFO root fetch - processPackages [body-matrix]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-04-12 07:25:28] INFO root fetch - processPackages [django-common-task-system]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-04-12 07:25:28] INFO root fetch - processPackages [mango-pycore]: New version: [0.1.3a0] Old Version: [0.1.3]
+[2023-04-12 07:25:28] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.4.9.1] Old Version: [2023.4.9.0]
+[2023-04-12 07:25:28] INFO root fetch - processPackages [c8connector]: executing diffoscope
+[2023-04-12 07:25:28] INFO root fetch - processPackages [c8connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/c8connector-0.0.8.tar.gz tmp/c8connector-0.0.9.tar.gz --markdown 20230412/c/c8connector/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:25:28] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-04-12 07:25:28] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.4.9.0.tar.gz tmp/crazy-thursday-2023.4.9.1.tar.gz --markdown 20230412/c/crazy-thursday/2023.4.9.0-2023.4.9.1/diff.md --exclude *.pyd
+[2023-04-12 07:25:28] INFO root fetch - processPackages [mango-pycore]: Downloading https://files.pythonhosted.org/packages/32/12/6bdbccd99cfb2d6e83060cdfea2781d458882909742fe31fe1346333d4fe/mango_pycore-0.1.3.tar.gz
+[2023-04-12 07:25:28] INFO root fetch - processPackages [body-matrix]: Downloading https://files.pythonhosted.org/packages/0c/5b/bffc41614532e7db70a7e4d23ad8308c9b6f22ad43414ebc8aa525cbd919/body_matrix-0.4.4.tar.gz
+[2023-04-12 07:25:28] INFO root fetch - processPackages [django-common-task-system]: Downloading https://files.pythonhosted.org/packages/3e/96/debf10ae0e8f11fc2dc428879fb7b11c4d43609bcfa8937852a04bb22016/django-common-task-system-1.1.4.tar.gz
+[2023-04-12 07:25:28] INFO root fetch - processPackages [body-matrix]: executing diffoscope
+[2023-04-12 07:25:28] INFO root fetch - processPackages [body-matrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/body_matrix-0.4.3.tar.gz tmp/body_matrix-0.4.4.tar.gz --markdown 20230412/b/body-matrix/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-04-12 07:25:28] INFO root fetch - processPackages [django-common-task-system]: executing diffoscope
+[2023-04-12 07:25:28] INFO root fetch - processPackages [django-common-task-system]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-common-task-system-1.1.3.tar.gz tmp/django-common-task-system-1.1.4.tar.gz --markdown 20230412/d/django-common-task-system/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-04-12 07:25:28] INFO root fetch - processPackages [mango-pycore]: executing diffoscope
+[2023-04-12 07:25:28] INFO root fetch - processPackages [mango-pycore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango_pycore-0.1.3.tar.gz tmp/mango_pycore-0.1.3a0.tar.gz --markdown 20230412/m/mango-pycore/0.1.3-0.1.3a0/diff.md --exclude *.pyd
+[2023-04-12 07:25:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:29] INFO root fetch - processPackages [shiny-mdc]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 07:25:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:29] INFO root fetch - processPackages [shiny-mdc]: executing diffoscope
+[2023-04-12 07:25:29] INFO root fetch - processPackages [shiny-mdc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shiny_mdc-1.0.0.tar.gz tmp/shiny_mdc-1.0.1.tar.gz --markdown 20230412/s/shiny-mdc/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 07:25:29] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:29] INFO root fetch - processPackages [pynkdv]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 07:25:30] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:30] INFO root fetch - processPackages [pynkdv]: Downloading https://files.pythonhosted.org/packages/60/ae/3dff1130bdc59842dc37999b93afd517413cc708e48cda07beef2d4a2668/pynkdv-0.0.8.tar.gz
+[2023-04-12 07:25:30] INFO root fetch - processPackages [pynkdv]: Downloading https://files.pythonhosted.org/packages/5c/30/75861c1b48fe5866bdadc7984bd4433cbc99f6636c754830cd421592dd9e/pynkdv-0.0.9.tar.gz
+[2023-04-12 07:25:30] INFO root fetch - processPackages [pynkdv]: executing diffoscope
+[2023-04-12 07:25:30] INFO root fetch - processPackages [pynkdv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynkdv-0.0.8.tar.gz tmp/pynkdv-0.0.9.tar.gz --markdown 20230412/p/pynkdv/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 07:25:31] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 07:25:46] INFO root fetch - main [MainThread]: Store serial: [17671512]
