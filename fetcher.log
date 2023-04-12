@@ -9304,3 +9304,89 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 09:59:54] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:59:55] INFO root fetch - main [MainThread]: success
 [2023-04-12 09:59:55] INFO root fetch - main [MainThread]: Store serial: [17672956]
+[2023-04-12 10:04:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17672956]
+[2023-04-12 10:05:02] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 10:05:02] INFO root fetch - processPackages [odoo-addon-server-action-mass-edit]: New version: [16.0.2.0.1.5] Old Version: [16.0.2.0.1.4]
+[2023-04-12 10:05:02] INFO root fetch - processPackages [servicefoundry]: New version: [0.8.4rc1] Old Version: [0.8.4]
+[2023-04-12 10:05:02] INFO root fetch - processPackages [hdn-research-environment]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-04-12 10:05:02] INFO root fetch - processPackages [neosekai-api]: New version: [1.0.0] Old Version: [0.0.2]
+[2023-04-12 10:05:02] INFO root fetch - processPackages [tinybird-cli]: New version: [1.0.0b99] Old Version: [1.0.0b98]
+[2023-04-12 10:05:02] INFO root fetch - processPackages [tinybird-cli]: executing diffoscope
+[2023-04-12 10:05:02] INFO root fetch - processPackages [tinybird-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinybird-cli-1.0.0b98.tar.gz tmp/tinybird-cli-1.0.0b99.tar.gz --markdown 20230412/t/tinybird-cli/1.0.0b98-1.0.0b99/diff.md --exclude *.pyd
+[2023-04-12 10:05:02] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/fa/e7/fe01a4362ed45cb88b833f7e18cd302be7efb820fa67b85ee3ae34875d8d/servicefoundry-0.8.4.tar.gz
+[2023-04-12 10:05:02] INFO root fetch - processPackages [odoo-addon-server-action-mass-edit]: Downloading https://files.pythonhosted.org/packages/3e/2e/eb9d3d121a966edb6a03aeb7a5a4deb6dc48436f0889833d0f090f2f5dd9/odoo_addon_server_action_mass_edit-16.0.2.0.1.4-py3-none-any.whl
+[2023-04-12 10:05:03] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/aa/0c/62f45aafe56e3dc97edaaa795f43d110caf7dd5735b81e4aa741059efc40/hdn-research-environment-1.4.0.tar.gz
+[2023-04-12 10:05:03] INFO root fetch - processPackages [neosekai-api]: Downloading https://files.pythonhosted.org/packages/49/05/e1824a75d348f903bb9902de3c1bd20fbc24041dc1ea641d9478e6f4af1b/neosekai_api-1.0.0-py3-none-any.whl
+[2023-04-12 10:05:03] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/63/34/09a6bcad3f099b56803689057600995c2622e30a6539e7169031d311aedf/hdn-research-environment-1.5.0.tar.gz
+[2023-04-12 10:05:03] INFO root fetch - processPackages [neosekai-api]: executing diffoscope
+[2023-04-12 10:05:03] INFO root fetch - processPackages [neosekai-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neosekai_api-0.0.2-py3-none-any.whl.zip tmp/neosekai_api-1.0.0-py3-none-any.whl.zip --markdown 20230412/n/neosekai-api/0.0.2-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 10:05:03] INFO root fetch - processPackages [servicefoundry]: Downloading https://files.pythonhosted.org/packages/2d/8f/87450445cd72c751c8438638c6f2a42ec8b582709d37398a31dc4119d8f3/servicefoundry-0.8.4rc1.tar.gz
+[2023-04-12 10:05:03] INFO root fetch - processPackages [odoo-addon-server-action-mass-edit]: Downloading https://files.pythonhosted.org/packages/df/a6/1dbbaaab5d98c1dbbf5be8924dffd83eb907d13abc443dccc72f48784c29/odoo_addon_server_action_mass_edit-16.0.2.0.1.5-py3-none-any.whl
+[2023-04-12 10:05:03] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2023-04-12 10:05:03] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-1.4.0.tar.gz tmp/hdn-research-environment-1.5.0.tar.gz --markdown 20230412/h/hdn-research-environment/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-04-12 10:05:03] INFO root fetch - processPackages [servicefoundry]: executing diffoscope
+[2023-04-12 10:05:03] INFO root fetch - processPackages [servicefoundry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servicefoundry-0.8.4.tar.gz tmp/servicefoundry-0.8.4rc1.tar.gz --markdown 20230412/s/servicefoundry/0.8.4-0.8.4rc1/diff.md --exclude *.pyd
+[2023-04-12 10:05:03] INFO root fetch - processPackages [odoo-addon-server-action-mass-edit]: executing diffoscope
+[2023-04-12 10:05:03] INFO root fetch - processPackages [odoo-addon-server-action-mass-edit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_server_action_mass_edit-16.0.2.0.1.4-py3-none-any.whl.zip tmp/odoo_addon_server_action_mass_edit-16.0.2.0.1.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-server-action-mass-edit/16.0.2.0.1.4-16.0.2.0.1.5/diff.md --exclude *.pyd
+[2023-04-12 10:05:04] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:04] INFO root fetch - processPackages [odoo9-addon-mass-mailing-custom-unsubscribe]: New version: [9.0.3.0.0.99.dev6] Old Version: [9.0.3.0.0.99.dev5]
+[2023-04-12 10:05:04] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:04] INFO root fetch - processPackages [odoo9-addon-mass-mailing-custom-unsubscribe]: Downloading https://files.pythonhosted.org/packages/29/67/0ec770f46f5f62f652ba8b355891012e77ed6b2f003d02d4ef53779d86d8/odoo9_addon_mass_mailing_custom_unsubscribe-9.0.3.0.0.99.dev5-py2-none-any.whl
+[2023-04-12 10:05:04] INFO root fetch - processPackages [airflow-commons]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 10:05:04] INFO root fetch - processPackages [airflow-commons]: Downloading https://files.pythonhosted.org/packages/f0/d8/75854fa36e01b6ba970901cd1d78e72a61b989df5574a2bbe9c95fde9ffe/airflow-commons-0.0.8.tar.gz
+[2023-04-12 10:05:04] INFO root fetch - processPackages [odoo9-addon-mass-mailing-custom-unsubscribe]: Downloading https://files.pythonhosted.org/packages/9a/dd/cbdbb44c0e381857b3fc129ac74cc0cf9455fbfbe740f244b8f584de7f5d/odoo9_addon_mass_mailing_custom_unsubscribe-9.0.3.0.0.99.dev6-py2-none-any.whl
+[2023-04-12 10:05:04] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:04] INFO root fetch - processPackages [odoo8-addon-mass-mailing-custom-unsubscribe]: New version: [8.0.2.1.0.99.dev9] Old Version: [8.0.2.1.0.99.dev8]
+[2023-04-12 10:05:05] INFO root fetch - processPackages [odoo9-addon-mass-mailing-custom-unsubscribe]: executing diffoscope
+[2023-04-12 10:05:05] INFO root fetch - processPackages [odoo9-addon-mass-mailing-custom-unsubscribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_mass_mailing_custom_unsubscribe-9.0.3.0.0.99.dev5-py2-none-any.whl.zip tmp/odoo9_addon_mass_mailing_custom_unsubscribe-9.0.3.0.0.99.dev6-py2-none-any.whl.zip --markdown 20230412/o/odoo9-addon-mass-mailing-custom-unsubscribe/9.0.3.0.0.99.dev5-9.0.3.0.0.99.dev6/diff.md --exclude *.pyd
+[2023-04-12 10:05:05] INFO root fetch - processPackages [airflow-commons]: Downloading https://files.pythonhosted.org/packages/64/5b/34c0e5a9e387f00249831c2a975b2097907cf519ba5f4f448ef21070346a/airflow-commons-0.0.9.tar.gz
+[2023-04-12 10:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:05] INFO root fetch - processPackages [airflow-commons]: executing diffoscope
+[2023-04-12 10:05:05] INFO root fetch - processPackages [airflow-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow-commons-0.0.8.tar.gz tmp/airflow-commons-0.0.9.tar.gz --markdown 20230412/a/airflow-commons/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 10:05:05] INFO root fetch - processPackages [Photini]: New version: [2023.4.0] Old Version: [2023.2.0.1]
+[2023-04-12 10:05:05] INFO root fetch - processPackages [odoo8-addon-mass-mailing-custom-unsubscribe]: executing diffoscope
+[2023-04-12 10:05:05] INFO root fetch - processPackages [odoo8-addon-mass-mailing-custom-unsubscribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_mass_mailing_custom_unsubscribe-8.0.2.1.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_mass_mailing_custom_unsubscribe-8.0.2.1.0.99.dev9-py2-none-any.whl.zip --markdown 20230412/o/odoo8-addon-mass-mailing-custom-unsubscribe/8.0.2.1.0.99.dev8-8.0.2.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-04-12 10:05:05] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:05] INFO root fetch - processPackages [bmb-martlet-organization-client]: New version: [0.99.0] Old Version: [0.98.0]
+[2023-04-12 10:05:05] INFO root fetch - processPackages [Photini]: Downloading https://files.pythonhosted.org/packages/c7/62/31e1b1daf022c9bcf5b9fa13c9908cc8e4a2a80f5a36c288ae262800f34c/Photini-2023.2.0.1.tar.gz
+[2023-04-12 10:05:05] INFO root fetch - processPackages [bmb-martlet-organization-client]: executing diffoscope
+[2023-04-12 10:05:05] INFO root fetch - processPackages [bmb-martlet-organization-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmb_martlet_organization_client-0.98.0-py3-none-any.whl.zip tmp/bmb_martlet_organization_client-0.99.0-py3-none-any.whl.zip --markdown 20230412/b/bmb-martlet-organization-client/0.98.0-0.99.0/diff.md --exclude *.pyd
+[2023-04-12 10:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:06] INFO root fetch - processPackages [easyquery-query-builder]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 10:05:06] INFO root fetch - processPackages [easyquery-query-builder]: Downloading https://files.pythonhosted.org/packages/fc/3e/ac19af80e8b6bb50a60f81d6bf59889df58fefc19f056bfc4b2912e30c73/easyquery_query_builder-0.1.0.tar.gz
+[2023-04-12 10:05:06] INFO root fetch - processPackages [easyquery-query-builder]: Downloading https://files.pythonhosted.org/packages/16/f8/f2801ad03f4b7b3596c4b924198d204977d2f7a059f924719d85a5cf8fd7/easyquery_query_builder-0.1.1.tar.gz
+[2023-04-12 10:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:06] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230412] Old Version: [0.3.1.dev20230411]
+[2023-04-12 10:05:06] INFO root fetch - processPackages [Photini]: Downloading https://files.pythonhosted.org/packages/e2/2d/f928c7a0efb66885cbde30463db2e05af228a856d6baaad283c31dd925fd/Photini-2023.4.0.tar.gz
+[2023-04-12 10:05:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:06] INFO root fetch - processPackages [hcloud]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-04-12 10:05:06] INFO root fetch - processPackages [easyquery-query-builder]: executing diffoscope
+[2023-04-12 10:05:06] INFO root fetch - processPackages [easyquery-query-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easyquery_query_builder-0.1.0.tar.gz tmp/easyquery_query_builder-0.1.1.tar.gz --markdown 20230412/e/easyquery-query-builder/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 10:05:06] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/aa/94/6efe3f78e02a02aa5bf1ea1c566e8f250ed30330e6fe58b89f37f8b14560/pyglove-0.3.1.dev20230412.tar.gz
+[2023-04-12 10:05:06] INFO root fetch - processPackages [hcloud]: Downloading https://files.pythonhosted.org/packages/75/ae/3377e93b699a5a13d41b1da469eadc345a199ceebf95e75d000414478955/hcloud-1.9.0.tar.gz
+[2023-04-12 10:05:07] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-04-12 10:05:07] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230411.tar.gz tmp/pyglove-0.3.1.dev20230412.tar.gz --markdown 20230412/p/pyglove/0.3.1.dev20230411-0.3.1.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 10:05:07] INFO root fetch - processPackages [hcloud]: Downloading https://files.pythonhosted.org/packages/57/06/ffb83beaa4a583e87937570492b0fa3ee49120b1617e90ec90aa3801054e/hcloud-1.9.1.tar.gz
+[2023-04-12 10:05:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:07] INFO root fetch - processPackages [hcloud]: executing diffoscope
+[2023-04-12 10:05:07] INFO root fetch - processPackages [hcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcloud-1.9.0.tar.gz tmp/hcloud-1.9.1.tar.gz --markdown 20230412/h/hcloud/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-04-12 10:05:07] INFO root fetch - processPackages [DLMS-SPODES]: New version: [0.9.0] Old Version: [0.8.3]
+[2023-04-12 10:05:07] INFO root fetch - processPackages [DLMS-SPODES]: executing diffoscope
+[2023-04-12 10:05:07] INFO root fetch - processPackages [DLMS-SPODES]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES-0.8.3.tar.gz tmp/DLMS_SPODES-0.9.0.tar.gz --markdown 20230412/D/DLMS-SPODES/0.8.3-0.9.0/diff.md --exclude *.pyd
+[2023-04-12 10:05:08] INFO root fetch - processPackages [Photini]: executing diffoscope
+[2023-04-12 10:05:08] INFO root fetch - processPackages [Photini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Photini-2023.2.0.1.tar.gz tmp/Photini-2023.4.0.tar.gz --markdown 20230412/P/Photini/2023.2.0.1-2023.4.0/diff.md --exclude *.pyd
+[2023-04-12 10:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:09] INFO root fetch - processPackages [odoo14-addon-mail-tracking]: New version: [14.0.3.1.1.dev4] Old Version: [14.0.3.1.1.dev3]
+[2023-04-12 10:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:09] INFO root fetch - processPackages [p-template-crawler]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 10:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:09] INFO root fetch - processPackages [p-template-crawler]: executing diffoscope
+[2023-04-12 10:05:09] INFO root fetch - processPackages [p-template-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p-template-crawler-0.0.8.tar.gz tmp/p-template-crawler-0.0.9.tar.gz --markdown 20230412/p/p-template-crawler/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 10:05:09] INFO root fetch - processPackages [odoo14-addon-mail-tracking]: Downloading https://files.pythonhosted.org/packages/5b/ea/ba419bd528ddd516cb5692819984a5c949aa57a27098f456ec3574020583/odoo14_addon_mail_tracking-14.0.3.1.1.dev4-py3-none-any.whl
+[2023-04-12 10:05:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:09] INFO root fetch - processPackages [odoo14-addon-mail-tracking]: executing diffoscope
+[2023-04-12 10:05:09] INFO root fetch - processPackages [odoo14-addon-mail-tracking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mail_tracking-14.0.3.1.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_mail_tracking-14.0.3.1.1.dev4-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-mail-tracking/14.0.3.1.1.dev3-14.0.3.1.1.dev4/diff.md --exclude *.pyd
+[2023-04-12 10:05:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:15] INFO root fetch - main [MainThread]: success
+[2023-04-12 10:05:15] INFO root fetch - main [MainThread]: Store serial: [17672999]
