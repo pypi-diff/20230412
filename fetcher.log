@@ -22091,3 +22091,108 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 20:53:13] INFO root fetch - main [MainThread]: End processing [astrohack]: success
 [2023-04-12 20:54:08] INFO root fetch - main [MainThread]: End processing [OpenGeode-core]: success
 [2023-04-12 20:54:08] INFO root fetch - main [MainThread]: Store serial: [17680723]
+[2023-04-12 20:59:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17680723]
+[2023-04-12 20:59:27] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantifiles
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ynto
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qontract-reconcile
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openapify
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hypothesis-graphql
+[2023-04-12 20:59:27] INFO root fetch - processPackages [openapify]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-12 20:59:27] INFO root fetch - processPackages [quantifiles]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-12 20:59:27] INFO root fetch - processPackages [hypothesis-graphql]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-04-12 20:59:27] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 20:59:27] WARNING root fetch - processPackages [ynto]: Skipping, unable to determine old version
+[2023-04-12 20:59:27] INFO root fetch - processPackages [ynto]: Start processing: pycryptographier
+[2023-04-12 20:59:27] INFO root fetch - main [MainThread]: End processing [ynto] error
+[2023-04-12 20:59:27] INFO root fetch - processPackages [pycryptographier]: New version: [1.8.7] Old Version: [1.0.0]
+[2023-04-12 20:59:27] INFO root fetch - processPackages [quantifiles]: Downloading https://files.pythonhosted.org/packages/f3/7d/6edf33a33275056e1cc57439e442a313a23cafee7ab0a1675b14b3520b63/quantifiles-0.1.1.tar.gz
+[2023-04-12 20:59:27] INFO root fetch - processPackages [hypothesis-graphql]: Downloading https://files.pythonhosted.org/packages/d7/8e/e59c7ffc179e0e5e8f47ff9ca393cef26aa83dc2aa5c25f40d2edc477d5e/hypothesis-graphql-0.9.1.tar.gz
+[2023-04-12 20:59:27] INFO root fetch - processPackages [pycryptographier]: Downloading https://files.pythonhosted.org/packages/5a/e0/544845daa0ae296b98d472dc957f7145fd47aa8e3ee983e6a1b71ffe9300/pycryptographier-1.0.0.tar.gz
+[2023-04-12 20:59:27] INFO root fetch - processPackages [openapify]: Downloading https://files.pythonhosted.org/packages/38/5d/2ddb0db7cce9d159cf84f80fe913974ae64f58ff5b84e46d998781a458a9/openapify-0.3.3.tar.gz
+[2023-04-12 20:59:28] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 20:59:28] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 20:59:28] INFO root fetch - processPackages [quantifiles]: Downloading https://files.pythonhosted.org/packages/47/28/dcfa691f6c1f16722ac63e1a0c5c4c947d2260fe21575a821d820be104e8/quantifiles-0.2.0.tar.gz
+[2023-04-12 20:59:28] INFO root fetch - processPackages [hypothesis-graphql]: Downloading https://files.pythonhosted.org/packages/30/fd/1e0b759a10bf4e7e07837ab0d211791df46fe30fcd5c5ea1080d19d4363e/hypothesis_graphql-0.9.2.tar.gz
+[2023-04-12 20:59:28] INFO root fetch - processPackages [pycryptographier]: Downloading https://files.pythonhosted.org/packages/5b/ce/81f70add31297bcd85baac456913f2640d4cf58ebaf99b7b6183874ee622/pycryptographier-1.8.7.tar.gz
+[2023-04-12 20:59:28] INFO root fetch - processPackages [openapify]: executing diffoscope
+[2023-04-12 20:59:28] INFO root fetch - processPackages [openapify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapify-0.3.2.tar.gz tmp/openapify-0.3.3.tar.gz --markdown 20230412/o/openapify/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-12 20:59:28] INFO root fetch - processPackages [hypothesis-graphql]: executing diffoscope
+[2023-04-12 20:59:28] INFO root fetch - processPackages [hypothesis-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-graphql-0.9.1.tar.gz tmp/hypothesis_graphql-0.9.2.tar.gz --markdown 20230412/h/hypothesis-graphql/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-04-12 20:59:28] INFO root fetch - processPackages [quantifiles]: executing diffoscope
+[2023-04-12 20:59:28] INFO root fetch - processPackages [quantifiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantifiles-0.1.1.tar.gz tmp/quantifiles-0.2.0.tar.gz --markdown 20230412/q/quantifiles/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 20:59:28] INFO root fetch - processPackages [pycryptographier]: executing diffoscope
+[2023-04-12 20:59:28] INFO root fetch - processPackages [pycryptographier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycryptographier-1.0.0.tar.gz tmp/pycryptographier-1.8.7.tar.gz --markdown 20230412/p/pycryptographier/1.0.0-1.8.7/diff.md --exclude *.pyd
+[2023-04-12 20:59:29] INFO root fetch - processPackages [openapify]: Start processing: es_client
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [openapify]: success
+[2023-04-12 20:59:29] INFO root fetch - processPackages [es_client]: New version: [8.7.0] Old Version: [8.6.2.post1]
+[2023-04-12 20:59:29] INFO root fetch - processPackages [hypothesis-graphql]: Start processing: task-notify
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [hypothesis-graphql]: success
+[2023-04-12 20:59:29] WARNING root fetch - processPackages [task-notify]: Skipping, unable to determine old version
+[2023-04-12 20:59:29] INFO root fetch - processPackages [task-notify]: Start processing: OgreInterface
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [task-notify] error
+[2023-04-12 20:59:29] INFO root fetch - processPackages [OgreInterface]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 20:59:29] INFO root fetch - processPackages [pycryptographier]: Start processing: panel
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [pycryptographier]: success
+[2023-04-12 20:59:29] INFO root fetch - processPackages [panel]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2023-04-12 20:59:29] INFO root fetch - processPackages [quantifiles]: Start processing: spotPython
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [quantifiles]: success
+[2023-04-12 20:59:29] INFO root fetch - processPackages [es_client]: Downloading https://files.pythonhosted.org/packages/00/2a/a2d744e0f8b85390462e8149fa3e41844f57089fad23b347f7c3a309b340/es_client-8.6.2.post1.tar.gz
+[2023-04-12 20:59:29] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:59:29] INFO root fetch - processPackages [panel]: Downloading https://files.pythonhosted.org/packages/82/cd/5c3589614bd7d434187d91ec69d6d3a7efd54282dd676f0da56ee1776ce2/panel-1.0.0b8.tar.gz
+[2023-04-12 20:59:29] WARNING root fetch - processPackages [panel]: Skipping package: exceeds size limit 25160245>=10485760
+[2023-04-12 20:59:29] INFO root fetch - processPackages [panel]: Start processing: praxis
+[2023-04-12 20:59:29] INFO root fetch - main [MainThread]: End processing [panel] error
+[2023-04-12 20:59:29] INFO root fetch - processPackages [praxis]: New version: [1.0.0] Old Version: [0.4.0]
+[2023-04-12 20:59:29] INFO root fetch - processPackages [OgreInterface]: executing diffoscope
+[2023-04-12 20:59:29] INFO root fetch - processPackages [OgreInterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OgreInterface-1.0.8.tar.gz tmp/OgreInterface-1.0.9.tar.gz --markdown 20230412/O/OgreInterface/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:59:30] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-04-12 20:59:30] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230412/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:59:30] INFO root fetch - processPackages [praxis]: Downloading https://files.pythonhosted.org/packages/48/2b/71addcd087b029a50170aa739f526117bd0abfac5971c059ab044ce323b3/praxis-0.4.0-py3-none-any.whl
+[2023-04-12 20:59:30] INFO root fetch - processPackages [es_client]: Downloading https://files.pythonhosted.org/packages/11/da/9045c8ed43cc829cd1b2a3bebfdd47237d53bac037d88ce3f6a07064182e/es_client-8.7.0.tar.gz
+[2023-04-12 20:59:30] INFO root fetch - processPackages [es_client]: executing diffoscope
+[2023-04-12 20:59:30] INFO root fetch - processPackages [es_client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es_client-8.6.2.post1.tar.gz tmp/es_client-8.7.0.tar.gz --markdown 20230412/e/es_client/8.6.2.post1-8.7.0/diff.md --exclude *.pyd
+[2023-04-12 20:59:30] INFO root fetch - processPackages [praxis]: Downloading https://files.pythonhosted.org/packages/e6/fc/2d1d333d1af19c19efe456af6e32cdfe9f5414fb77195f521b7bf4838b71/praxis-1.0.0-py3-none-any.whl
+[2023-04-12 20:59:30] INFO root fetch - processPackages [praxis]: executing diffoscope
+[2023-04-12 20:59:30] INFO root fetch - processPackages [praxis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praxis-0.4.0-py3-none-any.whl.zip tmp/praxis-1.0.0-py3-none-any.whl.zip --markdown 20230412/p/praxis/0.4.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 20:59:31] INFO root fetch - processPackages [OgreInterface]: Start processing: cqepyutils
+[2023-04-12 20:59:31] INFO root fetch - main [MainThread]: End processing [OgreInterface]: success
+[2023-04-12 20:59:31] INFO root fetch - processPackages [cqepyutils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-04-12 20:59:31] INFO root fetch - processPackages [cqepyutils]: executing diffoscope
+[2023-04-12 20:59:31] INFO root fetch - processPackages [cqepyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cqepyutils-0.1.8.tar.gz tmp/cqepyutils-0.1.9.tar.gz --markdown 20230412/c/cqepyutils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-04-12 20:59:31] INFO root fetch - processPackages [es_client]: Start processing: qumulo-api
+[2023-04-12 20:59:31] INFO root fetch - main [MainThread]: End processing [es_client]: success
+[2023-04-12 20:59:31] INFO root fetch - processPackages [qumulo-api]: New version: [6.0.1.1] Old Version: [6.0.1]
+[2023-04-12 20:59:31] INFO root fetch - processPackages [qumulo-api]: Downloading https://files.pythonhosted.org/packages/65/45/d0f493de74b43b13dbc0e5bfc1f6f30dca3230413020b44756e9d4c7690a/qumulo_api-6.0.1-py3-none-any.whl
+[2023-04-12 20:59:31] INFO root fetch - processPackages [spotPython]: Start processing: paxml
+[2023-04-12 20:59:31] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-04-12 20:59:31] INFO root fetch - processPackages [paxml]: New version: [1.0.0] Old Version: [0.4.0]
+[2023-04-12 20:59:31] INFO root fetch - processPackages [qumulo-api]: Downloading https://files.pythonhosted.org/packages/0a/8f/cb2637d4bf5e6d8b1933eab5c1cdbc3cb97e850d5abfae2ebe2dbbafe2af/qumulo_api-6.0.1.1-py3-none-any.whl
+[2023-04-12 20:59:31] INFO root fetch - processPackages [paxml]: Downloading https://files.pythonhosted.org/packages/50/2f/80dad19b850e0128f206673913843054f091bdcb2141052fdb74a6d813e3/paxml-0.4.0-py3-none-any.whl
+[2023-04-12 20:59:32] INFO root fetch - processPackages [qumulo-api]: executing diffoscope
+[2023-04-12 20:59:32] INFO root fetch - processPackages [qumulo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qumulo_api-6.0.1-py3-none-any.whl.zip tmp/qumulo_api-6.0.1.1-py3-none-any.whl.zip --markdown 20230412/q/qumulo-api/6.0.1-6.0.1.1/diff.md --exclude *.pyd
+[2023-04-12 20:59:32] INFO root fetch - processPackages [cqepyutils]: Start processing: SyntaxMorph
+[2023-04-12 20:59:32] INFO root fetch - main [MainThread]: End processing [cqepyutils]: success
+[2023-04-12 20:59:32] INFO root fetch - processPackages [SyntaxMorph]: New version: [0.4] Old Version: [0.3]
+[2023-04-12 20:59:32] ERROR root fetch - processPackages [SyntaxMorph]: Unable to fetch info: No such project/version 'SyntaxMorph' 0.4
+[2023-04-12 20:59:32] INFO root fetch - processPackages [SyntaxMorph]: Start processing: tradernet-sdk
+[2023-04-12 20:59:32] INFO root fetch - main [MainThread]: End processing [SyntaxMorph] error
+[2023-04-12 20:59:32] INFO root fetch - processPackages [tradernet-sdk]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-04-12 20:59:32] INFO root fetch - processPackages [paxml]: Downloading https://files.pythonhosted.org/packages/3c/9f/f831963ccde39b8aa2ec1d050352a935e8593ddf0f9b48239832f1c5993d/paxml-1.0.0-py3-none-any.whl
+[2023-04-12 20:59:32] INFO root fetch - processPackages [tradernet-sdk]: Downloading https://files.pythonhosted.org/packages/43/e7/04a8d98982e92fdd34d09244423efd5847fb8f9fa9be67a28c69ba568738/tradernet_sdk-0.3.2.tar.gz
+[2023-04-12 20:59:32] INFO root fetch - processPackages [paxml]: executing diffoscope
+[2023-04-12 20:59:32] INFO root fetch - processPackages [paxml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paxml-0.4.0-py3-none-any.whl.zip tmp/paxml-1.0.0-py3-none-any.whl.zip --markdown 20230412/p/paxml/0.4.0-1.0.0/diff.md --exclude *.pyd
+[2023-04-12 20:59:32] INFO root fetch - processPackages [tradernet-sdk]: Downloading https://files.pythonhosted.org/packages/bb/ab/5c696661dab5f8cc5bf50de1063c2a559452f1362362bda5a2c89663f8b7/tradernet_sdk-0.3.3.tar.gz
+[2023-04-12 20:59:32] INFO root fetch - processPackages [praxis]: Start processing: schematic-db
+[2023-04-12 20:59:32] INFO root fetch - main [MainThread]: End processing [praxis]: success
+[2023-04-12 20:59:33] INFO root fetch - processPackages [schematic-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 20:59:33] INFO root fetch - main [MainThread]: End processing [qontract-reconcile]: success
+[2023-04-12 20:59:33] INFO root fetch - processPackages [tradernet-sdk]: executing diffoscope
+[2023-04-12 20:59:33] INFO root fetch - processPackages [tradernet-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradernet_sdk-0.3.2.tar.gz tmp/tradernet_sdk-0.3.3.tar.gz --markdown 20230412/t/tradernet-sdk/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-04-12 20:59:33] INFO root fetch - processPackages [schematic-db]: executing diffoscope
+[2023-04-12 20:59:33] INFO root fetch - processPackages [schematic-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schematic_db-0.0.8.tar.gz tmp/schematic_db-0.0.9.tar.gz --markdown 20230412/s/schematic-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 20:59:33] INFO root fetch - main [MainThread]: End processing [qumulo-api]: success
+[2023-04-12 20:59:34] INFO root fetch - main [MainThread]: End processing [tradernet-sdk]: success
+[2023-04-12 20:59:34] INFO root fetch - main [MainThread]: End processing [paxml]: success
+[2023-04-12 20:59:34] INFO root fetch - main [MainThread]: End processing [schematic-db]: success
+[2023-04-12 20:59:34] INFO root fetch - main [MainThread]: Store serial: [17680779]
