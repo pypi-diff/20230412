@@ -13219,3 +13219,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 13:29:49] INFO root fetch - main [MainThread]: End processing [halo-reader]: success
 [2023-04-12 13:29:50] INFO root fetch - main [MainThread]: End processing [alphaz]: success
 [2023-04-12 13:29:50] INFO root fetch - main [MainThread]: Store serial: [17675259]
+[2023-04-12 13:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17675259]
+[2023-04-12 13:34:57] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-04-12 13:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sherpa-onnx
+[2023-04-12 13:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: i2a-chat-api-client
+[2023-04-12 13:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyterhub-tmpnativeauthenticator
+[2023-04-12 13:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: layerx-sdk-beta
+[2023-04-12 13:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finbourne-access-sdk
+[2023-04-12 13:34:57] WARNING root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Skipping, unable to determine old version
+[2023-04-12 13:34:57] INFO root fetch - processPackages [jupyterhub-tmpnativeauthenticator]: Start processing: jilei
+[2023-04-12 13:34:57] INFO root fetch - main [MainThread]: End processing [jupyterhub-tmpnativeauthenticator] error
+[2023-04-12 13:34:57] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-04-12 13:34:57] INFO root fetch - processPackages [layerx-sdk-beta]: New version: [1.0.9b2] Old Version: [1.0.9b1]
+[2023-04-12 13:34:57] INFO root fetch - processPackages [i2a-chat-api-client]: New version: [1.3.0] Old Version: [1.2.5]
+[2023-04-12 13:34:58] INFO root fetch - processPackages [finbourne-access-sdk]: New version: [0.0.815] Old Version: [0.0.616]
+[2023-04-12 13:34:58] INFO root fetch - processPackages [jilei]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 13:34:58] INFO root fetch - processPackages [finbourne-access-sdk]: executing diffoscope
+[2023-04-12 13:34:58] INFO root fetch - processPackages [finbourne-access-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finbourne-access-sdk-0.0.616.tar.gz tmp/finbourne-access-sdk-0.0.815.tar.gz --markdown 20230412/f/finbourne-access-sdk/0.0.616-0.0.815/diff.md --exclude *.pyd
+[2023-04-12 13:34:58] INFO root fetch - processPackages [layerx-sdk-beta]: executing diffoscope
+[2023-04-12 13:34:58] INFO root fetch - processPackages [layerx-sdk-beta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layerx-sdk-beta-1.0.9b1.tar.gz tmp/layerx-sdk-beta-1.0.9b2.tar.gz --markdown 20230412/l/layerx-sdk-beta/1.0.9b1-1.0.9b2/diff.md --exclude *.pyd
+[2023-04-12 13:34:58] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/be/1c/80e88f59f3279fca2e257226a1efee4e8f4f5ce07006a14d028cc023bbb7/sherpa-onnx-1.4.0.tar.gz
+[2023-04-12 13:34:58] INFO root fetch - processPackages [i2a-chat-api-client]: Downloading https://files.pythonhosted.org/packages/d6/aa/ee7d4aa4049cd3f75d3d5f5c83c951c5b7cc8599137c6a92589ffc197f7f/i2a_chat_api_client-1.3.0.tar.gz
+[2023-04-12 13:34:58] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/2b/aa/6cd90350df74b92457ba6cd46a0cc57c58fff947c93b3b76eedb45110abd/jilei-0.0.3-py3-none-any.whl
+[2023-04-12 13:34:58] INFO root fetch - processPackages [i2a-chat-api-client]: executing diffoscope
+[2023-04-12 13:34:58] INFO root fetch - processPackages [i2a-chat-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2a_chat_api_client-1.2.5.tar.gz tmp/i2a_chat_api_client-1.3.0.tar.gz --markdown 20230412/i/i2a-chat-api-client/1.2.5-1.3.0/diff.md --exclude *.pyd
+[2023-04-12 13:34:58] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-04-12 13:34:58] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.2-py3-none-any.whl.zip tmp/jilei-0.0.3-py3-none-any.whl.zip --markdown 20230412/j/jilei/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 13:34:58] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/8a/97/b9a8e1a456a0b0700b955b12d10935f4a0b77f02beed81ecf36114e242f4/sherpa-onnx-1.4.1.tar.gz
+[2023-04-12 13:34:58] INFO root fetch - processPackages [sherpa-onnx]: executing diffoscope
+[2023-04-12 13:34:58] INFO root fetch - processPackages [sherpa-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherpa-onnx-1.4.0.tar.gz tmp/sherpa-onnx-1.4.1.tar.gz --markdown 20230412/s/sherpa-onnx/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-12 13:34:59] INFO root fetch - processPackages [i2a-chat-api-client]: Start processing: PyQuantimClient
+[2023-04-12 13:34:59] INFO root fetch - main [MainThread]: End processing [i2a-chat-api-client]: success
+[2023-04-12 13:34:59] INFO root fetch - processPackages [jilei]: Start processing: vysion
+[2023-04-12 13:34:59] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-04-12 13:34:59] INFO root fetch - processPackages [PyQuantimClient]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 13:34:59] INFO root fetch - processPackages [vysion]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-04-12 13:34:59] INFO root fetch - processPackages [layerx-sdk-beta]: Start processing: seven-cloudapp-frame
+[2023-04-12 13:34:59] INFO root fetch - main [MainThread]: End processing [layerx-sdk-beta]: success
+[2023-04-12 13:34:59] INFO root fetch - processPackages [seven-cloudapp-frame]: New version: [1.0.9.9] Old Version: [1.0.9.8]
+[2023-04-12 13:34:59] INFO root fetch - processPackages [seven-cloudapp-frame]: executing diffoscope
+[2023-04-12 13:34:59] INFO root fetch - processPackages [seven-cloudapp-frame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seven_cloudapp_frame-1.0.9.8.tar.gz tmp/seven_cloudapp_frame-1.0.9.9.tar.gz --markdown 20230412/s/seven-cloudapp-frame/1.0.9.8-1.0.9.9/diff.md --exclude *.pyd
+[2023-04-12 13:34:59] INFO root fetch - processPackages [vysion]: Downloading https://files.pythonhosted.org/packages/94/db/deda40d67c4c2608b8632b37ccbdb043e342877fefe1604c00094de4caca/vysion-1.0.3.tar.gz
+[2023-04-12 13:34:59] INFO root fetch - processPackages [PyQuantimClient]: Downloading https://files.pythonhosted.org/packages/84/61/69e33c48bf2891c86a9875218bb5ff8a11eabc6cba2fc5642b050ba3eaa8/PyQuantimClient-1.0.8.tar.gz
+[2023-04-12 13:34:59] INFO root fetch - processPackages [sherpa-onnx]: Start processing: redis-metric-helper
+[2023-04-12 13:34:59] INFO root fetch - main [MainThread]: End processing [sherpa-onnx]: success
+[2023-04-12 13:34:59] INFO root fetch - processPackages [redis-metric-helper]: New version: [0.1.1] Old Version: [0.1]
+[2023-04-12 13:34:59] INFO root fetch - processPackages [vysion]: Downloading https://files.pythonhosted.org/packages/be/5b/c532a3320b9c9da1c57777d961666a58ebd9c07f92c33c1481e142396dcf/vysion-1.0.4.tar.gz
+[2023-04-12 13:35:00] INFO root fetch - processPackages [redis-metric-helper]: Downloading https://files.pythonhosted.org/packages/b7/9b/c75b093103d8f0a1e00be8288788bee046d6fc16f19dee58418d381f0544/redis-metric-helper-0.1.tar.gz
+[2023-04-12 13:35:00] INFO root fetch - processPackages [PyQuantimClient]: Downloading https://files.pythonhosted.org/packages/12/4e/e55b5d82937e1306704467806d3a4daa4b5c4b6f73b5ade2c9e6fdcc08f5/PyQuantimClient-1.0.9.tar.gz
+[2023-04-12 13:35:00] INFO root fetch - processPackages [vysion]: executing diffoscope
+[2023-04-12 13:35:00] INFO root fetch - processPackages [vysion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vysion-1.0.3.tar.gz tmp/vysion-1.0.4.tar.gz --markdown 20230412/v/vysion/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:35:00] INFO root fetch - processPackages [PyQuantimClient]: executing diffoscope
+[2023-04-12 13:35:00] INFO root fetch - processPackages [PyQuantimClient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQuantimClient-1.0.8.tar.gz tmp/PyQuantimClient-1.0.9.tar.gz --markdown 20230412/P/PyQuantimClient/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 13:35:00] INFO root fetch - processPackages [finbourne-access-sdk]: Start processing: jilei
+[2023-04-12 13:35:00] INFO root fetch - main [MainThread]: End processing [finbourne-access-sdk]: success
+[2023-04-12 13:35:00] INFO root fetch - processPackages [redis-metric-helper]: Downloading https://files.pythonhosted.org/packages/11/68/4dcb97725249cf3e75d378f63863fde439566caae770ee2a0c9e4dd79e70/redis-metric-helper-0.1.1.tar.gz
+[2023-04-12 13:35:00] INFO root fetch - processPackages [jilei]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-04-12 13:35:00] INFO root fetch - processPackages [redis-metric-helper]: executing diffoscope
+[2023-04-12 13:35:00] INFO root fetch - processPackages [redis-metric-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis-metric-helper-0.1.tar.gz tmp/redis-metric-helper-0.1.1.tar.gz --markdown 20230412/r/redis-metric-helper/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 13:35:00] INFO root fetch - processPackages [jilei]: Downloading https://files.pythonhosted.org/packages/1b/82/6dc3923dec71023d49acf525316dd6fc756b4ec3d8ea3f2e3e48a8669f41/jilei-0.0.4-py3-none-any.whl
+[2023-04-12 13:35:00] INFO root fetch - processPackages [jilei]: executing diffoscope
+[2023-04-12 13:35:00] INFO root fetch - processPackages [jilei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jilei-0.0.3-py3-none-any.whl.zip tmp/jilei-0.0.4-py3-none-any.whl.zip --markdown 20230412/j/jilei/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-04-12 13:35:01] INFO root fetch - processPackages [PyQuantimClient]: Start processing: lacuscore
+[2023-04-12 13:35:01] INFO root fetch - main [MainThread]: End processing [PyQuantimClient]: success
+[2023-04-12 13:35:01] INFO root fetch - processPackages [lacuscore]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-04-12 13:35:01] INFO root fetch - main [MainThread]: End processing [vysion]: success
+[2023-04-12 13:35:01] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/3b/6a/044da85acc25e0684b0fa7a1b1f0df6b649e3d0ed2fbb4e8f292eb7e8657/lacuscore-1.4.7.tar.gz
+[2023-04-12 13:35:01] INFO root fetch - main [MainThread]: End processing [seven-cloudapp-frame]: success
+[2023-04-12 13:35:01] INFO root fetch - main [MainThread]: End processing [redis-metric-helper]: success
+[2023-04-12 13:35:01] INFO root fetch - main [MainThread]: End processing [jilei]: success
+[2023-04-12 13:35:01] INFO root fetch - processPackages [lacuscore]: Downloading https://files.pythonhosted.org/packages/f6/21/126ad6d0c14c752be40442f1ab22bd4b3daaf92e6cd632c45737e9499fed/lacuscore-1.4.8.tar.gz
+[2023-04-12 13:35:02] INFO root fetch - processPackages [lacuscore]: executing diffoscope
+[2023-04-12 13:35:02] INFO root fetch - processPackages [lacuscore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lacuscore-1.4.7.tar.gz tmp/lacuscore-1.4.8.tar.gz --markdown 20230412/l/lacuscore/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-04-12 13:35:03] INFO root fetch - main [MainThread]: End processing [lacuscore]: success
+[2023-04-12 13:35:03] INFO root fetch - main [MainThread]: Store serial: [17675299]
