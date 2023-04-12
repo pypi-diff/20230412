@@ -5575,3 +5575,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2023-04-12 05:06:14] INFO root fetch - main [MainThread]: error
 [2023-04-12 05:06:14] INFO root fetch - main [MainThread]: Store serial: [17670652]
+[2023-04-12 05:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670652]
+[2023-04-12 05:11:21] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-04-12 05:11:22] INFO root fetch - processPackages [portbt]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-04-12 05:11:22] INFO root fetch - processPackages [odoo-addon-account-move-base-import]: New version: [16.0.1.0.1.7] Old Version: [16.0.1.0.1.5]
+[2023-04-12 05:11:22] INFO root fetch - processPackages [czthry]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-04-12 05:11:22] INFO root fetch - processPackages [revChatGPT]: New version: [4.2.0] Old Version: [4.1.6]
+[2023-04-12 05:11:22] INFO root fetch - processPackages [toollib]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-04-12 05:11:22] INFO root fetch - processPackages [odoo-addon-account-move-base-import]: Downloading https://files.pythonhosted.org/packages/12/23/b368bc2f5c411f834636e164f19478f3617dfa2dd0150a4387487d57e172/odoo_addon_account_move_base_import-16.0.1.0.1.5-py3-none-any.whl
+[2023-04-12 05:11:22] INFO root fetch - processPackages [portbt]: Downloading https://files.pythonhosted.org/packages/b0/62/acab167961cf94731da0e080abbc3f21ae862a11f58a379ed78e81c8a86f/portbt-0.1.4.tar.gz
+[2023-04-12 05:11:22] INFO root fetch - processPackages [revChatGPT]: Downloading https://files.pythonhosted.org/packages/94/68/ceac5a46f2160b9c62a78a516101cc828d9d2a83d97e0dc42ff4988e88fb/revChatGPT-4.2.0.tar.gz
+[2023-04-12 05:11:22] INFO root fetch - processPackages [toollib]: Downloading https://files.pythonhosted.org/packages/29/55/4949b8a54dbcc78fa23ad6646ca74149d0280e60435f3b26878ad36eb076/toollib-1.3.0-py3-none-any.whl
+[2023-04-12 05:11:22] INFO root fetch - processPackages [czthry]: executing diffoscope
+[2023-04-12 05:11:22] INFO root fetch - processPackages [czthry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/czthry-0.0.7.tar.gz tmp/czthry-0.0.9.tar.gz --markdown 20230412/c/czthry/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 05:11:22] INFO root fetch - processPackages [portbt]: executing diffoscope
+[2023-04-12 05:11:22] INFO root fetch - processPackages [portbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/portbt-0.1.3.tar.gz tmp/portbt-0.1.4.tar.gz --markdown 20230412/p/portbt/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-04-12 05:11:22] INFO root fetch - processPackages [revChatGPT]: executing diffoscope
+[2023-04-12 05:11:22] INFO root fetch - processPackages [revChatGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revChatGPT-4.1.6.tar.gz tmp/revChatGPT-4.2.0.tar.gz --markdown 20230412/r/revChatGPT/4.1.6-4.2.0/diff.md --exclude *.pyd
+[2023-04-12 05:11:22] INFO root fetch - processPackages [odoo-addon-account-move-base-import]: Downloading https://files.pythonhosted.org/packages/48/6f/f5f745c07b1b935c7c6c27c5038e67a69f0ff5db02ab91d483516e4ebd50/odoo_addon_account_move_base_import-16.0.1.0.1.7-py3-none-any.whl
+[2023-04-12 05:11:22] INFO root fetch - processPackages [toollib]: executing diffoscope
+[2023-04-12 05:11:22] INFO root fetch - processPackages [toollib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toollib-1.2.9-py3-none-any.whl.zip tmp/toollib-1.3.0-py3-none-any.whl.zip --markdown 20230412/t/toollib/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-04-12 05:11:22] INFO root fetch - processPackages [odoo-addon-account-move-base-import]: executing diffoscope
+[2023-04-12 05:11:22] INFO root fetch - processPackages [odoo-addon-account-move-base-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_base_import-16.0.1.0.1.5-py3-none-any.whl.zip tmp/odoo_addon_account_move_base_import-16.0.1.0.1.7-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-account-move-base-import/16.0.1.0.1.5-16.0.1.0.1.7/diff.md --exclude *.pyd
+[2023-04-12 05:11:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:23] INFO root fetch - processPackages [pingdatautil]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-04-12 05:11:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:23] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2023-04-12 05:11:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:23] INFO root fetch - processPackages [odoo-addon-base-transaction-id]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2023-04-12 05:11:23] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/47/4b/a567b6fff2c20c24ec7a075d3a9f9ebd8ec476d5221e21e467eda004aac6/odoo_addon_account_mass_reconcile-16.0.1.0.0.4-py3-none-any.whl
+[2023-04-12 05:11:23] INFO root fetch - processPackages [pingdatautil]: Downloading https://files.pythonhosted.org/packages/d6/87/152edbacb0c6bafaba33073eb37655b4174089efddd95169686297fb853e/pingdatautil-0.0.3.tar.gz
+[2023-04-12 05:11:23] INFO root fetch - processPackages [odoo-addon-base-transaction-id]: Downloading https://files.pythonhosted.org/packages/40/91/bb7f4ec646884f486c9799809186e8d4f675ecf5ca697dc91d84ad489be2/odoo_addon_base_transaction_id-16.0.1.0.0.4-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - processPackages [pingdatautil]: executing diffoscope
+[2023-04-12 05:11:24] INFO root fetch - processPackages [pingdatautil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pingdatautil-0.0.2.tar.gz tmp/pingdatautil-0.0.3.tar.gz --markdown 20230412/p/pingdatautil/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-04-12 05:11:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile-ref-deep-search]: New version: [14.0.1.0.1.dev6] Old Version: [14.0.1.0.1.dev5]
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-base-transaction-id]: Downloading https://files.pythonhosted.org/packages/e1/72/e4943293ebaf8a0e9964461bf8207ed49153187321b8aee2ff995d2f5051/odoo_addon_base_transaction_id-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/ad/32/5b49ffc09a3cd3350ca8cba404d3c7d1debfa295db5c7453a1deb0e379c7/odoo_addon_account_mass_reconcile-16.0.1.0.0.5-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile-ref-deep-search]: Downloading https://files.pythonhosted.org/packages/28/e0/80e55e06e06648cf1fe07f84ad786d739b3c27e2370dc6588cc203f57d1f/odoo14_addon_account_mass_reconcile_ref_deep_search-14.0.1.0.1.dev5-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: New version: [16.0.1.0.2.3] Old Version: [16.0.1.0.2.2]
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-base-transaction-id]: executing diffoscope
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-base-transaction-id]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_transaction_id-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_base_transaction_id-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-base-transaction-id/16.0.1.0.0.4-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: executing diffoscope
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-mass-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_mass_reconcile-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_mass_reconcile-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-account-mass-reconcile/16.0.1.0.0.4-16.0.1.0.0.5/diff.md --exclude *.pyd
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: Downloading https://files.pythonhosted.org/packages/58/b9/bfe3e319e2b87378522096d382bc371677626ce6133e7ed3a3a8dd2e7455/odoo_addon_account_reconcile_oca-16.0.1.0.2.3-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile-ref-deep-search]: Downloading https://files.pythonhosted.org/packages/35/e3/a98e8684198b0ce0b3b5273b90952169878130b0c6cdc1cd5dab7c16a20c/odoo14_addon_account_mass_reconcile_ref_deep_search-14.0.1.0.1.dev6-py3-none-any.whl
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: executing diffoscope
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo-addon-account-reconcile-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_reconcile_oca-16.0.1.0.2.2-py3-none-any.whl.zip tmp/odoo_addon_account_reconcile_oca-16.0.1.0.2.3-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-account-reconcile-oca/16.0.1.0.2.2-16.0.1.0.2.3/diff.md --exclude *.pyd
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile-ref-deep-search]: executing diffoscope
+[2023-04-12 05:11:24] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile-ref-deep-search]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_mass_reconcile_ref_deep_search-14.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_account_mass_reconcile_ref_deep_search-14.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-account-mass-reconcile-ref-deep-search/14.0.1.0.1.dev5-14.0.1.0.1.dev6/diff.md --exclude *.pyd
+[2023-04-12 05:11:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:25] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230412] Old Version: [0.0.16.dev20230411]
+[2023-04-12 05:11:25] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/3d/cb/9ae1a917097f20899c8c3ebad0fe70d422c94f4a06742ad92003503ca6af/GANDLF-0.0.16.dev20230412.tar.gz
+[2023-04-12 05:11:25] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-04-12 05:11:25] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230411.tar.gz tmp/GANDLF-0.0.16.dev20230412.tar.gz --markdown 20230412/G/GANDLF/0.0.16.dev20230411-0.0.16.dev20230412/diff.md --exclude *.pyd
+[2023-04-12 05:11:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:25] INFO root fetch - processPackages [beancount-periodic]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-04-12 05:11:25] INFO root fetch - processPackages [beancount-periodic]: Downloading https://files.pythonhosted.org/packages/a8/64/21875bec3e9a6da760f4ff101b3c28b5f1d560702f92b0a97006d13e3776/beancount-periodic-0.1.1.tar.gz
+[2023-04-12 05:11:25] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:25] INFO root fetch - processPackages [tdbug]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-04-12 05:11:26] INFO root fetch - processPackages [tdbug]: executing diffoscope
+[2023-04-12 05:11:26] INFO root fetch - processPackages [tdbug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdbug-1.0.6.tar.gz tmp/tdbug-1.0.7.tar.gz --markdown 20230412/t/tdbug/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-04-12 05:11:26] INFO root fetch - processPackages [beancount-periodic]: Downloading https://files.pythonhosted.org/packages/32/24/25a8a75cd71373771352921a3cda9d47fd215c49d5c07da5df90e7c284e2/beancount-periodic-0.1.2.tar.gz
+[2023-04-12 05:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:26] INFO root fetch - processPackages [beancount-periodic]: executing diffoscope
+[2023-04-12 05:11:26] INFO root fetch - processPackages [beancount-periodic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount-periodic-0.1.1.tar.gz tmp/beancount-periodic-0.1.2.tar.gz --markdown 20230412/b/beancount-periodic/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-04-12 05:11:26] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:27] INFO root fetch - main [MainThread]: success
+[2023-04-12 05:11:27] INFO root fetch - main [MainThread]: Store serial: [17670683]
