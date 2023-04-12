@@ -20904,3 +20904,94 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 19:31:45] INFO root fetch - main [MainThread]: End processing [lager-cli]: success
 [2023-04-12 19:31:49] INFO root fetch - main [MainThread]: End processing [faust-streaming]: success
 [2023-04-12 19:31:49] INFO root fetch - main [MainThread]: Store serial: [17679934]
+[2023-04-12 19:36:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17679934]
+[2023-04-12 19:36:57] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 19:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nheri-simcenter
+[2023-04-12 19:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discminer
+[2023-04-12 19:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MLapp1
+[2023-04-12 19:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotframework-lsp
+[2023-04-12 19:36:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zillion
+[2023-04-12 19:36:57] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:36:57] INFO root fetch - processPackages [discminer]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 19:36:57] INFO root fetch - processPackages [nheri-simcenter]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-04-12 19:36:57] INFO root fetch - processPackages [robotframework-lsp]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-04-12 19:36:57] INFO root fetch - processPackages [zillion]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-04-12 19:36:57] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:36:57] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:36:57] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/ec/d5/dfe182b30532135635d6bdb43f7c20a31bc81711d2ac34b1f7944b6bd8db/discminer-0.1.0.tar.gz
+[2023-04-12 19:36:57] INFO root fetch - processPackages [robotframework-lsp]: Downloading https://files.pythonhosted.org/packages/57/05/5e5f516b1ac708bb25f64be707a8fb87b40da443a8bebf0d8aabdbc43472/robotframework-lsp-1.8.0.tar.gz
+[2023-04-12 19:36:57] INFO root fetch - processPackages [zillion]: Downloading https://files.pythonhosted.org/packages/70/e4/fbba48d88be0af8ba6347b1d4175bf61489031778de3a8cea9a5e47cf8ea/zillion-0.9.7.tar.gz
+[2023-04-12 19:36:57] INFO root fetch - processPackages [nheri-simcenter]: Downloading https://files.pythonhosted.org/packages/6c/72/af54a2363009dbdc17ae0d9fdaab945f8b02194ced8857b590f51bee2168/nheri_simcenter-0.9.7.tar.gz
+[2023-04-12 19:36:58] INFO root fetch - processPackages [nheri-simcenter]: executing diffoscope
+[2023-04-12 19:36:58] INFO root fetch - processPackages [nheri-simcenter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nheri_simcenter-0.9.6.tar.gz tmp/nheri_simcenter-0.9.7.tar.gz --markdown 20230412/n/nheri-simcenter/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-04-12 19:36:58] INFO root fetch - processPackages [discminer]: Downloading https://files.pythonhosted.org/packages/26/b8/d450d64065c787f9d6e57016fc81eb357f893c7120c333ccbf5fb4e2a9cf/discminer-0.1.1.tar.gz
+[2023-04-12 19:36:58] INFO root fetch - processPackages [zillion]: Downloading https://files.pythonhosted.org/packages/a5/c5/79361c96c0be5072f8f841738fd1e08a0bd56290c70b7d70302500993379/zillion-0.9.8.tar.gz
+[2023-04-12 19:36:58] INFO root fetch - processPackages [discminer]: executing diffoscope
+[2023-04-12 19:36:58] INFO root fetch - processPackages [discminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discminer-0.1.0.tar.gz tmp/discminer-0.1.1.tar.gz --markdown 20230412/d/discminer/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 19:36:58] INFO root fetch - processPackages [zillion]: executing diffoscope
+[2023-04-12 19:36:58] INFO root fetch - processPackages [zillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zillion-0.9.7.tar.gz tmp/zillion-0.9.8.tar.gz --markdown 20230412/z/zillion/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-04-12 19:36:58] INFO root fetch - processPackages [robotframework-lsp]: Downloading https://files.pythonhosted.org/packages/98/47/cbaae59fa4e5327f35bed2d27790b39c17be12b282109983d7aa016290af/robotframework-lsp-1.9.0.tar.gz
+[2023-04-12 19:36:58] INFO root fetch - processPackages [robotframework-lsp]: executing diffoscope
+[2023-04-12 19:36:58] INFO root fetch - processPackages [robotframework-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-lsp-1.8.0.tar.gz tmp/robotframework-lsp-1.9.0.tar.gz --markdown 20230412/r/robotframework-lsp/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 19:36:59] INFO root fetch - processPackages [nheri-simcenter]: Start processing: sparseqr
+[2023-04-12 19:36:59] INFO root fetch - main [MainThread]: End processing [nheri-simcenter]: success
+[2023-04-12 19:36:59] INFO root fetch - processPackages [sparseqr]: New version: [1.2.1] Old Version: [1.2]
+[2023-04-12 19:36:59] INFO root fetch - processPackages [sparseqr]: Downloading https://files.pythonhosted.org/packages/8e/18/fd29b392a2b6902fd88e86a04c73a7af15a6f12046cee3a0632be9ef4f32/sparseqr-1.2.tar.gz
+[2023-04-12 19:36:59] INFO root fetch - processPackages [zillion]: Start processing: djlint
+[2023-04-12 19:36:59] INFO root fetch - main [MainThread]: End processing [zillion]: success
+[2023-04-12 19:36:59] INFO root fetch - processPackages [djlint]: New version: [1.9.5] Old Version: [1.9.4]
+[2023-04-12 19:36:59] INFO root fetch - processPackages [discminer]: Start processing: MLapp1
+[2023-04-12 19:36:59] INFO root fetch - main [MainThread]: End processing [discminer]: success
+[2023-04-12 19:36:59] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:36:59] INFO root fetch - processPackages [djlint]: executing diffoscope
+[2023-04-12 19:36:59] INFO root fetch - processPackages [djlint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djlint-1.9.4.tar.gz tmp/djlint-1.9.5.tar.gz --markdown 20230412/d/djlint/1.9.4-1.9.5/diff.md --exclude *.pyd
+[2023-04-12 19:36:59] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:36:59] INFO root fetch - processPackages [sparseqr]: Downloading https://files.pythonhosted.org/packages/bd/57/0d69f46cb38f21f5c5be105db0a0d8ae1fc7bfe494500d830350c25eb0b7/sparseqr-1.2.1.tar.gz
+[2023-04-12 19:36:59] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:36:59] INFO root fetch - processPackages [sparseqr]: executing diffoscope
+[2023-04-12 19:36:59] INFO root fetch - processPackages [sparseqr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparseqr-1.2.tar.gz tmp/sparseqr-1.2.1.tar.gz --markdown 20230412/s/sparseqr/1.2-1.2.1/diff.md --exclude *.pyd
+[2023-04-12 19:36:59] INFO root fetch - processPackages [MLapp1]: Start processing: pyspm
+[2023-04-12 19:36:59] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:37:00] INFO root fetch - processPackages [pyspm]: New version: [0.3.0] Old Version: [0.2.9]
+[2023-04-12 19:37:00] INFO root fetch - processPackages [pyspm]: Downloading https://files.pythonhosted.org/packages/99/58/dabcc0371abf71e0da89d9c2a07523d7c6e5f21247873771f0931814f7a7/pySPM-0.2.9.tar.gz
+[2023-04-12 19:37:00] INFO root fetch - processPackages [pyspm]: Downloading https://files.pythonhosted.org/packages/7c/63/7a45b9e2a7f9094af560f6eeeb4575919458fe4ff91af53f636a88cdbb33/pyspm-0.3.0.tar.gz
+[2023-04-12 19:37:00] INFO root fetch - processPackages [djlint]: Start processing: MLapp1
+[2023-04-12 19:37:00] INFO root fetch - main [MainThread]: End processing [djlint]: success
+[2023-04-12 19:37:00] INFO root fetch - processPackages [MLapp1]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:37:00] INFO root fetch - processPackages [pyspm]: executing diffoscope
+[2023-04-12 19:37:00] INFO root fetch - processPackages [pyspm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySPM-0.2.9.tar.gz tmp/pyspm-0.3.0.tar.gz --markdown 20230412/p/pyspm/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 19:37:00] INFO root fetch - processPackages [MLapp1]: Start processing: mukkebude
+[2023-04-12 19:37:00] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:37:00] WARNING root fetch - processPackages [mukkebude]: Skipping, unable to determine old version
+[2023-04-12 19:37:00] INFO root fetch - processPackages [mukkebude]: Start processing: bhv
+[2023-04-12 19:37:00] INFO root fetch - main [MainThread]: End processing [mukkebude] error
+[2023-04-12 19:37:00] INFO root fetch - processPackages [MLapp1]: executing diffoscope
+[2023-04-12 19:37:00] INFO root fetch - processPackages [MLapp1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MLapp1-0.0.8.tar.gz tmp/MLapp1-0.0.9.tar.gz --markdown 20230412/M/MLapp1/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:37:00] INFO root fetch - processPackages [bhv]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-04-12 19:37:00] INFO root fetch - processPackages [sparseqr]: Start processing: kount-ris-sdk
+[2023-04-12 19:37:00] INFO root fetch - main [MainThread]: End processing [sparseqr]: success
+[2023-04-12 19:37:00] INFO root fetch - processPackages [kount-ris-sdk]: New version: [3.4.2] Old Version: [3.4.1]
+[2023-04-12 19:37:01] INFO root fetch - processPackages [bhv]: Downloading https://files.pythonhosted.org/packages/89/17/1c0534cc1cf567d56e77eac784b71e32db2e8315d2f26dd5c56ab5447e92/bhv-0.2.1.tar.gz
+[2023-04-12 19:37:01] INFO root fetch - processPackages [kount-ris-sdk]: Downloading https://files.pythonhosted.org/packages/9f/a2/479d323c0a5770084c302fdc742dfe2c286a8239e8bce28bc441ad3caafe/kount_ris_sdk-3.4.1.tar.gz
+[2023-04-12 19:37:01] INFO root fetch - processPackages [bhv]: executing diffoscope
+[2023-04-12 19:37:01] INFO root fetch - processPackages [bhv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhv-0.2.0.tar.gz tmp/bhv-0.2.1.tar.gz --markdown 20230412/b/bhv/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-04-12 19:37:01] INFO root fetch - processPackages [kount-ris-sdk]: Downloading https://files.pythonhosted.org/packages/c9/e3/aa504becf1e567072f1b5032baeb8957c0ddeaa39d4d70f5e1b3232c6063/kount_ris_sdk-3.4.2.tar.gz
+[2023-04-12 19:37:01] INFO root fetch - processPackages [kount-ris-sdk]: executing diffoscope
+[2023-04-12 19:37:01] INFO root fetch - processPackages [kount-ris-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kount_ris_sdk-3.4.1.tar.gz tmp/kount_ris_sdk-3.4.2.tar.gz --markdown 20230412/k/kount-ris-sdk/3.4.1-3.4.2/diff.md --exclude *.pyd
+[2023-04-12 19:37:01] INFO root fetch - processPackages [pyspm]: Start processing: simple-hierarchical-transformer
+[2023-04-12 19:37:01] INFO root fetch - main [MainThread]: End processing [pyspm]: success
+[2023-04-12 19:37:01] INFO root fetch - processPackages [simple-hierarchical-transformer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-04-12 19:37:02] INFO root fetch - processPackages [simple-hierarchical-transformer]: executing diffoscope
+[2023-04-12 19:37:02] INFO root fetch - processPackages [simple-hierarchical-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-hierarchical-transformer-0.0.8.tar.gz tmp/simple-hierarchical-transformer-0.0.9.tar.gz --markdown 20230412/s/simple-hierarchical-transformer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 19:37:02] INFO root fetch - processPackages [bhv]: Start processing: deep-diff-patch
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [bhv]: success
+[2023-04-12 19:37:02] WARNING root fetch - processPackages [deep-diff-patch]: Skipping, unable to determine old version
+[2023-04-12 19:37:02] INFO root fetch - processPackages [deep-diff-patch]: Start processing: InstaReq
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [deep-diff-patch] error
+[2023-04-12 19:37:02] WARNING root fetch - processPackages [InstaReq]: Skipping, unable to determine old version
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [InstaReq] error
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [kount-ris-sdk]: success
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [MLapp1]: success
+[2023-04-12 19:37:02] INFO root fetch - main [MainThread]: End processing [simple-hierarchical-transformer]: success
+[2023-04-12 19:37:17] INFO root fetch - main [MainThread]: End processing [robotframework-lsp]: success
+[2023-04-12 19:37:17] INFO root fetch - main [MainThread]: Store serial: [17680016]
