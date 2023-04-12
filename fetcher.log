@@ -6704,3 +6704,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 06:35:23] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:35:26] INFO root fetch - main [MainThread]: success
 [2023-04-12 06:35:26] INFO root fetch - main [MainThread]: Store serial: [17671254]
+[2023-04-12 06:40:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671254]
+[2023-04-12 06:40:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-04-12 06:40:33] INFO root fetch - processPackages [llama-server]: New version: [0.1.0] Old Version: [0.0.1]
+[2023-04-12 06:40:33] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-12 06:40:33] INFO root fetch - processPackages [gpt-readme-reader]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 06:40:33] INFO root fetch - processPackages [langchain-utils]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-04-12 06:40:33] INFO root fetch - processPackages [odoo8-addon-hr-payroll-email-slip]: New version: [8.0.1.0.0.99.dev7] Old Version: [8.0.1.0.0.99.dev6]
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/d4/43/9a67ce64ca014cf553ddd1819d24c21080b4283b63e7f157bfc20d07252a/langchain_utils-0.3.5.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [llama-server]: Downloading https://files.pythonhosted.org/packages/98/2b/d9a64f5bd0e31700f9d8ad54dd87d5bc0080d7593e73ce8074f9cdaf9288/llama-server-0.0.1.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [gpt-readme-reader]: Downloading https://files.pythonhosted.org/packages/74/94/ec17da7309c738eb392e76cbcdb87be51f7da324dd542877396b49cce55f/gpt_readme_reader-0.0.1-py3-none-any.whl
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/d4/43/9a67ce64ca014cf553ddd1819d24c21080b4283b63e7f157bfc20d07252a/langchain_utils-0.3.5.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [odoo8-addon-hr-payroll-email-slip]: Downloading https://files.pythonhosted.org/packages/f3/3a/b5223f7a48681eb1bfdb76cddfaf9638ec2973ef975f16f1a13700867e84/odoo8_addon_hr_payroll_email_slip-8.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-04-12 06:40:34] INFO root fetch - processPackages [llama-server]: Downloading https://files.pythonhosted.org/packages/42/e2/7b4639685461407cac6f5366344d7b3cacfae5b221718206c8657a13ab1f/llama-server-0.1.0.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [gpt-readme-reader]: Downloading https://files.pythonhosted.org/packages/a9/87/a2f22d02b41aa0b16d8bcaa2b07f321f336845b53935a2ed327ce05c29c2/gpt_readme_reader-0.0.2-py3-none-any.whl
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/af/1f/4df9b7f9dd7cf676d81f125dacf1ae47b2c881c2afef6584f76f92c28669/langchain_utils-0.3.6.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: Downloading https://files.pythonhosted.org/packages/af/1f/4df9b7f9dd7cf676d81f125dacf1ae47b2c881c2afef6584f76f92c28669/langchain_utils-0.3.6.tar.gz
+[2023-04-12 06:40:34] INFO root fetch - processPackages [odoo8-addon-hr-payroll-email-slip]: executing diffoscope
+[2023-04-12 06:40:34] INFO root fetch - processPackages [odoo8-addon-hr-payroll-email-slip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_hr_payroll_email_slip-8.0.1.0.0.99.dev6-py2-none-any.whl.zip tmp/odoo8_addon_hr_payroll_email_slip-8.0.1.0.0.99.dev7-py2-none-any.whl.zip --markdown 20230412/o/odoo8-addon-hr-payroll-email-slip/8.0.1.0.0.99.dev6-8.0.1.0.0.99.dev7/diff.md --exclude *.pyd
+[2023-04-12 06:40:34] INFO root fetch - processPackages [llama-server]: executing diffoscope
+[2023-04-12 06:40:34] INFO root fetch - processPackages [llama-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama-server-0.0.1.tar.gz tmp/llama-server-0.1.0.tar.gz --markdown 20230412/l/llama-server/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 06:40:34] INFO root fetch - processPackages [gpt-readme-reader]: executing diffoscope
+[2023-04-12 06:40:34] INFO root fetch - processPackages [gpt-readme-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_readme_reader-0.0.1-py3-none-any.whl.zip tmp/gpt_readme_reader-0.0.2-py3-none-any.whl.zip --markdown 20230412/g/gpt-readme-reader/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.5.tar.gz tmp/langchain_utils-0.3.6.tar.gz --markdown 20230412/l/langchain-utils/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: executing diffoscope
+[2023-04-12 06:40:34] INFO root fetch - processPackages [langchain-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_utils-0.3.5.tar.gz tmp/langchain_utils-0.3.6.tar.gz --markdown 20230412/l/langchain-utils/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:40:35] WARNING root fetch - processPackages [ensf338-final-project-group-26]: Skipping, unable to determine old version
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: error
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:40:35] INFO root fetch - main [MainThread]: Store serial: [17671271]
