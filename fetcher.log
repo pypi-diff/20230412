@@ -15725,3 +15725,90 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:35:12] INFO root fetch - main [MainThread]: End processing [ansible-lint]: success
 [2023-04-12 15:35:19] INFO root fetch - main [MainThread]: End processing [resolwe-bio]: success
 [2023-04-12 15:35:19] INFO root fetch - main [MainThread]: Store serial: [17676789]
+[2023-04-12 15:40:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676789]
+[2023-04-12 15:40:38] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-04-12 15:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-reward
+[2023-04-12 15:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypws
+[2023-04-12 15:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: svdiff-pytorch
+[2023-04-12 15:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: watchtower-browser-testing
+[2023-04-12 15:40:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: intelligraphs
+[2023-04-12 15:40:39] INFO root fetch - processPackages [svdiff-pytorch]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-04-12 15:40:39] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 15:40:39] INFO root fetch - processPackages [image-reward]: New version: [0.94] Old Version: [0.93]
+[2023-04-12 15:40:39] INFO root fetch - processPackages [intelligraphs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 15:40:39] INFO root fetch - processPackages [pypws]: New version: [2.5.9.0] Old Version: [2.5.6.0]
+[2023-04-12 15:40:39] INFO root fetch - processPackages [svdiff-pytorch]: Downloading https://files.pythonhosted.org/packages/76/40/983ccacde12c2e88e6880339d86122cb37d9cfb8b0ff59b5ab375e9c80fa/svdiff-pytorch-0.1.1.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [intelligraphs]: Downloading https://files.pythonhosted.org/packages/30/c7/b5ebf7e12b77bc42d119d0cf7dedcbb809638e97b1a3cba9456dbc0983f6/intelligraphs-0.1.0.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [watchtower-browser-testing]: Downloading https://files.pythonhosted.org/packages/98/e1/1485929190c6ebeb78dd576033cc54bf1786edb0221b9f852c5a77c83f9e/watchtower_browser_testing-0.2.9.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [pypws]: Downloading https://files.pythonhosted.org/packages/ad/31/10de8f808cd6415db500e54dcbe50262216c1db0f8ea1221a20c1d160338/pypws-2.5.6.0.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [image-reward]: Downloading https://files.pythonhosted.org/packages/98/7f/ebef498bbeab722d49210eca1155ae76fc6284b205d9010e16a7d93c5389/image-reward-0.94.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 15:40:39] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 15:40:39] INFO root fetch - processPackages [svdiff-pytorch]: Downloading https://files.pythonhosted.org/packages/b9/56/710a0d73daf169bc6d34276a4f444dd36bf59bd13d43437e9225e9ad8f7c/svdiff-pytorch-0.2.0.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [pypws]: Downloading https://files.pythonhosted.org/packages/1f/7f/686fba1166cff2ed981dc6c9d6b6c454cbcca7fd7fce0f8c0710361143c1/pypws-2.5.9.0.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [intelligraphs]: Downloading https://files.pythonhosted.org/packages/d5/80/3f81dc783e92a84801827d5f591bf1974bce1a4f48f350c1eb227a5e2f18/intelligraphs-0.1.1.tar.gz
+[2023-04-12 15:40:39] INFO root fetch - processPackages [image-reward]: executing diffoscope
+[2023-04-12 15:40:39] INFO root fetch - processPackages [image-reward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image-reward-0.93.tar.gz tmp/image-reward-0.94.tar.gz --markdown 20230412/i/image-reward/0.93-0.94/diff.md --exclude *.pyd
+[2023-04-12 15:40:39] INFO root fetch - processPackages [svdiff-pytorch]: executing diffoscope
+[2023-04-12 15:40:39] INFO root fetch - processPackages [svdiff-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svdiff-pytorch-0.1.1.tar.gz tmp/svdiff-pytorch-0.2.0.tar.gz --markdown 20230412/s/svdiff-pytorch/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 15:40:39] INFO root fetch - processPackages [intelligraphs]: executing diffoscope
+[2023-04-12 15:40:39] INFO root fetch - processPackages [intelligraphs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intelligraphs-0.1.0.tar.gz tmp/intelligraphs-0.1.1.tar.gz --markdown 20230412/i/intelligraphs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 15:40:39] INFO root fetch - processPackages [pypws]: executing diffoscope
+[2023-04-12 15:40:39] INFO root fetch - processPackages [pypws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypws-2.5.6.0.tar.gz tmp/pypws-2.5.9.0.tar.gz --markdown 20230412/p/pypws/2.5.6.0-2.5.9.0/diff.md --exclude *.pyd
+[2023-04-12 15:40:40] INFO root fetch - processPackages [watchtower-browser-testing]: Start processing: mango
+[2023-04-12 15:40:40] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 15:40:40] INFO root fetch - processPackages [mango]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-04-12 15:40:40] INFO root fetch - processPackages [mango]: Downloading https://files.pythonhosted.org/packages/80/56/8011ca5d67e0e679f4c67ed3fa5d63e9fc4334a7b49cdca20cdbb488c00f/mango-0.0.1.tar.gz
+[2023-04-12 15:40:40] INFO root fetch - processPackages [image-reward]: Start processing: kmerator
+[2023-04-12 15:40:40] INFO root fetch - main [MainThread]: End processing [image-reward]: success
+[2023-04-12 15:40:40] INFO root fetch - processPackages [kmerator]: New version: [0.7.3b0] Old Version: [0.7.2b0]
+[2023-04-12 15:40:40] INFO root fetch - processPackages [intelligraphs]: Start processing: ccxt
+[2023-04-12 15:40:40] INFO root fetch - main [MainThread]: End processing [intelligraphs]: success
+[2023-04-12 15:40:40] INFO root fetch - processPackages [ccxt]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-04-12 15:40:41] INFO root fetch - processPackages [kmerator]: Downloading https://files.pythonhosted.org/packages/c5/85/17cabcf559ee8caced89bd8c31caebca9d8c8f60d37f13db3cf4b7860ce9/kmerator-0.7.2b0.tar.gz
+[2023-04-12 15:40:41] INFO root fetch - processPackages [mango]: Downloading https://files.pythonhosted.org/packages/73/08/cc0a7ad8f056717837259ec8b93b4a52d18bfd97f70070fae70fb8e0fb2e/mango-0.0.2.tar.gz
+[2023-04-12 15:40:41] INFO root fetch - processPackages [mango]: executing diffoscope
+[2023-04-12 15:40:41] INFO root fetch - processPackages [mango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mango-0.0.1.tar.gz tmp/mango-0.0.2.tar.gz --markdown 20230412/m/mango/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-04-12 15:40:41] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-04-12 15:40:41] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.8.tar.gz tmp/ccxt-3.0.9.tar.gz --markdown 20230412/c/ccxt/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-04-12 15:40:41] INFO root fetch - processPackages [svdiff-pytorch]: Start processing: VideoPro10
+[2023-04-12 15:40:41] INFO root fetch - main [MainThread]: End processing [svdiff-pytorch]: success
+[2023-04-12 15:40:41] WARNING root fetch - processPackages [VideoPro10]: Skipping, unable to determine old version
+[2023-04-12 15:40:41] INFO root fetch - processPackages [VideoPro10]: Start processing: origen-ai-ecl
+[2023-04-12 15:40:41] INFO root fetch - main [MainThread]: End processing [VideoPro10] error
+[2023-04-12 15:40:41] INFO root fetch - processPackages [origen-ai-ecl]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 15:40:41] INFO root fetch - processPackages [kmerator]: Downloading https://files.pythonhosted.org/packages/84/ba/d216567a37b3cab74a6a48645d95ddca65c0f48250e642703f4b80f27f7e/kmerator-0.7.3b0.tar.gz
+[2023-04-12 15:40:41] INFO root fetch - processPackages [origen-ai-ecl]: Downloading https://files.pythonhosted.org/packages/11/a2/46f254e284b4ddd4e287d9c6f4b3fc1d94382110efcb63a2a82bded02973/origen_ai_ecl-0.1.6.tar.gz
+[2023-04-12 15:40:41] INFO root fetch - processPackages [kmerator]: executing diffoscope
+[2023-04-12 15:40:41] INFO root fetch - processPackages [kmerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kmerator-0.7.2b0.tar.gz tmp/kmerator-0.7.3b0.tar.gz --markdown 20230412/k/kmerator/0.7.2b0-0.7.3b0/diff.md --exclude *.pyd
+[2023-04-12 15:40:41] INFO root fetch - processPackages [origen-ai-ecl]: executing diffoscope
+[2023-04-12 15:40:41] INFO root fetch - processPackages [origen-ai-ecl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origen_ai_ecl-0.1.5.tar.gz tmp/origen_ai_ecl-0.1.6.tar.gz --markdown 20230412/o/origen-ai-ecl/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 15:40:42] INFO root fetch - processPackages [mango]: Start processing: watchtower-browser-testing
+[2023-04-12 15:40:42] INFO root fetch - main [MainThread]: End processing [mango]: success
+[2023-04-12 15:40:42] INFO root fetch - processPackages [pypws]: Start processing: test-polyspace-report2excel
+[2023-04-12 15:40:42] INFO root fetch - main [MainThread]: End processing [pypws]: success
+[2023-04-12 15:40:42] INFO root fetch - processPackages [watchtower-browser-testing]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-04-12 15:40:42] INFO root fetch - processPackages [test-polyspace-report2excel]: New version: [1.0.2] Old Version: [1.0]
+[2023-04-12 15:40:42] INFO root fetch - processPackages [kmerator]: Start processing: web3-checksums
+[2023-04-12 15:40:42] INFO root fetch - main [MainThread]: End processing [kmerator]: success
+[2023-04-12 15:40:42] WARNING root fetch - processPackages [web3-checksums]: Skipping, unable to determine old version
+[2023-04-12 15:40:42] INFO root fetch - processPackages [web3-checksums]: Start processing: pycryptography
+[2023-04-12 15:40:42] INFO root fetch - main [MainThread]: End processing [web3-checksums] error
+[2023-04-12 15:40:42] INFO root fetch - processPackages [watchtower-browser-testing]: executing diffoscope
+[2023-04-12 15:40:42] INFO root fetch - processPackages [watchtower-browser-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/watchtower_browser_testing-0.2.7.tar.gz tmp/watchtower_browser_testing-0.2.9.tar.gz --markdown 20230412/w/watchtower-browser-testing/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-04-12 15:40:42] INFO root fetch - processPackages [test-polyspace-report2excel]: Downloading https://files.pythonhosted.org/packages/32/68/e28317bfd869735eac5ee8f879f57a480269dd8c8f968ae369cb2af61387/test-polyspace-report2excel-1.0.tar.gz
+[2023-04-12 15:40:42] WARNING root fetch - processPackages [pycryptography]: Skipping, unable to determine old version
+[2023-04-12 15:40:42] INFO root fetch - processPackages [pycryptography]: Start processing: steampunk-spotter
+[2023-04-12 15:40:42] INFO root fetch - main [MainThread]: End processing [pycryptography] error
+[2023-04-12 15:40:43] INFO root fetch - processPackages [steampunk-spotter]: New version: [1.2.5rc1] Old Version: [1.2.5a1]
+[2023-04-12 15:40:43] INFO root fetch - processPackages [steampunk-spotter]: executing diffoscope
+[2023-04-12 15:40:43] INFO root fetch - processPackages [steampunk-spotter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steampunk_spotter-1.2.5a1-py3-none-any.whl.zip tmp/steampunk_spotter-1.2.5rc1-py3-none-any.whl.zip --markdown 20230412/s/steampunk-spotter/1.2.5a1-1.2.5rc1/diff.md --exclude *.pyd
+[2023-04-12 15:40:43] INFO root fetch - processPackages [test-polyspace-report2excel]: Downloading https://files.pythonhosted.org/packages/af/d1/76794191612366151fdf289373ae7542def7c0c5c070cfab43f3fff127f0/test-polyspace-report2excel-1.0.2.tar.gz
+[2023-04-12 15:40:43] INFO root fetch - processPackages [test-polyspace-report2excel]: executing diffoscope
+[2023-04-12 15:40:43] INFO root fetch - processPackages [test-polyspace-report2excel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test-polyspace-report2excel-1.0.tar.gz tmp/test-polyspace-report2excel-1.0.2.tar.gz --markdown 20230412/t/test-polyspace-report2excel/1.0-1.0.2/diff.md --exclude *.pyd
+[2023-04-12 15:40:44] INFO root fetch - main [MainThread]: End processing [watchtower-browser-testing]: success
+[2023-04-12 15:40:44] INFO root fetch - main [MainThread]: End processing [steampunk-spotter]: success
+[2023-04-12 15:40:45] INFO root fetch - main [MainThread]: End processing [test-polyspace-report2excel]: success
+[2023-04-12 15:40:47] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-04-12 15:40:47] INFO root fetch - main [MainThread]: End processing [origen-ai-ecl]: success
+[2023-04-12 15:40:47] INFO root fetch - main [MainThread]: Store serial: [17676836]
