@@ -11429,3 +11429,79 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 11:54:28] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:54:33] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:54:33] INFO root fetch - main [MainThread]: Store serial: [17674271]
+[2023-04-12 11:59:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17674271]
+[2023-04-12 11:59:41] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 11:59:41] WARNING root fetch - processPackages [melodymaster]: Skipping, unable to determine old version
+[2023-04-12 11:59:41] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:59:41] WARNING root fetch - processPackages [neuropy-poisson-glm-diss-2]: Skipping, unable to determine old version
+[2023-04-12 11:59:41] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:59:41] INFO root fetch - processPackages [pcl-pangu]: New version: [1.2.5.9] Old Version: [1.2.5.8]
+[2023-04-12 11:59:41] INFO root fetch - processPackages [netbox-plugin-prometheus-sd]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-04-12 11:59:41] INFO root fetch - processPackages [thunno2]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-04-12 11:59:41] INFO root fetch - processPackages [arduino-iot-cloud]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 11:59:41] INFO root fetch - processPackages [tracuni]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 11:59:41] INFO root fetch - processPackages [pcl-pangu]: executing diffoscope
+[2023-04-12 11:59:41] INFO root fetch - processPackages [pcl-pangu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pcl_pangu-1.2.5.8.tar.gz tmp/pcl_pangu-1.2.5.9.tar.gz --markdown 20230412/p/pcl-pangu/1.2.5.8-1.2.5.9/diff.md --exclude *.pyd
+[2023-04-12 11:59:41] INFO root fetch - processPackages [tracuni]: executing diffoscope
+[2023-04-12 11:59:41] INFO root fetch - processPackages [tracuni]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracuni-0.4.8.tar.gz tmp/tracuni-0.4.9.tar.gz --markdown 20230412/t/tracuni/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 11:59:41] INFO root fetch - processPackages [arduino-iot-cloud]: Downloading https://files.pythonhosted.org/packages/9d/04/e8a2e057d22342a4835d8e4e5563fa3cad22c4b7f5f01b0a24716b6bc12a/arduino_iot_cloud-0.0.5.tar.gz
+[2023-04-12 11:59:41] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/d8/aa/35cd05ea31810511b5bf336de1ce62cee52cf5b985374977ff07b08b27d4/thunno2-2.0.2.tar.gz
+[2023-04-12 11:59:41] INFO root fetch - processPackages [netbox-plugin-prometheus-sd]: Downloading https://files.pythonhosted.org/packages/6c/69/74ef5ef5111547a6c5437b2495972b2976756059940de5d507ed5489c449/netbox_plugin_prometheus_sd-0.6.2.tar.gz
+[2023-04-12 11:59:42] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-12 11:59:42] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.1.tar.gz tmp/thunno2-2.0.2.tar.gz --markdown 20230412/t/thunno2/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-04-12 11:59:42] INFO root fetch - processPackages [netbox-plugin-prometheus-sd]: Downloading https://files.pythonhosted.org/packages/62/56/3fef3480177f1e5a92dc93281ce000ff6ea8024eebc9382b81da73fcc2f1/netbox_plugin_prometheus_sd-0.6.3.tar.gz
+[2023-04-12 11:59:42] INFO root fetch - processPackages [arduino-iot-cloud]: Downloading https://files.pythonhosted.org/packages/3f/29/ce5770df958944dcadcf77c926c0a195a0d39293c722321926dc4e3d2250/arduino_iot_cloud-0.0.6.tar.gz
+[2023-04-12 11:59:42] INFO root fetch - processPackages [netbox-plugin-prometheus-sd]: executing diffoscope
+[2023-04-12 11:59:42] INFO root fetch - processPackages [netbox-plugin-prometheus-sd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_plugin_prometheus_sd-0.6.2.tar.gz tmp/netbox_plugin_prometheus_sd-0.6.3.tar.gz --markdown 20230412/n/netbox-plugin-prometheus-sd/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-04-12 11:59:42] INFO root fetch - processPackages [arduino-iot-cloud]: executing diffoscope
+[2023-04-12 11:59:42] INFO root fetch - processPackages [arduino-iot-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arduino_iot_cloud-0.0.5.tar.gz tmp/arduino_iot_cloud-0.0.6.tar.gz --markdown 20230412/a/arduino-iot-cloud/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 11:59:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:43] INFO root fetch - processPackages [pip-licenses]: New version: [4.2.0rc3] Old Version: [4.2.0rc2]
+[2023-04-12 11:59:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:43] INFO root fetch - processPackages [sdkit]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 11:59:43] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:43] INFO root fetch - processPackages [pjplan]: New version: [0.0.7] Old Version: [0.0.2]
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pip-licenses]: Downloading https://files.pythonhosted.org/packages/d6/c3/dd60c64d3e5b3db25839a89476bc76e4bb73204060db9b838d95233f898b/pip-licenses-4.2.0rc3.tar.gz
+[2023-04-12 11:59:44] INFO root fetch - processPackages [sdkit]: executing diffoscope
+[2023-04-12 11:59:44] INFO root fetch - processPackages [sdkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdkit-1.0.8.tar.gz tmp/sdkit-1.0.9.tar.gz --markdown 20230412/s/sdkit/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pjplan]: Downloading https://files.pythonhosted.org/packages/92/12/276ba5821f9ca0767fa3c35d23da8e318c7a8937f86301484fca3cea8ba1/pjplan-0.0.2.tar.gz
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pip-licenses]: executing diffoscope
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pip-licenses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pip-licenses-4.2.0rc2.tar.gz tmp/pip-licenses-4.2.0rc3.tar.gz --markdown 20230412/p/pip-licenses/4.2.0rc2-4.2.0rc3/diff.md --exclude *.pyd
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pjplan]: Downloading https://files.pythonhosted.org/packages/f2/6d/e9067ef002447c94c7f0f8e840a77310fa9f278c1cae1b08e27ede3c08d4/pjplan-0.0.7.tar.gz
+[2023-04-12 11:59:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:44] INFO root fetch - processPackages [TSMasterAPI]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pjplan]: executing diffoscope
+[2023-04-12 11:59:44] INFO root fetch - processPackages [pjplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pjplan-0.0.2.tar.gz tmp/pjplan-0.0.7.tar.gz --markdown 20230412/p/pjplan/0.0.2-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 11:59:44] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:44] INFO root fetch - processPackages [TSMasterAPI]: Downloading https://files.pythonhosted.org/packages/5d/71/1aa181032ceb414478238989226fd7f0360ea9d2cc5c9ff6b76261de1b55/TSMasterAPI-1.2.3.tar.gz
+[2023-04-12 11:59:44] INFO root fetch - processPackages [appwrite]: New version: [2.0.0] Old Version: [1.2.0]
+[2023-04-12 11:59:44] INFO root fetch - processPackages [TSMasterAPI]: executing diffoscope
+[2023-04-12 11:59:44] INFO root fetch - processPackages [TSMasterAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TSMasterAPI-1.2.2.tar.gz tmp/TSMasterAPI-1.2.3.tar.gz --markdown 20230412/T/TSMasterAPI/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-12 11:59:44] INFO root fetch - processPackages [appwrite]: Downloading https://files.pythonhosted.org/packages/a5/18/b01a119fd18e6c2df8594e32bd552110c314aeb8b88207c486904f362c26/appwrite-1.2.0.tar.gz
+[2023-04-12 11:59:45] INFO root fetch - processPackages [appwrite]: Downloading https://files.pythonhosted.org/packages/da/6d/f31b9d9599c3db9cb98b7a292fd3dac133d0a1fb4ef25722f0be23804e50/appwrite-2.0.0.tar.gz
+[2023-04-12 11:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:45] INFO root fetch - processPackages [nvosscript]: New version: [1.2.5] Old Version: [1.2.4]
+[2023-04-12 11:59:45] INFO root fetch - processPackages [appwrite]: executing diffoscope
+[2023-04-12 11:59:45] INFO root fetch - processPackages [appwrite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appwrite-1.2.0.tar.gz tmp/appwrite-2.0.0.tar.gz --markdown 20230412/a/appwrite/1.2.0-2.0.0/diff.md --exclude *.pyd
+[2023-04-12 11:59:45] INFO root fetch - processPackages [nvosscript]: Downloading https://files.pythonhosted.org/packages/63/d0/832dbb5579dcfddbe65b8cfc79995d7d290c9e7a7212f3cd8cfdbaf791e6/nvosscript-1.2.5.tar.gz
+[2023-04-12 11:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:45] INFO root fetch - processPackages [multiPrime]: New version: [2.3.7] Old Version: [2.3.6]
+[2023-04-12 11:59:45] INFO root fetch - processPackages [nvosscript]: executing diffoscope
+[2023-04-12 11:59:45] INFO root fetch - processPackages [nvosscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvosscript-1.2.4.tar.gz tmp/nvosscript-1.2.5.tar.gz --markdown 20230412/n/nvosscript/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2023-04-12 11:59:45] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:45] INFO root fetch - processPackages [arkindex-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 11:59:45] INFO root fetch - processPackages [multiPrime]: Downloading https://files.pythonhosted.org/packages/78/fd/5d4dc9d83479556962d2b6c04678666dcc153190b412c45a3940b4cf1ed8/multiPrime-2.3.7.tar.gz
+[2023-04-12 11:59:45] INFO root fetch - processPackages [arkindex-client]: Downloading https://files.pythonhosted.org/packages/54/55/3b6c39936bbdf68d6e2598f589c2f2b0602730983f9a787cbf95e1fa3054/arkindex-client-1.0.8.tar.gz
+[2023-04-12 11:59:45] INFO root fetch - processPackages [multiPrime]: executing diffoscope
+[2023-04-12 11:59:45] INFO root fetch - processPackages [multiPrime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiPrime-2.3.6.tar.gz tmp/multiPrime-2.3.7.tar.gz --markdown 20230412/m/multiPrime/2.3.6-2.3.7/diff.md --exclude *.pyd
+[2023-04-12 11:59:46] INFO root fetch - processPackages [arkindex-client]: Downloading https://files.pythonhosted.org/packages/a7/21/94e7f4fd4188705cb2944a1329af41703f803f36f836ab8a80bed8a9fbba/arkindex-client-1.0.9.tar.gz
+[2023-04-12 11:59:46] INFO root fetch - processPackages [arkindex-client]: executing diffoscope
+[2023-04-12 11:59:46] INFO root fetch - processPackages [arkindex-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkindex-client-1.0.8.tar.gz tmp/arkindex-client-1.0.9.tar.gz --markdown 20230412/a/arkindex-client/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 11:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:46] WARNING root fetch - processPackages [melodymaster]: Skipping, unable to determine old version
+[2023-04-12 11:59:46] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:46] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:47] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:48] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:59:48] INFO root fetch - main [MainThread]: Store serial: [17674323]
