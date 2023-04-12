@@ -6434,3 +6434,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:58:57] INFO root fetch - main [MainThread]: success
 [2023-04-12 05:58:57] INFO root fetch - main [MainThread]: Store serial: [17671102]
+[2023-04-12 06:04:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17671102]
+[2023-04-12 06:04:05] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1.1]
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1.1]
+[2023-04-12 06:04:05] INFO root fetch - processPackages [the-money-converter]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-04-12 06:04:05] INFO root fetch - processPackages [cchenutils]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-04-12 06:04:05] INFO root fetch - processPackages [briefcase]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/c4/e8/98d311f02afc87bf7eff96f119fd608a53178fbdcca964ed0f2447a94cd8/odoo_addon_crm_lead_code-16.0.1.0.1.2-py3-none-any.whl
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/c4/e8/98d311f02afc87bf7eff96f119fd608a53178fbdcca964ed0f2447a94cd8/odoo_addon_crm_lead_code-16.0.1.0.1.2-py3-none-any.whl
+[2023-04-12 06:04:05] INFO root fetch - processPackages [the-money-converter]: Downloading https://files.pythonhosted.org/packages/1f/23/5c6c553e362c8ac2d617777240fec1324a67baf11e3c5e08d1fcf127a8ca/the-money-converter-1.0.0.tar.gz
+[2023-04-12 06:04:05] INFO root fetch - processPackages [briefcase]: Downloading https://files.pythonhosted.org/packages/b4/17/9c7079213d88de959b95a84562125d04df95c732d8a0bc6134355539536e/briefcase-0.3.8.tar.gz
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: executing diffoscope
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_crm_lead_code-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_crm_lead_code-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-crm-lead-code/16.0.1.0.1.1-16.0.1.0.1.2/diff.md --exclude *.pyd
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: executing diffoscope
+[2023-04-12 06:04:05] INFO root fetch - processPackages [odoo-addon-crm-lead-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_crm_lead_code-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_crm_lead_code-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20230412/o/odoo-addon-crm-lead-code/16.0.1.0.1.1-16.0.1.0.1.2/diff.md --exclude *.pyd
+[2023-04-12 06:04:05] INFO root fetch - processPackages [cchenutils]: executing diffoscope
+[2023-04-12 06:04:05] INFO root fetch - processPackages [cchenutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cchenutils-0.5.8-py3-none-any.whl.zip tmp/cchenutils-0.5.9-py3-none-any.whl.zip --markdown 20230412/c/cchenutils/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-04-12 06:04:05] INFO root fetch - processPackages [the-money-converter]: Downloading https://files.pythonhosted.org/packages/ea/2b/10764e0f41aee6eeb30db2f6774ad8b625fe8736f65e35a11bf3517aa814/the-money-converter-1.0.1.tar.gz
+[2023-04-12 06:04:05] INFO root fetch - processPackages [the-money-converter]: executing diffoscope
+[2023-04-12 06:04:05] INFO root fetch - processPackages [the-money-converter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/the-money-converter-1.0.0.tar.gz tmp/the-money-converter-1.0.1.tar.gz --markdown 20230412/t/the-money-converter/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-04-12 06:04:06] INFO root fetch - processPackages [briefcase]: Downloading https://files.pythonhosted.org/packages/02/90/03029de48fcf59ea5a6898f1b8663516c6dfed92d1bf73a375471af255dd/briefcase-0.3.9.tar.gz
+[2023-04-12 06:04:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:06] INFO root fetch - processPackages [odoo14-addon-crm-lead-code]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2023-04-12 06:04:06] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:06] INFO root fetch - processPackages [briefcase]: executing diffoscope
+[2023-04-12 06:04:06] INFO root fetch - processPackages [briefcase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/briefcase-0.3.8.tar.gz tmp/briefcase-0.3.9.tar.gz --markdown 20230412/b/briefcase/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 06:04:06] INFO root fetch - processPackages [odoo14-addon-crm-phonecall]: New version: [14.0.1.1.1.dev2] Old Version: [14.0.1.1.1.dev1]
+[2023-04-12 06:04:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:07] INFO root fetch - processPackages [mstuff]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/ba/eb/91ac8f4bcd139a0c4751f5381ae2777483e52d29db4e4316ab1a3903e3d2/odoo14_addon_crm_lead_code-14.0.1.0.1.dev8-py3-none-any.whl
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/21/d4/0043474bc5f228690df1bc461210da7440dd61cb18531a5d724689d5b612/odoo14_addon_crm_phonecall-14.0.1.1.1.dev1-py3-none-any.whl
+[2023-04-12 06:04:07] INFO root fetch - processPackages [mstuff]: Downloading https://files.pythonhosted.org/packages/3b/b4/789a48f932edf14303c009d10bf9587dc5e41752453a3ff04f05681fe0e7/mstuff-0.7.6.tar.gz
+[2023-04-12 06:04:07] INFO root fetch - processPackages [mstuff]: executing diffoscope
+[2023-04-12 06:04:07] INFO root fetch - processPackages [mstuff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mstuff-0.7.5.tar.gz tmp/mstuff-0.7.6.tar.gz --markdown 20230412/m/mstuff/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-lead-code]: Downloading https://files.pythonhosted.org/packages/7e/fc/2e4d9aca106c5c7b1e1eab3fc973cf2de8ef4e1efabb72200dcb355f0ecb/odoo14_addon_crm_lead_code-14.0.1.0.1.dev9-py3-none-any.whl
+[2023-04-12 06:04:07] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:07] INFO root fetch - processPackages [oexp]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-lead-code]: executing diffoscope
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-lead-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_crm_lead_code-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_crm_lead_code-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-crm-lead-code/14.0.1.0.1.dev8-14.0.1.0.1.dev9/diff.md --exclude *.pyd
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-phonecall]: Downloading https://files.pythonhosted.org/packages/cf/2f/905c1921d6435235c2665e4968ab545bf1f9a7824594f7ad13bcc5fd8a32/odoo14_addon_crm_phonecall-14.0.1.1.1.dev2-py3-none-any.whl
+[2023-04-12 06:04:07] INFO root fetch - processPackages [oexp]: Downloading https://files.pythonhosted.org/packages/0c/f6/f1bb2aadec33d52e7b449c29ba1d5e9f38ef345a7831765cb2f89366d73a/oexp-0.2.2.tar.gz
+[2023-04-12 06:04:07] INFO root fetch - processPackages [oexp]: executing diffoscope
+[2023-04-12 06:04:07] INFO root fetch - processPackages [oexp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oexp-0.2.1.tar.gz tmp/oexp-0.2.2.tar.gz --markdown 20230412/o/oexp/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-phonecall]: executing diffoscope
+[2023-04-12 06:04:07] INFO root fetch - processPackages [odoo14-addon-crm-phonecall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_crm_phonecall-14.0.1.1.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_crm_phonecall-14.0.1.1.1.dev2-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-crm-phonecall/14.0.1.1.1.dev1-14.0.1.1.1.dev2/diff.md --exclude *.pyd
+[2023-04-12 06:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:08] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:09] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:13] INFO root fetch - main [MainThread]: success
+[2023-04-12 06:04:13] INFO root fetch - main [MainThread]: Store serial: [17671125]
