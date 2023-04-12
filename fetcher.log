@@ -16712,3 +16712,137 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 16:25:04] INFO root fetch - main [MainThread]: End processing [pandacolumns]: success
 [2023-04-12 16:25:05] INFO root fetch - main [MainThread]: End processing [edgartools]: success
 [2023-04-12 16:25:05] INFO root fetch - main [MainThread]: Store serial: [17677359]
+[2023-04-12 16:30:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17677359]
+[2023-04-12 16:30:13] INFO root fetch - main [MainThread]: Found 23 changed packages
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ms-salesforce-to-bigquery
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kedro-prefect-oliver
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bx-django-utils
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: happydomain
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ShellcodeTester
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 16:30:13] INFO root fetch - processPackages [bx-django-utils]: New version: [9] Old Version: [8]
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ShellcodeTester]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-04-12 16:30:13] WARNING root fetch - processPackages [happydomain]: Skipping, unable to determine old version
+[2023-04-12 16:30:13] INFO root fetch - processPackages [happydomain]: Start processing: qtpy-frameless-window
+[2023-04-12 16:30:13] INFO root fetch - main [MainThread]: End processing [happydomain] error
+[2023-04-12 16:30:13] INFO root fetch - processPackages [kedro-prefect-oliver]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-04-12 16:30:13] INFO root fetch - processPackages [qtpy-frameless-window]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/a3/cd/aa603a8e2506243134a0be7f8609ce5a6fac915b4ce53a6da6ef6476728b/ms_salesforce_to_bigquery-0.0.6.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [kedro-prefect-oliver]: Downloading https://files.pythonhosted.org/packages/9f/95/2e012373cd1522b03187ec5258ee11dc52f21d9812cd81ba018789f63090/kedro-prefect-oliver-0.1.2.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [bx-django-utils]: Downloading https://files.pythonhosted.org/packages/1e/0c/ff3d5a5c26c498b48bf149a2a08540a5812c585c9bfb59f4e303198aa123/bx_django_utils-8.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ShellcodeTester]: Downloading https://files.pythonhosted.org/packages/f3/9e/0671a65bde44a820da3ab9d49f9745b416dbdadc2d1ae016775c72a85297/ShellcodeTester-0.2.3.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [qtpy-frameless-window]: Downloading https://files.pythonhosted.org/packages/09/0b/ea23ae9ad2721d36cac06472e4a77283e122f04e8a76111085e7e7f6afba/QtPy-Frameless-Window-0.0.7.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ShellcodeTester]: executing diffoscope
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ShellcodeTester]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellcodeTester-0.2.2.tar.gz tmp/ShellcodeTester-0.2.3.tar.gz --markdown 20230412/S/ShellcodeTester/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-04-12 16:30:13] INFO root fetch - processPackages [kedro-prefect-oliver]: Downloading https://files.pythonhosted.org/packages/c6/2a/6f6e81a91848dd3fe7f4eeac59cb1fa14ff630b3c46071cd42456c16ef2f/kedro-prefect-oliver-0.1.3.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Downloading https://files.pythonhosted.org/packages/da/c4/7bc025f8ba0105f5523b3e406b36938ce07e0534f386a12130200cfa5b41/ms_salesforce_to_bigquery-0.0.7.tar.gz
+[2023-04-12 16:30:13] INFO root fetch - processPackages [qtpy-frameless-window]: executing diffoscope
+[2023-04-12 16:30:13] INFO root fetch - processPackages [qtpy-frameless-window]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QtPy-Frameless-Window-0.0.6.tar.gz tmp/QtPy-Frameless-Window-0.0.7.tar.gz --markdown 20230412/q/qtpy-frameless-window/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 16:30:13] INFO root fetch - processPackages [kedro-prefect-oliver]: executing diffoscope
+[2023-04-12 16:30:13] INFO root fetch - processPackages [kedro-prefect-oliver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kedro-prefect-oliver-0.1.2.tar.gz tmp/kedro-prefect-oliver-0.1.3.tar.gz --markdown 20230412/k/kedro-prefect-oliver/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: executing diffoscope
+[2023-04-12 16:30:13] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ms_salesforce_to_bigquery-0.0.6.tar.gz tmp/ms_salesforce_to_bigquery-0.0.7.tar.gz --markdown 20230412/m/ms-salesforce-to-bigquery/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 16:30:13] INFO root fetch - processPackages [bx-django-utils]: Downloading https://files.pythonhosted.org/packages/2b/63/3e7d67b2f7c3cbfbf0e086e97103b8d3e82088f05b5c20e488922c2fe0f7/bx_django_utils-9.tar.gz
+[2023-04-12 16:30:14] INFO root fetch - processPackages [bx-django-utils]: executing diffoscope
+[2023-04-12 16:30:14] INFO root fetch - processPackages [bx-django-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bx_django_utils-8.tar.gz tmp/bx_django_utils-9.tar.gz --markdown 20230412/b/bx-django-utils/8-9/diff.md --exclude *.pyd
+[2023-04-12 16:30:14] INFO root fetch - processPackages [kedro-prefect-oliver]: Start processing: mlserver-huggingface
+[2023-04-12 16:30:14] INFO root fetch - main [MainThread]: End processing [kedro-prefect-oliver]: success
+[2023-04-12 16:30:14] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:14] INFO root fetch - processPackages [qtpy-frameless-window]: Start processing: mlserver-mlflow
+[2023-04-12 16:30:14] INFO root fetch - main [MainThread]: End processing [qtpy-frameless-window]: success
+[2023-04-12 16:30:14] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc1.tar.gz tmp/mlserver-huggingface-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-huggingface/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:15] INFO root fetch - processPackages [ms-salesforce-to-bigquery]: Start processing: mlserver-alibi-detect
+[2023-04-12 16:30:15] INFO root fetch - main [MainThread]: End processing [ms-salesforce-to-bigquery]: success
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc1.tar.gz tmp/mlserver-mlflow-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mlflow/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc1.tar.gz tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-detect/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:15] INFO root fetch - processPackages [ShellcodeTester]: Start processing: mlserver-alibi-explain
+[2023-04-12 16:30:15] INFO root fetch - main [MainThread]: End processing [ShellcodeTester]: success
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc1.tar.gz tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-explain/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:15] INFO root fetch - processPackages [bx-django-utils]: Start processing: mlserver-sklearn
+[2023-04-12 16:30:15] INFO root fetch - main [MainThread]: End processing [bx-django-utils]: success
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-12 16:30:15] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc1.tar.gz tmp/mlserver-sklearn-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-sklearn/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: mlserver-xgboost
+[2023-04-12 16:30:16] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-alibi-detect]: Start processing: mlserver-mllib
+[2023-04-12 16:30:16] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc1.tar.gz tmp/mlserver-xgboost-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-xgboost/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-huggingface]: Start processing: mlserver-lightgbm
+[2023-04-12 16:30:16] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: optim3d
+[2023-04-12 16:30:16] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-12 16:30:16] INFO root fetch - processPackages [optim3d]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-12 16:30:16] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc1.tar.gz tmp/mlserver-lightgbm-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-lightgbm/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 16:30:16] INFO root fetch - processPackages [optim3d]: Downloading https://files.pythonhosted.org/packages/5f/93/1d908433eb5a3caed272ef5141d40416b6a548c6900b7e75ec8d3ed2f696/optim3d-0.2.4.tar.gz
+[2023-04-12 16:30:17] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: certora-cli-alpha-master
+[2023-04-12 16:30:17] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-12 16:30:17] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.14.31.929454] Old Version: [20230412.13.52.947400]
+[2023-04-12 16:30:17] INFO root fetch - processPackages [optim3d]: executing diffoscope
+[2023-04-12 16:30:17] INFO root fetch - processPackages [optim3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optim3d-0.2.3.tar.gz tmp/optim3d-0.2.4.tar.gz --markdown 20230412/o/optim3d/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-04-12 16:30:17] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/35/b6/91f95862158548dd498ec5a70a915806a98a44966067e81581e736332f61/certora-cli-alpha-master-20230412.13.52.947400.tar.gz
+[2023-04-12 16:30:17] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: data-snack
+[2023-04-12 16:30:17] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-12 16:30:17] INFO root fetch - processPackages [data-snack]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-04-12 16:30:17] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28057907>=10485760
+[2023-04-12 16:30:17] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: YAMLIndexer
+[2023-04-12 16:30:17] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-12 16:30:17] INFO root fetch - processPackages [mlserver-mllib]: Start processing: terra-ai-datasets
+[2023-04-12 16:30:17] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-12 16:30:17] INFO root fetch - processPackages [YAMLIndexer]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-04-12 16:30:17] INFO root fetch - processPackages [terra-ai-datasets]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-04-12 16:30:17] INFO root fetch - processPackages [data-snack]: Downloading https://files.pythonhosted.org/packages/ae/eb/fe41a5e1d7354b54a029407db0883419d15428039d76a335a23af18c3d6f/data_snack-0.3.0.tar.gz
+[2023-04-12 16:30:17] INFO root fetch - processPackages [YAMLIndexer]: Downloading https://files.pythonhosted.org/packages/b5/c3/2b509575de9a1f3bddd12bdd621f0b19d28fccc7acc36bdd62d74f23b8f7/YAMLIndexer-0.1.0.tar.gz
+[2023-04-12 16:30:17] INFO root fetch - processPackages [data-snack]: executing diffoscope
+[2023-04-12 16:30:17] INFO root fetch - processPackages [data-snack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_snack-0.2.1.tar.gz tmp/data_snack-0.3.0.tar.gz --markdown 20230412/d/data-snack/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-04-12 16:30:17] INFO root fetch - processPackages [mlserver-lightgbm]: Start processing: bodo-jupyterlab
+[2023-04-12 16:30:17] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-12 16:30:17] INFO root fetch - processPackages [bodo-jupyterlab]: New version: [1.9.0] Old Version: [1.7.0]
+[2023-04-12 16:30:17] INFO root fetch - processPackages [terra-ai-datasets]: Downloading https://files.pythonhosted.org/packages/97/da/c17e15a9e8b429abb64a60c56b6688655a92e08f66ba45e650e4d9c987dd/terra_ai_datasets-1.1.2.tar.gz
+[2023-04-12 16:30:17] INFO root fetch - processPackages [YAMLIndexer]: Downloading https://files.pythonhosted.org/packages/e9/5d/12130c25c0020098cb6b7fa94782e70fb29a6c03b9d1996fa3137d8ce41d/YAMLIndexer-0.1.1.tar.gz
+[2023-04-12 16:30:18] INFO root fetch - processPackages [bodo-jupyterlab]: Downloading https://files.pythonhosted.org/packages/65/ab/d7beb49509be0e9bcdc9bcb95c9886fc66c89a4d04dc4a4676d687e47865/bodo_jupyterlab-1.7.0.tar.gz
+[2023-04-12 16:30:18] INFO root fetch - processPackages [terra-ai-datasets]: executing diffoscope
+[2023-04-12 16:30:18] INFO root fetch - processPackages [terra-ai-datasets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terra_ai_datasets-1.1.1.tar.gz tmp/terra_ai_datasets-1.1.2.tar.gz --markdown 20230412/t/terra-ai-datasets/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-04-12 16:30:18] INFO root fetch - processPackages [optim3d]: Start processing: chatgpt-proxy
+[2023-04-12 16:30:18] INFO root fetch - main [MainThread]: End processing [optim3d]: success
+[2023-04-12 16:30:18] INFO root fetch - processPackages [YAMLIndexer]: executing diffoscope
+[2023-04-12 16:30:18] INFO root fetch - processPackages [YAMLIndexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/YAMLIndexer-0.1.0.tar.gz tmp/YAMLIndexer-0.1.1.tar.gz --markdown 20230412/Y/YAMLIndexer/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-04-12 16:30:18] INFO root fetch - processPackages [chatgpt-proxy]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-04-12 16:30:18] INFO root fetch - processPackages [bodo-jupyterlab]: Downloading https://files.pythonhosted.org/packages/98/ee/47322aaf8a741ff7fde85fbfc36fd2bdcb38dfa17ad67d0db4b765de6b85/bodo_jupyterlab-1.9.0.tar.gz
+[2023-04-12 16:30:18] INFO root fetch - processPackages [chatgpt-proxy]: Downloading https://files.pythonhosted.org/packages/8f/45/75bbe0b01046bc09047007c057829c85f7b25699e31f77ec0b99051df4dd/chatgpt-proxy-0.1.0.tar.gz
+[2023-04-12 16:30:18] INFO root fetch - processPackages [bodo-jupyterlab]: executing diffoscope
+[2023-04-12 16:30:18] INFO root fetch - processPackages [bodo-jupyterlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bodo_jupyterlab-1.7.0.tar.gz tmp/bodo_jupyterlab-1.9.0.tar.gz --markdown 20230412/b/bodo-jupyterlab/1.7.0-1.9.0/diff.md --exclude *.pyd
+[2023-04-12 16:30:18] INFO root fetch - processPackages [chatgpt-proxy]: executing diffoscope
+[2023-04-12 16:30:18] INFO root fetch - processPackages [chatgpt-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatgpt-proxy-0.0.4.tar.gz tmp/chatgpt-proxy-0.1.0.tar.gz --markdown 20230412/c/chatgpt-proxy/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-04-12 16:30:19] INFO root fetch - processPackages [terra-ai-datasets]: Start processing: pandacolumns
+[2023-04-12 16:30:19] INFO root fetch - main [MainThread]: End processing [terra-ai-datasets]: success
+[2023-04-12 16:30:19] INFO root fetch - processPackages [data-snack]: Start processing: triqler
+[2023-04-12 16:30:19] INFO root fetch - main [MainThread]: End processing [data-snack]: success
+[2023-04-12 16:30:19] INFO root fetch - processPackages [pandacolumns]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-04-12 16:30:19] INFO root fetch - main [MainThread]: End processing [YAMLIndexer]: success
+[2023-04-12 16:30:19] INFO root fetch - processPackages [pandacolumns]: executing diffoscope
+[2023-04-12 16:30:19] INFO root fetch - processPackages [pandacolumns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandacolumns-0.2.5.tar.gz tmp/pandacolumns-0.2.6.tar.gz --markdown 20230412/p/pandacolumns/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-04-12 16:30:19] INFO root fetch - processPackages [triqler]: New version: [0.7.0] Old Version: [0.6.4]
+[2023-04-12 16:30:19] INFO root fetch - processPackages [triqler]: Downloading https://files.pythonhosted.org/packages/02/b1/5b909b4b4ae7509cf286ef28dbdcb67479a2daa022e13444ef29ca0be35f/triqler-0.6.4-py3-none-any.whl
+[2023-04-12 16:30:19] INFO root fetch - processPackages [triqler]: Downloading https://files.pythonhosted.org/packages/76/d3/ce9b20976a88ae8d311d89dbd8a159965f700f72f6063ddbc5f559c5e815/triqler-0.7.0-py3-none-any.whl
+[2023-04-12 16:30:19] INFO root fetch - main [MainThread]: End processing [chatgpt-proxy]: success
+[2023-04-12 16:30:20] INFO root fetch - processPackages [triqler]: executing diffoscope
+[2023-04-12 16:30:20] INFO root fetch - processPackages [triqler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/triqler-0.6.4-py3-none-any.whl.zip tmp/triqler-0.7.0-py3-none-any.whl.zip --markdown 20230412/t/triqler/0.6.4-0.7.0/diff.md --exclude *.pyd
+[2023-04-12 16:30:20] INFO root fetch - main [MainThread]: End processing [pandacolumns]: success
+[2023-04-12 16:30:21] INFO root fetch - main [MainThread]: End processing [triqler]: success
+[2023-04-12 16:30:27] INFO root fetch - main [MainThread]: End processing [bodo-jupyterlab]: success
+[2023-04-12 16:30:27] INFO root fetch - main [MainThread]: Store serial: [17677423]
