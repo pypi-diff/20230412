@@ -4705,3 +4705,33 @@
 [2023-04-12 03:40:59] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:41:01] INFO root fetch - main [MainThread]: success
 [2023-04-12 03:41:01] INFO root fetch - main [MainThread]: Store serial: [17670130]
+[2023-04-12 03:46:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17670130]
+[2023-04-12 03:46:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-04-12 03:46:09] INFO root fetch - processPackages [EXOSIMS]: New version: [3.1.0] Old Version: [3.0.4]
+[2023-04-12 03:46:09] INFO root fetch - processPackages [astronomica]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-04-12 03:46:09] INFO root fetch - processPackages [agml]: New version: [0.4.7] Old Version: [0.4.6]
+[2023-04-12 03:46:09] INFO root fetch - processPackages [dag-factory]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-04-12 03:46:09] INFO root fetch - processPackages [xj-common]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-04-12 03:46:09] INFO root fetch - processPackages [EXOSIMS]: Downloading https://files.pythonhosted.org/packages/f2/94/7a5e7fb63da9d90385969c8cea43cbfdabfce0044816c15050e28c45af85/EXOSIMS-3.0.4.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [astronomica]: Downloading https://files.pythonhosted.org/packages/75/0b/2cbab2ed78fa581eb79708378267c0452bf7ea116f082cde582134d6c0ec/astronomica-0.0.7.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [agml]: Downloading https://files.pythonhosted.org/packages/52/45/0371131c9eb30fa8d64a955a54a4f6bf5897d25c6eeae77a4f62a359a79a/agml-0.4.6.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [xj-common]: Downloading https://files.pythonhosted.org/packages/b3/52/f57e547bfff3498ef241412dab5c76a22d267cd4d6fd77052d8fd2905d8a/xj_common-1.0.8.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [dag-factory]: Downloading https://files.pythonhosted.org/packages/28/b9/933843bdde84c696d53d36a98d71e6698a890c0b9456aa9c23e9954d9558/dag-factory-0.9.0.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [astronomica]: executing diffoscope
+[2023-04-12 03:46:09] INFO root fetch - processPackages [astronomica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astronomica-0.0.6.tar.gz tmp/astronomica-0.0.7.tar.gz --markdown 20230412/a/astronomica/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-04-12 03:46:09] INFO root fetch - processPackages [agml]: Downloading https://files.pythonhosted.org/packages/4c/2f/221130a32962942de7a1b79c8c24e0992713a96ce0038076de709cad79fd/agml-0.4.7.tar.gz
+[2023-04-12 03:46:09] INFO root fetch - processPackages [agml]: executing diffoscope
+[2023-04-12 03:46:09] INFO root fetch - processPackages [agml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agml-0.4.6.tar.gz tmp/agml-0.4.7.tar.gz --markdown 20230412/a/agml/0.4.6-0.4.7/diff.md --exclude *.pyd
+[2023-04-12 03:46:10] WARNING root fetch - processPackages [EXOSIMS]: Skipping package: exceeds size limit 17579840>=10485760
+[2023-04-12 03:46:10] INFO root fetch - main [MainThread]: error
+[2023-04-12 03:46:10] INFO root fetch - processPackages [xj-common]: Downloading https://files.pythonhosted.org/packages/e7/02/3b3bbfc48d247cf8d477729491ec2d1f4c2947a9f2c01c948da7088586f5/xj_common-1.0.9.tar.gz
+[2023-04-12 03:46:10] INFO root fetch - processPackages [dag-factory]: Downloading https://files.pythonhosted.org/packages/42/85/a350ac7ecf11f72b03deae9696465bc85e4babb046ec3e8ba8fbdf7385b3/dag-factory-0.9.1.tar.gz
+[2023-04-12 03:46:10] INFO root fetch - processPackages [xj-common]: executing diffoscope
+[2023-04-12 03:46:10] INFO root fetch - processPackages [xj-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_common-1.0.8.tar.gz tmp/xj_common-1.0.9.tar.gz --markdown 20230412/x/xj-common/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-04-12 03:46:10] INFO root fetch - processPackages [dag-factory]: executing diffoscope
+[2023-04-12 03:46:10] INFO root fetch - processPackages [dag-factory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dag-factory-0.9.0.tar.gz tmp/dag-factory-0.9.1.tar.gz --markdown 20230412/d/dag-factory/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-04-12 03:46:10] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:46:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:46:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:46:11] INFO root fetch - main [MainThread]: success
+[2023-04-12 03:46:11] INFO root fetch - main [MainThread]: Store serial: [17670150]
