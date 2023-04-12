@@ -10718,3 +10718,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-04-12 11:17:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:17:09] INFO root fetch - main [MainThread]: success
 [2023-04-12 11:17:09] INFO root fetch - main [MainThread]: Store serial: [17673867]
+[2023-04-12 11:22:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17673867]
+[2023-04-12 11:22:16] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-04-12 11:22:16] INFO root fetch - processPackages [cluster-experiments]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-04-12 11:22:16] INFO root fetch - processPackages [exodusutils]: New version: [0.3.9] Old Version: [0.3.7]
+[2023-04-12 11:22:16] INFO root fetch - processPackages [load-atoms]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-04-12 11:22:16] INFO root fetch - processPackages [qontract-reconcile]: New version: [0.9.1rc99] Old Version: [0.9.1rc98]
+[2023-04-12 11:22:16] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-04-12 11:22:17] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/fc/07/f5600c625a7c81c48b1d2e33f61660533e5ef8def5cfa2832e66dc681236/cluster_experiments-0.6.0.tar.gz
+[2023-04-12 11:22:17] INFO root fetch - processPackages [load-atoms]: Downloading https://files.pythonhosted.org/packages/7f/bb/3f0cda8704c32a992ded6aa51737b76926c8ca5f61db8c7de667d27222a1/load-atoms-0.0.4.tar.gz
+[2023-04-12 11:22:17] INFO root fetch - processPackages [qontract-reconcile]: executing diffoscope
+[2023-04-12 11:22:17] INFO root fetch - processPackages [qontract-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qontract_reconcile-0.9.1rc98-py3-none-any.whl.zip tmp/qontract_reconcile-0.9.1rc99-py3-none-any.whl.zip --markdown 20230412/q/qontract-reconcile/0.9.1rc98-0.9.1rc99/diff.md --exclude *.pyd
+[2023-04-12 11:22:17] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-04-12 11:22:17] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230412/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-04-12 11:22:17] INFO root fetch - processPackages [load-atoms]: Downloading https://files.pythonhosted.org/packages/5c/ef/76c28f2d2cfbf19e3d8bedf2a5e2eeef6df7271e5aca62d5ef38c02c55ef/load-atoms-0.0.5.tar.gz
+[2023-04-12 11:22:17] INFO root fetch - processPackages [exodusutils]: executing diffoscope
+[2023-04-12 11:22:17] INFO root fetch - processPackages [exodusutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exodusutils-0.3.7.tar.gz tmp/exodusutils-0.3.9.tar.gz --markdown 20230412/e/exodusutils/0.3.7-0.3.9/diff.md --exclude *.pyd
+[2023-04-12 11:22:17] INFO root fetch - processPackages [cluster-experiments]: Downloading https://files.pythonhosted.org/packages/24/5c/c053447ff3bf5bd5b482d7d4393fd38d08aaaa3b89fc0e0eed9e1cbc1365/cluster_experiments-0.6.1.tar.gz
+[2023-04-12 11:22:17] INFO root fetch - processPackages [load-atoms]: executing diffoscope
+[2023-04-12 11:22:17] INFO root fetch - processPackages [load-atoms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/load-atoms-0.0.4.tar.gz tmp/load-atoms-0.0.5.tar.gz --markdown 20230412/l/load-atoms/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-04-12 11:22:17] INFO root fetch - processPackages [cluster-experiments]: executing diffoscope
+[2023-04-12 11:22:17] INFO root fetch - processPackages [cluster-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluster_experiments-0.6.0.tar.gz tmp/cluster_experiments-0.6.1.tar.gz --markdown 20230412/c/cluster-experiments/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-04-12 11:22:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:18] WARNING root fetch - processPackages [odoo14-addon-product-contract]: Skipping, unable to determine old version
+[2023-04-12 11:22:18] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:22:18] INFO root fetch - processPackages [odoo14-addon-contract]: New version: [14.0.2.9.4.dev6] Old Version: [14.0.2.9.4.dev5]
+[2023-04-12 11:22:18] INFO root fetch - processPackages [odoo14-addon-contract]: executing diffoscope
+[2023-04-12 11:22:18] INFO root fetch - processPackages [odoo14-addon-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_contract-14.0.2.9.4.dev5-py3-none-any.whl.zip tmp/odoo14_addon_contract-14.0.2.9.4.dev6-py3-none-any.whl.zip --markdown 20230412/o/odoo14-addon-contract/14.0.2.9.4.dev5-14.0.2.9.4.dev6/diff.md --exclude *.pyd
+[2023-04-12 11:22:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:18] INFO root fetch - processPackages [hass-nabucasa]: New version: [0.9] Old Version: [0.8]
+[2023-04-12 11:22:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:18] INFO root fetch - processPackages [i2a-chat-api-client]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-04-12 11:22:18] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:18] INFO root fetch - processPackages [khloraascaf]: New version: [1.4.1] Old Version: [1.3.0]
+[2023-04-12 11:22:18] INFO root fetch - processPackages [hass-nabucasa]: Downloading https://files.pythonhosted.org/packages/fc/45/e5473d0adc7b2f6f69d1b4128c7cb8a0241e7d2a312a30ca4e1bcceb64e8/hass-nabucasa-0.8.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [i2a-chat-api-client]: Downloading https://files.pythonhosted.org/packages/97/86/f463636126232ac6cf1442bd21b7edc598a0c6fcf1751a1f96c839408087/i2a_chat_api_client-1.2.2.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [khloraascaf]: Downloading https://files.pythonhosted.org/packages/e3/f4/c9e391304bf9e06be6a31a84af4a786cbe033c01e7053af2b7024eacca71/khloraascaf-1.3.0.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [khloraascaf]: Downloading https://files.pythonhosted.org/packages/f4/e7/d4f784cbb181a2c086b1ef46ddc855032a84d62b87bcc19eafefb103a77a/khloraascaf-1.4.1.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [khloraascaf]: executing diffoscope
+[2023-04-12 11:22:19] INFO root fetch - processPackages [khloraascaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khloraascaf-1.3.0.tar.gz tmp/khloraascaf-1.4.1.tar.gz --markdown 20230412/k/khloraascaf/1.3.0-1.4.1/diff.md --exclude *.pyd
+[2023-04-12 11:22:19] INFO root fetch - processPackages [i2a-chat-api-client]: Downloading https://files.pythonhosted.org/packages/ca/b0/c6aa086f0d7b5db2d062acc83e4f63c0cac8bfd967952b197fe65b55e2ee/i2a_chat_api_client-1.2.3.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [i2a-chat-api-client]: executing diffoscope
+[2023-04-12 11:22:19] INFO root fetch - processPackages [i2a-chat-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i2a_chat_api_client-1.2.2.tar.gz tmp/i2a_chat_api_client-1.2.3.tar.gz --markdown 20230412/i/i2a-chat-api-client/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-04-12 11:22:19] INFO root fetch - processPackages [hass-nabucasa]: Downloading https://files.pythonhosted.org/packages/3b/bf/09dd82cd20936665446eff0e5895609e699ed4e0143d97d0168512bc30b9/hass-nabucasa-0.9.tar.gz
+[2023-04-12 11:22:19] INFO root fetch - processPackages [hass-nabucasa]: executing diffoscope
+[2023-04-12 11:22:19] INFO root fetch - processPackages [hass-nabucasa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hass-nabucasa-0.8.tar.gz tmp/hass-nabucasa-0.9.tar.gz --markdown 20230412/h/hass-nabucasa/0.8-0.9/diff.md --exclude *.pyd
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:20] INFO root fetch - processPackages [scandeval]: New version: [6.3.0] Old Version: [6.2.4]
+[2023-04-12 11:22:20] INFO root fetch - processPackages [scandeval]: Downloading https://files.pythonhosted.org/packages/34/97/19a2ef638b34ade948bd7bdaf6b6940405e7da393fd342f80044a9d94572/ScandEval-6.2.4.tar.gz
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:20] WARNING root fetch - processPackages [axterdb]: Skipping, unable to determine old version
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:22:20] WARNING root fetch - processPackages [PyLanguageEasySeperated]: Skipping, unable to determine old version
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: error
+[2023-04-12 11:22:20] INFO root fetch - processPackages [matter-task-queue]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:20] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:20] INFO root fetch - processPackages [xj-finance]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-04-12 11:22:20] INFO root fetch - processPackages [scandeval]: Downloading https://files.pythonhosted.org/packages/b4/cd/d7af3e26d0b1867a3bd7f280bbc003aea8c5e60e97f9a6a9425208b6c77f/ScandEval-6.3.0.tar.gz
+[2023-04-12 11:22:21] INFO root fetch - processPackages [scandeval]: executing diffoscope
+[2023-04-12 11:22:21] INFO root fetch - processPackages [scandeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScandEval-6.2.4.tar.gz tmp/ScandEval-6.3.0.tar.gz --markdown 20230412/s/scandeval/6.2.4-6.3.0/diff.md --exclude *.pyd
+[2023-04-12 11:22:21] INFO root fetch - processPackages [gy-multiprocessing]: New version: [0.2.4.1] Old Version: [0.2.4]
+[2023-04-12 11:22:21] INFO root fetch - processPackages [xj-finance]: Downloading https://files.pythonhosted.org/packages/05/17/1d8ed3acedb3e976333c002d75343346b672b1b0907099e9685be98f80ac/xj_finance-1.1.8.tar.gz
+[2023-04-12 11:22:21] INFO root fetch - processPackages [matter-task-queue]: Downloading https://files.pythonhosted.org/packages/b3/b6/e7b49c50bba88eada7adc3ad964337ec8b1756d4598088a631af10d752d2/matter_task_queue-1.1.2-py3-none-any.whl
+[2023-04-12 11:22:21] INFO root fetch - processPackages [gy-multiprocessing]: Downloading https://files.pythonhosted.org/packages/31/05/45c30864020f62894ca29dd7087334276bd1b4b579461f7bb7338d5c81ca/gy_multiprocessing-0.2.4.tar.gz
+[2023-04-12 11:22:21] INFO root fetch - processPackages [xj-finance]: executing diffoscope
+[2023-04-12 11:22:21] INFO root fetch - processPackages [xj-finance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xj_finance-1.1.7.tar.gz tmp/xj_finance-1.1.8.tar.gz --markdown 20230412/x/xj-finance/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-04-12 11:22:21] INFO root fetch - processPackages [matter-task-queue]: Downloading https://files.pythonhosted.org/packages/8f/64/2d57ef36231d00befb11e830846743f496bddc9cce3bc4f800e7a6a53c64/matter_task_queue-1.1.3-py3-none-any.whl
+[2023-04-12 11:22:21] INFO root fetch - processPackages [matter-task-queue]: executing diffoscope
+[2023-04-12 11:22:21] INFO root fetch - processPackages [matter-task-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matter_task_queue-1.1.2-py3-none-any.whl.zip tmp/matter_task_queue-1.1.3-py3-none-any.whl.zip --markdown 20230412/m/matter-task-queue/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-04-12 11:22:21] INFO root fetch - processPackages [gy-multiprocessing]: Downloading https://files.pythonhosted.org/packages/00/fd/6e7824bf61d6d743e07cf7ef1481cc89cb27913f9afe07f7db81833a172d/gy_multiprocessing-0.2.4.1.tar.gz
+[2023-04-12 11:22:21] INFO root fetch - processPackages [gy-multiprocessing]: executing diffoscope
+[2023-04-12 11:22:21] INFO root fetch - processPackages [gy-multiprocessing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy_multiprocessing-0.2.4.tar.gz tmp/gy_multiprocessing-0.2.4.1.tar.gz --markdown 20230412/g/gy-multiprocessing/0.2.4-0.2.4.1/diff.md --exclude *.pyd
+[2023-04-12 11:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:22] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:23] INFO root fetch - main [MainThread]: success
+[2023-04-12 11:22:23] INFO root fetch - main [MainThread]: Store serial: [17673921]
