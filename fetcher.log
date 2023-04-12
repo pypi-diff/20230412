@@ -18250,3 +18250,173 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 17:29:09] INFO root fetch - main [MainThread]: End processing [gr4vy]: success
 [2023-04-12 17:29:14] INFO root fetch - main [MainThread]: End processing [pySMART]: success
 [2023-04-12 17:29:14] INFO root fetch - main [MainThread]: Store serial: [17678240]
+[2023-04-12 17:34:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17678240]
+[2023-04-12 17:34:22] INFO root fetch - main [MainThread]: Found 29 changed packages
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foldedleastsquares
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ifd-python
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gamma-pytools
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: developergpt
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tdw
+[2023-04-12 17:34:22] INFO root fetch - processPackages [foldedleastsquares]: New version: [1.0.38] Old Version: [1.0.37]
+[2023-04-12 17:34:22] INFO root fetch - processPackages [ifd-python]: New version: [7.0] Old Version: [6.0]
+[2023-04-12 17:34:22] INFO root fetch - processPackages [tdw]: New version: [1.9.9.3] Old Version: [1.9.9.2]
+[2023-04-12 17:34:22] INFO root fetch - processPackages [developergpt]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-04-12 17:34:22] INFO root fetch - processPackages [gamma-pytools]: New version: [2.1rc1] Old Version: [2.1rc0]
+[2023-04-12 17:34:22] INFO root fetch - processPackages [foldedleastsquares]: Downloading https://files.pythonhosted.org/packages/4f/22/443872f8e660be8fd78ef41ac16abebf8990b660ec3a84aa970177ea0808/foldedleastsquares-1.0.37.tar.gz
+[2023-04-12 17:34:22] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/fe/6c/0987a899e474766cbc32b123ce18ff78a799a2d4d5cf7c19c95ba12c0ccd/developergpt-0.1.4.tar.gz
+[2023-04-12 17:34:22] INFO root fetch - processPackages [gamma-pytools]: Downloading https://files.pythonhosted.org/packages/6e/89/4f5e153097ed82dfc558b6041ab51915ca03e453fe8b48f49035b1364ac2/gamma-pytools-2.1rc0.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [tdw]: Downloading https://files.pythonhosted.org/packages/c4/72/7e9dcffb20652a0fc7a75acb9c45c9c15e02911caff77569e88bda949a27/tdw-1.9.9.2.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [ifd-python]: Downloading https://files.pythonhosted.org/packages/3c/25/ccfaee9942d2c8535fb9a7cc9b1cea15e969ec046be8bd143d27097ccba1/ifd_python-7.0.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [ifd-python]: executing diffoscope
+[2023-04-12 17:34:23] INFO root fetch - processPackages [ifd-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifd_python-6.0.tar.gz tmp/ifd_python-7.0.tar.gz --markdown 20230412/i/ifd-python/6.0-7.0/diff.md --exclude *.pyd
+[2023-04-12 17:34:23] INFO root fetch - processPackages [developergpt]: Downloading https://files.pythonhosted.org/packages/9e/23/0f07b1a8bc990b37698e2f72291e8debbdf1edb01de157f4ff825c3eb5f1/developergpt-0.1.5.tar.gz
+[2023-04-12 17:34:23] WARNING root fetch - processPackages [tdw]: Skipping package: exceeds size limit 28395540>=10485760
+[2023-04-12 17:34:23] INFO root fetch - processPackages [tdw]: Start processing: kiara-plugin.network-analysis
+[2023-04-12 17:34:23] INFO root fetch - main [MainThread]: End processing [tdw] error
+[2023-04-12 17:34:23] INFO root fetch - processPackages [gamma-pytools]: Downloading https://files.pythonhosted.org/packages/a6/7b/e1b19a9e4725c95f9b97d50beda19cccab6cc31a989983dff07e7226050b/gamma-pytools-2.1rc1.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [developergpt]: executing diffoscope
+[2023-04-12 17:34:23] INFO root fetch - processPackages [developergpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/developergpt-0.1.4.tar.gz tmp/developergpt-0.1.5.tar.gz --markdown 20230412/d/developergpt/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-04-12 17:34:23] INFO root fetch - processPackages [kiara-plugin.network-analysis]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-04-12 17:34:23] INFO root fetch - processPackages [gamma-pytools]: executing diffoscope
+[2023-04-12 17:34:23] INFO root fetch - processPackages [gamma-pytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gamma-pytools-2.1rc0.tar.gz tmp/gamma-pytools-2.1rc1.tar.gz --markdown 20230412/g/gamma-pytools/2.1rc0-2.1rc1/diff.md --exclude *.pyd
+[2023-04-12 17:34:23] INFO root fetch - processPackages [kiara-plugin.network-analysis]: Downloading https://files.pythonhosted.org/packages/2e/1f/8d098ee0b2c43e1a776fc29b81e599ce0f0bc782dde9bab8749d936a5a56/kiara_plugin.network_analysis-0.4.8.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [foldedleastsquares]: Downloading https://files.pythonhosted.org/packages/70/a9/9acc29888530d5bd7dfbd19b2a5893de5ccbc7d63f8e0d16766194059886/foldedleastsquares-1.0.38.tar.gz
+[2023-04-12 17:34:23] INFO root fetch - processPackages [foldedleastsquares]: executing diffoscope
+[2023-04-12 17:34:23] INFO root fetch - processPackages [foldedleastsquares]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foldedleastsquares-1.0.37.tar.gz tmp/foldedleastsquares-1.0.38.tar.gz --markdown 20230412/f/foldedleastsquares/1.0.37-1.0.38/diff.md --exclude *.pyd
+[2023-04-12 17:34:24] INFO root fetch - processPackages [ifd-python]: Start processing: PsychoPy
+[2023-04-12 17:34:24] INFO root fetch - main [MainThread]: End processing [ifd-python]: success
+[2023-04-12 17:34:24] INFO root fetch - processPackages [PsychoPy]: New version: [3.2.4] Old Version: [3.2.3]
+[2023-04-12 17:34:24] INFO root fetch - processPackages [kiara-plugin.network-analysis]: Downloading https://files.pythonhosted.org/packages/6d/24/07d4152ffcb0d8afe5534fd4fc1d036779b2d4d448f49a5fae1f86fba7eb/kiara_plugin.network_analysis-0.4.9.tar.gz
+[2023-04-12 17:34:24] INFO root fetch - processPackages [developergpt]: Start processing: TheSilent
+[2023-04-12 17:34:24] INFO root fetch - main [MainThread]: End processing [developergpt]: success
+[2023-04-12 17:34:24] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-04-12 17:34:24] INFO root fetch - processPackages [PsychoPy]: Downloading https://files.pythonhosted.org/packages/98/e9/814e9efa577a61853a955fc1673b12b18b9165098631d7cbc1254c2a415c/PsychoPy-3.2.3.zip
+[2023-04-12 17:34:24] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2023-04-12 17:34:24] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20230412/T/TheSilent/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-04-12 17:34:24] INFO root fetch - processPackages [kiara-plugin.network-analysis]: executing diffoscope
+[2023-04-12 17:34:24] INFO root fetch - processPackages [kiara-plugin.network-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiara_plugin.network_analysis-0.4.8.tar.gz tmp/kiara_plugin.network_analysis-0.4.9.tar.gz --markdown 20230412/k/kiara-plugin.network-analysis/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-04-12 17:34:24] WARNING root fetch - processPackages [PsychoPy]: Skipping package: exceeds size limit 12261346>=10485760
+[2023-04-12 17:34:24] INFO root fetch - processPackages [PsychoPy]: Start processing: srsgui
+[2023-04-12 17:34:24] INFO root fetch - main [MainThread]: End processing [PsychoPy] error
+[2023-04-12 17:34:24] INFO root fetch - processPackages [srsgui]: New version: [0.2.9] Old Version: [0.2.3]
+[2023-04-12 17:34:25] ERROR root fetch - processPackages [srsgui]: Unable to fetch info: No such project/version 'srsgui' 0.2.3
+[2023-04-12 17:34:25] INFO root fetch - processPackages [srsgui]: Start processing: airlabs
+[2023-04-12 17:34:25] INFO root fetch - main [MainThread]: End processing [srsgui] error
+[2023-04-12 17:34:25] INFO root fetch - processPackages [airlabs]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-04-12 17:34:25] INFO root fetch - processPackages [airlabs]: Downloading https://files.pythonhosted.org/packages/76/73/1849148fd3a95ef0b506f0b44ab6f0c09bd7bc8b1c65362ca48498863265/airlabs-0.0.6.tar.gz
+[2023-04-12 17:34:25] INFO root fetch - processPackages [airlabs]: executing diffoscope
+[2023-04-12 17:34:25] INFO root fetch - processPackages [airlabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airlabs-0.0.5.tar.gz tmp/airlabs-0.0.6.tar.gz --markdown 20230412/a/airlabs/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-04-12 17:34:25] INFO root fetch - processPackages [TheSilent]: Start processing: pySMART
+[2023-04-12 17:34:25] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2023-04-12 17:34:25] INFO root fetch - processPackages [pySMART]: New version: [1.2.4.dev16] Old Version: [1.2.4]
+[2023-04-12 17:34:25] INFO root fetch - processPackages [pySMART]: Downloading https://files.pythonhosted.org/packages/44/dc/79a8bf33924cbb7a3a90c5f8f77610ba52f19ed565a6621057cfe97ae435/pySMART-1.2.4.tar.gz
+[2023-04-12 17:34:25] INFO root fetch - processPackages [foldedleastsquares]: Start processing: kfsdutils
+[2023-04-12 17:34:25] INFO root fetch - main [MainThread]: End processing [foldedleastsquares]: success
+[2023-04-12 17:34:25] INFO root fetch - processPackages [kfsdutils]: New version: [0.0.9] Old Version: [0.0.86]
+[2023-04-12 17:34:25] INFO root fetch - processPackages [kiara-plugin.network-analysis]: Start processing: finetuner-stubs
+[2023-04-12 17:34:25] INFO root fetch - main [MainThread]: End processing [kiara-plugin.network-analysis]: success
+[2023-04-12 17:34:25] INFO root fetch - processPackages [pySMART]: executing diffoscope
+[2023-04-12 17:34:25] INFO root fetch - processPackages [pySMART]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySMART-1.2.4.tar.gz tmp/pySMART-1.2.4.dev16.tar.gz --markdown 20230412/p/pySMART/1.2.4-1.2.4.dev16/diff.md --exclude *.pyd
+[2023-04-12 17:34:25] INFO root fetch - processPackages [finetuner-stubs]: New version: [0.9.3] Old Version: [0.13.1rc4]
+[2023-04-12 17:34:25] INFO root fetch - processPackages [kfsdutils]: Downloading https://files.pythonhosted.org/packages/fc/68/a7e1df176d4e9ab6888bcc919510fb053e897ce68cfb84c7d3053a9c554c/kfsdutils-0.0.86.tar.gz
+[2023-04-12 17:34:25] INFO root fetch - processPackages [kfsdutils]: executing diffoscope
+[2023-04-12 17:34:25] INFO root fetch - processPackages [kfsdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsdutils-0.0.86.tar.gz tmp/kfsdutils-0.0.9.tar.gz --markdown 20230412/k/kfsdutils/0.0.86-0.0.9/diff.md --exclude *.pyd
+[2023-04-12 17:34:25] INFO root fetch - processPackages [finetuner-stubs]: Downloading https://files.pythonhosted.org/packages/4f/39/0da86e1a872576cd0d1c769bab6abb7181ab6609667069748de6426c61a6/finetuner_stubs-0.13.1rc4-py3-none-any.whl
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-stubs]: executing diffoscope
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner_stubs-0.13.1rc4-py3-none-any.whl.zip tmp/finetuner-stubs-0.9.3.tar.gz --markdown 20230412/f/finetuner-stubs/0.13.1rc4-0.9.3/diff.md --exclude *.pyd
+[2023-04-12 17:34:26] INFO root fetch - processPackages [airlabs]: Start processing: finetuner-commons
+[2023-04-12 17:34:26] INFO root fetch - main [MainThread]: End processing [airlabs]: success
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-commons]: New version: [0.9.3] Old Version: [0.13.1rc4]
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-commons]: Downloading https://files.pythonhosted.org/packages/01/25/fbe8c42c56f2d3fd778a79f74911393ec343c10af7c3b91c88bdf82a8585/finetuner_commons-0.13.1rc4-py3-none-any.whl
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-commons]: executing diffoscope
+[2023-04-12 17:34:26] INFO root fetch - processPackages [finetuner-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finetuner_commons-0.13.1rc4-py3-none-any.whl.zip tmp/finetuner-commons-0.9.3.tar.gz --markdown 20230412/f/finetuner-commons/0.13.1rc4-0.9.3/diff.md --exclude *.pyd
+[2023-04-12 17:34:27] INFO root fetch - processPackages [kfsdutils]: Start processing: wonder-sdk
+[2023-04-12 17:34:27] INFO root fetch - main [MainThread]: End processing [kfsdutils]: success
+[2023-04-12 17:34:27] INFO root fetch - processPackages [wonder-sdk]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 17:34:27] INFO root fetch - processPackages [gamma-pytools]: Start processing: crimestat3000
+[2023-04-12 17:34:27] INFO root fetch - main [MainThread]: End processing [gamma-pytools]: success
+[2023-04-12 17:34:27] INFO root fetch - processPackages [crimestat3000]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-04-12 17:34:27] INFO root fetch - processPackages [finetuner-stubs]: Start processing: marpdown
+[2023-04-12 17:34:27] INFO root fetch - main [MainThread]: End processing [finetuner-stubs]: success
+[2023-04-12 17:34:27] INFO root fetch - processPackages [marpdown]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-04-12 17:34:27] INFO root fetch - processPackages [wonder-sdk]: Downloading https://files.pythonhosted.org/packages/37/05/241450cdd86b168a622dc8451f3538b4f32243b5ee9cc34c5c69fd955cfe/wonder-sdk-0.1.8.tar.gz
+[2023-04-12 17:34:27] INFO root fetch - processPackages [wonder-sdk]: executing diffoscope
+[2023-04-12 17:34:27] INFO root fetch - processPackages [wonder-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wonder-sdk-0.1.7.tar.gz tmp/wonder-sdk-0.1.8.tar.gz --markdown 20230412/w/wonder-sdk/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 17:34:27] INFO root fetch - processPackages [crimestat3000]: Downloading https://files.pythonhosted.org/packages/fb/20/a26bd4d1641e961990f362a8f7f865fa74b75540f85923120485ae1f4d89/crimestat3000-0.1.7.tar.gz
+[2023-04-12 17:34:27] INFO root fetch - processPackages [marpdown]: Downloading https://files.pythonhosted.org/packages/3d/1b/1b84570fdaf2c95ffa142a7e4bddb8022feffbcfadc7ccce6a456c98ad18/marpdown-0.1.0.tar.gz
+[2023-04-12 17:34:27] INFO root fetch - processPackages [finetuner-commons]: Start processing: mlserver-sklearn
+[2023-04-12 17:34:27] INFO root fetch - main [MainThread]: End processing [finetuner-commons]: success
+[2023-04-12 17:34:27] INFO root fetch - processPackages [mlserver-sklearn]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:27] INFO root fetch - processPackages [marpdown]: Downloading https://files.pythonhosted.org/packages/57/83/7989e1b82d50a82b359b814266d4e994681814832c2278fbfeb946717882/marpdown-0.2.0.tar.gz
+[2023-04-12 17:34:27] INFO root fetch - processPackages [crimestat3000]: Downloading https://files.pythonhosted.org/packages/2b/27/f98f4187d7ec8e3e68c04929e127c40ed5936838935e693aa29c09c58a1a/crimestat3000-0.1.8.tar.gz
+[2023-04-12 17:34:27] INFO root fetch - processPackages [marpdown]: executing diffoscope
+[2023-04-12 17:34:27] INFO root fetch - processPackages [marpdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marpdown-0.1.0.tar.gz tmp/marpdown-0.2.0.tar.gz --markdown 20230412/m/marpdown/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-04-12 17:34:27] INFO root fetch - processPackages [mlserver-sklearn]: executing diffoscope
+[2023-04-12 17:34:27] INFO root fetch - processPackages [mlserver-sklearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-sklearn-1.3.0rc1.tar.gz tmp/mlserver-sklearn-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-sklearn/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:27] INFO root fetch - processPackages [crimestat3000]: executing diffoscope
+[2023-04-12 17:34:27] INFO root fetch - processPackages [crimestat3000]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crimestat3000-0.1.7.tar.gz tmp/crimestat3000-0.1.8.tar.gz --markdown 20230412/c/crimestat3000/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-04-12 17:34:28] INFO root fetch - processPackages [wonder-sdk]: Start processing: mlserver-xgboost
+[2023-04-12 17:34:28] INFO root fetch - main [MainThread]: End processing [wonder-sdk]: success
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-xgboost]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-xgboost]: executing diffoscope
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-xgboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-xgboost-1.3.0rc1.tar.gz tmp/mlserver-xgboost-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-xgboost/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:28] INFO root fetch - processPackages [marpdown]: Start processing: mlserver-alibi-explain
+[2023-04-12 17:34:28] INFO root fetch - main [MainThread]: End processing [marpdown]: success
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-alibi-explain]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-sklearn]: Start processing: mlserver-mllib
+[2023-04-12 17:34:28] INFO root fetch - main [MainThread]: End processing [mlserver-sklearn]: success
+[2023-04-12 17:34:28] INFO root fetch - processPackages [crimestat3000]: Start processing: mlserver-mlflow
+[2023-04-12 17:34:28] INFO root fetch - main [MainThread]: End processing [crimestat3000]: success
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mllib]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mlflow]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-alibi-explain]: executing diffoscope
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-alibi-explain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-explain-1.3.0rc1.tar.gz tmp/mlserver-alibi-explain-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-explain/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mllib]: executing diffoscope
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mllib-1.3.0rc1.tar.gz tmp/mlserver-mllib-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mllib/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mlflow]: executing diffoscope
+[2023-04-12 17:34:28] INFO root fetch - processPackages [mlserver-mlflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-mlflow-1.3.0rc1.tar.gz tmp/mlserver-mlflow-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-mlflow/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-xgboost]: Start processing: mlserver-alibi-detect
+[2023-04-12 17:34:29] INFO root fetch - main [MainThread]: End processing [mlserver-xgboost]: success
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-alibi-detect]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-alibi-detect]: executing diffoscope
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-alibi-detect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-alibi-detect-1.3.0rc1.tar.gz tmp/mlserver-alibi-detect-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-alibi-detect/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-alibi-explain]: Start processing: mlserver
+[2023-04-12 17:34:29] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-explain]: success
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-mlflow]: Start processing: fortran-magic
+[2023-04-12 17:34:29] INFO root fetch - main [MainThread]: End processing [mlserver-mlflow]: success
+[2023-04-12 17:34:29] INFO root fetch - processPackages [fortran-magic]: New version: [0.7.1] Old Version: [0.7]
+[2023-04-12 17:34:29] INFO root fetch - processPackages [mlserver-mllib]: Start processing: fio-plot
+[2023-04-12 17:34:29] INFO root fetch - main [MainThread]: End processing [mlserver-mllib]: success
+[2023-04-12 17:34:29] INFO root fetch - processPackages [fio-plot]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fortran-magic]: Downloading https://files.pythonhosted.org/packages/6e/d8/e89e0c14bb91de926c47b91796eb7a035d9f7b7e4bbdb697fffc4df8115a/fortran-magic-0.7.tar.gz
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver]: executing diffoscope
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-1.3.0rc1.tar.gz tmp/mlserver-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fio-plot]: Downloading https://files.pythonhosted.org/packages/38/18/a298d47ad1bdd0cf6edb09a91450a6b16e4a64a1c93fc0d6369d1bfc23e3/fio-plot-1.1.5.tar.gz
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fio-plot]: executing diffoscope
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fio-plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fio-plot-1.1.4.tar.gz tmp/fio-plot-1.1.5.tar.gz --markdown 20230412/f/fio-plot/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fortran-magic]: Downloading https://files.pythonhosted.org/packages/01/61/b0f5cfee8eae9943da75bc9da3bef688191030f379769109990cf0503127/fortran-magic-0.7.1.tar.gz
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fortran-magic]: executing diffoscope
+[2023-04-12 17:34:30] INFO root fetch - processPackages [fortran-magic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fortran-magic-0.7.tar.gz tmp/fortran-magic-0.7.1.tar.gz --markdown 20230412/f/fortran-magic/0.7-0.7.1/diff.md --exclude *.pyd
+[2023-04-12 17:34:30] INFO root fetch - processPackages [pySMART]: Start processing: mlserver-lightgbm
+[2023-04-12 17:34:30] INFO root fetch - main [MainThread]: End processing [pySMART]: success
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-lightgbm]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-lightgbm]: executing diffoscope
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-lightgbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-lightgbm-1.3.0rc1.tar.gz tmp/mlserver-lightgbm-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-lightgbm/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-alibi-detect]: Start processing: mlserver-huggingface
+[2023-04-12 17:34:30] INFO root fetch - main [MainThread]: End processing [mlserver-alibi-detect]: success
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-huggingface]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-huggingface]: executing diffoscope
+[2023-04-12 17:34:30] INFO root fetch - processPackages [mlserver-huggingface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlserver-huggingface-1.3.0rc1.tar.gz tmp/mlserver-huggingface-1.3.0rc2.tar.gz --markdown 20230412/m/mlserver-huggingface/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2023-04-12 17:34:31] INFO root fetch - processPackages [fortran-magic]: Start processing: thunno2
+[2023-04-12 17:34:31] INFO root fetch - main [MainThread]: End processing [fortran-magic]: success
+[2023-04-12 17:34:31] INFO root fetch - main [MainThread]: End processing [mlserver]: success
+[2023-04-12 17:34:31] INFO root fetch - main [MainThread]: End processing [mlserver-lightgbm]: success
+[2023-04-12 17:34:31] INFO root fetch - processPackages [thunno2]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-12 17:34:31] INFO root fetch - main [MainThread]: End processing [mlserver-huggingface]: success
+[2023-04-12 17:34:31] INFO root fetch - processPackages [thunno2]: Downloading https://files.pythonhosted.org/packages/18/9f/371190f38b7e91c264bbe122f72c4019a57054adc77f87cc3a409d791ebb/thunno2-2.0.5.tar.gz
+[2023-04-12 17:34:32] INFO root fetch - processPackages [thunno2]: executing diffoscope
+[2023-04-12 17:34:32] INFO root fetch - processPackages [thunno2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thunno2-2.0.4.tar.gz tmp/thunno2-2.0.5.tar.gz --markdown 20230412/t/thunno2/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-12 17:34:33] INFO root fetch - main [MainThread]: End processing [thunno2]: success
+[2023-04-12 17:34:33] INFO root fetch - main [MainThread]: End processing [fio-plot]: success
+[2023-04-12 17:34:33] INFO root fetch - main [MainThread]: Store serial: [17678334]
