@@ -15922,3 +15922,117 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd4 in position 72: invalid
 [2023-04-12 15:46:17] INFO root fetch - main [MainThread]: End processing [ms-salesforce-to-bigquery]: success
 [2023-04-12 15:46:18] INFO root fetch - main [MainThread]: End processing [i2]: success
 [2023-04-12 15:46:18] INFO root fetch - main [MainThread]: Store serial: [17676895]
+[2023-04-12 15:51:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [17676895]
+[2023-04-12 15:51:40] INFO root fetch - main [MainThread]: Found 18 changed packages
+[2023-04-12 15:51:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aleph-alpha-client
+[2023-04-12 15:51:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: osint-python-starter-service
+[2023-04-12 15:51:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-django
+[2023-04-12 15:51:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nucliadb-contributor-assets
+[2023-04-12 15:51:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dol
+[2023-04-12 15:51:40] INFO root fetch - processPackages [nucliadb-contributor-assets]: New version: [1.0.0.post702] Old Version: [1.0.0.post701]
+[2023-04-12 15:51:40] INFO root fetch - processPackages [dol]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-04-12 15:51:40] INFO root fetch - processPackages [aleph-alpha-client]: New version: [3.1.0] Old Version: [3.0.0]
+[2023-04-12 15:51:40] INFO root fetch - processPackages [osint-python-starter-service]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-04-12 15:51:40] INFO root fetch - processPackages [sphinxcontrib-django]: New version: [2.3] Old Version: [2.2]
+[2023-04-12 15:51:40] INFO root fetch - processPackages [nucliadb-contributor-assets]: Downloading https://files.pythonhosted.org/packages/49/b9/2da68d14c2e27a22ad7b4278ebb6800e4c136e17b463dde196cbcb1e25c8/nucliadb_contributor_assets-1.0.0.post702-py3-none-any.whl
+[2023-04-12 15:51:40] INFO root fetch - processPackages [dol]: Downloading https://files.pythonhosted.org/packages/ca/4a/8b3ea3c301d23fc29b9dc4b0961ff15d18cbb97d3e1a68397e3af340077d/dol-0.1.98.tar.gz
+[2023-04-12 15:51:40] INFO root fetch - processPackages [aleph-alpha-client]: Downloading https://files.pythonhosted.org/packages/a3/cd/5d5fa43b55f0b80357bb0e6224cd356300cf2646760b5c0b917b874f2abe/aleph-alpha-client-3.0.0.tar.gz
+[2023-04-12 15:51:40] INFO root fetch - processPackages [sphinxcontrib-django]: Downloading https://files.pythonhosted.org/packages/01/d8/1070b25badf071ed13f37a4e0964cca40c48740805ee106d8c11a4fb3824/sphinxcontrib-django-2.2.tar.gz
+[2023-04-12 15:51:41] INFO root fetch - processPackages [osint-python-starter-service]: Downloading https://files.pythonhosted.org/packages/b0/71/fb3295cef57e1b95640b7a22c3642ee54da47e08e47cde01155c51eabe9e/osint-python-starter-service-2.0.5.tar.gz
+[2023-04-12 15:51:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: executing diffoscope
+[2023-04-12 15:51:41] INFO root fetch - processPackages [nucliadb-contributor-assets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nucliadb_contributor_assets-1.0.0.post701-py3-none-any.whl.zip tmp/nucliadb_contributor_assets-1.0.0.post702-py3-none-any.whl.zip --markdown 20230412/n/nucliadb-contributor-assets/1.0.0.post701-1.0.0.post702/diff.md --exclude *.pyd
+[2023-04-12 15:51:41] INFO root fetch - processPackages [aleph-alpha-client]: Downloading https://files.pythonhosted.org/packages/5b/54/b2a29f3dac806ddfd1a3dfd78e2eeb72e7d338b004c7c196c0bbccd606cc/aleph-alpha-client-3.1.0.tar.gz
+[2023-04-12 15:51:41] INFO root fetch - processPackages [osint-python-starter-service]: executing diffoscope
+[2023-04-12 15:51:41] INFO root fetch - processPackages [osint-python-starter-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osint-python-starter-service-2.0.4.tar.gz tmp/osint-python-starter-service-2.0.5.tar.gz --markdown 20230412/o/osint-python-starter-service/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-04-12 15:51:41] INFO root fetch - processPackages [sphinxcontrib-django]: Downloading https://files.pythonhosted.org/packages/de/30/22a4b466c6460279d7d578f3447b6c079f5b1a619a9a6b85089a1b4a3b89/sphinxcontrib-django-2.3.tar.gz
+[2023-04-12 15:51:41] INFO root fetch - processPackages [aleph-alpha-client]: executing diffoscope
+[2023-04-12 15:51:41] INFO root fetch - processPackages [aleph-alpha-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleph-alpha-client-3.0.0.tar.gz tmp/aleph-alpha-client-3.1.0.tar.gz --markdown 20230412/a/aleph-alpha-client/3.0.0-3.1.0/diff.md --exclude *.pyd
+[2023-04-12 15:51:41] INFO root fetch - processPackages [dol]: Downloading https://files.pythonhosted.org/packages/6f/21/71e7389816fcb2eaef9a689b287a1892994811398bf622e15dccee9768f9/dol-0.1.99.tar.gz
+[2023-04-12 15:51:41] INFO root fetch - processPackages [sphinxcontrib-django]: executing diffoscope
+[2023-04-12 15:51:41] INFO root fetch - processPackages [sphinxcontrib-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib-django-2.2.tar.gz tmp/sphinxcontrib-django-2.3.tar.gz --markdown 20230412/s/sphinxcontrib-django/2.2-2.3/diff.md --exclude *.pyd
+[2023-04-12 15:51:41] INFO root fetch - processPackages [dol]: executing diffoscope
+[2023-04-12 15:51:41] INFO root fetch - processPackages [dol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dol-0.1.98.tar.gz tmp/dol-0.1.99.tar.gz --markdown 20230412/d/dol/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-04-12 15:51:42] INFO root fetch - processPackages [aleph-alpha-client]: Start processing: pyngrok
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [aleph-alpha-client]: success
+[2023-04-12 15:51:42] INFO root fetch - processPackages [pyngrok]: New version: [5.2.3] Old Version: [5.2.2]
+[2023-04-12 15:51:42] INFO root fetch - processPackages [sphinxcontrib-django]: Start processing: certora-cli-alpha-master
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-django]: success
+[2023-04-12 15:51:42] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230412.13.52.947400] Old Version: [20230411.6.15.138169]
+[2023-04-12 15:51:42] INFO root fetch - processPackages [pyngrok]: Downloading https://files.pythonhosted.org/packages/38/7d/2a41f388e0de43217e4add2d099622687f3f33e4ff4f86eae6b8804ab110/pyngrok-5.2.3.tar.gz
+[2023-04-12 15:51:42] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/4f/67/2f07748ab3d6e11f946b9d05f5e32362605a55086c91d94b5e919ebc3cab/certora-cli-alpha-master-20230411.6.15.138169.tar.gz
+[2023-04-12 15:51:42] INFO root fetch - processPackages [osint-python-starter-service]: Start processing: FedArtML
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [osint-python-starter-service]: success
+[2023-04-12 15:51:42] INFO root fetch - processPackages [FedArtML]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-04-12 15:51:42] INFO root fetch - processPackages [pyngrok]: executing diffoscope
+[2023-04-12 15:51:42] INFO root fetch - processPackages [pyngrok]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyngrok-5.2.2.tar.gz tmp/pyngrok-5.2.3.tar.gz --markdown 20230412/p/pyngrok/5.2.2-5.2.3/diff.md --exclude *.pyd
+[2023-04-12 15:51:42] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 28057959>=10485760
+[2023-04-12 15:51:42] INFO root fetch - processPackages [certora-cli-alpha-master]: Start processing: paxlesdk
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-04-12 15:51:42] WARNING root fetch - processPackages [paxlesdk]: Skipping, unable to determine old version
+[2023-04-12 15:51:42] INFO root fetch - processPackages [paxlesdk]: Start processing: coiled
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [paxlesdk] error
+[2023-04-12 15:51:42] INFO root fetch - processPackages [coiled]: New version: [0.5.9.post0.dev8] Old Version: [0.5.9.post0.dev7]
+[2023-04-12 15:51:42] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-04-12 15:51:42] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.5.9.post0.dev7.tar.gz tmp/coiled-0.5.9.post0.dev8.tar.gz --markdown 20230412/c/coiled/0.5.9.post0.dev7-0.5.9.post0.dev8/diff.md --exclude *.pyd
+[2023-04-12 15:51:42] INFO root fetch - processPackages [FedArtML]: Downloading https://files.pythonhosted.org/packages/3c/5b/fe6c676a747204df1277861ca28cc8c4c36b84985311bc5e991cf77f39c2/FedArtML-0.1.5.tar.gz
+[2023-04-12 15:51:42] INFO root fetch - processPackages [dol]: Start processing: mautrix
+[2023-04-12 15:51:42] INFO root fetch - main [MainThread]: End processing [dol]: success
+[2023-04-12 15:51:43] INFO root fetch - processPackages [mautrix]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-04-12 15:51:43] INFO root fetch - processPackages [mautrix]: Downloading https://files.pythonhosted.org/packages/98/f0/24955e5c1561a687061d561661a0cd4e285ee7525d45939c0b81e70aa105/mautrix-0.9.8.tar.gz
+[2023-04-12 15:51:43] INFO root fetch - processPackages [FedArtML]: Downloading https://files.pythonhosted.org/packages/b0/41/80d1abc334aa0cc3b855aa4483e347bce4bc12f522378ec67378799145e5/FedArtML-0.1.6.tar.gz
+[2023-04-12 15:51:43] INFO root fetch - processPackages [FedArtML]: executing diffoscope
+[2023-04-12 15:51:43] INFO root fetch - processPackages [FedArtML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FedArtML-0.1.5.tar.gz tmp/FedArtML-0.1.6.tar.gz --markdown 20230412/F/FedArtML/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-04-12 15:51:43] INFO root fetch - processPackages [mautrix]: Downloading https://files.pythonhosted.org/packages/9b/36/edc5d20a2ef50ac0286c5fcbd7a7ffc4e4c78a60172a12ecab5b558cd57b/mautrix-0.9.9.tar.gz
+[2023-04-12 15:51:44] INFO root fetch - processPackages [mautrix]: executing diffoscope
+[2023-04-12 15:51:44] INFO root fetch - processPackages [mautrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mautrix-0.9.8.tar.gz tmp/mautrix-0.9.9.tar.gz --markdown 20230412/m/mautrix/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-04-12 15:51:44] INFO root fetch - processPackages [FedArtML]: Start processing: jupyterlab-nvdashboard
+[2023-04-12 15:51:44] INFO root fetch - main [MainThread]: End processing [FedArtML]: success
+[2023-04-12 15:51:44] INFO root fetch - processPackages [jupyterlab-nvdashboard]: New version: [0.9.0a0] Old Version: [0.8.0a22112312]
+[2023-04-12 15:51:44] INFO root fetch - processPackages [jupyterlab-nvdashboard]: Downloading https://files.pythonhosted.org/packages/2b/f6/4e91e5194818a2648ac343f19b06a155c792323d77ee079a3d1b61917037/jupyterlab_nvdashboard-0.9.0a0.tar.gz
+[2023-04-12 15:51:44] INFO root fetch - processPackages [jupyterlab-nvdashboard]: executing diffoscope
+[2023-04-12 15:51:44] INFO root fetch - processPackages [jupyterlab-nvdashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyterlab_nvdashboard-0.8.0a22112312.tar.gz tmp/jupyterlab_nvdashboard-0.9.0a0.tar.gz --markdown 20230412/j/jupyterlab-nvdashboard/0.8.0a22112312-0.9.0a0/diff.md --exclude *.pyd
+[2023-04-12 15:51:46] INFO root fetch - processPackages [nucliadb-contributor-assets]: Start processing: pywry
+[2023-04-12 15:51:46] INFO root fetch - main [MainThread]: End processing [nucliadb-contributor-assets]: success
+[2023-04-12 15:51:46] INFO root fetch - processPackages [pywry]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-04-12 15:51:46] INFO root fetch - processPackages [mautrix]: Start processing: mofdscribe
+[2023-04-12 15:51:46] INFO root fetch - main [MainThread]: End processing [mautrix]: success
+[2023-04-12 15:51:46] INFO root fetch - processPackages [pywry]: Downloading https://files.pythonhosted.org/packages/04/6a/abd2a432e53eaaf0c854eeac404be8f9042ee3aa84a4edfd1510ae0e1dfc/pywry-0.4.5.tar.gz
+[2023-04-12 15:51:46] INFO root fetch - processPackages [mofdscribe]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-04-12 15:51:46] INFO root fetch - processPackages [coiled]: Start processing: Simba-UW-tf-dev
+[2023-04-12 15:51:46] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-04-12 15:51:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.56.2] Old Version: [1.56.1]
+[2023-04-12 15:51:46] INFO root fetch - processPackages [pywry]: Downloading https://files.pythonhosted.org/packages/16/d9/33f87e9d3a90514f061cdd11558d935ed97c35063ebb0c6677a320103ff8/pywry-0.4.6.tar.gz
+[2023-04-12 15:51:46] INFO root fetch - processPackages [mofdscribe]: Downloading https://files.pythonhosted.org/packages/2f/52/fd2bdd2dbda3af41549190f1660cb5ef49ac627a405fee8c6533305b2b17/mofdscribe-0.0.7.tar.gz
+[2023-04-12 15:51:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/7b/f6/9db0e4aa230b77acb8b7a8026f42c9f84b263d7872dc12f06d5b3c4c739c/Simba-UW-tf-dev-1.56.1.tar.gz
+[2023-04-12 15:51:46] INFO root fetch - processPackages [pywry]: executing diffoscope
+[2023-04-12 15:51:46] INFO root fetch - processPackages [pywry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywry-0.4.5.tar.gz tmp/pywry-0.4.6.tar.gz --markdown 20230412/p/pywry/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-04-12 15:51:46] INFO root fetch - processPackages [jupyterlab-nvdashboard]: Start processing: ipywebgl
+[2023-04-12 15:51:46] INFO root fetch - main [MainThread]: End processing [jupyterlab-nvdashboard]: success
+[2023-04-12 15:51:46] INFO root fetch - processPackages [ipywebgl]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-04-12 15:51:46] INFO root fetch - processPackages [ipywebgl]: Downloading https://files.pythonhosted.org/packages/90/24/2bd84250c7a902a4b49537b8b61e3870c855d0d2866311494ce14654c865/ipywebgl-0.2.2.tar.gz
+[2023-04-12 15:51:46] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/bd/21/b37a1f85838c33d135733588f2855eef93fab169c06142e6ccc89be09d9c/Simba-UW-tf-dev-1.56.2.tar.gz
+[2023-04-12 15:51:47] INFO root fetch - processPackages [ipywebgl]: executing diffoscope
+[2023-04-12 15:51:47] INFO root fetch - processPackages [ipywebgl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipywebgl-0.2.1.tar.gz tmp/ipywebgl-0.2.2.tar.gz --markdown 20230412/i/ipywebgl/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-04-12 15:51:47] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2023-04-12 15:51:47] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.56.1.tar.gz tmp/Simba-UW-tf-dev-1.56.2.tar.gz --markdown 20230412/S/Simba-UW-tf-dev/1.56.1-1.56.2/diff.md --exclude *.pyd
+[2023-04-12 15:51:47] INFO root fetch - processPackages [mofdscribe]: Downloading https://files.pythonhosted.org/packages/96/08/697c26fba437287eda52eb3512840b689dca7f0789b83193f6acf8f91154/mofdscribe-0.0.8.tar.gz
+[2023-04-12 15:51:47] INFO root fetch - processPackages [pyngrok]: Start processing: PigBotFramework
+[2023-04-12 15:51:47] INFO root fetch - main [MainThread]: End processing [pyngrok]: success
+[2023-04-12 15:51:47] INFO root fetch - processPackages [PigBotFramework]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-04-12 15:51:47] INFO root fetch - processPackages [pywry]: Start processing: rigorous-recorder
+[2023-04-12 15:51:47] INFO root fetch - main [MainThread]: End processing [pywry]: success
+[2023-04-12 15:51:47] INFO root fetch - processPackages [rigorous-recorder]: New version: [1.3.1] Old Version: [1.3.0]
+[2023-04-12 15:51:47] INFO root fetch - processPackages [rigorous-recorder]: Downloading https://files.pythonhosted.org/packages/9d/fb/0ccc9141003e7a6b1d9eed12683d188165e64a9179efb11005786d5b339e/rigorous_recorder-1.3.0.tar.gz
+[2023-04-12 15:51:47] INFO root fetch - processPackages [PigBotFramework]: executing diffoscope
+[2023-04-12 15:51:47] INFO root fetch - processPackages [PigBotFramework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PigBotFramework-4.1.8.tar.gz tmp/PigBotFramework-4.1.9.tar.gz --markdown 20230412/P/PigBotFramework/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-04-12 15:51:48] INFO root fetch - processPackages [mofdscribe]: executing diffoscope
+[2023-04-12 15:51:48] INFO root fetch - processPackages [mofdscribe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mofdscribe-0.0.7.tar.gz tmp/mofdscribe-0.0.8.tar.gz --markdown 20230412/m/mofdscribe/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-04-12 15:51:48] INFO root fetch - processPackages [rigorous-recorder]: Downloading https://files.pythonhosted.org/packages/81/0d/b940a61ca11d6388710c13722925666e42fedfbe99e60050cf3c72bd8449/rigorous_recorder-1.3.1.tar.gz
+[2023-04-12 15:51:48] INFO root fetch - processPackages [rigorous-recorder]: executing diffoscope
+[2023-04-12 15:51:48] INFO root fetch - processPackages [rigorous-recorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230412:/home/abi/fetcher/20230412:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rigorous_recorder-1.3.0.tar.gz tmp/rigorous_recorder-1.3.1.tar.gz --markdown 20230412/r/rigorous-recorder/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2023-04-12 15:51:49] INFO root fetch - main [MainThread]: End processing [PigBotFramework]: success
+[2023-04-12 15:51:49] INFO root fetch - main [MainThread]: End processing [rigorous-recorder]: success
+[2023-04-12 15:51:51] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2023-04-12 15:51:52] INFO root fetch - main [MainThread]: End processing [mofdscribe]: success
+[2023-04-12 15:51:53] INFO root fetch - main [MainThread]: End processing [ipywebgl]: success
+[2023-04-12 15:51:53] INFO root fetch - main [MainThread]: Store serial: [17676960]
